@@ -2,59 +2,59 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Kursorganisation und Vorbereitungen on data librarian - modul 3 - daten analysieren und verstehen</title>
-    <link>https://bonartm.github.io/data-librarian-website/organisation/</link>
+    <link>https://bonartm.github.io/data-librarian/organisation/</link>
     <description>Recent content in Kursorganisation und Vorbereitungen on data librarian - modul 3 - daten analysieren und verstehen</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de-DE</language>
     
-	<atom:link href="https://bonartm.github.io/data-librarian-website/organisation/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://bonartm.github.io/data-librarian/organisation/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Kurseinheiten</title>
-      <link>https://bonartm.github.io/data-librarian-website/organisation/kurseinheiten/</link>
+      <link>https://bonartm.github.io/data-librarian/organisation/kurseinheiten/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bonartm.github.io/data-librarian-website/organisation/kurseinheiten/</guid>
+      <guid>https://bonartm.github.io/data-librarian/organisation/kurseinheiten/</guid>
       <description>Wir haben das Modul in wöchentliche Einheiten, die jeweils ein Gebiet aufgreifen und vertiefen, unterteilt. Sie können sich die Zeit für die Bearbeitung der Einheiten selber aufteilen, sollten aber jede Einheit am Ende der jeweiligen Woche abgeschlossen haben.
 Die Einheiten schließen in der Regel mit praktischen Übungen ab. Ihre Lösungen können Sie einreichen, um Feedback von den Kursleitern zu erhalten. Der erste Teil des Moduls (21-01 - 16.02) wird von Malte Bonart betreut und behandelt grundlegende klassische Konzepte der angewandten Statistik.</description>
     </item>
     
     <item>
       <title>Termine</title>
-      <link>https://bonartm.github.io/data-librarian-website/organisation/termine/</link>
+      <link>https://bonartm.github.io/data-librarian/organisation/termine/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bonartm.github.io/data-librarian-website/organisation/termine/</guid>
+      <guid>https://bonartm.github.io/data-librarian/organisation/termine/</guid>
       <description>Datum Titel Ziele     21.01 – 26.01 Vorbereitung Installieren Sie die benötigte Software Laden Sie die Kursmaterialien und Datensätze herunter Stellen Sie sicher, dass Python Notebooks lokal ausgeführt werden können   27.01 – 02.02 Grundlagen und deskriptive Statistik I Beschreiben Sie Datensätze mit dem statistischen Grundvokabular Lesen Sie Datensätze als DataFrames in Python ein Filtern Sie DataFrames nach Spalten oder Zeilen Erstellen Sie absolute und relative Häufigkeitstabellen Berechnen Sie grundlegende Lagemaße   03.</description>
     </item>
     
     <item>
       <title>Jupyter Notebooks</title>
-      <link>https://bonartm.github.io/data-librarian-website/organisation/notebooks/</link>
+      <link>https://bonartm.github.io/data-librarian/organisation/notebooks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bonartm.github.io/data-librarian-website/organisation/notebooks/</guid>
+      <guid>https://bonartm.github.io/data-librarian/organisation/notebooks/</guid>
       <description>Die meisten Aufgaben und Code-Beispiele in diesem Modul werden über Jupyter Notebooks verteilt. Notebooks bestehen immer aus Text oder Code Zellen (cells). Der Python Code in den Zellen kann ausgeführt werden und das Ergenis wird direkt im Notebook angezeigt. Somit eignen sich Notebooks, um mit Code interatkiv zu experimentieren und für andere Personen aufzubereiten.
 Notebook-Dateien erkennen Sie an der Dateiendung .ipynb. Diese Dateien können Sie mit jupyter in Ihrem Web-Broser öffnen.</description>
     </item>
     
     <item>
       <title>Conda und Anaconda</title>
-      <link>https://bonartm.github.io/data-librarian-website/organisation/anaconda/</link>
+      <link>https://bonartm.github.io/data-librarian/organisation/anaconda/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bonartm.github.io/data-librarian-website/organisation/anaconda/</guid>
+      <guid>https://bonartm.github.io/data-librarian/organisation/anaconda/</guid>
       <description>Conda ist eine freie und offene Softwarepaketverwaltung für Python. Neben der Möglichkeit, Pakete (package) für Python aus dem Internet zu installieren, können mit conda virtuelle Umgebungen (environments) angelegt werden. Diese Umgebungen beinhalten nur die Pakete und Python Versionen, die für ein spezifisches Projekt gebraucht werden. Umgebungen können einfach mit anderen Personen geteilt werden, sodass sichergestellt ist, dass alle Programmierer mit den gleichen Paketen und Versionen arbeiten.
 &#34;Anaconda&#34; by jaumescar is licensed under CC BY-NC-SA 2.</description>
     </item>
     
     <item>
       <title>Materialien und Datensätze</title>
-      <link>https://bonartm.github.io/data-librarian-website/organisation/materialien/</link>
+      <link>https://bonartm.github.io/data-librarian/organisation/materialien/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bonartm.github.io/data-librarian-website/organisation/materialien/</guid>
+      <guid>https://bonartm.github.io/data-librarian/organisation/materialien/</guid>
       <description>Im ersten Teil des Moduls werden Sie einen offenen Kundendatensatz der Bibliothek in San Francisco analysieren.
 Den Source Code für diese Webseite und die weiteren Kursmaterialien finden Sie auf einem öffentlichen GitHub Repository. Sie können sich das komplette Repository herunterladen indem sie
 git clone  in der Kommandozeile ausführen.</description>

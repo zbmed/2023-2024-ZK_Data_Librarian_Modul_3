@@ -2,40 +2,40 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Python Module und Pakete on data librarian - modul 3 - daten analysieren und verstehen</title>
-    <link>https://bonartm.github.io/data-librarian-website/organisation/packages/</link>
+    <link>https://bonartm.github.io/data-librarian/organisation/packages/</link>
     <description>Recent content in Python Module und Pakete on data librarian - modul 3 - daten analysieren und verstehen</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de-DE</language>
     
-	<atom:link href="https://bonartm.github.io/data-librarian-website/organisation/packages/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://bonartm.github.io/data-librarian/organisation/packages/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Pandas</title>
-      <link>https://bonartm.github.io/data-librarian-website/organisation/packages/pandas/</link>
+      <link>https://bonartm.github.io/data-librarian/organisation/packages/pandas/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bonartm.github.io/data-librarian-website/organisation/packages/pandas/</guid>
+      <guid>https://bonartm.github.io/data-librarian/organisation/packages/pandas/</guid>
       <description>pandas vereinfacht stark die Bearbeitung, Transformation, Aggregation und Zusammenfassung von Datensätzen sowie deren Import und Export in Python. Die zentralen Datenstrukturen in pandas sind Series und DataFrame. Series sind eindimensionale Listen (array) eines Datentypes (z.B. $[1, 3, 2, 5]$). In einem DataFrame werden mehrere Series gleicher Länge spaltenweise zu einer zweidimensionalen Tabelle, ähnlich wie einer Excel Tabelle, zusammengefasst. Ein DataFrame besitzt außerdem auch immer Spalten- und Zeilennamen (index).
 import pandas as pd df = pd.</description>
     </item>
     
     <item>
       <title>matplotlib</title>
-      <link>https://bonartm.github.io/data-librarian-website/organisation/packages/matplotlib/</link>
+      <link>https://bonartm.github.io/data-librarian/organisation/packages/matplotlib/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bonartm.github.io/data-librarian-website/organisation/packages/matplotlib/</guid>
+      <guid>https://bonartm.github.io/data-librarian/organisation/packages/matplotlib/</guid>
       <description>matplotlib ist das Standard-Paket zum Erstellen von wissenschaftlichen 2-dimensionalen statischen Graphiken. Die grundlegende Struktur in matplotlib ist figure, eine leere graphische Fläche, die mit Linien, Balken, Punten, Beschriftungen und Axen befüllt werden kann. Der fertige Plot kann dann in diversen Formaten abgespeichert oder auf dem Bildschirm angezeigt werden.
 import matplotlib.pyplot as plt x = range(1, 10) plt.plot(x, x, label=&#39;quadratic&#39;)  </description>
     </item>
     
     <item>
       <title>seaborn</title>
-      <link>https://bonartm.github.io/data-librarian-website/organisation/packages/seaborn/</link>
+      <link>https://bonartm.github.io/data-librarian/organisation/packages/seaborn/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bonartm.github.io/data-librarian-website/organisation/packages/seaborn/</guid>
+      <guid>https://bonartm.github.io/data-librarian/organisation/packages/seaborn/</guid>
       <description>seaborn baut auf matplotlib auf und bietet eine Vielzahl von Funktionen, die es erlauben schnell und einfach schöne statistische Visualisierungen zu erstellen.
 ```python import matplotlib.pyplot as plt import seaborn as sns
 sns.set() x = range(1, 10) plt.plot(x, x, label=&amp;lsquo;quadratic&amp;rsquo;)</description>
@@ -43,28 +43,28 @@ sns.set() x = range(1, 10) plt.plot(x, x, label=&amp;lsquo;quadratic&amp;rsquo;)
     
     <item>
       <title>scipy</title>
-      <link>https://bonartm.github.io/data-librarian-website/organisation/packages/scipy/</link>
+      <link>https://bonartm.github.io/data-librarian/organisation/packages/scipy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bonartm.github.io/data-librarian-website/organisation/packages/scipy/</guid>
+      <guid>https://bonartm.github.io/data-librarian/organisation/packages/scipy/</guid>
       <description>scipy bietet eine Menge an Funktionen und Methoden aus der Statistik, z.B. für die Durchführung eines Mittelwerttests.</description>
     </item>
     
     <item>
       <title>scitkit-learn</title>
-      <link>https://bonartm.github.io/data-librarian-website/organisation/packages/scikitlearn/</link>
+      <link>https://bonartm.github.io/data-librarian/organisation/packages/scikitlearn/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bonartm.github.io/data-librarian-website/organisation/packages/scikitlearn/</guid>
+      <guid>https://bonartm.github.io/data-librarian/organisation/packages/scikitlearn/</guid>
       <description>scikit-learn ist ein umfangreiches Paket für machinelles Lernen in Python. Es bietet eine Vielzahl an verschiedenen Algorithmen, mit denen zum Beispiel Vorhersagen oder Bilderkennung durchgeführt werden können.</description>
     </item>
     
     <item>
       <title>spacy</title>
-      <link>https://bonartm.github.io/data-librarian-website/organisation/packages/spacy/</link>
+      <link>https://bonartm.github.io/data-librarian/organisation/packages/spacy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bonartm.github.io/data-librarian-website/organisation/packages/spacy/</guid>
+      <guid>https://bonartm.github.io/data-librarian/organisation/packages/spacy/</guid>
       <description>spaCy ist eine umfangreiche und professionelle Bibliothek für Textverarbeitung und -analysen.</description>
     </item>
     

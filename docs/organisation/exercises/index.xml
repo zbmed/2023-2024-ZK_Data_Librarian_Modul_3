@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Übungen on data librarian - modul 3 - daten analysieren und verstehen</title>
-    <link>https://bonartm.github.io/data-librarian-website/organisation/exercises/</link>
+    <link>https://bonartm.github.io/data-librarian/organisation/exercises/</link>
     <description>Recent content in Übungen on data librarian - modul 3 - daten analysieren und verstehen</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de-DE</language>
     
-	<atom:link href="https://bonartm.github.io/data-librarian-website/organisation/exercises/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://bonartm.github.io/data-librarian/organisation/exercises/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Jupyter Notebooks</title>
-      <link>https://bonartm.github.io/data-librarian-website/organisation/exercises/notebooks_exercise/</link>
+      <link>https://bonartm.github.io/data-librarian/organisation/exercises/notebooks_exercise/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bonartm.github.io/data-librarian-website/organisation/exercises/notebooks_exercise/</guid>
+      <guid>https://bonartm.github.io/data-librarian/organisation/exercises/notebooks_exercise/</guid>
       <description> Laden Sie [folgendes Notebook]() herunter Starten Sie Jupyter Notebook über die Kommandozeile oder über den Anaconda Navigator Navigieren Sie zu dem Notebook und öffnen Sie es. Markieren Sie die Code-Zelle und führen Sie sie mit einem Klick auf den Run Button oder mit der Tastenkombination Strg+Enter aus Versuchen Sie, die Farbe der Punkte im Plot von rot auf grün zu ändern  </description>
     </item>
     
     <item>
       <title>Projektordner</title>
-      <link>https://bonartm.github.io/data-librarian-website/organisation/exercises/materialien_exercise/</link>
+      <link>https://bonartm.github.io/data-librarian/organisation/exercises/materialien_exercise/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bonartm.github.io/data-librarian-website/organisation/exercises/materialien_exercise/</guid>
+      <guid>https://bonartm.github.io/data-librarian/organisation/exercises/materialien_exercise/</guid>
       <description> Erstellen Sie einen Ordner auf Ihrem Computer Laden Sie den Datensatz Library_Usage.csv aus dem Internet herunter und speichern Sie ihn im Projektordner ab Lesen Sie sich die Beschreibung des Datensatzes durch. In dieser Excel Tabelle finden Sie eine detallierte Erklärung der einzelnen Merkmale  </description>
     </item>
     

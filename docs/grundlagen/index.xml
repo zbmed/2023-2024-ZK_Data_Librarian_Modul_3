@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Grundlagen on data librarian - modul 3 - daten analysieren und verstehen</title>
-    <link>https://bonartm.github.io/data-librarian-website/grundlagen/</link>
+    <link>https://bonartm.github.io/data-librarian/grundlagen/</link>
     <description>Recent content in Grundlagen on data librarian - modul 3 - daten analysieren und verstehen</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de-DE</language>
     
-	<atom:link href="https://bonartm.github.io/data-librarian-website/grundlagen/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://bonartm.github.io/data-librarian/grundlagen/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Statistik, Data Science und Machine Learning</title>
-      <link>https://bonartm.github.io/data-librarian-website/grundlagen/statistik_ml/</link>
+      <link>https://bonartm.github.io/data-librarian/grundlagen/statistik_ml/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bonartm.github.io/data-librarian-website/grundlagen/statistik_ml/</guid>
+      <guid>https://bonartm.github.io/data-librarian/grundlagen/statistik_ml/</guid>
       <description>Seit einigen Jahren ist der Begriff Data Science sehr populär geworden. Die Nachfrage nach Data Scientists auf dem Arbeitsmarkt ist sehr hoch, Studiengänge werden neu eingerichtet oder umbenannt. Was unterscheidet einen Data Scientist eigentlich von einer Statistikerin?
 Machinelles Lernen und insbesondere Themen wie künstliche Intelligenz, Neuronale Netze und Deep Learning sind immer wieder Thema in Zeitungen und Nachrichten. Was bedeuten diese Begriffe und wo ist da der Bezug zur Statistik?</description>
     </item>
     
     <item>
       <title>Der San Francisco Library Usage Dataset</title>
-      <link>https://bonartm.github.io/data-librarian-website/grundlagen/dataset/</link>
+      <link>https://bonartm.github.io/data-librarian/grundlagen/dataset/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bonartm.github.io/data-librarian-website/grundlagen/dataset/</guid>
+      <guid>https://bonartm.github.io/data-librarian/grundlagen/dataset/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Grundbegriffe der Statistik</title>
-      <link>https://bonartm.github.io/data-librarian-website/grundlagen/grundbegriffe/</link>
+      <link>https://bonartm.github.io/data-librarian/grundlagen/grundbegriffe/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bonartm.github.io/data-librarian-website/grundlagen/grundbegriffe/</guid>
+      <guid>https://bonartm.github.io/data-librarian/grundlagen/grundbegriffe/</guid>
       <description>In der Kursumgebung finden Sie das Einführungskapitel des Buchs Statistik: Der Weg zur Datenanalyse hinterlegt.1 Im Text finden Sie Erklärungen und Definition der grundlegenden Begriffe, mit denen Daten charakterisiert werden.
 Wenden Sie ihr neu erworbenes Wissen an und diskutieren Sie folgende Fragen konkret für den San Francisco Library Datensatz:
  Wer oder was sind die Merkmalsträger? Wie groß ist die Stichprobengröße des Datensatzes? Wie lässt sich die Grundgesamtheit beschreiben? Handelt es sich um eine Vollerhebung?</description>
@@ -42,10 +42,10 @@ Wenden Sie ihr neu erworbenes Wissen an und diskutieren Sie folgende Fragen konk
     
     <item>
       <title>Reflektion: Daten in Ihrem Unternehmen</title>
-      <link>https://bonartm.github.io/data-librarian-website/grundlagen/reflektion/</link>
+      <link>https://bonartm.github.io/data-librarian/grundlagen/reflektion/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bonartm.github.io/data-librarian-website/grundlagen/reflektion/</guid>
+      <guid>https://bonartm.github.io/data-librarian/grundlagen/reflektion/</guid>
       <description>Schreiben Sie einen kurzen Text über die Verwendung von Daten und quantitativen Methoden auf Ihrer Arbeitstelle. Denken Sie dabei über folgende Fragen nach:
  Welche Daten sind bei Ihnen vorhanden? Mit welchen Daten arbeiten Sie oder würden Sie gerne arbeiten? Werden quantitative Methoden oder Machine Learning bei Ihnen eingesetzt? Welche Fragen oder Phänomene würden Sie gerne mit untersuchen? Was fänden Sie spannend herauszufinden?  ** Teilen Sie ihren Text auf der Kursplatform.</description>
     </item>
