@@ -1,6 +1,12 @@
-# data-librarian (WIP): Daten analysieren und darstellen
+# Data-Librarian Modul 3: Daten analysieren und darstellen
  
-contains the hugo based source code for the website in the `hugo`, the public page in the `docs` and additional course matrials in the `materials` folder.
+contains
+
+- hugo based source code for the website in `./hugo`
+- the public page in `./docs`
+- additional course matrials in `./materials`
+
+## Dates
 
 
 - Modul 1: 26.11.2019 - 28.11.2019 (3 Tage Präsenz), Hacken und experimentieren mit Daten
