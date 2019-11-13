@@ -1,0 +1,295 @@
+[
+{
+	"uri": "https://bonartm.github.io/data-librarian-website/",
+	"title": "Modul 3",
+	"tags": [],
+	"description": "",
+	"content": " Daten analysieren und verstehen Herzlichen Willkommen zum dritten Modul Daten analysieren und darstellen des Data Librarian Zertifikationskurs. In diesem Modul möchten wir Ihnen einen praktischen Einblick in die Datenanalyse mit der Programmiersprache Python geben.\nNachdem Sie auf den Präsenztagen schon die grundlegenden Werkzeuge und Programmiertechniken kennen gelernt haben, werden Sie sich in diesem Modul anhand von praktischen Beispielen und Aufgaben Grundlagen der deskriptiven Statistik, der Datenvisualisierung und des Machinellen Lernens aneignen.\nDie Kurseinheiten bauen aufeinander auf. Wir empfehlen Ihnen deswegen durch die Inhalte dieses Moduls mit den Pfeiltasten zu navigieren. In der linken Navigationsleiste wird Ihr Fortschritt gespeichert. Starten Sie nun mit der ersten Kurseinheit indem Sie auf   klicken.\n "
+},
+{
+	"uri": "https://bonartm.github.io/data-librarian-website/organisation/",
+	"title": "Kursorganisation und Vorbereitungen",
+	"tags": [],
+	"description": "",
+	"content": " 21.01 – 26.01 Kursorganisation und Vorbereitungen Diese Einheit gibt einen Überblick über die Kursinhalte, wichtige Termine und leitet Sie durch die Installation der benötigten Software und Pakete.\nZiele  Installieren Sie die benötigte Software (Anaconda) Laden Sie die Kursmaterialien und Datensätze herunter Stellen Sie sicher, dass Python Notebooks lokal ausgeführt werden können  "
+},
+{
+	"uri": "https://bonartm.github.io/data-librarian-website/organisation/kurseinheiten/",
+	"title": "Kurseinheiten",
+	"tags": [],
+	"description": "",
+	"content": "Wir haben das Modul in wöchentliche Einheiten, die jeweils ein Gebiet aufgreifen und vertiefen, unterteilt. Sie können sich die Zeit für die Bearbeitung der Einheiten selber aufteilen, sollten aber jede Einheit am Ende der jeweiligen Woche abgeschlossen haben.\nDie Einheiten schließen in der Regel mit praktischen Übungen ab. Ihre Lösungen können Sie einreichen, um Feedback von den Kursleitern zu erhalten. Der erste Teil des Moduls (21-01 - 16.02) wird von Malte Bonart betreut und behandelt grundlegende klassische Konzepte der angewandten Statistik. Der zweite Teil des Moduls (10.02 - 04.03) wird von Konrad Förstner und gibt einen Überblick über Themen des Maschinellen Lernens.\nAm Präsenztag, der am 05.03.2020 stattfindet, werden wir im vorraus gesammelte Fragen gemeinsam beantworten und diskutieren. Sie werden Zeit haben, an einem persönlichen Datenanalyseprojekt zu arbeiten. Die Kursleiter werden Sie dabei unterstützen und individuell betreuen. Am Ende des Präsenztages stellen alle KursteilnehmerInnen ihre Ergebnisse in einer Kurzpräsentation vor.\n"
+},
+{
+	"uri": "https://bonartm.github.io/data-librarian-website/organisation/termine/",
+	"title": "Termine",
+	"tags": [],
+	"description": "",
+	"content": "   Datum Titel Ziele     21.01 – 26.01 Vorbereitung Installieren Sie die benötigte Software Laden Sie die Kursmaterialien und Datensätze herunter Stellen Sie sicher, dass Python Notebooks lokal ausgeführt werden können   27.01 – 02.02 Grundlagen und deskriptive Statistik I Beschreiben Sie Datensätze mit dem statistischen Grundvokabular Lesen Sie Datensätze als DataFrames in Python ein Filtern Sie DataFrames nach Spalten oder Zeilen Erstellen Sie absolute und relative Häufigkeitstabellen Berechnen Sie grundlegende Lagemaße   03.02 – 09.02 Deskriptive Statistik II und Visualisierung Berechnen Sie grundlegende Streuungsmaße Berechnen Sie Statistiken für bivariate Verteilungen Erstellen Sie einfache Visualisierungen   10.02 – 16.02 Inferenzstatistik / Maschinelles Lernen I Berechnen und visualisieren Sie Konfidenzintervalle für den Mittelwert Beschreiben Sie die Unterschiede zwischen Supervised und Unsupervised Learning   17.02 – 23.02 Maschinelles Lernen II Beschreiben Sie grundlegende Funktionsweisen und Konzepte von scikit-learn Führen Sie eine Regression, Klassifikation oder Clustering mit scikit-learn durch   24.02 – 01.03 Maschinelles Lernen III Beschreiben Sie die Funktionsweise von Text-Analyse mit NLTK oder spaCy Formulieren Sie einfache quantitative Fragen für den Projekttag als Expose (max. 1 Seite Text)   02.03 – 04.03 Vorbereitung Präsenztag Suchen Sie nach geeigneten Daten für den Projekttag Schicken Sie Ihre inhaltlichen und fachlichen Fragen an die Kursleiter   5.03 Präsenztag Nehmen Sie an der Frage und Antwortrunde teil Finden Sie geeignete Daten zum Lösen der Fragen Beantworten Sie Ihre Frage mit den gelernten statistischen Tools Bereiten Sie die Ergebnisse in Form einer Visualisierung auf Stellen Sie die Ergebnisse in einer Kurzpräsentation in Ihrer Gruppe vor (\u0026lt; 5 Minuten)    "
+},
+{
+	"uri": "https://bonartm.github.io/data-librarian-website/organisation/notebooks/",
+	"title": "Jupyter Notebooks",
+	"tags": [],
+	"description": "",
+	"content": "Die meisten Aufgaben und Code-Beispiele in diesem Modul werden über Jupyter Notebooks verteilt. Notebooks bestehen immer aus Text oder Code Zellen (cells). Der Python Code in den Zellen kann ausgeführt werden und das Ergenis wird direkt im Notebook angezeigt. Somit eignen sich Notebooks, um mit Code interatkiv zu experimentieren und für andere Personen aufzubereiten.\nNotebook-Dateien erkennen Sie an der Dateiendung .ipynb. Diese Dateien können Sie mit jupyter in Ihrem Web-Broser öffnen.\nDen jupyter Server starten Sie indem Sie\njupyter notebook  in der Kommandozeile eingeben. Alternativ können Sie auch das Progamm Anaconda Navigator auf Ihrem Rechner suchen und ausführen. Der Anaconda Navigator bietet eine graphische Oberfläche für Anaconda. Von dort können Sie Jupyter Notebook starten.\nWenn sie das Progamm ausführen, öffnet sich automatisch Ihr Web-Browser und verweist auf die Adresse http://localhost:8890. Dort finden Sie nun die Oberfläche von Jupyter Notebook. Sollte sich Ihr Browser nicht automatisch öffnen, so können Sie auch manuell http://localhost:8890 in Ihrem Browser aufrufen.\nJupyter Notebook enthält einen Datei-Explorer mit dem Sie durch die Ordner und Dateien Ihres Systems navigieren können. Mit einem Klick auf Notebook-Dateien (.ipynb) öffnet sich ein neues Tab mit dem Notebook.\n"
+},
+{
+	"uri": "https://bonartm.github.io/data-librarian-website/organisation/anaconda/",
+	"title": "Conda und Anaconda",
+	"tags": [],
+	"description": "",
+	"content": "Conda ist eine freie und offene Softwarepaketverwaltung für Python. Neben der Möglichkeit, Pakete (package) für Python aus dem Internet zu installieren, können mit conda virtuelle Umgebungen (environments) angelegt werden. Diese Umgebungen beinhalten nur die Pakete und Python Versionen, die für ein spezifisches Projekt gebraucht werden. Umgebungen können einfach mit anderen Personen geteilt werden, sodass sichergestellt ist, dass alle Programmierer mit den gleichen Paketen und Versionen arbeiten.\n\"Anaconda\" by jaumescar is licensed under CC BY-NC-SA 2.0\nAnaconda basiert auf conda. Mit Anaconda werden eine Vielzahl von Paketen, die für die Datenanalyse gebraucht werden, schon vorinstalliert. Außerdem bietet Anaconda eine vorinstallierte Entwicklungsumgebung (IDE) und eine vorinstallierte Version von Jupyter, mit der Notebooks gestartet werden können.\nAnaconda können Sie hier für Ihr Betriebssystem herunterladen. Wir verwenden die Version für Python 3.7.\n"
+},
+{
+	"uri": "https://bonartm.github.io/data-librarian-website/organisation/materialien/",
+	"title": "Materialien und Datensätze",
+	"tags": [],
+	"description": "",
+	"content": "Im ersten Teil des Moduls werden Sie einen offenen Kundendatensatz der Bibliothek in San Francisco analysieren.\nDen Source Code für diese Webseite und die weiteren Kursmaterialien finden Sie auf einem öffentlichen GitHub Repository. Sie können sich das komplette Repository herunterladen indem sie\ngit clone  in der Kommandozeile ausführen.\n"
+},
+{
+	"uri": "https://bonartm.github.io/data-librarian-website/grundlagen/",
+	"title": "Grundlagen",
+	"tags": [],
+	"description": "",
+	"content": " 27.01 – 02.02 Grundlagen und deskriptive Statistik I Dieses Modul gibt zuerst eine Einführung in die Aufgaben und grundlegenden Begriffe der angewandten Statistik. Im zweiten Teil wird das pandas Paket eingeführt und gezeigt wie Datensätze in Python eingelesen und bearbeitet werden können.\nZiele  Beschreiben Sie Datensätze mit dem statistischen Grundvokabular Lesen Sie Datensätze als DataFrames in Python ein Filtern Sie DataFrames nach Spalten oder Zeilen Erstellen Sie absolute und relative Häufigkeitstabellen Berechnen Sie grundlegende Lagemaße, wie Median und Mittelwert  Die Pressestelle der San Francisco Public Library möchte in ihrem aktuellen Online-Artikel zum Kundenstamm der Bibliothek einige interessanten Zahlen präsentieren. Deswegen werden Sie um Hilfe gebeten: Wie viele Senioren und Kinder sind Kunden der San Francisco Public Library? Wie viele Nutzer möchten per Mail informiert werden? Wie alt sind diese Nutzer durchschnnittlich im Vergleich zu Nutzern, die per Post informiert werden möchten?\n Senden Sie bis zum Ende der Woche (spätestens bis Samstag) Ihre Beschreibung des Datensatzes aus Übung 1 zusammen mit den beantworteten Fragen in Form eines Python Notebooks an malte@bonart.de.\n"
+},
+{
+	"uri": "https://bonartm.github.io/data-librarian-website/grundlagen/statistik_ml/",
+	"title": "Statistik, Data Science und Machine Learning",
+	"tags": [],
+	"description": "",
+	"content": " Seit einigen Jahren ist der Begriff Data Science sehr populär geworden. Die Nachfrage nach Data Scientists auf dem Arbeitsmarkt ist sehr hoch, Studiengänge werden neu eingerichtet oder umbenannt. Was unterscheidet einen Data Scientist eigentlich von einer Statistikerin?\nMachinelles Lernen und insbesondere Themen wie künstliche Intelligenz, Neuronale Netze und Deep Learning sind immer wieder Thema in Zeitungen und Nachrichten. Was bedeuten diese Begriffe und wo ist da der Bezug zur Statistik?\nIm folgenden wird ein kurzer Überblick über die Begriffe und deren Beziehung zueinander gegeben. Für Interessierte gibt es Verweise zu weiteren Quellen.\nStatistik test1\n  Explorative Statistik   testtest\n    Beschreibende Statistik   testtest\n    Schließende Statistik   testtest\n  Machine Learning   Supervised Learning   testtest\n    Unsupervised Learning   testtest\n    Reinforcement Learning   testtest\n  Data Science taken from http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram\n testtest [return]   "
+},
+{
+	"uri": "https://bonartm.github.io/data-librarian-website/grundlagen/dataset/",
+	"title": "Der San Francisco Library Usage Dataset",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://bonartm.github.io/data-librarian-website/grundlagen/grundbegriffe/",
+	"title": "Grundbegriffe der Statistik",
+	"tags": [],
+	"description": "",
+	"content": "In der Kursumgebung finden Sie das Einführungskapitel des Buchs Statistik: Der Weg zur Datenanalyse hinterlegt.1 Im Text finden Sie Erklärungen und Definition der grundlegenden Begriffe, mit denen Daten charakterisiert werden.\nWenden Sie ihr neu erworbenes Wissen an und diskutieren Sie folgende Fragen konkret für den San Francisco Library Datensatz:\n Wer oder was sind die Merkmalsträger? Wie groß ist die Stichprobengröße des Datensatzes? Wie lässt sich die Grundgesamtheit beschreiben? Handelt es sich um eine Vollerhebung? Wie viele Merkmale besitzt der Datensatz? Welche Merkmale sind stetig? Welche diskret? Welchem Skalenniveau entsprechen die einzelnen Merkmale (Nominal-, Ordinal- oder Kardinalskala/ metrisch)? Enthält der Datensatz fehlende Werte? Handelt es sich um Querschnitts-, Längsschnitss- oder Paneldaten? Von wann bis wann wurden die Daten erhoben?  Halten Sie Ihre Ergebnisse in Stichpunkten fest.\n Fahrmeir, Ludwig, Christian Heumann, Rita Künstler, Iris Pigeot, and Gerhard Tutz. Statistik: Der Weg zur Datenanalyse. Springer-Verlag, 2016, https://www.springer.com/de/book/9783662503713. [return]   "
+},
+{
+	"uri": "https://bonartm.github.io/data-librarian-website/deskriptive_statistik/",
+	"title": "Deskriptive Statistik und Visualisierungen",
+	"tags": [],
+	"description": "",
+	"content": " 03.02 – 09.02 Deskriptive Statistik II und Visualisierungen Dieses Modul vertieft die Einführung in die deskriptive Statistik und zeigt, wie Visualisierungen in Python erstellt werden können. Die Lernziele sind:\nZiele  Berechnen Sie grundlegende Streuungsmaße (Interquartilsabstand, Standardabweichung, Spannweite) Beschreiben Sie univariate Verteilungen Berechnen Sie Statistiken für bivariate Verteilungen (Kreuztabellen, Korrelation) Erstellen Sie einfache Visualisierungen (Boxplot, Histogramm, Streudiagram)  Projekt  Da der Artikel über den Kundenstamm sehr gut angekommen ist, fragt die Pressestelle nun auch nach einigen guten Visualisierungen für die Titelseite der Homepage.\n Senden Sie bis zum Ende der Woche (spätestens bis Samstag) 3-4 Visualisierungen des Datensatzes in Form eines Python Notebooks an malte@bonart.de.\n"
+},
+{
+	"uri": "https://bonartm.github.io/data-librarian-website/deskriptive_statistik/lagema%C3%9Fe/",
+	"title": "Recap: Lagemaße",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://bonartm.github.io/data-librarian-website/deskriptive_statistik/streuungsma%C3%9Fe/",
+	"title": "Streuungsmaße",
+	"tags": [],
+	"description": "",
+	"content": "Seit einigen Jahren ist der Begriff Data Science sehr populär geworden. Die Nachfrage nach Data Scientists auf dem Arbeitsmarkt ist sehr hoch, Studiengänge werden neu eingerichtet oder umbenannt. Was unterscheidet einen Data Scientist eigentlich von einer Statistikerin?\nMachinelles Lernen und insbesondere Themen wie künstliche Intelligenz, Neuronale Netze und Deep Learning sind immer wieder Thema in Zeitungen und Nachrichten. Was bedeuten diese Begriffe und wo ist da der Bezug zur Statistik?\nIm folgenden wird ein kurzer Überblick über die Begriffe und deren Beziehung zueinander gegeben. Für Interessierte gibt es Verweise zu weiteren Quellen.\n"
+},
+{
+	"uri": "https://bonartm.github.io/data-librarian-website/deskriptive_statistik/dichtefunktion/",
+	"title": "Beschreibung von Verteilungen",
+	"tags": [],
+	"description": "",
+	"content": "Seit einigen Jahren ist der Begriff Data Science sehr populär geworden. Die Nachfrage nach Data Scientists auf dem Arbeitsmarkt ist sehr hoch, Studiengänge werden neu eingerichtet oder umbenannt. Was unterscheidet einen Data Scientist eigentlich von einer Statistikerin?\nMachinelles Lernen und insbesondere Themen wie künstliche Intelligenz, Neuronale Netze und Deep Learning sind immer wieder Thema in Zeitungen und Nachrichten. Was bedeuten diese Begriffe und wo ist da der Bezug zur Statistik?\nIm folgenden wird ein kurzer Überblick über die Begriffe und deren Beziehung zueinander gegeben. Für Interessierte gibt es Verweise zu weiteren Quellen.\n"
+},
+{
+	"uri": "https://bonartm.github.io/data-librarian-website/deskriptive_statistik/bivariate_verteilungen/",
+	"title": "Bivariate Verteilungen",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://bonartm.github.io/data-librarian-website/deskriptive_statistik/bivariate_verteilungen/kreuztabellen/",
+	"title": "Kreuztabellen",
+	"tags": [],
+	"description": "",
+	"content": "Seit einigen Jahren ist der Begriff Data Science sehr populär geworden. Die Nachfrage nach Data Scientists auf dem Arbeitsmarkt ist sehr hoch, Studiengänge werden neu eingerichtet oder umbenannt. Was unterscheidet einen Data Scientist eigentlich von einer Statistikerin?\nMachinelles Lernen und insbesondere Themen wie künstliche Intelligenz, Neuronale Netze und Deep Learning sind immer wieder Thema in Zeitungen und Nachrichten. Was bedeuten diese Begriffe und wo ist da der Bezug zur Statistik?\nIm folgenden wird ein kurzer Überblick über die Begriffe und deren Beziehung zueinander gegeben. Für Interessierte gibt es Verweise zu weiteren Quellen.\n"
+},
+{
+	"uri": "https://bonartm.github.io/data-librarian-website/deskriptive_statistik/bivariate_verteilungen/korrelation/",
+	"title": "Korrelation und Kausalität",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://bonartm.github.io/data-librarian-website/grundlagen/pandas/",
+	"title": "Einführung in Pandas",
+	"tags": [],
+	"description": "",
+	"content": " Pandas\nWeitere Ressourcen  Interaktive Python Online-Tutorials auf learnpython.org Einführung in Python auf kaggle Pandas Tutorial auf kaagle Pandas Cheat Sheet  "
+},
+{
+	"uri": "https://bonartm.github.io/data-librarian-website/grundlagen/reflektion/",
+	"title": "Reflektion: Daten in Ihrem Unternehmen",
+	"tags": [],
+	"description": "",
+	"content": "Schreiben Sie einen kurzen Text über die Verwendung von Daten und quantitativen Methoden auf Ihrer Arbeitstelle. Denken Sie dabei über folgende Fragen nach:\n Welche Daten sind bei Ihnen vorhanden? Mit welchen Daten arbeiten Sie oder würden Sie gerne arbeiten? Werden quantitative Methoden oder Machine Learning bei Ihnen eingesetzt? Welche Fragen oder Phänomene würden Sie gerne mit untersuchen? Was fänden Sie spannend herauszufinden?  ** Teilen Sie ihren Text auf der Kursplatform.**\n"
+},
+{
+	"uri": "https://bonartm.github.io/data-librarian-website/deskriptive_statistik/visualisierungen/",
+	"title": "Visualisierungen in Python",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://bonartm.github.io/data-librarian-website/deskriptive_statistik/visualisierungen/beispiele/",
+	"title": "Beispiele",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://bonartm.github.io/data-librarian-website/grundlagen/pandas/pandas_introduction/",
+	"title": "Übung: Filtern von Spalten und Zeilen",
+	"tags": [],
+	"description": "",
+	"content": " Übung 2: Einführung in Pandas  Laden Sie [dieses Jupyter Notebook]() in Ihren Projektordner. In dem Ordner sollte sich auch der Kunden-Datensatz mit dem Namen Library_Usage.csv befinden. Öffnen und bearbeiten Sie das Notebook mit Jupyter.  "
+},
+{
+	"uri": "https://bonartm.github.io/data-librarian-website/deskriptive_statistik/visualisierungen/%C3%BCberblick/",
+	"title": "Überblick",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://bonartm.github.io/data-librarian-website/grundlagen/pandas/pandas_%C3%BCbungen/",
+	"title": "Übung: Berechnung von deskriptive Statistiken",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://bonartm.github.io/data-librarian-website/deskriptive_statistik/visualisierungen/%C3%BCbung-visualisierungen/",
+	"title": "Übung: Visualisierungen",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://bonartm.github.io/data-librarian-website/inferenzstatistik/",
+	"title": "Inferenzstatistik ",
+	"tags": [],
+	"description": "",
+	"content": " 10.02 – 16.02 Grundlagen der Inferenzstatistik und Konfidenzintervalle Diese Einheit gibt einen Einblick in die Inferenzstatistik und stellt die Berechnung von Konfidenzintervallen vor.\nZiele  Berechnen und visualisieren Sie Konfidenzintervalle für den Mittelwert  Projekt  Unterscheidet sich das Nutzerverhaltenn von jugen und älteren Biblitheksnutzern?\n Senden Sie bis zum Ende der Woche (spätestens bis Samstag) die Ergebnisse ihrer statistischen Tests in Form eines Python Notebooks an malte@bonart.dede.\n"
+},
+{
+	"uri": "https://bonartm.github.io/data-librarian-website/organisation/packages/",
+	"title": "Python Module und Pakete",
+	"tags": [],
+	"description": "",
+	"content": "Die folgenden Python Pakete werden Sie in diesem Modul näher kennenlernen.\n"
+},
+{
+	"uri": "https://bonartm.github.io/data-librarian-website/organisation/packages/pandas/",
+	"title": "Pandas",
+	"tags": [],
+	"description": "",
+	"content": "pandas vereinfacht stark die Bearbeitung, Transformation, Aggregation und Zusammenfassung von Datensätzen sowie deren Import und Export in Python. Die zentralen Datenstrukturen in pandas sind Series und DataFrame. Series sind eindimensionale Listen (array) eines Datentypes (z.B. $[1, 3, 2, 5]$). In einem DataFrame werden mehrere Series gleicher Länge spaltenweise zu einer zweidimensionalen Tabelle, ähnlich wie einer Excel Tabelle, zusammengefasst. Ein DataFrame besitzt außerdem auch immer Spalten- und Zeilennamen (index).\nimport pandas as pd df = pd.DataFrame({ 'month': [1, 2, 3], 'temperatur': [-12, 3, 9] )} df.describe()  "
+},
+{
+	"uri": "https://bonartm.github.io/data-librarian-website/inferenzstatistik/%C3%BCberblick/",
+	"title": "Überblick",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://bonartm.github.io/data-librarian-website/inferenzstatistik/konfidenzintervalle/",
+	"title": "Konfidenzintervalle",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://bonartm.github.io/data-librarian-website/organisation/packages/matplotlib/",
+	"title": "matplotlib",
+	"tags": [],
+	"description": "",
+	"content": "matplotlib ist das Standard-Paket zum Erstellen von wissenschaftlichen 2-dimensionalen statischen Graphiken. Die grundlegende Struktur in matplotlib ist figure, eine leere graphische Fläche, die mit Linien, Balken, Punten, Beschriftungen und Axen befüllt werden kann. Der fertige Plot kann dann in diversen Formaten abgespeichert oder auf dem Bildschirm angezeigt werden.\nimport matplotlib.pyplot as plt x = range(1, 10) plt.plot(x, x, label='quadratic')  "
+},
+{
+	"uri": "https://bonartm.github.io/data-librarian-website/inferenzstatistik/mittelwertvergleich/",
+	"title": "Mittelwertvergleiche",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://bonartm.github.io/data-librarian-website/organisation/packages/seaborn/",
+	"title": "seaborn",
+	"tags": [],
+	"description": "",
+	"content": "seaborn baut auf matplotlib auf und bietet eine Vielzahl von Funktionen, die es erlauben schnell und einfach schöne statistische Visualisierungen zu erstellen.\n```python import matplotlib.pyplot as plt import seaborn as sns\nsns.set() x = range(1, 10) plt.plot(x, x, label=\u0026lsquo;quadratic\u0026rsquo;)\n"
+},
+{
+	"uri": "https://bonartm.github.io/data-librarian-website/organisation/packages/scipy/",
+	"title": "scipy",
+	"tags": [],
+	"description": "",
+	"content": "scipy bietet eine Menge an Funktionen und Methoden aus der Statistik, z.B. für die Durchführung eines Mittelwerttests.\n"
+},
+{
+	"uri": "https://bonartm.github.io/data-librarian-website/organisation/packages/scikitlearn/",
+	"title": "scitkit-learn",
+	"tags": [],
+	"description": "",
+	"content": "scikit-learn ist ein umfangreiches Paket für machinelles Lernen in Python. Es bietet eine Vielzahl an verschiedenen Algorithmen, mit denen zum Beispiel Vorhersagen oder Bilderkennung durchgeführt werden können.\n"
+},
+{
+	"uri": "https://bonartm.github.io/data-librarian-website/organisation/packages/spacy/",
+	"title": "spacy",
+	"tags": [],
+	"description": "",
+	"content": "spaCy ist eine umfangreiche und professionelle Bibliothek für Textverarbeitung und -analysen.\n"
+},
+{
+	"uri": "https://bonartm.github.io/data-librarian-website/organisation/exercises/",
+	"title": "Übungen",
+	"tags": [],
+	"description": "",
+	"content": "  Jupyter Notebooks   Laden Sie [folgendes Notebook]() herunter Starten Sie Jupyter Notebook über die Kommandozeile oder über den Anaconda Navigator Navigieren Sie zu dem Notebook und öffnen Sie es. Markieren Sie die Code-Zelle und führen Sie sie mit einem Klick auf den Run Button oder mit der Tastenkombination Strg+Enter aus Versuchen Sie, die Farbe der Punkte im Plot von rot auf grün zu ändern  Projektordner   Erstellen Sie einen Ordner auf Ihrem Computer Laden Sie den Datensatz Library_Usage.csv aus dem Internet herunter und speichern Sie ihn im Projektordner ab Lesen Sie sich die Beschreibung des Datensatzes durch. In dieser Excel Tabelle finden Sie eine detallierte Erklärung der einzelnen Merkmale  "
+},
+{
+	"uri": "https://bonartm.github.io/data-librarian-website/organisation/exercises/notebooks_exercise/",
+	"title": "Jupyter Notebooks",
+	"tags": [],
+	"description": "",
+	"content": " Laden Sie [folgendes Notebook]() herunter Starten Sie Jupyter Notebook über die Kommandozeile oder über den Anaconda Navigator Navigieren Sie zu dem Notebook und öffnen Sie es. Markieren Sie die Code-Zelle und führen Sie sie mit einem Klick auf den Run Button oder mit der Tastenkombination Strg+Enter aus Versuchen Sie, die Farbe der Punkte im Plot von rot auf grün zu ändern  "
+},
+{
+	"uri": "https://bonartm.github.io/data-librarian-website/organisation/exercises/materialien_exercise/",
+	"title": "Projektordner",
+	"tags": [],
+	"description": "",
+	"content": " Erstellen Sie einen Ordner auf Ihrem Computer Laden Sie den Datensatz Library_Usage.csv aus dem Internet herunter und speichern Sie ihn im Projektordner ab Lesen Sie sich die Beschreibung des Datensatzes durch. In dieser Excel Tabelle finden Sie eine detallierte Erklärung der einzelnen Merkmale  "
+},
+{
+	"uri": "https://bonartm.github.io/data-librarian-website/categories/",
+	"title": "Categories",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://bonartm.github.io/data-librarian-website/tags/",
+	"title": "Tags",
+	"tags": [],
+	"description": "",
+	"content": ""
+}]

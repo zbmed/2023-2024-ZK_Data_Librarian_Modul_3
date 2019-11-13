@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Deskriptive Statistik und Visualisierungen on data librarian - modul 3 - daten analysieren und verstehen</title>
+    <link>https://bonartm.github.io/data-librarian-website/deskriptive_statistik/</link>
+    <description>Recent content in Deskriptive Statistik und Visualisierungen on data librarian - modul 3 - daten analysieren und verstehen</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-DE</language>
+    
+	<atom:link href="https://bonartm.github.io/data-librarian-website/deskriptive_statistik/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Recap: Lagemaße</title>
+      <link>https://bonartm.github.io/data-librarian-website/deskriptive_statistik/lagema%C3%9Fe/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bonartm.github.io/data-librarian-website/deskriptive_statistik/lagema%C3%9Fe/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Streuungsmaße</title>
+      <link>https://bonartm.github.io/data-librarian-website/deskriptive_statistik/streuungsma%C3%9Fe/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bonartm.github.io/data-librarian-website/deskriptive_statistik/streuungsma%C3%9Fe/</guid>
+      <description>Seit einigen Jahren ist der Begriff Data Science sehr populär geworden. Die Nachfrage nach Data Scientists auf dem Arbeitsmarkt ist sehr hoch, Studiengänge werden neu eingerichtet oder umbenannt. Was unterscheidet einen Data Scientist eigentlich von einer Statistikerin?
+Machinelles Lernen und insbesondere Themen wie künstliche Intelligenz, Neuronale Netze und Deep Learning sind immer wieder Thema in Zeitungen und Nachrichten. Was bedeuten diese Begriffe und wo ist da der Bezug zur Statistik?</description>
+    </item>
+    
+    <item>
+      <title>Beschreibung von Verteilungen</title>
+      <link>https://bonartm.github.io/data-librarian-website/deskriptive_statistik/dichtefunktion/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bonartm.github.io/data-librarian-website/deskriptive_statistik/dichtefunktion/</guid>
+      <description>Seit einigen Jahren ist der Begriff Data Science sehr populär geworden. Die Nachfrage nach Data Scientists auf dem Arbeitsmarkt ist sehr hoch, Studiengänge werden neu eingerichtet oder umbenannt. Was unterscheidet einen Data Scientist eigentlich von einer Statistikerin?
+Machinelles Lernen und insbesondere Themen wie künstliche Intelligenz, Neuronale Netze und Deep Learning sind immer wieder Thema in Zeitungen und Nachrichten. Was bedeuten diese Begriffe und wo ist da der Bezug zur Statistik?</description>
+    </item>
+    
+  </channel>
+</rss>

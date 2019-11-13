@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Grundbegriffe der Statistik on data librarian - modul 3 - daten analysieren und verstehen</title>
+    <link>https://bonartm.github.io/data-librarian-website/grundlagen/grundbegriffe/</link>
+    <description>Recent content in Grundbegriffe der Statistik on data librarian - modul 3 - daten analysieren und verstehen</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-DE</language>
+    
+	<atom:link href="https://bonartm.github.io/data-librarian-website/grundlagen/grundbegriffe/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Übung: San Francisco Library Usage Datensatz</title>
+      <link>https://bonartm.github.io/data-librarian-website/grundlagen/grundbegriffe/%C3%BCbung1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bonartm.github.io/data-librarian-website/grundlagen/grundbegriffe/%C3%BCbung1/</guid>
+      <description>Diskutieren Sie folgende Fragen konkret für den San Francisco Library Datensatz:
+ Wer oder was sind die statistischen Einheiten/ Merkmalsträger? Wie lässt sich die Grundgesamtheit beschreiben? Wie groß ist die Stichprobengröße des Datensatzes? Handelt es sich um eine Vollerhebung? Wie viele Merkmale/Spalten besitzt der Datensatz? Welche Merkmale sind stetig? Welche diskret? Welchem Skalenniveau entsprechen die einzelnen Merkmale (Nominal-, Ordinal- oder Kardinalskala/ metrisch)? Enthält der Datensatz fehlende Werte? Handelt es sich um Querschnitts-, Längsschnitss- oder Paneldaten?</description>
+    </item>
+    
+    <item>
+      <title>Relektion: Daten in Ihrem Unternehmen</title>
+      <link>https://bonartm.github.io/data-librarian-website/grundlagen/grundbegriffe/%C3%BCbung2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bonartm.github.io/data-librarian-website/grundlagen/grundbegriffe/%C3%BCbung2/</guid>
+      <description>Schreiben Sie einen kurzen Text über die Verwendung von Daten und quantitativen Methoden auf Ihrer Arbeitstelle. Denken Sie dabei über folgende Fragen nach:
+ Welche Daten sind bei Ihnen vorhanden? Mit welchen Daten arbeiten Sie oder würden Sie gerne arbeiten? Werden quantitative Methoden oder Machine Learning bei Ihnen eingesetzt? Welche Fragen oder Phänomene würden Sie gerne mit untersuchen? Was fänden Sie spannend herauszufinden?  ** Teilen Sie ihren Text auf der Kursplatform.</description>
+    </item>
+    
+  </channel>
+</rss>
