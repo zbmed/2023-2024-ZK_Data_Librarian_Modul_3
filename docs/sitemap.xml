@@ -7,6 +7,10 @@
   </url>
   
   <url>
+    <loc>https://bonartm.github.io/data-librarian/organisation/packages/numpy/</loc>
+  </url>
+  
+  <url>
     <loc>https://bonartm.github.io/data-librarian/organisation/</loc>
   </url>
   
@@ -19,11 +23,11 @@
   </url>
   
   <url>
-    <loc>https://bonartm.github.io/data-librarian/organisation/notebooks/</loc>
+    <loc>https://bonartm.github.io/data-librarian/organisation/anaconda/</loc>
   </url>
   
   <url>
-    <loc>https://bonartm.github.io/data-librarian/organisation/anaconda/</loc>
+    <loc>https://bonartm.github.io/data-librarian/organisation/notebooks/</loc>
   </url>
   
   <url>
@@ -31,7 +35,11 @@
   </url>
   
   <url>
-    <loc>https://bonartm.github.io/data-librarian/grundlagen/</loc>
+    <loc>https://bonartm.github.io/data-librarian/organisation/packages/</loc>
+  </url>
+  
+  <url>
+    <loc>https://bonartm.github.io/data-librarian/organisation/quiz/</loc>
   </url>
   
   <url>
@@ -44,10 +52,6 @@
   
   <url>
     <loc>https://bonartm.github.io/data-librarian/grundlagen/grundbegriffe/</loc>
-  </url>
-  
-  <url>
-    <loc>https://bonartm.github.io/data-librarian/deskriptive_statistik/</loc>
   </url>
   
   <url>
@@ -107,14 +111,6 @@
   </url>
   
   <url>
-    <loc>https://bonartm.github.io/data-librarian/inferenzstatistik/</loc>
-  </url>
-  
-  <url>
-    <loc>https://bonartm.github.io/data-librarian/organisation/packages/</loc>
-  </url>
-  
-  <url>
     <loc>https://bonartm.github.io/data-librarian/organisation/packages/pandas/</loc>
   </url>
   
@@ -147,19 +143,15 @@
   </url>
   
   <url>
-    <loc>https://bonartm.github.io/data-librarian/organisation/packages/spacy/</loc>
+    <loc>https://bonartm.github.io/data-librarian/grundlagen/</loc>
   </url>
   
   <url>
-    <loc>https://bonartm.github.io/data-librarian/organisation/exercises/</loc>
+    <loc>https://bonartm.github.io/data-librarian/deskriptive_statistik/</loc>
   </url>
   
   <url>
-    <loc>https://bonartm.github.io/data-librarian/organisation/exercises/notebooks_exercise/</loc>
-  </url>
-  
-  <url>
-    <loc>https://bonartm.github.io/data-librarian/organisation/exercises/materialien_exercise/</loc>
+    <loc>https://bonartm.github.io/data-librarian/inferenzstatistik/</loc>
   </url>
   
   <url>

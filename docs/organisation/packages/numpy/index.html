@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="Hugo 0.59.1" />
-    <meta name="description" content="Funktionen und Methoden aus der Statistik.">
+    <meta name="description" content="Effizientes Handling und Bearbeitung von numerischen Arrays.">
 <meta name="author" content="Malte Bonart">
 
     <link rel="icon" href="/data-librarian/images/favicon.png" type="image/png">
 
-    <title>scipy :: data librarian - modul 3 - daten analysieren und verstehen</title>
+    <title>numpy :: data librarian - modul 3 - daten analysieren und verstehen</title>
 
     
     <link href="/data-librarian/css/nucleus.css?1574263663" rel="stylesheet">
@@ -45,7 +45,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/data-librarian/organisation/packages/scipy/">
+  <body class="" data-url="/data-librarian/organisation/packages/numpy/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -239,7 +239,7 @@
  
   
     
-      <li data-nav-id="/data-librarian/organisation/packages/numpy/" title="numpy" class="dd-item ">
+      <li data-nav-id="/data-librarian/organisation/packages/numpy/" title="numpy" class="dd-item active">
         <a href="/data-librarian/organisation/packages/numpy/">
         numpy
         <i class="fas fa-check read-icon"></i>
@@ -315,7 +315,7 @@
  
   
     
-      <li data-nav-id="/data-librarian/organisation/packages/scipy/" title="scipy" class="dd-item active">
+      <li data-nav-id="/data-librarian/organisation/packages/scipy/" title="scipy" class="dd-item ">
         <a href="/data-librarian/organisation/packages/scipy/">
         scipy
         <i class="fas fa-check read-icon"></i>
@@ -1000,7 +1000,7 @@
             
           
           
-            <a href='/data-librarian/'>Modul 3</a> > <a href='/data-librarian/organisation/'>Kursorganisation und Vorbereitungen</a> > <a href='/data-librarian/organisation/packages/'>Python Pakete und Bibliothekten</a> > scipy
+            <a href='/data-librarian/'>Modul 3</a> > <a href='/data-librarian/organisation/'>Kursorganisation und Vorbereitungen</a> > <a href='/data-librarian/organisation/packages/'>Python Pakete und Bibliothekten</a> > numpy
           
         
           
@@ -1024,35 +1024,44 @@
           
             <h1>
               
-              scipy
+              numpy
             </h1>
           
 
         
 
 
-<p><a href="https://docs.scipy.org/doc/scipy/reference/">scipy</a> ist fest mit numpy und pandas verbunden und bietet eine Menge an Funktionen und Methoden aus der Mathematik und Statistik an.</p>
+<p><a href="https://numpy.org/">numpy</a> bietet den <a href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.array.html"><code>array</code></a> als zentrale Datenstruktur. Mit ihm lassen sich numerische Daten effizient im Arbeitsspeicher (RAM) erstellen, ein- und auslesen, bearbeiten und aggregieren.</p>
 
-<p>Für uns ist vor alle das Paket <code>scipy.stats</code> Interessant. Mit ihm können Zufallszahlen aus verschiedensten statistischen Verteilungen generiert werden oder auch statistische Tests durchgeführt werden. <a href="https://docs.scipy.org/doc/scipy/reference/stats.html">Hier</a> finden Sie einen Überblick über alle Methoden des Pakets.</p>
-
-<p>Im folgenden Beispiel wird ein <a href="https://de.wikipedia.org/wiki/Zweistichproben-t-Test">Zweistichproben-t-Test</a> an zwei numerischen Listen durchgeführt.</p>
+<p>Numpy bietet neben dem <code>array</code> viele Funktionen an, mit denen sich effizient Berechnungen auf diesen durchführen lassen können. Außerdem wird die klassische <a href="https://de.wikipedia.org/wiki/Matrix_(Mathematik)">Matrizenrechnung</a> unterstützt.</p>
 
 
 <div class="customnotices">
   <div class="notices_inner" id="code">
-    <pre><code class="language-python"># import the package stats from the library scipy
-from scipy import stats
+    <pre><code class="language-python"># import the library and give it a shorter name 'np'
+import numpy as np
 
-# create two numerical arrays
-x = [12, 10, 11, 13, 14, 10, 13, 13, 22]
-y = [1, 4, 2, 3, 5, 2, 1, 0, 0, 1, 2]
+# create 100 randomly distributed numbers
+X = np.normal.random(size=100)
 
-# perform a two sample t-test, to test if the samples have different means
-stats.ttest_ind(x,y)
+# transform X into a 2-dimensional array of size 20x5
+X.reshape((20, 5))
+
+# calculate the matrix dot product: X*X', where X' is the transformation of X
+X.dot(X.T)
 </code></pre>
 
   </div>
 </div>
+
+
+<p>Beispielsweise kann ein Bild als dreidimensionales numpy array dargestellt werden: Die ersten zwei Dimensionen beschreiben die Farbintensität der Pixel auf einer zweidimensionalen Fläche. Die dritte Dimension speichert die jeweiligen Pixelwerte für die Farbkanäle rot, grün und blau.</p>
+
+<figure>
+    <img src="https://www.oreilly.com/library/view/elegant-scipy/9781491922927/assets/elsp_0105.png"/> <figcaption>
+            <p><a href="https://www.oreilly.com/library/view/elegant-scipy/9781491922927/ch01.html">https://www.oreilly.com/library/view/elegant-scipy/9781491922927/ch01.html</a></p>
+        </figcaption>
+</figure>
 
 
 
@@ -1215,6 +1224,23 @@ stats.ttest_ind(x,y)
             
                 
                     
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
                         
                         
                     
@@ -1281,26 +1307,6 @@ stats.ttest_ind(x,y)
             
             
                 
-                    
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
                     
                 
                 
@@ -1732,10 +1738,10 @@ stats.ttest_ind(x,y)
 	 
 	 
 		
-			<a class="nav nav-prev" href="/data-librarian/organisation/packages/seaborn/" title="seaborn"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/data-librarian/organisation/packages/" title="Python Pakete und Bibliothekten"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/data-librarian/organisation/packages/scikitlearn/" title="scitkit-learn" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/data-librarian/organisation/packages/pandas/" title="pandas" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>

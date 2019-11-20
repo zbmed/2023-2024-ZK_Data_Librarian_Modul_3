@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="Hugo 0.59.1" />
-    <meta name="description" content="Funktionen und Methoden aus der Statistik.">
+    <meta name="description" content="learning materials for the data librarian course">
 <meta name="author" content="Malte Bonart">
 
     <link rel="icon" href="/data-librarian/images/favicon.png" type="image/png">
 
-    <title>scipy :: data librarian - modul 3 - daten analysieren und verstehen</title>
+    <title>Recap: Quiz :: data librarian - modul 3 - daten analysieren und verstehen</title>
 
     
     <link href="/data-librarian/css/nucleus.css?1574263663" rel="stylesheet">
@@ -45,7 +45,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/data-librarian/organisation/packages/scipy/">
+  <body class="" data-url="/data-librarian/organisation/quiz/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -213,7 +213,7 @@
   
     
     <li data-nav-id="/data-librarian/organisation/packages/" title="Python Pakete und Bibliothekten" class="dd-item 
-        parent
+        
         
         
         ">
@@ -315,7 +315,7 @@
  
   
     
-      <li data-nav-id="/data-librarian/organisation/packages/scipy/" title="scipy" class="dd-item active">
+      <li data-nav-id="/data-librarian/organisation/packages/scipy/" title="scipy" class="dd-item ">
         <a href="/data-librarian/organisation/packages/scipy/">
         scipy
         <i class="fas fa-check read-icon"></i>
@@ -362,7 +362,7 @@
  
   
     
-      <li data-nav-id="/data-librarian/organisation/quiz/" title="Recap: Quiz" class="dd-item ">
+      <li data-nav-id="/data-librarian/organisation/quiz/" title="Recap: Quiz" class="dd-item active">
         <a href="/data-librarian/organisation/quiz/">
         Recap: Quiz
         <i class="fas fa-check read-icon"></i>
@@ -996,13 +996,7 @@
             
           
           
-            
-            
-          
-          
-            <a href='/data-librarian/'>Modul 3</a> > <a href='/data-librarian/organisation/'>Kursorganisation und Vorbereitungen</a> > <a href='/data-librarian/organisation/packages/'>Python Pakete und Bibliothekten</a> > scipy
-          
-        
+            <a href='/data-librarian/'>Modul 3</a> > <a href='/data-librarian/organisation/'>Kursorganisation und Vorbereitungen</a> > Recap: Quiz
           
         
           
@@ -1024,34 +1018,132 @@
           
             <h1>
               
-              scipy
+              Recap: Quiz
             </h1>
           
 
         
 
 
-<p><a href="https://docs.scipy.org/doc/scipy/reference/">scipy</a> ist fest mit numpy und pandas verbunden und bietet eine Menge an Funktionen und Methoden aus der Mathematik und Statistik an.</p>
-
-<p>Für uns ist vor alle das Paket <code>scipy.stats</code> Interessant. Mit ihm können Zufallszahlen aus verschiedensten statistischen Verteilungen generiert werden oder auch statistische Tests durchgeführt werden. <a href="https://docs.scipy.org/doc/scipy/reference/stats.html">Hier</a> finden Sie einen Überblick über alle Methoden des Pakets.</p>
-
-<p>Im folgenden Beispiel wird ein <a href="https://de.wikipedia.org/wiki/Zweistichproben-t-Test">Zweistichproben-t-Test</a> an zwei numerischen Listen durchgeführt.</p>
 
 
-<div class="customnotices">
-  <div class="notices_inner" id="code">
-    <pre><code class="language-python"># import the package stats from the library scipy
-from scipy import stats
+<style type="text/css" scoped>
+.quiz fieldset {
+    border-color: black;
+    border-width: 10px;
+    margin-bottom: 1em;
+}
 
-# create two numerical arrays
-x = [12, 10, 11, 13, 14, 10, 13, 13, 22]
-y = [1, 4, 2, 3, 5, 2, 1, 0, 0, 1, 2]
+.quiz legend {
+    font-size: 105%;
+    font-weight: 600;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+}
 
-# perform a two sample t-test, to test if the samples have different means
-stats.ttest_ind(x,y)
-</code></pre>
+.quiz label {
+    display: block;
+    line-height: 1.75em;
+}
 
-  </div>
+.quiz input[type="radio"] {
+    margin-right: 10px;
+    page-break-after: avoid;
+    page-break-before: avoid;
+}
+
+.quiz input[type="submit"] {
+    background: black;
+    color: white;
+    display: block;
+    font-size: 120%;
+    font-weight: 600;
+    height: 2.5em;
+    margin-top: 2em;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.quiz table {
+    color: white;
+    font-weight: bold;
+    margin: 1em auto 2em auto;
+    width: 100%;
+}
+
+.quiz td {
+    padding: 5px 15px;
+    text-align: left;
+    width: 60px;
+}
+
+.quiz td.missing-label,
+.quiz td.missing-score {
+    background: #CECBC2;
+}
+
+.quiz td.right-label,
+.quiz td.right-score {
+    background: #74b559;
+}
+
+.quiz td.wrong-label,
+.quiz td.wrong-score {
+    background: #D01F3C;
+}
+</style>
+
+<script src="/data-librarian/js/quiz.js"></script>
+
+<div class="quiz" id="vorbereitung_quiz">
+  <script>
+    var choices = "Strg+R,Enter,Strg+Enter".split(",");
+    var id = "vorbereitung_quiz";
+    var question = "Mit welcher Tastenkombination können sie Zellen in Jupyter Notebooks ausführen?";
+    var answer =  3 ;
+    if (! (id in questions)){
+      questions[id] = [];
+    }
+    questions[id].push(new Question(question, choices, answer-1));
+</script>
+
+<script>
+    var choices = "weniger als 200,200-400,401-600,mehr als 600".split(",");
+    var id = "vorbereitung_quiz";
+    var question = "Wie viele Pakete sind in Anaconda unter der Linux-Python 3.7 Version schon vorinstalliert?";
+    var answer =  4 ;
+    if (! (id in questions)){
+      questions[id] = [];
+    }
+    questions[id].push(new Question(question, choices, answer-1));
+</script>
+
+<script>
+    var choices = "423448,423000,15,2103".split(",");
+    var id = "vorbereitung_quiz";
+    var question = "Wie viele Zeilen enthält der San Francisco Library Usage Datensatz?";
+    var answer =  1 ;
+    if (! (id in questions)){
+      questions[id] = [];
+    }
+    questions[id].push(new Question(question, choices, answer-1));
+</script>
+
+<script>
+    var choices = "das Paket wird importiert,dem Paket wird der kürzere Name sns zugewiesen,das Standard Design von matplotlib wird angepasst".split(",");
+    var id = "vorbereitung_quiz";
+    var question = "Was macht die Funktion sns.set() aus dem seaborn package?";
+    var answer =  3 ;
+    if (! (id in questions)){
+      questions[id] = [];
+    }
+    questions[id].push(new Question(question, choices, answer-1));
+</script>
+
+  <script>
+    var quiz = new Quiz("vorbereitung_quiz", questions, {"shuffle": true});
+  </script>
 </div>
 
 
@@ -1201,7 +1293,6 @@ stats.ttest_ind(x,y)
             
                 
                     
-                    
                 
                 
 
@@ -1214,9 +1305,6 @@ stats.ttest_ind(x,y)
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -1282,7 +1370,6 @@ stats.ttest_ind(x,y)
             
                 
                     
-                    
                 
                 
 
@@ -1298,9 +1385,6 @@ stats.ttest_ind(x,y)
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -1320,6 +1404,7 @@ stats.ttest_ind(x,y)
             
             
                 
+                    
                     
                 
                 
@@ -1341,6 +1426,9 @@ stats.ttest_ind(x,y)
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -1732,10 +1820,10 @@ stats.ttest_ind(x,y)
 	 
 	 
 		
-			<a class="nav nav-prev" href="/data-librarian/organisation/packages/seaborn/" title="seaborn"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/data-librarian/organisation/packages/scikitlearn/" title="scitkit-learn"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/data-librarian/organisation/packages/scikitlearn/" title="scitkit-learn" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/data-librarian/grundlagen/" title="Grundlagen" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>

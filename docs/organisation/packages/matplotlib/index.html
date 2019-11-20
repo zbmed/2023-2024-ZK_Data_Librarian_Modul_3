@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="Hugo 0.59.1" />
-    <meta name="description" content="learning materials for the data librarian course">
+    <meta name="description" content="Bietet 2D Plotting Funktionalitäten.">
 <meta name="author" content="Malte Bonart">
 
     <link rel="icon" href="/data-librarian/images/favicon.png" type="image/png">
@@ -12,22 +12,30 @@
     <title>matplotlib :: data librarian - modul 3 - daten analysieren und verstehen</title>
 
     
-    <link href="/data-librarian/css/nucleus.css?1573661647" rel="stylesheet">
-    <link href="/data-librarian/css/fontawesome-all.min.css?1573661647" rel="stylesheet">
-    <link href="/data-librarian/css/hybrid.css?1573661647" rel="stylesheet">
-    <link href="/data-librarian/css/featherlight.min.css?1573661647" rel="stylesheet">
-    <link href="/data-librarian/css/perfect-scrollbar.min.css?1573661647" rel="stylesheet">
-    <link href="/data-librarian/css/auto-complete.css?1573661647" rel="stylesheet">
-    <link href="/data-librarian/css/atom-one-dark-reasonable.css?1573661647" rel="stylesheet">
-    <link href="/data-librarian/css/theme.css?1573661647" rel="stylesheet">
-    <link href="/data-librarian/css/hugo-theme.css?1573661647" rel="stylesheet">
-    
-      <link href="/data-librarian/css/theme-green.css?1573661647" rel="stylesheet">
-    
-    
-    
+    <link href="/data-librarian/css/nucleus.css?1574263663" rel="stylesheet">
+    <link href="/data-librarian/css/fontawesome-all.min.css?1574263663" rel="stylesheet">
+    <link href="/data-librarian/css/hybrid.css?1574263663" rel="stylesheet">
+    <link href="/data-librarian/css/featherlight.min.css?1574263663" rel="stylesheet">
+    <link href="/data-librarian/css/perfect-scrollbar.min.css?1574263663" rel="stylesheet">
+    <link href="/data-librarian/css/auto-complete.css?1574263663" rel="stylesheet">
+    <link href="/data-librarian/css/atom-one-dark-reasonable.css?1574263663" rel="stylesheet">
+    <link href="/data-librarian/css/theme.css?1574263663" rel="stylesheet">
+    <link href="/data-librarian/css/hugo-theme.css?1574263663" rel="stylesheet">
+    <link href="/data-librarian/css/animate.css?1574263663" rel="stylesheet">
+    <link href="/data-librarian/css/pretty-checkbox.css?1574263663" rel="stylesheet">
 
-    <script src="/data-librarian/js/jquery-3.3.1.min.js?1573661647"></script>
+    <link rel="stylesheet" type="text/css" href="css/quiz.css">
+
+
+    
+      <link href="/data-librarian/css/theme-green.css?1574263663" rel="stylesheet">
+    
+    <link href="/data-librarian/css/custom.css?1574263663" rel="stylesheet">
+
+
+    <script src="/data-librarian/js/jquery-3.3.1.min.js?1574263663"></script>
+    <script src="js/quiz.js"></script>
+
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +65,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/data-librarian/js/lunr.min.js?1573661647"></script>
-<script type="text/javascript" src="/data-librarian/js/auto-complete.js?1573661647"></script>
+<script type="text/javascript" src="/data-librarian/js/lunr.min.js?1574263663"></script>
+<script type="text/javascript" src="/data-librarian/js/auto-complete.js?1574263663"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/bonartm.github.io\/data-librarian\/";
     
 </script>
-<script type="text/javascript" src="/data-librarian/js/search.js?1573661647"></script>
+<script type="text/javascript" src="/data-librarian/js/search.js?1574263663"></script>
 
     
   </div>
@@ -147,25 +155,6 @@
  
   
     
-      <li data-nav-id="/data-librarian/organisation/notebooks/" title="Jupyter Notebooks" class="dd-item ">
-        <a href="/data-librarian/organisation/notebooks/">
-        Jupyter Notebooks
-        <i class="fas fa-check read-icon"></i>
-        </a>
-    </li>
-     
-  
- 
-
-            
-          
-            
-            
-
-
- 
-  
-    
       <li data-nav-id="/data-librarian/organisation/anaconda/" title="Conda und Anaconda" class="dd-item ">
         <a href="/data-librarian/organisation/anaconda/">
         Conda und Anaconda
@@ -185,9 +174,9 @@
  
   
     
-      <li data-nav-id="/data-librarian/organisation/materialien/" title="Materialien und Datensätze" class="dd-item ">
-        <a href="/data-librarian/organisation/materialien/">
-        Materialien und Datensätze
+      <li data-nav-id="/data-librarian/organisation/notebooks/" title="Jupyter Notebooks" class="dd-item ">
+        <a href="/data-librarian/organisation/notebooks/">
+        Jupyter Notebooks
         <i class="fas fa-check read-icon"></i>
         </a>
     </li>
@@ -204,13 +193,32 @@
  
   
     
-    <li data-nav-id="/data-librarian/organisation/packages/" title="Python Module und Pakete" class="dd-item 
+      <li data-nav-id="/data-librarian/organisation/materialien/" title="San Francisco Library Usage" class="dd-item ">
+        <a href="/data-librarian/organisation/materialien/">
+        San Francisco Library Usage
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/data-librarian/organisation/packages/" title="Python Pakete und Bibliothekten" class="dd-item 
         parent
         
         
         ">
       <a href="/data-librarian/organisation/packages/">
-          Python Module und Pakete
+          Python Pakete und Bibliothekten
           
             <i class="fas fa-check read-icon"></i>
           
@@ -231,9 +239,28 @@
  
   
     
-      <li data-nav-id="/data-librarian/organisation/packages/pandas/" title="Pandas" class="dd-item ">
+      <li data-nav-id="/data-librarian/organisation/packages/numpy/" title="numpy" class="dd-item ">
+        <a href="/data-librarian/organisation/packages/numpy/">
+        numpy
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/data-librarian/organisation/packages/pandas/" title="pandas" class="dd-item ">
         <a href="/data-librarian/organisation/packages/pandas/">
-        Pandas
+        pandas
         <i class="fas fa-check read-icon"></i>
         </a>
     </li>
@@ -319,25 +346,6 @@
 
             
           
-            
-            
-
-
- 
-  
-    
-      <li data-nav-id="/data-librarian/organisation/packages/spacy/" title="spacy" class="dd-item ">
-        <a href="/data-librarian/organisation/packages/spacy/">
-        spacy
-        <i class="fas fa-check read-icon"></i>
-        </a>
-    </li>
-     
-  
- 
-
-            
-          
         
         </ul>
               
@@ -354,68 +362,13 @@
  
   
     
-    <li data-nav-id="/data-librarian/organisation/exercises/" title="Übungen" class="dd-item 
-        
-        
-        
-        ">
-      <a href="/data-librarian/organisation/exercises/">
-          Übungen
-          
-            <i class="fas fa-check read-icon"></i>
-          
-      </a>
-      
-      
-        <ul>
-          
-          
-          
-          
-        
-          
-            
-            
-
-
- 
-  
-    
-      <li data-nav-id="/data-librarian/organisation/exercises/notebooks_exercise/" title="Jupyter Notebooks" class="dd-item ">
-        <a href="/data-librarian/organisation/exercises/notebooks_exercise/">
-        Jupyter Notebooks
+      <li data-nav-id="/data-librarian/organisation/quiz/" title="Recap: Quiz" class="dd-item ">
+        <a href="/data-librarian/organisation/quiz/">
+        Recap: Quiz
         <i class="fas fa-check read-icon"></i>
         </a>
     </li>
      
-  
- 
-
-            
-          
-            
-            
-
-
- 
-  
-    
-      <li data-nav-id="/data-librarian/organisation/exercises/materialien_exercise/" title="Projektordner" class="dd-item ">
-        <a href="/data-librarian/organisation/exercises/materialien_exercise/">
-        Projektordner
-        <i class="fas fa-check read-icon"></i>
-        </a>
-    </li>
-     
-  
- 
-
-            
-          
-        
-        </ul>
-              
-    </li>
   
  
 
@@ -1047,13 +1000,13 @@
             
           
           
-            <a href='/data-librarian/'>Modul 3</a> > <a href='/data-librarian/organisation/'>Kursorganisation und Vorbereitungen</a> > <a href='/data-librarian/organisation/packages/'>Python Module und Pakete</a> > matplotlib
+            <a href='/data-librarian/'>Modul 3</a> > <a href='/data-librarian/organisation/'>Kursorganisation und Vorbereitungen</a> > <a href='/data-librarian/organisation/packages/'>Python Pakete und Bibliothekten</a> > matplotlib
           
-         
+        
           
-         
+        
           
-         
+        
           
         
                  
@@ -1078,14 +1031,38 @@
         
 
 
-
 <p><a href="https://matplotlib.org/">matplotlib</a> ist das Standard-Paket zum Erstellen von wissenschaftlichen 2-dimensionalen statischen Graphiken. Die grundlegende Struktur in matplotlib ist <code>figure</code>, eine leere graphische Fläche, die mit Linien, Balken, Punten, Beschriftungen und Axen befüllt werden kann. Der fertige Plot kann dann in diversen Formaten abgespeichert oder auf dem Bildschirm angezeigt werden.</p>
 
-<pre><code class="language-python">import matplotlib.pyplot as plt
 
+<div class="customnotices">
+  <div class="notices_inner" id="code">
+    <pre><code class="language-python"># import the package and give it the shorter name 'plt'
+# matplotlib inline
+import matplotlib.pyplot as plt
+
+# create some dummy data
 x = range(1, 10)
-plt.plot(x, x, label='quadratic')
+
+# make a simple scatter plot of the data
+plt.plot(x, x, c=&quot;green&quot;, linestyle='', marker='+')
 </code></pre>
+
+  </div>
+</div>
+
+
+
+<div class="customnotices">
+  <div class="notices_inner" id="exercise">
+    <ul>
+<li>Kopieren Sie den Code in ein Jupyter Notebook.</li>
+<li>Ändern Sie die Farbe der Pukte im Plot von grün auf schwarz.</li>
+<li>Ändern Sie den Aufruf so um, dass statt Punkte, Linien angezeigt werden. <a href="https://matplotlib.org/3.1.1/api/_as_gen/matplotlib.pyplot.plot.html">Hier</a> finden Sie die Dokumentation der Funktion <code>matplotlib.pyplot.plot</code>.</li>
+</ul>
+
+  </div>
+</div>
+
 
 
 <footer class=" footline" >
@@ -1094,7 +1071,7 @@ plt.plot(x, x, label='quadratic')
 
 
         
-        </div> 
+        </div>
         
 
       </div>
@@ -1102,1229 +1079,13 @@ plt.plot(x, x, label='quadratic')
     <div id="navigation">
         
         
-        
-        
-            
-            
-                
-                    
-                    
-                
-                
-
-                    
-                    
-                        
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                    
-                
-                
-
-                    
-                    
-                        
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                        
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                        
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                        
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                        
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                        
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                        
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                        
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
 
-                    
-            
         
-                    
-            
-        
-                    
-            
-        
-                    
-                        
             
             
                 
                     
+                    
                 
                 
 
@@ -2338,93 +1099,35 @@ plt.plot(x, x, label='quadratic')
                         
             
             
-                
-                    
-                
                 
-
-                    
-                    
-                    
-
                     
-                        
-            
-            
-                
                     
                 
                 
-
-                    
-                    
-                    
 
                     
-            
-        
                     
                         
-            
-            
-                
-                    
-                
-                
-
                     
                     
-                    
 
-                    
-            
-        
-                    
-            
-        
-                    
-            
-        
                     
                         
             
             
                 
-                    
-                
-                
-
                     
-                    
                         
-                    
-                    
-
-                    
                         
-            
-            
-                
                     
                 
                 
 
                     
                     
-                    
-
-                    
                         
-            
-            
-                
-                    
-                
-                
-
                     
                     
-                    
 
                     
             
@@ -2438,16 +1141,12 @@ plt.plot(x, x, label='quadratic')
                 
                 
 
-                    
                     
                     
-
+                        
                     
-            
-        
                     
-            
-        
+
                     
             
         
@@ -2460,20 +1159,9 @@ plt.plot(x, x, label='quadratic')
                 
                 
 
-                    
                     
                     
-
-                    
                         
-            
-            
-                
-                    
-                
-                
-
-                    
                     
                     
 
@@ -2491,11 +1179,10 @@ plt.plot(x, x, label='quadratic')
 
                     
                     
+                        
                     
-
                     
-            
-        
+
                     
             
         
@@ -2514,12 +1201,16 @@ plt.plot(x, x, label='quadratic')
                     
                     
 
+                    
+            
+        
                     
                         
             
             
                 
                     
+                    
                 
                 
 
@@ -2532,6 +1223,9 @@ plt.plot(x, x, label='quadratic')
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -2556,66 +1250,34 @@ plt.plot(x, x, label='quadratic')
                     
                     
 
-                    
-            
-        
-                    
-            
-        
                     
             
         
                     
-            
-        
-                    
                         
             
             
                 
+                    
                     
                 
                 
 
                     
                     
-                        
-                    
                     
 
                     
-                        
-            
             
-                
-                    
-                
-                
-
-                    
-                    
-                        
-                    
-                    
-
+        
                     
                         
             
             
                 
-                    
-                
-                
-
                     
-                    
-                    
-
-                    
                         
-            
-            
-                
+                        
                     
                 
                 
@@ -2644,9 +1306,6 @@ plt.plot(x, x, label='quadratic')
             
         
                     
-            
-        
-                    
                         
             
             
@@ -2660,18 +1319,8 @@ plt.plot(x, x, label='quadratic')
                     
 
                     
-                        
             
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
+        
                     
             
         
@@ -2683,30 +1332,13 @@ plt.plot(x, x, label='quadratic')
                     
                 
                 
-
-                    
-                    
-                    
 
                     
-            
-        
                     
                         
-            
-            
-                
                     
-                
-                
-
-                    
                     
-                    
 
-                    
-            
-        
                     
             
         
@@ -2739,20 +1371,9 @@ plt.plot(x, x, label='quadratic')
 
                     
                     
-                    
-
-                    
                         
-            
-            
-                
-                    
-                
-                
-
                     
                     
-                    
 
                     
             
@@ -2766,13 +1387,12 @@ plt.plot(x, x, label='quadratic')
                 
                 
 
+                    
                     
+                        
                     
                     
 
-                    
-            
-        
                     
             
         
@@ -2787,20 +1407,9 @@ plt.plot(x, x, label='quadratic')
 
                     
                     
-                    
-
-                    
                         
-            
-            
-                
-                    
-                
-                
-
                     
                     
-                    
 
                     
             
@@ -2818,9 +1427,6 @@ plt.plot(x, x, label='quadratic')
                     
                     
 
-                    
-            
-        
                     
                         
             
@@ -2834,31 +1440,10 @@ plt.plot(x, x, label='quadratic')
                     
                     
 
-                    
-            
-        
-                    
-            
-        
                     
             
         
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                        
                     
-                    
-
-                    
                         
             
             
@@ -2872,18 +1457,8 @@ plt.plot(x, x, label='quadratic')
                     
 
                     
-                        
             
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
+        
                     
             
         
@@ -2896,7 +1471,9 @@ plt.plot(x, x, label='quadratic')
                 
                 
 
+                    
                     
+                        
                     
                     
 
@@ -2915,7 +1492,9 @@ plt.plot(x, x, label='quadratic')
                 
                 
 
+                    
                     
+                        
                     
                     
 
@@ -2928,7 +1507,9 @@ plt.plot(x, x, label='quadratic')
                 
                 
 
+                    
                     
+                        
                     
                     
 
@@ -2944,7 +1525,9 @@ plt.plot(x, x, label='quadratic')
                 
                 
 
+                    
                     
+                        
                     
                     
 
@@ -2960,16 +1543,12 @@ plt.plot(x, x, label='quadratic')
                 
                 
 
-                    
                     
                     
-
+                        
                     
-            
-        
                     
-            
-        
+
                     
             
         
@@ -3155,14 +1734,14 @@ plt.plot(x, x, label='quadratic')
                     
             
         
-        
+
         
 
 
 	 
 	 
 		
-			<a class="nav nav-prev" href="/data-librarian/organisation/packages/pandas/" title="Pandas"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/data-librarian/organisation/packages/pandas/" title="pandas"> <i class="fa fa-chevron-left"></i></a>
 		
 		
 			<a class="nav nav-next" href="/data-librarian/organisation/packages/seaborn/" title="seaborn" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
@@ -3171,23 +1750,24 @@ plt.plot(x, x, label='quadratic')
     </div>
 
     </section>
-    
+
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/data-librarian/js/clipboard.min.js?1573661647"></script>
-    <script src="/data-librarian/js/perfect-scrollbar.min.js?1573661647"></script>
-    <script src="/data-librarian/js/perfect-scrollbar.jquery.min.js?1573661647"></script>
-    <script src="/data-librarian/js/jquery.sticky.js?1573661647"></script>
-    <script src="/data-librarian/js/featherlight.min.js?1573661647"></script>
-    <script src="/data-librarian/js/highlight.pack.js?1573661647"></script>
+    <script src="/data-librarian/js/clipboard.min.js?1574263663"></script>
+    <script src="/data-librarian/js/perfect-scrollbar.min.js?1574263663"></script>
+    <script src="/data-librarian/js/perfect-scrollbar.jquery.min.js?1574263663"></script>
+    <script src="/data-librarian/js/jquery.sticky.js?1574263663"></script>
+    <script src="/data-librarian/js/featherlight.min.js?1574263663"></script>
+    <script src="/data-librarian/js/highlight.pack.js?1574263663"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/data-librarian/js/modernizr.custom-3.6.0.js?1573661647"></script>
-    <script src="/data-librarian/js/learn.js?1573661647"></script>
-    <script src="/data-librarian/js/hugo-learn.js?1573661647"></script>
+    <script src="/data-librarian/js/modernizr.custom-3.6.0.js?1574263663"></script>
+    <script src="/data-librarian/js/learn.js?1574263663"></script>
+    <script src="/data-librarian/js/hugo-learn.js?1574263663"></script>
 
-    <link href="/data-librarian/mermaid/mermaid.css?1573661647" rel="stylesheet" />
-    <script src="/data-librarian/mermaid/mermaid.js?1573661647"></script>
+    <link href="/data-librarian/mermaid/mermaid.css?1574263663" rel="stylesheet" />
+    <script src="/data-librarian/mermaid/mermaid.js?1574263663"></script>
+
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

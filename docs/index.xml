@@ -11,13 +11,24 @@
     
     
     <item>
+      <title>numpy</title>
+      <link>https://bonartm.github.io/data-librarian/organisation/packages/numpy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bonartm.github.io/data-librarian/organisation/packages/numpy/</guid>
+      <description>numpy bietet den array als zentrale Datenstruktur. Mit ihm lassen sich numerische Daten effizient im Arbeitsspeicher (RAM) erstellen, ein- und auslesen, bearbeiten und aggregieren.
+Numpy bietet neben dem array viele Funktionen an, mit denen sich effizient Berechnungen auf diesen durchführen lassen können. Außerdem wird die klassische Matrizenrechnung unterstützt.
+# import the library and give it a shorter name &#39;np&#39; import numpy as np # create 100 randomly distributed numbers X = np.</description>
+    </item>
+    
+    <item>
       <title>Kurseinheiten</title>
       <link>https://bonartm.github.io/data-librarian/organisation/kurseinheiten/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://bonartm.github.io/data-librarian/organisation/kurseinheiten/</guid>
-      <description>Wir haben das Modul in wöchentliche Einheiten, die jeweils ein Gebiet aufgreifen und vertiefen, unterteilt. Sie können sich die Zeit für die Bearbeitung der Einheiten selber aufteilen, sollten aber jede Einheit am Ende der jeweiligen Woche abgeschlossen haben.
-Die Einheiten schließen in der Regel mit praktischen Übungen ab. Ihre Lösungen können Sie einreichen, um Feedback von den Kursleitern zu erhalten. Der erste Teil des Moduls (21-01 - 16.02) wird von Malte Bonart betreut und behandelt grundlegende klassische Konzepte der angewandten Statistik.</description>
+      <description>Wir haben das Modul in wöchentliche Einheiten, die jeweils ein Gebiet aufgreifen und vertiefen, unterteilt. Sie können sich die Zeit für die Bearbeitung der Einheiten selber aufteilen, sollten aber jede Einheit am Ende der jeweiligen Woche abgeschlossen haben. Am Ende einer Woche wird die nächste Einheit auf dieser Webeite freigeschaltet.
+Jede Einheit umfasst ein kleines praktisches Projekt, welches Sie in Form eines Jupyter Notebooks bearbeiten und aufbereiten. Ihr Notebook können Sie einreichen, um Feedback von den Kursleitern zu erhalten.</description>
     </item>
     
     <item>
@@ -26,17 +37,8 @@ Die Einheiten schließen in der Regel mit praktischen Übungen ab. Ihre Lösunge
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://bonartm.github.io/data-librarian/organisation/termine/</guid>
-      <description>Datum Titel Ziele     21.01 – 26.01 Vorbereitung Installieren Sie die benötigte Software Laden Sie die Kursmaterialien und Datensätze herunter Stellen Sie sicher, dass Python Notebooks lokal ausgeführt werden können   27.01 – 02.02 Grundlagen und deskriptive Statistik I Beschreiben Sie Datensätze mit dem statistischen Grundvokabular Lesen Sie Datensätze als DataFrames in Python ein Filtern Sie DataFrames nach Spalten oder Zeilen Erstellen Sie absolute und relative Häufigkeitstabellen Berechnen Sie grundlegende Lagemaße   03.</description>
-    </item>
-    
-    <item>
-      <title>Jupyter Notebooks</title>
-      <link>https://bonartm.github.io/data-librarian/organisation/notebooks/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://bonartm.github.io/data-librarian/organisation/notebooks/</guid>
-      <description>Die meisten Aufgaben und Code-Beispiele in diesem Modul werden über Jupyter Notebooks verteilt. Notebooks bestehen immer aus Text oder Code Zellen (cells). Der Python Code in den Zellen kann ausgeführt werden und das Ergenis wird direkt im Notebook angezeigt. Somit eignen sich Notebooks, um mit Code interatkiv zu experimentieren und für andere Personen aufzubereiten.
-Notebook-Dateien erkennen Sie an der Dateiendung .ipynb. Diese Dateien können Sie mit jupyter in Ihrem Web-Broser öffnen.</description>
+      <description>Hier finden Sie einen Überblick über die einzelnen Moduleinheiten. Die Tabelle können Sie sich auch als .pdf anzeigen lassen und ausdrucken:
+  Überblick Modul 3   überblick_modul3.pdf  (25 ko)       Datum Titel Ziele     21.01 – 26.01 Vorbereitung Installieren Sie die benötigte Software Laden Sie die Kursmaterialien und Datensätze herunter Stellen Sie sicher, dass Python Notebooks lokal ausgeführt werden können   27.</description>
     </item>
     
     <item>
@@ -45,19 +47,37 @@ Notebook-Dateien erkennen Sie an der Dateiendung .ipynb. Diese Dateien können S
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://bonartm.github.io/data-librarian/organisation/anaconda/</guid>
-      <description>Conda ist eine freie und offene Softwarepaketverwaltung für Python. Neben der Möglichkeit, Pakete (package) für Python aus dem Internet zu installieren, können mit conda virtuelle Umgebungen (environments) angelegt werden. Diese Umgebungen beinhalten nur die Pakete und Python Versionen, die für ein spezifisches Projekt gebraucht werden. Umgebungen können einfach mit anderen Personen geteilt werden, sodass sichergestellt ist, dass alle Programmierer mit den gleichen Paketen und Versionen arbeiten.
-&#34;Anaconda&#34; by jaumescar is licensed under CC BY-NC-SA 2.</description>
+      <description>Conda ist eine freie und offene Softwarepaketverwaltung für Python. Neben der Möglichkeit, Pakete (packages, libraries) für Python aus dem Internet zu installieren, können mit conda virtuelle Umgebungen (environments) angelegt werden. Diese Umgebungen beinhalten nur die Pakete und Python Versionen, die für ein spezifisches Projekt gebraucht werden. Umgebungen können mit anderen Personen geteilt werden, sodass sichergestellt ist, dass alle Programmierer mit den gleichen Paketen und Versionen arbeiten, auch wenn sie unterschiedliche Systeme (Windows, Linux, MacOS) verwenden.</description>
     </item>
     
     <item>
-      <title>Materialien und Datensätze</title>
+      <title>Jupyter Notebooks</title>
+      <link>https://bonartm.github.io/data-librarian/organisation/notebooks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bonartm.github.io/data-librarian/organisation/notebooks/</guid>
+      <description>Die Projekt-Aufgaben und Code-Beispiele in diesem Modul werden über Jupyter Notebooks erstellt und verteilt.
+Jupyter Notebooks bieten eine browserbasierte graphische Schnittstelle zur Python Programmierumgebung. Deswegen können Notebooks auf jedem System gestartet werden, man benötigt dazu nur einen Web-Browser und eine lokale installierte Version von Python.
+Darüber hinaus bieten Notebooks die Möglichkeit Text, Visualisierungen und Code in einer integrierten Datei zu erstellen. Somit können einfach statistische Reports und Analysen erstellt werden. Die Replizierbarkeit der Ergebnisse ist auch gewährleistet, da jede Person, die Programmierschritte im Notebook auf ihrem Rechner wiederholen kann.</description>
+    </item>
+    
+    <item>
+      <title>San Francisco Library Usage</title>
       <link>https://bonartm.github.io/data-librarian/organisation/materialien/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://bonartm.github.io/data-librarian/organisation/materialien/</guid>
       <description>Im ersten Teil des Moduls werden Sie einen offenen Kundendatensatz der Bibliothek in San Francisco analysieren.
-Den Source Code für diese Webseite und die weiteren Kursmaterialien finden Sie auf einem öffentlichen GitHub Repository. Sie können sich das komplette Repository herunterladen indem sie
-git clone  in der Kommandozeile ausführen.</description>
+ The Integrated Library System (ILS) is composed of bibliographic records including inventoried items, and patron records including circulation data. The data is used in the daily operation of the library, including circulation, online public catalog, cataloging, acquisitions, collection development, processing, and serials control. This dataset represents the usage of inventoried items by patrons &amp;hellip; (Abstract taken from here)</description>
+    </item>
+    
+    <item>
+      <title>Recap: Quiz</title>
+      <link>https://bonartm.github.io/data-librarian/organisation/quiz/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bonartm.github.io/data-librarian/organisation/quiz/</guid>
+      <description>.quiz fieldset { border-color: black; border-width: 10px; margin-bottom: 1em; } .quiz legend { font-size: 105%; font-weight: 600; padding-left: 15px; padding-right: 15px; padding-top: 15px; } .quiz label { display: block; line-height: 1.75em; } .quiz input[type=&#34;radio&#34;] { margin-right: 10px; page-break-after: avoid; page-break-before: avoid; } .quiz input[type=&#34;submit&#34;] { background: black; color: white; display: block; font-size: 120%; font-weight: 600; height: 2.5em; margin-top: 2em; text-transform: uppercase; width: 100%; } .quiz table { color: white; font-weight: bold; margin: 1em auto 2em auto; width: 100%; } .</description>
     </item>
     
     <item>
@@ -194,13 +214,14 @@ Machinelles Lernen und insbesondere Themen wie künstliche Intelligenz, Neuronal
     </item>
     
     <item>
-      <title>Pandas</title>
+      <title>pandas</title>
       <link>https://bonartm.github.io/data-librarian/organisation/packages/pandas/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://bonartm.github.io/data-librarian/organisation/packages/pandas/</guid>
-      <description>pandas vereinfacht stark die Bearbeitung, Transformation, Aggregation und Zusammenfassung von Datensätzen sowie deren Import und Export in Python. Die zentralen Datenstrukturen in pandas sind Series und DataFrame. Series sind eindimensionale Listen (array) eines Datentypes (z.B. $[1, 3, 2, 5]$). In einem DataFrame werden mehrere Series gleicher Länge spaltenweise zu einer zweidimensionalen Tabelle, ähnlich wie einer Excel Tabelle, zusammengefasst. Ein DataFrame besitzt außerdem auch immer Spalten- und Zeilennamen (index).
-import pandas as pd df = pd.</description>
+      <description>pandas baut auf numpy auf und vereinfacht stark die Bearbeitung, Transformation, Aggregation und Zusammenfassung von zweidimensionalen Datensätzen sowie deren Import und Export in Python. Die zentralen Datenstrukturen in pandas sind Series und DataFrame.
+Series sind eindimensionale Listen eines Datentypes, ähnlich wie arrays in numpy. Datentypen können ganzzahlige Zahlen (int), binäre Werte vom Typ true oder false (bool), Strings (str) oder reale Zahlen (float) sein.
+In einem DataFrame werden mehrere Series gleicher Länge spaltenweise zu einer zweidimensionalen Tabelle (wie einer Excel Tabelle) zusammengefasst.</description>
     </item>
     
     <item>
@@ -228,7 +249,7 @@ import pandas as pd df = pd.</description>
       
       <guid>https://bonartm.github.io/data-librarian/organisation/packages/matplotlib/</guid>
       <description>matplotlib ist das Standard-Paket zum Erstellen von wissenschaftlichen 2-dimensionalen statischen Graphiken. Die grundlegende Struktur in matplotlib ist figure, eine leere graphische Fläche, die mit Linien, Balken, Punten, Beschriftungen und Axen befüllt werden kann. Der fertige Plot kann dann in diversen Formaten abgespeichert oder auf dem Bildschirm angezeigt werden.
-import matplotlib.pyplot as plt x = range(1, 10) plt.plot(x, x, label=&#39;quadratic&#39;)  </description>
+# import the package and give it the shorter name &#39;plt&#39; # matplotlib inline import matplotlib.pyplot as plt # create some dummy data x = range(1, 10) # make a simple scatter plot of the data plt.</description>
     </item>
     
     <item>
@@ -246,9 +267,8 @@ import matplotlib.pyplot as plt x = range(1, 10) plt.plot(x, x, label=&#39;quadr
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://bonartm.github.io/data-librarian/organisation/packages/seaborn/</guid>
-      <description>seaborn baut auf matplotlib auf und bietet eine Vielzahl von Funktionen, die es erlauben schnell und einfach schöne statistische Visualisierungen zu erstellen.
-```python import matplotlib.pyplot as plt import seaborn as sns
-sns.set() x = range(1, 10) plt.plot(x, x, label=&amp;lsquo;quadratic&amp;rsquo;)</description>
+      <description>seaborn baut auf matplotlib auf und bietet eine Vielzahl von Funktionen, die es erlauben schnell und einfach schöne statistische Visualisierungen zu erstellen. Seaborn ist also keine komplett eigenenständige Graphik-Bibliothek, sondern nutzt intern die Funktionalitäten und Datenstrukturen von matplotlib.
+Eine wichtige Funktion ist die sns.set() Methode. Wenn sie am Anfang eines Python-Scripts ausgeführt wird, wird intern das Design der Plots erheblich verbessert. Alle plots, die nach dem Aufruf der Funktion erstellt werden, sehen viel besser aus.</description>
     </item>
     
     <item>
@@ -257,7 +277,10 @@ sns.set() x = range(1, 10) plt.plot(x, x, label=&amp;lsquo;quadratic&amp;rsquo;)
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://bonartm.github.io/data-librarian/organisation/packages/scipy/</guid>
-      <description>scipy bietet eine Menge an Funktionen und Methoden aus der Statistik, z.B. für die Durchführung eines Mittelwerttests.</description>
+      <description>scipy ist fest mit numpy und pandas verbunden und bietet eine Menge an Funktionen und Methoden aus der Mathematik und Statistik an.
+Für uns ist vor alle das Paket scipy.stats Interessant. Mit ihm können Zufallszahlen aus verschiedensten statistischen Verteilungen generiert werden oder auch statistische Tests durchgeführt werden. Hier finden Sie einen Überblick über alle Methoden des Pakets.
+Im folgenden Beispiel wird ein Zweistichproben-t-Test an zwei numerischen Listen durchgeführt.
+# import the package stats from the library scipy from scipy import stats # create two numerical arrays x = [12, 10, 11, 13, 14, 10, 13, 13, 22] y = [1, 4, 2, 3, 5, 2, 1, 0, 0, 1, 2] # perform a two sample t-test, to test if the samples have different means stats.</description>
     </item>
     
     <item>
@@ -266,34 +289,9 @@ sns.set() x = range(1, 10) plt.plot(x, x, label=&amp;lsquo;quadratic&amp;rsquo;)
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://bonartm.github.io/data-librarian/organisation/packages/scikitlearn/</guid>
-      <description>scikit-learn ist ein umfangreiches Paket für machinelles Lernen in Python. Es bietet eine Vielzahl an verschiedenen Algorithmen, mit denen zum Beispiel Vorhersagen oder Bilderkennung durchgeführt werden können.</description>
-    </item>
-    
-    <item>
-      <title>spacy</title>
-      <link>https://bonartm.github.io/data-librarian/organisation/packages/spacy/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://bonartm.github.io/data-librarian/organisation/packages/spacy/</guid>
-      <description>spaCy ist eine umfangreiche und professionelle Bibliothek für Textverarbeitung und -analysen.</description>
-    </item>
-    
-    <item>
-      <title>Jupyter Notebooks</title>
-      <link>https://bonartm.github.io/data-librarian/organisation/exercises/notebooks_exercise/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://bonartm.github.io/data-librarian/organisation/exercises/notebooks_exercise/</guid>
-      <description> Laden Sie [folgendes Notebook]() herunter Starten Sie Jupyter Notebook über die Kommandozeile oder über den Anaconda Navigator Navigieren Sie zu dem Notebook und öffnen Sie es. Markieren Sie die Code-Zelle und führen Sie sie mit einem Klick auf den Run Button oder mit der Tastenkombination Strg+Enter aus Versuchen Sie, die Farbe der Punkte im Plot von rot auf grün zu ändern  </description>
-    </item>
-    
-    <item>
-      <title>Projektordner</title>
-      <link>https://bonartm.github.io/data-librarian/organisation/exercises/materialien_exercise/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://bonartm.github.io/data-librarian/organisation/exercises/materialien_exercise/</guid>
-      <description> Erstellen Sie einen Ordner auf Ihrem Computer Laden Sie den Datensatz Library_Usage.csv aus dem Internet herunter und speichern Sie ihn im Projektordner ab Lesen Sie sich die Beschreibung des Datensatzes durch. In dieser Excel Tabelle finden Sie eine detallierte Erklärung der einzelnen Merkmale  </description>
+      <description>scikit-learn ist eine umfangreiche Bibliothek für maschinelles Lernen in Python. Es bietet eine Vielzahl an verschiedenen Algorithmen, mit denen zum Beispiel Vorhersagen oder Bilderkennung durchgeführt werden können.
+  Faces recognition example using eigenfaces and SVMshttps://scikit-learn.org/stable/auto_examples/applications/plot_face_recognition.html#sphx-glr-auto-examples-applications-plot-face-recognition-py
+  # import the packages import numpy as np from sklearn.linear_model import LinearRegression # create some dummy dependent and independent variable X = np.array([[1, 1], [1, 2], [2, 2], [2, 3]]) y = - 1 * X[:,0] + 2 * X[:,1] # estimate a linear regression and print out the coefficients reg = LinearRegression().</description>
     </item>
     
   </channel>
