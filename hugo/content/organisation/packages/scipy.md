@@ -19,14 +19,27 @@ hidden = false
 LastModifierDisplayName = ""
 # Email of this page modifier. If set with LastModifierDisplayName, it will be displayed in the footer
 LastModifierEmail = ""
-+++ 
+description = "Funktionen und Methoden aus der Statistik."
+
++++
+
+[scipy](https://docs.scipy.org/doc/scipy/reference/) ist fest mit numpy und pandas verbunden und bietet eine Menge an Funktionen und Methoden aus der Mathematik und Statistik an.
+
+Für uns ist vor alle das Paket `scipy.stats` Interessant. Mit ihm können Zufallszahlen aus verschiedensten statistischen Verteilungen generiert werden oder auch statistische Tests durchgeführt werden. [Hier](https://docs.scipy.org/doc/scipy/reference/stats.html) finden Sie einen Überblick über alle Methoden des Pakets.
+
+Im folgenden Beispiel wird ein [Zweistichproben-t-Test](https://de.wikipedia.org/wiki/Zweistichproben-t-Test) an zwei numerischen Listen durchgeführt.
 
 
+{{% customnotice code%}}
+```python
+# import the package stats from the library scipy
+from scipy import stats
 
-[scipy](https://www.scipy.org/) bietet eine Menge an Funktionen und Methoden aus der Statistik, z.B. für die Durchführung [eines Mittelwerttests](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.ttest_ind.html).
+# create two numerical arrays
+x = [12, 10, 11, 13, 14, 10, 13, 13, 22]
+y = [1, 4, 2, 3, 5, 2, 1, 0, 0, 1, 2]
 
-
-
-
-
-
+# perform a two sample t-test, to test if the samples have different means
+stats.ttest_ind(x,y)
+```
+{{% /customnotice %}}

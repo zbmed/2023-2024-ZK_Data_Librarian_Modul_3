@@ -1,10 +1,8 @@
 +++
 title = "Termine"
-# If set, this will be used for the page's menu entry (instead of the `title` attribute)
-# menuTitle = "Einstieg"
 weight = 12
 # The title of the page in menu will be prefixed by this HTML content
- # pre = "<b>1. </b>"
+# pre = "<b>1. </b>"
 # pre = "<i class='fab fa-github'></i>"
 # Table of content (toc) is enabled by default. Set this parameter to true to disable it.
 # Note: Toc is always disabled for chapter pages
@@ -19,7 +17,11 @@ hidden = false
 LastModifierDisplayName = ""
 # Email of this page modifier. If set with LastModifierDisplayName, it will be displayed in the footer
 LastModifierEmail = ""
-+++ 
++++
+
+Hier finden Sie einen Überblick über die einzelnen Moduleinheiten. Die Tabelle können Sie sich auch als `.pdf` anzeigen lassen und ausdrucken:
+
+{{%attachments title="Überblick Modul 3" pattern="überblick_modul3.pdf"/%}}
 
 
 | Datum         | Titel                                       | Ziele                                                                                                                                                                                                                              |
@@ -32,9 +34,3 @@ LastModifierEmail = ""
 | 24.02 – 01.03 | Maschinelles Lernen III                     | Beschreiben Sie die Funktionsweise von Text-Analyse mit `NLTK` oder `spaCy` <br> Formulieren Sie einfache quantitative Fragen für den Projekttag als Expose (max. 1 Seite Text)                                                                                                                   |
 | 02.03 – 04.03 | Vorbereitung Präsenztag                     | Suchen Sie nach geeigneten Daten für den Projekttag <br> Schicken Sie Ihre inhaltlichen und fachlichen Fragen an die Kursleiter                                                                                                                              |
 | 5.03          | Präsenztag                                  | Nehmen Sie an der Frage und Antwortrunde teil <br> Finden Sie geeignete Daten zum Lösen der Fragen  <br> Beantworten Sie Ihre Frage mit den gelernten statistischen Tools <br> Bereiten Sie die Ergebnisse in Form einer Visualisierung auf <br> Stellen Sie die Ergebnisse in einer Kurzpräsentation in Ihrer Gruppe vor (< 5 Minuten)   |
-
-
-
-
-
-

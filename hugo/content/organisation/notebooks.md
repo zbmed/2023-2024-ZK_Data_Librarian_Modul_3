@@ -2,9 +2,9 @@
 title = "Jupyter Notebooks"
 # If set, this will be used for the page's menu entry (instead of the `title` attribute)
 # menuTitle = "Einstieg"
-weight = 13
+weight = 14
 # The title of the page in menu will be prefixed by this HTML content
- # pre = "<b>1. </b>"
+# pre = "<b>1. </b>"
 # pre = "<i class='fab fa-github'></i>"
 # Table of content (toc) is enabled by default. Set this parameter to true to disable it.
 # Note: Toc is always disabled for chapter pages
@@ -19,25 +19,37 @@ hidden = false
 LastModifierDisplayName = ""
 # Email of this page modifier. If set with LastModifierDisplayName, it will be displayed in the footer
 LastModifierEmail = ""
-+++ 
++++
+
+Die Projekt-Aufgaben und Code-Beispiele in diesem Modul werden über [*Jupyter Notebooks*](https://jupyter.org/) erstellt und verteilt.
+
+Jupyter Notebooks bieten eine browserbasierte graphische Schnittstelle zur Python Programmierumgebung. Deswegen können Notebooks auf jedem System gestartet werden, man benötigt dazu nur einen Web-Browser und eine lokale installierte Version von Python.
+
+Darüber hinaus bieten Notebooks die Möglichkeit **Text, Visualisierungen und Code** in einer integrierten Datei zu erstellen. Somit können einfach statistische Reports und Analysen erstellt werden. Die **Replizierbarkeit** der Ergebnisse ist auch gewährleistet, da jede Person, die Programmierschritte im Notebook auf ihrem Rechner wiederholen kann.
+
+Notebooks bestehen immer aus Text oder Code Zellen (`cells`). Der Python Code in den Zellen kann ausgeführt werden und das Ergenis wird direkt im Notebook angezeigt. Somit eignen sich Notebooks, um mit Code interatkiv zu experimentieren und für andere Personen aufzubereiten.
+
+*Jupyter Notebook* enthält einen Dateimanager mit dem Sie durch die Ordner und Dateien Ihres Systems navigieren können. Mit einem Klick auf eine Notebook-Dateie öffnet sich ein neues Browser-Tab mit dem Notebook.
+
+{{% customnotice exercise%}}
+
+1. Laden Sie [dieses Notebook](../notebooks.files/tutorial_jupyter.ipynb) herunter (Rechtsklick -> Ziel speichern unter...)
+2. Starten Sie *Jupyter Notebook* über die Kommandozeile oder über den *Anaconda Navigator*
+3. Navigieren Sie zu dem Notebook und öffnen Sie es.
+4. Markieren Sie die *Code-Zelle* und führen Sie sie mit einem Klick auf den `Run` Button oder mit der Tastenkombination `Strg`+`Enter` aus
+5. Versuchen Sie, die Farbe der Punkte im Plot von *Grün* auf *Rot* zu ändern
+6. Fügen Sie das Datum und Ihren Namen der *Text-Zelle* hinzu
+{{% /customnotice %}}
 
 
-Die meisten Aufgaben und Code-Beispiele in diesem Modul werden über [*Jupyter Notebooks*](https://jupyter.org/) verteilt. Notebooks bestehen immer aus Text oder Code Zellen (`cells`). Der Python Code in den Zellen kann ausgeführt werden und das Ergenis wird direkt im Notebook angezeigt. Somit eignen sich Notebooks, um mit Code interatkiv zu experimentieren und für andere Personen aufzubereiten. 
+{{% customnotice tip%}}
 
-Notebook-Dateien erkennen Sie an der Dateiendung `.ipynb`. Diese Dateien können Sie mit *jupyter* in Ihrem Web-Broser öffnen. 
-
-Den *jupyter* Server starten Sie indem Sie 
+- Notebook-Dateien erkennen Sie immer an der Dateiendung `.ipynb`. Diese Dateien können Sie in *Jupyter* mit dem integrierten Dateimanager öffnen.
+- Jupyter starten Sie entweder über den *Anaconda Navigator* oder indem Sie den folgenden Befehl in Ihrer Kommandozeile ausführen (Die Kommandozeile danach nicht wieder schließen!):
 ```shell
 jupyter notebook
 ```
-in der Kommandozeile eingeben. Alternativ können Sie auch das Progamm *Anaconda Navigator* auf Ihrem Rechner suchen und ausführen. Der *Anaconda Navigator* bietet eine graphische Oberfläche für *Anaconda*. Von dort können Sie *Jupyter Notebook* starten. 
+- Rufen Sie [http://localhost:8890](http://localhost:8890/tree) in Ihrem Browser auf, um zur Oberfläche von Jupyter zu gelangen.
+{{% /customnotice %}}
 
-Wenn sie das Progamm ausführen, öffnet sich automatisch Ihr Web-Browser und verweist auf die Adresse [http://localhost:8890](http://localhost:8890/tree). Dort finden Sie nun die Oberfläche von *Jupyter Notebook*. Sollte sich Ihr Browser nicht automatisch öffnen, so können Sie auch manuell [http://localhost:8890](http://localhost:8890/tree) in Ihrem Browser aufrufen. 
-
-*Jupyter Notebook* enthält einen Datei-Explorer mit dem Sie durch die Ordner und Dateien Ihres Systems navigieren können. Mit einem Klick auf Notebook-Dateien (`.ipynb`) öffnet sich ein neues Tab mit dem Notebook.
-
-
-
-
-
-
+{{%attachments title="Jupyter Notebook" pattern=".ipynb"/%}}

@@ -2,7 +2,7 @@
 title = "Grundlagen"
 # If set, this will be used for the page's menu entry (instead of the `title` attribute)
 # menuTitle = "Einführung"
-weight = 20
+weight = 200
 # The title of the page in menu will be prefixed by this HTML content
  pre = "<b>2. </b>"
 # pre = "<i class='fab fa-github'></i>"
@@ -20,33 +20,32 @@ hidden = false
 LastModifierDisplayName = ""
 # Email of this page modifier. If set with LastModifierDisplayName, it will be displayed in the footer
 LastModifierEmail = ""
-+++ 
++++
 
 
 ### 27.01 – 02.02
 
-# Grundlagen und deskriptive Statistik I
+# Grundlagen und deskriptive Statistik
 
-Dieses Modul gibt zuerst eine Einführung in die Aufgaben und grundlegenden Begriffe der angewandten Statistik. Im zweiten Teil wird das `pandas` Paket eingeführt und gezeigt wie Datensätze in Python eingelesen und bearbeitet werden können.
+Diese Einheit gibt eine Einführung in die Aufgaben und grundlegenden Begriffe der angewandten Statistik. Im zweiten Teil wird das `pandas` Paket vorgestellt und gezeigt, wie Datensätze eingelesen und bearbeitet werden können.
 
 ## Ziele
 
 - Beschreiben Sie Datensätze mit dem statistischen Grundvokabular
-- Lesen Sie Datensätze als DataFrames in Python ein
-- Filtern Sie DataFrames nach Spalten oder Zeilen
+- Lesen Sie Datensätze als `DataFrames` in Python ein
+- Filtern Sie `DataFrames` nach Spalten oder Zeilen
 - Erstellen Sie absolute und relative Häufigkeitstabellen
 - Berechnen Sie grundlegende Lagemaße, wie Median und Mittelwert
 
+{{% customnotice exercise %}}
 
+### Projektaufgabe
 
-{{% notice info %}}
-Die Pressestelle der San Francisco Public Library möchte in ihrem aktuellen Online-Artikel zum Kundenstamm der Bibliothek einige interessanten Zahlen präsentieren. Deswegen werden Sie um Hilfe gebeten: Wie viele Senioren und Kinder sind Kunden der San Francisco Public Library? Wie viele Nutzer möchten per Mail informiert werden? Wie alt sind diese Nutzer durchschnnittlich im Vergleich zu Nutzern, die per Post informiert werden möchten? 
-{{% /notice %}}
+Die Pressestelle der San Francisco Public Library möchte in ihrem aktuellen Online-Artikel zum Kundenstamm der Bibliothek einige interessanten Zahlen zum Thema Alter und Bibliotheksnutzung präsentieren.
 
-Senden Sie bis zum Ende der Woche (spätestens bis Samstag) Ihre Beschreibung des Datensatzes aus Übung 1 zusammen mit den beantworteten Fragen in Form eines *Python Notebooks* an [malte@bonart.de] (mailto:malte@bonart.de). 
+Lesen Sie den Datensatz ein und berechnen Sie einige interessante Statistiken.
 
+Wie viele Senioren und Kinder sind Kunden der San Francisco Public Library? Wie viele Nutzer möchten per Mail informiert werden? Wie alt sind diese Nutzer durchschnnittlich im Vergleich zu Nutzern, die per Post informiert werden möchten?
+{{% /customnotice %}}
 
-
-
-
-
+Senden Sie bis zum Ende der Woche (spätestens bis Samstag) Ihre Beschreibung des Datensatzes aus Übung 1 zusammen mit den beantworteten Fragen in Form eines *Python Notebooks* an [malte@bonart.de] (mailto:malte@bonart.de).

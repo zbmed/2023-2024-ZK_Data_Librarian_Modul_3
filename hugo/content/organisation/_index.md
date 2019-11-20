@@ -1,42 +1,22 @@
 +++
 title = "Kursorganisation und Vorbereitungen"
-# If set, this will be used for the page's menu entry (instead of the `title` attribute)
-# menuTitle = "Einstieg"
 weight = 10
-# The title of the page in menu will be prefixed by this HTML content
- pre = "<b>1. </b>"
-# pre = "<i class='fab fa-github'></i>"
-# Table of content (toc) is enabled by default. Set this parameter to true to disable it.
-# Note: Toc is always disabled for chapter pages
-disableToc = "false"
-# The title of the page in menu will be postfixed by this HTML content
-post = ""
-# Set the page as a chapter, changing the way it's displayed
+pre = "<b>1. </b>"
 chapter = true
-# Hide a menu entry by setting this to true
 hidden = false
-# Display name of this page modifier. If set, it will be displayed in the footer.
 LastModifierDisplayName = ""
-# Email of this page modifier. If set with LastModifierDisplayName, it will be displayed in the footer
 LastModifierEmail = ""
-+++ 
++++
 
 ### 21.01 – 26.01
 
 # Kursorganisation und Vorbereitungen
 
-
-Diese Einheit gibt einen Überblick über die Kursinhalte, wichtige Termine und leitet Sie durch die Installation der benötigten Software und Pakete.
+Diese Einheit gibt einen Überblick über die Kursinhalte, wichtige Termine und die benötigte Software und Python-Pakete.
 
 ## Ziele
 
-- Installieren Sie die benötigte Software (Anaconda)
-- Laden Sie die Kursmaterialien und Datensätze herunter 
+- Installieren Sie Anaconda mit Python 3.7 auf Ihrem Rechner
+- Erstellen Sie einen Projektordner indem Sie das GitHub-Repository mit den Kursmaterialien herunterladen
+- Fügen Sie den Datensatz Ihrem Projektordner hinzu
 - Stellen Sie sicher, dass Python Notebooks lokal ausgeführt werden können
-
-
-
-
-
-
-

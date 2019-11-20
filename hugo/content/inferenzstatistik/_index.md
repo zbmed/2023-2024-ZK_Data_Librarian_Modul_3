@@ -2,7 +2,7 @@
 title = "Inferenzstatistik "
 # If set, this will be used for the page's menu entry (instead of the `title` attribute)
 # menuTitle = "Einführung"
-weight = 60
+weight = 400
 # The title of the page in menu will be prefixed by this HTML content
  pre = "<b>4. </b>"
 # pre = "<i class='fab fa-github'></i>"
@@ -20,27 +20,21 @@ hidden = false
 LastModifierDisplayName = ""
 # Email of this page modifier. If set with LastModifierDisplayName, it will be displayed in the footer
 LastModifierEmail = ""
-+++ 
++++
 
 
 ### 10.02 – 16.02
 
 # Grundlagen der Inferenzstatistik und Konfidenzintervalle
 
-Diese Einheit gibt einen Einblick in die Inferenzstatistik und stellt die Berechnung von Konfidenzintervallen vor. 
+Diese Einheit gibt einen Einblick in die Inferenzstatistik und stellt die Berechnung von Konfidenzintervallen vor.
 
 ## Ziele
 
-- Berechnen und visualisieren Sie Konfidenzintervalle für den Mittelwert 
+- Berechnen und visualisieren Sie Konfidenzintervalle für den Mittelwert
 
 ## Projekt
 
-> Unterscheidet sich das Nutzerverhaltenn von jugen und älteren Biblitheksnutzern? 
+> Unterscheidet sich das Nutzerverhaltenn von jugen und älteren Biblitheksnutzern?
 
 Senden Sie bis zum Ende der Woche (spätestens bis Samstag) die Ergebnisse ihrer statistischen Tests in Form eines *Python Notebooks* an [malte@bonart.dede](mailto:malte@bonart.de).
-
-
-
-
-
-

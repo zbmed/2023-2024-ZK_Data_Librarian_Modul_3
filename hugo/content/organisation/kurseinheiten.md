@@ -19,16 +19,19 @@ hidden = false
 LastModifierDisplayName = ""
 # Email of this page modifier. If set with LastModifierDisplayName, it will be displayed in the footer
 LastModifierEmail = ""
-+++ 
++++
 
-Wir haben das Modul in **wöchentliche Einheiten**, die jeweils ein Gebiet aufgreifen und vertiefen, unterteilt. Sie können sich die Zeit für die Bearbeitung der Einheiten selber aufteilen, sollten aber jede Einheit am Ende der jeweiligen Woche abgeschlossen haben. 
+Wir haben das Modul in **wöchentliche Einheiten**, die jeweils ein Gebiet aufgreifen und vertiefen, unterteilt. Sie können sich die Zeit für die Bearbeitung der Einheiten selber aufteilen, sollten aber jede Einheit am Ende der jeweiligen Woche abgeschlossen haben. Am Ende einer Woche wird die nächste Einheit auf dieser Webeite **freigeschaltet**.
 
-Die Einheiten schließen in der Regel mit praktischen Übungen ab. Ihre Lösungen können Sie einreichen, um **Feedback** von den Kursleitern zu erhalten. Der erste Teil des Moduls (21-01 - 16.02) wird von [Malte Bonart](mailto:malte@bonart.de) betreut und behandelt grundlegende klassische Konzepte der angewandten Statistik. Der zweite Teil des Moduls (10.02 - 04.03) wird von [Konrad Förstner](mailto:foerstner@zbmed.de) und gibt einen Überblick über Themen des Maschinellen Lernens. 
+Jede Einheit umfasst ein kleines praktisches Projekt, welches Sie in Form eines [Jupyter Notebooks](https://jupyter.org/) bearbeiten und aufbereiten. Ihr Notebook können Sie einreichen, um **Feedback** von den Kursleitern zu erhalten.
 
-Am **Präsenztag**, der am *05.03.2020* stattfindet, werden wir im vorraus gesammelte Fragen gemeinsam beantworten und diskutieren. Sie werden Zeit haben, an einem persönlichen Datenanalyseprojekt zu arbeiten. Die Kursleiter werden Sie dabei unterstützen und individuell betreuen. Am Ende des Präsenztages stellen alle KursteilnehmerInnen ihre Ergebnisse in einer Kurzpräsentation vor. 
+Der **erste Teil** des Moduls (21-01 - 16.02) wird von [Malte Bonart](mailto:malte@bonart.de) betreut und behandelt grundlegende klassische Konzepte der angewandten Statistik. Der **zweite Teil** des Moduls (10.02 - 04.03) wird von [Konrad Förstner](mailto:foerstner@zbmed.de) betreut und gibt einen Überblick über Themen des Maschinellen Lernens.
 
+Am **Präsenztag**, der am *05.03.2020* stattfindet, werden wir im voraus gesammelte Fragen gemeinsam beantworten und diskutieren. Sie werden Zeit haben, an einem persönlichen Datenanalyseprojekt zu arbeiten. Die Kursleiter werden Sie dabei unterstützen und individuell betreuen. Am Ende des Präsenztages stellen alle KursteilnehmerInnen ihre Ergebnisse in einer **Kurzpräsentation** vor.
 
-
-
-
-
+{{% customnotice tip%}}
+Den Source Code für diese Webseite und somit auch die weiteren Kursmaterialien finden Sie in einem öffentlichen [GitHub Repository](https://github.com/bonartm/data-librarian). Sie können sich **optional** das komplette Repository herunterladen indem sie folgenden Befehl in der Kommandozeile ausführen:
+```shell
+git clone https://github.com/bonartm/data-librarian.git
+```
+{{% /customnotice %}}

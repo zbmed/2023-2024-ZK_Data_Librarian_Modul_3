@@ -19,20 +19,32 @@ hidden = false
 LastModifierDisplayName = ""
 # Email of this page modifier. If set with LastModifierDisplayName, it will be displayed in the footer
 LastModifierEmail = ""
-+++ 
+description = "Verbesserung und Weiterentwicklung der matplotlib Bibliothek."
+
++++
+
+[seaborn](https://seaborn.pydata.org/) baut auf matplotlib auf und bietet eine Vielzahl von Funktionen, die es erlauben schnell und einfach schöne statistische Visualisierungen zu erstellen. Seaborn ist also keine komplett eigenenständige Graphik-Bibliothek, sondern nutzt intern die Funktionalitäten und Datenstrukturen von matplotlib.
+
+Eine wichtige Funktion ist die `sns.set()` Methode. Wenn sie am Anfang eines Python-Scripts ausgeführt wird, wird intern das Design der Plots erheblich verbessert. Alle plots, die nach dem Aufruf der Funktion erstellt werden, sehen viel besser aus.
+
+Testen Sie den Unterschied mit dem folgenden Beispiel:
 
 
-[seaborn](https://seaborn.pydata.org/) baut auf matplotlib auf und bietet eine Vielzahl von Funktionen, die es erlauben schnell und einfach schöne statistische Visualisierungen zu erstellen. 
-
+{{% customnotice code%}}
 ```python
+# import the libraries and give them some shorter names
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+# setup the seaborn library
 sns.set()
+
+# create the same plot as in the previous example
 x = range(1, 10)
-plt.plot(x, x, label='quadratic')
+plt.plot(x, x)
+```
+{{% /customnotice %}}
 
-
-
-
-
+{{% customnotice tip%}}
+Wenn Sie im Jupyter Notebook das Code-Beispiel ausgeführt haben und danach den Aufruf `sns.set()` entfernen, ändert sich das Design des Plots erstmal nicht. Für einen "Reset" müssen Sie den Kernel (also der im Hintergrund laufende Python Prozess) mit einem Klick auf <i class="fas fa-redo"></i> neu starten.
+{{% /customnotice %}}

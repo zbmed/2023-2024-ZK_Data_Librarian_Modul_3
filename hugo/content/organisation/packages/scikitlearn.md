@@ -19,13 +19,28 @@ hidden = false
 LastModifierDisplayName = ""
 # Email of this page modifier. If set with LastModifierDisplayName, it will be displayed in the footer
 LastModifierEmail = ""
-+++ 
+description = "Bietet Funktionen und Methoden für maschinelles Lernen."
+
++++
+
+[scikit-learn](https://scikit-learn.org/stable/) ist eine umfangreiche Bibliothek für maschinelles Lernen in Python. Es bietet eine Vielzahl an verschiedenen Algorithmen, mit denen zum Beispiel Vorhersagen oder Bilderkennung durchgeführt werden können.
 
 
-
-[scikit-learn](https://scikit-learn.org/stable/) ist ein umfangreiches Paket für machinelles Lernen in Python. Es bietet eine Vielzahl an verschiedenen Algorithmen, mit denen zum Beispiel Vorhersagen oder Bilderkennung durchgeführt werden können. 
-
+{{< figure src="https://scikit-learn.org/stable/_images/sphx_glr_plot_face_recognition_001.png" title="Faces recognition example using eigenfaces and SVMs"  attr="https://scikit-learn.org/stable/auto_examples/applications/plot_face_recognition.html#sphx-glr-auto-examples-applications-plot-face-recognition-py" width="60%">}}
 
 
+{{% customnotice code%}}
+```python
+# import the packages
+import numpy as np
+from sklearn.linear_model import LinearRegression
 
+# create some dummy dependent and independent variable
+X = np.array([[1, 1], [1, 2], [2, 2], [2, 3]])
+y = - 1 * X[:,0] + 2 * X[:,1]
 
+# estimate a linear regression and print out the coefficients
+reg = LinearRegression().fit(X, y)
+reg.coef_
+```
+{{% /customnotice %}}

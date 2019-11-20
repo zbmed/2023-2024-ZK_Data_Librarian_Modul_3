@@ -2,7 +2,7 @@
 title = "Deskriptive Statistik und Visualisierungen"
 # If set, this will be used for the page's menu entry (instead of the `title` attribute)
 # menuTitle = "Einführung"
-weight = 30
+weight = 300
 # The title of the page in menu will be prefixed by this HTML content
  pre = "<b>3. </b>"
 # pre = "<i class='fab fa-github'></i>"
@@ -20,7 +20,7 @@ hidden = false
 LastModifierDisplayName = ""
 # Email of this page modifier. If set with LastModifierDisplayName, it will be displayed in the footer
 LastModifierEmail = ""
-+++ 
++++
 
 
 ### 03.02 – 09.02
@@ -40,9 +40,6 @@ Dieses Modul vertieft die Einführung in die deskriptive Statistik und zeigt, wi
 
 ## Projekt
 
-> Da der Artikel über den Kundenstamm sehr gut angekommen ist, fragt die Pressestelle nun auch nach einigen guten Visualisierungen für die Titelseite der Homepage. 
+> Da der Artikel über den Kundenstamm sehr gut angekommen ist, fragt die Pressestelle nun auch nach einigen guten Visualisierungen für die Titelseite der Homepage.
 
-Senden Sie bis zum Ende der Woche (spätestens bis Samstag) 3-4 Visualisierungen des Datensatzes in Form eines *Python Notebooks* an [malte@bonart.de] (mailto:malte@bonart.de). 
-
-
-
+Senden Sie bis zum Ende der Woche (spätestens bis Samstag) 3-4 Visualisierungen des Datensatzes in Form eines *Python Notebooks* an [malte@bonart.de] (mailto:malte@bonart.de).
