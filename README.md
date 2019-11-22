@@ -1,69 +1,30 @@
-# Data-Librarian Modul 3: Daten analysieren und darstellen
- 
-contains
+# Website for the Data-Librarian Course
 
-- hugo based source code for the website in `./hugo`
-- the public page in `./docs`
-- additional course matrials in `./materials`
-
-## Dates
-
-
-- Modul 1: 26.11.2019 - 28.11.2019 (3 Tage Präsenz), Hacken und experimentieren mit Daten
-- Modul 2: 20.01.2020 (1 Tag Präsenz),  Daten strukturieren - beschreiben - wiederauffinden (Mandy und Philipp=
-- **Modul 3: 05.03.2020 (1 Tag Präsenz am 5.3.2020)**, Daten analysieren und darstellen
-- Modul 4: 22.04.2020 (1 Tag Präsenz), Forschungs(daten)prozess verstehen und unterstützen
-- Modul 5: 26.05.2020 (1 Tag Präsenz), Nachhaltig und verantwortungsvoll handeln im Umgang mit Daten
-- Modul 6: Abschlusstag wird noch terminiert (voraussichtlich im Juli 2020), Projektmodul
-
-Alle Präsenztermine finden in der TH Köln, Ubierring 48, 50678 Köln, Raum 211 statt. 
-
-
-## Ressourcen
-
-- https://librarycarpentry.org/
-- https://www.anaconda.com/distribution/
-- https://matplotlib.org/
-- https://jupyter.org/
-- https://automatetheboringstuff.com/
-- https://librarycarpentry.org/lc-python-intro/
-- [screen and video recording](https://obsproject.com/)
-
+This is the [hugo](https://gohugo.io/) based website for the third module "Daten analysieren und verstehen"
 
 ## Website Deployment
 
 The website of this project is hosted on github pages and is based on [hugo](https://gohugo.io/) and the [hugo-learn](https://github.com/matcornic/hugo-theme-learn/) theme.
 
 
- 
-### requirements
-
-clone the [learn-theme](https://learn.netlify.com/en/basics/installation/) into the `hugo/themes` folder
-
-```
-cd hugo/themes
+- clone the [learn-theme](https://learn.netlify.com/en/basics/installation/) into the `hugo/themes` folder
+```shell
+cd themes
 git clone https://github.com/matcornic/hugo-theme-learn.git
 ```
-
-### run hugo test server
-
-```
-cd hugo
+- run hugo test server
+```shell
 hugo server
 ```
-
-### build website
-
+- build website
+```shell
+hugo -d ./docs
 ```
-cd hugo
-hugo -d ../docs
-cd ..
-git add docs
-git commit -m "update website"
-git push
-```
+
+## Credits
+
+This website uses a modified version of the [Learn Theme for Hugo](https://themes.gohugo.io/theme/hugo-theme-learn/en)
 
 ## License
 
 The content of the website for this project are licensed under the [Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/). The underlying source code is licensed under the MIT license.
-

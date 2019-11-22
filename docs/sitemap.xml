@@ -3,6 +3,14 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://bonartm.github.io/data-librarian/cheatsheet/</loc>
+  </url>
+  
+  <url>
+    <loc>https://bonartm.github.io/data-librarian/basics/pandas/io/</loc>
+  </url>
+  
+  <url>
     <loc>https://bonartm.github.io/data-librarian/</loc>
   </url>
   
@@ -11,15 +19,39 @@
   </url>
   
   <url>
+    <loc>https://bonartm.github.io/data-librarian/basics/ml/statistic/</loc>
+  </url>
+  
+  <url>
+    <loc>https://bonartm.github.io/data-librarian/basics/ml/ml/</loc>
+  </url>
+  
+  <url>
+    <loc>https://bonartm.github.io/data-librarian/basics/pandas/selection/</loc>
+  </url>
+  
+  <url>
+    <loc>https://bonartm.github.io/data-librarian/basics/ml/data-science/</loc>
+  </url>
+  
+  <url>
+    <loc>https://bonartm.github.io/data-librarian/basics/pandas/na/</loc>
+  </url>
+  
+  <url>
+    <loc>https://bonartm.github.io/data-librarian/basics/pandas/groupby/</loc>
+  </url>
+  
+  <url>
     <loc>https://bonartm.github.io/data-librarian/organisation/</loc>
   </url>
   
   <url>
-    <loc>https://bonartm.github.io/data-librarian/organisation/kurseinheiten/</loc>
+    <loc>https://bonartm.github.io/data-librarian/organisation/modules/</loc>
   </url>
   
   <url>
-    <loc>https://bonartm.github.io/data-librarian/organisation/termine/</loc>
+    <loc>https://bonartm.github.io/data-librarian/organisation/schedule/</loc>
   </url>
   
   <url>
@@ -31,7 +63,7 @@
   </url>
   
   <url>
-    <loc>https://bonartm.github.io/data-librarian/organisation/materialien/</loc>
+    <loc>https://bonartm.github.io/data-librarian/organisation/dataset/</loc>
   </url>
   
   <url>
@@ -39,75 +71,67 @@
   </url>
   
   <url>
-    <loc>https://bonartm.github.io/data-librarian/organisation/quiz/</loc>
+    <loc>https://bonartm.github.io/data-librarian/organisation/quiz_intro/</loc>
   </url>
   
   <url>
-    <loc>https://bonartm.github.io/data-librarian/grundlagen/statistik_ml/</loc>
+    <loc>https://bonartm.github.io/data-librarian/basics/ml/</loc>
   </url>
   
   <url>
-    <loc>https://bonartm.github.io/data-librarian/grundlagen/dataset/</loc>
+    <loc>https://bonartm.github.io/data-librarian/basics/basic_terms/</loc>
   </url>
   
   <url>
-    <loc>https://bonartm.github.io/data-librarian/grundlagen/grundbegriffe/</loc>
+    <loc>https://bonartm.github.io/data-librarian/descriptive_statistics/variance/</loc>
   </url>
   
   <url>
-    <loc>https://bonartm.github.io/data-librarian/deskriptive_statistik/lagema%C3%9Fe/</loc>
+    <loc>https://bonartm.github.io/data-librarian/descriptive_statistics/density/</loc>
   </url>
   
   <url>
-    <loc>https://bonartm.github.io/data-librarian/deskriptive_statistik/streuungsma%C3%9Fe/</loc>
+    <loc>https://bonartm.github.io/data-librarian/descriptive_statistics/bivariate/</loc>
   </url>
   
   <url>
-    <loc>https://bonartm.github.io/data-librarian/deskriptive_statistik/dichtefunktion/</loc>
+    <loc>https://bonartm.github.io/data-librarian/descriptive_statistics/bivariate/cross_tables/</loc>
   </url>
   
   <url>
-    <loc>https://bonartm.github.io/data-librarian/deskriptive_statistik/bivariate_verteilungen/</loc>
+    <loc>https://bonartm.github.io/data-librarian/descriptive_statistics/bivariate/correlation/</loc>
   </url>
   
   <url>
-    <loc>https://bonartm.github.io/data-librarian/deskriptive_statistik/bivariate_verteilungen/kreuztabellen/</loc>
+    <loc>https://bonartm.github.io/data-librarian/descriptive_statistics/quiz_statistics/</loc>
   </url>
   
   <url>
-    <loc>https://bonartm.github.io/data-librarian/deskriptive_statistik/bivariate_verteilungen/korrelation/</loc>
+    <loc>https://bonartm.github.io/data-librarian/basics/pandas/</loc>
   </url>
   
   <url>
-    <loc>https://bonartm.github.io/data-librarian/grundlagen/pandas/</loc>
+    <loc>https://bonartm.github.io/data-librarian/basics/reflection/</loc>
   </url>
   
   <url>
-    <loc>https://bonartm.github.io/data-librarian/grundlagen/reflektion/</loc>
+    <loc>https://bonartm.github.io/data-librarian/descriptive_statistics/visualizations/</loc>
   </url>
   
   <url>
-    <loc>https://bonartm.github.io/data-librarian/deskriptive_statistik/visualisierungen/</loc>
+    <loc>https://bonartm.github.io/data-librarian/descriptive_statistics/visualizations/tutorial/</loc>
   </url>
   
   <url>
-    <loc>https://bonartm.github.io/data-librarian/deskriptive_statistik/visualisierungen/beispiele/</loc>
+    <loc>https://bonartm.github.io/data-librarian/descriptive_statistics/visualizations/examples/</loc>
   </url>
   
   <url>
-    <loc>https://bonartm.github.io/data-librarian/grundlagen/pandas/pandas_introduction/</loc>
+    <loc>https://bonartm.github.io/data-librarian/basics/quiz_pandas/</loc>
   </url>
   
   <url>
-    <loc>https://bonartm.github.io/data-librarian/deskriptive_statistik/visualisierungen/%C3%BCberblick/</loc>
-  </url>
-  
-  <url>
-    <loc>https://bonartm.github.io/data-librarian/grundlagen/pandas/pandas_%C3%BCbungen/</loc>
-  </url>
-  
-  <url>
-    <loc>https://bonartm.github.io/data-librarian/deskriptive_statistik/visualisierungen/%C3%BCbung-visualisierungen/</loc>
+    <loc>https://bonartm.github.io/data-librarian/descriptive_statistics/quiz_visualizations/</loc>
   </url>
   
   <url>
@@ -115,11 +139,7 @@
   </url>
   
   <url>
-    <loc>https://bonartm.github.io/data-librarian/inferenzstatistik/%C3%BCberblick/</loc>
-  </url>
-  
-  <url>
-    <loc>https://bonartm.github.io/data-librarian/inferenzstatistik/konfidenzintervalle/</loc>
+    <loc>https://bonartm.github.io/data-librarian/inference/overview/</loc>
   </url>
   
   <url>
@@ -127,7 +147,7 @@
   </url>
   
   <url>
-    <loc>https://bonartm.github.io/data-librarian/inferenzstatistik/mittelwertvergleich/</loc>
+    <loc>https://bonartm.github.io/data-librarian/inference/ttest/</loc>
   </url>
   
   <url>
@@ -143,15 +163,15 @@
   </url>
   
   <url>
-    <loc>https://bonartm.github.io/data-librarian/grundlagen/</loc>
+    <loc>https://bonartm.github.io/data-librarian/basics/</loc>
   </url>
   
   <url>
-    <loc>https://bonartm.github.io/data-librarian/deskriptive_statistik/</loc>
+    <loc>https://bonartm.github.io/data-librarian/descriptive_statistics/</loc>
   </url>
   
   <url>
-    <loc>https://bonartm.github.io/data-librarian/inferenzstatistik/</loc>
+    <loc>https://bonartm.github.io/data-librarian/inference/</loc>
   </url>
   
   <url>

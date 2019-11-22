@@ -12,20 +12,20 @@
     
     <item>
       <title>Kurseinheiten</title>
-      <link>https://bonartm.github.io/data-librarian/organisation/kurseinheiten/</link>
+      <link>https://bonartm.github.io/data-librarian/organisation/modules/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bonartm.github.io/data-librarian/organisation/kurseinheiten/</guid>
+      <guid>https://bonartm.github.io/data-librarian/organisation/modules/</guid>
       <description>Wir haben das Modul in wöchentliche Einheiten, die jeweils ein Gebiet aufgreifen und vertiefen, unterteilt. Sie können sich die Zeit für die Bearbeitung der Einheiten selber aufteilen, sollten aber jede Einheit am Ende der jeweiligen Woche abgeschlossen haben. Am Ende einer Woche wird die nächste Einheit auf dieser Webeite freigeschaltet.
 Jede Einheit umfasst ein kleines praktisches Projekt, welches Sie in Form eines Jupyter Notebooks bearbeiten und aufbereiten. Ihr Notebook können Sie einreichen, um Feedback von den Kursleitern zu erhalten.</description>
     </item>
     
     <item>
       <title>Termine</title>
-      <link>https://bonartm.github.io/data-librarian/organisation/termine/</link>
+      <link>https://bonartm.github.io/data-librarian/organisation/schedule/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bonartm.github.io/data-librarian/organisation/termine/</guid>
+      <guid>https://bonartm.github.io/data-librarian/organisation/schedule/</guid>
       <description>Hier finden Sie einen Überblick über die einzelnen Moduleinheiten. Die Tabelle können Sie sich auch als .pdf anzeigen lassen und ausdrucken:
   Überblick Modul 3   überblick_modul3.pdf  (25 ko)       Datum Titel Ziele     21.01 – 26.01 Vorbereitung Installieren Sie die benötigte Software Laden Sie die Kursmaterialien und Datensätze herunter Stellen Sie sicher, dass Python Notebooks lokal ausgeführt werden können   27.</description>
     </item>
@@ -52,20 +52,20 @@ Darüber hinaus bieten Notebooks die Möglichkeit Text, Visualisierungen und Cod
     
     <item>
       <title>San Francisco Library Usage</title>
-      <link>https://bonartm.github.io/data-librarian/organisation/materialien/</link>
+      <link>https://bonartm.github.io/data-librarian/organisation/dataset/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bonartm.github.io/data-librarian/organisation/materialien/</guid>
+      <guid>https://bonartm.github.io/data-librarian/organisation/dataset/</guid>
       <description>Im ersten Teil des Moduls werden Sie einen offenen Kundendatensatz der Bibliothek in San Francisco analysieren.
  The Integrated Library System (ILS) is composed of bibliographic records including inventoried items, and patron records including circulation data. The data is used in the daily operation of the library, including circulation, online public catalog, cataloging, acquisitions, collection development, processing, and serials control. This dataset represents the usage of inventoried items by patrons &amp;hellip; (Abstract taken from here)</description>
     </item>
     
     <item>
       <title>Recap: Quiz</title>
-      <link>https://bonartm.github.io/data-librarian/organisation/quiz/</link>
+      <link>https://bonartm.github.io/data-librarian/organisation/quiz_intro/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bonartm.github.io/data-librarian/organisation/quiz/</guid>
+      <guid>https://bonartm.github.io/data-librarian/organisation/quiz_intro/</guid>
       <description>.quiz fieldset { border-color: black; border-width: 10px; margin-bottom: 1em; } .quiz legend { font-size: 105%; font-weight: 600; padding-left: 15px; padding-right: 15px; padding-top: 15px; } .quiz label { display: block; line-height: 1.75em; } .quiz input[type=&#34;radio&#34;] { margin-right: 10px; page-break-after: avoid; page-break-before: avoid; } .quiz input[type=&#34;submit&#34;] { background: black; color: white; display: block; font-size: 120%; font-weight: 600; height: 2.5em; margin-top: 2em; text-transform: uppercase; width: 100%; } .quiz table { color: white; font-weight: bold; margin: 1em auto 2em auto; width: 100%; } .</description>
     </item>
     
