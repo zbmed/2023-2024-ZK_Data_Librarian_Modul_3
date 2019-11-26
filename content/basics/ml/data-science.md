@@ -22,11 +22,11 @@ LastModifierDisplayName = ""
 LastModifierEmail = ""
 +++
 
-Grundsätzlich ist ein Data Scientist jemand, die oder der Wissen und Erkenntnisse aus **strukturierten** und **unstrukturierten Daten** gewinnt. Data Science ist eine interdisziplinäre Disziplin, denn sie liefert eine Sammlung an quantitativen Methoden- und Algorithmen, die in einem Fachgebiet angewandt werden können [^2]. Damit liegt Data Science liegt irgendwo in der Schnittmenge von Mathe/ Statistik, Programmierung ("Hacking skills") und Fachwissen ("domain knowledge").
+Grundsätzlich ist ein Data Scientist jemand, die oder der Wissen und Erkenntnisse aus **strukturierten** und **unstrukturierten Daten** gewinnt. Data Science ist eine interdisziplinäre Disziplin, denn sie liefert eine Sammlung an quantitativen Methoden- und Algorithmen, die in einem Fachgebiet angewandt werden können [^2]. Damit liegt Data Science irgendwo in der Schnittmenge von Mathe/ Statistik, Programmierung ("Hacking skills") und Fachwissen ("domain knowledge"/ "substantive expertise").
+
+Aufgrund der stark angewachsenen Mengen an unstrukturierten Daten aus **heterogenen Datenquellen** (Text, Bilder, Sensoren, Netzwerke, Videos, ...) reichen die Methoden und Fertigkeiten, die die Statistik traditionellerweise liefert und vermittelt, nicht mehr aus, um diese Daten **effizient** zu strukturieren, aggregieren, kombinieren, analysieren und visualisieren zu können:
 
 > A Data Scientist is someone who knows more statistics than a computer scientist and more computer science than a statistician [^1].
-
-Aufgrund der stark angewachsenen Mengen an unstrukturierten Daten aus **heterogenen Datenquellen** (Text, Bilder, Sensoren, Netzwerke, Videos, ...) reichen die Methoden und Fertigkeiten, die die Statistik traditionellerweise liefert und vermittelt, nicht mehr aus, um diese Daten **effizient** zu strukturieren, aggregieren, kombinieren, analysieren und visualisieren zu können.
 
 ![data science venn diagram](https://images.squarespace-cdn.com/content/v1/5150aec6e4b0e340ec52710a/1364352051365-HZAS3CLBF7ABLE3F5OBY/ke17ZwdGBToddI8pDm48kB2M2-8_3EzuSSXvzQBRsa1Zw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpxPe_8B-x4gq2tfVez1FwLYYZXud0o-3jV-FAs7tmkMHY-a7GzQZKbHRGZboWC-fOc/Data_Science_VD.png?format=750w "Data Science Venn Diagram")
 *taken from http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram*

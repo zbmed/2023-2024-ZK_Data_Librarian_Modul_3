@@ -26,7 +26,7 @@ LastModifierEmail = ""
 
 
 
-In der [Kursumgebung](https://zbiw.th-koeln.de/moodle/course/view.php?id=300) finden Sie das Einführungskapitel des Buchs *Statistik: Der Weg zur Datenanalyse* zum alleinigen Gebrauch hier im Kurs hinterlegt.[^1]
+In der [Kursumgebung](https://zbiw.th-koeln.de/moodle/course/view.php?id=300) finden Sie das Einführungskapitel des Buchs *Statistik: Der Weg zur Datenanalyse* zum alleinigen persönlichen Gebrauch hier im Kurs hinterlegt.[^1]
 
 Der Text gibt einen **Einstieg** in die Aufgaben und Anwendungsbereiche der Statistik und erklärt die **grundlegenden Begriffe**, mit denen Daten und Datensätze charakterisiert werden können.
 
