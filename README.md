@@ -20,7 +20,7 @@ This is a tip box.
 ```
 Instead of `tip` you can also insert `exercise, alert` or `code` boxes.
 
-A simple quiz is also provided:
+A simple [quiz](https://github.com/bonartm/hugo-quiz) is also provided:
 
 ```markdown
 {{% quiz pandas_quiz%}}
