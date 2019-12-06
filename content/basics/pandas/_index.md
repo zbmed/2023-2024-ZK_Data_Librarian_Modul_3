@@ -22,9 +22,21 @@ LastModifierDisplayName = ""
 LastModifierEmail = ""
 +++
 
-Grundlage der statistischen Analyse sind Datentabellen: Jede Zeile der Tabelle entspricht einer Beobachtung. Jede Spalte entspricht einer Variable. Neue Beobachtungen und Variablen können dadurch einfach an die schon bestehende Tabelle angefügt werden.
+Grundlage der statistischen Analyse sind **Datentabellen**: Jede Zeile der Tabelle entspricht einer Beobachtung. Jede Spalte entspricht einer statistischen Variable. Neue Beobachtungen und Variablen können dadurch einfach an die schon bestehende Tabelle angefügt werden.
 
-Das Paket um mit Datentabellen in Python zu arbeiten, ist `pandas`. Das folgende Kapitel stellt anhand von vielen praktischen Beispielen zum Nachmachen die grundlegenden Konzepte in `pandas` vor. Ein Überblick über die Bibliothek und weitere relevante Python-Pakete gibt es [hier](/data-librarian/organisation/packages/pandas/).
+{{% customnotice alert %}}
+Achten Sie darauf, dass wenn es um Statistik und Programmierung geht mit "Variable" zwei Dinge gemeint sind:
+1. [Variable](https://de.wikipedia.org/wiki/Statistische_Variable) im Kontext eines statistischen Merkmals, das in der Regel als Spalte eines Datensatzes vorliegt.
+2. [Variablen](https://de.wikipedia.org/wiki/Variable_(Programmierung)) im Kontext von Programmiersprachen beschreiben benannte Referenzen auf bestimmte Datenstrukturen oder Objekte (z.B. `numbers = [1, 2, 3]`).
+{{% /customnotice %}}
+
+
+Am Beginn jeder statistischen Analyse steht die **Aufbereitung und Bereinigung** der Daten. Damit ist die Behandlung von fehlenden oder falsch kodierten Werten, die **Umkodierung** und **Transformation** von statistischen Variablen oder die Berechnung neuer Spalten gemeint. Oft sind auch nur Untergruppen von Beobachtungen mit bestimmten Merkmausausprägungen von Interesse.
+
+Viele statistische Methoden erfordern auch, dass die Daten nur als numerische Werte vorliegen. Daher müssen ordinale oder nominale Variablen, die als Text gespeichert sind (zum Beispiel `['male', 'female', 'female', ...]`) in entsprechende numerische Werte **umkodiert** werden. Dabei wird jeder Kategorie ein numerischer Wert zugeordnet.
+
+Das Standard-Paket um mit Datentabellen in Python zu arbeiten, ist `pandas`. Das folgende Kapitel stellt anhand von vielen praktischen **Beispielen** zum Nachmachen die grundlegenden Konzepte in `pandas` vor. Ein Überblick über die Bibliothek und weitere relevante Python-Pakete gibt es [hier](/data-librarian/organisation/packages/pandas/).
+
 
 {{% customnotice exercise %}}
 1. Laden Sie sich [~~dieses~~](../pandas.files/pandas_introduction.ipynb) Jupyter Notebook herunter

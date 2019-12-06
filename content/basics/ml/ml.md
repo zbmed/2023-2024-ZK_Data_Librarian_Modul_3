@@ -28,7 +28,7 @@ Maschinelles Lernen ("Statistical Learning") bedeutet in diesem Kontext relevant
 
 Im Gegensatz zur klassischen Statistik, steht im Maschinellen Lernen auch viel stärker die **Vorhersagekraft** und **Generalisierbarkeit** von Methoden im Vordergrund und weniger ein Verständnis der kausalen Zusammenhänge.
 
-Während die klassische Statistik oft an **"Warum"-Fragen** und am Einfluss einzelner Faktoren auf ein Ergebnis interessiert ist, sind **"Wie"-Fragen** im Maschinellen Lernen viel wichtiger: Ziel ist es oft, möglichst gute Prognosen, beispielsweise bei der Gesichtserkennung, zu machen.
+Während die klassische Statistik oft an der Interpretation von kausalen Einflüssen einzelner Faktoren auf ein Ergebnis interessiert ist, sind Black-Box Modelle im Maschinellen Lernen viel präsenter: Ziel ist es oft, möglichst gute Prognosen, beispielsweise bei der Gesichtserkennung, zu machen. Dabei spielt letztendlich das genaue Modell und die Gewichte für die Variablen nur eine untergeordnete Rolle.
 
 {{% customnotice tip%}}
 **Teachable Machine** von Google ermöglicht das Trainieren von Machine Learning Modellen im eigenen Web-Browser ohne das Programmiercode geschrieben werden muss. Somit wird ML auch ohne Vorkenntnisse erfahrbar und man bekommt ein gutes Gespür für die Möglichkeiten und Grenzen dieser Methoden.

@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/data-librarian/images/favicon.png" type="image/png">
 
-    <title>Quiz: Deskriptive Statistik :: data librarian - modul 3 - daten analysieren und verstehen</title>
+    <title>Auswahl und Erstellung von Spalten :: data librarian - modul 3 - daten analysieren und verstehen</title>
 
     
     <link href="/data-librarian/css/nucleus.css?1575646467" rel="stylesheet">
@@ -42,7 +42,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/data-librarian/descriptive_statistics/quiz_statistics/">
+  <body class="" data-url="/data-librarian/basics/pandas/columns/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -386,7 +386,7 @@
   
     
     <li data-nav-id="/data-librarian/basics/" title="Grundlagen" class="dd-item 
-        
+        parent
         
         
         ">
@@ -527,7 +527,7 @@
   
     
     <li data-nav-id="/data-librarian/basics/pandas/" title="Praktische Einführung in Pandas" class="dd-item 
-        
+        parent
         
         
         ">
@@ -591,7 +591,7 @@
  
   
     
-      <li data-nav-id="/data-librarian/basics/pandas/columns/" title="Auswahl und Erstellung von Spalten" class="dd-item ">
+      <li data-nav-id="/data-librarian/basics/pandas/columns/" title="Auswahl und Erstellung von Spalten" class="dd-item active">
         <a href="/data-librarian/basics/pandas/columns/">
         Auswahl und Erstellung von Spalten
         <i class="fas fa-check read-icon"></i>
@@ -722,7 +722,7 @@
   
     
     <li data-nav-id="/data-librarian/descriptive_statistics/" title="Deskriptive Statistik und Visualisierungen" class="dd-item 
-        parent
+        
         
         
         ">
@@ -991,7 +991,7 @@
  
   
     
-      <li data-nav-id="/data-librarian/descriptive_statistics/quiz_statistics/" title="Quiz: Deskriptive Statistik" class="dd-item active">
+      <li data-nav-id="/data-librarian/descriptive_statistics/quiz_statistics/" title="Quiz: Deskriptive Statistik" class="dd-item ">
         <a href="/data-librarian/descriptive_statistics/quiz_statistics/">
         Quiz: Deskriptive Statistik
         <i class="fas fa-check read-icon"></i>
@@ -1187,7 +1187,13 @@
             
           
           
-            <a href='/data-librarian/'>Modul 3</a> > <a href='/data-librarian/descriptive_statistics/'>Deskriptive Statistik und Visualisierungen</a> > Quiz: Deskriptive Statistik
+            
+            
+          
+          
+            <a href='/data-librarian/'>Modul 3</a> > <a href='/data-librarian/basics/'>Grundlagen</a> > <a href='/data-librarian/basics/pandas/'>Praktische Einführung in Pandas</a> > Auswahl und Erstellung von Spalten
+          
+        
           
         
           
@@ -1209,97 +1215,71 @@
           
             <h1>
               
-              Quiz: Deskriptive Statistik
+              Auswahl und Erstellung von Spalten
             </h1>
           
 
         
 
 
+<p>Die Spalten eines <code>DataFrame</code>s werden über einen <strong>Spaltenindex</strong> referenziert. Üblicherweise besteht der Spaltenindex aus Spaltennamen in Textform:</p>
 
+<div class="customnotices">
+  <div class="notices_inner" id="code">
+    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd
+df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">../data/Library_Usage.csv</span><span style="color:#e6db74">&#34;</span>)
+df<span style="color:#f92672">.</span>columns
+</code></pre></div>
+  </div>
+</div>
 
-<style type="text/css" scoped>
-.quiz fieldset {
-    border-color: black;
-    border-width: 10px;
-    margin-bottom: 1em;
-}
+<p>Einzelne Spalten können wie bei einem Python Dictionary mit <code>df[&lt;name&gt;]</code> ausgewählt werden. Mehre Spalten mit <code>df[[&lt;name1&gt;, &lt;name2]]</code>:</p>
 
-.quiz legend {
-    font-size: 105%;
-    font-weight: 600;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 15px;
-}
+<div class="customnotices">
+  <div class="notices_inner" id="code">
+    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">Total Renewals</span><span style="color:#e6db74">&#39;</span>]
+df[[<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">Total Renewals</span><span style="color:#e6db74">&#39;</span>, <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">Total Checkouts</span><span style="color:#e6db74">&#39;</span>]]
+filter <span style="color:#f92672">=</span> [<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">Total Renewals</span><span style="color:#e6db74">&#39;</span>, <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">Total Checkouts</span><span style="color:#e6db74">&#39;</span>] <span style="color:#75715e"># auxiliary variable</span>
+df[filter]
+</code></pre></div>
+  </div>
+</div>
 
-.quiz label {
-    display: block;
-    line-height: 1.75em;
-}
+<p>Neue Spalten können mit einer Zuweisung (<code>=</code>) erstellt werden:
 
-.quiz input[type="radio"] {
-    margin-right: 10px;
-    page-break-after: avoid;
-    page-break-before: avoid;
-}
+<div class="customnotices">
+  <div class="notices_inner" id="code">
+    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">dummy_variable</span><span style="color:#e6db74">&#39;</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>
+</code></pre></div>
+  </div>
+</div>
+</p>
+<p>Berechnungen auf schon bestehenden Variablen können auch direkt einer neuen Spalte zugeordnet werden:</p>
 
-.quiz input[type="submit"] {
-    background: black;
-    color: white;
-    display: block;
-    font-size: 120%;
-    font-weight: 600;
-    height: 2.5em;
-    margin-top: 2em;
-    text-transform: uppercase;
-    width: 100%;
-}
+<div class="customnotices">
+  <div class="notices_inner" id="code">
+    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> numpy <span style="color:#f92672">as</span> np
 
-.quiz table {
-    color: white;
-    font-weight: bold;
-    margin: 1em auto 2em auto;
-    width: 100%;
-}
+df[<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">is_adult</span><span style="color:#e6db74">&#39;</span>] <span style="color:#f92672">=</span> df[<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">Patron Type Definition</span><span style="color:#e6db74">&#39;</span>] <span style="color:#f92672">==</span> <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">ADULT</span><span style="color:#e6db74">&#39;</span>
+df[<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">log_renewals</span><span style="color:#e6db74">&#39;</span>] <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>log(df[<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">Total Renewals</span><span style="color:#e6db74">&#39;</span>])
+</code></pre></div>
+  </div>
+</div>
 
-.quiz td {
-    padding: 5px 15px;
-    text-align: left;
-    width: 60px;
-}
+<p>Im ersten Beispiel wurde zuerst die Anweisung <code>df['Patron Type Definition'] == 'ADULT'</code> durchgeführt. Das implizite Ergebnis dieser Anweisung ist eine <code>Series</code> mit booleschen Werten (<code>True</code> oder <code>False</code>). Die neu erstellte <code>Series</code> wird dann in einer neuen Spalte <code>is_adult</code> dem <code>DataFrame</code> angehängt.</p>
+<p>Im zweiten Beispiel wurde der Logarithmus auf den Werten der Spalte <code>Total Renewals</code> berechnet und einer neuen Spalte <code>log_renewals</code> zugewiesen.</p>
 
-.quiz td.missing-label,
-.quiz td.missing-score {
-    background: #CECBC2;
-}
+<div class="customnotices">
+  <div class="notices_inner" id="exercise">
+    <ul>
+<li>Die Spalte <code>Circulation Active Year</code> ist als Text und nicht als Zahl abgespeichert! Konvertieren Sie die Spalte in ein numerisches Format:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">pd<span style="color:#f92672">.</span>to_numeric(df[<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">Circulation Active Year</span><span style="color:#e6db74">&#39;</span>], errors<span style="color:#f92672">=</span><span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">coerce</span><span style="color:#e6db74">&#39;</span>)
+</code></pre></div><p>Überschreiben Sie die ursprüngliche Variable mit den neuen Werten.</p>
+</li>
+<li>Erstellen Sie eine neue Variable <code>'Membership Duration'</code> die die Zeit <strong>in Jahren</strong> zwischen der Registrierung im System und der letzten Ausleihaktivität des Kunden enthält.</li>
+</ul>
 
-.quiz td.right-label,
-.quiz td.right-score {
-    background: #74b559;
-}
-
-.quiz td.wrong-label,
-.quiz td.wrong-score {
-    background: #D01F3C;
-}
-</style>
-
-<script src="/data-librarian/js/quiz.js"></script>
-
-<div class="quiz" id="pandas_quiz">
-  <!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-
-  <script>
-    var quiz = new Quiz("pandas_quiz", questions, {"shuffle": true});
-  </script>
+  </div>
 </div>
 
 
@@ -1569,248 +1549,6 @@
             
                 
                     
-                
-                
-
-                    
-                    
-                        
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
                     
                 
                 
@@ -1902,6 +1640,256 @@
                     
 
                     
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
                         
             
             
@@ -1990,7 +1978,6 @@
             
                 
                     
-                    
                 
                 
 
@@ -2006,9 +1993,6 @@
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -2081,10 +2065,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/data-librarian/descriptive_statistics/visualizations/examples/" title="Beispiele"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/data-librarian/basics/pandas/io/" title="Ein- und Ausgabe"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/data-librarian/descriptive_statistics/quiz_visualizations/" title="Quiz: Visualisierungen" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/data-librarian/basics/pandas/rows/" title="Auswahl von Zeilen" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>

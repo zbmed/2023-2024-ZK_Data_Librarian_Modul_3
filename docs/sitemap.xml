@@ -35,11 +35,15 @@
   </url>
   
   <url>
-    <loc>https://bonartm.github.io/data-librarian/basics/pandas/selection/</loc>
+    <loc>https://bonartm.github.io/data-librarian/basics/pandas/columns/</loc>
   </url>
   
   <url>
     <loc>https://bonartm.github.io/data-librarian/basics/ml/data-science/</loc>
+  </url>
+  
+  <url>
+    <loc>https://bonartm.github.io/data-librarian/basics/pandas/rows/</loc>
   </url>
   
   <url>

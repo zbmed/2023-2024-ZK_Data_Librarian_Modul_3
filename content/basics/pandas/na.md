@@ -2,7 +2,7 @@
 title = "Fehlende Werte"
 # If set, this will be used for the page's menu entry (instead of the `title` attribute)
 # menuTitle = "Einführung"
-weight = 3
+weight = 5
 # The title of the page in menu will be prefixed by this HTML content
 # pre = "<b>1. </b>"
 # pre = "<i class='fab fa-github'></i>"

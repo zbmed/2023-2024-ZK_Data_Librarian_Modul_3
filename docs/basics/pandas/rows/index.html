@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/data-librarian/images/favicon.png" type="image/png">
 
-    <title>Quiz: Deskriptive Statistik :: data librarian - modul 3 - daten analysieren und verstehen</title>
+    <title>Auswahl von Zeilen :: data librarian - modul 3 - daten analysieren und verstehen</title>
 
     
     <link href="/data-librarian/css/nucleus.css?1575646467" rel="stylesheet">
@@ -42,7 +42,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/data-librarian/descriptive_statistics/quiz_statistics/">
+  <body class="" data-url="/data-librarian/basics/pandas/rows/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -386,7 +386,7 @@
   
     
     <li data-nav-id="/data-librarian/basics/" title="Grundlagen" class="dd-item 
-        
+        parent
         
         
         ">
@@ -527,7 +527,7 @@
   
     
     <li data-nav-id="/data-librarian/basics/pandas/" title="Praktische Einführung in Pandas" class="dd-item 
-        
+        parent
         
         
         ">
@@ -610,7 +610,7 @@
  
   
     
-      <li data-nav-id="/data-librarian/basics/pandas/rows/" title="Auswahl von Zeilen" class="dd-item ">
+      <li data-nav-id="/data-librarian/basics/pandas/rows/" title="Auswahl von Zeilen" class="dd-item active">
         <a href="/data-librarian/basics/pandas/rows/">
         Auswahl von Zeilen
         <i class="fas fa-check read-icon"></i>
@@ -722,7 +722,7 @@
   
     
     <li data-nav-id="/data-librarian/descriptive_statistics/" title="Deskriptive Statistik und Visualisierungen" class="dd-item 
-        parent
+        
         
         
         ">
@@ -991,7 +991,7 @@
  
   
     
-      <li data-nav-id="/data-librarian/descriptive_statistics/quiz_statistics/" title="Quiz: Deskriptive Statistik" class="dd-item active">
+      <li data-nav-id="/data-librarian/descriptive_statistics/quiz_statistics/" title="Quiz: Deskriptive Statistik" class="dd-item ">
         <a href="/data-librarian/descriptive_statistics/quiz_statistics/">
         Quiz: Deskriptive Statistik
         <i class="fas fa-check read-icon"></i>
@@ -1187,7 +1187,13 @@
             
           
           
-            <a href='/data-librarian/'>Modul 3</a> > <a href='/data-librarian/descriptive_statistics/'>Deskriptive Statistik und Visualisierungen</a> > Quiz: Deskriptive Statistik
+            
+            
+          
+          
+            <a href='/data-librarian/'>Modul 3</a> > <a href='/data-librarian/basics/'>Grundlagen</a> > <a href='/data-librarian/basics/pandas/'>Praktische Einführung in Pandas</a> > Auswahl von Zeilen
+          
+        
           
         
           
@@ -1209,97 +1215,57 @@
           
             <h1>
               
-              Quiz: Deskriptive Statistik
+              Auswahl von Zeilen
             </h1>
           
 
         
 
 
+<p>Die Zeilen eines <code>DataFrame</code>s werden über einen <strong>Zeilenindex</strong> (<code>loc[]</code>), über die aufsteigenden <strong>Zeilennummern</strong> (<code>iloc[]</code>) oder über <strong>logische Ausdrücke</strong> (<code>[]</code> oder <code>loc[]</code>) referenziert.</p>
+<p>Hier wird zuerst der wichtigste letzte Fall näher betrachtet:</p>
+
+<div class="customnotices">
+  <div class="notices_inner" id="code">
+    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd
+df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">../data/Library_Usage.csv</span><span style="color:#e6db74">&#34;</span>)
+df[df[<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">Total Checkouts</span><span style="color:#e6db74">&#39;</span>] <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">10000</span>]
+</code></pre></div>
+  </div>
+</div>
+
+<p>Der Ausdruck <code>df['Total Checkouts'] &gt; 10000</code> wird zuerst ausgewertet und ergibt eine boolesche <code>Series</code> mit Einträgen <code>True</code> wenn die Beobachtung mehr als <code>1000</code> Ausleihen getätigt hat und <code>False</code> sonst.</p>
+<p>Mit einer booleschen <code>Series</code> lassen sich dann die Zeilen eines <code>DataFrame</code> auswählen: Es werden genau die Zeilen zurückgegeben, bei denen die <code>Series` </code>True` Werte enthält.</p>
+<p>Anstatt alles in einer Zeile zu schreiben, können wir auch eine Hilfsvariable erstellen, die den booleschen Vektor zwischenspeichert:</p>
+
+<div class="customnotices">
+  <div class="notices_inner" id="code">
+    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">filter <span style="color:#f92672">=</span> df[<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">Total Checkouts</span><span style="color:#e6db74">&#39;</span>] <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">10000</span>
+df[filter]
+</code></pre></div>
+  </div>
+</div>
+
+<p>Für den Zeilenfilter können komplexe logische Ausdrücke unter Zuhilfenahme der Operatoren <code>&lt;, &gt;, &amp;, |, ==</code> u.s.w. gebildet werden:</p>
+
+<div class="customnotices">
+  <div class="notices_inner" id="code">
+    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">filter <span style="color:#f92672">=</span> (df[<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">Patron Type Definition</span><span style="color:#e6db74">&#39;</span>] <span style="color:#f92672">==</span> <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">SENIOR</span><span style="color:#e6db74">&#39;</span>) <span style="color:#f92672">&amp;</span> (df[<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">Notice Preference Definition</span><span style="color:#e6db74">&#39;</span>] <span style="color:#f92672">==</span> <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">email</span><span style="color:#e6db74">&#39;</span>)
+df[filter]
+</code></pre></div>
+  </div>
+</div>
 
 
-<style type="text/css" scoped>
-.quiz fieldset {
-    border-color: black;
-    border-width: 10px;
-    margin-bottom: 1em;
-}
+<div class="customnotices">
+  <div class="notices_inner" id="exercise">
+    <ol>
+<li>Filter Sie den Datensatz nach Kindern unter 10 Jahren. Wie viele Einträge erhalten Sie?</li>
+<li>Gibt es Personen mit mehr als <code>20000</code> Ausleihen?</li>
+<li>Wie viele Personen stammen aus dem Norden San Franciscos (<a href="(https://en.wikipedia.org/wiki/San_Francisco_Board_of_Supervisors)">Supervisor Districts</a> 1, 2 und 3)? Nuzten Sie die Funktion <code>Series.isin()</code>.</li>
+</ol>
 
-.quiz legend {
-    font-size: 105%;
-    font-weight: 600;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 15px;
-}
-
-.quiz label {
-    display: block;
-    line-height: 1.75em;
-}
-
-.quiz input[type="radio"] {
-    margin-right: 10px;
-    page-break-after: avoid;
-    page-break-before: avoid;
-}
-
-.quiz input[type="submit"] {
-    background: black;
-    color: white;
-    display: block;
-    font-size: 120%;
-    font-weight: 600;
-    height: 2.5em;
-    margin-top: 2em;
-    text-transform: uppercase;
-    width: 100%;
-}
-
-.quiz table {
-    color: white;
-    font-weight: bold;
-    margin: 1em auto 2em auto;
-    width: 100%;
-}
-
-.quiz td {
-    padding: 5px 15px;
-    text-align: left;
-    width: 60px;
-}
-
-.quiz td.missing-label,
-.quiz td.missing-score {
-    background: #CECBC2;
-}
-
-.quiz td.right-label,
-.quiz td.right-score {
-    background: #74b559;
-}
-
-.quiz td.wrong-label,
-.quiz td.wrong-score {
-    background: #D01F3C;
-}
-</style>
-
-<script src="/data-librarian/js/quiz.js"></script>
-
-<div class="quiz" id="pandas_quiz">
-  <!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-
-  <script>
-    var quiz = new Quiz("pandas_quiz", questions, {"shuffle": true});
-  </script>
+  </div>
 </div>
 
 
@@ -1569,248 +1535,6 @@
             
                 
                     
-                
-                
-
-                    
-                    
-                        
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
                     
                 
                 
@@ -1902,6 +1626,256 @@
                     
 
                     
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
                         
             
             
@@ -1990,7 +1964,6 @@
             
                 
                     
-                    
                 
                 
 
@@ -2006,9 +1979,6 @@
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -2081,10 +2051,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/data-librarian/descriptive_statistics/visualizations/examples/" title="Beispiele"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/data-librarian/basics/pandas/columns/" title="Auswahl und Erstellung von Spalten"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/data-librarian/descriptive_statistics/quiz_visualizations/" title="Quiz: Visualisierungen" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/data-librarian/basics/pandas/na/" title="Fehlende Werte" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
