@@ -20,18 +20,10 @@ hidden = false
 LastModifierDisplayName = ""
 # Email of this page modifier. If set with LastModifierDisplayName, it will be displayed in the footer
 LastModifierEmail = ""
-+++ 
++++
 
+Um zwei ordinale/ nominale Variablen miteinander zu vergleichen, eignen sich Kreuztabellen. Jeder Wert in der Kreuztabelle entspricht der Anzahl der Beobachtungen im Datensatz mit genau dieser Kombination.
 
-Seit einigen Jahren ist der Begriff *Data Science* sehr populär geworden. Die Nachfrage nach *Data Scientists* auf dem Arbeitsmarkt ist [sehr hoch](https://www.sueddeutsche.de/karriere/karriere-quereinstieg-programmieren-1.4367719), Studiengänge werden [neu eingerichtet](https://www.th-koeln.de/studium/data-and-information-science-bachelor--inhalte_52782.php) oder [umbenannt](http://west.uni-koblenz.de/studying/mwds). Was unterscheidet einen Data Scientist eigentlich von einer Statistikerin? 
+Eine Kreuztabelle mit relativen Häufigkeiten erhält man, indem die absoluten Werte **normalisiert**.
 
-Machinelles Lernen und insbesondere Themen wie *künstliche Intelligenz*, *Neuronale Netze* und *Deep Learning* sind immer wieder Thema in Zeitungen und Nachrichten. Was bedeuten diese Begriffe und wo ist da der Bezug zur Statistik? 
-
-Im folgenden wird ein kurzer Überblick über die Begriffe und deren Beziehung zueinander gegeben. Für Interessierte gibt es Verweise zu weiteren Quellen.
-
-
-
-
-
-
-
+Die Normalisierung kann entweder dadurch erfolgen, dass durch die Anzahl der Beobachtungen $n$, durch die Anzahl der Beobachtungen in der Zeilenvariable oder durch die Anzahl der Beobachtungen in der Spaltenvariable geteilt wird.

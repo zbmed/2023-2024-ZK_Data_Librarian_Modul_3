@@ -28,4 +28,6 @@ title="Justus Perthes (1838): Rhein, Elbe und Oder" >}}
 
 Statistik ist die traditionelle Wissenschaft von der **Erhebung und Analyse von Daten**. Sie verfügt über eine großes theoretisches und mathematisches Fundament und lässt sich in die Teilgebiete *deskriptive* (Beschreiben), *explorative* (Suchen) und *schließende* (Induktion) Statistik unterteilen.
 
+
+
 Lesen Sie mehr über die Grundlagen der Statistik im Kapitel [Grundbegriffe der Statistik](/data-librarian/basics/basic_terms/).

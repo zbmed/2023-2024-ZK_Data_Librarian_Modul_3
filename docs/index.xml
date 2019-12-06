@@ -16,16 +16,16 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://bonartm.github.io/data-librarian/cheatsheet/</guid>
-      <description>Other Resources  https://librarycarpentry.org/ https://automatetheboringstuff.com/ https://librarycarpentry.org/lc-python-intro/  read in .csv files import pandas as pd file_path = &#39;./Library_Usage.csv&#39; df = pd.read_csv(file_path)  show column names and their types df.columns df.dtypes  number of rows len(df)  summarize functions df.head() df.tail() df.describe()  filter on columns df[[&amp;quot;colA&amp;quot;, &amp;quot;colB&amp;quot;, &amp;quot;colC&amp;quot;]]  filter on rows by index df.iloc[[1, 10, 15]]  filter on rows by logical query df.loc[df[&amp;quot;colA&amp;quot;] &amp;gt; 100]  some descriptive statistics for columns df[&amp;quot;colA&amp;quot;].</description>
+      <description>Other Resources  https://librarycarpentry.org/ https://automatetheboringstuff.com/ https://librarycarpentry.org/lc-python-intro/  read in .csv files import pandas as pd file_path = &amp;#39;./Library_Usage.csv&amp;#39; df = pd.read_csv(file_path) show column names and their types df.columns df.dtypes number of rows len(df) summarize functions df.head() df.tail() df.describe() filter on columns df[[&amp;#34;colA&amp;#34;, &amp;#34;colB&amp;#34;, &amp;#34;colC&amp;#34;]] filter on rows by index df.iloc[[1, 10, 15]] filter on rows by logical query df.loc[df[&amp;#34;colA&amp;#34;] &amp;gt; 100] some descriptive statistics for columns df[&amp;quot;colA&amp;quot;].max() df[&amp;quot;colA&amp;quot;].max() df[&amp;quot;colA&amp;quot;].mean() df[&amp;quot;colA&amp;quot;].median() df[&amp;quot;colA&amp;quot;].</description>
     </item>
     
     <item>
-      <title>Ein- und Ausgabe</title>
-      <link>https://bonartm.github.io/data-librarian/basics/pandas/io/</link>
+      <title>Häufigkeitstabellen</title>
+      <link>https://bonartm.github.io/data-librarian/descriptive_statistics/univariate/frequency/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bonartm.github.io/data-librarian/basics/pandas/io/</guid>
-      <description> Übung 2: Einführung in Pandas  Laden Sie [dieses Jupyter Notebook]() in Ihren Projektordner. In dem Ordner sollte sich auch der Kunden-Datensatz mit dem Namen Library_Usage.csv befinden. Öffnen und bearbeiten Sie das Notebook mit Jupyter.  </description>
+      <guid>https://bonartm.github.io/data-librarian/descriptive_statistics/univariate/frequency/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -36,7 +36,17 @@
       <guid>https://bonartm.github.io/data-librarian/organisation/packages/numpy/</guid>
       <description>numpy bietet den array als zentrale Datenstruktur. Mit ihm lassen sich numerische Daten effizient im Arbeitsspeicher (RAM) erstellen, ein- und auslesen, bearbeiten und aggregieren.
 Numpy bietet neben dem array viele Funktionen an, mit denen sich effizient Berechnungen auf diesen durchführen lassen können. Außerdem wird die klassische Matrizenrechnung unterstützt.
-# import the library and give it a shorter name &#39;np&#39; import numpy as np # create 100 randomly distributed numbers X = np.</description>
+# import the library and give it a shorter name &amp;#39;np&amp;#39; import numpy as np # create 100 randomly distributed numbers X = np.</description>
+    </item>
+    
+    <item>
+      <title>Series und DataFrames</title>
+      <link>https://bonartm.github.io/data-librarian/basics/pandas/series/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bonartm.github.io/data-librarian/basics/pandas/series/</guid>
+      <description>Series und DataFrames sind die zentralen Datenstrukturen in Pandas. Series sind wie Standard Python-Listen, mit dem wichtigen Unterschied, dass Series nur Werte eines Datentyps enthalten können.
+import pandas as pd x = pd.Series([34, 12, 23, 45]) print(x)    Ein Datentyp ist die grundlegende Einheit, in der einzelne Werte in einer Programmiersprache vom Computer gespeichert werden können. Beispiele für Datentypen in Python sind: float, int, str, bool oder datetime.</description>
     </item>
     
     <item>
@@ -47,6 +57,17 @@ Numpy bietet neben dem array viele Funktionen an, mit denen sich effizient Berec
       <guid>https://bonartm.github.io/data-librarian/basics/ml/statistic/</guid>
       <description>Justus Perthes (1838): Rhein, Elbe und Oder   Statistik ist die traditionelle Wissenschaft von der Erhebung und Analyse von Daten. Sie verfügt über eine großes theoretisches und mathematisches Fundament und lässt sich in die Teilgebiete deskriptive (Beschreiben), explorative (Suchen) und schließende (Induktion) Statistik unterteilen.
 Lesen Sie mehr über die Grundlagen der Statistik im Kapitel Grundbegriffe der Statistik.</description>
+    </item>
+    
+    <item>
+      <title>Ein- und Ausgabe</title>
+      <link>https://bonartm.github.io/data-librarian/basics/pandas/io/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bonartm.github.io/data-librarian/basics/pandas/io/</guid>
+      <description>Die Ein- und Ausgabe von Daten in pandas ist umfangreich und einfach. Aber was bedeutet einlesen eigentlich?
+Die Festplatte des Computers dient zur Langzeitspeicherung von Dateien, wie beispielsweise Fotos, Excel-Listen oder textbasierte .csv Dateien. Auch wenn der Strom weg ist, bleiben die Dateien auf der Festplatte erhalten.
+Diese Speicherfähigkeit hat jedoch auch ihren Preis: Die Zugriffszeiten, d.h. die Zeit die die Festplatte benötigt um beispielsweise die 10. Zeile einer Textdatei zu lesen und die Werte an den Prozessor zu übergeben, sind vergleichsweise hoch.</description>
     </item>
     
     <item>
@@ -65,7 +86,7 @@ Maschinelles Lernen (&amp;ldquo;Statistical Learning&amp;rdquo;) bedeutet in die
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://bonartm.github.io/data-librarian/basics/pandas/selection/</guid>
-      <description> Übung 2: Einführung in Pandas  Laden Sie [dieses Jupyter Notebook]() in Ihren Projektordner. In dem Ordner sollte sich auch der Kunden-Datensatz mit dem Namen Library_Usage.csv befinden. Öffnen und bearbeiten Sie das Notebook mit Jupyter.  </description>
+      <description>Auswahl bestimmter Variablen/ Spalten Filter von Zeilen </description>
     </item>
     
     <item>
@@ -74,7 +95,7 @@ Maschinelles Lernen (&amp;ldquo;Statistical Learning&amp;rdquo;) bedeutet in die
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://bonartm.github.io/data-librarian/basics/ml/data-science/</guid>
-      <description>Grundsätzlich ist ein Data Scientist jemand, die oder der Wissen und Erkenntnisse aus strukturierten und unstrukturierten Daten gewinnt. Data Science ist eine interdisziplinäre Disziplin, denn sie liefert eine Sammlung an quantitativen Methoden- und Algorithmen, die in einem Fachgebiet angewandt werden können 1. Damit liegt Data Science irgendwo in der Schnittmenge von Mathe/ Statistik, Programmierung (&amp;ldquo;Hacking skills&amp;rdquo;) und Fachwissen (&amp;ldquo;domain knowledge&amp;rdquo;/ &amp;ldquo;substantive expertise&amp;rdquo;).
+      <description>Grundsätzlich ist ein Data Scientist jemand, die oder der Wissen und Erkenntnisse aus strukturierten und unstrukturierten Daten gewinnt. Data Science ist eine interdisziplinäre Disziplin, denn sie liefert eine Sammlung an quantitativen Methoden- und Algorithmen, die in einem Fachgebiet angewandt werden können 2. Damit liegt Data Science irgendwo in der Schnittmenge von Mathe/ Statistik, Programmierung (&amp;ldquo;Hacking skills&amp;rdquo;) und Fachwissen (&amp;ldquo;domain knowledge&amp;rdquo;/ &amp;ldquo;substantive expertise&amp;rdquo;).
 Aufgrund der stark angewachsenen Mengen an unstrukturierten Daten aus heterogenen Datenquellen (Text, Bilder, Sensoren, Netzwerke, Videos, &amp;hellip;) reichen die Methoden und Fertigkeiten, die die Statistik traditionellerweise liefert und vermittelt, nicht mehr aus, um diese Daten effizient zu strukturieren, aggregieren, kombinieren, analysieren und visualisieren zu können:</description>
     </item>
     
@@ -84,7 +105,7 @@ Aufgrund der stark angewachsenen Mengen an unstrukturierten Daten aus heterogene
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://bonartm.github.io/data-librarian/basics/pandas/na/</guid>
-      <description> Übung 2: Einführung in Pandas  Laden Sie [dieses Jupyter Notebook]() in Ihren Projektordner. In dem Ordner sollte sich auch der Kunden-Datensatz mit dem Namen Library_Usage.csv befinden. Öffnen und bearbeiten Sie das Notebook mit Jupyter.  </description>
+      <description>Übung 2: Einführung in Pandas  Laden Sie dieses Jupyter Notebook in Ihren Projektordner. In dem Ordner sollte sich auch der Kunden-Datensatz mit dem Namen Library_Usage.csv befinden. Öffnen und bearbeiten Sie das Notebook mit Jupyter.  </description>
     </item>
     
     <item>
@@ -93,7 +114,7 @@ Aufgrund der stark angewachsenen Mengen an unstrukturierten Daten aus heterogene
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://bonartm.github.io/data-librarian/basics/pandas/groupby/</guid>
-      <description> Übung 2: Einführung in Pandas  Laden Sie [dieses Jupyter Notebook]() in Ihren Projektordner. In dem Ordner sollte sich auch der Kunden-Datensatz mit dem Namen Library_Usage.csv befinden. Öffnen und bearbeiten Sie das Notebook mit Jupyter.  </description>
+      <description>Übung 2: Einführung in Pandas  Laden Sie dieses Jupyter Notebook in Ihren Projektordner. In dem Ordner sollte sich auch der Kunden-Datensatz mit dem Namen Library_Usage.csv befinden. Öffnen und bearbeiten Sie das Notebook mit Jupyter.  </description>
     </item>
     
     <item>
@@ -167,23 +188,29 @@ Beantworten und diskutieren Sie folgende Fragen konkret für den San Francisco L
     </item>
     
     <item>
-      <title>Streuungsmaße</title>
-      <link>https://bonartm.github.io/data-librarian/descriptive_statistics/variance/</link>
+      <title>Lagemaße</title>
+      <link>https://bonartm.github.io/data-librarian/descriptive_statistics/univariate/mean/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bonartm.github.io/data-librarian/descriptive_statistics/variance/</guid>
-      <description>Seit einigen Jahren ist der Begriff Data Science sehr populär geworden. Die Nachfrage nach Data Scientists auf dem Arbeitsmarkt ist sehr hoch, Studiengänge werden neu eingerichtet oder umbenannt. Was unterscheidet einen Data Scientist eigentlich von einer Statistikerin?
-Machinelles Lernen und insbesondere Themen wie künstliche Intelligenz, Neuronale Netze und Deep Learning sind immer wieder Thema in Zeitungen und Nachrichten. Was bedeuten diese Begriffe und wo ist da der Bezug zur Statistik?</description>
+      <guid>https://bonartm.github.io/data-librarian/descriptive_statistics/univariate/mean/</guid>
+      <description>Lagemaße beschreiben die Zentralität einer Verteilung.
+Typische Lagemaße sind der empirische Mittelwert:
+$$ \bar{x} = \frac{1}{n}\sum_{i=1}^{n}x_i = \frac{x_1 + x_2 + \dots + x_n}{n} $$
+Oder der Median:
+$$
+$$</description>
     </item>
     
     <item>
-      <title>Beschreibung von univariaten Verteilungen</title>
-      <link>https://bonartm.github.io/data-librarian/descriptive_statistics/density/</link>
+      <title>Streuungsmaße</title>
+      <link>https://bonartm.github.io/data-librarian/descriptive_statistics/univariate/variance/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bonartm.github.io/data-librarian/descriptive_statistics/density/</guid>
-      <description>Seit einigen Jahren ist der Begriff Data Science sehr populär geworden. Die Nachfrage nach Data Scientists auf dem Arbeitsmarkt ist sehr hoch, Studiengänge werden neu eingerichtet oder umbenannt. Was unterscheidet einen Data Scientist eigentlich von einer Statistikerin?
-Machinelles Lernen und insbesondere Themen wie künstliche Intelligenz, Neuronale Netze und Deep Learning sind immer wieder Thema in Zeitungen und Nachrichten. Was bedeuten diese Begriffe und wo ist da der Bezug zur Statistik?</description>
+      <guid>https://bonartm.github.io/data-librarian/descriptive_statistics/univariate/variance/</guid>
+      <description>Die Abweichung einer Beobachtung von dem Mittelwert der zugrundeliegenden Variable wird Abweichung genannt. Der Mittelwert über die quadrierten Abweichungen nennt man Varianz:
+$$ s^2 = \frac{1}{n-1}\sum_{i=1}^{n}(x_i-\bar{x})^2 $$
+Das Quadrieren der Abweichungen hat zur Folge, dass das Vorzeichen verschwindet und das große Abweichungen noch größer werden: $(-10)^2 = 100$, $(-100)^2 = 10000$.
+Ihnen ist vielleicht aufgefallen, dass in der Formel durch $n-1$ anstatt durch $n$ geteilt wird. Diese Auffälligkeit ist theoretisch von Bedeutung, es hat aber in der Praxis meist keine Auswirkungen, wenn wir den normalen Mittelwert bilden.</description>
     </item>
     
     <item>
@@ -192,8 +219,9 @@ Machinelles Lernen und insbesondere Themen wie künstliche Intelligenz, Neuronal
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://bonartm.github.io/data-librarian/descriptive_statistics/bivariate/cross_tables/</guid>
-      <description>Seit einigen Jahren ist der Begriff Data Science sehr populär geworden. Die Nachfrage nach Data Scientists auf dem Arbeitsmarkt ist sehr hoch, Studiengänge werden neu eingerichtet oder umbenannt. Was unterscheidet einen Data Scientist eigentlich von einer Statistikerin?
-Machinelles Lernen und insbesondere Themen wie künstliche Intelligenz, Neuronale Netze und Deep Learning sind immer wieder Thema in Zeitungen und Nachrichten. Was bedeuten diese Begriffe und wo ist da der Bezug zur Statistik?</description>
+      <description>Um zwei ordinale/ nominale Variablen miteinander zu vergleichen, eignen sich Kreuztabellen. Jeder Wert in der Kreuztabelle entspricht der Anzahl der Beobachtungen im Datensatz mit genau dieser Kombination.
+Eine Kreuztabelle mit relativen Häufigkeiten erhält man, indem die absoluten Werte normalisiert.
+Die Normalisierung kann entweder dadurch erfolgen, dass durch die Anzahl der Beobachtungen $n$, durch die Anzahl der Beobachtungen in der Zeilenvariable oder durch die Anzahl der Beobachtungen in der Spaltenvariable geteilt wird.</description>
     </item>
     
     <item>
@@ -206,22 +234,13 @@ Machinelles Lernen und insbesondere Themen wie künstliche Intelligenz, Neuronal
     </item>
     
     <item>
-      <title>Quiz: Deskriptive Statistik</title>
-      <link>https://bonartm.github.io/data-librarian/descriptive_statistics/quiz_statistics/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://bonartm.github.io/data-librarian/descriptive_statistics/quiz_statistics/</guid>
-      <description>.quiz fieldset { border-color: black; border-width: 10px; margin-bottom: 1em; } .quiz legend { font-size: 105%; font-weight: 600; padding-left: 15px; padding-right: 15px; padding-top: 15px; } .quiz label { display: block; line-height: 1.75em; } .quiz input[type=&#34;radio&#34;] { margin-right: 10px; page-break-after: avoid; page-break-before: avoid; } .quiz input[type=&#34;submit&#34;] { background: black; color: white; display: block; font-size: 120%; font-weight: 600; height: 2.5em; margin-top: 2em; text-transform: uppercase; width: 100%; } .quiz table { color: white; font-weight: bold; margin: 1em auto 2em auto; width: 100%; } .</description>
-    </item>
-    
-    <item>
       <title>Reflexion: Daten an Ihrem Arbeitsplatz</title>
       <link>https://bonartm.github.io/data-librarian/basics/reflection/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://bonartm.github.io/data-librarian/basics/reflection/</guid>
       <description>Schreiben Sie einen kurzen Text über die Verwendung von Daten und quantitativen Methoden an Ihrem Arbeitsplatz. Denken Sie dabei über folgende Fragen nach:
- Welche Daten sind bei Ihnen vorhanden? Mit welchen Daten arbeiten Sie oder würden Sie gerne arbeiten? Werden statistische Verfahren oder Maschinelles Lernen schon bei Ihnen eingesetzt? Welche Fragen oder Phänomene würden Sie gerne untersuchen? Was fänden Sie spannend herauszufinden?  Teilen Sie Ihren Text mit den anderen KursteilnehmerInnen auf der Kursplattform.</description>
+ Welche Daten sind bei Ihnen vorhanden? Mit welchen Daten arbeiten Sie oder würden Sie gerne arbeiten?   Werden statistische Verfahren oder Maschinelles Lernen schon bei Ihnen eingesetzt? Welche Fragen oder Phänomene würden Sie gerne untersuchen? Was fänden Sie spannend herauszufinden?  Teilen Sie Ihren Text mit den anderen KursteilnehmerInnen auf der Kursplattform.</description>
     </item>
     
     <item>
@@ -239,7 +258,7 @@ Machinelles Lernen und insbesondere Themen wie künstliche Intelligenz, Neuronal
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://bonartm.github.io/data-librarian/descriptive_statistics/visualizations/examples/</guid>
-      <description></description>
+      <description>Scatterplots </description>
     </item>
     
     <item>
@@ -252,11 +271,11 @@ Machinelles Lernen und insbesondere Themen wie künstliche Intelligenz, Neuronal
     </item>
     
     <item>
-      <title>Quiz: Visualisierungen</title>
-      <link>https://bonartm.github.io/data-librarian/descriptive_statistics/quiz_visualizations/</link>
+      <title>Quiz: Deskriptive Statistik</title>
+      <link>https://bonartm.github.io/data-librarian/descriptive_statistics/quiz_statistics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bonartm.github.io/data-librarian/descriptive_statistics/quiz_visualizations/</guid>
+      <guid>https://bonartm.github.io/data-librarian/descriptive_statistics/quiz_statistics/</guid>
       <description>.quiz fieldset { border-color: black; border-width: 10px; margin-bottom: 1em; } .quiz legend { font-size: 105%; font-weight: 600; padding-left: 15px; padding-right: 15px; padding-top: 15px; } .quiz label { display: block; line-height: 1.75em; } .quiz input[type=&#34;radio&#34;] { margin-right: 10px; page-break-after: avoid; page-break-before: avoid; } .quiz input[type=&#34;submit&#34;] { background: black; color: white; display: block; font-size: 120%; font-weight: 600; height: 2.5em; margin-top: 2em; text-transform: uppercase; width: 100%; } .quiz table { color: white; font-weight: bold; margin: 1em auto 2em auto; width: 100%; } .</description>
     </item>
     
@@ -272,12 +291,22 @@ In einem DataFrame werden mehrere Series gleicher Länge spaltenweise zu einer z
     </item>
     
     <item>
+      <title>Quiz: Visualisierungen</title>
+      <link>https://bonartm.github.io/data-librarian/descriptive_statistics/quiz_visualizations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bonartm.github.io/data-librarian/descriptive_statistics/quiz_visualizations/</guid>
+      <description>.quiz fieldset { border-color: black; border-width: 10px; margin-bottom: 1em; } .quiz legend { font-size: 105%; font-weight: 600; padding-left: 15px; padding-right: 15px; padding-top: 15px; } .quiz label { display: block; line-height: 1.75em; } .quiz input[type=&#34;radio&#34;] { margin-right: 10px; page-break-after: avoid; page-break-before: avoid; } .quiz input[type=&#34;submit&#34;] { background: black; color: white; display: block; font-size: 120%; font-weight: 600; height: 2.5em; margin-top: 2em; text-transform: uppercase; width: 100%; } .quiz table { color: white; font-weight: bold; margin: 1em auto 2em auto; width: 100%; } .</description>
+    </item>
+    
+    <item>
       <title>Überblick</title>
       <link>https://bonartm.github.io/data-librarian/inference/overview/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://bonartm.github.io/data-librarian/inference/overview/</guid>
-      <description></description>
+      <description>Bisher haben Sie vorliegende Daten einer Stichprobe mit Visualisierungen und Statistiken beschrieben und zusammengefasst. Von Interesse sind aber in der Regel, die Zusammenhänge und Statistiken in der Gesamtpopulation.
+Beispiel Wahlumfrage: Sie ziehen zufällig $n=100$ Personen aus dem Wahlregister und befragen Sie nach ihren Parteipräferenzen. Sie können dann beispielsweise den relativen Anteil der Personen in Ihrer Stichprobe, die eine bestimmte Partei favorisieren, bestimmen. Damit haben Sie einen Schätzwert für den tatsächlichen Wert, wenn Sie alle Personen des Wahlregisters befragt hätten.</description>
     </item>
     
     <item>
@@ -287,7 +316,7 @@ In einem DataFrame werden mehrere Series gleicher Länge spaltenweise zu einer z
       
       <guid>https://bonartm.github.io/data-librarian/organisation/packages/matplotlib/</guid>
       <description>matplotlib ist das Standard-Paket zum Erstellen von wissenschaftlichen 2-dimensionalen statischen Graphiken. Die grundlegende Struktur in matplotlib ist figure, eine leere graphische Fläche, die mit Linien, Balken, Punten, Beschriftungen und Axen befüllt werden kann. Der fertige Plot kann dann in diversen Formaten abgespeichert oder auf dem Bildschirm angezeigt werden.
-# import the package and give it the shorter name &#39;plt&#39; # matplotlib inline import matplotlib.pyplot as plt # create some dummy data x = range(1, 10) # make a simple scatter plot of the data plt.</description>
+# import the package and give it the shorter name &amp;#39;plt&amp;#39; # matplotlib inline import matplotlib.pyplot as plt # create some dummy data x = range(1, 10) # make a simple scatter plot of the data plt.</description>
     </item>
     
     <item>

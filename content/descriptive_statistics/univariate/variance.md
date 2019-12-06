@@ -20,18 +20,23 @@ hidden = false
 LastModifierDisplayName = ""
 # Email of this page modifier. If set with LastModifierDisplayName, it will be displayed in the footer
 LastModifierEmail = ""
-+++ 
++++
 
 
-Seit einigen Jahren ist der Begriff *Data Science* sehr populär geworden. Die Nachfrage nach *Data Scientists* auf dem Arbeitsmarkt ist [sehr hoch](https://www.sueddeutsche.de/karriere/karriere-quereinstieg-programmieren-1.4367719), Studiengänge werden [neu eingerichtet](https://www.th-koeln.de/studium/data-and-information-science-bachelor--inhalte_52782.php) oder [umbenannt](http://west.uni-koblenz.de/studying/mwds). Was unterscheidet einen Data Scientist eigentlich von einer Statistikerin? 
+Die Abweichung einer Beobachtung von dem Mittelwert der zugrundeliegenden Variable wird **Abweichung** genannt. Der Mittelwert über die quadrierten Abweichungen nennt man **Varianz**:
 
-Machinelles Lernen und insbesondere Themen wie *künstliche Intelligenz*, *Neuronale Netze* und *Deep Learning* sind immer wieder Thema in Zeitungen und Nachrichten. Was bedeuten diese Begriffe und wo ist da der Bezug zur Statistik? 
+$$
+s^2 = \frac{1}{n-1}\sum_{i=1}^{n}(x_i-\bar{x})^2
+$$
 
-Im folgenden wird ein kurzer Überblick über die Begriffe und deren Beziehung zueinander gegeben. Für Interessierte gibt es Verweise zu weiteren Quellen.
+Das Quadrieren der Abweichungen hat zur Folge, dass das Vorzeichen verschwindet und das große Abweichungen noch größer werden: $(-10)^2 = 100$, $(-100)^2 = 10000$.
 
+Ihnen ist vielleicht aufgefallen, dass in der Formel durch $n-1$ anstatt durch $n$ geteilt wird. Diese Auffälligkeit ist theoretisch von Bedeutung, es hat aber in der Praxis meist keine Auswirkungen, wenn wir den normalen Mittelwert bilden.
 
+Die **Standardabweichungen** ist die Wurzel der Varianz:
 
+$$
+s = \sqrt{s^2}
+$$
 
-
-
-
+Für die Streuung der Variable in der Population werden $\sigma^2$ für die Varianz und $\sigma$ für die Standardabweichung eingeführt.  

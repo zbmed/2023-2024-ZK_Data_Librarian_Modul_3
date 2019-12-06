@@ -27,22 +27,33 @@ LastModifierEmail = ""
 
 # Deskriptive Statistik II und Visualisierungen
 
-Dieses Modul vertieft die Einführung in die deskriptive Statistik und zeigt, wie mit `pandas` einfach und schnell Visualisierungen in Python erstellt werden können.
+Dieses Modul gibt eine Einführung in die deskriptive Statistik mit `pandas` und zeigt, wie statistische Visualisierungen in Python erstellt werden können.
 
 ## Ziele
 
-- Berechnen und interpretieren Sie grundlegende Streuungsmaße
-- Beschreiben Sie univariate Verteilungen
-- Berechnen Sie Statistiken für bivariate Verteilungen
+- Berechnen und interpretieren Sie grundlegende Lage- und Streuungsmaße
+- Beschreiben Sie univariate stetige und diskrete Verteilungen
+- Beschreiben und Berechnen Sie Statistiken für stetige und diskrete bivariate Verteilungen
 - Erstellen Sie einfache Visualisierungen
 
 {{% customnotice exercise %}}
 
 ### Projektaufgabe
 
-Für den Online-Artikel zum Kundenstamm der Bibliothek möchte die Pressestelle einige Daten in einer Info-Graphik zusammenstellen. Für eine erste Demo sind Sie verantwortlich.
+Für den Online-Artikel zum Kundenstamm der Bibliothek braucht die Pressestelle einige interessanten Zahlen zum Thema Alter und Bibliotheksnutzung. Außerdem möchte sie die Daten in einer Info-Graphik zusammenstellen.
 
-- Erstellen sie 2-3 Visualisierungen basierend auf den Informationen im [Datensatz](/data-librarian/organisation/dataset/).
-- Nutzen Sie `pandas` oder `seaborn` mit `matplotlib`
-- Senden Sie bis Freitag Ihren Report in Form eines integrierten *Python Notebooks* an [malte@bonart.de] (mailto:malte@bonart.de).
+Für eine erste Demo sind Sie verantwortlich.
+
+- Berechnen Sie 2-3 Statistiken und Erstellen Sie 2-3 Visualisierungen basierend auf den Informationen im [Datensatz](/data-librarian/organisation/dataset/).
+- Nutzen Sie `pandas`, `seaborn` und ggf. `matplotlib`
+- Senden Sie bis Freitag Ihren Report in Form eines integrierten *Python Notebooks* an [malte@bonart.de](mailto:malte@bonart.de).
+{{% /customnotice %}}
+
+
+{{% customnotice tip %}}
+Beispielfragen, die Sie mit dem Datensatz beantworten können:
+
+- Wie viele Senioren und Kinder sind Kunden der San Francisco Public Library?
+- Wie viele Nutzer möchten per Mail informiert werden?
+- Wie alt sind diese Nutzer durchschnittlich im Vergleich zu Nutzern, die per Post informiert werden möchten?
 {{% /customnotice %}}

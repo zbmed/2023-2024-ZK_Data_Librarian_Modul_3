@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Univariate Verteilungen on data librarian - modul 3 - daten analysieren und verstehen</title>
+    <link>https://bonartm.github.io/data-librarian/descriptive_statistics/univariate/</link>
+    <description>Recent content in Univariate Verteilungen on data librarian - modul 3 - daten analysieren und verstehen</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-DE</language>
+    
+	<atom:link href="https://bonartm.github.io/data-librarian/descriptive_statistics/univariate/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Häufigkeitstabellen</title>
+      <link>https://bonartm.github.io/data-librarian/descriptive_statistics/univariate/frequency/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bonartm.github.io/data-librarian/descriptive_statistics/univariate/frequency/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lagemaße</title>
+      <link>https://bonartm.github.io/data-librarian/descriptive_statistics/univariate/mean/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bonartm.github.io/data-librarian/descriptive_statistics/univariate/mean/</guid>
+      <description>Lagemaße beschreiben die Zentralität einer Verteilung.
+Typische Lagemaße sind der empirische Mittelwert:
+$$ \bar{x} = \frac{1}{n}\sum_{i=1}^{n}x_i = \frac{x_1 + x_2 + \dots + x_n}{n} $$
+Oder der Median:
+$$
+$$</description>
+    </item>
+    
+    <item>
+      <title>Streuungsmaße</title>
+      <link>https://bonartm.github.io/data-librarian/descriptive_statistics/univariate/variance/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bonartm.github.io/data-librarian/descriptive_statistics/univariate/variance/</guid>
+      <description>Die Abweichung einer Beobachtung von dem Mittelwert der zugrundeliegenden Variable wird Abweichung genannt. Der Mittelwert über die quadrierten Abweichungen nennt man Varianz:
+$$ s^2 = \frac{1}{n-1}\sum_{i=1}^{n}(x_i-\bar{x})^2 $$
+Das Quadrieren der Abweichungen hat zur Folge, dass das Vorzeichen verschwindet und das große Abweichungen noch größer werden: $(-10)^2 = 100$, $(-100)^2 = 10000$.
+Ihnen ist vielleicht aufgefallen, dass in der Formel durch $n-1$ anstatt durch $n$ geteilt wird. Diese Auffälligkeit ist theoretisch von Bedeutung, es hat aber in der Praxis meist keine Auswirkungen, wenn wir den normalen Mittelwert bilden.</description>
+    </item>
+    
+  </channel>
+</rss>

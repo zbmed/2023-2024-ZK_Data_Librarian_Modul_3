@@ -34,26 +34,20 @@ Diese Einheit gibt eine Einführung in die Aufgaben und grundlegenden Begriffe d
 - Beschreiben Sie Datensätze mit dem statistischen Grundvokabular
 - Lesen Sie Datensätze als `DataFrames` in Python ein und aus
 - Filtern Sie `DataFrames` nach Spalten oder Zeilen
-- Erstellen Sie absolute und relative Häufigkeitstabellen
-- Berechnen Sie grundlegende Lagemaße, wie Median und Mittelwert
+- Berechnen Sie aus vorhandenen Variable neue Variablen
 
 {{% customnotice exercise %}}
 
 ### Projektaufgabe
 
-Die Pressestelle der San Francisco Public Library möchte einen Online-Artikel zum Kundenstamm der Bibliothek erstellen und braucht einige interessanten Zahlen zum Thema Alter und Bibliotheksnutzung.
+Die Pressestelle der San Francisco Public Library möchte einen Online-Artikel zum Kundenstamm der Bibliothek erstellen. Dazu hat sie Ihnen [einen Datensatz](/data-librarian/organisation/dataset/) geschickt, den Sie auswerten sollen.
 
-- Lesen Sie [den Datensatz](/data-librarian/organisation/dataset/) ein und berechnen Sie einige interessante Statistiken.
-- Senden Sie bis Freitag Ihre [Beschreibung des Datensatzes](/data-librarian/basics/basic_terms/) zusammen mit den Statistiken in Form eines integrierten *Python Notebooks* an [malte@bonart.de] (mailto:malte@bonart.de).
+- Erstellen Sie eine Beschreibung des Datensatzes unter Verwendung des [statistischen Grundvokabulars](/data-librarian/basics/basic_terms/)
 
-{{% /customnotice %}}
+- Lesen Sie [den Datensatz](/data-librarian/organisation/dataset/) ein und berechnen Sie für jeden Kunden
+  - die Dauer der Mitgliedschaft in Monaten
+  - die Anzahl der Ausleihen und Verlängerungen *pro Monat* der Mitgliedschaft
 
+- Senden Sie bis Freitag Ihre Beschreibung zusammen mit den Berechnungen in Form eines integrierten *Python Notebooks* an [malte@bonart.de](mailto:malte@bonart.de).
 
-
-{{% customnotice tip %}}
-Beispielfragen, die Sie mit dem Datensatz beantworten können:
-
-- Wie viele Senioren und Kinder sind Kunden der San Francisco Public Library?
-- Wie viele Nutzer möchten per Mail informiert werden?
-- Wie alt sind diese Nutzer durchschnittlich im Vergleich zu Nutzern, die per Post informiert werden möchten?
 {{% /customnotice %}}

@@ -7,7 +7,7 @@
   </url>
   
   <url>
-    <loc>https://bonartm.github.io/data-librarian/basics/pandas/io/</loc>
+    <loc>https://bonartm.github.io/data-librarian/descriptive_statistics/univariate/frequency/</loc>
   </url>
   
   <url>
@@ -19,7 +19,15 @@
   </url>
   
   <url>
+    <loc>https://bonartm.github.io/data-librarian/basics/pandas/series/</loc>
+  </url>
+  
+  <url>
     <loc>https://bonartm.github.io/data-librarian/basics/ml/statistic/</loc>
+  </url>
+  
+  <url>
+    <loc>https://bonartm.github.io/data-librarian/basics/pandas/io/</loc>
   </url>
   
   <url>
@@ -83,11 +91,15 @@
   </url>
   
   <url>
-    <loc>https://bonartm.github.io/data-librarian/descriptive_statistics/variance/</loc>
+    <loc>https://bonartm.github.io/data-librarian/descriptive_statistics/univariate/</loc>
   </url>
   
   <url>
-    <loc>https://bonartm.github.io/data-librarian/descriptive_statistics/density/</loc>
+    <loc>https://bonartm.github.io/data-librarian/descriptive_statistics/univariate/mean/</loc>
+  </url>
+  
+  <url>
+    <loc>https://bonartm.github.io/data-librarian/descriptive_statistics/univariate/variance/</loc>
   </url>
   
   <url>
@@ -100,10 +112,6 @@
   
   <url>
     <loc>https://bonartm.github.io/data-librarian/descriptive_statistics/bivariate/correlation/</loc>
-  </url>
-  
-  <url>
-    <loc>https://bonartm.github.io/data-librarian/descriptive_statistics/quiz_statistics/</loc>
   </url>
   
   <url>
@@ -131,11 +139,15 @@
   </url>
   
   <url>
-    <loc>https://bonartm.github.io/data-librarian/descriptive_statistics/quiz_visualizations/</loc>
+    <loc>https://bonartm.github.io/data-librarian/descriptive_statistics/quiz_statistics/</loc>
   </url>
   
   <url>
     <loc>https://bonartm.github.io/data-librarian/organisation/packages/pandas/</loc>
+  </url>
+  
+  <url>
+    <loc>https://bonartm.github.io/data-librarian/descriptive_statistics/quiz_visualizations/</loc>
   </url>
   
   <url>

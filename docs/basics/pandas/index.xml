@@ -11,12 +11,24 @@
     
     
     <item>
+      <title>Series und DataFrames</title>
+      <link>https://bonartm.github.io/data-librarian/basics/pandas/series/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bonartm.github.io/data-librarian/basics/pandas/series/</guid>
+      <description>Series und DataFrames sind die zentralen Datenstrukturen in Pandas. Series sind wie Standard Python-Listen, mit dem wichtigen Unterschied, dass Series nur Werte eines Datentyps enthalten können.
+import pandas as pd x = pd.Series([34, 12, 23, 45]) print(x)    Ein Datentyp ist die grundlegende Einheit, in der einzelne Werte in einer Programmiersprache vom Computer gespeichert werden können. Beispiele für Datentypen in Python sind: float, int, str, bool oder datetime.</description>
+    </item>
+    
+    <item>
       <title>Ein- und Ausgabe</title>
       <link>https://bonartm.github.io/data-librarian/basics/pandas/io/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://bonartm.github.io/data-librarian/basics/pandas/io/</guid>
-      <description> Übung 2: Einführung in Pandas  Laden Sie [dieses Jupyter Notebook]() in Ihren Projektordner. In dem Ordner sollte sich auch der Kunden-Datensatz mit dem Namen Library_Usage.csv befinden. Öffnen und bearbeiten Sie das Notebook mit Jupyter.  </description>
+      <description>Die Ein- und Ausgabe von Daten in pandas ist umfangreich und einfach. Aber was bedeutet einlesen eigentlich?
+Die Festplatte des Computers dient zur Langzeitspeicherung von Dateien, wie beispielsweise Fotos, Excel-Listen oder textbasierte .csv Dateien. Auch wenn der Strom weg ist, bleiben die Dateien auf der Festplatte erhalten.
+Diese Speicherfähigkeit hat jedoch auch ihren Preis: Die Zugriffszeiten, d.h. die Zeit die die Festplatte benötigt um beispielsweise die 10. Zeile einer Textdatei zu lesen und die Werte an den Prozessor zu übergeben, sind vergleichsweise hoch.</description>
     </item>
     
     <item>
@@ -25,7 +37,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://bonartm.github.io/data-librarian/basics/pandas/selection/</guid>
-      <description> Übung 2: Einführung in Pandas  Laden Sie [dieses Jupyter Notebook]() in Ihren Projektordner. In dem Ordner sollte sich auch der Kunden-Datensatz mit dem Namen Library_Usage.csv befinden. Öffnen und bearbeiten Sie das Notebook mit Jupyter.  </description>
+      <description>Auswahl bestimmter Variablen/ Spalten Filter von Zeilen </description>
     </item>
     
     <item>
@@ -34,7 +46,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://bonartm.github.io/data-librarian/basics/pandas/na/</guid>
-      <description> Übung 2: Einführung in Pandas  Laden Sie [dieses Jupyter Notebook]() in Ihren Projektordner. In dem Ordner sollte sich auch der Kunden-Datensatz mit dem Namen Library_Usage.csv befinden. Öffnen und bearbeiten Sie das Notebook mit Jupyter.  </description>
+      <description>Übung 2: Einführung in Pandas  Laden Sie dieses Jupyter Notebook in Ihren Projektordner. In dem Ordner sollte sich auch der Kunden-Datensatz mit dem Namen Library_Usage.csv befinden. Öffnen und bearbeiten Sie das Notebook mit Jupyter.  </description>
     </item>
     
     <item>
@@ -43,7 +55,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://bonartm.github.io/data-librarian/basics/pandas/groupby/</guid>
-      <description> Übung 2: Einführung in Pandas  Laden Sie [dieses Jupyter Notebook]() in Ihren Projektordner. In dem Ordner sollte sich auch der Kunden-Datensatz mit dem Namen Library_Usage.csv befinden. Öffnen und bearbeiten Sie das Notebook mit Jupyter.  </description>
+      <description>Übung 2: Einführung in Pandas  Laden Sie dieses Jupyter Notebook in Ihren Projektordner. In dem Ordner sollte sich auch der Kunden-Datensatz mit dem Namen Library_Usage.csv befinden. Öffnen und bearbeiten Sie das Notebook mit Jupyter.  </description>
     </item>
     
   </channel>
