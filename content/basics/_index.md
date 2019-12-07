@@ -34,8 +34,7 @@ Diese Einheit gibt eine Einführung in die Aufgaben und grundlegenden Begriffe d
 - Beschreiben Sie Datensätze mit dem statistischen Grundvokabular
 - Lesen Sie Datensätze als `DataFrames` in Python ein und aus
 - Filtern Sie `DataFrames` nach Spalten oder Zeilen
-- Berechnen Sie aus vorhandenen Variable neue Variablen
-
+- Erstellen Sie neue Variablen
 {{% customnotice exercise %}}
 
 ### Projektaufgabe
@@ -43,10 +42,9 @@ Diese Einheit gibt eine Einführung in die Aufgaben und grundlegenden Begriffe d
 Die Pressestelle der San Francisco Public Library möchte einen Online-Artikel zum Kundenstamm der Bibliothek erstellen. Dazu hat sie Ihnen [einen Datensatz](/data-librarian/organisation/dataset/) geschickt, den Sie auswerten sollen.
 
 - Erstellen Sie eine Beschreibung des Datensatzes unter Verwendung des [statistischen Grundvokabulars](/data-librarian/basics/basic_terms/)
-
 - Lesen Sie [den Datensatz](/data-librarian/organisation/dataset/) ein und berechnen Sie für jeden Kunden
-  - die Dauer der Mitgliedschaft in Monaten
-  - die Anzahl der Ausleihen und Verlängerungen *pro Monat* der Mitgliedschaft
+  - die Dauer der Mitgliedschaft in Jahren
+  - die Anzahl der Ausleihen und Verlängerungen *pro Jahr* der Mitgliedschaft
 
 - Senden Sie bis Freitag Ihre Beschreibung zusammen mit den Berechnungen in Form eines integrierten *Python Notebooks* an [malte@bonart.de](mailto:malte@bonart.de).
 

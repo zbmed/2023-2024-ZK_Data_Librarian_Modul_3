@@ -36,7 +36,7 @@ df[df['Total Checkouts'] > 10000]
 
 Der Ausdruck `df['Total Checkouts'] > 10000` wird zuerst ausgewertet und ergibt eine boolesche `Series` mit Einträgen `True` wenn die Beobachtung mehr als `1000` Ausleihen getätigt hat und `False` sonst.
 
-Mit einer booleschen `Series` lassen sich dann die Zeilen eines `DataFrame` auswählen: Es werden genau die Zeilen zurückgegeben, bei denen die `Series` `True` Werte enthält.
+Mit einer booleschen `Series` lassen sich dann die Zeilen des `DataFrame` auswählen: Es werden genau die Zeilen zurückgegeben, bei denen die `Series` `True` Werte enthält.
 
 Anstatt alles in einer Zeile zu schreiben, können wir auch eine Hilfsvariable erstellen, die den booleschen Vektor zwischenspeichert:
 
@@ -47,7 +47,7 @@ df[filter]
 ```
 {{% /customnotice %}}
 
-Für den Zeilenfilter können komplexe logische Ausdrücke unter Zuhilfenahme der Operatoren `<, >, &, |, ==` u.s.w. gebildet werden:
+Für den booleschen Zeilenfilter können komplexe logische Ausdrücke unter Zuhilfenahme der Operatoren `<, >, &, |, ==` u.s.w. gebildet werden:
 
 {{% customnotice code %}}
 ```python
@@ -56,9 +56,24 @@ df[filter]
 ```
 {{% /customnotice %}}
 
+{{% customnotice tip %}}
+
+#### Logische Operatoren
+
+Ausdruck | Beschreibung
+:---: | :---:
+`<`/ `<=` | kleiner/ kleiner gleich
+`>` / `>=` | größer/ größer gleich
+`==` | gleich
+`!=` | ungleich
+`&`  | elementweises logisches *und*
+`|`  | elementweises logisches *oder*
+`~`  | elementweise logische negation
+{{% /customnotice %}}
+
 
 {{% customnotice exercise %}}
 1. Filter Sie den Datensatz nach Kindern unter 10 Jahren. Wie viele Einträge erhalten Sie?
 2. Gibt es Personen mit mehr als `20000` Ausleihen?
-3. Wie viele Personen stammen aus dem Norden San Franciscos ([Supervisor Districts]((https://en.wikipedia.org/wiki/San_Francisco_Board_of_Supervisors)) 1, 2 und 3)? Nuzten Sie die Funktion `Series.isin()`.
+3. Wie viele Personen stammen aus dem Norden San Franciscos ([Supervisor Districts]((https://en.wikipedia.org/wiki/San_Francisco_Board_of_Supervisors)) 1, 2 und 3)? Nutzen Sie die Funktion `Series.isin()`.
 {{% /customnotice %}}
