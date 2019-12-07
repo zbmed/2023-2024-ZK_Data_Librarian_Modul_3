@@ -22,7 +22,7 @@ LastModifierDisplayName = ""
 LastModifierEmail = ""
 +++
 
-{{< figure src="images/distributions.png" title="Verschiedene univariate  Verteilungen" width="100%" >}}
+{{< figure src="/images/distributions.png" title="Verschiedene univariate  Verteilungen" width="100%" >}}
 
 Neben der zentralen Lage- und Streuung einer Verteilung ist auch deren Symmetrie von Bedeutung.
 
