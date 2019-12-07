@@ -22,21 +22,63 @@ LastModifierDisplayName = ""
 LastModifierEmail = ""
 +++
 
+Streuungsmaße geben an, wie stark die Daten einer Messreihe schwanken.
 
 Die Abweichung einer Beobachtung von dem Mittelwert der zugrundeliegenden Variable wird **Abweichung** genannt. Der Mittelwert über die quadrierten Abweichungen nennt man **Varianz**:
 
 $$
-s^2 = \frac{1}{n-1}\sum_{i=1}^{n}(x_i-\bar{x})^2
+s^2_x = \frac{1}{n-1}\sum_{i=1}^{n}(x_i-\bar{x})^2
 $$
 
-Das Quadrieren der Abweichungen hat zur Folge, dass das Vorzeichen verschwindet und das große Abweichungen noch größer werden: $(-10)^2 = 100$, $(-100)^2 = 10000$.
+{{% customnotice code %}}
+```python
+df['Total Checkouts'].var()
+```
+{{% /customnotice %}}
 
-Ihnen ist vielleicht aufgefallen, dass in der Formel durch $n-1$ anstatt durch $n$ geteilt wird. Diese Auffälligkeit ist theoretisch von Bedeutung, es hat aber in der Praxis meist keine Auswirkungen, wenn wir den normalen Mittelwert bilden.
+Das Quadrieren der Abweichungen hat zur Folge, dass das Vorzeichen verschwindet und das große Abweichungen mehr Gewicht erhalten.
+
+In der Formel wird durch $n-1$ anstatt durch $n$ geteilt. Dies ist theoretisch von Bedeutung, es hat aber in der Praxis meist keine Auswirkungen, wenn durch $n$ geteilt wird.
 
 Die **Standardabweichungen** ist die Wurzel der Varianz:
 
 $$
-s = \sqrt{s^2}
+s_x = \sqrt{s_x^2}
 $$
 
-Für die Streuung der Variable in der Population werden $\sigma^2$ für die Varianz und $\sigma$ für die Standardabweichung eingeführt.  
+{{% customnotice code %}}
+```python
+df['Total Checkouts'].std()
+```
+{{% /customnotice %}}
+
+Die **Spannweite** ist die Differenz zwischen dem maximalen und minmalem Wert
+
+{{% customnotice code %}}
+```python
+df['Total Checkouts'].max() - df['Total Checkouts'].min()
+```
+{{% /customnotice %}}
+
+### Quantile
+
+Sie haben schon den Median $x_0.5$ als Lageparameter kennengelernt. Er teilt die geordnete Verteilung in zwei genau gleich große Teile. Allgemeiner lassen sich analog dazu die Quantile definieren: $x_{0.75}$ teil die geordnete Verteilung im Verhältnis 3:1. Das heißt, dass 75% der Beobachtungen kleiner als $x_{0.75}$ und 25% größer sind.
+Das $x_{0.25}$ Quantil teilt die Reihe im Verhältnis 1:3. Hier sind 25% der Beobachtungen kleiner und 75% größer.
+
+{{% customnotice code %}}
+```python
+df['Total Checkouts'].quantile(q=[0.25, 0.5, 0.75])
+```
+{{% /customnotice %}}
+
+Daraus kann der **Interquartilsabstand** als Streuungsmaß abgeleitet werden:
+$$
+x_{IQR} = x_{0.75} - x_{0.25}
+$$
+
+{{% customnotice code %}}
+```python
+df['Total Checkouts'].quantile(q=0.75) - df['Total Checkouts'].quantile(q=0.25)
+
+```
+{{% /customnotice %}}
