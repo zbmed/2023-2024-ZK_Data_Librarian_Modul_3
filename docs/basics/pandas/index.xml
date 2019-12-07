@@ -59,16 +59,8 @@ import pandas as pd df = pd.read_csv(&amp;#34;../data/Library_Usage.csv&amp;#34;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://bonartm.github.io/data-librarian/basics/pandas/na/</guid>
-      <description>Übung 2: Einführung in Pandas  Laden Sie dieses Jupyter Notebook in Ihren Projektordner. In dem Ordner sollte sich auch der Kunden-Datensatz mit dem Namen Library_Usage.csv befinden. Öffnen und bearbeiten Sie das Notebook mit Jupyter.  </description>
-    </item>
-    
-    <item>
-      <title>Aggregation und Gruppierung</title>
-      <link>https://bonartm.github.io/data-librarian/basics/pandas/groupby/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://bonartm.github.io/data-librarian/basics/pandas/groupby/</guid>
-      <description>Übung 2: Einführung in Pandas  Laden Sie dieses Jupyter Notebook in Ihren Projektordner. In dem Ordner sollte sich auch der Kunden-Datensatz mit dem Namen Library_Usage.csv befinden. Öffnen und bearbeiten Sie das Notebook mit Jupyter.  </description>
+      <description>Real erhobene Daten sind meistens unsauber und fehlerhaft. Ein häufiges Problem dabei sind fehlende Werte, also Beobachtungen für die manche Merkmale nicht erhoben wurden. In jedem Datensatz werden fehlende Werte anders gekennzeichnet, aber man findet meistens diese Kodierungen wieder: &amp;quot;-999&amp;quot;, &amp;quot;NA&amp;quot;, &amp;quot; &amp;quot;, &amp;quot;None&amp;quot;, &amp;quot;NULL&amp;quot;, &amp;quot;#N/A&amp;quot;.
+Wenn beispielsweise der Mittelwert einer statistischen Variable berechnet wird, so muss entschieden werden, wie mit fehlenden Werten umgegangen werden soll: Sollen die Werte entfernt werden?</description>
     </item>
     
   </channel>

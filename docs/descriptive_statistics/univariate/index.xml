@@ -11,12 +11,14 @@
     
     
     <item>
-      <title>Häufigkeitstabellen</title>
+      <title>Häufigkeiten</title>
       <link>https://bonartm.github.io/data-librarian/descriptive_statistics/univariate/frequency/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://bonartm.github.io/data-librarian/descriptive_statistics/univariate/frequency/</guid>
-      <description></description>
+      <description>Kategoriale (nominale und ordinale) Variablen werden in Häufigkeitstabellen zusammengefasst. Dabei wird für jede Ausprägung die Anzahl der Beobachtungen gezählt:
+import pandas as pd df = pd.read_csv(&amp;#34;../data/Library_Usage.csv&amp;#34;) df[&amp;#39;Age Range&amp;#39;].value_counts()    Mit der Funktion value_counts() können Sie sich absolute Häufigkeitstabellen ausgeben lassen. Mit dem zusätzlichen Argumentaufruf normalize=True werden relative Häufigkeiten berechnet:
+df[&amp;#39;Age Range&amp;#39;].value_counts(normalize=True)    Der Modus ist dabei die Merkmalsausprägung, die die meisten Beobachtungen besitzen: df[&amp;#39;Age Range&amp;#39;].mode()    Visualisierung Häufigkeitstabellen lassen sich idealerweise als Balkendiagramme visualisieren:</description>
     </item>
     
     <item>
@@ -25,12 +27,9 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://bonartm.github.io/data-librarian/descriptive_statistics/univariate/mean/</guid>
-      <description>Lagemaße beschreiben die Zentralität einer Verteilung.
-Typische Lagemaße sind der empirische Mittelwert:
+      <description>Lagemaße beschreiben die Zentralität einer Verteilung. Das bekannteste Lagemaß ist der empirische Mittelwert:
 $$ \bar{x} = \frac{1}{n}\sum_{i=1}^{n}x_i = \frac{x_1 + x_2 + \dots + x_n}{n} $$
-Oder der Median:
-$$
-$$</description>
+import pandas as pd df = pd.read_csv(&amp;#34;../data/Library_Usage.csv&amp;#34;) df[&amp;#39;Total Checkouts&amp;#39;].mean()    Eine zweite wichtige Statistik ist der Median. Er ergibt sich aus dem Wert der Beobachtung, die die nach der Größe geordnete Messreihe in genau zwei gleich große Teile teilt. Für eine gerade Anzahl an Beobachtung wird der Mittelwert der Beobachtung an der Stelle $n/2$ und $n/2+1$ genommen:</description>
     </item>
     
     <item>
@@ -39,10 +38,24 @@ $$</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://bonartm.github.io/data-librarian/descriptive_statistics/univariate/variance/</guid>
-      <description>Die Abweichung einer Beobachtung von dem Mittelwert der zugrundeliegenden Variable wird Abweichung genannt. Der Mittelwert über die quadrierten Abweichungen nennt man Varianz:
-$$ s^2 = \frac{1}{n-1}\sum_{i=1}^{n}(x_i-\bar{x})^2 $$
-Das Quadrieren der Abweichungen hat zur Folge, dass das Vorzeichen verschwindet und das große Abweichungen noch größer werden: $(-10)^2 = 100$, $(-100)^2 = 10000$.
-Ihnen ist vielleicht aufgefallen, dass in der Formel durch $n-1$ anstatt durch $n$ geteilt wird. Diese Auffälligkeit ist theoretisch von Bedeutung, es hat aber in der Praxis meist keine Auswirkungen, wenn wir den normalen Mittelwert bilden.</description>
+      <description>Streuungsmaße geben an, wie stark die Daten einer Messreihe schwanken.
+Die Abweichung einer Beobachtung von dem Mittelwert der zugrundeliegenden Variable wird Abweichung genannt. Der Mittelwert über die quadrierten Abweichungen nennt man Varianz:
+$$ s^2_x = \frac{1}{n-1}\sum_{i=1}^{n}(x_i-\bar{x})^2 $$
+df[&amp;#39;Total Checkouts&amp;#39;].var()    Das Quadrieren der Abweichungen hat zur Folge, dass das Vorzeichen verschwindet und das große Abweichungen mehr Gewicht erhalten.
+In der Formel wird durch $n-1$ anstatt durch $n$ geteilt. Dies ist theoretisch von Bedeutung, es hat aber in der Praxis meist keine Auswirkungen, wenn durch $n$ geteilt wird.</description>
+    </item>
+    
+    <item>
+      <title>Symmetrie</title>
+      <link>https://bonartm.github.io/data-librarian/descriptive_statistics/univariate/symmetrie/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bonartm.github.io/data-librarian/descriptive_statistics/univariate/symmetrie/</guid>
+      <description>Verschiedene univariate Verteilungen   Neben der zentralen Lage- und Streuung einer Verteilung ist auch deren Symmetrie von Bedeutung.
+Symmetrie Eine symmetrische Verteilung zeichnet sich dadurch aus das Modus, Median und Mittelwert gleich sind.
+Eine linksschiefe Verteilung liegt vor, wenn überproportional viele große Werte vorliegen.
+Eine rechtsschiefe Verteilung ist durch überproprtional vielen kleinen Werten geprägt.
+Zudem kann eine Verteilung auch Bi- oder Multimodal sein, das heißt es gibt mehre &amp;ldquo;Gipfel&amp;rdquo;.</description>
     </item>
     
   </channel>

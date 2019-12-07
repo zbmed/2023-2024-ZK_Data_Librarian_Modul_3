@@ -12,25 +12,25 @@
     <title>Univariate Verteilungen :: data librarian - modul 3 - daten analysieren und verstehen</title>
 
     
-    <link href="/data-librarian/css/nucleus.css?1575646467" rel="stylesheet">
-    <link href="/data-librarian/css/fontawesome-all.min.css?1575646467" rel="stylesheet">
-    <link href="/data-librarian/css/hybrid.css?1575646467" rel="stylesheet">
-    <link href="/data-librarian/css/featherlight.min.css?1575646467" rel="stylesheet">
-    <link href="/data-librarian/css/perfect-scrollbar.min.css?1575646467" rel="stylesheet">
-    <link href="/data-librarian/css/auto-complete.css?1575646467" rel="stylesheet">
-    <link href="/data-librarian/css/atom-one-dark-reasonable.css?1575646467" rel="stylesheet">
-    <link href="/data-librarian/css/theme.css?1575646467" rel="stylesheet">
-    <link href="/data-librarian/css/hugo-theme.css?1575646467" rel="stylesheet">
+    <link href="/data-librarian/css/nucleus.css?1575739746" rel="stylesheet">
+    <link href="/data-librarian/css/fontawesome-all.min.css?1575739746" rel="stylesheet">
+    <link href="/data-librarian/css/hybrid.css?1575739746" rel="stylesheet">
+    <link href="/data-librarian/css/featherlight.min.css?1575739746" rel="stylesheet">
+    <link href="/data-librarian/css/perfect-scrollbar.min.css?1575739746" rel="stylesheet">
+    <link href="/data-librarian/css/auto-complete.css?1575739746" rel="stylesheet">
+    <link href="/data-librarian/css/atom-one-dark-reasonable.css?1575739746" rel="stylesheet">
+    <link href="/data-librarian/css/theme.css?1575739746" rel="stylesheet">
+    <link href="/data-librarian/css/hugo-theme.css?1575739746" rel="stylesheet">
 
 
 
     
-      <link href="/data-librarian/css/theme-green.css?1575646467" rel="stylesheet">
+      <link href="/data-librarian/css/theme-green.css?1575739746" rel="stylesheet">
     
-    <link href="/data-librarian/css/custom.css?1575646467" rel="stylesheet">
+    <link href="/data-librarian/css/custom.css?1575739746" rel="stylesheet">
 
 
-    <script src="/data-librarian/js/jquery-3.3.1.min.js?1575646467"></script>
+    <script src="/data-librarian/js/jquery-3.3.1.min.js?1575739746"></script>
 
 
 
@@ -62,14 +62,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/data-librarian/js/lunr.min.js?1575646467"></script>
-<script type="text/javascript" src="/data-librarian/js/auto-complete.js?1575646467"></script>
+<script type="text/javascript" src="/data-librarian/js/lunr.min.js?1575739746"></script>
+<script type="text/javascript" src="/data-librarian/js/auto-complete.js?1575739746"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/bonartm.github.io\/data-librarian\/";
     
 </script>
-<script type="text/javascript" src="/data-librarian/js/search.js?1575646467"></script>
+<script type="text/javascript" src="/data-librarian/js/search.js?1575739746"></script>
 
     
   </div>
@@ -641,25 +641,6 @@
 
             
           
-            
-            
-
-
- 
-  
-    
-      <li data-nav-id="/data-librarian/basics/pandas/groupby/" title="Aggregation und Gruppierung" class="dd-item ">
-        <a href="/data-librarian/basics/pandas/groupby/">
-        Aggregation und Gruppierung
-        <i class="fas fa-check read-icon"></i>
-        </a>
-    </li>
-     
-  
- 
-
-            
-          
         
         </ul>
               
@@ -777,9 +758,9 @@
  
   
     
-      <li data-nav-id="/data-librarian/descriptive_statistics/univariate/frequency/" title="Häufigkeitstabellen" class="dd-item ">
+      <li data-nav-id="/data-librarian/descriptive_statistics/univariate/frequency/" title="Häufigkeiten" class="dd-item ">
         <a href="/data-librarian/descriptive_statistics/univariate/frequency/">
-        Häufigkeitstabellen
+        Häufigkeiten
         <i class="fas fa-check read-icon"></i>
         </a>
     </li>
@@ -818,6 +799,25 @@
       <li data-nav-id="/data-librarian/descriptive_statistics/univariate/variance/" title="Streuungsmaße" class="dd-item ">
         <a href="/data-librarian/descriptive_statistics/univariate/variance/">
         Streuungsmaße
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/data-librarian/descriptive_statistics/univariate/symmetrie/" title="Symmetrie" class="dd-item ">
+        <a href="/data-librarian/descriptive_statistics/univariate/symmetrie/">
+        Symmetrie
         <i class="fas fa-check read-icon"></i>
         </a>
     </li>
@@ -1217,36 +1217,14 @@
 
 
 
-	<p>Neben der zentralen Lage einer Verteilung, beschrieben durch Lagemaße, und die Streuung, beschrieben durch Streuungsmaße, gibt es noch andere Eigenschaften, die die Form einer Verteilung charakterisieren.</p>
-<p>Diese Eigenschaften lassen sich am besten durch Histogramme sichtbar machen.</p>
-<h2 id="symmetrie">Symmetrie</h2>
-<p>Linksschief</p>
-<p>Rechtsschief</p>
-<h2 id="modus">Modus</h2>
-<p>Unimodal</p>
-<p>bimodal</p>
-<p>multimodal</p>
-<p>Mit dem folgenden Beispiel können Sie ein Histogram der Anzahl der Ausleihen im Datensatz erstellen:</p>
+	<p>In der Statistik geben <strong>Verteilungen</strong> an, wie wahrscheinlich oder häufig eine bestimmte Merkmausausprägung oder Kombination von Merkmausausprägungen ist. Univariate Verteilung beschreiben dabei die Wahrscheinlichkeiten einer einzelnen statischen Variablen, während bivariate oder multivariate Verteilungen sich auf zwei oder mehr Variablen beziehen.</p>
+<p><strong>Empirische Verteilungen</strong> beziehen sich dabei auf die Häufigkeiten in konkreten Daten während <strong>theoretische Verteilungen</strong> als mathematischen Funktionen, die von einigen wenigen Parametern abhängen, vorliegen. Eine Hauptaufgabe der schließenden Statistik ist es, die beobachtbaren Daten so zu nutzen, dass die Parameter von theoretischen Verteilungen korrekt geschätzt werden können.</p>
+<p>Statistiken, wie der Mittelwert oder der Modus dienen zur Beschreibungen und Charakterisierung von Verteilungen in einigen wenigen Kennzahlen. Dabei gibt es häufig Statistiken, die nur für bestimmte Skalenniveaus Sinn machen.</p>
+<p><strong>Kategoriale</strong> (nominale und ordinale) Variablen werden in Häufigkeitstabellen zusammengefasst. Wichtige charakteristische Eigenschaften für <strong>metrische Variablen</strong> sind die zentrale Lage, die Streuung und die Symmetrie.</p>
 
 <div class="customnotices">
-  <div class="notices_inner" id="code">
-    <pre><code>import pandas as pd
-import seaborn as sns
-sns.set()
-
-df = pd.read_csv(&quot;../data/Library_Usage.csv&quot;)
-df['Total Checkouts'].plot.hist(bins=100)
-</code></pre>
-  </div>
-</div>
-
-
-<div class="customnotices">
-  <div class="notices_inner" id="exercise">
-    <ul>
-<li>Charakterisieren Sie die Verteilung der Ausleihen pro Kunde</li>
-<li>Filter Sie den Datensatz nach Personen, die weniger als 100 Ausleihen haben und schauen Sie sich die Verteilung im Histogram an.</li>
-</ul>
+  <div class="notices_inner" id="tip">
+    <p>Im Folgenden werden mit $x = x_1, \dots, x_n$ eine univariate Reihe von Beobachtungen beschrieben, mit $n$ die Anzahl der Beobachtungen. $x_i$ beschreibt die Beobachtung an der <em>i</em>-ten Stelle.</p>
 
   </div>
 </div>
@@ -1703,22 +1681,6 @@ df['Total Checkouts'].plot.hist(bins=100)
             
         
                     
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
             
         
                     
@@ -1794,6 +1756,22 @@ df['Total Checkouts'].plot.hist(bins=100)
                     
                         
                         
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
                     
                 
                 
@@ -2032,7 +2010,7 @@ df['Total Checkouts'].plot.hist(bins=100)
 			<a class="nav nav-prev" href="/data-librarian/descriptive_statistics/" title="Deskriptive Statistik und Visualisierungen"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/data-librarian/descriptive_statistics/univariate/frequency/" title="Häufigkeitstabellen" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/data-librarian/descriptive_statistics/univariate/frequency/" title="Häufigkeiten" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -2042,19 +2020,19 @@ df['Total Checkouts'].plot.hist(bins=100)
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/data-librarian/js/clipboard.min.js?1575646467"></script>
-    <script src="/data-librarian/js/perfect-scrollbar.min.js?1575646467"></script>
-    <script src="/data-librarian/js/perfect-scrollbar.jquery.min.js?1575646467"></script>
-    <script src="/data-librarian/js/jquery.sticky.js?1575646467"></script>
-    <script src="/data-librarian/js/featherlight.min.js?1575646467"></script>
-    <script src="/data-librarian/js/highlight.pack.js?1575646467"></script>
+    <script src="/data-librarian/js/clipboard.min.js?1575739746"></script>
+    <script src="/data-librarian/js/perfect-scrollbar.min.js?1575739746"></script>
+    <script src="/data-librarian/js/perfect-scrollbar.jquery.min.js?1575739746"></script>
+    <script src="/data-librarian/js/jquery.sticky.js?1575739746"></script>
+    <script src="/data-librarian/js/featherlight.min.js?1575739746"></script>
+    <script src="/data-librarian/js/highlight.pack.js?1575739746"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/data-librarian/js/modernizr.custom-3.6.0.js?1575646467"></script>
-    <script src="/data-librarian/js/learn.js?1575646467"></script>
-    <script src="/data-librarian/js/hugo-learn.js?1575646467"></script>
+    <script src="/data-librarian/js/modernizr.custom-3.6.0.js?1575739746"></script>
+    <script src="/data-librarian/js/learn.js?1575739746"></script>
+    <script src="/data-librarian/js/hugo-learn.js?1575739746"></script>
 
-    <link href="/data-librarian/mermaid/mermaid.css?1575646467" rel="stylesheet" />
-    <script src="/data-librarian/mermaid/mermaid.js?1575646467"></script>
+    <link href="/data-librarian/mermaid/mermaid.css?1575739746" rel="stylesheet" />
+    <script src="/data-librarian/mermaid/mermaid.js?1575739746"></script>
 
     <script>
         mermaid.initialize({ startOnLoad: true });

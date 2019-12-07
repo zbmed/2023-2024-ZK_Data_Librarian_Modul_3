@@ -51,10 +51,6 @@
   </url>
   
   <url>
-    <loc>https://bonartm.github.io/data-librarian/basics/pandas/groupby/</loc>
-  </url>
-  
-  <url>
     <loc>https://bonartm.github.io/data-librarian/organisation/</loc>
   </url>
   
@@ -104,6 +100,10 @@
   
   <url>
     <loc>https://bonartm.github.io/data-librarian/descriptive_statistics/univariate/variance/</loc>
+  </url>
+  
+  <url>
+    <loc>https://bonartm.github.io/data-librarian/descriptive_statistics/univariate/symmetrie/</loc>
   </url>
   
   <url>

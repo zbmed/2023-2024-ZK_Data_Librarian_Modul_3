@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="Hugo 0.60.0" />
-    <meta name="description" content="Funktionen und Methoden aus der Statistik.">
+    <meta name="description" content="learning materials for the data librarian course">
 <meta name="author" content="Malte Bonart">
 
     <link rel="icon" href="/data-librarian/images/favicon.png" type="image/png">
 
-    <title>scipy :: data librarian - modul 3 - daten analysieren und verstehen</title>
+    <title>Symmetrie :: data librarian - modul 3 - daten analysieren und verstehen</title>
 
     
     <link href="/data-librarian/css/nucleus.css?1575739746" rel="stylesheet">
@@ -42,7 +42,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/data-librarian/organisation/packages/scipy/">
+  <body class="" data-url="/data-librarian/descriptive_statistics/univariate/symmetrie/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -86,7 +86,7 @@
   
     
     <li data-nav-id="/data-librarian/organisation/" title="Kursorganisation und Vorbereitungen" class="dd-item 
-        parent
+        
         
         
         ">
@@ -210,7 +210,7 @@
   
     
     <li data-nav-id="/data-librarian/organisation/packages/" title="Python Pakete und Bibliothekten" class="dd-item 
-        parent
+        
         
         
         ">
@@ -312,7 +312,7 @@
  
   
     
-      <li data-nav-id="/data-librarian/organisation/packages/scipy/" title="scipy" class="dd-item active">
+      <li data-nav-id="/data-librarian/organisation/packages/scipy/" title="scipy" class="dd-item ">
         <a href="/data-librarian/organisation/packages/scipy/">
         scipy
         <i class="fas fa-check read-icon"></i>
@@ -703,7 +703,7 @@
   
     
     <li data-nav-id="/data-librarian/descriptive_statistics/" title="Deskriptive Statistik und Visualisierungen" class="dd-item 
-        
+        parent
         
         
         ">
@@ -732,7 +732,7 @@
   
     
     <li data-nav-id="/data-librarian/descriptive_statistics/univariate/" title="Univariate Verteilungen" class="dd-item 
-        
+        parent
         
         
         ">
@@ -815,7 +815,7 @@
  
   
     
-      <li data-nav-id="/data-librarian/descriptive_statistics/univariate/symmetrie/" title="Symmetrie" class="dd-item ">
+      <li data-nav-id="/data-librarian/descriptive_statistics/univariate/symmetrie/" title="Symmetrie" class="dd-item active">
         <a href="/data-librarian/descriptive_statistics/univariate/symmetrie/">
         Symmetrie
         <i class="fas fa-check read-icon"></i>
@@ -1191,7 +1191,7 @@
             
           
           
-            <a href='/data-librarian/'>Modul 3</a> > <a href='/data-librarian/organisation/'>Kursorganisation und Vorbereitungen</a> > <a href='/data-librarian/organisation/packages/'>Python Pakete und Bibliothekten</a> > scipy
+            <a href='/data-librarian/'>Modul 3</a> > <a href='/data-librarian/descriptive_statistics/'>Deskriptive Statistik und Visualisierungen</a> > <a href='/data-librarian/descriptive_statistics/univariate/'>Univariate Verteilungen</a> > Symmetrie
           
         
           
@@ -1215,31 +1215,94 @@
           
             <h1>
               
-              scipy
+              Symmetrie
             </h1>
           
 
         
 
 
-<p><a href="https://docs.scipy.org/doc/scipy/reference/">scipy</a> ist fest mit numpy und pandas verbunden und bietet eine Menge an Funktionen und Methoden aus der Mathematik und Statistik an.</p>
-<p>Für uns ist vor alle das Paket <code>scipy.stats</code> Interessant. Mit ihm können Zufallszahlen aus verschiedensten statistischen Verteilungen generiert werden oder auch statistische Tests durchgeführt werden. <a href="https://docs.scipy.org/doc/scipy/reference/stats.html">Hier</a> finden Sie einen Überblick über alle Methoden des Pakets.</p>
-<p>Im folgenden Beispiel wird ein <a href="https://de.wikipedia.org/wiki/Zweistichproben-t-Test">Zweistichproben-t-Test</a> an zwei numerischen Listen durchgeführt.</p>
+<figure>
+    <img src="/images/distributions.png"/> <figcaption>
+            <h4>Verschiedene univariate  Verteilungen</h4>
+        </figcaption>
+</figure>
+
+<p>Neben der zentralen Lage- und Streuung einer Verteilung ist auch deren Symmetrie von Bedeutung.</p>
+<h2 id="symmetrie">Symmetrie</h2>
+<p>Eine symmetrische Verteilung zeichnet sich dadurch aus das Modus, Median und Mittelwert gleich sind.</p>
+<p>Eine <strong>linksschiefe</strong> Verteilung liegt vor, wenn überproportional viele große Werte vorliegen.</p>
+<p>Eine <strong>rechtsschiefe</strong> Verteilung ist durch überproprtional vielen kleinen Werten geprägt.</p>
+<p>Zudem kann eine Verteilung auch Bi- oder Multimodal sein, das heißt es gibt mehre &ldquo;Gipfel&rdquo;.</p>
+<p>Mit dem folgenden Beispiel können Sie ein Histogram der Anzahl der Ausleihen im Datensatz erstellen:</p>
 
 <div class="customnotices">
   <div class="notices_inner" id="code">
-    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># import the package stats from the library scipy</span>
-<span style="color:#f92672">from</span> scipy <span style="color:#f92672">import</span> stats
+    <pre><code>import pandas as pd
+import seaborn as sns
+sns.set()
 
-<span style="color:#75715e"># create two numerical arrays</span>
-x <span style="color:#f92672">=</span> [<span style="color:#ae81ff">12</span>, <span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">11</span>, <span style="color:#ae81ff">13</span>, <span style="color:#ae81ff">14</span>, <span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">13</span>, <span style="color:#ae81ff">13</span>, <span style="color:#ae81ff">22</span>]
-y <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>]
-
-<span style="color:#75715e"># perform a two sample t-test, to test if the samples have different means</span>
-stats<span style="color:#f92672">.</span>ttest_ind(x,y)
-</code></pre></div>
+df = pd.read_csv(&quot;../data/Library_Usage.csv&quot;)
+df['Total Checkouts'].plot.hist(bins=100)
+</code></pre>
   </div>
 </div>
+
+
+<div class="customnotices">
+  <div class="notices_inner" id="exercise">
+    <ul>
+<li>Charakterisieren Sie die Verteilung der Ausleihen pro Kunde</li>
+<li>Filter Sie den Datensatz nach Personen, die weniger als 100 Ausleihen haben und schauen Sie sich die Verteilung im Histogram an.</li>
+</ul>
+
+  </div>
+</div>
+
+
+<section class="attachments ">
+	<label>
+		<i class="fas fa-paperclip" aria-hidden="true"></i>
+		Related files
+	</label>
+	
+		
+	
+	<div class="attachments-files">
+	
+		
+		
+			
+				<li>
+					<a href="/data-librarian/descriptive_statistics/univariate/symmetrie.files/.ipynb_checkpoints" >
+						.ipynb_checkpoints
+					</a>
+					(4 ko)
+				</li>
+			
+		
+	
+		
+		
+			
+				<li>
+					<a href="/data-librarian/descriptive_statistics/univariate/symmetrie.files/distributions.ipynb" >
+						distributions.ipynb
+					</a>
+					(231 ko)
+				</li>
+			
+		
+	
+		
+		
+			
+		
+	
+	<div>
+	
+</section>
+
 
 
 
@@ -1279,6 +1342,8 @@ stats<span style="color:#f92672">.</span>ttest_ind(x,y)
             
                 
                     
+                        
+                        
                     
                 
                 
@@ -1294,9 +1359,6 @@ stats<span style="color:#f92672">.</span>ttest_ind(x,y)
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -1378,7 +1440,6 @@ stats<span style="color:#f92672">.</span>ttest_ind(x,y)
             
                 
                     
-                    
                 
                 
 
@@ -1391,9 +1452,6 @@ stats<span style="color:#f92672">.</span>ttest_ind(x,y)
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -1459,7 +1517,6 @@ stats<span style="color:#f92672">.</span>ttest_ind(x,y)
             
                 
                     
-                    
                 
                 
 
@@ -1475,9 +1532,6 @@ stats<span style="color:#f92672">.</span>ttest_ind(x,y)
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -1743,6 +1797,7 @@ stats<span style="color:#f92672">.</span>ttest_ind(x,y)
             
                 
                     
+                    
                 
                 
 
@@ -1758,6 +1813,7 @@ stats<span style="color:#f92672">.</span>ttest_ind(x,y)
             
                 
                     
+                    
                 
                 
 
@@ -1770,6 +1826,9 @@ stats<span style="color:#f92672">.</span>ttest_ind(x,y)
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -1819,6 +1878,7 @@ stats<span style="color:#f92672">.</span>ttest_ind(x,y)
             
                 
                     
+                    
                 
                 
 
@@ -1837,6 +1897,9 @@ stats<span style="color:#f92672">.</span>ttest_ind(x,y)
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -2021,10 +2084,10 @@ stats<span style="color:#f92672">.</span>ttest_ind(x,y)
 	 
 	 
 		
-			<a class="nav nav-prev" href="/data-librarian/organisation/packages/seaborn/" title="seaborn"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/data-librarian/descriptive_statistics/univariate/variance/" title="Streuungsmaße"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/data-librarian/organisation/packages/scikitlearn/" title="scitkit-learn" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/data-librarian/descriptive_statistics/bivariate/" title="Bivariate Verteilungen" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>

@@ -12,25 +12,25 @@
     <title>Fehlende Werte :: data librarian - modul 3 - daten analysieren und verstehen</title>
 
     
-    <link href="/data-librarian/css/nucleus.css?1575646467" rel="stylesheet">
-    <link href="/data-librarian/css/fontawesome-all.min.css?1575646467" rel="stylesheet">
-    <link href="/data-librarian/css/hybrid.css?1575646467" rel="stylesheet">
-    <link href="/data-librarian/css/featherlight.min.css?1575646467" rel="stylesheet">
-    <link href="/data-librarian/css/perfect-scrollbar.min.css?1575646467" rel="stylesheet">
-    <link href="/data-librarian/css/auto-complete.css?1575646467" rel="stylesheet">
-    <link href="/data-librarian/css/atom-one-dark-reasonable.css?1575646467" rel="stylesheet">
-    <link href="/data-librarian/css/theme.css?1575646467" rel="stylesheet">
-    <link href="/data-librarian/css/hugo-theme.css?1575646467" rel="stylesheet">
+    <link href="/data-librarian/css/nucleus.css?1575739746" rel="stylesheet">
+    <link href="/data-librarian/css/fontawesome-all.min.css?1575739746" rel="stylesheet">
+    <link href="/data-librarian/css/hybrid.css?1575739746" rel="stylesheet">
+    <link href="/data-librarian/css/featherlight.min.css?1575739746" rel="stylesheet">
+    <link href="/data-librarian/css/perfect-scrollbar.min.css?1575739746" rel="stylesheet">
+    <link href="/data-librarian/css/auto-complete.css?1575739746" rel="stylesheet">
+    <link href="/data-librarian/css/atom-one-dark-reasonable.css?1575739746" rel="stylesheet">
+    <link href="/data-librarian/css/theme.css?1575739746" rel="stylesheet">
+    <link href="/data-librarian/css/hugo-theme.css?1575739746" rel="stylesheet">
 
 
 
     
-      <link href="/data-librarian/css/theme-green.css?1575646467" rel="stylesheet">
+      <link href="/data-librarian/css/theme-green.css?1575739746" rel="stylesheet">
     
-    <link href="/data-librarian/css/custom.css?1575646467" rel="stylesheet">
+    <link href="/data-librarian/css/custom.css?1575739746" rel="stylesheet">
 
 
-    <script src="/data-librarian/js/jquery-3.3.1.min.js?1575646467"></script>
+    <script src="/data-librarian/js/jquery-3.3.1.min.js?1575739746"></script>
 
 
 
@@ -62,14 +62,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/data-librarian/js/lunr.min.js?1575646467"></script>
-<script type="text/javascript" src="/data-librarian/js/auto-complete.js?1575646467"></script>
+<script type="text/javascript" src="/data-librarian/js/lunr.min.js?1575739746"></script>
+<script type="text/javascript" src="/data-librarian/js/auto-complete.js?1575739746"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/bonartm.github.io\/data-librarian\/";
     
 </script>
-<script type="text/javascript" src="/data-librarian/js/search.js?1575646467"></script>
+<script type="text/javascript" src="/data-librarian/js/search.js?1575739746"></script>
 
     
   </div>
@@ -641,25 +641,6 @@
 
             
           
-            
-            
-
-
- 
-  
-    
-      <li data-nav-id="/data-librarian/basics/pandas/groupby/" title="Aggregation und Gruppierung" class="dd-item ">
-        <a href="/data-librarian/basics/pandas/groupby/">
-        Aggregation und Gruppierung
-        <i class="fas fa-check read-icon"></i>
-        </a>
-    </li>
-     
-  
- 
-
-            
-          
         
         </ul>
               
@@ -777,9 +758,9 @@
  
   
     
-      <li data-nav-id="/data-librarian/descriptive_statistics/univariate/frequency/" title="Häufigkeitstabellen" class="dd-item ">
+      <li data-nav-id="/data-librarian/descriptive_statistics/univariate/frequency/" title="Häufigkeiten" class="dd-item ">
         <a href="/data-librarian/descriptive_statistics/univariate/frequency/">
-        Häufigkeitstabellen
+        Häufigkeiten
         <i class="fas fa-check read-icon"></i>
         </a>
     </li>
@@ -818,6 +799,25 @@
       <li data-nav-id="/data-librarian/descriptive_statistics/univariate/variance/" title="Streuungsmaße" class="dd-item ">
         <a href="/data-librarian/descriptive_statistics/univariate/variance/">
         Streuungsmaße
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/data-librarian/descriptive_statistics/univariate/symmetrie/" title="Symmetrie" class="dd-item ">
+        <a href="/data-librarian/descriptive_statistics/univariate/symmetrie/">
+        Symmetrie
         <i class="fas fa-check read-icon"></i>
         </a>
     </li>
@@ -1222,11 +1222,68 @@
         
 
 
-<h2 id="bung-2-einfhrung-in-pandas">Übung 2: Einführung in Pandas</h2>
-<ul>
-<li>Laden Sie <a href="">dieses Jupyter Notebook</a> in Ihren Projektordner. In dem Ordner sollte sich auch der Kunden-Datensatz mit dem Namen <code>Library_Usage.csv</code> befinden.</li>
-<li>Öffnen und bearbeiten Sie das Notebook mit Jupyter.</li>
+<p>Real erhobene Daten sind meistens unsauber und fehlerhaft. Ein häufiges Problem dabei sind fehlende Werte, also Beobachtungen für die manche Merkmale nicht erhoben wurden. In jedem Datensatz werden fehlende Werte anders gekennzeichnet, aber man findet meistens diese Kodierungen wieder: <code>&quot;-999&quot;, &quot;NA&quot;, &quot; &quot;, &quot;None&quot;, &quot;NULL&quot;, &quot;#N/A&quot;</code>.</p>
+<p>Wenn beispielsweise der Mittelwert einer statistischen Variable berechnet wird, so muss entschieden werden, wie mit fehlenden Werten umgegangen werden soll: Sollen die Werte entfernt werden? Sollen die fehlenden Werte durch durch einen bestimmten Wert ersetzt werden?</p>
+<p>In <code>DataFrame</code>s werden fehlende Werte durch zwei Arten angezeigt: Das Schlüsselwort <code>NaN</code> (&ldquo;Not a Number&rdquo;) wird in numerischen <code>Series</code> verwendet. Das Schlüsselwort <code>None</code> in nicht-numerischen.</p>
+<p>Beim Einlesen von Daten (siehe z.B. die <a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_csv.html"><code>read_csv</code> Funktion</a>) können mit dem Argument <code>na_values</code> zusätzliche Kodierungen für fehlerhafte Werte mit angegeben werden.</p>
+<h3 id="fallbeispiel">Fallbeispiel</h3>
+<p>Der Library Usage Datensatz enthält die Kodierung <code>&quot;None&quot;</code> für fehlende Werte. Diese werden von <code>pandas</code> beim Einlesen von numerischen Spalten nicht richtig erkannt:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd
+
+df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">../data/Library_Usage.csv</span><span style="color:#e6db74">&#34;</span>)
+df[<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">Circulation Active Year</span><span style="color:#e6db74">&#39;</span>]
+</code></pre></div><p>Obwohl die Spalte <code>'Circulation Active Year'</code> eigentlich numerisch ist, wird Sie von <code>pandas</code> als Text erkannt. Möchten Sie z.B. <code>2019 - df['Circulation Active Year']</code> berechnen, so werden Sie eine Fehlermeldung erhalten, da für Text-Werte keine Substraktionen durchgeführt werden können.</p>
+<p>Um das Problem zu beheben können Sie auf zwei Arten vorgehen. Sie können schon beim Einlesen, die Kodierung für fehlende Werte mit angeben:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">../data/Library_Usage.csv</span><span style="color:#e6db74">&#34;</span>, na_values<span style="color:#f92672">=</span><span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">None</span><span style="color:#e6db74">&#34;</span>)
+df[<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">Circulation Active Year</span><span style="color:#e6db74">&#39;</span>]
+</code></pre></div><p>Oder Sie führen nach dem Einlesen eine explizite Umwandlung des Datentyps durch:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">../data/Library_Usage.csv</span><span style="color:#e6db74">&#34;</span>, na_values<span style="color:#f92672">=</span><span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">None</span><span style="color:#e6db74">&#34;</span>)
+df[<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">Circulation Active Year</span><span style="color:#e6db74">&#39;</span>] <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>to_numeric(df[<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">Circulation Active Year</span><span style="color:#e6db74">&#39;</span>], errors<span style="color:#f92672">=</span><span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">coerce</span><span style="color:#e6db74">&#39;</span>)
+df[<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">Circulation Active Year</span><span style="color:#e6db74">&#39;</span>]
+</code></pre></div>
+<div class="customnotices">
+  <div class="notices_inner" id="exercise">
+    <p>Was unterscheidet den Wert <code>None</code> vom Wert <code>&quot;None&quot;</code>? Was den Wert <code>5</code> vom Wert <code>&quot;5&quot;</code>? Was den Wert <code>&quot;NaN&quot;</code> vom Wert <code>NaN</code>? Ist <code>True</code> und <code>&quot;True&quot;</code> das gleiche?</p>
+
+  </div>
+</div>
+
+<h3 id="behandlung-von-fehlenden-werten">Behandlung von Fehlenden Werten</h3>
+<p><code>Pandas</code> bietet die nützlichen Funktionen <code>isna()</code>, <code>notna()</code>, <code>dropna()</code> und <code>fillna()</code> an um fehlende Werte zu identifizieren, zu entfernen oder mit anderen Werten zu ersetzen.</p>
+<h4 id="filter">Filter</h4>
+
+<div class="customnotices">
+  <div class="notices_inner" id="code">
+    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[df[<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">Age Range</span><span style="color:#e6db74">&#39;</span>]<span style="color:#f92672">.</span>isna()]
+df[df[<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">Age Range</span><span style="color:#e6db74">&#39;</span>]<span style="color:#f92672">.</span>notna()]
+</code></pre></div>
+  </div>
+</div>
+
+<h4 id="entfernen">Entfernen</h4>
+
+<div class="customnotices">
+  <div class="notices_inner" id="code">
+    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># drops all rows that contain missing values</span>
+df<span style="color:#f92672">.</span>dropna()
+<span style="color:#75715e"># drops all missing values in this series</span>
+df[<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">Age Range</span><span style="color:#e6db74">&#39;</span>]<span style="color:#f92672">.</span>dropna()
+</code></pre></div>
+  </div>
+</div>
+
+
+<div class="customnotices">
+  <div class="notices_inner" id="exercise">
+    <ul>
+<li>Lesen Sie den Datensatz ein und erstellen Sie einen <code>DataFrame</code> der keine Beobachtungen mit fehlenden Werten mehr enthält.</li>
+<li>Speicher Sie diesen unter dem Namen <code>Library_Usage_Clean.csv</code> ab.</li>
+<li>Wie viele Beobachtungen wurden dabei entfernt?</li>
 </ul>
+
+  </div>
+</div>
+
 
 
 <footer class=" footline" >
@@ -1686,25 +1743,6 @@
             
         
                     
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
             
         
                     
@@ -1712,6 +1750,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -1770,6 +1811,22 @@
                     
                     
 
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
                     
                         
             
@@ -2013,7 +2070,7 @@
 			<a class="nav nav-prev" href="/data-librarian/basics/pandas/rows/" title="Auswahl von Zeilen"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/data-librarian/basics/pandas/groupby/" title="Aggregation und Gruppierung" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/data-librarian/basics/reflection/" title="Reflexion: Daten an Ihrem Arbeitsplatz" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -2023,19 +2080,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/data-librarian/js/clipboard.min.js?1575646467"></script>
-    <script src="/data-librarian/js/perfect-scrollbar.min.js?1575646467"></script>
-    <script src="/data-librarian/js/perfect-scrollbar.jquery.min.js?1575646467"></script>
-    <script src="/data-librarian/js/jquery.sticky.js?1575646467"></script>
-    <script src="/data-librarian/js/featherlight.min.js?1575646467"></script>
-    <script src="/data-librarian/js/highlight.pack.js?1575646467"></script>
+    <script src="/data-librarian/js/clipboard.min.js?1575739746"></script>
+    <script src="/data-librarian/js/perfect-scrollbar.min.js?1575739746"></script>
+    <script src="/data-librarian/js/perfect-scrollbar.jquery.min.js?1575739746"></script>
+    <script src="/data-librarian/js/jquery.sticky.js?1575739746"></script>
+    <script src="/data-librarian/js/featherlight.min.js?1575739746"></script>
+    <script src="/data-librarian/js/highlight.pack.js?1575739746"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/data-librarian/js/modernizr.custom-3.6.0.js?1575646467"></script>
-    <script src="/data-librarian/js/learn.js?1575646467"></script>
-    <script src="/data-librarian/js/hugo-learn.js?1575646467"></script>
+    <script src="/data-librarian/js/modernizr.custom-3.6.0.js?1575739746"></script>
+    <script src="/data-librarian/js/learn.js?1575739746"></script>
+    <script src="/data-librarian/js/hugo-learn.js?1575739746"></script>
 
-    <link href="/data-librarian/mermaid/mermaid.css?1575646467" rel="stylesheet" />
-    <script src="/data-librarian/mermaid/mermaid.js?1575646467"></script>
+    <link href="/data-librarian/mermaid/mermaid.css?1575739746" rel="stylesheet" />
+    <script src="/data-librarian/mermaid/mermaid.js?1575739746"></script>
 
     <script>
         mermaid.initialize({ startOnLoad: true });

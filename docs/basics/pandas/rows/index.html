@@ -12,25 +12,25 @@
     <title>Auswahl von Zeilen :: data librarian - modul 3 - daten analysieren und verstehen</title>
 
     
-    <link href="/data-librarian/css/nucleus.css?1575646467" rel="stylesheet">
-    <link href="/data-librarian/css/fontawesome-all.min.css?1575646467" rel="stylesheet">
-    <link href="/data-librarian/css/hybrid.css?1575646467" rel="stylesheet">
-    <link href="/data-librarian/css/featherlight.min.css?1575646467" rel="stylesheet">
-    <link href="/data-librarian/css/perfect-scrollbar.min.css?1575646467" rel="stylesheet">
-    <link href="/data-librarian/css/auto-complete.css?1575646467" rel="stylesheet">
-    <link href="/data-librarian/css/atom-one-dark-reasonable.css?1575646467" rel="stylesheet">
-    <link href="/data-librarian/css/theme.css?1575646467" rel="stylesheet">
-    <link href="/data-librarian/css/hugo-theme.css?1575646467" rel="stylesheet">
+    <link href="/data-librarian/css/nucleus.css?1575739746" rel="stylesheet">
+    <link href="/data-librarian/css/fontawesome-all.min.css?1575739746" rel="stylesheet">
+    <link href="/data-librarian/css/hybrid.css?1575739746" rel="stylesheet">
+    <link href="/data-librarian/css/featherlight.min.css?1575739746" rel="stylesheet">
+    <link href="/data-librarian/css/perfect-scrollbar.min.css?1575739746" rel="stylesheet">
+    <link href="/data-librarian/css/auto-complete.css?1575739746" rel="stylesheet">
+    <link href="/data-librarian/css/atom-one-dark-reasonable.css?1575739746" rel="stylesheet">
+    <link href="/data-librarian/css/theme.css?1575739746" rel="stylesheet">
+    <link href="/data-librarian/css/hugo-theme.css?1575739746" rel="stylesheet">
 
 
 
     
-      <link href="/data-librarian/css/theme-green.css?1575646467" rel="stylesheet">
+      <link href="/data-librarian/css/theme-green.css?1575739746" rel="stylesheet">
     
-    <link href="/data-librarian/css/custom.css?1575646467" rel="stylesheet">
+    <link href="/data-librarian/css/custom.css?1575739746" rel="stylesheet">
 
 
-    <script src="/data-librarian/js/jquery-3.3.1.min.js?1575646467"></script>
+    <script src="/data-librarian/js/jquery-3.3.1.min.js?1575739746"></script>
 
 
 
@@ -62,14 +62,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/data-librarian/js/lunr.min.js?1575646467"></script>
-<script type="text/javascript" src="/data-librarian/js/auto-complete.js?1575646467"></script>
+<script type="text/javascript" src="/data-librarian/js/lunr.min.js?1575739746"></script>
+<script type="text/javascript" src="/data-librarian/js/auto-complete.js?1575739746"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/bonartm.github.io\/data-librarian\/";
     
 </script>
-<script type="text/javascript" src="/data-librarian/js/search.js?1575646467"></script>
+<script type="text/javascript" src="/data-librarian/js/search.js?1575739746"></script>
 
     
   </div>
@@ -641,25 +641,6 @@
 
             
           
-            
-            
-
-
- 
-  
-    
-      <li data-nav-id="/data-librarian/basics/pandas/groupby/" title="Aggregation und Gruppierung" class="dd-item ">
-        <a href="/data-librarian/basics/pandas/groupby/">
-        Aggregation und Gruppierung
-        <i class="fas fa-check read-icon"></i>
-        </a>
-    </li>
-     
-  
- 
-
-            
-          
         
         </ul>
               
@@ -777,9 +758,9 @@
  
   
     
-      <li data-nav-id="/data-librarian/descriptive_statistics/univariate/frequency/" title="Häufigkeitstabellen" class="dd-item ">
+      <li data-nav-id="/data-librarian/descriptive_statistics/univariate/frequency/" title="Häufigkeiten" class="dd-item ">
         <a href="/data-librarian/descriptive_statistics/univariate/frequency/">
-        Häufigkeitstabellen
+        Häufigkeiten
         <i class="fas fa-check read-icon"></i>
         </a>
     </li>
@@ -818,6 +799,25 @@
       <li data-nav-id="/data-librarian/descriptive_statistics/univariate/variance/" title="Streuungsmaße" class="dd-item ">
         <a href="/data-librarian/descriptive_statistics/univariate/variance/">
         Streuungsmaße
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/data-librarian/descriptive_statistics/univariate/symmetrie/" title="Symmetrie" class="dd-item ">
+        <a href="/data-librarian/descriptive_statistics/univariate/symmetrie/">
+        Symmetrie
         <i class="fas fa-check read-icon"></i>
         </a>
     </li>
@@ -1235,7 +1235,7 @@ df[df[<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span
 </div>
 
 <p>Der Ausdruck <code>df['Total Checkouts'] &gt; 10000</code> wird zuerst ausgewertet und ergibt eine boolesche <code>Series</code> mit Einträgen <code>True</code> wenn die Beobachtung mehr als <code>1000</code> Ausleihen getätigt hat und <code>False</code> sonst.</p>
-<p>Mit einer booleschen <code>Series</code> lassen sich dann die Zeilen eines <code>DataFrame</code> auswählen: Es werden genau die Zeilen zurückgegeben, bei denen die <code>Series` </code>True` Werte enthält.</p>
+<p>Mit einer booleschen <code>Series</code> lassen sich dann die Zeilen des <code>DataFrame</code> auswählen: Es werden genau die Zeilen zurückgegeben, bei denen die <code>Series` </code>True` Werte enthält.</p>
 <p>Anstatt alles in einer Zeile zu schreiben, können wir auch eine Hilfsvariable erstellen, die den booleschen Vektor zwischenspeichert:</p>
 
 <div class="customnotices">
@@ -1246,7 +1246,7 @@ df[filter]
   </div>
 </div>
 
-<p>Für den Zeilenfilter können komplexe logische Ausdrücke unter Zuhilfenahme der Operatoren <code>&lt;, &gt;, &amp;, |, ==</code> u.s.w. gebildet werden:</p>
+<p>Für den booleschen Zeilenfilter können komplexe logische Ausdrücke unter Zuhilfenahme der Operatoren <code>&lt;, &gt;, &amp;, |, ==</code> u.s.w. gebildet werden:</p>
 
 <div class="customnotices">
   <div class="notices_inner" id="code">
@@ -1258,11 +1258,57 @@ df[filter]
 
 
 <div class="customnotices">
+  <div class="notices_inner" id="tip">
+    <h4 id="logische-operatoren">Logische Operatoren</h4>
+<table>
+<thead>
+<tr>
+<th align="center">Ausdruck</th>
+<th align="center">Beschreibung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><code>&lt;</code>/ <code>&lt;=</code></td>
+<td align="center">kleiner/ kleiner gleich</td>
+</tr>
+<tr>
+<td align="center"><code>&gt;</code> / <code>&gt;=</code></td>
+<td align="center">größer/ größer gleich</td>
+</tr>
+<tr>
+<td align="center"><code>==</code></td>
+<td align="center">gleich</td>
+</tr>
+<tr>
+<td align="center"><code>!=</code></td>
+<td align="center">ungleich</td>
+</tr>
+<tr>
+<td align="center"><code>&amp;</code></td>
+<td align="center">elementweises logisches <em>und</em></td>
+</tr>
+<tr>
+<td align="center"><code>|</code></td>
+<td align="center">elementweises logisches <em>oder</em></td>
+</tr>
+<tr>
+<td align="center"><code>~</code></td>
+<td align="center">elementweise logische negation</td>
+</tr>
+</tbody>
+</table>
+
+  </div>
+</div>
+
+
+<div class="customnotices">
   <div class="notices_inner" id="exercise">
     <ol>
 <li>Filter Sie den Datensatz nach Kindern unter 10 Jahren. Wie viele Einträge erhalten Sie?</li>
 <li>Gibt es Personen mit mehr als <code>20000</code> Ausleihen?</li>
-<li>Wie viele Personen stammen aus dem Norden San Franciscos (<a href="(https://en.wikipedia.org/wiki/San_Francisco_Board_of_Supervisors)">Supervisor Districts</a> 1, 2 und 3)? Nuzten Sie die Funktion <code>Series.isin()</code>.</li>
+<li>Wie viele Personen stammen aus dem Norden San Franciscos (<a href="(https://en.wikipedia.org/wiki/San_Francisco_Board_of_Supervisors)">Supervisor Districts</a> 1, 2 und 3)? Nutzen Sie die Funktion <code>Series.isin()</code>.</li>
 </ol>
 
   </div>
@@ -1730,22 +1776,6 @@ df[filter]
             
         
                     
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
             
         
                     
@@ -1811,6 +1841,22 @@ df[filter]
                     
                     
 
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
                     
                         
             
@@ -2064,19 +2110,19 @@ df[filter]
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/data-librarian/js/clipboard.min.js?1575646467"></script>
-    <script src="/data-librarian/js/perfect-scrollbar.min.js?1575646467"></script>
-    <script src="/data-librarian/js/perfect-scrollbar.jquery.min.js?1575646467"></script>
-    <script src="/data-librarian/js/jquery.sticky.js?1575646467"></script>
-    <script src="/data-librarian/js/featherlight.min.js?1575646467"></script>
-    <script src="/data-librarian/js/highlight.pack.js?1575646467"></script>
+    <script src="/data-librarian/js/clipboard.min.js?1575739746"></script>
+    <script src="/data-librarian/js/perfect-scrollbar.min.js?1575739746"></script>
+    <script src="/data-librarian/js/perfect-scrollbar.jquery.min.js?1575739746"></script>
+    <script src="/data-librarian/js/jquery.sticky.js?1575739746"></script>
+    <script src="/data-librarian/js/featherlight.min.js?1575739746"></script>
+    <script src="/data-librarian/js/highlight.pack.js?1575739746"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/data-librarian/js/modernizr.custom-3.6.0.js?1575646467"></script>
-    <script src="/data-librarian/js/learn.js?1575646467"></script>
-    <script src="/data-librarian/js/hugo-learn.js?1575646467"></script>
+    <script src="/data-librarian/js/modernizr.custom-3.6.0.js?1575739746"></script>
+    <script src="/data-librarian/js/learn.js?1575739746"></script>
+    <script src="/data-librarian/js/hugo-learn.js?1575739746"></script>
 
-    <link href="/data-librarian/mermaid/mermaid.css?1575646467" rel="stylesheet" />
-    <script src="/data-librarian/mermaid/mermaid.js?1575646467"></script>
+    <link href="/data-librarian/mermaid/mermaid.css?1575739746" rel="stylesheet" />
+    <script src="/data-librarian/mermaid/mermaid.js?1575739746"></script>
 
     <script>
         mermaid.initialize({ startOnLoad: true });

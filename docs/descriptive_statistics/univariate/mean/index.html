@@ -12,25 +12,25 @@
     <title>Lagemaße :: data librarian - modul 3 - daten analysieren und verstehen</title>
 
     
-    <link href="/data-librarian/css/nucleus.css?1575646467" rel="stylesheet">
-    <link href="/data-librarian/css/fontawesome-all.min.css?1575646467" rel="stylesheet">
-    <link href="/data-librarian/css/hybrid.css?1575646467" rel="stylesheet">
-    <link href="/data-librarian/css/featherlight.min.css?1575646467" rel="stylesheet">
-    <link href="/data-librarian/css/perfect-scrollbar.min.css?1575646467" rel="stylesheet">
-    <link href="/data-librarian/css/auto-complete.css?1575646467" rel="stylesheet">
-    <link href="/data-librarian/css/atom-one-dark-reasonable.css?1575646467" rel="stylesheet">
-    <link href="/data-librarian/css/theme.css?1575646467" rel="stylesheet">
-    <link href="/data-librarian/css/hugo-theme.css?1575646467" rel="stylesheet">
+    <link href="/data-librarian/css/nucleus.css?1575739746" rel="stylesheet">
+    <link href="/data-librarian/css/fontawesome-all.min.css?1575739746" rel="stylesheet">
+    <link href="/data-librarian/css/hybrid.css?1575739746" rel="stylesheet">
+    <link href="/data-librarian/css/featherlight.min.css?1575739746" rel="stylesheet">
+    <link href="/data-librarian/css/perfect-scrollbar.min.css?1575739746" rel="stylesheet">
+    <link href="/data-librarian/css/auto-complete.css?1575739746" rel="stylesheet">
+    <link href="/data-librarian/css/atom-one-dark-reasonable.css?1575739746" rel="stylesheet">
+    <link href="/data-librarian/css/theme.css?1575739746" rel="stylesheet">
+    <link href="/data-librarian/css/hugo-theme.css?1575739746" rel="stylesheet">
 
 
 
     
-      <link href="/data-librarian/css/theme-green.css?1575646467" rel="stylesheet">
+      <link href="/data-librarian/css/theme-green.css?1575739746" rel="stylesheet">
     
-    <link href="/data-librarian/css/custom.css?1575646467" rel="stylesheet">
+    <link href="/data-librarian/css/custom.css?1575739746" rel="stylesheet">
 
 
-    <script src="/data-librarian/js/jquery-3.3.1.min.js?1575646467"></script>
+    <script src="/data-librarian/js/jquery-3.3.1.min.js?1575739746"></script>
 
 
 
@@ -62,14 +62,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/data-librarian/js/lunr.min.js?1575646467"></script>
-<script type="text/javascript" src="/data-librarian/js/auto-complete.js?1575646467"></script>
+<script type="text/javascript" src="/data-librarian/js/lunr.min.js?1575739746"></script>
+<script type="text/javascript" src="/data-librarian/js/auto-complete.js?1575739746"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/bonartm.github.io\/data-librarian\/";
     
 </script>
-<script type="text/javascript" src="/data-librarian/js/search.js?1575646467"></script>
+<script type="text/javascript" src="/data-librarian/js/search.js?1575739746"></script>
 
     
   </div>
@@ -641,25 +641,6 @@
 
             
           
-            
-            
-
-
- 
-  
-    
-      <li data-nav-id="/data-librarian/basics/pandas/groupby/" title="Aggregation und Gruppierung" class="dd-item ">
-        <a href="/data-librarian/basics/pandas/groupby/">
-        Aggregation und Gruppierung
-        <i class="fas fa-check read-icon"></i>
-        </a>
-    </li>
-     
-  
- 
-
-            
-          
         
         </ul>
               
@@ -777,9 +758,9 @@
  
   
     
-      <li data-nav-id="/data-librarian/descriptive_statistics/univariate/frequency/" title="Häufigkeitstabellen" class="dd-item ">
+      <li data-nav-id="/data-librarian/descriptive_statistics/univariate/frequency/" title="Häufigkeiten" class="dd-item ">
         <a href="/data-librarian/descriptive_statistics/univariate/frequency/">
-        Häufigkeitstabellen
+        Häufigkeiten
         <i class="fas fa-check read-icon"></i>
         </a>
     </li>
@@ -818,6 +799,25 @@
       <li data-nav-id="/data-librarian/descriptive_statistics/univariate/variance/" title="Streuungsmaße" class="dd-item ">
         <a href="/data-librarian/descriptive_statistics/univariate/variance/">
         Streuungsmaße
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/data-librarian/descriptive_statistics/univariate/symmetrie/" title="Symmetrie" class="dd-item ">
+        <a href="/data-librarian/descriptive_statistics/univariate/symmetrie/">
+        Symmetrie
         <i class="fas fa-check read-icon"></i>
         </a>
     </li>
@@ -1222,14 +1222,49 @@
         
 
 
-<p>Lagemaße beschreiben die Zentralität einer Verteilung.</p>
-<p>Typische Lagemaße sind der empirische Mittelwert:</p>
+<p>Lagemaße beschreiben die Zentralität einer Verteilung. Das bekannteste Lagemaß ist der empirische <strong>Mittelwert</strong>:</p>
 <p>$$
 \bar{x} = \frac{1}{n}\sum_{i=1}^{n}x_i = \frac{x_1 + x_2 + \dots + x_n}{n}
 $$</p>
-<p>Oder der Median:</p>
-<p>$$</p>
-<p>$$</p>
+
+<div class="customnotices">
+  <div class="notices_inner" id="code">
+    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd
+df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">../data/Library_Usage.csv</span><span style="color:#e6db74">&#34;</span>)
+df[<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">Total Checkouts</span><span style="color:#e6db74">&#39;</span>]<span style="color:#f92672">.</span>mean()
+</code></pre></div>
+  </div>
+</div>
+
+<p>Eine zweite wichtige Statistik ist der <strong>Median</strong>. Er ergibt sich aus dem Wert der Beobachtung, die die nach der Größe geordnete Messreihe in genau zwei gleich große Teile teilt. Für eine gerade Anzahl an Beobachtung wird der Mittelwert der Beobachtung an der Stelle $n/2$ und $n/2+1$ genommen:</p>
+<p>$$
+x_{0.5} =
+\begin{cases}
+x_{(n+1)/2}, \text{n ungerade} \\<br>
+\frac{x_{n/2} + x_{n/2+1}}{2}, \text{n gerade}
+\end{cases}
+$$
+für $x_1 &lt; x_2 &lt; \dots &lt; x_n$.</p>
+<p>Beispiel: Für $x=[8, 10, 11, 30]$ ist der Median $\frac{x_2 + x_3}{2} = 10.5$.</p>
+
+<div class="customnotices">
+  <div class="notices_inner" id="code">
+    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">Total Checkouts</span><span style="color:#e6db74">&#39;</span>]<span style="color:#f92672">.</span>median()
+</code></pre></div>
+  </div>
+</div>
+
+
+<div class="customnotices">
+  <div class="notices_inner" id="exercise">
+    <ul>
+<li>Schauen Sie sich den Mittelwert und den Median der Variable <code>Total Checkouts</code> an. Warum sind die beiden Werte so unterschiedlich?</li>
+<li>Was ziehen Sie daraus für Schlüsse für weitere statistische Analysen und Reports?</li>
+</ul>
+
+  </div>
+</div>
+
 
 
 <footer class=" footline" >
@@ -1680,22 +1715,6 @@ $$</p>
             
         
                     
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
             
         
                     
@@ -1807,6 +1826,22 @@ $$</p>
                     
                         
                         
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
                     
                 
                 
@@ -2010,7 +2045,7 @@ $$</p>
 	 
 	 
 		
-			<a class="nav nav-prev" href="/data-librarian/descriptive_statistics/univariate/frequency/" title="Häufigkeitstabellen"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/data-librarian/descriptive_statistics/univariate/frequency/" title="Häufigkeiten"> <i class="fa fa-chevron-left"></i></a>
 		
 		
 			<a class="nav nav-next" href="/data-librarian/descriptive_statistics/univariate/variance/" title="Streuungsmaße" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
@@ -2023,19 +2058,19 @@ $$</p>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/data-librarian/js/clipboard.min.js?1575646467"></script>
-    <script src="/data-librarian/js/perfect-scrollbar.min.js?1575646467"></script>
-    <script src="/data-librarian/js/perfect-scrollbar.jquery.min.js?1575646467"></script>
-    <script src="/data-librarian/js/jquery.sticky.js?1575646467"></script>
-    <script src="/data-librarian/js/featherlight.min.js?1575646467"></script>
-    <script src="/data-librarian/js/highlight.pack.js?1575646467"></script>
+    <script src="/data-librarian/js/clipboard.min.js?1575739746"></script>
+    <script src="/data-librarian/js/perfect-scrollbar.min.js?1575739746"></script>
+    <script src="/data-librarian/js/perfect-scrollbar.jquery.min.js?1575739746"></script>
+    <script src="/data-librarian/js/jquery.sticky.js?1575739746"></script>
+    <script src="/data-librarian/js/featherlight.min.js?1575739746"></script>
+    <script src="/data-librarian/js/highlight.pack.js?1575739746"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/data-librarian/js/modernizr.custom-3.6.0.js?1575646467"></script>
-    <script src="/data-librarian/js/learn.js?1575646467"></script>
-    <script src="/data-librarian/js/hugo-learn.js?1575646467"></script>
+    <script src="/data-librarian/js/modernizr.custom-3.6.0.js?1575739746"></script>
+    <script src="/data-librarian/js/learn.js?1575739746"></script>
+    <script src="/data-librarian/js/hugo-learn.js?1575739746"></script>
 
-    <link href="/data-librarian/mermaid/mermaid.css?1575646467" rel="stylesheet" />
-    <script src="/data-librarian/mermaid/mermaid.js?1575646467"></script>
+    <link href="/data-librarian/mermaid/mermaid.css?1575739746" rel="stylesheet" />
+    <script src="/data-librarian/mermaid/mermaid.js?1575739746"></script>
 
     <script>
         mermaid.initialize({ startOnLoad: true });
