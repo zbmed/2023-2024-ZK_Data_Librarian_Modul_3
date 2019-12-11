@@ -1,5 +1,5 @@
 +++
-title = "Symmetrie"
+title = "Symmetrie und Schiefe"
 # If set, this will be used for the page's menu entry (instead of the `title` attribute)
 # menuTitle = "Einführung"
 weight = 33
@@ -22,41 +22,54 @@ LastModifierDisplayName = ""
 LastModifierEmail = ""
 +++
 
-{{< figure src="/images/distributions.png" title="Verschiedene univariate  Verteilungen" width="100%" >}}
+{{< figure src="/data-librarian/images/distributions.png" title="Verschiedene univariate  Verteilungen" width="40%" >}}
+{{%attachments title="Related files"
+pattern="distributions.ipynb" /%}}
 
-Neben der zentralen Lage- und Streuung einer Verteilung ist auch deren Symmetrie von Bedeutung.
+Um eine metrische Verteilung charakterisieren zu können, ist neben der zentralen Lage- und Streuung auch deren Symmetrie und Schiefe von Bedeutung.
 
-## Symmetrie
+Das Bild zeigt **Histogramme** für verschiedene simulierte Zufallswerte der [Beta-Verteilung](https://de.wikipedia.org/wiki/Beta-Verteilung). Dabei wurden jeweils die Parameter der theoretischen Verteilung $\alpha$ und $\beta$ geändert. Somit kann eine große Bandbreite charakteristischer Verteilungen abgedeckt werden. Neben dem Histogram wurde auch der empirische Median und Mittelwert der Verteilung als vertikale Linien eingezeichnet.
 
-Eine symmetrische Verteilung zeichnet sich dadurch aus das Modus, Median und Mittelwert gleich sind.
+Für symmetrische Verteilungen gilt, dass der Mittelwert und der Median gleich sind und das Histogram an diesen Achsen gespiegelt werden kann. Eine **linkssteile** (rechtschiefe) Verteilung ergibt sich durch einige überdurchschnittlich große Werte. In diesem Fall ist der Mittelwert größer als der Median. Eine **rechtssteile** (linksschiefe) Verteilung ist durch einige unterdurchschnittlich kleine Werte geprägt. Hier ist der Median größer als der Mittelwert.
 
-Eine **linksschiefe** Verteilung liegt vor, wenn überproportional viele große Werte vorliegen.
-
-Eine **rechtsschiefe** Verteilung ist durch überproprtional vielen kleinen Werten geprägt.
-
-Zudem kann eine Verteilung auch Bi- oder Multimodal sein, das heißt es gibt mehre "Gipfel".
+Zudem kann eine Verteilung auch **Gleichverteilt, Bi- oder Multimodal** sein. Im ersten Fall gibt es keinen Modus, also kein Wert der Verteilung, der am Häufigsten vorkommt. In den letzteren Fällen gibt es ein oder mehrere Modi. Im Histogram sind multimodale Verteilungen daran zu erkennen, dass sie typischerweise über zwei oder mehr "Gipfel" verfügen.
 
 
-Mit dem folgenden Beispiel können Sie ein Histogram der Anzahl der Ausleihen im Datensatz erstellen:
+{{% customnotice exercise %}}
+- Schauen Sie sich die verschiedenen Histogramme im Bild an und charakterisieren Sie jede einzelne Verteilung anhand von Schiefe, Symmetrie und dem Modus
+- Die Graphik wurde mit dem angehängten Jupyter Notebook generiert. Hier können Sie auch selber andere Verteilungen simulieren und visualisieren.
+{{% /customnotice %}}
+
+{{% customnotice alert %}}
+- Der Mittelwert und die Standardabweichung basieren auf den absoluten numerischen Werten der Beobachtungen. Deswegen können untypische sehr große oder sehr kleine Werte einer Verteilung ("Ausreißer") diese Statistiken nach oben oder unten **verzerren**.
+- Der Median und der Interquartilsabstand (IQR) hingegen basiert alleine auf der nach Größe sortierten Reihung der Beobachtungen und nicht auf den absoluten Werten. Deswegen sind diese Statistiken **robust** vor Ausreißern.
+- Bei nicht-symmetrischen Verteilungen oder wenn Ausreißer vorliegen sollten deswegen immer auch robuste Statistiken mit angegeben werden.
+- Ist die Verteilung **Bi- oder Multimodal** so können die Lagemaße Mittelwert und Median irreführend sein, da sie in der Regel nicht mit den "Gipfeln" der Verteilung (Modus) übereinstimmen.
+{{% /customnotice %}}
+
+
+### Fallstudie: Verteilung der Ausleihen pro Kunde
+
+Mit dem folgenden Beispiel können Sie ein Histogram über die Anzahl der Ausleihen im Datensatz erstellen:
 
 {{% customnotice code %}}
 ```
 import pandas as pd
 import seaborn as sns
+%matplotlib inline
 sns.set()
 
 df = pd.read_csv("../data/Library_Usage.csv")
-df['Total Checkouts'].plot.hist(bins=100)
+sns.distplot(df['Total Checkouts'], kde=False)
 ```
 {{% /customnotice%}}
 
+Das Histogram zeigt, dass die Verteilung der Ausleihen durch einige sehr große Ausreißer geprägt ist. Der Mittelwert liegt hier bei $\bar{x} = 162$, während der Median $x_{0.5} = 19$ sehr viel kleiner ist. Das 95%-Quantil liegt bei $x_{0.95} = 816$ Ausleihen. Das heißt das fast 95% der Beobachtungen im Datensatz weniger als 800 Ausleihen getätigt haben.
+
 {{% customnotice exercise %}}
 
-- Charakterisieren Sie die Verteilung der Ausleihen pro Kunde
-- Filter Sie den Datensatz nach Personen, die weniger als 100 Ausleihen haben und schauen Sie sich die Verteilung im Histogram an.
-
+- Entfernen Sie die 5% größten Ausreißer aus dem Datensatz, indem Sie diesen nach Personen mit weniger als 800 Ausleihen filtern.
+- Schauen Sie sich die Verteilung des gefilterten Datensatzes an und charakterisieren Sie diese.
+- Verwenden Sie nun wieder den ungefilterten Datensatz und erstellen Sie einer neue Spalte `'Total Checkouts Sqrt'` die die Wurzel über die Ausleihen enthält. Die Wurzel können sie mit `df['Total Checkouts']**(0.5)` berechnen.
+- Schauen Sie sich das Histogram von `'Total Checkouts Sqrt'`. Finden Sie, dass die Wurzel-Transformation eine geeignete Methode ist, um mit Ausreißern umzugehen?
 {{% /customnotice%}}
-
-
-{{%attachments title="Related files"
-pattern=".ipynb" /%}}

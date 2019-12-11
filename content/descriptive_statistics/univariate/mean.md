@@ -22,7 +22,7 @@ LastModifierDisplayName = ""
 LastModifierEmail = ""
 +++
 
-Lagemaße beschreiben die Zentralität einer Verteilung. Das bekannteste Lagemaß ist der empirische **Mittelwert**:
+Für **metrische Variablen** beschreiben Lagemaße die Zentralität einer Verteilung. Das bekannteste Lagemaß ist der empirische **Mittelwert**:
 
 $$
 \bar{x} = \frac{1}{n}\sum_{i=1}^{n}x_i = \frac{x_1 + x_2 + \dots + x_n}{n}

@@ -28,7 +28,4 @@ Bisher haben Sie immer nur einzelne Variable betrachtet, zusammengefasst oder vi
 - Führen Kunden, die häufiger Ausleihen tätigen,  im Schnitt auch häufiger Verlängerungen durch?
 - Nimmt die Anzahl der Ausleihen mit zunehmender Dauer der Mitgliedschaft ab?
 
-Wenn zwei ordinale oder metrische Variablen voneinander abhängigen kann man zwischen einem positiven oder einem negativem Zusammenhang unterscheiden. Zwei Variablen, die keinen Zusammenhang aufweisen, nennt man auch *statistisch unabhängige* Variablen.
-
-
-  
+Zwei Variablen, die keinen Zusammenhang aufweisen, nennt man auch *statistisch unabhängige* Variablen. Für zwei metrische Variablen kann man außerdem zwischen einem positiven oder einem negativem Zusammenhang unterscheiden. 

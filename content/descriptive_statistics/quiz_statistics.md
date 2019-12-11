@@ -21,9 +21,9 @@ LastModifierDisplayName = ""
 LastModifierEmail = ""
 +++
 
-{{% quiz pandas_quiz%}}
-{{< item question="Wie lautet der Name der Pandas Funktion, mit der Excel-Dateien eingelesen werden können?" answer=1 choices="read_excel,to_excel,load_excel,from_excel" >}}
-{{< item question="Mit welchem Befehl kann die Anzahl der Zeilen aus einem DataFrame auslesen?" answer=2 choices="df.rows,len(df),df.shape[1],df.size" >}}
-{{< item question="Wie viele fehlende Werte enthält die 'Age Range' Variable des Datensatzes?" answer=4 choices="40,423448,0,215" >}}
+{{< quiz pandas_quiz>}}
+{{< item question="Wenn der Median einer Verteilung kleiner als das Arithmetische Mittel ist, dann ist die Verteilung in der Regel..." answer=1 choices="rechtsschief,linkschief,rechtssteil,symmetrisch" >}}
+{{< item question="Wie viel Prozent der unter 10 Jährigen hat eine Email Adresse angeben?" answer=1 choices="71,609,23,2" >}}
+{{< item question="Wie lautet das 60% Quantil der Spalte 'Total Checkouts'?" answer=3 choices="0.60,9.0,36.0,6.0" >}}
 {{< item question="Was ist der Modalwert der Spalte 'Age Range'?" answer=1 choices="'25 to 34 years',91083,423233,'75 years and over'" >}}
-{{% /quiz %}}
+{{< /quiz >}}

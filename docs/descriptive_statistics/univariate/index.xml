@@ -27,7 +27,7 @@ df[&amp;#39;Age Range&amp;#39;].value_counts(normalize=True)    Der Modus ist da
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://bonartm.github.io/data-librarian/descriptive_statistics/univariate/mean/</guid>
-      <description>Lagemaße beschreiben die Zentralität einer Verteilung. Das bekannteste Lagemaß ist der empirische Mittelwert:
+      <description>Für metrische Variablen beschreiben Lagemaße die Zentralität einer Verteilung. Das bekannteste Lagemaß ist der empirische Mittelwert:
 $$ \bar{x} = \frac{1}{n}\sum_{i=1}^{n}x_i = \frac{x_1 + x_2 + \dots + x_n}{n} $$
 import pandas as pd df = pd.read_csv(&amp;#34;../data/Library_Usage.csv&amp;#34;) df[&amp;#39;Total Checkouts&amp;#39;].mean()    Eine zweite wichtige Statistik ist der Median. Er ergibt sich aus dem Wert der Beobachtung, die die nach der Größe geordnete Messreihe in genau zwei gleich große Teile teilt. Für eine gerade Anzahl an Beobachtung wird der Mittelwert der Beobachtung an der Stelle $n/2$ und $n/2+1$ genommen:</description>
     </item>
@@ -46,16 +46,13 @@ In der Formel wird durch $n-1$ anstatt durch $n$ geteilt. Dies ist theoretisch v
     </item>
     
     <item>
-      <title>Symmetrie</title>
+      <title>Symmetrie und Schiefe</title>
       <link>https://bonartm.github.io/data-librarian/descriptive_statistics/univariate/symmetrie/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://bonartm.github.io/data-librarian/descriptive_statistics/univariate/symmetrie/</guid>
-      <description>Verschiedene univariate Verteilungen   Neben der zentralen Lage- und Streuung einer Verteilung ist auch deren Symmetrie von Bedeutung.
-Symmetrie Eine symmetrische Verteilung zeichnet sich dadurch aus das Modus, Median und Mittelwert gleich sind.
-Eine linksschiefe Verteilung liegt vor, wenn überproportional viele große Werte vorliegen.
-Eine rechtsschiefe Verteilung ist durch überproprtional vielen kleinen Werten geprägt.
-Zudem kann eine Verteilung auch Bi- oder Multimodal sein, das heißt es gibt mehre &amp;ldquo;Gipfel&amp;rdquo;.</description>
+      <description>Verschiedene univariate Verteilungen     Related files   distributions.ipynb  (83 ko)    Um eine metrische Verteilung charakterisieren zu können, ist neben der zentralen Lage- und Streuung auch deren Symmetrie und Schiefe von Bedeutung.
+Das Bild zeigt Histogramme für verschiedene simulierte Zufallswerte der Beta-Verteilung. Dabei wurden jeweils die Parameter der theoretischen Verteilung $\alpha$ und $\beta$ geändert. Somit kann eine große Bandbreite charakteristischer Verteilungen abgedeckt werden.</description>
     </item>
     
   </channel>

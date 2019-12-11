@@ -99,7 +99,7 @@ df[&amp;#39;Total Renewals&amp;#39;] df[[&amp;#39;Total Renewals&amp;#39;, &amp;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://bonartm.github.io/data-librarian/basics/ml/data-science/</guid>
-      <description>Grundsätzlich ist ein Data Scientist jemand, die oder der Wissen und Erkenntnisse aus strukturierten und unstrukturierten Daten gewinnt. Data Science ist eine interdisziplinäre Disziplin, denn sie liefert eine Sammlung an quantitativen Methoden- und Algorithmen, die in einem Fachgebiet angewandt werden können 2. Damit liegt Data Science irgendwo in der Schnittmenge von Mathe/ Statistik, Programmierung (&amp;ldquo;Hacking skills&amp;rdquo;) und Fachwissen (&amp;ldquo;domain knowledge&amp;rdquo;/ &amp;ldquo;substantive expertise&amp;rdquo;).
+      <description>Grundsätzlich ist ein Data Scientist jemand, die oder der Wissen und Erkenntnisse aus strukturierten und unstrukturierten Daten gewinnt. Data Science ist eine interdisziplinäre Disziplin, denn sie liefert eine Sammlung an quantitativen Methoden- und Algorithmen, die in einem Fachgebiet angewandt werden können 1. Damit liegt Data Science irgendwo in der Schnittmenge von Mathe/ Statistik, Programmierung (&amp;ldquo;Hacking skills&amp;rdquo;) und Fachwissen (&amp;ldquo;domain knowledge&amp;rdquo;/ &amp;ldquo;substantive expertise&amp;rdquo;).
 Aufgrund der stark angewachsenen Mengen an unstrukturierten Daten aus heterogenen Datenquellen (Text, Bilder, Sensoren, Netzwerke, Videos, &amp;hellip;) reichen die Methoden und Fertigkeiten, die die Statistik traditionellerweise liefert und vermittelt, nicht mehr aus, um diese Daten effizient zu strukturieren, aggregieren, kombinieren, analysieren und visualisieren zu können:</description>
     </item>
     
@@ -140,8 +140,8 @@ Jede Einheit umfasst ein kleines praktisches Projekt, welches Sie in Form eines 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://bonartm.github.io/data-librarian/organisation/schedule/</guid>
-      <description>Hier finden Sie einen Überblick über die einzelnen Moduleinheiten. Die Tabelle können Sie sich auch als .pdf anzeigen lassen und ausdrucken:
-  Überblick Modul 3   überblick_modul3.pdf  (25 ko)       Datum Titel Ziele     21.01 – 26.01 Vorbereitung Installieren Sie die benötigte Software Laden Sie die Kursmaterialien und Datensätze herunter Stellen Sie sicher, dass Python Notebooks lokal ausgeführt werden können   27.</description>
+      <description>Hier finden Sie einen Überblick über die einzelnen Moduleinheiten.
+   Datum Titel Ziele     21.01 – 26.01 Vorbereitung Installieren Sie die benötigte Software Laden Sie die Kursmaterialien und Datensätze herunter Stellen Sie sicher, dass Python Notebooks lokal ausgeführt werden können   27.01 – 02.02 Grundlagen Beschreiben Sie Datensätze mit dem statistischen Grundvokabular Lesen Sie Datensätze als DataFrames in Python ein Filtern Sie DataFrames nach Spalten oder Zeilen Erstellen Sie neue Variablen   03.</description>
     </item>
     
     <item>
@@ -161,7 +161,7 @@ Jede Einheit umfasst ein kleines praktisches Projekt, welches Sie in Form eines 
       <guid>https://bonartm.github.io/data-librarian/organisation/notebooks/</guid>
       <description>Die Projekt-Aufgaben und Code-Beispiele in diesem Modul werden über Jupyter Notebooks erstellt und verteilt.
 Jupyter Notebooks bieten eine browserbasierte graphische Schnittstelle zur Python Programmierumgebung. Deswegen können Notebooks auf jedem System gestartet werden, man benötigt dazu nur einen Web-Browser und eine lokale installierte Version von Python.
-Darüber hinaus bieten Notebooks die Möglichkeit Text, Visualisierungen und Code in einer integrierten Datei zu erstellen. Somit können einfach statistische Reports und Analysen erstellt werden. Die Replizierbarkeit der Ergebnisse ist auch gewährleistet, da jede Person, die Programmierschritte im Notebook auf ihrem Rechner wiederholen kann.</description>
+Darüber hinaus bieten Notebooks die Möglichkeit Text, Visualisierungen und Code in einer integrierten Datei zu erstellen. Somit können einfach statistische Reports und Analysen erstellt werden. Die Replizierbarkeit der Ergebnisse ist auch gewährleistet, da jede Person, die Programmierschritte im Notebook auf dem eignen Rechner wiederholen kann.</description>
     </item>
     
     <item>
@@ -200,7 +200,7 @@ Beantworten und diskutieren Sie folgende Fragen konkret für den San Francisco L
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://bonartm.github.io/data-librarian/descriptive_statistics/univariate/mean/</guid>
-      <description>Lagemaße beschreiben die Zentralität einer Verteilung. Das bekannteste Lagemaß ist der empirische Mittelwert:
+      <description>Für metrische Variablen beschreiben Lagemaße die Zentralität einer Verteilung. Das bekannteste Lagemaß ist der empirische Mittelwert:
 $$ \bar{x} = \frac{1}{n}\sum_{i=1}^{n}x_i = \frac{x_1 + x_2 + \dots + x_n}{n} $$
 import pandas as pd df = pd.read_csv(&amp;#34;../data/Library_Usage.csv&amp;#34;) df[&amp;#39;Total Checkouts&amp;#39;].mean()    Eine zweite wichtige Statistik ist der Median. Er ergibt sich aus dem Wert der Beobachtung, die die nach der Größe geordnete Messreihe in genau zwei gleich große Teile teilt. Für eine gerade Anzahl an Beobachtung wird der Mittelwert der Beobachtung an der Stelle $n/2$ und $n/2+1$ genommen:</description>
     </item>
@@ -219,16 +219,13 @@ In der Formel wird durch $n-1$ anstatt durch $n$ geteilt. Dies ist theoretisch v
     </item>
     
     <item>
-      <title>Symmetrie</title>
+      <title>Symmetrie und Schiefe</title>
       <link>https://bonartm.github.io/data-librarian/descriptive_statistics/univariate/symmetrie/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://bonartm.github.io/data-librarian/descriptive_statistics/univariate/symmetrie/</guid>
-      <description>Verschiedene univariate Verteilungen   Neben der zentralen Lage- und Streuung einer Verteilung ist auch deren Symmetrie von Bedeutung.
-Symmetrie Eine symmetrische Verteilung zeichnet sich dadurch aus das Modus, Median und Mittelwert gleich sind.
-Eine linksschiefe Verteilung liegt vor, wenn überproportional viele große Werte vorliegen.
-Eine rechtsschiefe Verteilung ist durch überproprtional vielen kleinen Werten geprägt.
-Zudem kann eine Verteilung auch Bi- oder Multimodal sein, das heißt es gibt mehre &amp;ldquo;Gipfel&amp;rdquo;.</description>
+      <description>Verschiedene univariate Verteilungen     Related files   distributions.ipynb  (83 ko)    Um eine metrische Verteilung charakterisieren zu können, ist neben der zentralen Lage- und Streuung auch deren Symmetrie und Schiefe von Bedeutung.
+Das Bild zeigt Histogramme für verschiedene simulierte Zufallswerte der Beta-Verteilung. Dabei wurden jeweils die Parameter der theoretischen Verteilung $\alpha$ und $\beta$ geändert. Somit kann eine große Bandbreite charakteristischer Verteilungen abgedeckt werden.</description>
     </item>
     
     <item>
@@ -237,9 +234,9 @@ Zudem kann eine Verteilung auch Bi- oder Multimodal sein, das heißt es gibt meh
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://bonartm.github.io/data-librarian/descriptive_statistics/bivariate/cross_tables/</guid>
-      <description>Um zwei ordinale/ nominale Variablen miteinander zu vergleichen, eignen sich Kreuztabellen. Jeder Wert in der Kreuztabelle entspricht der Anzahl der Beobachtungen im Datensatz mit genau dieser Kombination.
-Eine Kreuztabelle mit relativen Häufigkeiten erhält man, indem die absoluten Werte normalisiert.
-Die Normalisierung kann entweder dadurch erfolgen, dass durch die Anzahl der Beobachtungen $n$, durch die Anzahl der Beobachtungen in der Zeilenvariable oder durch die Anzahl der Beobachtungen in der Spaltenvariable geteilt wird.</description>
+      <description>Um zwei ordinale oder nominale Variablen miteinander zu vergleichen, eignen sich Kreuztabellen. Jeder Wert in der Kreuztabelle entspricht der Anzahl der Beobachtungen im Datensatz mit genau dieser Kombination an Merkmalsausprägungen.
+Hier ein Beispiel (mit dem Argument na_values=&amp;quot;none&amp;quot; markiert pandas die &amp;quot;none&amp;quot; Werte in der Spalte &#39;Notice Preference Definition&#39; als fehlende Werte):
+import pandas as pd df = pd.read_csv(&amp;#34;../data/Library_Usage.csv&amp;#34;, na_values=&amp;#34;none&amp;#34;) pd.crosstab( df[&amp;#39;Provided Email Address&amp;#39;], df[&amp;#39;Notice Preference Definition&amp;#39;], margins=True )       Notice Preference email phone print all     Provided Email Address       False 95 58362 28569 87026   True 323842 9810 2767 336419   All 323937 68172 31336 423445    Eine Kreuztabelle mit absoluten Werten ist häufig schwer zu interpretieren.</description>
     </item>
     
     <item>
@@ -248,7 +245,9 @@ Die Normalisierung kann entweder dadurch erfolgen, dass durch die Anzahl der Beo
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://bonartm.github.io/data-librarian/descriptive_statistics/bivariate/correlation/</guid>
-      <description></description>
+      <description>Der Korrelationskoeffizient $\rho_{x, y}$ misst für zwei metrische Variablen $x$ und $y$ die Stärke des linearen Zusammenhangs. Der Koeffizient kann zwischen $-1$ (negativer Zusammenhang) und $1$ (positiver Zusammenhang) variieren:
+   Der Korrelationskoeffizient ist definiert als: $$ \rho_{x, y} = \frac{s_{x, y}^2}{s_xs_y} = \frac{\sum_{i=1}^{N}(x_i-\bar{x})(y_i-\bar{y})}{\sqrt{\sum_{i=1}^{N}(x_i-\bar{x})^2\sum_{i=1}^{N}(y_i-\bar{y})^2}} $$
+Die Ausdrücke im Nenner sind die jeweiligen Standardabweichungen der Reihen. Sie dienen zur Normalisierung der Statistik, sodass diese nur Werte zwischen $-1$ und $1$ annimmt.</description>
     </item>
     
     <item>
@@ -267,7 +266,8 @@ Die Normalisierung kann entweder dadurch erfolgen, dass durch die Anzahl der Beo
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://bonartm.github.io/data-librarian/descriptive_statistics/visualizations/tutorial/</guid>
-      <description></description>
+      <description>Statistical analysis is a process of understanding how variables in a dataset relate to each other and how those relationships depend on other variables. Visualization can be a core component of this process because, when data are visualized properly, the human visual system can see trends and patterns that indicate a relationship. (https://seaborn.pydata.org/tutorial/relational.html)
+ Die zahlreichen Funktionen, die seaborn bietet basieren immer auf dem gleichen Prinzip: Visualisiert werden (nominale, ordinale, metrische) Variablen eines Datensatzes, die in Form eines DataFrames vorliegt.</description>
     </item>
     
     <item>
@@ -276,7 +276,7 @@ Die Normalisierung kann entweder dadurch erfolgen, dass durch die Anzahl der Beo
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://bonartm.github.io/data-librarian/descriptive_statistics/visualizations/examples/</guid>
-      <description>Scatterplots </description>
+      <description>   Related files   examples.ipynb  (184 ko)    </description>
     </item>
     
     <item>
@@ -309,15 +309,6 @@ In einem DataFrame werden mehrere Series gleicher Länge spaltenweise zu einer z
     </item>
     
     <item>
-      <title>Quiz: Visualisierungen</title>
-      <link>https://bonartm.github.io/data-librarian/descriptive_statistics/quiz_visualizations/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://bonartm.github.io/data-librarian/descriptive_statistics/quiz_visualizations/</guid>
-      <description>.quiz fieldset { border-color: black; border-width: 10px; margin-bottom: 1em; } .quiz legend { font-size: 105%; font-weight: 600; padding-left: 15px; padding-right: 15px; padding-top: 15px; } .quiz label { display: block; line-height: 1.75em; } .quiz input[type=&#34;radio&#34;] { margin-right: 10px; page-break-after: avoid; page-break-before: avoid; } .quiz input[type=&#34;submit&#34;] { background: black; color: white; display: block; font-size: 120%; font-weight: 600; height: 2.5em; margin-top: 2em; text-transform: uppercase; width: 100%; } .quiz table { color: white; font-weight: bold; margin: 1em auto 2em auto; width: 100%; } .</description>
-    </item>
-    
-    <item>
       <title>Überblick</title>
       <link>https://bonartm.github.io/data-librarian/inference/overview/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -325,6 +316,16 @@ In einem DataFrame werden mehrere Series gleicher Länge spaltenweise zu einer z
       <guid>https://bonartm.github.io/data-librarian/inference/overview/</guid>
       <description>Bisher haben Sie vorliegende Daten einer Stichprobe mit Visualisierungen und Statistiken beschrieben und zusammengefasst. Von Interesse sind aber in der Regel, die Zusammenhänge und Statistiken in der Gesamtpopulation.
 Beispiel Wahlumfrage: Sie ziehen zufällig $n=100$ Personen aus dem Wahlregister und befragen Sie nach ihren Parteipräferenzen. Sie können dann beispielsweise den relativen Anteil der Personen in Ihrer Stichprobe, die eine bestimmte Partei favorisieren, bestimmen. Damit haben Sie einen Schätzwert für den tatsächlichen Wert, wenn Sie alle Personen des Wahlregisters befragt hätten.</description>
+    </item>
+    
+    <item>
+      <title>Beispiel: Würfelwurf</title>
+      <link>https://bonartm.github.io/data-librarian/inference/example/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bonartm.github.io/data-librarian/inference/example/</guid>
+      <description>Das würfeln eines Würfels ist ein Zufallsprozess, mit den Ereignissen $\{1, 2, 3, 4, 5, 6\}$. Wenn $X$ das Ergebnis eines einzelnen Würfelwurfs beschreibt dann kann die Wahrscheinlichkeit, dass der Würfelwurf Eins ergibt mit $P(X = 1)$ geschrieben werden. Ist der würfel fair und würfeln wir diesen nun viele hunderttausende Mal, so wird der relative Anteil der Einserwürfe $P(X=1) = \frac{1}{6}$ ergeben.
+Wahrscheinlichkeiten nehmen immer Werte zwischen Null und Eins an und können deswegen auch als Prozente zwischen $0%$ und $100%$ angegeben werden.</description>
     </item>
     
     <item>
@@ -343,7 +344,7 @@ Beispiel Wahlumfrage: Sie ziehen zufällig $n=100$ Personen aus dem Wahlregister
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://bonartm.github.io/data-librarian/inference/ttest/</guid>
-      <description></description>
+      <description>In der Praxis, werden Häufig zwei Mittelwerte von Untergruppen einer Variable darauf getestet,</description>
     </item>
     
     <item>

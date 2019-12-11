@@ -22,5 +22,4 @@ LastModifierDisplayName = ""
 LastModifierEmail = ""
 +++
 
-
-## Scatterplots
+{{%attachments title="Related files" pattern="(.){2,}\.(csv|ipynb)" /%}}

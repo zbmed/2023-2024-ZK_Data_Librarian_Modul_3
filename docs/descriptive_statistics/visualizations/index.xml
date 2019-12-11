@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Visualisierungen mit Python on data librarian - modul 3 - daten analysieren und verstehen</title>
+    <title>Visualisierungen mit Seaborn on data librarian - modul 3 - daten analysieren und verstehen</title>
     <link>https://bonartm.github.io/data-librarian/descriptive_statistics/visualizations/</link>
-    <description>Recent content in Visualisierungen mit Python on data librarian - modul 3 - daten analysieren und verstehen</description>
+    <description>Recent content in Visualisierungen mit Seaborn on data librarian - modul 3 - daten analysieren und verstehen</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de-DE</language>
     
@@ -16,7 +16,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://bonartm.github.io/data-librarian/descriptive_statistics/visualizations/tutorial/</guid>
-      <description></description>
+      <description>Statistical analysis is a process of understanding how variables in a dataset relate to each other and how those relationships depend on other variables. Visualization can be a core component of this process because, when data are visualized properly, the human visual system can see trends and patterns that indicate a relationship. (https://seaborn.pydata.org/tutorial/relational.html)
+ Die zahlreichen Funktionen, die seaborn bietet basieren immer auf dem gleichen Prinzip: Visualisiert werden (nominale, ordinale, metrische) Variablen eines Datensatzes, die in Form eines DataFrames vorliegt.</description>
     </item>
     
     <item>
@@ -25,7 +26,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://bonartm.github.io/data-librarian/descriptive_statistics/visualizations/examples/</guid>
-      <description>Scatterplots </description>
+      <description>   Related files   examples.ipynb  (184 ko)    </description>
     </item>
     
   </channel>

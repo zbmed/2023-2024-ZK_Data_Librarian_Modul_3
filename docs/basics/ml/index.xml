@@ -36,7 +36,7 @@ Maschinelles Lernen (&amp;ldquo;Statistical Learning&amp;rdquo;) bedeutet in die
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://bonartm.github.io/data-librarian/basics/ml/data-science/</guid>
-      <description>Grundsätzlich ist ein Data Scientist jemand, die oder der Wissen und Erkenntnisse aus strukturierten und unstrukturierten Daten gewinnt. Data Science ist eine interdisziplinäre Disziplin, denn sie liefert eine Sammlung an quantitativen Methoden- und Algorithmen, die in einem Fachgebiet angewandt werden können 2. Damit liegt Data Science irgendwo in der Schnittmenge von Mathe/ Statistik, Programmierung (&amp;ldquo;Hacking skills&amp;rdquo;) und Fachwissen (&amp;ldquo;domain knowledge&amp;rdquo;/ &amp;ldquo;substantive expertise&amp;rdquo;).
+      <description>Grundsätzlich ist ein Data Scientist jemand, die oder der Wissen und Erkenntnisse aus strukturierten und unstrukturierten Daten gewinnt. Data Science ist eine interdisziplinäre Disziplin, denn sie liefert eine Sammlung an quantitativen Methoden- und Algorithmen, die in einem Fachgebiet angewandt werden können 1. Damit liegt Data Science irgendwo in der Schnittmenge von Mathe/ Statistik, Programmierung (&amp;ldquo;Hacking skills&amp;rdquo;) und Fachwissen (&amp;ldquo;domain knowledge&amp;rdquo;/ &amp;ldquo;substantive expertise&amp;rdquo;).
 Aufgrund der stark angewachsenen Mengen an unstrukturierten Daten aus heterogenen Datenquellen (Text, Bilder, Sensoren, Netzwerke, Videos, &amp;hellip;) reichen die Methoden und Fertigkeiten, die die Statistik traditionellerweise liefert und vermittelt, nicht mehr aus, um diese Daten effizient zu strukturieren, aggregieren, kombinieren, analysieren und visualisieren zu können:</description>
     </item>
     

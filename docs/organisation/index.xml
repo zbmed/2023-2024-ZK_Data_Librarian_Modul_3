@@ -26,8 +26,8 @@ Jede Einheit umfasst ein kleines praktisches Projekt, welches Sie in Form eines 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://bonartm.github.io/data-librarian/organisation/schedule/</guid>
-      <description>Hier finden Sie einen Überblick über die einzelnen Moduleinheiten. Die Tabelle können Sie sich auch als .pdf anzeigen lassen und ausdrucken:
-  Überblick Modul 3   überblick_modul3.pdf  (25 ko)       Datum Titel Ziele     21.01 – 26.01 Vorbereitung Installieren Sie die benötigte Software Laden Sie die Kursmaterialien und Datensätze herunter Stellen Sie sicher, dass Python Notebooks lokal ausgeführt werden können   27.</description>
+      <description>Hier finden Sie einen Überblick über die einzelnen Moduleinheiten.
+   Datum Titel Ziele     21.01 – 26.01 Vorbereitung Installieren Sie die benötigte Software Laden Sie die Kursmaterialien und Datensätze herunter Stellen Sie sicher, dass Python Notebooks lokal ausgeführt werden können   27.01 – 02.02 Grundlagen Beschreiben Sie Datensätze mit dem statistischen Grundvokabular Lesen Sie Datensätze als DataFrames in Python ein Filtern Sie DataFrames nach Spalten oder Zeilen Erstellen Sie neue Variablen   03.</description>
     </item>
     
     <item>
@@ -47,7 +47,7 @@ Jede Einheit umfasst ein kleines praktisches Projekt, welches Sie in Form eines 
       <guid>https://bonartm.github.io/data-librarian/organisation/notebooks/</guid>
       <description>Die Projekt-Aufgaben und Code-Beispiele in diesem Modul werden über Jupyter Notebooks erstellt und verteilt.
 Jupyter Notebooks bieten eine browserbasierte graphische Schnittstelle zur Python Programmierumgebung. Deswegen können Notebooks auf jedem System gestartet werden, man benötigt dazu nur einen Web-Browser und eine lokale installierte Version von Python.
-Darüber hinaus bieten Notebooks die Möglichkeit Text, Visualisierungen und Code in einer integrierten Datei zu erstellen. Somit können einfach statistische Reports und Analysen erstellt werden. Die Replizierbarkeit der Ergebnisse ist auch gewährleistet, da jede Person, die Programmierschritte im Notebook auf ihrem Rechner wiederholen kann.</description>
+Darüber hinaus bieten Notebooks die Möglichkeit Text, Visualisierungen und Code in einer integrierten Datei zu erstellen. Somit können einfach statistische Reports und Analysen erstellt werden. Die Replizierbarkeit der Ergebnisse ist auch gewährleistet, da jede Person, die Programmierschritte im Notebook auf dem eignen Rechner wiederholen kann.</description>
     </item>
     
     <item>

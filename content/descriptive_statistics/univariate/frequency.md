@@ -55,9 +55,14 @@ Häufigkeitstabellen lassen sich idealerweise als Balkendiagramme visualisieren:
 ```python
 import pandas as pd
 import seaborn as sns
-%matplotlib inline
 sns.set()
-df = pd.read_csv("../data/Library_Usage.csv")
-df['Age Range'].value_counts(normalize=True).plot(kind="bar")
+%matplotlib inline
+
+df = pd.read_csv("../data/Library_Usage.csv", na_values=["none"])
+pd.crosstab(
+    df['Provided Email Address'],
+    df['Notice Preference Definition'],
+    margins=False, normalize=0
+).plot.bar()
 ```
 {{% /customnotice %}}

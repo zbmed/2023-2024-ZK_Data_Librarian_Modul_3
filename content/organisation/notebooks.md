@@ -23,13 +23,11 @@ LastModifierEmail = ""
 
 Die Projekt-Aufgaben und Code-Beispiele in diesem Modul werden über [*Jupyter Notebooks*](https://jupyter.org/) erstellt und verteilt.
 
-Jupyter Notebooks bieten eine browserbasierte graphische Schnittstelle zur Python Programmierumgebung. Deswegen können Notebooks auf jedem System gestartet werden, man benötigt dazu nur einen Web-Browser und eine lokale installierte Version von Python.
+Jupyter Notebooks bieten eine **browserbasierte** graphische Schnittstelle zur Python Programmierumgebung. Deswegen können Notebooks auf jedem System gestartet werden, man benötigt dazu nur einen Web-Browser und eine lokale installierte Version von Python.
 
-Darüber hinaus bieten Notebooks die Möglichkeit **Text, Visualisierungen und Code** in einer integrierten Datei zu erstellen. Somit können einfach statistische Reports und Analysen erstellt werden. Die **Replizierbarkeit** der Ergebnisse ist auch gewährleistet, da jede Person, die Programmierschritte im Notebook auf ihrem Rechner wiederholen kann.
+Darüber hinaus bieten Notebooks die Möglichkeit **Text, Visualisierungen und Code** in einer integrierten Datei zu erstellen. Somit können einfach statistische Reports und Analysen erstellt werden. Die **Replizierbarkeit** der Ergebnisse ist auch gewährleistet, da jede Person, die Programmierschritte im Notebook auf dem eignen Rechner wiederholen kann. 
 
-Notebooks bestehen immer aus Text oder Code Zellen (`cells`). Der Python Code in den Zellen kann ausgeführt werden und das Ergebnis wird direkt im Notebook angezeigt. Somit eignen sich Notebooks, um mit Code interaktiv zu experimentieren und für andere Personen aufzubereiten.
-
-*Jupyter Notebook* enthält einen Dateimanager mit dem Sie durch die Ordner und Dateien Ihres Systems navigieren können. Mit einem Klick auf eine Notebook-Datei öffnet sich ein neues Browser-Tab mit dem Notebook.
+*Jupyter Notebook* enthält einen Dateimanager mit dem Sie durch die Ordner und Dateien Ihres Systems navigieren können. Mit einem Klick auf eine Notebook-Datei öffnet sich ein neues Browser-Tab mit dem Notebook. Notebooks bestehen immer aus Text/ Markdown oder Code **Zellen** (`cells`). Der Python Code in den Zellen kann ausgeführt werden und das Ergebnis wird direkt im Notebook angezeigt.
 
 {{% customnotice exercise%}}
 
