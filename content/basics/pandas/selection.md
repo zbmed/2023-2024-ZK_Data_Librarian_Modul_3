@@ -24,7 +24,7 @@ LastModifierEmail = ""
 
 
 
-## Übung 2: Einführung in Pandas
+## Auswahl bestimmter Variablen/ Spalten
 
-- Laden Sie [dieses Jupyter Notebook]() in Ihren Projektordner. In dem Ordner sollte sich auch der Kunden-Datensatz mit dem Namen `Library_Usage.csv` befinden.
-- Öffnen und bearbeiten Sie das Notebook mit Jupyter.
+
+## Filter von Zeilen

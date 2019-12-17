@@ -1,10 +1,10 @@
 +++
-title = "Visualisierungen mit Python"
+title = "Lagemaße"
 # If set, this will be used for the page's menu entry (instead of the `title` attribute)
 # menuTitle = "Einführung"
-weight = 40
+weight = 32
 # The title of the page in menu will be prefixed by this HTML content
-# pre = "<b>3. </b>"
+# pre = "<b>2. </b>"
 # pre = "<i class='fab fa-github'></i>"
 # Table of content (toc) is enabled by default. Set this parameter to true to disable it.
 # Note: Toc is always disabled for chapter pages
@@ -22,5 +22,17 @@ LastModifierDisplayName = ""
 LastModifierEmail = ""
 +++
 
+Lagemaße beschreiben die Zentralität einer Verteilung.
 
-{{< youtube jbkSRLYSojo >}}
+Typische Lagemaße sind der empirische Mittelwert:
+
+$$
+\bar{x} = \frac{1}{n}\sum_{i=1}^{n}x_i = \frac{x_1 + x_2 + \dots + x_n}{n}
+$$
+
+
+Oder der Median:
+
+$$
+
+$$

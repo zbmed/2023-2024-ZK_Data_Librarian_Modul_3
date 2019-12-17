@@ -22,11 +22,10 @@ LastModifierDisplayName = ""
 LastModifierEmail = ""
 +++
 
-Seit einigen Jahren sind *Data Science* und *Machine Learning* zu alltäglichen Begriffen geworden. Studiengänge im Bereich Data Science werden [neu eingerichtet](https://www.th-koeln.de/studium/data-and-information-science-bachelor--inhalte_52782.php) oder schon bestehende Abschlüsse [umbenannt](http://west.uni-koblenz.de/studying/mwds). Maschinelles Lernen und insbesondere Themen wie *künstliche Intelligenz*, *Neuronale Netze* und *Deep Learning* sind Thema in [Zeitungen](https://www.sueddeutsche.de/thema/K%C3%BCnstliche_Intelligenz) und Nachrichten. Und auch der Zertifikationskurs [*Data Librarian*](https://www.th-koeln.de/weiterbildung/zertifikatskurs-data-librarian_63393.php) spiegelt diese Entwicklung wieder.
 
-> Was bedeuten diese Begriffe und wo ist dabei die Statistik einzuordnen?
+Seit einigen Jahren sind *Data Science* und *Machine Learning* zu alltäglichen Begriffen geworden. Studiengänge im Bereich Data Science werden [neu eingerichtet](https://www.th-koeln.de/studium/data-and-information-science-bachelor--inhalte_52782.php) oder schon bestehende Abschlüsse [umbenannt](http://west.uni-koblenz.de/studying/mwds). Anwendungen des Maschinellen Lernens sind Thema in [Massenmedien](https://www.sueddeutsche.de/thema/K%C3%BCnstliche_Intelligenz). Der Zertifikationskurs [*Data Librarian*](https://www.th-koeln.de/weiterbildung/zertifikatskurs-data-librarian_63393.php) spiegelt diese Popularität wieder.
 
-Im folgenden wird ein kurzer Überblick über die Begriffe gegeben. Für Interessierte gibt es Verweise zu weiteren Quellen.
+Um die Zusammenhänge zwischen den Fachgebieten besser zu verstehen, wird im folgenden wird ein kurzer Überblick über die Begriffe gegeben. Für Interessierte gibt es Verweise zu weiteren Quellen.
 
 <script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/1982_RC01/embed_loader.js"></script>
 <script type="text/javascript">
