@@ -18,12 +18,14 @@ hidden = false
 
 Herzlichen Willkommen zum dritten Modul **Daten analysieren und darstellen** des Data Librarian Zertifikationskurs. In diesem Modul möchten wir Ihnen einen praktischen Einblick in die Datenanalyse mit der Programmiersprache Python geben.
 
+<<<<<<< HEAD
 Nachdem Sie auf den Präsenztagen schon die grundlegenden Werkzeuge und Programmiertechniken kennen gelernt haben, werden Sie sich in diesem Modul anhand von praktischen Beispielen und Aufgaben Grundlagen der deskriptiven Statistik, der Datenvisualisierung und des Maschinellen Lernens aneignen. Dabei können Sie Ihre Programmier- und Datenanalysekenntnisse in Python verbessern und im bibliothekarischen Kontext anwenden.
+=======
+Nachdem Sie im ersten Modul schon die grundlegenden Werkzeuge und Programmiertechniken kennen gelernt haben, werden Sie sich in den kommenden Wochen anhand von praktischen Beispielen und Aufgaben Grundlagen der **deskriptiven Statistik, der Datenvisualisierung und des Maschinellen Lernens** aneignen. Dabei können Sie Ihre Programmier- und Datenanalysekenntnisse in Python verbessern und im bibliothekarischen Kontext anwenden.
+>>>>>>> master
 
 {{% customnotice tip%}}
-Die Kurseinheiten bauen aufeinander auf. Wir empfehlen Ihnen deswegen durch die Inhalte dieses Moduls mit den Pfeiltasten zu navigieren. In der linken Navigationsleiste wird Ihr Fortschritt gespeichert.
-
-Diese Webseite ist für alle Endgeräte optimiert. Sie können deswegen auch Ihr Smartphone oder Tablet zum Lesen nutzen.
-
-Starten Sie nun mit der ersten Kurseinheit indem Sie auf </i> <i class="fas fa-chevron-right"></i> klicken oder mit den Pfeiltasten <i class="fas fa-arrows-alt-h"></i> navigieren.
+- Die **Kurseinheiten** bauen aufeinander auf. Wir empfehlen Ihnen deswegen durch die Inhalte dieses Moduls mit den Pfeiltasten zu navigieren. In der linken Navigationsleiste wird Ihr Fortschritt gespeichert.
+- Diese Webseite ist für alle Endgeräte optimiert. Sie können deswegen auch Ihr Smartphone oder Tablet zum Lesen nutzen.
+- **Starten** Sie nun mit der ersten Kurseinheit indem Sie auf </i> <i class="fas fa-chevron-right"></i> klicken oder mit den Pfeiltasten <i class="fas fa-arrows-alt-h"></i> navigieren.
 {{% /customnotice %}}

@@ -25,22 +25,29 @@ LastModifierEmail = ""
 
 ### 27.01 – 02.02
 
-# Grundlagen und deskriptive Statistik
+# Grundlagen der Datenanalyse in Python
 
 Diese Einheit gibt eine Einführung in die Aufgaben und grundlegenden Begriffe der angewandten Statistik. Im zweiten Teil wird das `pandas` Paket vorgestellt und gezeigt, wie Datensätze eingelesen und bearbeitet werden können.
 
 ## Ziele
 
 - Beschreiben Sie Datensätze mit dem statistischen Grundvokabular
+<<<<<<< HEAD
 - Lesen Sie Datensätze als `DataFrames` in Python ein und aus
 - Filtern Sie `DataFrames` nach Spalten oder Zeilen
 - Berechnen Sie aus vorhandenen Variable neue Variablen
 
+=======
+- Lesen Sie Datensätze als `DataFrame`s in Python ein und aus
+- Filtern Sie `DataFrame`s nach Spalten oder Zeilen
+- Erstellen Sie neue Variablen
+>>>>>>> master
 {{% customnotice exercise %}}
 
 ### Projektaufgabe
 
 Die Pressestelle der San Francisco Public Library möchte einen Online-Artikel zum Kundenstamm der Bibliothek erstellen. Dazu hat sie Ihnen [einen Datensatz](/data-librarian/organisation/dataset/) geschickt, den Sie auswerten sollen.
+<<<<<<< HEAD
 
 - Erstellen Sie eine Beschreibung des Datensatzes unter Verwendung des [statistischen Grundvokabulars](/data-librarian/basics/basic_terms/)
 
@@ -49,5 +56,13 @@ Die Pressestelle der San Francisco Public Library möchte einen Online-Artikel z
   - die Anzahl der Ausleihen und Verlängerungen *pro Monat* der Mitgliedschaft
 
 - Senden Sie bis Freitag Ihre Beschreibung zusammen mit den Berechnungen in Form eines integrierten *Python Notebooks* an [malte@bonart.de](mailto:malte@bonart.de).
+=======
+
+1. Erstellen Sie eine Beschreibung des Datensatzes unter Verwendung des [statistischen Grundvokabulars](/data-librarian/basics/basic_terms/).
+2. Lesen Sie [den Datensatz](/data-librarian/organisation/dataset/) ein und berechnen Sie für jeden Kunden
+    - die Dauer der Mitgliedschaft in Jahren
+    - die Anzahl der Ausleihen und Verlängerungen *pro Jahr* der Mitgliedschaft
+3. Senden Sie bis Freitag Ihre Beschreibung zusammen mit den Berechnungen in Form eines integrierten *Python Notebooks* an [malte@bonart.de](mailto:malte@bonart.de).
+>>>>>>> master
 
 {{% /customnotice %}}

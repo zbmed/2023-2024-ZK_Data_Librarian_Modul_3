@@ -23,12 +23,12 @@ LastModifierEmail = ""
 
 {{% customnotice exercise %}}
 
-Schreiben Sie einen kurzen Text über die Verwendung von Daten und quantitativen Methoden an Ihrem Arbeitsplatz. Denken Sie dabei über folgende Fragen nach:
+Schreiben Sie einen **kurzen** Text über die Verwendung von Daten und quantitativen Methoden an Ihrem Arbeitsplatz. Denken Sie dabei über folgende Fragen nach:
 
 1. Welche Daten sind bei Ihnen vorhanden?
 2. Mit welchen Daten arbeiten Sie oder würden Sie gerne arbeiten?
-- Werden statistische Verfahren oder Maschinelles Lernen schon bei Ihnen eingesetzt?
-- Welche Fragen oder Phänomene würden Sie gerne untersuchen? Was fänden Sie spannend herauszufinden?
+3. Werden statistische Verfahren oder Maschinelles Lernen schon bei Ihnen eingesetzt?
+4. Welche Fragen oder Phänomene würden Sie gerne untersuchen? Was fänden Sie spannend herauszufinden?
 
 **Teilen** Sie Ihren Text mit den anderen KursteilnehmerInnen auf der [Kursplattform](https://zbiw.th-koeln.de/moodle/course/view.php?id=300). Wenn Sie für die Anderen **anonym** bleiben möchten, können Sie mir auch den Text schicken und ich lade ihn dann hoch.
 

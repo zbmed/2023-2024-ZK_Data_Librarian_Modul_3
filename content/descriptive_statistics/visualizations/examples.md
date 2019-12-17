@@ -22,5 +22,9 @@ LastModifierDisplayName = ""
 LastModifierEmail = ""
 +++
 
+<<<<<<< HEAD
 
 ## Scatterplots
+=======
+{{%attachments title="Related files" pattern="(.){2,}\.(csv|ipynb)" /%}}
+>>>>>>> master

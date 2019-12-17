@@ -2,7 +2,7 @@
 title = "Fehlende Werte"
 # If set, this will be used for the page's menu entry (instead of the `title` attribute)
 # menuTitle = "Einführung"
-weight = 3
+weight = 5
 # The title of the page in menu will be prefixed by this HTML content
 # pre = "<b>1. </b>"
 # pre = "<i class='fab fa-github'></i>"
@@ -22,9 +22,74 @@ LastModifierDisplayName = ""
 LastModifierEmail = ""
 +++
 
+Real erhobene Daten sind meistens unsauber und fehlerhaft. Ein häufiges Problem dabei sind fehlende Werte, also Beobachtungen für die manche Merkmale nicht erhoben wurden. In jedem Datensatz werden fehlende Werte anders gekennzeichnet, aber man findet meistens diese Kodierungen wieder: `"-999", "NA", " ", "None", "NULL", "#N/A"`.
+
+Wenn beispielsweise der Mittelwert einer statistischen Variable berechnet wird, so muss entschieden werden, wie mit fehlenden Werten umgegangen werden soll: Sollen die Werte entfernt werden? Sollen die fehlenden Werte durch durch einen bestimmten Wert ersetzt werden?
+
+In `DataFrame`s werden fehlende Werte durch zwei Arten angezeigt: Das Schlüsselwort `NaN` ("Not a Number") wird in numerischen `Series` verwendet. Das Schlüsselwort `None` in nicht-numerischen.
+
+Beim Einlesen von Daten (siehe z.B. die [`read_csv` Funktion](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_csv.html)) können mit dem Argument `na_values` zusätzliche Kodierungen für fehlerhafte Werte mit angegeben werden.
+
+### Fallbeispiel
+
+Der Library Usage Datensatz enthält die Kodierung `"None"` für fehlende Werte. Diese werden von `pandas` beim Einlesen von numerischen Spalten nicht richtig erkannt:
+
+```python
+import pandas as pd
+
+df = pd.read_csv("../data/Library_Usage.csv")
+df['Circulation Active Year']
+```
+Obwohl die Spalte `'Circulation Active Year'` eigentlich numerisch ist, wird Sie von `pandas` als Text erkannt. Möchten Sie z.B. `2019 - df['Circulation Active Year']` berechnen, so werden Sie eine Fehlermeldung erhalten, da für Text-Werte keine Substraktionen durchgeführt werden können.
+
+Um das Problem zu beheben können Sie auf zwei Arten vorgehen. Sie können schon beim Einlesen, die Kodierung für fehlende Werte mit angeben:
+
+```python
+df = pd.read_csv("../data/Library_Usage.csv", na_values="None")
+df['Circulation Active Year']
+```
+
+Oder Sie führen nach dem Einlesen eine explizite Umwandlung des Datentyps durch:
+
+```python
+df = pd.read_csv("../data/Library_Usage.csv", na_values="None")
+df['Circulation Active Year'] = pd.to_numeric(df['Circulation Active Year'], errors='coerce')
+df['Circulation Active Year']
+```
+
+{{% customnotice exercise %}}
+Was unterscheidet den Wert `None` vom Wert `"None"`? Was den Wert `5` vom Wert `"5"`? Was den Wert `"NaN"` vom Wert `NaN`? Ist `True` und `"True"` das gleiche?
+{{% /customnotice %}}
 
 
-## Übung 2: Einführung in Pandas
+### Behandlung von Fehlenden Werten
 
-- Laden Sie [dieses Jupyter Notebook]() in Ihren Projektordner. In dem Ordner sollte sich auch der Kunden-Datensatz mit dem Namen `Library_Usage.csv` befinden.
-- Öffnen und bearbeiten Sie das Notebook mit Jupyter.
+`Pandas` bietet die nützlichen Funktionen `isna()`, `notna()`, `dropna()` und `fillna()` an um fehlende Werte zu identifizieren, zu entfernen oder mit anderen Werten zu ersetzen.
+
+#### Filter
+
+
+{{% customnotice code %}}
+```python
+df[df['Age Range'].isna()]
+df[df['Age Range'].notna()]
+```
+{{% /customnotice %}}
+
+#### Entfernen
+
+{{% customnotice code %}}
+```python
+# drops all rows that contain missing values
+df.dropna()
+# drops all missing values in this series
+df['Age Range'].dropna()
+```
+{{% /customnotice %}}
+
+
+{{% customnotice exercise %}}
+- Lesen Sie den Datensatz ein und erstellen Sie einen `DataFrame` der keine Beobachtungen mit fehlenden Werten mehr enthält.
+- Speicher Sie diesen unter dem Namen `Library_Usage_Clean.csv` ab.
+- Wie viele Beobachtungen wurden dabei entfernt?
+{{% /customnotice %}}

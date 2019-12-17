@@ -9,7 +9,11 @@ code.has-jax {
 #body .padding {
     margin: 0 auto;
     max-width: 1000px;
+<<<<<<< HEAD
     padding: 3rem 3rem;
+=======
+    padding: 3rem 4rem;
+>>>>>>> master
     position: relative;
 }
 

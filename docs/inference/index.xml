@@ -16,7 +16,18 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://bonartm.github.io/data-librarian/inference/overview/</guid>
-      <description></description>
+      <description>Bisher haben Sie vorliegende Daten einer Stichprobe mit Visualisierungen und Statistiken beschrieben und zusammengefasst. Von Interesse sind aber in der Regel, die Zusammenhänge und Statistiken in der Gesamtpopulation.
+Beispiel Wahlumfrage: Sie ziehen zufällig $n=100$ Personen aus dem Wahlregister und befragen Sie nach ihren Parteipräferenzen. Sie können dann beispielsweise den relativen Anteil der Personen in Ihrer Stichprobe, die eine bestimmte Partei favorisieren, bestimmen. Damit haben Sie einen Schätzwert für den tatsächlichen Wert, wenn Sie alle Personen des Wahlregisters befragt hätten.</description>
+    </item>
+    
+    <item>
+      <title>Beispiel: Würfelwurf</title>
+      <link>https://bonartm.github.io/data-librarian/inference/example/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bonartm.github.io/data-librarian/inference/example/</guid>
+      <description>Das würfeln eines Würfels ist ein Zufallsprozess, mit den Ereignissen $\{1, 2, 3, 4, 5, 6\}$. Wenn $X$ das Ergebnis eines einzelnen Würfelwurfs beschreibt dann kann die Wahrscheinlichkeit, dass der Würfelwurf Eins ergibt mit $P(X = 1)$ geschrieben werden. Ist der würfel fair und würfeln wir diesen nun viele hunderttausende Mal, so wird der relative Anteil der Einserwürfe $P(X=1) = \frac{1}{6}$ ergeben.
+Wahrscheinlichkeiten nehmen immer Werte zwischen Null und Eins an und können deswegen auch als Prozente zwischen $0%$ und $100%$ angegeben werden.</description>
     </item>
     
     <item>
@@ -25,7 +36,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://bonartm.github.io/data-librarian/inference/ttest/</guid>
-      <description></description>
+      <description>In der Praxis, werden Häufig zwei Mittelwerte von Untergruppen einer Variable darauf getestet,</description>
     </item>
     
   </channel>

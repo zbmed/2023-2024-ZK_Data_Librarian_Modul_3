@@ -18,7 +18,7 @@
       <guid>https://bonartm.github.io/data-librarian/organisation/packages/numpy/</guid>
       <description>numpy bietet den array als zentrale Datenstruktur. Mit ihm lassen sich numerische Daten effizient im Arbeitsspeicher (RAM) erstellen, ein- und auslesen, bearbeiten und aggregieren.
 Numpy bietet neben dem array viele Funktionen an, mit denen sich effizient Berechnungen auf diesen durchführen lassen können. Außerdem wird die klassische Matrizenrechnung unterstützt.
-# import the library and give it a shorter name &#39;np&#39; import numpy as np # create 100 randomly distributed numbers X = np.</description>
+# import the library and give it a shorter name &amp;#39;np&amp;#39; import numpy as np # create 100 randomly distributed numbers X = np.</description>
     </item>
     
     <item>
@@ -39,7 +39,7 @@ In einem DataFrame werden mehrere Series gleicher Länge spaltenweise zu einer z
       
       <guid>https://bonartm.github.io/data-librarian/organisation/packages/matplotlib/</guid>
       <description>matplotlib ist das Standard-Paket zum Erstellen von wissenschaftlichen 2-dimensionalen statischen Graphiken. Die grundlegende Struktur in matplotlib ist figure, eine leere graphische Fläche, die mit Linien, Balken, Punten, Beschriftungen und Axen befüllt werden kann. Der fertige Plot kann dann in diversen Formaten abgespeichert oder auf dem Bildschirm angezeigt werden.
-# import the package and give it the shorter name &#39;plt&#39; # matplotlib inline import matplotlib.pyplot as plt # create some dummy data x = range(1, 10) # make a simple scatter plot of the data plt.</description>
+# import the package and give it the shorter name &amp;#39;plt&amp;#39; # matplotlib inline import matplotlib.pyplot as plt # create some dummy data x = range(1, 10) # make a simple scatter plot of the data plt.</description>
     </item>
     
     <item>

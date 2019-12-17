@@ -26,7 +26,13 @@ Seit der Erfindung des Personal Computers und des Internets werden statistische 
 
 Maschinelles Lernen (*Machine Learning* oder *Statistical Learning*) bedeutet in diesem Kontext relevante und signifikante **Muster** und **Trends** aus den Daten zu extrahieren um die Daten "zu verstehen". Dabei spielen Computer und deren wachsende Rechenpower eine immer größere Rolle. Sie haben die klassische angewandte Statistik **revolutioniert** und es sind vor allem **Ingenieure und Informatiker**, die die Weiterentwicklung der Disziplin heutzutage vorantreiben.[^1]
 
+<<<<<<< HEAD
 Im Maschinellen Lernen steht insbesondere die **Vorhersagekraft** und **Generalisierbarkeit** von statistischen Methoden und Algorithmen im Vordergrund. Ziel ist es, möglichst gute Prognosen, beispielsweise bei der Gesichtserkennung, zu machen. Die klassische Statistik dagegen ist stärker an den kausalen Zusammenhängen und der Stärke von signifikanten Einflüssen einzelner Faktoren auf ein Resultat interessiert.
+=======
+Im Gegensatz zur klassischen Statistik, steht im Maschinellen Lernen auch viel stärker die **Vorhersagekraft** und **Generalisierbarkeit** von Methoden im Vordergrund und weniger ein Verständnis der kausalen Zusammenhänge.
+
+Während die klassische Statistik oft an der Interpretation von kausalen Einflüssen einzelner Faktoren auf ein Ergebnis interessiert ist, sind Black-Box Modelle im Maschinellen Lernen viel präsenter: Ziel ist es oft, möglichst gute Prognosen, beispielsweise bei der Gesichtserkennung, zu machen. Dabei spielt letztendlich das genaue Modell und die Gewichte für die Variablen nur eine untergeordnete Rolle.
+>>>>>>> master
 
 {{% customnotice tip%}}
 **Teachable Machine** von Google ermöglicht das Trainieren von Machine Learning Modellen im eigenen Web-Browser ohne das Programmiercode geschrieben werden muss. Somit wird das Grundprinzip des Machinellen Lernens (hier: Supervised Learning) auch ohne Vorkenntnisse erfahrbar und man bekommt ein gutes Gespür für die Möglichkeiten und Grenzen der Methode.

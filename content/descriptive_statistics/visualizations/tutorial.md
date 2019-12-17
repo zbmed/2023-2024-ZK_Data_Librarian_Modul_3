@@ -21,3 +21,25 @@ LastModifierDisplayName = ""
 # Email of this page modifier. If set with LastModifierDisplayName, it will be displayed in the footer
 LastModifierEmail = ""
 +++
+
+> Statistical analysis is a process of understanding how variables in a dataset relate to each other and how those relationships depend on other variables. Visualization can be a core component of this process because, when data are visualized properly, the human visual system can see trends and patterns that indicate a relationship. (https://seaborn.pydata.org/tutorial/relational.html)
+
+Die zahlreichen Funktionen, die `seaborn` bietet basieren immer auf dem gleichen Prinzip: Visualisiert werden (nominale, ordinale, metrische) Variablen eines Datensatzes, die in Form eines `DataFrame`s vorliegt. Das Skalenniveau der Variablen bestimmt dabei die Art der Visualisierung. Variablen können verschiedenen Eigenschaften des Diagramms zugeordnet werden z.B. Punktgröße oder Farbe). Am besten lässt sich das Prinzip an einem Beispiel erkennen:
+
+{{% customnotice code%}}
+```python
+import pandas as pd
+import seaborn as sns
+# command to print plots directly in jupyter
+%matplotlib inline
+sns.set() # sets the default seaborn theme
+
+# use sample to generate a random subsample
+df = pd.read_csv("../data/Library_Usage.csv").sample(n=1000)
+sns.scatterplot(x='Total Checkouts', y='Total Renewals', data=df)
+```
+{{% /customnotice%}}
+
+Dies erzeugt ein Streudiagram zur Visualisierung einer bivariaten Verteilung mit metrischen Variablen. Jedes Wertepaar $(x_i,y_i)$ der Verteilung wird im Koordinatensystem als Punkt dargestellt.
+
+Mit dem zusätzlichen Befegl

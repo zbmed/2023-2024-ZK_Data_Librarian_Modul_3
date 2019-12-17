@@ -11,21 +11,46 @@
     
     
     <item>
+      <title>Series und DataFrames</title>
+      <link>https://bonartm.github.io/data-librarian/basics/pandas/series/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bonartm.github.io/data-librarian/basics/pandas/series/</guid>
+      <description>Series und DataFrames sind die zentralen Datenstrukturen in Pandas. Series sind wie Standard Python-Listen, mit dem wichtigen Unterschied, dass Series nur Werte eines Datentyps enthalten können.
+import pandas as pd x = pd.Series([34, 12, 23, 45]) print(x)    Ein Datentyp ist die grundlegende Einheit, in der einzelne Werte in einer Programmiersprache vom Computer gespeichert werden können. Beispiele für Datentypen in Python sind: float, int, str, bool oder datetime.</description>
+    </item>
+    
+    <item>
       <title>Ein- und Ausgabe</title>
       <link>https://bonartm.github.io/data-librarian/basics/pandas/io/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://bonartm.github.io/data-librarian/basics/pandas/io/</guid>
-      <description> Übung 2: Einführung in Pandas  Laden Sie [dieses Jupyter Notebook]() in Ihren Projektordner. In dem Ordner sollte sich auch der Kunden-Datensatz mit dem Namen Library_Usage.csv befinden. Öffnen und bearbeiten Sie das Notebook mit Jupyter.  </description>
+      <description>Die Ein- und Ausgabe von Daten in pandas ist umfangreich aber einfach. Um eine .csv Datei einzulesen und in einer Variable zu speichern verwenden Sie die Funktion read_csv:
+import pandas as pd df = pd.read_csv(&amp;#34;../data/Library_Usage.csv&amp;#34;) df.head()    Um einen eingelesenen Datensatz beispielsweise im .json Textformat zu speichern verwenden Sie die Funktion to_json:
+df.to_json(&amp;#34;../data/Library_Usage.json&amp;#34;)     Manche Funktion in pandas sind statische Funktionen, d.h. sie sind an kein konkretes Objekt gebunden.</description>
     </item>
     
     <item>
-      <title>Selektion von Spalten und Zeilen</title>
-      <link>https://bonartm.github.io/data-librarian/basics/pandas/selection/</link>
+      <title>Auswahl und Erstellung von Spalten</title>
+      <link>https://bonartm.github.io/data-librarian/basics/pandas/columns/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bonartm.github.io/data-librarian/basics/pandas/selection/</guid>
-      <description> Übung 2: Einführung in Pandas  Laden Sie [dieses Jupyter Notebook]() in Ihren Projektordner. In dem Ordner sollte sich auch der Kunden-Datensatz mit dem Namen Library_Usage.csv befinden. Öffnen und bearbeiten Sie das Notebook mit Jupyter.  </description>
+      <guid>https://bonartm.github.io/data-librarian/basics/pandas/columns/</guid>
+      <description>Die Spalten eines DataFrames werden über einen Spaltenindex referenziert. Üblicherweise besteht der Spaltenindex aus Spaltennamen in Textform:
+import pandas as pd df = pd.read_csv(&amp;#34;../data/Library_Usage.csv&amp;#34;) df.columns    Einzelne Spalten können wie bei einem Python Dictionary mit df[&amp;lt;name&amp;gt;] ausgewählt werden. Mehre Spalten mit df[[&amp;lt;name1&amp;gt;, &amp;lt;name2]]:
+df[&amp;#39;Total Renewals&amp;#39;] df[[&amp;#39;Total Renewals&amp;#39;, &amp;#39;Total Checkouts&amp;#39;]] filter = [&amp;#39;Total Renewals&amp;#39;, &amp;#39;Total Checkouts&amp;#39;] # auxiliary variable df[filter]    Neue Spalten können mit einer Zuweisung (=) erstellt werden: df[&amp;#39;dummy_variable&amp;#39;] = 5    Berechnungen auf schon bestehenden Variablen können auch direkt einer neuen Spalte zugeordnet werden:</description>
+    </item>
+    
+    <item>
+      <title>Auswahl von Zeilen</title>
+      <link>https://bonartm.github.io/data-librarian/basics/pandas/rows/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bonartm.github.io/data-librarian/basics/pandas/rows/</guid>
+      <description>Die Zeilen eines DataFrames werden über einen Zeilenindex (loc[]), über die aufsteigenden Zeilennummern (iloc[]) oder über logische Ausdrücke ([] oder loc[]) referenziert.
+Hier wird zuerst der wichtigste letzte Fall näher betrachtet:
+import pandas as pd df = pd.read_csv(&amp;#34;../data/Library_Usage.csv&amp;#34;) df[df[&amp;#39;Total Checkouts&amp;#39;] &amp;gt; 10000]    Der Ausdruck df[&#39;Total Checkouts&#39;] &amp;gt; 10000 wird zuerst ausgewertet und ergibt eine boolesche Series mit Einträgen True wenn die Beobachtung mehr als 1000 Ausleihen getätigt hat und False sonst.</description>
     </item>
     
     <item>
@@ -34,16 +59,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://bonartm.github.io/data-librarian/basics/pandas/na/</guid>
-      <description> Übung 2: Einführung in Pandas  Laden Sie [dieses Jupyter Notebook]() in Ihren Projektordner. In dem Ordner sollte sich auch der Kunden-Datensatz mit dem Namen Library_Usage.csv befinden. Öffnen und bearbeiten Sie das Notebook mit Jupyter.  </description>
-    </item>
-    
-    <item>
-      <title>Aggregation und Gruppierung</title>
-      <link>https://bonartm.github.io/data-librarian/basics/pandas/groupby/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://bonartm.github.io/data-librarian/basics/pandas/groupby/</guid>
-      <description> Übung 2: Einführung in Pandas  Laden Sie [dieses Jupyter Notebook]() in Ihren Projektordner. In dem Ordner sollte sich auch der Kunden-Datensatz mit dem Namen Library_Usage.csv befinden. Öffnen und bearbeiten Sie das Notebook mit Jupyter.  </description>
+      <description>Real erhobene Daten sind meistens unsauber und fehlerhaft. Ein häufiges Problem dabei sind fehlende Werte, also Beobachtungen für die manche Merkmale nicht erhoben wurden. In jedem Datensatz werden fehlende Werte anders gekennzeichnet, aber man findet meistens diese Kodierungen wieder: &amp;quot;-999&amp;quot;, &amp;quot;NA&amp;quot;, &amp;quot; &amp;quot;, &amp;quot;None&amp;quot;, &amp;quot;NULL&amp;quot;, &amp;quot;#N/A&amp;quot;.
+Wenn beispielsweise der Mittelwert einer statistischen Variable berechnet wird, so muss entschieden werden, wie mit fehlenden Werten umgegangen werden soll: Sollen die Werte entfernt werden?</description>
     </item>
     
   </channel>

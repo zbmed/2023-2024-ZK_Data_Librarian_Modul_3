@@ -21,6 +21,7 @@ LastModifierDisplayName = ""
 # Email of this page modifier. If set with LastModifierDisplayName, it will be displayed in the footer
 LastModifierEmail = ""
 +++
+<<<<<<< HEAD
 
 Bisher haben Sie immer nur einzelne Variable betrachtet, zusammengefasst oder visualisiert. In vielen Fällen ist jedoch der Zusammenhang zwischen zwei Variablen von Interesse:
 
@@ -29,6 +30,17 @@ Bisher haben Sie immer nur einzelne Variable betrachtet, zusammengefasst oder vi
 - Nimmt die Anzahl der Ausleihen mit zunehmender Dauer der Mitgliedschaft ab?
 
 Wenn zwei ordinale oder metrische Variablen voneinander abhängigen kann man zwischen einem positiven oder einem negativem Zusammenhang unterscheiden. Zwei Variablen, die keinen Zusammenhang aufweisen, nennt man auch *statistisch unabhängige* Variablen.
+=======
 
+Bisher haben Sie immer nur einzelne Variable betrachtet, zusammengefasst oder visualisiert. In vielen Fällen ist jedoch der Zusammenhang zwischen zwei Variablen von Interesse:
+>>>>>>> master
 
+- Leihen ältere Bibliothekskunden im Schnitt mehr Bücher aus als jüngere?
+- Führen Kunden, die häufiger Ausleihen tätigen,  im Schnitt auch häufiger Verlängerungen durch?
+- Nimmt die Anzahl der Ausleihen mit zunehmender Dauer der Mitgliedschaft ab?
+
+<<<<<<< HEAD
   
+=======
+Zwei Variablen, die keinen Zusammenhang aufweisen, nennt man auch *statistisch unabhängige* Variablen. Für zwei metrische Variablen kann man außerdem zwischen einem positiven oder einem negativem Zusammenhang unterscheiden. 
+>>>>>>> master

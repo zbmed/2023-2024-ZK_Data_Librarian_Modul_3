@@ -45,15 +45,27 @@ Für den Online-Artikel zum Kundenstamm der Bibliothek braucht die Pressestelle 
 Für eine erste Demo sind Sie verantwortlich.
 
 - Berechnen Sie 2-3 Statistiken und Erstellen Sie 2-3 Visualisierungen basierend auf den Informationen im [Datensatz](/data-librarian/organisation/dataset/).
+<<<<<<< HEAD
 - Nutzen Sie `pandas`, `seaborn` und ggf. `matplotlib`
+=======
+- Nutzen Sie `pandas` zur Berechnung der Statistiken und `seaborn` oder `matplotlib` für die Visualisierungen.
+>>>>>>> master
 - Senden Sie bis Freitag Ihren Report in Form eines integrierten *Python Notebooks* an [malte@bonart.de](mailto:malte@bonart.de).
 {{% /customnotice %}}
 
 
 {{% customnotice tip %}}
+<<<<<<< HEAD
 Beispielfragen, die Sie mit dem Datensatz beantworten können:
+=======
+Beispielfragen, die Sie mit dem Datensatz beantworten und visualisieren können:
+>>>>>>> master
 
 - Wie viele Senioren und Kinder sind Kunden der San Francisco Public Library?
 - Wie viele Nutzer möchten per Mail informiert werden?
 - Wie alt sind diese Nutzer durchschnittlich im Vergleich zu Nutzern, die per Post informiert werden möchten?
+<<<<<<< HEAD
+=======
+- Wie viele Ausleihen werden im Mittel pro Altersgruppe und pro Jahr getätigt? Ist die Streuung zwischen den Gruppen gleich?
+>>>>>>> master
 {{% /customnotice %}}
