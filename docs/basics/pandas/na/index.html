@@ -12,25 +12,25 @@
     <title>Fehlende Werte :: data librarian - modul 3 - daten analysieren und verstehen</title>
 
     
-    <link href="/data-librarian/css/nucleus.css?1576078173" rel="stylesheet">
-    <link href="/data-librarian/css/fontawesome-all.min.css?1576078173" rel="stylesheet">
-    <link href="/data-librarian/css/hybrid.css?1576078173" rel="stylesheet">
-    <link href="/data-librarian/css/featherlight.min.css?1576078173" rel="stylesheet">
-    <link href="/data-librarian/css/perfect-scrollbar.min.css?1576078173" rel="stylesheet">
-    <link href="/data-librarian/css/auto-complete.css?1576078173" rel="stylesheet">
-    <link href="/data-librarian/css/atom-one-dark-reasonable.css?1576078173" rel="stylesheet">
-    <link href="/data-librarian/css/theme.css?1576078173" rel="stylesheet">
-    <link href="/data-librarian/css/hugo-theme.css?1576078173" rel="stylesheet">
+    <link href="/data-librarian/css/nucleus.css?1576606102" rel="stylesheet">
+    <link href="/data-librarian/css/fontawesome-all.min.css?1576606102" rel="stylesheet">
+    <link href="/data-librarian/css/hybrid.css?1576606102" rel="stylesheet">
+    <link href="/data-librarian/css/featherlight.min.css?1576606102" rel="stylesheet">
+    <link href="/data-librarian/css/perfect-scrollbar.min.css?1576606102" rel="stylesheet">
+    <link href="/data-librarian/css/auto-complete.css?1576606102" rel="stylesheet">
+    <link href="/data-librarian/css/atom-one-dark-reasonable.css?1576606102" rel="stylesheet">
+    <link href="/data-librarian/css/theme.css?1576606102" rel="stylesheet">
+    <link href="/data-librarian/css/hugo-theme.css?1576606102" rel="stylesheet">
 
 
 
     
-      <link href="/data-librarian/css/theme-green.css?1576078173" rel="stylesheet">
+      <link href="/data-librarian/css/theme-green.css?1576606102" rel="stylesheet">
     
-    <link href="/data-librarian/css/custom.css?1576078173" rel="stylesheet">
+    <link href="/data-librarian/css/custom.css?1576606102" rel="stylesheet">
 
 
-    <script src="/data-librarian/js/jquery-3.3.1.min.js?1576078173"></script>
+    <script src="/data-librarian/js/jquery-3.3.1.min.js?1576606102"></script>
 
 
 
@@ -62,14 +62,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/data-librarian/js/lunr.min.js?1576078173"></script>
-<script type="text/javascript" src="/data-librarian/js/auto-complete.js?1576078173"></script>
+<script type="text/javascript" src="/data-librarian/js/lunr.min.js?1576606102"></script>
+<script type="text/javascript" src="/data-librarian/js/auto-complete.js?1576606102"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/bonartm.github.io\/data-librarian\/";
     
 </script>
-<script type="text/javascript" src="/data-librarian/js/search.js?1576078173"></script>
+<script type="text/javascript" src="/data-librarian/js/search.js?1576606102"></script>
 
     
   </div>
@@ -632,6 +632,25 @@
       <li data-nav-id="/data-librarian/basics/pandas/na/" title="Fehlende Werte" class="dd-item active">
         <a href="/data-librarian/basics/pandas/na/">
         Fehlende Werte
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/data-librarian/basics/pandas/functions/" title="Wichtige Funktionen" class="dd-item ">
+        <a href="/data-librarian/basics/pandas/functions/">
+        Wichtige Funktionen
         <i class="fas fa-check read-icon"></i>
         </a>
     </li>
@@ -1224,8 +1243,7 @@
 
 <p>Real erhobene Daten sind meistens unsauber und fehlerhaft. Ein häufiges Problem dabei sind fehlende Werte, also Beobachtungen für die manche Merkmale nicht erhoben wurden. In jedem Datensatz werden fehlende Werte anders gekennzeichnet, aber man findet meistens diese Kodierungen wieder: <code>&quot;-999&quot;, &quot;NA&quot;, &quot; &quot;, &quot;None&quot;, &quot;NULL&quot;, &quot;#N/A&quot;</code>.</p>
 <p>Wenn beispielsweise der Mittelwert einer statistischen Variable berechnet wird, so muss entschieden werden, wie mit fehlenden Werten umgegangen werden soll: Sollen die Werte entfernt werden? Sollen die fehlenden Werte durch durch einen bestimmten Wert ersetzt werden?</p>
-<p>In <code>DataFrame</code>s werden fehlende Werte durch zwei Arten angezeigt: Das Schlüsselwort <code>NaN</code> (&ldquo;Not a Number&rdquo;) wird in numerischen <code>Series</code> verwendet. Das Schlüsselwort <code>None</code> in nicht-numerischen.</p>
-<p>Beim Einlesen von Daten (siehe z.B. die <a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_csv.html"><code>read_csv</code> Funktion</a>) können mit dem Argument <code>na_values</code> zusätzliche Kodierungen für fehlerhafte Werte mit angegeben werden.</p>
+<p>In <code>DataFrame</code>s werden fehlende Werte durch das Schlüsselwort <code>NaN</code> (&ldquo;Not a Number&rdquo;) angezeigt. Beim Einlesen von Daten (siehe z.B. die <a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_csv.html"><code>read_csv</code> Funktion</a>) können mit dem Argument <code>na_values</code> zusätzliche Kodierungen für fehlerhafte Werte mit angegeben werden.</p>
 <h3 id="fallbeispiel">Fallbeispiel</h3>
 <p>Der Library Usage Datensatz enthält die Kodierung <code>&quot;None&quot;</code> für fehlende Werte. Diese werden von <code>pandas</code> beim Einlesen von numerischen Spalten nicht richtig erkannt:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd
@@ -1249,7 +1267,7 @@ df[<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><s
 </div>
 
 <h3 id="behandlung-von-fehlenden-werten">Behandlung von Fehlenden Werten</h3>
-<p><code>Pandas</code> bietet die nützlichen Funktionen <code>isna()</code>, <code>notna()</code>, <code>dropna()</code> und <code>fillna()</code> an um fehlende Werte zu identifizieren, zu entfernen oder mit anderen Werten zu ersetzen.</p>
+<p><code>Pandas</code> bietet für <code>Series</code> und <code>DataFrame</code>s die nützlichen Funktionen <code>isna()</code>, <code>notna()</code>, <code>dropna()</code> und <code>fillna()</code> an um fehlende Werte zu identifizieren, zu entfernen oder mit anderen Werten zu ersetzen.</p>
 <h4 id="filter">Filter</h4>
 
 <div class="customnotices">
@@ -1264,7 +1282,7 @@ df[df[<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span
 
 <div class="customnotices">
   <div class="notices_inner" id="code">
-    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># drops all rows that contain missing values</span>
+    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># drops all rows that contain at least one missing values</span>
 df<span style="color:#f92672">.</span>dropna()
 <span style="color:#75715e"># drops all missing values in this series</span>
 df[<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">Age Range</span><span style="color:#e6db74">&#39;</span>]<span style="color:#f92672">.</span>dropna()
@@ -1276,6 +1294,7 @@ df[<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><s
 <div class="customnotices">
   <div class="notices_inner" id="exercise">
     <ul>
+<li>Welche Spalten enthalten alles fehlende Werte?</li>
 <li>Lesen Sie den Datensatz ein und erstellen Sie einen <code>DataFrame</code> der keine Beobachtungen mit fehlenden Werten mehr enthält.</li>
 <li>Speicher Sie diesen unter dem Namen <code>Library_Usage_Clean.csv</code> ab.</li>
 <li>Wie viele Beobachtungen wurden dabei entfernt?</li>
@@ -1743,9 +1762,6 @@ df[<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><s
             
         
                     
-            
-        
-                    
                         
             
             
@@ -1753,6 +1769,25 @@ df[<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><s
                     
                         
                         
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
                     
                 
                 
@@ -2070,7 +2105,7 @@ df[<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><s
 			<a class="nav nav-prev" href="/data-librarian/basics/pandas/rows/" title="Auswahl von Zeilen"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/data-librarian/basics/reflection/" title="Reflexion: Daten an Ihrem Arbeitsplatz" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/data-librarian/basics/pandas/functions/" title="Wichtige Funktionen" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -2080,19 +2115,19 @@ df[<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><s
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/data-librarian/js/clipboard.min.js?1576078173"></script>
-    <script src="/data-librarian/js/perfect-scrollbar.min.js?1576078173"></script>
-    <script src="/data-librarian/js/perfect-scrollbar.jquery.min.js?1576078173"></script>
-    <script src="/data-librarian/js/jquery.sticky.js?1576078173"></script>
-    <script src="/data-librarian/js/featherlight.min.js?1576078173"></script>
-    <script src="/data-librarian/js/highlight.pack.js?1576078173"></script>
+    <script src="/data-librarian/js/clipboard.min.js?1576606102"></script>
+    <script src="/data-librarian/js/perfect-scrollbar.min.js?1576606102"></script>
+    <script src="/data-librarian/js/perfect-scrollbar.jquery.min.js?1576606102"></script>
+    <script src="/data-librarian/js/jquery.sticky.js?1576606102"></script>
+    <script src="/data-librarian/js/featherlight.min.js?1576606102"></script>
+    <script src="/data-librarian/js/highlight.pack.js?1576606102"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/data-librarian/js/modernizr.custom-3.6.0.js?1576078173"></script>
-    <script src="/data-librarian/js/learn.js?1576078173"></script>
-    <script src="/data-librarian/js/hugo-learn.js?1576078173"></script>
+    <script src="/data-librarian/js/modernizr.custom-3.6.0.js?1576606102"></script>
+    <script src="/data-librarian/js/learn.js?1576606102"></script>
+    <script src="/data-librarian/js/hugo-learn.js?1576606102"></script>
 
-    <link href="/data-librarian/mermaid/mermaid.css?1576078173" rel="stylesheet" />
-    <script src="/data-librarian/mermaid/mermaid.js?1576078173"></script>
+    <link href="/data-librarian/mermaid/mermaid.css?1576606102" rel="stylesheet" />
+    <script src="/data-librarian/mermaid/mermaid.js?1576606102"></script>
 
     <script>
         mermaid.initialize({ startOnLoad: true });

@@ -12,25 +12,25 @@
     <title>Series und DataFrames :: data librarian - modul 3 - daten analysieren und verstehen</title>
 
     
-    <link href="/data-librarian/css/nucleus.css?1576078172" rel="stylesheet">
-    <link href="/data-librarian/css/fontawesome-all.min.css?1576078172" rel="stylesheet">
-    <link href="/data-librarian/css/hybrid.css?1576078172" rel="stylesheet">
-    <link href="/data-librarian/css/featherlight.min.css?1576078172" rel="stylesheet">
-    <link href="/data-librarian/css/perfect-scrollbar.min.css?1576078172" rel="stylesheet">
-    <link href="/data-librarian/css/auto-complete.css?1576078172" rel="stylesheet">
-    <link href="/data-librarian/css/atom-one-dark-reasonable.css?1576078172" rel="stylesheet">
-    <link href="/data-librarian/css/theme.css?1576078172" rel="stylesheet">
-    <link href="/data-librarian/css/hugo-theme.css?1576078172" rel="stylesheet">
+    <link href="/data-librarian/css/nucleus.css?1576606102" rel="stylesheet">
+    <link href="/data-librarian/css/fontawesome-all.min.css?1576606102" rel="stylesheet">
+    <link href="/data-librarian/css/hybrid.css?1576606102" rel="stylesheet">
+    <link href="/data-librarian/css/featherlight.min.css?1576606102" rel="stylesheet">
+    <link href="/data-librarian/css/perfect-scrollbar.min.css?1576606102" rel="stylesheet">
+    <link href="/data-librarian/css/auto-complete.css?1576606102" rel="stylesheet">
+    <link href="/data-librarian/css/atom-one-dark-reasonable.css?1576606102" rel="stylesheet">
+    <link href="/data-librarian/css/theme.css?1576606102" rel="stylesheet">
+    <link href="/data-librarian/css/hugo-theme.css?1576606102" rel="stylesheet">
 
 
 
     
-      <link href="/data-librarian/css/theme-green.css?1576078172" rel="stylesheet">
+      <link href="/data-librarian/css/theme-green.css?1576606102" rel="stylesheet">
     
-    <link href="/data-librarian/css/custom.css?1576078172" rel="stylesheet">
+    <link href="/data-librarian/css/custom.css?1576606102" rel="stylesheet">
 
 
-    <script src="/data-librarian/js/jquery-3.3.1.min.js?1576078172"></script>
+    <script src="/data-librarian/js/jquery-3.3.1.min.js?1576606102"></script>
 
 
 
@@ -62,14 +62,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/data-librarian/js/lunr.min.js?1576078172"></script>
-<script type="text/javascript" src="/data-librarian/js/auto-complete.js?1576078172"></script>
+<script type="text/javascript" src="/data-librarian/js/lunr.min.js?1576606102"></script>
+<script type="text/javascript" src="/data-librarian/js/auto-complete.js?1576606102"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/bonartm.github.io\/data-librarian\/";
     
 </script>
-<script type="text/javascript" src="/data-librarian/js/search.js?1576078172"></script>
+<script type="text/javascript" src="/data-librarian/js/search.js?1576606102"></script>
 
     
   </div>
@@ -632,6 +632,25 @@
       <li data-nav-id="/data-librarian/basics/pandas/na/" title="Fehlende Werte" class="dd-item ">
         <a href="/data-librarian/basics/pandas/na/">
         Fehlende Werte
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/data-librarian/basics/pandas/functions/" title="Wichtige Funktionen" class="dd-item ">
+        <a href="/data-librarian/basics/pandas/functions/">
+        Wichtige Funktionen
         <i class="fas fa-check read-icon"></i>
         </a>
     </li>
@@ -1222,13 +1241,14 @@
         
 
 
-<p><code>Series</code> und <code>DataFrames</code> sind die zentralen Datenstrukturen in Pandas. <code>Series</code> sind wie Standard Python-Listen, mit dem wichtigen Unterschied, dass <code>Series</code> nur Werte eines Datentyps enthalten können.</p>
+<p><code>Series</code> und <code>DataFrames</code> sind die zentralen Datenstrukturen in Pandas. <code>Series</code> sind wie standardmäßige Listen in Python, mit dem wichtigen Unterschied, dass <code>Series</code> nur Werte eines einzelnen Datentyps enthalten können.</p>
 
 <div class="customnotices">
   <div class="notices_inner" id="code">
     <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd
 x <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>Series([<span style="color:#ae81ff">34</span>, <span style="color:#ae81ff">12</span>, <span style="color:#ae81ff">23</span>, <span style="color:#ae81ff">45</span>])
 <span style="color:#66d9ef">print</span>(x)
+x<span style="color:#f92672">.</span>dtype
 </code></pre></div>
   </div>
 </div>
@@ -1236,22 +1256,35 @@ x <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>Ser
 
 <div class="customnotices">
   <div class="notices_inner" id="tip">
-    <p>Ein Datentyp ist die grundlegende Einheit, in der einzelne Werte in einer Programmiersprache vom Computer gespeichert werden können. Beispiele für Datentypen in Python sind: <code>float</code>, <code>int</code>, <code>str</code>, <code>bool</code> oder <code>datetime</code>.</p>
+    <p>Ein Datentyp ist die grundlegende Einheit, in der einzelne Werte in einer Programmiersprache vom Computer gespeichert und verarbeitet werden können. Beispiele für Datentypen in <code>pandas</code> sind: <code>float</code> für Gleitkommazahlen, <code>int</code> für Ganzzahlen, <code>bool</code> für binäre <code>True</code>, <code>False</code> Werte oder <code>datetime</code> für Datumswerte. Text wird im pandas-spezifischen Format <code>object</code> abgespeichert. Für einen <code>DataFrame</code> der beispielsweise in einer Variable mit dem Namen <code>df</code> gepeichert ist, können Sie sich die Datentypen jeder Spalte mit <code>df.dtypes</code> ausgeben lassen.</p>
 
   </div>
 </div>
 
 <p>Ein <code>DataFrame</code> fasst mehrere <code>Series</code> <strong>gleicher Länge</strong> zu einer Datentabelle mit Zeilen (Beobachtungen), Spalten (Variablen) und Spaltennamen (Variablennamen) zusammen.</p>
-<p><code>DataFrames</code> können beispielsweise aus Python-Dictionaries gebildet werden:</p>
+<p><code>DataFrames</code> können aus Daten in Form von Python Dictionaries konstruiert werden:</p>
 
 <div class="customnotices">
   <div class="notices_inner" id="code">
     <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd
 data <span style="color:#f92672">=</span> {<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">month</span><span style="color:#e6db74">&#39;</span>: [<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">Jan</span><span style="color:#e6db74">&#39;</span>, <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">Feb</span><span style="color:#e6db74">&#39;</span>, <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">Mar</span><span style="color:#e6db74">&#39;</span>],
-        <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">temp</span><span style="color:#e6db74">&#39;</span>: [<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">-5</span><span style="color:#e6db74">&#39;</span>, <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">2</span><span style="color:#e6db74">&#39;</span>, <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">3</span><span style="color:#e6db74">&#39;</span>]}
+        <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">temp</span><span style="color:#e6db74">&#39;</span>: [<span style="color:#f92672">-</span><span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>],
+         <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">below_zero</span><span style="color:#e6db74">&#39;</span>: [True, False, False]}
 df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame(data)
 <span style="color:#66d9ef">print</span>(df)
 </code></pre></div>
+  </div>
+</div>
+
+
+<div class="customnotices">
+  <div class="notices_inner" id="exercise">
+    <ul>
+<li>Welches Skalenniveau besitzen die Variablen im obigen Beispiel?</li>
+<li>Sind die Variablen stetig oder diskret?</li>
+<li>Was ist der Datentype jeder einzelnen Spalte?</li>
+</ul>
+
   </div>
 </div>
 
@@ -1715,6 +1748,22 @@ df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>Da
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -2049,19 +2098,19 @@ df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>Da
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/data-librarian/js/clipboard.min.js?1576078173"></script>
-    <script src="/data-librarian/js/perfect-scrollbar.min.js?1576078173"></script>
-    <script src="/data-librarian/js/perfect-scrollbar.jquery.min.js?1576078173"></script>
-    <script src="/data-librarian/js/jquery.sticky.js?1576078173"></script>
-    <script src="/data-librarian/js/featherlight.min.js?1576078173"></script>
-    <script src="/data-librarian/js/highlight.pack.js?1576078173"></script>
+    <script src="/data-librarian/js/clipboard.min.js?1576606102"></script>
+    <script src="/data-librarian/js/perfect-scrollbar.min.js?1576606102"></script>
+    <script src="/data-librarian/js/perfect-scrollbar.jquery.min.js?1576606102"></script>
+    <script src="/data-librarian/js/jquery.sticky.js?1576606102"></script>
+    <script src="/data-librarian/js/featherlight.min.js?1576606102"></script>
+    <script src="/data-librarian/js/highlight.pack.js?1576606102"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/data-librarian/js/modernizr.custom-3.6.0.js?1576078173"></script>
-    <script src="/data-librarian/js/learn.js?1576078173"></script>
-    <script src="/data-librarian/js/hugo-learn.js?1576078173"></script>
+    <script src="/data-librarian/js/modernizr.custom-3.6.0.js?1576606102"></script>
+    <script src="/data-librarian/js/learn.js?1576606102"></script>
+    <script src="/data-librarian/js/hugo-learn.js?1576606102"></script>
 
-    <link href="/data-librarian/mermaid/mermaid.css?1576078173" rel="stylesheet" />
-    <script src="/data-librarian/mermaid/mermaid.js?1576078173"></script>
+    <link href="/data-librarian/mermaid/mermaid.css?1576606102" rel="stylesheet" />
+    <script src="/data-librarian/mermaid/mermaid.js?1576606102"></script>
 
     <script>
         mermaid.initialize({ startOnLoad: true });

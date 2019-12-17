@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/data-librarian/images/favicon.png" type="image/png">
 
-    <title>Auswahl und Erstellung von Spalten :: data librarian - modul 3 - daten analysieren und verstehen</title>
+    <title>Wichtige Funktionen :: data librarian - modul 3 - daten analysieren und verstehen</title>
 
     
     <link href="/data-librarian/css/nucleus.css?1576606102" rel="stylesheet">
@@ -42,7 +42,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/data-librarian/basics/pandas/columns/">
+  <body class="" data-url="/data-librarian/basics/pandas/functions/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -591,7 +591,7 @@
  
   
     
-      <li data-nav-id="/data-librarian/basics/pandas/columns/" title="Auswahl und Erstellung von Spalten" class="dd-item active">
+      <li data-nav-id="/data-librarian/basics/pandas/columns/" title="Auswahl und Erstellung von Spalten" class="dd-item ">
         <a href="/data-librarian/basics/pandas/columns/">
         Auswahl und Erstellung von Spalten
         <i class="fas fa-check read-icon"></i>
@@ -648,7 +648,7 @@
  
   
     
-      <li data-nav-id="/data-librarian/basics/pandas/functions/" title="Wichtige Funktionen" class="dd-item ">
+      <li data-nav-id="/data-librarian/basics/pandas/functions/" title="Wichtige Funktionen" class="dd-item active">
         <a href="/data-librarian/basics/pandas/functions/">
         Wichtige Funktionen
         <i class="fas fa-check read-icon"></i>
@@ -1210,7 +1210,7 @@
             
           
           
-            <a href='/data-librarian/'>Modul 3</a> > <a href='/data-librarian/basics/'>Grundlagen</a> > <a href='/data-librarian/basics/pandas/'>Praktische Einführung in Pandas</a> > Auswahl und Erstellung von Spalten
+            <a href='/data-librarian/'>Modul 3</a> > <a href='/data-librarian/basics/'>Grundlagen</a> > <a href='/data-librarian/basics/pandas/'>Praktische Einführung in Pandas</a> > Wichtige Funktionen
           
         
           
@@ -1234,83 +1234,50 @@
           
             <h1>
               
-              Auswahl und Erstellung von Spalten
+              Wichtige Funktionen
             </h1>
           
 
         
 
 
-<p>Die Spalten eines <code>DataFrame</code>s werden über einen <strong>Spaltenindex</strong> referenziert. Üblicherweise besteht der Spaltenindex aus Spaltennamen in Textform:</p>
+<p>In der kommenden Woche erhalten Sie einen Überblick über die vielen deskriptiven Statistiken, die sich mit <code>pandas</code> ausrechnen lassen. Hier noch einmal eine Zusammenfassung und ein erster Ausblick:</p>
+<p>Mit <code>df.head()</code> können Sie sich die ersten $n$ Zeilen eines <code>DataFrame</code>s anzeigen lassen:</p>
 
 <div class="customnotices">
   <div class="notices_inner" id="code">
     <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd
 df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">../data/Library_Usage.csv</span><span style="color:#e6db74">&#34;</span>)
-df<span style="color:#f92672">.</span>columns
+df<span style="color:#f92672">.</span>head(n<span style="color:#f92672">=</span><span style="color:#ae81ff">20</span>)
 </code></pre></div>
   </div>
 </div>
 
-<p>Einzelne Spalten können wie bei einem Python Dictionary mit <code>df[&lt;name&gt;]</code> ausgewählt werden. Mehre Spalten mit <code>df[[&lt;name1&gt;, &lt;name2]]</code>. Wenn Sie mehrere Spalten auswählen erhalten Sie einen <code>DataFrame</code> zurück. Bei einer Spalte, eine <code>Series</code>. Das Ergebnis der Auswahl können Sie bei Bedarf wieder in einer Variablen abspeichern:</p>
+<p>Mit <code>df.info()</code> erhalten Sie speicherbezogene Informationen über das Objekt. Mit <code>df.describe()</code> werden nützliche deskriptive Statistiken für alle numerischen Spalten eines Datensatzes ausgegeben. Um alle Spalten miteinzubeziehen nutzen sie das Funktionsargument <code>include='all'</code>:</p>
 
 <div class="customnotices">
   <div class="notices_inner" id="code">
-    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">x <span style="color:#f92672">=</span> df[<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">Total Renewals</span><span style="color:#e6db74">&#39;</span>]
-df[[<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">Total Renewals</span><span style="color:#e6db74">&#39;</span>, <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">Total Checkouts</span><span style="color:#e6db74">&#39;</span>]]
-filter <span style="color:#f92672">=</span> [<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">Total Renewals</span><span style="color:#e6db74">&#39;</span>, <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">Total Checkouts</span><span style="color:#e6db74">&#39;</span>] <span style="color:#75715e"># auxiliary variable</span>
-subset <span style="color:#f92672">=</span> df[filter]
-<span style="color:#66d9ef">print</span>(x)
-<span style="color:#66d9ef">print</span>(subset)
+    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>describe(include<span style="color:#f92672">=</span><span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">all</span><span style="color:#e6db74">&#39;</span>)
 </code></pre></div>
   </div>
 </div>
 
-<p>Spalten können mit einer Zuweisung (<code>=</code>) überschrieben oder neu erstellt werden:</p>
+<p>Viele Funktionen funktionieren für <code>DataFrame</code>s und <code>Series</code> gleichermaßen:</p>
 
 <div class="customnotices">
   <div class="notices_inner" id="code">
-    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">dummy_variable</span><span style="color:#e6db74">&#39;</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>
+    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">print</span>(df<span style="color:#f92672">.</span>min())
+<span style="color:#66d9ef">print</span>(df[<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">Total Renewals</span><span style="color:#e6db74">&#39;</span>]<span style="color:#f92672">.</span>min())
 </code></pre></div>
   </div>
 </div>
 
-<p>Bei der Auswahl von Spalten und Zeilen wird <strong>keine Kopie</strong> des <code>DataFrame</code>s  oder der <code>Series</code> erstellt, sondern nur eine Referenz auf die ursprüngliche Tabelle. Wenn Sie Daten in der ursprünglichen Tabelle ändern, so ändert sich auch die Referenz:</p>
+<p>Mit der Funktion <code>sum()</code> werden die Werte einer Spalte aufaddiert:</p>
 
 <div class="customnotices">
   <div class="notices_inner" id="code">
-    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">x <span style="color:#f92672">=</span> df[<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">Total Renewals</span><span style="color:#e6db74">&#39;</span>]
-df[<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">Total Renewals</span><span style="color:#e6db74">&#39;</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>
-x
+    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">Total Renewals</span><span style="color:#e6db74">&#39;</span>]<span style="color:#f92672">.</span>sum()
 </code></pre></div>
-  </div>
-</div>
-
-<p>Berechnungen auf schon bestehenden Variablen können auch direkt einer neuen Spalte zugeordnet werden:</p>
-
-<div class="customnotices">
-  <div class="notices_inner" id="code">
-    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> numpy <span style="color:#f92672">as</span> np
-
-df[<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">is_adult</span><span style="color:#e6db74">&#39;</span>] <span style="color:#f92672">=</span> df[<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">Patron Type Definition</span><span style="color:#e6db74">&#39;</span>] <span style="color:#f92672">==</span> <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">ADULT</span><span style="color:#e6db74">&#39;</span>
-df[<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">log_renewals</span><span style="color:#e6db74">&#39;</span>] <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>log(df[<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">Total Renewals</span><span style="color:#e6db74">&#39;</span>])
-</code></pre></div>
-  </div>
-</div>
-
-<p>Im ersten Beispiel wurde zuerst die Anweisung <code>df['Patron Type Definition'] == 'ADULT'</code> durchgeführt. Das implizite Ergebnis dieser Anweisung ist eine <code>Series</code> mit booleschen Werten (<code>True</code> oder <code>False</code>). Die neu erstellte <code>Series</code> wird dann in einer neuen Spalte <code>is_adult</code> dem <code>DataFrame</code> angehängt.</p>
-<p>Im zweiten Beispiel wurde der Logarithmus auf den Werten der Spalte <code>Total Renewals</code> berechnet und einer neuen Spalte <code>log_renewals</code> zugewiesen.</p>
-
-<div class="customnotices">
-  <div class="notices_inner" id="exercise">
-    <ul>
-<li>Die Spalte <code>Circulation Active Year</code> ist als Text und nicht als Zahl abgespeichert! Konvertieren Sie die Spalte in ein numerisches Format:
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">pd<span style="color:#f92672">.</span>to_numeric(df[<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">Circulation Active Year</span><span style="color:#e6db74">&#39;</span>], errors<span style="color:#f92672">=</span><span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">coerce</span><span style="color:#e6db74">&#39;</span>)
-</code></pre></div><p>Überschreiben Sie die ursprüngliche Variable mit den neuen Werten.</p>
-</li>
-<li>Erstellen Sie eine neue Variable <code>'Membership Duration'</code> die die Zeit <strong>in Jahren</strong> zwischen der Registrierung im System und der letzten Ausleihaktivität des Kunden enthält.</li>
-</ul>
-
   </div>
 </div>
 
@@ -1729,26 +1696,6 @@ df[<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><s
             
                 
                     
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
                 
                 
 
@@ -1792,6 +1739,23 @@ df[<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><s
             
         
                     
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -1799,6 +1763,9 @@ df[<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><s
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -2113,10 +2080,10 @@ df[<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><s
 	 
 	 
 		
-			<a class="nav nav-prev" href="/data-librarian/basics/pandas/io/" title="Ein- und Ausgabe"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/data-librarian/basics/pandas/na/" title="Fehlende Werte"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/data-librarian/basics/pandas/rows/" title="Auswahl von Zeilen" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/data-librarian/basics/reflection/" title="Reflexion: Daten an Ihrem Arbeitsplatz" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
