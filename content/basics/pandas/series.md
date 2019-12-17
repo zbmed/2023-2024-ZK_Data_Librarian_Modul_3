@@ -36,11 +36,8 @@ print(x)
 Ein Datentyp ist die grundlegende Einheit, in der einzelne Werte in einer Programmiersprache vom Computer gespeichert werden können. Beispiele für Datentypen in Python sind: `float`, `int`, `str`, `bool` oder `datetime`.
 {{% /customnotice %}}
 
-<<<<<<< HEAD
-=======
 
 
->>>>>>> master
 Ein `DataFrame` fasst mehrere `Series` **gleicher Länge** zu einer Datentabelle mit Zeilen (Beobachtungen), Spalten (Variablen) und Spaltennamen (Variablennamen) zusammen.
 
 `DataFrames` können beispielsweise aus Python-Dictionaries gebildet werden:

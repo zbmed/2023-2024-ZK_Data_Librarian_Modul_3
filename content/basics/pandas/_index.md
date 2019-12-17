@@ -22,11 +22,6 @@ LastModifierDisplayName = ""
 LastModifierEmail = ""
 +++
 
-<<<<<<< HEAD
-Grundlage der statistischen Analyse sind Datentabellen: Jede Zeile der Tabelle entspricht einer Beobachtung. Jede Spalte entspricht einer Variable. Neue Beobachtungen und Variablen können dadurch einfach an die schon bestehende Tabelle angefügt werden.
-
-Das Paket um mit Datentabellen in Python zu arbeiten, ist `pandas`. Das folgende Kapitel stellt anhand von vielen praktischen Beispielen zum Nachmachen die grundlegenden Konzepte in `pandas` vor. Ein Überblick über die Bibliothek und weitere relevante Python-Pakete gibt es [hier](/data-librarian/organisation/packages/pandas/).
-=======
 Grundlage der statistischen Analyse sind **Datentabellen**: Jede Zeile der Tabelle entspricht einer Beobachtung. Jede Spalte entspricht einer statistischen Variable. Neue Beobachtungen und Variablen können dadurch einfach an die schon bestehende Tabelle angefügt werden.
 
 {{% customnotice alert %}}
@@ -42,7 +37,6 @@ Viele statistische Methoden erfordern auch, dass die Daten nur als numerische We
 
 Das Standard-Paket um mit Datentabellen in Python zu arbeiten, ist `pandas`. Das folgende Kapitel stellt anhand von vielen praktischen **Beispielen** zum Nachmachen die grundlegenden Konzepte in `pandas` vor. Ein Überblick über die Bibliothek und weitere relevante Python-Pakete gibt es [hier](/data-librarian/organisation/packages/pandas/).
 
->>>>>>> master
 
 {{% customnotice exercise %}}
 1. Laden Sie sich [~~dieses~~](../pandas.files/pandas_introduction.ipynb) Jupyter Notebook herunter

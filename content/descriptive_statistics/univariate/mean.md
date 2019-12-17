@@ -22,26 +22,12 @@ LastModifierDisplayName = ""
 LastModifierEmail = ""
 +++
 
-<<<<<<< HEAD
-Lagemaße beschreiben die Zentralität einer Verteilung.
-
-Typische Lagemaße sind der empirische Mittelwert:
-=======
 Für **metrische Variablen** beschreiben Lagemaße die Zentralität einer Verteilung. Das bekannteste Lagemaß ist der empirische **Mittelwert**:
->>>>>>> master
 
 $$
 \bar{x} = \frac{1}{n}\sum_{i=1}^{n}x_i = \frac{x_1 + x_2 + \dots + x_n}{n}
 $$
 
-<<<<<<< HEAD
-
-Oder der Median:
-
-$$
-
-$$
-=======
 {{% customnotice code %}}
 ```python
 import pandas as pd
@@ -73,4 +59,3 @@ df['Total Checkouts'].median()
 - Schauen Sie sich den Mittelwert und den Median der Variable `Total Checkouts` an. Warum sind die beiden Werte so unterschiedlich?
 - Was ziehen Sie daraus für Schlüsse für weitere statistische Analysen und Reports?
 {{% /customnotice %}}
->>>>>>> master

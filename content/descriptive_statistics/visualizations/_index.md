@@ -22,10 +22,6 @@ LastModifierDisplayName = ""
 LastModifierEmail = ""
 +++
 
-<<<<<<< HEAD
-
-{{< youtube jbkSRLYSojo >}}
-=======
 {{< youtube jbkSRLYSojo >}}
 
 ---
@@ -49,4 +45,3 @@ Auf der anderen Seite lassen sich schon mit wenig Programmcode annehmbare Visual
 ![](https://i0.wp.com/flowingdata.com/wp-content/uploads/2014/04/Fox-News-bar-chart-1.jpeg?w=645&ssl=1)
 ![](https://i1.wp.com/flowingdata.com/wp-content/uploads/2012/08/Bush-cuts.png?resize=620%2C458&ssl=1)
 {{% /customnotice %}}
->>>>>>> master

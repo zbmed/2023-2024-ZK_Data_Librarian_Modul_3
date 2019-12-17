@@ -21,14 +21,6 @@ LastModifierDisplayName = ""
 # Email of this page modifier. If set with LastModifierDisplayName, it will be displayed in the footer
 LastModifierEmail = ""
 +++
-<<<<<<< HEAD
-
-Um zwei ordinale/ nominale Variablen miteinander zu vergleichen, eignen sich Kreuztabellen. Jeder Wert in der Kreuztabelle entspricht der Anzahl der Beobachtungen im Datensatz mit genau dieser Kombination.
-
-Eine Kreuztabelle mit relativen Häufigkeiten erhält man, indem die absoluten Werte **normalisiert**.
-
-Die Normalisierung kann entweder dadurch erfolgen, dass durch die Anzahl der Beobachtungen $n$, durch die Anzahl der Beobachtungen in der Zeilenvariable oder durch die Anzahl der Beobachtungen in der Spaltenvariable geteilt wird.
-=======
 
 Um zwei ordinale oder nominale Variablen miteinander zu vergleichen, eignen sich **Kreuztabellen**. Jeder Wert in der Kreuztabelle entspricht der Anzahl der Beobachtungen im Datensatz mit genau dieser Kombination an Merkmalsausprägungen.
 
@@ -97,4 +89,3 @@ pd.crosstab(
 ).plot.bar()
 ```
 {{% /customnotice %}}
->>>>>>> master

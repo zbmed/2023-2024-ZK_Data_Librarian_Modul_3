@@ -1,9 +1,5 @@
 +++
-<<<<<<< HEAD
-title = "Häufigkeitstabellen"
-=======
 title = "Häufigkeiten"
->>>>>>> master
 # If set, this will be used for the page's menu entry (instead of the `title` attribute)
 # menuTitle = "Einführung"
 weight = 1
@@ -25,8 +21,6 @@ LastModifierDisplayName = ""
 # Email of this page modifier. If set with LastModifierDisplayName, it will be displayed in the footer
 LastModifierEmail = ""
 +++
-<<<<<<< HEAD
-=======
 
 Kategoriale (nominale und ordinale) Variablen werden in **Häufigkeitstabellen** zusammengefasst. Dabei wird für jede Ausprägung die Anzahl der Beobachtungen gezählt:
 
@@ -72,4 +66,3 @@ pd.crosstab(
 ).plot.bar()
 ```
 {{% /customnotice %}}
->>>>>>> master
