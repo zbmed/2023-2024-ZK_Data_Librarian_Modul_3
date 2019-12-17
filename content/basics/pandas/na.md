@@ -26,9 +26,7 @@ Real erhobene Daten sind meistens unsauber und fehlerhaft. Ein häufiges Problem
 
 Wenn beispielsweise der Mittelwert einer statistischen Variable berechnet wird, so muss entschieden werden, wie mit fehlenden Werten umgegangen werden soll: Sollen die Werte entfernt werden? Sollen die fehlenden Werte durch durch einen bestimmten Wert ersetzt werden?
 
-In `DataFrame`s werden fehlende Werte durch zwei Arten angezeigt: Das Schlüsselwort `NaN` ("Not a Number") wird in numerischen `Series` verwendet. Das Schlüsselwort `None` in nicht-numerischen.
-
-Beim Einlesen von Daten (siehe z.B. die [`read_csv` Funktion](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_csv.html)) können mit dem Argument `na_values` zusätzliche Kodierungen für fehlerhafte Werte mit angegeben werden.
+In `DataFrame`s werden fehlende Werte durch das Schlüsselwort `NaN` ("Not a Number") angezeigt. Beim Einlesen von Daten (siehe z.B. die [`read_csv` Funktion](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_csv.html)) können mit dem Argument `na_values` zusätzliche Kodierungen für fehlerhafte Werte mit angegeben werden.
 
 ### Fallbeispiel
 
@@ -64,7 +62,7 @@ Was unterscheidet den Wert `None` vom Wert `"None"`? Was den Wert `5` vom Wert `
 
 ### Behandlung von Fehlenden Werten
 
-`Pandas` bietet die nützlichen Funktionen `isna()`, `notna()`, `dropna()` und `fillna()` an um fehlende Werte zu identifizieren, zu entfernen oder mit anderen Werten zu ersetzen.
+`Pandas` bietet für `Series` und `DataFrame`s die nützlichen Funktionen `isna()`, `notna()`, `dropna()` und `fillna()` an um fehlende Werte zu identifizieren, zu entfernen oder mit anderen Werten zu ersetzen.
 
 #### Filter
 
@@ -80,7 +78,7 @@ df[df['Age Range'].notna()]
 
 {{% customnotice code %}}
 ```python
-# drops all rows that contain missing values
+# drops all rows that contain at least one missing values
 df.dropna()
 # drops all missing values in this series
 df['Age Range'].dropna()
@@ -89,6 +87,7 @@ df['Age Range'].dropna()
 
 
 {{% customnotice exercise %}}
+- Welche Spalten enthalten alles fehlende Werte?
 - Lesen Sie den Datensatz ein und erstellen Sie einen `DataFrame` der keine Beobachtungen mit fehlenden Werten mehr enthält.
 - Speicher Sie diesen unter dem Namen `Library_Usage_Clean.csv` ab.
 - Wie viele Beobachtungen wurden dabei entfernt?

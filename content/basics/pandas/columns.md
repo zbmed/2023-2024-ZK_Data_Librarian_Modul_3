@@ -32,21 +32,34 @@ df.columns
 ```
 {{% /customnotice %}}
 
-Einzelne Spalten können wie bei einem Python Dictionary mit `df[<name>]` ausgewählt werden. Mehre Spalten mit `df[[<name1>, <name2]]`:
+Einzelne Spalten können wie bei einem Python Dictionary mit `df[<name>]` ausgewählt werden. Mehre Spalten mit `df[[<name1>, <name2]]`. Wenn Sie mehrere Spalten auswählen erhalten Sie einen `DataFrame` zurück. Bei einer Spalte, eine `Series`. Das Ergebnis der Auswahl können Sie bei Bedarf wieder in einer Variablen abspeichern:
 
 {{% customnotice code %}}
 ```python
-df['Total Renewals']
+x = df['Total Renewals']
 df[['Total Renewals', 'Total Checkouts']]
 filter = ['Total Renewals', 'Total Checkouts'] # auxiliary variable
-df[filter]
+subset = df[filter]
+print(x)
+print(subset)
 ```
 {{% /customnotice %}}
 
-Neue Spalten können mit einer Zuweisung (`=`) erstellt werden:
+Spalten können mit einer Zuweisung (`=`) überschrieben oder neu erstellt werden:
+
 {{% customnotice code %}}
 ```python
 df['dummy_variable'] = 5
+{{% /customnotice %}}
+
+Bei der Auswahl von Spalten und Zeilen wird **keine Kopie** des `DataFrame`s  oder der `Series` erstellt, sondern nur eine Referenz auf die ursprüngliche Tabelle. Wenn Sie Daten in der ursprünglichen Tabelle ändern, so ändert sich auch die Referenz:
+
+{{% customnotice code %}}
+```python
+x = df['Total Renewals']
+df['Total Renewals'] = 5
+x
+```
 {{% /customnotice %}}
 
 Berechnungen auf schon bestehenden Variablen können auch direkt einer neuen Spalte zugeordnet werden:
@@ -73,4 +86,4 @@ Im zweiten Beispiel wurde der Logarithmus auf den Werten der Spalte `Total Renew
   ```
   Überschreiben Sie die ursprüngliche Variable mit den neuen Werten.
 - Erstellen Sie eine neue Variable `'Membership Duration'` die die Zeit **in Jahren** zwischen der Registrierung im System und der letzten Ausleihaktivität des Kunden enthält.
-{{% /customnotice %}} 
+{{% /customnotice %}}
