@@ -32,21 +32,17 @@ Der Text gibt einen **Einstieg** in die Aufgaben und Anwendungsbereiche der Stat
 
 {{% customnotice exercise %}}
 
-Beantworten und diskutieren Sie folgende Fragen konkret für den [San Francisco Library Usage](/data-librarian/organisation/dataset/) Datensatz. Halten Sie Ihre Ergebnisse in Stichpunkten in einem *Jupyter Notebook* fest.
+Beantworten und diskutieren Sie folgende Fragen konkret für den [San Francisco Library Usage](/data-librarian/organisation/dataset/) Datensatz. Halten Sie Ihre Ergebnisse in Stichpunkten in einem *Jupyter Notebook* fest. Nicht alle Fragen lassen sich klar beantworten.
 
 1. Wie viele Merkmale besitzt der Datensatz?
 2. Wie groß ist die Stichprobengröße des Datensatzes?
 3. Wer oder was sind die Merkmalsträger?
 3. Von wann bis wann wurden die Daten erhoben?
-4. Wie lässt sich die Grundgesamtheit beschreiben?  Handelt es sich um eine Vollerhebung?
+4. Wie lässt sich die Grundgesamtheit beschreiben? Handelt es sich um eine Vollerhebung?
 5. Welche Merkmale sind stetig? Welche diskret?
-6. Welchem Skalenniveau entsprechen die einzelnen Merkmale (Nominal-, Ordinal- oder Kardinalskala/ metrisch)?
+6. Welchem Skalenniveau entsprechen die einzelnen Merkmale (Nominal-, Ordinal- oder Metrische Skala)?
 7. Enthält der Datensatz fehlende Werte?
 8. Handelt es sich um Querschnitts-, Längsschnitss- oder Paneldaten?
 {{% /customnotice %}}
-
-
-
-
 
 [^1]: Fahrmeir, Ludwig, Christian Heumann, Rita Künstler, Iris Pigeot, and Gerhard Tutz. Statistik: Der Weg zur Datenanalyse. Springer-Verlag, 2016, https://www.springer.com/de/book/9783662503713.

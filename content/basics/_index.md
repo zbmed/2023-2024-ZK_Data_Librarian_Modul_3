@@ -42,9 +42,7 @@ Diese Einheit gibt eine Einführung in die Aufgaben und grundlegenden Begriffe d
 Die Pressestelle der San Francisco Public Library möchte einen Online-Artikel zum Kundenstamm der Bibliothek erstellen. Dazu hat sie Ihnen [einen Datensatz](/data-librarian/organisation/dataset/) geschickt, den Sie auswerten sollen.
 
 1. Erstellen Sie eine Beschreibung des Datensatzes unter Verwendung des [statistischen Grundvokabulars](/data-librarian/basics/basic_terms/).
-2. Lesen Sie [den Datensatz](/data-librarian/organisation/dataset/) ein und berechnen Sie für jeden Kunden
-    - die Dauer der Mitgliedschaft in Jahren
-    - die Anzahl der Ausleihen und Verlängerungen *pro Jahr* der Mitgliedschaft
+2. Lesen Sie [den Datensatz](/data-librarian/organisation/dataset/) ein und berechnen Sie [neue Variablen](/data-librarian/basics/pandas)
 3. Senden Sie bis Freitag Ihre Beschreibung zusammen mit den Berechnungen in Form eines integrierten *Python Notebooks* an [malte@bonart.de](mailto:malte@bonart.de).
 
 {{% /customnotice %}}

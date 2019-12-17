@@ -1,10 +1,10 @@
 +++
-title = "Bivariate Verteilungen"
+title = "Selektion von Spalten und Zeilen"
 # If set, this will be used for the page's menu entry (instead of the `title` attribute)
 # menuTitle = "Einführung"
-weight = 34
+weight = 2
 # The title of the page in menu will be prefixed by this HTML content
-# pre = "<b>3. </b>"
+# pre = "<b>1. </b>"
 # pre = "<i class='fab fa-github'></i>"
 # Table of content (toc) is enabled by default. Set this parameter to true to disable it.
 # Note: Toc is always disabled for chapter pages
@@ -22,10 +22,9 @@ LastModifierDisplayName = ""
 LastModifierEmail = ""
 +++
 
-Bisher haben Sie immer nur einzelne Variable betrachtet, zusammengefasst oder visualisiert. In vielen Fällen ist jedoch der Zusammenhang zwischen zwei Variablen von Interesse:
 
-- Leihen ältere Bibliothekskunden im Schnitt mehr Bücher aus als jüngere?
-- Führen Kunden, die häufiger Ausleihen tätigen,  im Schnitt auch häufiger Verlängerungen durch?
-- Nimmt die Anzahl der Ausleihen mit zunehmender Dauer der Mitgliedschaft ab?
 
-Zwei Variablen, die keinen Zusammenhang aufweisen, nennt man auch *statistisch unabhängige* Variablen. Für zwei metrische Variablen kann man außerdem zwischen einem positiven oder einem negativem Zusammenhang unterscheiden.
+## Auswahl bestimmter Variablen/ Spalten
+
+
+## Filter von Zeilen
