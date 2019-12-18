@@ -59,3 +59,14 @@ df['Total Checkouts'].median()
 - Schauen Sie sich den Mittelwert und den Median der Variable `Total Checkouts` an. Warum sind die beiden Werte so unterschiedlich?
 - Was ziehen Sie daraus für Schlüsse für weitere statistische Analysen und Reports?
 {{% /customnotice %}}
+
+#### Quantile
+
+Sie haben schon den Median $x_0.5$ als Lageparameter kennengelernt. Er teilt die geordnete Verteilung in zwei genau gleich große Teile. Allgemeiner lassen sich analog dazu die Quantile definieren: $x_{0.75}$ teil die geordnete Verteilung im Verhältnis 3:1. Das heißt, dass 75% der Beobachtungen kleiner als $x_{0.75}$ und 25% größer sind.
+Das $x_{0.25}$ Quantil teilt die Reihe im Verhältnis 1:3. Hier sind 25% der Beobachtungen kleiner und 75% größer.
+
+{{% customnotice code %}}
+```python
+df['Total Checkouts'].quantile(q=[0.25, 0.5, 0.75])
+```
+{{% /customnotice %}}

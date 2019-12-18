@@ -24,7 +24,7 @@ LastModifierEmail = ""
 
 Die Zeilen eines `DataFrame`s werden über einen **Zeilenindex** (`loc[]`), über die aufsteigenden **Zeilennummern** (`iloc[]`) oder über **logische Ausdrücke** (`[]` oder `loc[]`) referenziert.
 
-Hier wird zuerst der wichtigste letzte Fall näher betrachtet:
+Hier wird nur der wichtigste letzte Fall näher betrachtet:
 
 {{% customnotice code %}}
 ```python
@@ -47,7 +47,7 @@ df[filter]
 ```
 {{% /customnotice %}}
 
-Für den booleschen Zeilenfilter können komplexe logische Ausdrücke unter Zuhilfenahme der Operatoren `<, >, &, |, ==` u.s.w. gebildet werden:
+Für den booleschen Zeilenfilter können komplexe logische Ausdrücke unter Zuhilfenahme der Operatoren `<, >, &, |, ==` u.s.w. gebildet werden. Welche Zeilen werden hier gefiltert?
 
 {{% customnotice code %}}
 ```python
@@ -66,9 +66,9 @@ Ausdruck | Beschreibung
 `>` / `>=` | größer/ größer gleich
 `==` | gleich
 `!=` | ungleich
-`&`  | elementweises logisches *und*
-`|`  | elementweises logisches *oder*
-`~`  | elementweise logische negation
+`&`  | elementweises logisches *und* (`True` und `True` ergeben `True`, sonst `False`)
+`|`  | elementweises logisches *oder* (`False` und `False` ergeben `False`, sonst `True`)
+`~`  | elementweise logische negation (`True` ergibt `False` und umgekehrt)
 {{% /customnotice %}}
 
 

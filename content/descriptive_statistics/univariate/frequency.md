@@ -43,26 +43,13 @@ df['Age Range'].value_counts(normalize=True)
 Der **Modus** ist dabei die Merkmalsausprägung, die die meisten Beobachtungen besitzen:
 {{% customnotice code %}}
 ```python
-df['Age Range'].mode()
+age_mode = df['Age Range'].mode()
+age_mode[0]
 ```
 {{% /customnotice %}}
 
-#### Visualisierung
-
-Häufigkeitstabellen lassen sich idealerweise als Balkendiagramme visualisieren:
-
-{{% customnotice code %}}
-```python
-import pandas as pd
-import seaborn as sns
-sns.set()
-%matplotlib inline
-
-df = pd.read_csv("../data/Library_Usage.csv", na_values=["none"])
-pd.crosstab(
-    df['Provided Email Address'],
-    df['Notice Preference Definition'],
-    margins=False, normalize=0
-).plot.bar()
-```
+{{% customnotice exercise %}}
+- Erstellen Sie eine Häufigkeitsverteilung für die Variable `'Year Patron Registered'`. Wie viel Prozent der Kunden wurden 2013 im System registriert? Wie viele in den kommenden Jahren? Was fällt Ihnen auf?
+- Wie viel Prozent der Kunden sind zwischen 25 und 34 Jahren?
+- Ersetzen Sie die fehlenden Werte in der Spalte `Age Range` durch den Modus dieser Spalte. Denken Sie, es handelt sich dabei um eine gute Methode, fehlende Werte zu ersetzen? Welche anderen Strategien fallen Ihnen ein?
 {{% /customnotice %}}

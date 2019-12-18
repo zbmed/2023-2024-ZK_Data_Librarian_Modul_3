@@ -12,25 +12,25 @@
     <title>Fehlende Werte :: data librarian - modul 3 - daten analysieren und verstehen</title>
 
     
-    <link href="/data-librarian/css/nucleus.css?1576672524" rel="stylesheet">
-    <link href="/data-librarian/css/fontawesome-all.min.css?1576672524" rel="stylesheet">
-    <link href="/data-librarian/css/hybrid.css?1576672524" rel="stylesheet">
-    <link href="/data-librarian/css/featherlight.min.css?1576672524" rel="stylesheet">
-    <link href="/data-librarian/css/perfect-scrollbar.min.css?1576672524" rel="stylesheet">
-    <link href="/data-librarian/css/auto-complete.css?1576672524" rel="stylesheet">
-    <link href="/data-librarian/css/atom-one-dark-reasonable.css?1576672524" rel="stylesheet">
-    <link href="/data-librarian/css/theme.css?1576672524" rel="stylesheet">
-    <link href="/data-librarian/css/hugo-theme.css?1576672524" rel="stylesheet">
+    <link href="/data-librarian/css/nucleus.css?1576692027" rel="stylesheet">
+    <link href="/data-librarian/css/fontawesome-all.min.css?1576692027" rel="stylesheet">
+    <link href="/data-librarian/css/hybrid.css?1576692027" rel="stylesheet">
+    <link href="/data-librarian/css/featherlight.min.css?1576692027" rel="stylesheet">
+    <link href="/data-librarian/css/perfect-scrollbar.min.css?1576692027" rel="stylesheet">
+    <link href="/data-librarian/css/auto-complete.css?1576692027" rel="stylesheet">
+    <link href="/data-librarian/css/atom-one-dark-reasonable.css?1576692027" rel="stylesheet">
+    <link href="/data-librarian/css/theme.css?1576692027" rel="stylesheet">
+    <link href="/data-librarian/css/hugo-theme.css?1576692027" rel="stylesheet">
 
 
 
     
-      <link href="/data-librarian/css/theme-green.css?1576672524" rel="stylesheet">
+      <link href="/data-librarian/css/theme-green.css?1576692027" rel="stylesheet">
     
-    <link href="/data-librarian/css/custom.css?1576672524" rel="stylesheet">
+    <link href="/data-librarian/css/custom.css?1576692027" rel="stylesheet">
 
 
-    <script src="/data-librarian/js/jquery-3.3.1.min.js?1576672524"></script>
+    <script src="/data-librarian/js/jquery-3.3.1.min.js?1576692027"></script>
 
 
 
@@ -62,14 +62,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/data-librarian/js/lunr.min.js?1576672524"></script>
-<script type="text/javascript" src="/data-librarian/js/auto-complete.js?1576672524"></script>
+<script type="text/javascript" src="/data-librarian/js/lunr.min.js?1576692027"></script>
+<script type="text/javascript" src="/data-librarian/js/auto-complete.js?1576692027"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/bonartm.github.io\/data-librarian\/";
     
 </script>
-<script type="text/javascript" src="/data-librarian/js/search.js?1576672524"></script>
+<script type="text/javascript" src="/data-librarian/js/search.js?1576692027"></script>
 
     
   </div>
@@ -648,9 +648,9 @@
  
   
     
-      <li data-nav-id="/data-librarian/basics/pandas/functions/" title="Wichtige Funktionen" class="dd-item ">
+      <li data-nav-id="/data-librarian/basics/pandas/functions/" title="Überblick: Funktionen in Pandas" class="dd-item ">
         <a href="/data-librarian/basics/pandas/functions/">
-        Wichtige Funktionen
+        Überblick: Funktionen in Pandas
         <i class="fas fa-check read-icon"></i>
         </a>
     </li>
@@ -1063,9 +1063,9 @@
  
   
     
-      <li data-nav-id="/data-librarian/inference/overview/" title="Überblick" class="dd-item ">
+      <li data-nav-id="/data-librarian/inference/overview/" title="Überblick: Statistische Inferenz" class="dd-item ">
         <a href="/data-librarian/inference/overview/">
-        Überblick
+        Überblick: Statistische Inferenz
         <i class="fas fa-check read-icon"></i>
         </a>
     </li>
@@ -1250,7 +1250,7 @@
 
 df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">../data/Library_Usage.csv</span><span style="color:#e6db74">&#34;</span>)
 df[<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">Circulation Active Year</span><span style="color:#e6db74">&#39;</span>]
-</code></pre></div><p>Obwohl die Spalte <code>'Circulation Active Year'</code> eigentlich numerisch ist, wird Sie von <code>pandas</code> als Text erkannt. Möchten Sie z.B. <code>2019 - df['Circulation Active Year']</code> berechnen, so werden Sie eine Fehlermeldung erhalten, da für Text-Werte keine Substraktionen durchgeführt werden können.</p>
+</code></pre></div><p>Obwohl die Spalte <code>'Circulation Active Year'</code> numerisch ist, wird Sie von <code>pandas</code> als Text abgespeichert, da <code>&quot;None&quot;</code> nicht als Zahl erkannt wird. Möchten Sie z.B. <code>2019 - df['Circulation Active Year']</code> berechnen, so werden Sie eine Fehlermeldung erhalten, da für Text-Werte keine Substraktionen durchgeführt werden können.</p>
 <p>Um das Problem zu beheben können Sie auf zwei Arten vorgehen. Sie können schon beim Einlesen, die Kodierung für fehlende Werte mit angeben:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">../data/Library_Usage.csv</span><span style="color:#e6db74">&#34;</span>, na_values<span style="color:#f92672">=</span><span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">None</span><span style="color:#e6db74">&#34;</span>)
 df[<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">Circulation Active Year</span><span style="color:#e6db74">&#39;</span>]
@@ -1287,6 +1287,23 @@ df<span style="color:#f92672">.</span>dropna()
 <span style="color:#75715e"># drops all missing values in this series</span>
 df[<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">Age Range</span><span style="color:#e6db74">&#39;</span>]<span style="color:#f92672">.</span>dropna()
 </code></pre></div>
+  </div>
+</div>
+
+<h4 id="ersetzen">Ersetzen</h4>
+
+<div class="customnotices">
+  <div class="notices_inner" id="code">
+    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">Age Range</span><span style="color:#e6db74">&#39;</span>]<span style="color:#f92672">.</span>fillna(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">keine Angabe</span><span style="color:#e6db74">&#34;</span>)
+</code></pre></div>
+  </div>
+</div>
+
+
+<div class="customnotices">
+  <div class="notices_inner" id="tip">
+    <p>Standardmäßig werden bei den Operationen <code>fillna</code> oder <code>dropna</code> neue <code>Series</code> oder <code>DataFrame</code>s zurückgegeben. Die originale Variable bleibt dabei unangetastet. Mit dem Argument <code>inplace=True</code> werden die originalen Objekte direkt überschrieben.</p>
+
   </div>
 </div>
 
@@ -2105,7 +2122,7 @@ df[<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><s
 			<a class="nav nav-prev" href="/data-librarian/basics/pandas/rows/" title="Auswahl von Zeilen"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/data-librarian/basics/pandas/functions/" title="Wichtige Funktionen" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/data-librarian/basics/pandas/functions/" title="Überblick: Funktionen in Pandas" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -2115,19 +2132,19 @@ df[<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><s
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/data-librarian/js/clipboard.min.js?1576672524"></script>
-    <script src="/data-librarian/js/perfect-scrollbar.min.js?1576672524"></script>
-    <script src="/data-librarian/js/perfect-scrollbar.jquery.min.js?1576672524"></script>
-    <script src="/data-librarian/js/jquery.sticky.js?1576672524"></script>
-    <script src="/data-librarian/js/featherlight.min.js?1576672524"></script>
-    <script src="/data-librarian/js/highlight.pack.js?1576672524"></script>
+    <script src="/data-librarian/js/clipboard.min.js?1576692027"></script>
+    <script src="/data-librarian/js/perfect-scrollbar.min.js?1576692027"></script>
+    <script src="/data-librarian/js/perfect-scrollbar.jquery.min.js?1576692027"></script>
+    <script src="/data-librarian/js/jquery.sticky.js?1576692027"></script>
+    <script src="/data-librarian/js/featherlight.min.js?1576692027"></script>
+    <script src="/data-librarian/js/highlight.pack.js?1576692027"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/data-librarian/js/modernizr.custom-3.6.0.js?1576672524"></script>
-    <script src="/data-librarian/js/learn.js?1576672524"></script>
-    <script src="/data-librarian/js/hugo-learn.js?1576672524"></script>
+    <script src="/data-librarian/js/modernizr.custom-3.6.0.js?1576692027"></script>
+    <script src="/data-librarian/js/learn.js?1576692027"></script>
+    <script src="/data-librarian/js/hugo-learn.js?1576692027"></script>
 
-    <link href="/data-librarian/mermaid/mermaid.css?1576672524" rel="stylesheet" />
-    <script src="/data-librarian/mermaid/mermaid.js?1576672524"></script>
+    <link href="/data-librarian/mermaid/mermaid.css?1576692027" rel="stylesheet" />
+    <script src="/data-librarian/mermaid/mermaid.js?1576692027"></script>
 
     <script>
         mermaid.initialize({ startOnLoad: true });

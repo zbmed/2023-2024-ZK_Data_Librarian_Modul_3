@@ -17,8 +17,8 @@
       
       <guid>https://bonartm.github.io/data-librarian/descriptive_statistics/bivariate/cross_tables/</guid>
       <description>Um zwei ordinale oder nominale Variablen miteinander zu vergleichen, eignen sich Kreuztabellen. Jeder Wert in der Kreuztabelle entspricht der Anzahl der Beobachtungen im Datensatz mit genau dieser Kombination an Merkmalsausprägungen.
-Hier ein Beispiel (mit dem Argument na_values=&amp;quot;none&amp;quot; markiert pandas die &amp;quot;none&amp;quot; Werte in der Spalte &#39;Notice Preference Definition&#39; als fehlende Werte):
-import pandas as pd df = pd.read_csv(&amp;#34;../data/Library_Usage.csv&amp;#34;, na_values=&amp;#34;none&amp;#34;) pd.crosstab( df[&amp;#39;Provided Email Address&amp;#39;], df[&amp;#39;Notice Preference Definition&amp;#39;], margins=True )       Notice Preference email phone print all     Provided Email Address       False 95 58362 28569 87026   True 323842 9810 2767 336419   All 323937 68172 31336 423445    Eine Kreuztabelle mit absoluten Werten ist häufig schwer zu interpretieren.</description>
+Hier ein Beispiel, mit dem Argument na_values=&amp;quot;none&amp;quot; markiert pandas die &amp;quot;none&amp;quot; Einträge in der Spalte &#39;Notice Preference Definition&#39; als fehlende Werte:
+import pandas as pd df = pd.read_csv(&amp;#34;../data/Library_Usage.csv&amp;#34;, na_values=&amp;#34;none&amp;#34;) pd.crosstab( df[&amp;#39;Provided Email Address&amp;#39;], df[&amp;#39;Notice Preference Definition&amp;#39;], margins=True )       Notice Preference email phone print all     Provided Email Address       False 95 58362 28569 87026   True 323842 9810 2767 336419   All 323937 68172 31336 423445    Eine Kreuztabelle mit absoluten Werten ist häufig schwer zu interpretieren, wenn die Randverteilungen ungleich verteilt sind.</description>
     </item>
     
     <item>

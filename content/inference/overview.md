@@ -1,5 +1,5 @@
 +++
-title = "Überblick"
+title = "Überblick: Statistische Inferenz"
 # If set, this will be used for the page's menu entry (instead of the `title` attribute)
 # menuTitle = "Einführung"
 weight = 61

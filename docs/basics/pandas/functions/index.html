@@ -9,28 +9,28 @@
 
     <link rel="icon" href="/data-librarian/images/favicon.png" type="image/png">
 
-    <title>Wichtige Funktionen :: data librarian - modul 3 - daten analysieren und verstehen</title>
+    <title>Überblick: Funktionen in Pandas :: data librarian - modul 3 - daten analysieren und verstehen</title>
 
     
-    <link href="/data-librarian/css/nucleus.css?1576672524" rel="stylesheet">
-    <link href="/data-librarian/css/fontawesome-all.min.css?1576672524" rel="stylesheet">
-    <link href="/data-librarian/css/hybrid.css?1576672524" rel="stylesheet">
-    <link href="/data-librarian/css/featherlight.min.css?1576672524" rel="stylesheet">
-    <link href="/data-librarian/css/perfect-scrollbar.min.css?1576672524" rel="stylesheet">
-    <link href="/data-librarian/css/auto-complete.css?1576672524" rel="stylesheet">
-    <link href="/data-librarian/css/atom-one-dark-reasonable.css?1576672524" rel="stylesheet">
-    <link href="/data-librarian/css/theme.css?1576672524" rel="stylesheet">
-    <link href="/data-librarian/css/hugo-theme.css?1576672524" rel="stylesheet">
+    <link href="/data-librarian/css/nucleus.css?1576692027" rel="stylesheet">
+    <link href="/data-librarian/css/fontawesome-all.min.css?1576692027" rel="stylesheet">
+    <link href="/data-librarian/css/hybrid.css?1576692027" rel="stylesheet">
+    <link href="/data-librarian/css/featherlight.min.css?1576692027" rel="stylesheet">
+    <link href="/data-librarian/css/perfect-scrollbar.min.css?1576692027" rel="stylesheet">
+    <link href="/data-librarian/css/auto-complete.css?1576692027" rel="stylesheet">
+    <link href="/data-librarian/css/atom-one-dark-reasonable.css?1576692027" rel="stylesheet">
+    <link href="/data-librarian/css/theme.css?1576692027" rel="stylesheet">
+    <link href="/data-librarian/css/hugo-theme.css?1576692027" rel="stylesheet">
 
 
 
     
-      <link href="/data-librarian/css/theme-green.css?1576672524" rel="stylesheet">
+      <link href="/data-librarian/css/theme-green.css?1576692027" rel="stylesheet">
     
-    <link href="/data-librarian/css/custom.css?1576672524" rel="stylesheet">
+    <link href="/data-librarian/css/custom.css?1576692027" rel="stylesheet">
 
 
-    <script src="/data-librarian/js/jquery-3.3.1.min.js?1576672524"></script>
+    <script src="/data-librarian/js/jquery-3.3.1.min.js?1576692027"></script>
 
 
 
@@ -62,14 +62,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/data-librarian/js/lunr.min.js?1576672524"></script>
-<script type="text/javascript" src="/data-librarian/js/auto-complete.js?1576672524"></script>
+<script type="text/javascript" src="/data-librarian/js/lunr.min.js?1576692027"></script>
+<script type="text/javascript" src="/data-librarian/js/auto-complete.js?1576692027"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/bonartm.github.io\/data-librarian\/";
     
 </script>
-<script type="text/javascript" src="/data-librarian/js/search.js?1576672524"></script>
+<script type="text/javascript" src="/data-librarian/js/search.js?1576692027"></script>
 
     
   </div>
@@ -648,9 +648,9 @@
  
   
     
-      <li data-nav-id="/data-librarian/basics/pandas/functions/" title="Wichtige Funktionen" class="dd-item active">
+      <li data-nav-id="/data-librarian/basics/pandas/functions/" title="Überblick: Funktionen in Pandas" class="dd-item active">
         <a href="/data-librarian/basics/pandas/functions/">
-        Wichtige Funktionen
+        Überblick: Funktionen in Pandas
         <i class="fas fa-check read-icon"></i>
         </a>
     </li>
@@ -1063,9 +1063,9 @@
  
   
     
-      <li data-nav-id="/data-librarian/inference/overview/" title="Überblick" class="dd-item ">
+      <li data-nav-id="/data-librarian/inference/overview/" title="Überblick: Statistische Inferenz" class="dd-item ">
         <a href="/data-librarian/inference/overview/">
-        Überblick
+        Überblick: Statistische Inferenz
         <i class="fas fa-check read-icon"></i>
         </a>
     </li>
@@ -1210,7 +1210,7 @@
             
           
           
-            <a href='/data-librarian/'>Modul 3</a> > <a href='/data-librarian/basics/'>Grundlagen</a> > <a href='/data-librarian/basics/pandas/'>Praktische Einführung in Pandas</a> > Wichtige Funktionen
+            <a href='/data-librarian/'>Modul 3</a> > <a href='/data-librarian/basics/'>Grundlagen</a> > <a href='/data-librarian/basics/pandas/'>Praktische Einführung in Pandas</a> > Überblick: Funktionen in Pandas
           
         
           
@@ -1234,14 +1234,13 @@
           
             <h1>
               
-              Wichtige Funktionen
+              Überblick: Funktionen in Pandas
             </h1>
           
 
         
 
 
-<p>In der kommenden Woche erhalten Sie einen Überblick über die vielen deskriptiven Statistiken, die sich mit <code>pandas</code> ausrechnen lassen. Hier noch einmal eine Zusammenfassung und ein erster Ausblick:</p>
 <p>Mit <code>df.head()</code> können Sie sich die ersten $n$ Zeilen eines <code>DataFrame</code>s anzeigen lassen:</p>
 
 <div class="customnotices">
@@ -1253,6 +1252,7 @@ df<span style="color:#f92672">.</span>head()
   </div>
 </div>
 
+<p>Analog dazu funktioniert die Funktion <code>df.tail()</code>.</p>
 
 <div class="customnotices">
   <div class="notices_inner" id="exercise">
@@ -1285,24 +1285,16 @@ df<span style="color:#f92672">.</span>head()
 <div class="customnotices">
   <div class="notices_inner" id="code">
     <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">Total Renewals</span><span style="color:#e6db74">&#39;</span>]<span style="color:#f92672">.</span>sum()
+df[<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">Total Renewals</span><span style="color:#e6db74">&#39;</span>]<span style="color:#f92672">.</span>between(<span style="color:#ae81ff">100</span>, <span style="color:#ae81ff">200</span>)<span style="color:#f92672">.</span>sum()
 </code></pre></div>
   </div>
 </div>
 
-<h3 id="read-in-csv-files">read in <code>.csv</code> files</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd
-file_path <span style="color:#f92672">=</span> <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">./Library_Usage.csv</span><span style="color:#e6db74">&#39;</span>
-df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(file_path)
-</code></pre></div><h3 id="show-column-names-and-their-types">show column names and their types</h3>
-<pre><code>df.columns
-df.dtypes
-</code></pre><h3 id="number-of-rows">number of rows</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">len(df)
-</code></pre></div><h3 id="summarize-functions">summarize functions</h3>
-<pre><code>df.head()
-df.tail()
-df.describe()
-</code></pre>
+<p><code>DataFrame</code>s besitzen drei wichtige Attribute, die Informationen über die Spalten, die Datentypen und die Anzahl der Elemente geben:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df<span style="color:#f92672">.</span>columns
+df<span style="color:#f92672">.</span>dtypes
+df<span style="color:#f92672">.</span>shape
+</code></pre></div>
 
 <footer class=" footline" >
 	
@@ -2114,19 +2106,19 @@ df.describe()
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/data-librarian/js/clipboard.min.js?1576672524"></script>
-    <script src="/data-librarian/js/perfect-scrollbar.min.js?1576672524"></script>
-    <script src="/data-librarian/js/perfect-scrollbar.jquery.min.js?1576672524"></script>
-    <script src="/data-librarian/js/jquery.sticky.js?1576672524"></script>
-    <script src="/data-librarian/js/featherlight.min.js?1576672524"></script>
-    <script src="/data-librarian/js/highlight.pack.js?1576672524"></script>
+    <script src="/data-librarian/js/clipboard.min.js?1576692027"></script>
+    <script src="/data-librarian/js/perfect-scrollbar.min.js?1576692027"></script>
+    <script src="/data-librarian/js/perfect-scrollbar.jquery.min.js?1576692027"></script>
+    <script src="/data-librarian/js/jquery.sticky.js?1576692027"></script>
+    <script src="/data-librarian/js/featherlight.min.js?1576692027"></script>
+    <script src="/data-librarian/js/highlight.pack.js?1576692027"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/data-librarian/js/modernizr.custom-3.6.0.js?1576672524"></script>
-    <script src="/data-librarian/js/learn.js?1576672524"></script>
-    <script src="/data-librarian/js/hugo-learn.js?1576672524"></script>
+    <script src="/data-librarian/js/modernizr.custom-3.6.0.js?1576692027"></script>
+    <script src="/data-librarian/js/learn.js?1576692027"></script>
+    <script src="/data-librarian/js/hugo-learn.js?1576692027"></script>
 
-    <link href="/data-librarian/mermaid/mermaid.css?1576672524" rel="stylesheet" />
-    <script src="/data-librarian/mermaid/mermaid.js?1576672524"></script>
+    <link href="/data-librarian/mermaid/mermaid.css?1576692027" rel="stylesheet" />
+    <script src="/data-librarian/mermaid/mermaid.js?1576692027"></script>
 
     <script>
         mermaid.initialize({ startOnLoad: true });

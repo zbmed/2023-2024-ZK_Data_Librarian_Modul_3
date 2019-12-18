@@ -12,25 +12,25 @@
     <title>Streuungsmaße :: data librarian - modul 3 - daten analysieren und verstehen</title>
 
     
-    <link href="/data-librarian/css/nucleus.css?1576672524" rel="stylesheet">
-    <link href="/data-librarian/css/fontawesome-all.min.css?1576672524" rel="stylesheet">
-    <link href="/data-librarian/css/hybrid.css?1576672524" rel="stylesheet">
-    <link href="/data-librarian/css/featherlight.min.css?1576672524" rel="stylesheet">
-    <link href="/data-librarian/css/perfect-scrollbar.min.css?1576672524" rel="stylesheet">
-    <link href="/data-librarian/css/auto-complete.css?1576672524" rel="stylesheet">
-    <link href="/data-librarian/css/atom-one-dark-reasonable.css?1576672524" rel="stylesheet">
-    <link href="/data-librarian/css/theme.css?1576672524" rel="stylesheet">
-    <link href="/data-librarian/css/hugo-theme.css?1576672524" rel="stylesheet">
+    <link href="/data-librarian/css/nucleus.css?1576692027" rel="stylesheet">
+    <link href="/data-librarian/css/fontawesome-all.min.css?1576692027" rel="stylesheet">
+    <link href="/data-librarian/css/hybrid.css?1576692027" rel="stylesheet">
+    <link href="/data-librarian/css/featherlight.min.css?1576692027" rel="stylesheet">
+    <link href="/data-librarian/css/perfect-scrollbar.min.css?1576692027" rel="stylesheet">
+    <link href="/data-librarian/css/auto-complete.css?1576692027" rel="stylesheet">
+    <link href="/data-librarian/css/atom-one-dark-reasonable.css?1576692027" rel="stylesheet">
+    <link href="/data-librarian/css/theme.css?1576692027" rel="stylesheet">
+    <link href="/data-librarian/css/hugo-theme.css?1576692027" rel="stylesheet">
 
 
 
     
-      <link href="/data-librarian/css/theme-green.css?1576672524" rel="stylesheet">
+      <link href="/data-librarian/css/theme-green.css?1576692027" rel="stylesheet">
     
-    <link href="/data-librarian/css/custom.css?1576672524" rel="stylesheet">
+    <link href="/data-librarian/css/custom.css?1576692027" rel="stylesheet">
 
 
-    <script src="/data-librarian/js/jquery-3.3.1.min.js?1576672524"></script>
+    <script src="/data-librarian/js/jquery-3.3.1.min.js?1576692027"></script>
 
 
 
@@ -62,14 +62,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/data-librarian/js/lunr.min.js?1576672524"></script>
-<script type="text/javascript" src="/data-librarian/js/auto-complete.js?1576672524"></script>
+<script type="text/javascript" src="/data-librarian/js/lunr.min.js?1576692027"></script>
+<script type="text/javascript" src="/data-librarian/js/auto-complete.js?1576692027"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/bonartm.github.io\/data-librarian\/";
     
 </script>
-<script type="text/javascript" src="/data-librarian/js/search.js?1576672524"></script>
+<script type="text/javascript" src="/data-librarian/js/search.js?1576692027"></script>
 
     
   </div>
@@ -648,9 +648,9 @@
  
   
     
-      <li data-nav-id="/data-librarian/basics/pandas/functions/" title="Wichtige Funktionen" class="dd-item ">
+      <li data-nav-id="/data-librarian/basics/pandas/functions/" title="Überblick: Funktionen in Pandas" class="dd-item ">
         <a href="/data-librarian/basics/pandas/functions/">
-        Wichtige Funktionen
+        Überblick: Funktionen in Pandas
         <i class="fas fa-check read-icon"></i>
         </a>
     </li>
@@ -1063,9 +1063,9 @@
  
   
     
-      <li data-nav-id="/data-librarian/inference/overview/" title="Überblick" class="dd-item ">
+      <li data-nav-id="/data-librarian/inference/overview/" title="Überblick: Statistische Inferenz" class="dd-item ">
         <a href="/data-librarian/inference/overview/">
-        Überblick
+        Überblick: Statistische Inferenz
         <i class="fas fa-check read-icon"></i>
         </a>
     </li>
@@ -1241,8 +1241,9 @@
         
 
 
-<p>Streuungsmaße geben an, wie stark die Daten einer Messreihe schwanken.</p>
-<p>Die Abweichung einer Beobachtung von dem Mittelwert der zugrundeliegenden Variable wird <strong>Abweichung</strong> genannt. Der Mittelwert über die quadrierten Abweichungen nennt man <strong>Varianz</strong>:</p>
+<p>Die Zentralität einer Verteilung ist nur eine wichtige Kennzahl. Streuungsmaße geben zusätzlich an, wie stark die Daten einer Messreihe schwanken. Die Streuung einer Variable ist entscheidend z.B. bei der Beurteilung wie Wahrscheinlich extreme Werte vorkommen können.</p>
+<h4 id="varianz">Varianz</h4>
+<p>Die Distanz einer Beobachtung vom Mittelwert der zugrundeliegenden Variable wird <strong>Abweichung</strong> genannt. Der Mittelwert über die quadrierten Abweichungen wird als <strong>Varianz</strong> definiert:</p>
 <p>$$
 s^2_x = \frac{1}{n-1}\sum_{i=1}^{n}(x_i-\bar{x})^2
 $$</p>
@@ -1254,10 +1255,11 @@ $$</p>
   </div>
 </div>
 
-<p>Das Quadrieren der Abweichungen hat zur Folge, dass das Vorzeichen verschwindet und das große Abweichungen mehr Gewicht erhalten.</p>
-<p>In der Formel wird durch $n-1$ anstatt durch $n$ geteilt. Dies ist theoretisch von Bedeutung, es hat aber in der Praxis meist keine Auswirkungen, wenn durch $n$ geteilt wird.</p>
-<p>Die <strong>Standardabweichungen</strong> ist die Wurzel der Varianz:</p>
-<p>$$
+<p>Das Quadrieren der Abweichungen hat zur Folge, dass das Vorzeichen verschwindet und das große Abweichungen mehr Gewicht erhalten. In der Formel wird durch $n-1$ anstatt durch $n$ geteilt. Dies ist theoretisch von Bedeutung, es hat aber in der Praxis meist keine Auswirkungen, wenn durch $n$ geteilt wird.</p>
+<p>Eine geringe Varianz bedeutet, dass sich die Werte, die die Variable annehmen kann, nur geringfügig vom Mittelwert unterscheiden.</p>
+<h4 id="standardabweichung">Standardabweichung</h4>
+<p>Die <strong>Standardabweichungen</strong> ist die Wurzel der Varianz:
+$$
 s_x = \sqrt{s_x^2}
 $$</p>
 
@@ -1268,6 +1270,20 @@ $$</p>
   </div>
 </div>
 
+<h4 id="variationskoeffizient">Variationskoeffizient</h4>
+<p>Die absolute Größe der Varianz ist abhängig von deren Mittelwert. Ein Vergleich von Standardabweichungen verschiedener Variablen ist deswegen nicht sinnvoll. Möchte man die Streuung verschiedener Variablen vergleichen, macht es Sinn, eine normalisierte Größe, den <strong>Variationskoeffizient</strong> zu betrachten:</p>
+<p>$$
+cv_x = \frac{s_x}{\bar{x}}
+$$</p>
+
+<div class="customnotices">
+  <div class="notices_inner" id="exercise">
+    <p>Welche Variable streut mehr: <code>'Total Checkouts'</code> oder <code>'Total Renewals'</code>? Vergleichen Sie die Standardabweichungen und den Variationskoeffizient.</p>
+
+  </div>
+</div>
+
+<h4 id="spannweite">Spannweite</h4>
 <p>Die <strong>Spannweite</strong> ist die Differenz zwischen dem maximalen und minmalem Wert</p>
 
 <div class="customnotices">
@@ -1277,18 +1293,8 @@ $$</p>
   </div>
 </div>
 
-<h3 id="quantile">Quantile</h3>
-<p>Sie haben schon den Median $x_0.5$ als Lageparameter kennengelernt. Er teilt die geordnete Verteilung in zwei genau gleich große Teile. Allgemeiner lassen sich analog dazu die Quantile definieren: $x_{0.75}$ teil die geordnete Verteilung im Verhältnis 3:1. Das heißt, dass 75% der Beobachtungen kleiner als $x_{0.75}$ und 25% größer sind.
-Das $x_{0.25}$ Quantil teilt die Reihe im Verhältnis 1:3. Hier sind 25% der Beobachtungen kleiner und 75% größer.</p>
-
-<div class="customnotices">
-  <div class="notices_inner" id="code">
-    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">Total Checkouts</span><span style="color:#e6db74">&#39;</span>]<span style="color:#f92672">.</span>quantile(q<span style="color:#f92672">=</span>[<span style="color:#ae81ff">0.25</span>, <span style="color:#ae81ff">0.5</span>, <span style="color:#ae81ff">0.75</span>])
-</code></pre></div>
-  </div>
-</div>
-
-<p>Daraus kann der <strong>Interquartilsabstand</strong> als Streuungsmaß abgeleitet werden:
+<h4 id="interquartilsabstand">Interquartilsabstand</h4>
+<p>Aus den Quantilen kann der <strong>Interquartilsabstand</strong> als <strong>robustes Streuungsmaß</strong> abgeleitet werden. Er ergibt sich aus der Differenz des 75%- zum 25%-Quantil:
 $$
 x_{IQR} = x_{0.75} - x_{0.25}
 $$</p>
@@ -2110,19 +2116,19 @@ $$</p>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/data-librarian/js/clipboard.min.js?1576672524"></script>
-    <script src="/data-librarian/js/perfect-scrollbar.min.js?1576672524"></script>
-    <script src="/data-librarian/js/perfect-scrollbar.jquery.min.js?1576672524"></script>
-    <script src="/data-librarian/js/jquery.sticky.js?1576672524"></script>
-    <script src="/data-librarian/js/featherlight.min.js?1576672524"></script>
-    <script src="/data-librarian/js/highlight.pack.js?1576672524"></script>
+    <script src="/data-librarian/js/clipboard.min.js?1576692027"></script>
+    <script src="/data-librarian/js/perfect-scrollbar.min.js?1576692027"></script>
+    <script src="/data-librarian/js/perfect-scrollbar.jquery.min.js?1576692027"></script>
+    <script src="/data-librarian/js/jquery.sticky.js?1576692027"></script>
+    <script src="/data-librarian/js/featherlight.min.js?1576692027"></script>
+    <script src="/data-librarian/js/highlight.pack.js?1576692027"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/data-librarian/js/modernizr.custom-3.6.0.js?1576672524"></script>
-    <script src="/data-librarian/js/learn.js?1576672524"></script>
-    <script src="/data-librarian/js/hugo-learn.js?1576672524"></script>
+    <script src="/data-librarian/js/modernizr.custom-3.6.0.js?1576692027"></script>
+    <script src="/data-librarian/js/learn.js?1576692027"></script>
+    <script src="/data-librarian/js/hugo-learn.js?1576692027"></script>
 
-    <link href="/data-librarian/mermaid/mermaid.css?1576672524" rel="stylesheet" />
-    <script src="/data-librarian/mermaid/mermaid.js?1576672524"></script>
+    <link href="/data-librarian/mermaid/mermaid.css?1576692027" rel="stylesheet" />
+    <script src="/data-librarian/mermaid/mermaid.js?1576692027"></script>
 
     <script>
         mermaid.initialize({ startOnLoad: true });

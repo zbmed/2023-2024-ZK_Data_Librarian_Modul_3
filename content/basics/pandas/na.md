@@ -38,7 +38,7 @@ import pandas as pd
 df = pd.read_csv("../data/Library_Usage.csv")
 df['Circulation Active Year']
 ```
-Obwohl die Spalte `'Circulation Active Year'` eigentlich numerisch ist, wird Sie von `pandas` als Text erkannt. Möchten Sie z.B. `2019 - df['Circulation Active Year']` berechnen, so werden Sie eine Fehlermeldung erhalten, da für Text-Werte keine Substraktionen durchgeführt werden können.
+Obwohl die Spalte `'Circulation Active Year'` numerisch ist, wird Sie von `pandas` als Text abgespeichert, da `"None"` nicht als Zahl erkannt wird. Möchten Sie z.B. `2019 - df['Circulation Active Year']` berechnen, so werden Sie eine Fehlermeldung erhalten, da für Text-Werte keine Substraktionen durchgeführt werden können.
 
 Um das Problem zu beheben können Sie auf zwei Arten vorgehen. Sie können schon beim Einlesen, die Kodierung für fehlende Werte mit angeben:
 
@@ -83,6 +83,18 @@ df.dropna()
 # drops all missing values in this series
 df['Age Range'].dropna()
 ```
+{{% /customnotice %}}
+
+#### Ersetzen
+
+{{% customnotice code %}}
+```python
+df['Age Range'].fillna("keine Angabe")
+```
+{{% /customnotice %}}
+
+{{% customnotice tip %}}
+Standardmäßig werden bei den Operationen `fillna` oder `dropna` neue `Series` oder `DataFrame`s zurückgegeben. Die originale Variable bleibt dabei unangetastet. Mit dem Argument `inplace=True` werden die originalen Objekte direkt überschrieben.
 {{% /customnotice %}}
 
 

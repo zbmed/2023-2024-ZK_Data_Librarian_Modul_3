@@ -18,7 +18,7 @@
       <guid>https://bonartm.github.io/data-librarian/descriptive_statistics/univariate/frequency/</guid>
       <description>Kategoriale (nominale und ordinale) Variablen werden in Häufigkeitstabellen zusammengefasst. Dabei wird für jede Ausprägung die Anzahl der Beobachtungen gezählt:
 import pandas as pd df = pd.read_csv(&amp;#34;../data/Library_Usage.csv&amp;#34;) df[&amp;#39;Age Range&amp;#39;].value_counts()    Mit der Funktion value_counts() können Sie sich absolute Häufigkeitstabellen ausgeben lassen. Mit dem zusätzlichen Argumentaufruf normalize=True werden relative Häufigkeiten berechnet:
-df[&amp;#39;Age Range&amp;#39;].value_counts(normalize=True)    Der Modus ist dabei die Merkmalsausprägung, die die meisten Beobachtungen besitzen: df[&amp;#39;Age Range&amp;#39;].mode()    Visualisierung Häufigkeitstabellen lassen sich idealerweise als Balkendiagramme visualisieren:</description>
+df[&amp;#39;Age Range&amp;#39;].value_counts(normalize=True)    Der Modus ist dabei die Merkmalsausprägung, die die meisten Beobachtungen besitzen: age_mode = df[&amp;#39;Age Range&amp;#39;].</description>
     </item>
     
     <item>
@@ -110,7 +110,7 @@ Aufgrund der stark angewachsenen Mengen an unstrukturierten Daten aus heterogene
       
       <guid>https://bonartm.github.io/data-librarian/basics/pandas/rows/</guid>
       <description>Die Zeilen eines DataFrames werden über einen Zeilenindex (loc[]), über die aufsteigenden Zeilennummern (iloc[]) oder über logische Ausdrücke ([] oder loc[]) referenziert.
-Hier wird zuerst der wichtigste letzte Fall näher betrachtet:
+Hier wird nur der wichtigste letzte Fall näher betrachtet:
 import pandas as pd df = pd.read_csv(&amp;#34;../data/Library_Usage.csv&amp;#34;) df[df[&amp;#39;Total Checkouts&amp;#39;] &amp;gt; 10000]    Der Ausdruck df[&#39;Total Checkouts&#39;] &amp;gt; 10000 wird zuerst ausgewertet und ergibt eine boolesche Series mit Einträgen True wenn die Beobachtung mehr als 1000 Ausleihen getätigt hat und False sonst.</description>
     </item>
     
@@ -125,14 +125,15 @@ Wenn beispielsweise der Mittelwert einer statistischen Variable berechnet wird, 
     </item>
     
     <item>
-      <title>Wichtige Funktionen</title>
+      <title>Überblick: Funktionen in Pandas</title>
       <link>https://bonartm.github.io/data-librarian/basics/pandas/functions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://bonartm.github.io/data-librarian/basics/pandas/functions/</guid>
-      <description>In der kommenden Woche erhalten Sie einen Überblick über die vielen deskriptiven Statistiken, die sich mit pandas ausrechnen lassen. Hier noch einmal eine Zusammenfassung und ein erster Ausblick:
-Mit df.head() können Sie sich die ersten $n$ Zeilen eines DataFrames anzeigen lassen:
-import pandas as pd df = pd.read_csv(&amp;#34;../data/Library_Usage.csv&amp;#34;) df.head()    Schauen Sie sich die Dokumentation für die Funktion head() hier an. Wie können Sie sich die ersten $100$ Zeilen anzeigen lassen?</description>
+      <description>Mit df.head() können Sie sich die ersten $n$ Zeilen eines DataFrames anzeigen lassen:
+import pandas as pd df = pd.read_csv(&amp;#34;../data/Library_Usage.csv&amp;#34;) df.head()    Analog dazu funktioniert die Funktion df.tail().
+Schauen Sie sich die Dokumentation für die Funktion head() hier an. Wie können Sie sich die ersten $100$ Zeilen anzeigen lassen?
+  Mit df.info() erhalten Sie speicherbezogene Informationen über das Objekt. Mit df.describe() werden nützliche deskriptive Statistiken für alle numerischen Spalten eines Datensatzes ausgegeben.</description>
     </item>
     
     <item>
@@ -142,7 +143,8 @@ import pandas as pd df = pd.read_csv(&amp;#34;../data/Library_Usage.csv&amp;#34;
       
       <guid>https://bonartm.github.io/data-librarian/organisation/modules/</guid>
       <description>Wir haben das Modul in wöchentliche Einheiten, die jeweils ein Gebiet aufgreifen und vertiefen, unterteilt. Sie können sich die Zeit für die Bearbeitung der Einheiten selber aufteilen, sollten aber jede Einheit am Ende der jeweiligen Woche abgeschlossen haben. Am Ende einer Woche wird die nächste Einheit auf dieser Webeite freigeschaltet.
-Jede Einheit umfasst ein kleines praktisches Projekt, welches Sie in Form eines Jupyter Notebooks bearbeiten und aufbereiten. Ihr Notebook können Sie einreichen, um Feedback von den Kursleitern zu erhalten.</description>
+Jede Einheit umfasst kleine praktische Projekt, welche Sie in Form eines Jupyter Notebooks bearbeiten und aufbereiten.
+Der erste Teil des Moduls (21-01 - 16.</description>
     </item>
     
     <item>
@@ -201,8 +203,8 @@ Darüber hinaus bieten Notebooks die Möglichkeit Text, Visualisierungen und Cod
       
       <guid>https://bonartm.github.io/data-librarian/basics/basic_terms/</guid>
       <description>In der Kursumgebung finden Sie das Einführungskapitel des Buchs Statistik: Der Weg zur Datenanalyse zum alleinigen persönlichen Gebrauch hier im Kurs hinterlegt.1
-Der Text gibt einen Einstieg in die Aufgaben und Anwendungsbereiche der Statistik und erklärt die grundlegenden Begriffe, mit denen Daten und Datensätze charakterisiert werden können. Nach der Einheit sollten Sie die folgenden Fragen beantworten können:
- Was ist Statistik? Was macht Statistik? Welche grundlegenden Begriffe werden in der Statistik verwendet?</description>
+ Eine weitere sehr gute und modernere Einstiegsliteratur sind die englischen Lehrbücher von OpenIntro. Sie können kostenlos auf der Webseite heruntergeladen werden. Für diesen Kurs sind insbesondere die ersten zwei Kapitel des Buchs Introductory Statistics with Randomization and Simulation zu empfehlen. 2
+ Der Text gibt einen Einstieg in die Aufgaben und Anwendungsbereiche der Statistik und erklärt die grundlegenden Begriffe, mit denen Daten und Datensätze charakterisiert werden können.</description>
     </item>
     
     <item>
@@ -222,11 +224,10 @@ import pandas as pd df = pd.read_csv(&amp;#34;../data/Library_Usage.csv&amp;#34;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://bonartm.github.io/data-librarian/descriptive_statistics/univariate/variance/</guid>
-      <description>Streuungsmaße geben an, wie stark die Daten einer Messreihe schwanken.
-Die Abweichung einer Beobachtung von dem Mittelwert der zugrundeliegenden Variable wird Abweichung genannt. Der Mittelwert über die quadrierten Abweichungen nennt man Varianz:
+      <description>Die Zentralität einer Verteilung ist nur eine wichtige Kennzahl. Streuungsmaße geben zusätzlich an, wie stark die Daten einer Messreihe schwanken. Die Streuung einer Variable ist entscheidend z.B. bei der Beurteilung wie Wahrscheinlich extreme Werte vorkommen können.
+Varianz Die Distanz einer Beobachtung vom Mittelwert der zugrundeliegenden Variable wird Abweichung genannt. Der Mittelwert über die quadrierten Abweichungen wird als Varianz definiert:
 $$ s^2_x = \frac{1}{n-1}\sum_{i=1}^{n}(x_i-\bar{x})^2 $$
-df[&amp;#39;Total Checkouts&amp;#39;].var()    Das Quadrieren der Abweichungen hat zur Folge, dass das Vorzeichen verschwindet und das große Abweichungen mehr Gewicht erhalten.
-In der Formel wird durch $n-1$ anstatt durch $n$ geteilt. Dies ist theoretisch von Bedeutung, es hat aber in der Praxis meist keine Auswirkungen, wenn durch $n$ geteilt wird.</description>
+df[&amp;#39;Total Checkouts&amp;#39;].var()    Das Quadrieren der Abweichungen hat zur Folge, dass das Vorzeichen verschwindet und das große Abweichungen mehr Gewicht erhalten.</description>
     </item>
     
     <item>
@@ -235,8 +236,7 @@ In der Formel wird durch $n-1$ anstatt durch $n$ geteilt. Dies ist theoretisch v
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://bonartm.github.io/data-librarian/descriptive_statistics/univariate/symmetrie/</guid>
-      <description>Verschiedene univariate Verteilungen     Related files   distributions.ipynb  (74 ko)    Um eine metrische Verteilung charakterisieren zu können, ist neben der zentralen Lage- und Streuung auch deren Symmetrie und Schiefe von Bedeutung.
-Das Bild zeigt Histogramme für verschiedene simulierte Zufallswerte der Beta-Verteilung. Dabei wurden jeweils die Parameter der theoretischen Verteilung $\alpha$ und $\beta$ geändert. Somit kann eine große Bandbreite charakteristischer Verteilungen abgedeckt werden.</description>
+      <description>Verschiedene univariate Verteilungen     Related files   distributions.ipynb  (74 ko)    Um eine metrische Verteilung charakterisieren zu können, ist neben der zentralen Lage- und Streuung auch deren Symmetrie und Schiefe von Bedeutung. Die Symmetrie sagt etwas über die (Un-)Gleichverteilung einer Variablen aus. Bei stark assymetrischen Variablen (z.B. Haushaltseinkommen in Deutschland) ist das auftreten von kleinen Werten viel wahrscheinlicher, als das auftreten von sehr großen Werten (oder umgekehrt).</description>
     </item>
     
     <item>
@@ -246,8 +246,8 @@ Das Bild zeigt Histogramme für verschiedene simulierte Zufallswerte der Beta-Ve
       
       <guid>https://bonartm.github.io/data-librarian/descriptive_statistics/bivariate/cross_tables/</guid>
       <description>Um zwei ordinale oder nominale Variablen miteinander zu vergleichen, eignen sich Kreuztabellen. Jeder Wert in der Kreuztabelle entspricht der Anzahl der Beobachtungen im Datensatz mit genau dieser Kombination an Merkmalsausprägungen.
-Hier ein Beispiel (mit dem Argument na_values=&amp;quot;none&amp;quot; markiert pandas die &amp;quot;none&amp;quot; Werte in der Spalte &#39;Notice Preference Definition&#39; als fehlende Werte):
-import pandas as pd df = pd.read_csv(&amp;#34;../data/Library_Usage.csv&amp;#34;, na_values=&amp;#34;none&amp;#34;) pd.crosstab( df[&amp;#39;Provided Email Address&amp;#39;], df[&amp;#39;Notice Preference Definition&amp;#39;], margins=True )       Notice Preference email phone print all     Provided Email Address       False 95 58362 28569 87026   True 323842 9810 2767 336419   All 323937 68172 31336 423445    Eine Kreuztabelle mit absoluten Werten ist häufig schwer zu interpretieren.</description>
+Hier ein Beispiel, mit dem Argument na_values=&amp;quot;none&amp;quot; markiert pandas die &amp;quot;none&amp;quot; Einträge in der Spalte &#39;Notice Preference Definition&#39; als fehlende Werte:
+import pandas as pd df = pd.read_csv(&amp;#34;../data/Library_Usage.csv&amp;#34;, na_values=&amp;#34;none&amp;#34;) pd.crosstab( df[&amp;#39;Provided Email Address&amp;#39;], df[&amp;#39;Notice Preference Definition&amp;#39;], margins=True )       Notice Preference email phone print all     Provided Email Address       False 95 58362 28569 87026   True 323842 9810 2767 336419   All 323937 68172 31336 423445    Eine Kreuztabelle mit absoluten Werten ist häufig schwer zu interpretieren, wenn die Randverteilungen ungleich verteilt sind.</description>
     </item>
     
     <item>
@@ -287,7 +287,9 @@ Die Ausdrücke im Nenner sind die jeweiligen Standardabweichungen der Reihen. Si
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://bonartm.github.io/data-librarian/descriptive_statistics/visualizations/examples/</guid>
-      <description>   Related files   examples.ipynb  (184 ko)    </description>
+      <description>Visualisierung Häufigkeitstabellen lassen sich idealerweise als Balkendiagramme visualisieren:
+import pandas as pd import seaborn as sns sns.set() %matplotlib inline df = pd.read_csv(&amp;#34;../data/Library_Usage.csv&amp;#34;, na_values=[&amp;#34;none&amp;#34;]) pd.crosstab( df[&amp;#39;Provided Email Address&amp;#39;], df[&amp;#39;Notice Preference Definition&amp;#39;], margins=False, normalize=0 ).plot.bar()    Kreuztabellen lassen sich als groupierte Balkendiagramme visualisieren:
+import pandas as pd import seaborn as sns sns.set() %matplotlib inline df = pd.read_csv(&amp;#34;../data/Library_Usage.csv&amp;#34;, na_values=[&amp;#34;none&amp;#34;]) pd.crosstab( df[&amp;#39;Provided Email Address&amp;#39;], df[&amp;#39;Notice Preference Definition&amp;#39;], margins=False, normalize=0 ).plot.bar()      Related files   examples.</description>
     </item>
     
     <item>
@@ -320,7 +322,7 @@ In einem DataFrame werden mehrere Series gleicher Länge spaltenweise zu einer z
     </item>
     
     <item>
-      <title>Überblick</title>
+      <title>Überblick: Statistische Inferenz</title>
       <link>https://bonartm.github.io/data-librarian/inference/overview/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

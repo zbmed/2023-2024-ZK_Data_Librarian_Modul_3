@@ -28,6 +28,12 @@ LastModifierEmail = ""
 
 In der [Kursumgebung](https://zbiw.th-koeln.de/moodle/course/view.php?id=300) finden Sie das Einführungskapitel des Buchs *Statistik: Der Weg zur Datenanalyse* zum alleinigen persönlichen Gebrauch hier im Kurs hinterlegt.[^1]
 
+---
+
+Eine weitere sehr gute und modernere Einstiegsliteratur sind die **englischen Lehrbücher** von [OpenIntro](https://www.openintro.org/stat/textbook.php?stat_book=isrs). Sie können kostenlos auf der Webseite heruntergeladen werden. Für diesen Kurs sind insbesondere die **ersten zwei Kapitel** des Buchs [Introductory Statistics with Randomization and Simulation](https://drive.google.com/file/d/0B-DHaDEbiOGkRHNndUlBaHVmaGM/edit) zu empfehlen. [^2]
+
+---
+
 Der Text gibt einen **Einstieg** in die Aufgaben und Anwendungsbereiche der Statistik und erklärt die **grundlegenden Begriffe**, mit denen Daten und Datensätze charakterisiert werden können. Nach der Einheit sollten Sie die folgenden Fragen beantworten können:
 
 - Was ist Statistik? Was macht Statistik?
@@ -49,9 +55,7 @@ Beantworten und diskutieren Sie folgende Fragen konkret für den [San Francisco 
 8. Handelt es sich um Querschnitts-, Längsschnitss- oder Paneldaten?
 {{% /customnotice %}}
 
----
 
-Eine weitere sehr gute und modernere Einstiegsliteratur sind die **englischen Lehrbücher** von [OpenIntro](https://www.openintro.org/stat/textbook.php?stat_book=isrs). Sie können kostenlos auf der Webseite heruntergeladen werden. Für diesen Kurs sind insbesondere die ersten zwei Kapitel des Buchs [Introductory Statistics with Randomization and Simulation](https://drive.google.com/file/d/0B-DHaDEbiOGkRHNndUlBaHVmaGM/edit) zu empfehlen. [^2]
 
 
 

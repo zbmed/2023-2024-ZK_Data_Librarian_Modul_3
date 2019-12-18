@@ -22,4 +22,46 @@ LastModifierDisplayName = ""
 LastModifierEmail = ""
 +++
 
+
+
+#### Visualisierung
+
+Häufigkeitstabellen lassen sich idealerweise als Balkendiagramme visualisieren:
+
+{{% customnotice code %}}
+```python
+import pandas as pd
+import seaborn as sns
+sns.set()
+%matplotlib inline
+
+df = pd.read_csv("../data/Library_Usage.csv", na_values=["none"])
+pd.crosstab(
+    df['Provided Email Address'],
+    df['Notice Preference Definition'],
+    margins=False, normalize=0
+).plot.bar()
+```
+{{% /customnotice %}}
+
+
+Kreuztabellen lassen sich als groupierte Balkendiagramme visualisieren:
+
+{{% customnotice code %}}
+```python
+import pandas as pd
+import seaborn as sns
+sns.set()
+%matplotlib inline
+
+df = pd.read_csv("../data/Library_Usage.csv", na_values=["none"])
+pd.crosstab(
+    df['Provided Email Address'],
+    df['Notice Preference Definition'],
+    margins=False, normalize=0
+).plot.bar()
+```
+{{% /customnotice %}}
+
+
 {{%attachments title="Related files" pattern="(.){2,}\.(csv|ipynb)" /%}}

@@ -12,25 +12,25 @@
     <title>Korrelation :: data librarian - modul 3 - daten analysieren und verstehen</title>
 
     
-    <link href="/data-librarian/css/nucleus.css?1576672524" rel="stylesheet">
-    <link href="/data-librarian/css/fontawesome-all.min.css?1576672524" rel="stylesheet">
-    <link href="/data-librarian/css/hybrid.css?1576672524" rel="stylesheet">
-    <link href="/data-librarian/css/featherlight.min.css?1576672524" rel="stylesheet">
-    <link href="/data-librarian/css/perfect-scrollbar.min.css?1576672524" rel="stylesheet">
-    <link href="/data-librarian/css/auto-complete.css?1576672524" rel="stylesheet">
-    <link href="/data-librarian/css/atom-one-dark-reasonable.css?1576672524" rel="stylesheet">
-    <link href="/data-librarian/css/theme.css?1576672524" rel="stylesheet">
-    <link href="/data-librarian/css/hugo-theme.css?1576672524" rel="stylesheet">
+    <link href="/data-librarian/css/nucleus.css?1576692027" rel="stylesheet">
+    <link href="/data-librarian/css/fontawesome-all.min.css?1576692027" rel="stylesheet">
+    <link href="/data-librarian/css/hybrid.css?1576692027" rel="stylesheet">
+    <link href="/data-librarian/css/featherlight.min.css?1576692027" rel="stylesheet">
+    <link href="/data-librarian/css/perfect-scrollbar.min.css?1576692027" rel="stylesheet">
+    <link href="/data-librarian/css/auto-complete.css?1576692027" rel="stylesheet">
+    <link href="/data-librarian/css/atom-one-dark-reasonable.css?1576692027" rel="stylesheet">
+    <link href="/data-librarian/css/theme.css?1576692027" rel="stylesheet">
+    <link href="/data-librarian/css/hugo-theme.css?1576692027" rel="stylesheet">
 
 
 
     
-      <link href="/data-librarian/css/theme-green.css?1576672524" rel="stylesheet">
+      <link href="/data-librarian/css/theme-green.css?1576692027" rel="stylesheet">
     
-    <link href="/data-librarian/css/custom.css?1576672524" rel="stylesheet">
+    <link href="/data-librarian/css/custom.css?1576692027" rel="stylesheet">
 
 
-    <script src="/data-librarian/js/jquery-3.3.1.min.js?1576672524"></script>
+    <script src="/data-librarian/js/jquery-3.3.1.min.js?1576692027"></script>
 
 
 
@@ -62,14 +62,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/data-librarian/js/lunr.min.js?1576672524"></script>
-<script type="text/javascript" src="/data-librarian/js/auto-complete.js?1576672524"></script>
+<script type="text/javascript" src="/data-librarian/js/lunr.min.js?1576692027"></script>
+<script type="text/javascript" src="/data-librarian/js/auto-complete.js?1576692027"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/bonartm.github.io\/data-librarian\/";
     
 </script>
-<script type="text/javascript" src="/data-librarian/js/search.js?1576672524"></script>
+<script type="text/javascript" src="/data-librarian/js/search.js?1576692027"></script>
 
     
   </div>
@@ -648,9 +648,9 @@
  
   
     
-      <li data-nav-id="/data-librarian/basics/pandas/functions/" title="Wichtige Funktionen" class="dd-item ">
+      <li data-nav-id="/data-librarian/basics/pandas/functions/" title="Überblick: Funktionen in Pandas" class="dd-item ">
         <a href="/data-librarian/basics/pandas/functions/">
-        Wichtige Funktionen
+        Überblick: Funktionen in Pandas
         <i class="fas fa-check read-icon"></i>
         </a>
     </li>
@@ -1063,9 +1063,9 @@
  
   
     
-      <li data-nav-id="/data-librarian/inference/overview/" title="Überblick" class="dd-item ">
+      <li data-nav-id="/data-librarian/inference/overview/" title="Überblick: Statistische Inferenz" class="dd-item ">
         <a href="/data-librarian/inference/overview/">
-        Überblick
+        Überblick: Statistische Inferenz
         <i class="fas fa-check read-icon"></i>
         </a>
     </li>
@@ -1251,10 +1251,10 @@
 $$
 \rho_{x, y} = \frac{s_{x, y}^2}{s_xs_y} = \frac{\sum_{i=1}^{N}(x_i-\bar{x})(y_i-\bar{y})}{\sqrt{\sum_{i=1}^{N}(x_i-\bar{x})^2\sum_{i=1}^{N}(y_i-\bar{y})^2}}
 $$</p>
-<p>Die Ausdrücke im Nenner sind die jeweiligen <a href="../../univariate/variance">Standardabweichungen</a> der Reihen. Sie dienen zur Normalisierung der Statistik, sodass diese nur Werte zwischen $-1$ und $1$ annimmt.</p>
+<p>Die Ausdrücke im Nenner sind die jeweiligen <a href="../../univariate/variance">Standardabweichungen</a> der Reihen. Sie dienen zur Normalisierung der Statistik, sodass diese nur Werte zwischen $-1$ und $1$ annimmt. Beachten Sie, dass in der Formel der Bruch durch $\frac{1}{N-1}$ gekürzt wurde.</p>
 <p>Im Zähler steht die empirische <strong>Kovarianz</strong> definiert als:
 $$
-s_{x, y}^2 = \frac{1}{N}\sum_{i=1}^{N}(x_i-\bar{x})(y_i-\bar{y})
+s_{x, y}^2 = \frac{1}{N-1}\sum_{i=1}^{N}(x_i-\bar{x})(y_i-\bar{y})
 $$</p>
 <p>Nehmen Sie vereinfachend an, dass $\bar{x} = \bar{y} = 0$. Die Kovarianz ist dann der Mittelwert über die paarweise miteinander multiplizierten Beobachtungen. Sind beide Faktoren positiv oder beide Faktoren negativ, so tragen diese zu einer positiven Kovarianz bei. Haben die Faktoren unterschiedliche Vorzeichen, so tragen diese zu einer negativen Kovarianz bei. Kleine numerische Werte tragen nur wenig zur Kovarianz bei.</p>
 <hr>
@@ -2152,19 +2152,19 @@ df[<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><s
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/data-librarian/js/clipboard.min.js?1576672524"></script>
-    <script src="/data-librarian/js/perfect-scrollbar.min.js?1576672524"></script>
-    <script src="/data-librarian/js/perfect-scrollbar.jquery.min.js?1576672524"></script>
-    <script src="/data-librarian/js/jquery.sticky.js?1576672524"></script>
-    <script src="/data-librarian/js/featherlight.min.js?1576672524"></script>
-    <script src="/data-librarian/js/highlight.pack.js?1576672524"></script>
+    <script src="/data-librarian/js/clipboard.min.js?1576692027"></script>
+    <script src="/data-librarian/js/perfect-scrollbar.min.js?1576692027"></script>
+    <script src="/data-librarian/js/perfect-scrollbar.jquery.min.js?1576692027"></script>
+    <script src="/data-librarian/js/jquery.sticky.js?1576692027"></script>
+    <script src="/data-librarian/js/featherlight.min.js?1576692027"></script>
+    <script src="/data-librarian/js/highlight.pack.js?1576692027"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/data-librarian/js/modernizr.custom-3.6.0.js?1576672524"></script>
-    <script src="/data-librarian/js/learn.js?1576672524"></script>
-    <script src="/data-librarian/js/hugo-learn.js?1576672524"></script>
+    <script src="/data-librarian/js/modernizr.custom-3.6.0.js?1576692027"></script>
+    <script src="/data-librarian/js/learn.js?1576692027"></script>
+    <script src="/data-librarian/js/hugo-learn.js?1576692027"></script>
 
-    <link href="/data-librarian/mermaid/mermaid.css?1576672524" rel="stylesheet" />
-    <script src="/data-librarian/mermaid/mermaid.js?1576672524"></script>
+    <link href="/data-librarian/mermaid/mermaid.css?1576692027" rel="stylesheet" />
+    <script src="/data-librarian/mermaid/mermaid.js?1576692027"></script>
 
     <script>
         mermaid.initialize({ startOnLoad: true });

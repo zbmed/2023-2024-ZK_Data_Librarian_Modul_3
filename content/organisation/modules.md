@@ -23,7 +23,7 @@ LastModifierEmail = ""
 
 Wir haben das Modul in **wöchentliche Einheiten**, die jeweils ein Gebiet aufgreifen und vertiefen, unterteilt. Sie können sich die Zeit für die Bearbeitung der Einheiten selber aufteilen, sollten aber jede Einheit am Ende der jeweiligen Woche abgeschlossen haben. Am Ende einer Woche wird die nächste Einheit auf dieser Webeite **freigeschaltet**.
 
-Jede Einheit umfasst ein kleines praktisches Projekt, welches Sie in Form eines [Jupyter Notebooks](https://jupyter.org/) bearbeiten und aufbereiten. Ihr Notebook können Sie einreichen, um **Feedback** von den Kursleitern zu erhalten.
+Jede Einheit umfasst kleine praktische Projekt, welche Sie in Form eines [Jupyter Notebooks](https://jupyter.org/) bearbeiten und aufbereiten.
 
 Der **erste Teil** des Moduls (21-01 - 16.02) wird von [Malte Bonart](mailto:malte@bonart.de) betreut und behandelt grundlegende klassische Konzepte der angewandten Statistik. Der **zweite Teil** des Moduls (10.02 - 04.03) wird von [Konrad Förstner](mailto:foerstner@zbmed.de) betreut und gibt einen Überblick über Themen des Maschinellen Lernens.
 

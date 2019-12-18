@@ -22,16 +22,16 @@ LastModifierDisplayName = ""
 LastModifierEmail = ""
 +++
 
-Bisher haben Sie immer nur einzelne Variable betrachtet, zusammengefasst oder visualisiert. In vielen Fällen ist jedoch der Zusammenhang zwischen zwei Variablen von Interesse:
+Bisher haben Sie immer nur einzelne Variable betrachtet, zusammengefasst oder visualisiert. In vielen Fällen ist jedoch der **Zusammenhang** zwischen zwei Variablen von Interesse. Nach dieser Einheit sollten Sie die folgenden Fragen beantworten können:
 
 - Leihen ältere Bibliothekskunden im Schnitt mehr Bücher aus als jüngere?
 - Führen Kunden, die häufiger Ausleihen tätigen,  im Schnitt auch häufiger Verlängerungen durch?
 - Nimmt die Anzahl der Ausleihen mit zunehmender Dauer der Mitgliedschaft ab?
 
-Zwei Variablen, die keinen Zusammenhang aufweisen, nennt man auch *statistisch unabhängige* Variablen. Für zwei metrische Variablen kann man außerdem zwischen einem positiven oder einem negativem Zusammenhang unterscheiden.
+Zwei Variablen, die keinen Zusammenhang aufweisen, nennt man **statistisch unabhängige** Variablen. Für zwei metrische Variablen kann man außerdem zwischen einem positiven oder einem negativem Zusammenhang unterscheiden.
 
-Nach dieser Einheit sollten Sie die folgenden Fragen beantworten können:
+![](./_index.files/boxplots.png)
+*Boxplot-Verteilung der Ausleihen nach Jahr der Registrierung*.
 
-- Wie interpretiere und erstelle ich eine Kreuztabelle?
-- Welche Arten gibt es, eine Kreuztabelle zu normalisieren?
-- Wie kann ich den Zusammenhang zwischen zwei metrischen Variablen messen?
+
+{{%attachments title="Related files" pattern="(.){2,}\.(csv|ipynb)" /%}}

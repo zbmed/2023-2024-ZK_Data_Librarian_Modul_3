@@ -31,14 +31,12 @@ Diese Einheit gibt einen ersten Einblick in die Inferenzstatistik und stellt die
 
 ## Ziele
 
-- Führen Sie einen Hypothesentest für den Vergleich von zwei Mittelwerten durch.
-
-Nach der Einheit sollten Sie die folgenden Fragen beantworten können:
+- Führen Sie einen Hypothesentest fNach der Einheit sollten Sie die folgenden Fragen beantworten können:
 
 - Was sind Konfidenzintervalle?
 - Was ist der Unterschied zwischen p-Werten, Hypothesentests und Konfidenzintervallen?
 - Wie berechne ich Konfidenzintervalle für den Mittelwert?
-
+ür den Vergleich von zwei Mittelwerten durch.
 
 {{% customnotice exercise %}}
 

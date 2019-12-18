@@ -26,7 +26,7 @@ LastModifierEmail = ""
 {{%attachments title="Related files"
 pattern="distributions.ipynb" /%}}
 
-Um eine metrische Verteilung charakterisieren zu können, ist neben der zentralen Lage- und Streuung auch deren Symmetrie und Schiefe von Bedeutung.
+Um eine metrische Verteilung charakterisieren zu können, ist neben der zentralen Lage- und Streuung auch deren Symmetrie und Schiefe von Bedeutung. Die Symmetrie sagt etwas über die **(Un-)Gleichverteilung** einer Variablen aus. Bei stark assymetrischen Variablen (z.B. Haushaltseinkommen in Deutschland) ist das auftreten von kleinen Werten viel wahrscheinlicher, als das auftreten von sehr großen Werten (oder umgekehrt).
 
 Das Bild zeigt **Histogramme** für verschiedene simulierte Zufallswerte der [Beta-Verteilung](https://de.wikipedia.org/wiki/Beta-Verteilung). Dabei wurden jeweils die Parameter der theoretischen Verteilung $\alpha$ und $\beta$ geändert. Somit kann eine große Bandbreite charakteristischer Verteilungen abgedeckt werden. Neben dem Histogram wurde auch der empirische Median und Mittelwert der Verteilung als vertikale Linien eingezeichnet.
 
@@ -64,12 +64,13 @@ sns.distplot(df['Total Checkouts'], kde=False)
 ```
 {{% /customnotice%}}
 
-Das Histogram zeigt, dass die Verteilung der Ausleihen durch einige sehr große Ausreißer geprägt ist. Der Mittelwert liegt hier bei $\bar{x} = 162$, während der Median $x_{0.5} = 19$ sehr viel kleiner ist. Das 95%-Quantil liegt bei $x_{0.95} = 816$ Ausleihen. Das heißt das fast 95% der Beobachtungen im Datensatz weniger als 800 Ausleihen getätigt haben.
+Das Histogram zeigt, dass die Verteilung der Ausleihen durch einige sehr große Ausreißer geprägt ist. Der Mittelwert liegt hier bei $\bar{x} = 162$, während der Median $x_{0.5} = 19$ sehr viel kleiner ist. Das 95%-Quantil liegt bei $x_{0.95} = 816$ Ausleihen. Das heißt das 95% der Beobachtungen im Datensatz weniger als 816 Ausleihen getätigt haben.
 
 {{% customnotice exercise %}}
 
-- Entfernen Sie die 5% größten Ausreißer aus dem Datensatz, indem Sie diesen nach Personen mit weniger als 800 Ausleihen filtern.
-- Schauen Sie sich die Verteilung des gefilterten Datensatzes an und charakterisieren Sie diese.
-- Verwenden Sie nun wieder den ungefilterten Datensatz und erstellen Sie einer neue Spalte `'Total Checkouts Sqrt'` die die Wurzel über die Ausleihen enthält. Die Wurzel können sie mit `df['Total Checkouts']**(0.5)` berechnen.
-- Schauen Sie sich das Histogram von `'Total Checkouts Sqrt'`. Finden Sie, dass die Wurzel-Transformation eine geeignete Methode ist, um mit Ausreißern umzugehen?
+- Erstellen Sie einer neue Spalte `'Total Checkouts Sqrt'` die die Wurzel über die Ausleihen enthält. Die Wurzel können sie mit `df['Total Checkouts']**(0.5)` berechnen.
+- Schauen Sie sich das Histogram von `'Total Checkouts Sqrt'` und charakterisieren Sie die Verteilung.
+- Entfernen Sie nun die 5% größten Ausreißer aus dem Datensatz, indem Sie diesen nach Personen mit weniger als 816 Ausleihen filtern.
+- Schauen Sie sich die Verteilung für `'Total Checkouts'` des gefilterten Datensatzes in einem Histogram an und charakterisieren Sie diese.
+- Welche Methode finden Sie besser geeignet, um mit fehlenden Werten umzugehen? Fallen Ihnen Vor- und Nachteile der jeweiligen Methoden ein?
 {{% /customnotice%}}

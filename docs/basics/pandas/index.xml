@@ -48,7 +48,7 @@ import pandas as pd df = pd.read_csv(&amp;#34;../data/Library_Usage.csv&amp;#34;
       
       <guid>https://bonartm.github.io/data-librarian/basics/pandas/rows/</guid>
       <description>Die Zeilen eines DataFrames werden über einen Zeilenindex (loc[]), über die aufsteigenden Zeilennummern (iloc[]) oder über logische Ausdrücke ([] oder loc[]) referenziert.
-Hier wird zuerst der wichtigste letzte Fall näher betrachtet:
+Hier wird nur der wichtigste letzte Fall näher betrachtet:
 import pandas as pd df = pd.read_csv(&amp;#34;../data/Library_Usage.csv&amp;#34;) df[df[&amp;#39;Total Checkouts&amp;#39;] &amp;gt; 10000]    Der Ausdruck df[&#39;Total Checkouts&#39;] &amp;gt; 10000 wird zuerst ausgewertet und ergibt eine boolesche Series mit Einträgen True wenn die Beobachtung mehr als 1000 Ausleihen getätigt hat und False sonst.</description>
     </item>
     
@@ -63,14 +63,15 @@ Wenn beispielsweise der Mittelwert einer statistischen Variable berechnet wird, 
     </item>
     
     <item>
-      <title>Wichtige Funktionen</title>
+      <title>Überblick: Funktionen in Pandas</title>
       <link>https://bonartm.github.io/data-librarian/basics/pandas/functions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://bonartm.github.io/data-librarian/basics/pandas/functions/</guid>
-      <description>In der kommenden Woche erhalten Sie einen Überblick über die vielen deskriptiven Statistiken, die sich mit pandas ausrechnen lassen. Hier noch einmal eine Zusammenfassung und ein erster Ausblick:
-Mit df.head() können Sie sich die ersten $n$ Zeilen eines DataFrames anzeigen lassen:
-import pandas as pd df = pd.read_csv(&amp;#34;../data/Library_Usage.csv&amp;#34;) df.head()    Schauen Sie sich die Dokumentation für die Funktion head() hier an. Wie können Sie sich die ersten $100$ Zeilen anzeigen lassen?</description>
+      <description>Mit df.head() können Sie sich die ersten $n$ Zeilen eines DataFrames anzeigen lassen:
+import pandas as pd df = pd.read_csv(&amp;#34;../data/Library_Usage.csv&amp;#34;) df.head()    Analog dazu funktioniert die Funktion df.tail().
+Schauen Sie sich die Dokumentation für die Funktion head() hier an. Wie können Sie sich die ersten $100$ Zeilen anzeigen lassen?
+  Mit df.info() erhalten Sie speicherbezogene Informationen über das Objekt. Mit df.describe() werden nützliche deskriptive Statistiken für alle numerischen Spalten eines Datensatzes ausgegeben.</description>
     </item>
     
   </channel>

@@ -1,5 +1,5 @@
 +++
-title = "Wichtige Funktionen"
+title = "Überblick: Funktionen in Pandas"
 # If set, this will be used for the page's menu entry (instead of the `title` attribute)
 # menuTitle = "Einführung"
 weight = 10
@@ -22,8 +22,6 @@ LastModifierDisplayName = ""
 LastModifierEmail = ""
 +++
 
-In der kommenden Woche erhalten Sie einen Überblick über die vielen deskriptiven Statistiken, die sich mit `pandas` ausrechnen lassen. Hier noch einmal eine Zusammenfassung und ein erster Ausblick:
-
 Mit `df.head()` können Sie sich die ersten $n$ Zeilen eines `DataFrame`s anzeigen lassen:
 
 {{% customnotice code %}}
@@ -33,6 +31,8 @@ df = pd.read_csv("../data/Library_Usage.csv")
 df.head()
 ```
 {{% /customnotice %}}
+
+Analog dazu funktioniert die Funktion `df.tail()`.
 
 
 {{% customnotice exercise %}}
@@ -62,36 +62,14 @@ Mit der Funktion `sum()` werden die Werte einer Spalte aufaddiert:
 {{% customnotice code %}}
 ```python
 df['Total Renewals'].sum()
+df['Total Renewals'].between(100, 200).sum()
 ```
 {{% /customnotice %}}
 
-
-
-### read in `.csv` files
+`DataFrame`s besitzen drei wichtige Attribute, die Informationen über die Spalten, die Datentypen und die Anzahl der Elemente geben:
 
 ```python
-import pandas as pd
-file_path = './Library_Usage.csv'
-df = pd.read_csv(file_path)
-```
-
-### show column names and their types
-
-```
 df.columns
 df.dtypes
-```
-
-### number of rows
-
-```python
-len(df)
-```
-
-### summarize functions
-
-```
-df.head()
-df.tail()
-df.describe()
+df.shape
 ```

@@ -26,7 +26,9 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://bonartm.github.io/data-librarian/descriptive_statistics/visualizations/examples/</guid>
-      <description>   Related files   examples.ipynb  (184 ko)    </description>
+      <description>Visualisierung Häufigkeitstabellen lassen sich idealerweise als Balkendiagramme visualisieren:
+import pandas as pd import seaborn as sns sns.set() %matplotlib inline df = pd.read_csv(&amp;#34;../data/Library_Usage.csv&amp;#34;, na_values=[&amp;#34;none&amp;#34;]) pd.crosstab( df[&amp;#39;Provided Email Address&amp;#39;], df[&amp;#39;Notice Preference Definition&amp;#39;], margins=False, normalize=0 ).plot.bar()    Kreuztabellen lassen sich als groupierte Balkendiagramme visualisieren:
+import pandas as pd import seaborn as sns sns.set() %matplotlib inline df = pd.read_csv(&amp;#34;../data/Library_Usage.csv&amp;#34;, na_values=[&amp;#34;none&amp;#34;]) pd.crosstab( df[&amp;#39;Provided Email Address&amp;#39;], df[&amp;#39;Notice Preference Definition&amp;#39;], margins=False, normalize=0 ).plot.bar()      Related files   examples.</description>
     </item>
     
   </channel>

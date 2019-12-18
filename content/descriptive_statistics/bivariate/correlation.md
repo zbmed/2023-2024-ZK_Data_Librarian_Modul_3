@@ -35,12 +35,14 @@ $$
 \rho_{x, y} = \frac{s_{x, y}^2}{s_xs_y} = \frac{\sum_{i=1}^{N}(x_i-\bar{x})(y_i-\bar{y})}{\sqrt{\sum_{i=1}^{N}(x_i-\bar{x})^2\sum_{i=1}^{N}(y_i-\bar{y})^2}}
 $$
 
-Die Ausdrücke im Nenner sind die jeweiligen [Standardabweichungen](../../univariate/variance) der Reihen. Sie dienen zur Normalisierung der Statistik, sodass diese nur Werte zwischen $-1$ und $1$ annimmt.
+Die Ausdrücke im Nenner sind die jeweiligen [Standardabweichungen](../../univariate/variance) der Reihen. Sie dienen zur Normalisierung der Statistik, sodass diese nur Werte zwischen $-1$ und $1$ annimmt. Beachten Sie, dass in der Formel der Bruch durch $\frac{1}{N-1}$ gekürzt wurde.
 
 Im Zähler steht die empirische **Kovarianz** definiert als:
 $$
-s_{x, y}^2 = \frac{1}{N}\sum_{i=1}^{N}(x_i-\bar{x})(y_i-\bar{y})
+s_{x, y}^2 = \frac{1}{N-1}\sum_{i=1}^{N}(x_i-\bar{x})(y_i-\bar{y})
 $$
+
+
 
 Nehmen Sie vereinfachend an, dass $\bar{x} = \bar{y} = 0$. Die Kovarianz ist dann der Mittelwert über die paarweise miteinander multiplizierten Beobachtungen. Sind beide Faktoren positiv oder beide Faktoren negativ, so tragen diese zu einer positiven Kovarianz bei. Haben die Faktoren unterschiedliche Vorzeichen, so tragen diese zu einer negativen Kovarianz bei. Kleine numerische Werte tragen nur wenig zur Kovarianz bei.
 

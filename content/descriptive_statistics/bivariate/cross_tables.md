@@ -24,7 +24,7 @@ LastModifierEmail = ""
 
 Um zwei ordinale oder nominale Variablen miteinander zu vergleichen, eignen sich **Kreuztabellen**. Jeder Wert in der Kreuztabelle entspricht der Anzahl der Beobachtungen im Datensatz mit genau dieser Kombination an Merkmalsausprägungen.
 
-Hier ein Beispiel (mit dem Argument `na_values="none"` markiert `pandas` die `"none"` Werte in der Spalte `'Notice Preference Definition'` als fehlende Werte):
+Hier ein Beispiel, mit dem Argument `na_values="none"` markiert `pandas` die `"none"` Einträge in der Spalte `'Notice Preference Definition'` als fehlende Werte:
 
 {{% customnotice code %}}
 ```python
@@ -46,7 +46,7 @@ False 	|95 |	58362 |	 28569| 87026
 True 	|323842 |	9810  	|2767 | 336419
 All  | 323937 |	68172 	| 31336 	|423445
 
-Eine Kreuztabelle mit absoluten Werten ist häufig schwer zu interpretieren. Deswegen sollten die Werte entweder Spaltenweise oder Zeilenweise **normalisiert** werden:
+Eine Kreuztabelle mit absoluten Werten ist häufig schwer zu interpretieren, wenn die Randverteilungen ungleich verteilt sind. Deswegen sollten die Werte entweder Spaltenweise oder Zeilenweise **normalisiert** werden:
 
 {{% customnotice code %}}
 ```python
@@ -71,21 +71,3 @@ True 	|0.999707 	|0.143901 	|0.088301 	|0.794481
 Wird das Argument `normalize=0` verwendet, so werden die Zeilen der Tabelle normalisiert. Entsprecht ändern sich die Interpretation:
 
 > Von den Kunden, die eine Mail angeben haben, möchten 96% per Mail informiert werden. Von den Kunden, die keine Mail angegeben haben, möchten 67% per Telefon informiert werden.
-
-Kreuztabellen lassen sich als groupierte Balkendiagramme visualisieren:
-
-{{% customnotice code %}}
-```python
-import pandas as pd
-import seaborn as sns
-sns.set()
-%matplotlib inline
-
-df = pd.read_csv("../data/Library_Usage.csv", na_values=["none"])
-pd.crosstab(
-    df['Provided Email Address'],
-    df['Notice Preference Definition'],
-    margins=False, normalize=0
-).plot.bar()
-```
-{{% /customnotice %}}

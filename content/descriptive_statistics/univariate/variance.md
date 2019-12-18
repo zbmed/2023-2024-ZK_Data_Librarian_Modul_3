@@ -22,9 +22,12 @@ LastModifierDisplayName = ""
 LastModifierEmail = ""
 +++
 
-Streuungsmaße geben an, wie stark die Daten einer Messreihe schwanken.
+Die Zentralität einer Verteilung ist nur eine wichtige Kennzahl. Streuungsmaße geben zusätzlich an, wie stark die Daten einer Messreihe schwanken. Die Streuung einer Variable ist entscheidend z.B. bei der Beurteilung wie Wahrscheinlich extreme Werte vorkommen können.
 
-Die Abweichung einer Beobachtung von dem Mittelwert der zugrundeliegenden Variable wird **Abweichung** genannt. Der Mittelwert über die quadrierten Abweichungen nennt man **Varianz**:
+
+#### Varianz
+
+Die Distanz einer Beobachtung vom Mittelwert der zugrundeliegenden Variable wird **Abweichung** genannt. Der Mittelwert über die quadrierten Abweichungen wird als **Varianz** definiert:
 
 $$
 s^2_x = \frac{1}{n-1}\sum_{i=1}^{n}(x_i-\bar{x})^2
@@ -36,12 +39,13 @@ df['Total Checkouts'].var()
 ```
 {{% /customnotice %}}
 
-Das Quadrieren der Abweichungen hat zur Folge, dass das Vorzeichen verschwindet und das große Abweichungen mehr Gewicht erhalten.
+Das Quadrieren der Abweichungen hat zur Folge, dass das Vorzeichen verschwindet und das große Abweichungen mehr Gewicht erhalten. In der Formel wird durch $n-1$ anstatt durch $n$ geteilt. Dies ist theoretisch von Bedeutung, es hat aber in der Praxis meist keine Auswirkungen, wenn durch $n$ geteilt wird.
 
-In der Formel wird durch $n-1$ anstatt durch $n$ geteilt. Dies ist theoretisch von Bedeutung, es hat aber in der Praxis meist keine Auswirkungen, wenn durch $n$ geteilt wird.
+Eine geringe Varianz bedeutet, dass sich die Werte, die die Variable annehmen kann, nur geringfügig vom Mittelwert unterscheiden.
+
+#### Standardabweichung
 
 Die **Standardabweichungen** ist die Wurzel der Varianz:
-
 $$
 s_x = \sqrt{s_x^2}
 $$
@@ -52,6 +56,22 @@ df['Total Checkouts'].std()
 ```
 {{% /customnotice %}}
 
+
+#### Variationskoeffizient
+
+Die absolute Größe der Varianz ist abhängig von deren Mittelwert. Ein Vergleich von Standardabweichungen verschiedener Variablen ist deswegen nicht sinnvoll. Möchte man die Streuung verschiedener Variablen vergleichen, macht es Sinn, eine normalisierte Größe, den **Variationskoeffizient** zu betrachten:
+
+$$
+cv_x = \frac{s_x}{\bar{x}}
+$$
+
+{{% customnotice exercise %}}
+Welche Variable streut mehr: `'Total Checkouts'` oder `'Total Renewals'`? Vergleichen Sie die Standardabweichungen und den Variationskoeffizient.
+{{% /customnotice %}}
+
+
+#### Spannweite
+
 Die **Spannweite** ist die Differenz zwischen dem maximalen und minmalem Wert
 
 {{% customnotice code %}}
@@ -60,18 +80,9 @@ df['Total Checkouts'].max() - df['Total Checkouts'].min()
 ```
 {{% /customnotice %}}
 
-### Quantile
+#### Interquartilsabstand
 
-Sie haben schon den Median $x_0.5$ als Lageparameter kennengelernt. Er teilt die geordnete Verteilung in zwei genau gleich große Teile. Allgemeiner lassen sich analog dazu die Quantile definieren: $x_{0.75}$ teil die geordnete Verteilung im Verhältnis 3:1. Das heißt, dass 75% der Beobachtungen kleiner als $x_{0.75}$ und 25% größer sind.
-Das $x_{0.25}$ Quantil teilt die Reihe im Verhältnis 1:3. Hier sind 25% der Beobachtungen kleiner und 75% größer.
-
-{{% customnotice code %}}
-```python
-df['Total Checkouts'].quantile(q=[0.25, 0.5, 0.75])
-```
-{{% /customnotice %}}
-
-Daraus kann der **Interquartilsabstand** als Streuungsmaß abgeleitet werden:
+Aus den Quantilen kann der **Interquartilsabstand** als **robustes Streuungsmaß** abgeleitet werden. Er ergibt sich aus der Differenz des 75%- zum 25%-Quantil:
 $$
 x_{IQR} = x_{0.75} - x_{0.25}
 $$

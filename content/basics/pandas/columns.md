@@ -89,7 +89,7 @@ Ziel ist es, eine neue Variable `Membership Duration` zu erstellen, die für jed
 'Membership Duration' = ('Circulation Active Year' - 'Year Patron Registered')*12 + 'Circulation Active Month'
 ```
 
-1. Die Spalte `Circulation Active Year` ist als Text und nicht als Zahl abgespeichert! Konvertieren Sie die Spalte in ein numerisches Format. Überschreiben Sie die ursprüngliche Variable mit den neuen Werten.
+1. Die Spalte `Circulation Active Year` ist als Text und nicht als Zahl abgespeichert! Konvertieren Sie die Spalte in ein numerisches Format. Überschreiben Sie die ursprüngliche Variable mit den neuen Werten. Nutzen Sie dieses Codesnippet:
 
 
 ```python
@@ -99,7 +99,7 @@ pd.to_numeric(
 ```
 
 
-  2. Die Spalte `Circulation Active Month` muss in ein numerisches Format konvertiert werden. Nutzen Sie dazu den folgenden Code:
+  2. Die Spalte `Circulation Active Month` enthält die Monatsnamen als Text. Für die Berechnung muss diese in ein numerisches Format konvertiert werden. Die Umcodierung kann händisch erfolgen. Sie können aber auch dieses Codesnippet nutzen::
 
 ```python
 df['Circulation Active Month'] = pd.to_datetime(
@@ -107,12 +107,12 @@ df['Circulation Active Month'] = pd.to_datetime(
   errors='coerce',
   format="%B"
 )
-df['Circulation Active Month'] = df['Circulation Active Month'].dt.month
+df['Circulation Active Month'].dt.month
 ```
 
   3. Berechnen Sie nun die aktive Mitgliedschaftsdauer in Monaten wie oben definiert.
 
-  4. Nehmen Sie an, dass Einträge mit fehlenden Werten eine aktive Mitgliedschaft von Null Monaten bedeuten. Ersetzen Sie dazu alle `NaN` values in der neuen Variable mit der Zahl `0`:
+  4. Nehmen Sie an, dass Einträge mit fehlenden Werten eine aktive Mitgliedschaft von Null Monaten bedeuten. Ersetzen Sie dazu alle `NaN` values in der neuen Variable mit der Zahl `0`. Nutzen Sie dieses Codesnippet:
 
 ```python
 df['Membership Duration'].fillna(0, inplace=True)
