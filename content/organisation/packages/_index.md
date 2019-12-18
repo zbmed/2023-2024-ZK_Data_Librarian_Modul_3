@@ -21,13 +21,22 @@ LastModifierDisplayName = ""
 LastModifierEmail = ""
 +++
 
-Die folgende Liste gibt einen kurzen Überblick über die wichtigsten Python Bibliotheken, von denen Sie manche im Modul näher kennenlernen werden.
-
-Im ersten Teil des Modules werden wir mit `pandas` und `seaborn` arbeiten.
-
-{{% children description="true"   %}}
-
+Die folgende Liste gibt einen kurzen Überblick über die wichtigsten Python Bibliotheken, von denen Sie manche im Modul näher kennenlernen werden. Im ersten Teil des Modules werden wir hauptsächlich mit `pandas` und `seaborn` arbeiten.
 
 {{% customnotice tip%}}
-Ein Python Skript mit der Endung `.py` wird Modul genannt. Eine Sammlung von Modulen in einem Ordner, wird Paket (`package`) genannt. Eine Sammlung von Paketen innerhalb eines größeren Projekts wird Bibliothek (`library`) genannt. Ein `framework` ist eine große grundlegende Bibliothek, mit einem bestimmten Zweck und mit vielen Paketen, die voneinander abhängen und aufeinander aufbauen. Die Begriffe werden aber nicht einheitlich benutzt und der Übergang ist oft fließend.
+
+#### Programming Recap
+
+- Module, Paket, Library
+    - Ein Python Skript mit der Endung `.py` wird Modul genannt.
+    - Eine Sammlung von Modulen in einem Ordner, wird Paket (`package`) genannt.
+    - Eine Sammlung von Paketen innerhalb eines größeren Projekts wird Bibliothek (`library`) genannt.
+    - Ein `framework` ist eine große grundlegende Bibliothek, mit einem bestimmten Zweck und mit vielen Paketen, die voneinander abhängen und aufeinander aufbauen.
+    - Die Begriffe werden aber nicht einheitlich benutzt und der Übergang ist oft fließend.
+- Kommentare stehen immer hinter dem `#` Zeichen.
+- Text steht immer in Anführungszeichen, z.B `"hallo"` oder `'hi'`.
+- Mit dem `import` Befehl können externe Bibliotheken mit mehr Funktionalitäten geladen werden.
+- Mit dem Zuweisungsoperator `=` können Objekte einem Variablennamen oder einem Funktionswert zugeordnet werden, z.B: `x = 1`, `text = 'hallo'`.
+- Funktionen werden mit runden Klammern aufgerufen und können Funktionsargumente besitzen, z.B. `sum([1, 2, 3])`.
+- Viele Funktionen sind Bestandteil von Bibliotheken und werden dann wie folgt aufgerufen: `<paketname>.<funktionsname>(<funktionsargumente>)`
 {{% /customnotice %}}

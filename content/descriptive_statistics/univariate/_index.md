@@ -31,6 +31,14 @@ Statistiken, wie der Mittelwert oder der Modus dienen zur Beschreibungen und Cha
 
 **Kategoriale** (nominale und ordinale) Variablen werden in Häufigkeitstabellen zusammengefasst. Wichtige charakteristische Eigenschaften für **metrische Variablen** sind die zentrale Lage, die Streuung und die Symmetrie.
 
+Nach dieser Einheit sollten Sie die folgenden Fragen beantworten können:
+
+- Wie erstelle und interpretiere ich eine (relative) Häufigkeitstabelle?
+- Welche grundlegenden Statistiken kann ich mit Pandas Funktionen ausrechnen?
+- Was ist der Unterschied zwischen dem Median und dem arithmetischem Mittel?
+- Welche Funktionen gibt es, um die Streuung einer Variablen zu messen?
+- Welche univariaten Verteilungstypen gibt es?
+
 {{% customnotice tip %}}
 
 Im Folgenden werden mit $x = x_1, \dots, x_n$ eine univariate Reihe von Beobachtungen beschrieben, mit $n$ die Anzahl der Beobachtungen. $x_i$ beschreibt die Beobachtung an der *i*-ten Stelle.

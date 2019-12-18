@@ -53,10 +53,10 @@ df.to_json("../data/Library_Usage.json")
 ### Datenrundreise
 
 - Informieren Sie sich [hier](https://pandas.pydata.org/pandas-docs/stable/reference/io.html) über die verschiedenen Funktionen zur Ein- und Ausgabe.
-- Lesen Sie den Datensatz `"../data/Library_Usage_Small.csv"` ein. Er enthält nur die ersten 100 Zeilen des originalen Datensatzes (aus Performancegründen).
+- Lesen Sie den Datensatz `"../data/Library_Usage_Small.csv"` ein (Download [hier](/data-librarian/data/Library_Usage_Small.csv)). Er enthält nur die ersten 10 Zeilen des originalen Datensatzes (aus Performancegründen).
 - Speichern sie den `DataFrame` als `.json` ab.
 - Lesen Sie die `.json` ein und speichern Sie den `DataFrame` als `.html` Tabelle ab (Die `.html` Datei lässt sich auch mit einem Browser öffnen).
-- Lesen Sie dann die `.html` Datei ein und speichern Sie den `DataFrame` als `.xlsx` Datei ab (Die `.xlsx` Datei lässt sich auch mit Excel öffnen).
+- Lesen Sie dann die `.html` Datei ein (Achtung: `read_html` gibt eine Liste von `DataFrame`s zurück!) und speichern Sie den `DataFrame` als `.xlsx` Datei ab (Die `.xlsx` Datei lässt sich auch mit Excel öffnen).
 - Lesen Sie nun die `.xlsx` Datei ein und speichern Sie den `DataFrame` wieder als `.csv` ab. Achten Sie darauf, den ursprünglichen originalen Datensatz nicht zu überschreiben.
 - Vergleichen Sie die originale `.csv` Version mit der Version, nach der Datenrundreise. Ist alles gleich geblieben?
 

@@ -30,9 +30,15 @@ Mit `df.head()` können Sie sich die ersten $n$ Zeilen eines `DataFrame`s anzeig
 ```python
 import pandas as pd
 df = pd.read_csv("../data/Library_Usage.csv")
-df.head(n=20)
+df.head()
 ```
 {{% /customnotice %}}
+
+
+{{% customnotice exercise %}}
+Schauen Sie sich die Dokumentation für die Funktion `head()` [hier](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.head.html) an. Wie können Sie sich die ersten $100$ Zeilen anzeigen lassen?
+{{% /customnotice %}}
+
 
 Mit `df.info()` erhalten Sie speicherbezogene Informationen über das Objekt. Mit `df.describe()` werden nützliche deskriptive Statistiken für alle numerischen Spalten eines Datensatzes ausgegeben. Um alle Spalten miteinzubeziehen nutzen sie das Funktionsargument `include='all'`:
 
@@ -58,3 +64,34 @@ Mit der Funktion `sum()` werden die Werte einer Spalte aufaddiert:
 df['Total Renewals'].sum()
 ```
 {{% /customnotice %}}
+
+
+
+### read in `.csv` files
+
+```python
+import pandas as pd
+file_path = './Library_Usage.csv'
+df = pd.read_csv(file_path)
+```
+
+### show column names and their types
+
+```
+df.columns
+df.dtypes
+```
+
+### number of rows
+
+```python
+len(df)
+```
+
+### summarize functions
+
+```
+df.head()
+df.tail()
+df.describe()
+```

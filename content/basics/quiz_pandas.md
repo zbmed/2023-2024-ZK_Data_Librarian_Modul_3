@@ -1,5 +1,5 @@
 +++
-title = "Quiz: Pandas-Bibliothek"
+title = "Recap: Quiz"
 
 weight = 45
 # The title of the page in menu will be prefixed by this HTML content
@@ -25,5 +25,5 @@ LastModifierEmail = ""
 {{< item question="Wie lautet der Name der Pandas Funktion, mit der Excel-Dateien eingelesen werden können?" answer=1 choices="read_excel,to_excel,load_excel,from_excel" >}}
 {{< item question="Mit welchem Befehl kann die Anzahl der Zeilen aus einem DataFrame auslesen?" answer=2 choices="df.rows,len(df),df.shape[1],df.size" >}}
 {{< item question="Wie viele fehlende Werte enthält die 'Age Range' Variable des Datensatzes?" answer=4 choices="40,423448,0,215" >}}
-{{< item question="Wie viele Beobachtungen zwischen 60 und 64 Jahren waren im Jahr 2016 aktive Kunden oder Kundinnen der Bibliothek?" answer=2 choices="263544,7797,159904,12003" >}}
+{{< item question="Wie viele Beobachtungen zwischen 60 und 64 Jahren waren zuletzt im Jahr 2016 aktive Kunden der Bibliothek?" answer=2 choices="263544,7797,159904,12003" >}}
 {{< /quiz >}}

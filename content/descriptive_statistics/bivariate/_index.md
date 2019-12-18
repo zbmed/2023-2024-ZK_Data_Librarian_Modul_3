@@ -29,3 +29,9 @@ Bisher haben Sie immer nur einzelne Variable betrachtet, zusammengefasst oder vi
 - Nimmt die Anzahl der Ausleihen mit zunehmender Dauer der Mitgliedschaft ab?
 
 Zwei Variablen, die keinen Zusammenhang aufweisen, nennt man auch *statistisch unabhängige* Variablen. Für zwei metrische Variablen kann man außerdem zwischen einem positiven oder einem negativem Zusammenhang unterscheiden.
+
+Nach dieser Einheit sollten Sie die folgenden Fragen beantworten können:
+
+- Wie interpretiere und erstelle ich eine Kreuztabelle?
+- Welche Arten gibt es, eine Kreuztabelle zu normalisieren?
+- Wie kann ich den Zusammenhang zwischen zwei metrischen Variablen messen?

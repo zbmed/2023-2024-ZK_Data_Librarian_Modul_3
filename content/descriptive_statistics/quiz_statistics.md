@@ -1,5 +1,5 @@
 +++
-title = "Quiz: Deskriptive Statistik"
+title = "Recap: Quiz"
 
 weight = 60
 # The title of the page in menu will be prefixed by this HTML content
@@ -26,4 +26,6 @@ LastModifierEmail = ""
 {{< item question="Wie viel Prozent der unter 10 Jährigen hat eine Email Adresse angeben?" answer=1 choices="71,609,23,2" >}}
 {{< item question="Wie lautet das 60% Quantil der Spalte 'Total Checkouts'?" answer=3 choices="0.60,9.0,36.0,6.0" >}}
 {{< item question="Was ist der Modalwert der Spalte 'Age Range'?" answer=1 choices="'25 to 34 years',91083,423233,'75 years and over'" >}}
+{{< item question="Wie groß ist der IQR für die Anzahl der Verlängerungen?" answer=4 choices="111, 8965, 63, 27" >}}
+
 {{< /quiz >}}

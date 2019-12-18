@@ -2,6 +2,7 @@ baseURL = "https://bonartm.github.io/data-librarian/"
 languageCode = "de-DE"
 title = "data librarian - modul 3 - daten analysieren und verstehen"
 
+ignorefiles = [ "content/data/.*" ]
 
 # Change the default theme to be use when building the site with Hugo
 theme = "hugo-theme-learn"
@@ -9,6 +10,7 @@ theme = "hugo-theme-learn"
 # For search functionality
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
+
 
 
 enableInlineShortcodes = false
@@ -70,7 +72,7 @@ weight = 20
 
 
 [[menu.shortcuts]]
-name = "<i class='fas fa-cookie-bite'></i> Python Cheat Sheet"
-identifier = "cheatsheet"
-url = "/cheatsheet/"
+name = "<i class='fas fa-cookie-bite'></i> Lösungen zu den Kursaufgaben"
+identifier = "solutions"
+url = "/solutions/"
 weight = 1

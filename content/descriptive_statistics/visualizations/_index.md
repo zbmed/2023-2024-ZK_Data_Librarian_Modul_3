@@ -30,7 +30,10 @@ Im folgenden Abschnitt, wird ein Überblick über verschiedene Visualisierungsfo
 
 Das Thema Visualisierungen ist **komplex**: Es gibt sehr viele Parameter und Stellschrauben, die man auswendig lernen oder in den Dokumentationen der Bibliotheken [pandas](https://pandas.pydata.org/pandas-docs/stable/user_guide/visualization.html), [seaborn](https://seaborn.pydata.org/tutorial.html) und [matplotlib](https://matplotlib.org/tutorials/index.html) Nachschlagen muss. Die Erstellung von eindrucksvollen und aussagekräftigen Graphiken erfordert viel Praxiserfahrung, Zeit und Mühe.
 
-Auf der anderen Seite lassen sich schon mit wenig Programmcode annehmbare Visualisierungen erstellen. Am besten orientieren Sie sich an den zahlreiche Beispielen und ändern den Code Ihren Erfordernissen an.
+Auf der anderen Seite lassen sich schon mit wenig Programmcode annehmbare Visualisierungen erstellen. Am besten orientieren Sie sich an den zahlreiche Beispielen und ändern den Code Ihren Erfordernissen an. Nach der Einheit sollten Sie die folgenden Fragen beantworten können:
+
+- Wie können uni- und bivariate Verteilungen in Pandas visualisiert werden?
+- Wie interpretiere und erstelle ich Boxplots, Histogramme und Streudiagramme?
 
 ---
 

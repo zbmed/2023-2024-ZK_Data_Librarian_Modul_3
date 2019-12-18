@@ -1,5 +1,7 @@
 .ipynb_checkpoints
 
+/content/data/*
+
 ## OS Files
 # Windows
 Thumbs.db

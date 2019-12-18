@@ -76,4 +76,5 @@ Ausdruck | Beschreibung
 1. Filter Sie den Datensatz nach Kindern unter 10 Jahren. Wie viele Einträge erhalten Sie?
 2. Gibt es Personen mit mehr als `20000` Ausleihen?
 3. Wie viele Personen stammen aus dem Norden San Franciscos ([Supervisor Districts]((https://en.wikipedia.org/wiki/San_Francisco_Board_of_Supervisors)) 1, 2 und 3)? Nutzen Sie die Funktion `Series.isin()`.
+4. Wie viele Prozent der Beobachtungen haben eine `Membership Duration` von Null Monaten?
 {{% /customnotice %}}

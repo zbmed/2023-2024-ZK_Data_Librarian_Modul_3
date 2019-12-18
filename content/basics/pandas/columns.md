@@ -80,10 +80,42 @@ Im zweiten Beispiel wurde der Logarithmus auf den Werten der Spalte `Total Renew
 
 
 {{% customnotice exercise %}}
-- Die Spalte `Circulation Active Year` ist als Text und nicht als Zahl abgespeichert! Konvertieren Sie die Spalte in ein numerisches Format:
-  ```python
-  pd.to_numeric(df['Circulation Active Year'], errors='coerce')
-  ```
-  Überschreiben Sie die ursprüngliche Variable mit den neuen Werten.
-- Erstellen Sie eine neue Variable `'Membership Duration'` die die Zeit **in Jahren** zwischen der Registrierung im System und der letzten Ausleihaktivität des Kunden enthält.
+
+### Fallstudie: Feature Engineering
+
+Ziel ist es, eine neue Variable `Membership Duration` zu erstellen, die für jeden Kunden die aktive Mitgliedschaft in Monaten seit der Registrierung misst. Die aktive Mitgliedschaft wird definiert als:
+
+```shell
+'Membership Duration' = ('Circulation Active Year' - 'Year Patron Registered')*12 + 'Circulation Active Month'
+```
+
+1. Die Spalte `Circulation Active Year` ist als Text und nicht als Zahl abgespeichert! Konvertieren Sie die Spalte in ein numerisches Format. Überschreiben Sie die ursprüngliche Variable mit den neuen Werten.
+
+
+```python
+pd.to_numeric(
+  df['Circulation Active Year'], errors='coerce'
+)
+```
+
+
+  2. Die Spalte `Circulation Active Month` muss in ein numerisches Format konvertiert werden. Nutzen Sie dazu den folgenden Code:
+
+```python
+df['Circulation Active Month'] = pd.to_datetime(
+  df['Circulation Active Month'],
+  errors='coerce',
+  format="%B"
+)
+df['Circulation Active Month'] = df['Circulation Active Month'].dt.month
+```
+
+  3. Berechnen Sie nun die aktive Mitgliedschaftsdauer in Monaten wie oben definiert.
+
+  4. Nehmen Sie an, dass Einträge mit fehlenden Werten eine aktive Mitgliedschaft von Null Monaten bedeuten. Ersetzen Sie dazu alle `NaN` values in der neuen Variable mit der Zahl `0`:
+
+```python
+df['Membership Duration'].fillna(0, inplace=True)
+```
+
 {{% /customnotice %}}

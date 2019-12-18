@@ -41,6 +41,12 @@ Das Standard-Paket um mit Datentabellen in Python zu arbeiten, ist `pandas`. Das
 {{% customnotice exercise %}}
 1. Erstellen Sie ein Jupyter Notebook in Ihrem [Projektordner](/data-librarian/organisation/dataset/) unter `./notebooks`.
 2. Führen Sie die Beispiele in den folgenden Kurseinheiten im Notebook aus.
+3. Nach dieser Einheit sollten sie die folgenden Fragen beantworten können:
+    - Wie kann ich Tabellendaten in pandas einlesen?
+    - Wie werden Daten in pandas angeordnet?
+    - Welche Datentypen können Spalten eines DataFrames annehmen?
+    - Wie kann ich einzelne Spalten oder Zeilen eines DataFrames auswählen?
+
 {{% /customnotice %}}
 
 
@@ -58,12 +64,13 @@ data-librarian-3
 
 
 
-### What is Pandas? Introduction Video by Giles McMullen ( Untertitel auswählbar)
+#### What is Pandas? Introduction Video by Giles McMullen ( Untertitel auswählbar)
 
 {{< youtube dcqPhpY7tWk >}}
 
+---
 
-### Weitere Ressourcen
+#### Weitere Ressourcen
 
 - Python Data Analaysis [Tutorials](https://www.featureranking.com/tutorials/python-tutorials/)
 - Interaktive Python Online-Tutorials auf [learnpython.org](https://www.learnpython.org/en/)
