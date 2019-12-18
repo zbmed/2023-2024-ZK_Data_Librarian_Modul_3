@@ -9,28 +9,28 @@
 
     <link rel="icon" href="/data-librarian/images/favicon.png" type="image/png">
 
-    <title>Grundlagen :: data librarian - modul 3 - daten analysieren und verstehen</title>
+    <title>Lösungen zu den Kursaufgaben :: data librarian - modul 3 - daten analysieren und verstehen</title>
 
     
-    <link href="/data-librarian/css/nucleus.css?1576672524" rel="stylesheet">
-    <link href="/data-librarian/css/fontawesome-all.min.css?1576672524" rel="stylesheet">
-    <link href="/data-librarian/css/hybrid.css?1576672524" rel="stylesheet">
-    <link href="/data-librarian/css/featherlight.min.css?1576672524" rel="stylesheet">
-    <link href="/data-librarian/css/perfect-scrollbar.min.css?1576672524" rel="stylesheet">
-    <link href="/data-librarian/css/auto-complete.css?1576672524" rel="stylesheet">
-    <link href="/data-librarian/css/atom-one-dark-reasonable.css?1576672524" rel="stylesheet">
-    <link href="/data-librarian/css/theme.css?1576672524" rel="stylesheet">
-    <link href="/data-librarian/css/hugo-theme.css?1576672524" rel="stylesheet">
+    <link href="/data-librarian/css/nucleus.css?1576672523" rel="stylesheet">
+    <link href="/data-librarian/css/fontawesome-all.min.css?1576672523" rel="stylesheet">
+    <link href="/data-librarian/css/hybrid.css?1576672523" rel="stylesheet">
+    <link href="/data-librarian/css/featherlight.min.css?1576672523" rel="stylesheet">
+    <link href="/data-librarian/css/perfect-scrollbar.min.css?1576672523" rel="stylesheet">
+    <link href="/data-librarian/css/auto-complete.css?1576672523" rel="stylesheet">
+    <link href="/data-librarian/css/atom-one-dark-reasonable.css?1576672523" rel="stylesheet">
+    <link href="/data-librarian/css/theme.css?1576672523" rel="stylesheet">
+    <link href="/data-librarian/css/hugo-theme.css?1576672523" rel="stylesheet">
 
 
 
     
-      <link href="/data-librarian/css/theme-green.css?1576672524" rel="stylesheet">
+      <link href="/data-librarian/css/theme-green.css?1576672523" rel="stylesheet">
     
-    <link href="/data-librarian/css/custom.css?1576672524" rel="stylesheet">
+    <link href="/data-librarian/css/custom.css?1576672523" rel="stylesheet">
 
 
-    <script src="/data-librarian/js/jquery-3.3.1.min.js?1576672524"></script>
+    <script src="/data-librarian/js/jquery-3.3.1.min.js?1576672523"></script>
 
 
 
@@ -42,7 +42,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/data-librarian/basics/">
+  <body class="" data-url="/data-librarian/solutions/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -62,14 +62,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/data-librarian/js/lunr.min.js?1576672524"></script>
-<script type="text/javascript" src="/data-librarian/js/auto-complete.js?1576672524"></script>
+<script type="text/javascript" src="/data-librarian/js/lunr.min.js?1576672523"></script>
+<script type="text/javascript" src="/data-librarian/js/auto-complete.js?1576672523"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/bonartm.github.io\/data-librarian\/";
     
 </script>
-<script type="text/javascript" src="/data-librarian/js/search.js?1576672524"></script>
+<script type="text/javascript" src="/data-librarian/js/search.js?1576672523"></script>
 
     
   </div>
@@ -386,8 +386,8 @@
   
     
     <li data-nav-id="/data-librarian/basics/" title="Grundlagen" class="dd-item 
-        parent
-        active
+        
+        
         
         ">
       <a href="/data-librarian/basics/">
@@ -1192,6 +1192,8 @@
                         </a>
                     </span>
                   
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
                   <span class="links">
                  
                  
@@ -1202,7 +1204,7 @@
             
           
           
-            <a href='/data-librarian/'>Modul 3</a> > Grundlagen
+            <a href='/data-librarian/'>Modul 3</a> > Lösungen zu den Kursaufgaben
           
         
           
@@ -1211,6 +1213,24 @@
                   </span>
                 </div>
                 
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#kursorganisation-und-vorbereitung">Kursorganisation und Vorbereitung</a></li>
+        <li><a href="#grundlagen">Grundlagen</a></li>
+        <li><a href="#deskriptive-statistik-und-visualisierungen">Deskriptive Statistik und Visualisierungen</a></li>
+        <li><a href="#inferenzstatistik">Inferenzstatistik</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
               </div>
             </div>
             
@@ -1218,40 +1238,555 @@
         
         </div>
         
-          <div id="chapter">
-        
         <div id="body-inner">
+          
+            <h1>
+              
+              Lösungen zu den Kursaufgaben
+            </h1>
           
 
         
 
 
-
-	<h3 id="2701--0202">27.01 – 02.02</h3>
-<h1 id="grundlagen-der-datenanalyse-in-python">Grundlagen der Datenanalyse in Python</h1>
-<p>Diese Einheit gibt eine Einführung in die Aufgaben und grundlegenden Begriffe der angewandten Statistik. Im zweiten Teil wird das <code>pandas</code> Paket vorgestellt und gezeigt, wie Datensätze eingelesen und bearbeitet werden können.</p>
-<h2 id="ziele">Ziele</h2>
-<ul>
-<li>Beschreiben Sie Datensätze mit dem statistischen Grundvokabular</li>
-<li>Lesen Sie Datensätze als <code>DataFrame</code>s in Python ein und aus</li>
-<li>Filtern Sie <code>DataFrame</code>s nach Spalten oder Zeilen</li>
-<li>Erstellen Sie neue Variablen
-
-<div class="customnotices">
-  <div class="notices_inner" id="exercise">
-    <h3 id="projektaufgabe">Projektaufgabe</h3>
-<p>Die Pressestelle der San Francisco Public Library möchte einen Online-Artikel zum Kundenstamm der Bibliothek erstellen. Dazu hat sie Ihnen <a href="/data-librarian/organisation/dataset/">einen Datensatz</a> geschickt, den Sie auswerten sollen.</p>
+<p>Im Laufe des Kurses werden hier die Lösungen zu den einzelnen Aufgaben hochgeladen. Die Projektaufgaben werden am Präsenztag gesammelt besprochen.</p>
+<h3 id="kursorganisation-und-vorbereitung">Kursorganisation und Vorbereitung</h3>
+<h4 id="quiz">Quiz</h4>
 <ol>
-<li>Erstellen Sie eine Beschreibung des Datensatzes unter Verwendung des <a href="/data-librarian/basics/basic_terms/">statistischen Grundvokabulars</a>.</li>
-<li>Lesen Sie <a href="/data-librarian/organisation/dataset/">den Datensatz</a> ein und berechnen Sie <a href="/data-librarian/basics/pandas">neue Variablen</a></li>
-<li>Senden Sie bis Freitag Ihre Beschreibung zusammen mit den Berechnungen in Form eines integrierten <em>Python Notebooks</em> an <a href="mailto:malte@bonart.de">malte@bonart.de</a>.</li>
+<li>Strg+R</li>
+<li><a href="https://docs.anaconda.com/anaconda/packages/pkg-docs/">https://docs.anaconda.com/anaconda/packages/pkg-docs/</a></li>
+<li><code>len(df)</code></li>
+<li><a href="https://seaborn.pydata.org/introduction.html">https://seaborn.pydata.org/introduction.html</a></li>
 </ol>
-
-  </div>
-</div>
+<h3 id="grundlagen">Grundlagen</h3>
+<h4 id="grundbegriffe">Grundbegriffe</h4>
+<ul>
+<li>Wie viele Merkmale besitzt der Datensatz? 15.</li>
+<li>Wie groß ist die Stichprobengröße des Datensatzes? 423448.</li>
+<li>Wer oder was sind die Merkmalsträger? Bibliothekskunden der SF Public Library.</li>
+<li>Von wann bis wann wurden die Daten erhoben? Das Bibliothekssystem wurde 2003 installiert. Die Daten reichen bis 2016.</li>
+<li>Wie lässt sich die Grundgesamtheit beschreiben? Handelt es sich um eine Vollerhebung? Grundgesamtheit sind alle Bibliothekskunden der San Francisco Library. Wahrscheinlich handelt es sich um eine Vollerhebung. Es lässt sich diskutieren, ob die Grundgesamtheit größer gefasst werden kann (z.B. alle Kunden von Bibliotheken in den USA oder alle Kunden von öffentlichen Bibliotheken). Sind die Daten repräsentativ für diese Grundgesamtheiten?</li>
+<li>Welche Merkmale sind stetig? Welche diskret?
+<ul>
+<li>Die Variablen <code>Total Checkouts</code> und <code>Total Renewals</code> sind stetig, alle anderen diskret.</li>
+</ul>
+</li>
+<li>Welchem Skalenniveau entsprechen die einzelnen Merkmale (Nominal-, Ordinal- oder Metrische Skala)?
+<ul>
+<li>Metrisch: <code>Total Checkouts</code>, <code>Total Renewals</code>, <code>Circulation Active Year</code>, <code>Year Patron registered</code></li>
+<li>Ordinal: <code>Age Range</code></li>
+<li>Nominal: Der Rest</li>
+</ul>
+</li>
+<li>Enthält der Datensatz fehlende Werte?
+<ul>
+<li>Ja, z.B. <code>Age Range</code></li>
+</ul>
+</li>
+<li>Handelt es sich um Querschnitts-, Längsschnitss- oder Paneldaten?
+<ul>
+<li>Querschnittsdaten</li>
+</ul>
 </li>
 </ul>
+<h4 id="series-und-dataframes">Series und DataFrames</h4>
+<ul>
+<li><code>month</code>: nominal (oder ordinal, wenn z.B. Dez &gt; Jan gilt.), diskret, <code>object</code></li>
+<li><code>temp</code>: metrisch, stetig, <code>int</code></li>
+<li><code>below_zero</code>: nominal, diskret, <code>boolean</code></li>
+</ul>
+<h4 id="datenrundreise">Datenrundreise</h4>
 
+<section class="attachments ">
+	<label>
+		<i class="fas fa-paperclip" aria-hidden="true"></i>
+		Lösungen
+	</label>
+	
+		
+	
+	<div class="attachments-files">
+	
+		
+		
+			
+		
+	
+		
+		
+			
+		
+	
+		
+		
+			
+		
+	
+		
+		
+			
+				<li>
+					<a href="/data-librarian/solutions.files/solutions_datenrundreise.ipynb" >
+						solutions_datenrundreise.ipynb
+					</a>
+					(35 ko)
+				</li>
+			
+		
+	
+		
+		
+			
+		
+	
+		
+		
+			
+		
+	
+		
+		
+			
+		
+	
+	<div>
+	
+</section>
+
+
+<h4 id="exkurs-einlesen-von-daten">Exkurs: Einlesen von Daten</h4>
+<ul>
+<li>In Linux kann z.B. mit dem <code>free</code> Kommando der freie Speicherplatz ermittelt werden. Bei 16 Gigabyte Arbeitsspeicher werden ca. 3 Gigabyte vom System verbraucht.</li>
+<li>12 Gigabyte sind 12 000 000 000 Bytes. Somit können theoretisch 1 500 000 000 Zahlen vom Typ <code>int64</code> eingelesen werden.</li>
+<li>Eine Tabelle mit 100 Variablen kann somit 120 Millionen Beobachtungen enthalten.</li>
+<li>Der Library Datensatz verbraucht ca. 220 Megabyte im Arbeitsspeicher (<code>df.info(memory_usage='deep')</code>).</li>
+</ul>
+<h4 id="spalten-und-zeilen">Spalten und Zeilen</h4>
+
+<section class="attachments ">
+	<label>
+		<i class="fas fa-paperclip" aria-hidden="true"></i>
+		Lösungen
+	</label>
+	
+		
+	
+	<div class="attachments-files">
+	
+		
+		
+			
+		
+	
+		
+		
+			
+		
+	
+		
+		
+			
+		
+	
+		
+		
+			
+		
+	
+		
+		
+			
+		
+	
+		
+		
+			
+		
+	
+		
+		
+			
+				<li>
+					<a href="/data-librarian/solutions.files/solutions_selection.ipynb" >
+						solutions_selection.ipynb
+					</a>
+					(6 ko)
+				</li>
+			
+		
+	
+	<div>
+	
+</section>
+
+
+<h4 id="fehlende-werte">Fehlende Werte</h4>
+<ul>
+<li><code>None</code> ist ein spezieller Datentyp in Python der fehlende Objekte oder Variablen bezeichnet.</li>
+<li><code>5</code> ist eine ganzzahlige Zahl vom Typ <code>int</code></li>
+<li><code>True</code> ist eine binäre Zahl vom Typ <code>boolean</code></li>
+<li>Die entsprechenden Ausdrücke in <code>&quot;&quot;</code> repräsentieren jeweils einen <strong>Text</strong> vom Typ <code>str</code> (oder <code>object</code> in pandas)</li>
+</ul>
+
+<section class="attachments ">
+	<label>
+		<i class="fas fa-paperclip" aria-hidden="true"></i>
+		Weitere Lösungen
+	</label>
+	
+		
+	
+	<div class="attachments-files">
+	
+		
+		
+			
+		
+	
+		
+		
+			
+		
+	
+		
+		
+			
+		
+	
+		
+		
+			
+		
+	
+		
+		
+			
+		
+	
+		
+		
+			
+				<li>
+					<a href="/data-librarian/solutions.files/solutions_na.ipynb" >
+						solutions_na.ipynb
+					</a>
+					(4 ko)
+				</li>
+			
+		
+	
+		
+		
+			
+		
+	
+	<div>
+	
+</section>
+
+
+<h4 id="quiz-1">Quiz</h4>
+<ul>
+<li><a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_excel.html">https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_excel.html</a></li>
+<li><code>len(df)</code> oder <code>df.shape[0]</code></li>
+<li><code>df['Age Range'].isna().sum()</code></li>
+<li><code>len(df[(df['Age Range'] == '60 to 64 years') &amp; (df['Circulation Active Year'] == '2016')])</code></li>
+</ul>
+<h3 id="deskriptive-statistik-und-visualisierungen">Deskriptive Statistik und Visualisierungen</h3>
+<h4 id="lagemae">Lagemaße</h4>
+<p>Der Median ist robust gegenüber Ausreißern, da er nicht auf den absoluten sondern nur auf der relativen Reihung der Beobachtungen basiert. Wird beispielsweise der größte Wert einer Messreihe um den Faktor 1000 tausend vergrößert, so ändert sicht der Median nicht.</p>
+<p>Der Mittelwert hingegen basiert auf den absoluten Werten. Da die Variable <code>Total Checkouts</code> einige wenige sehr große Ausreißer enthält, ist der Mittelwert hier viel größer.</p>
+<h4 id="symmetrie-und-schiefe">Symmetrie und Schiefe</h4>
+<p>Von oben links nach unten rechts:</p>
+<ul>
+<li>Bimodal, Symmetrisch</li>
+<li>Unimodal, Linksschief/ Rechtssteil</li>
+<li>Unimodal, Linksschief/ Rechtssteil</li>
+<li>Unimodal, Rechtsschief/ Linkssteil</li>
+<li>Kein Modus, Symmetrisch, Gleichverteilung</li>
+<li>Unimodal, Linksschief/ Rechtssteil</li>
+<li>Unimodal, Rechtsschief/ Linkssteil</li>
+<li>Unimodal, Rechtsschief/ Linkssteil</li>
+<li>Unimodal, Symmetrisch</li>
+</ul>
+<h4 id="symmetrie-fallstudie">Symmetrie: Fallstudie</h4>
+
+<section class="attachments ">
+	<label>
+		<i class="fas fa-paperclip" aria-hidden="true"></i>
+		Lösungen
+	</label>
+	
+		
+	
+	<div class="attachments-files">
+	
+		
+		
+			
+		
+	
+		
+		
+			
+		
+	
+		
+		
+			
+				<li>
+					<a href="/data-librarian/solutions.files/solutions_case_study.ipynb" >
+						solutions_case_study.ipynb
+					</a>
+					(49 ko)
+				</li>
+			
+		
+	
+		
+		
+			
+		
+	
+		
+		
+			
+		
+	
+		
+		
+			
+		
+	
+		
+		
+			
+		
+	
+	<div>
+	
+</section>
+
+
+<h4 id="korrelation-anscombe-quartett">Korrelation: Anscombe-Quartett</h4>
+
+<section class="attachments ">
+	<label>
+		<i class="fas fa-paperclip" aria-hidden="true"></i>
+		Lösungen
+	</label>
+	
+		
+	
+	<div class="attachments-files">
+	
+		
+		
+			
+		
+	
+		
+		
+			
+				<li>
+					<a href="/data-librarian/solutions.files/solutions_anscombe.ipynb" >
+						solutions_anscombe.ipynb
+					</a>
+					(37 ko)
+				</li>
+			
+		
+	
+		
+		
+			
+		
+	
+		
+		
+			
+		
+	
+		
+		
+			
+		
+	
+		
+		
+			
+		
+	
+		
+		
+			
+		
+	
+	<div>
+	
+</section>
+
+
+<h4 id="fox-news">Fox News</h4>
+<p>Die Balkendiagramme beginnen nicht im Nullpunkt. Somit werden die relativen Unterschiede viel größer dargestellt, als sie in Wahrheit sind.</p>
+<h4 id="quiz-2">Quiz</h4>
+<ul>
+<li>rechtsschief</li>
+<li><code>df['Provided Email Address'][df['Age Range'] == '0 to 9 years'].sum()</code></li>
+<li><code>df['Total Checkouts'].quantile(0.60)</code></li>
+<li><code>df['Age Range'].mode()</code></li>
+<li><code>df['Total Renewals'].quantile([0.25, 0.75]).diff()</code></li>
+</ul>
+<h3 id="inferenzstatistik">Inferenzstatistik</h3>
+
+<section class="attachments ">
+	<label>
+		<i class="fas fa-paperclip" aria-hidden="true"></i>
+		Lösungen
+	</label>
+	
+		
+	
+	<div class="attachments-files">
+	
+		
+		
+			
+		
+	
+		
+		
+			
+		
+	
+		
+		
+			
+		
+	
+		
+		
+			
+		
+	
+		
+		
+			
+				<li>
+					<a href="/data-librarian/solutions.files/solutions_inference.ipynb" >
+						solutions_inference.ipynb
+					</a>
+					(1 ko)
+				</li>
+			
+		
+	
+		
+		
+			
+		
+	
+		
+		
+			
+		
+	
+	<div>
+	
+</section>
+
+
+
+<section class="attachments ">
+	<label>
+		<i class="fas fa-paperclip" aria-hidden="true"></i>
+		Alle Lösungen
+	</label>
+	
+		
+	
+	<div class="attachments-files">
+	
+		
+		
+			
+		
+	
+		
+		
+			
+				<li>
+					<a href="/data-librarian/solutions.files/solutions_anscombe.ipynb" >
+						solutions_anscombe.ipynb
+					</a>
+					(37 ko)
+				</li>
+			
+		
+	
+		
+		
+			
+				<li>
+					<a href="/data-librarian/solutions.files/solutions_case_study.ipynb" >
+						solutions_case_study.ipynb
+					</a>
+					(49 ko)
+				</li>
+			
+		
+	
+		
+		
+			
+				<li>
+					<a href="/data-librarian/solutions.files/solutions_datenrundreise.ipynb" >
+						solutions_datenrundreise.ipynb
+					</a>
+					(35 ko)
+				</li>
+			
+		
+	
+		
+		
+			
+				<li>
+					<a href="/data-librarian/solutions.files/solutions_inference.ipynb" >
+						solutions_inference.ipynb
+					</a>
+					(1 ko)
+				</li>
+			
+		
+	
+		
+		
+			
+				<li>
+					<a href="/data-librarian/solutions.files/solutions_na.ipynb" >
+						solutions_na.ipynb
+					</a>
+					(4 ko)
+				</li>
+			
+		
+	
+		
+		
+			
+				<li>
+					<a href="/data-librarian/solutions.files/solutions_selection.ipynb" >
+						solutions_selection.ipynb
+					</a>
+					(6 ko)
+				</li>
+			
+		
+	
+	<div>
+	
+</section>
 
 
 
@@ -1260,8 +1795,7 @@
 	
 </footer>
 
-        
-            </div> 
+
         
         </div>
         
@@ -1522,7 +2056,6 @@
             
                 
                     
-                    
                 
                 
 
@@ -1537,9 +2070,6 @@
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -2046,10 +2576,8 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/data-librarian/organisation/quiz_intro/" title="Recap: Quiz"> <i class="fa fa-chevron-left"></i></a>
 		
-		
-			<a class="nav nav-next" href="/data-librarian/basics/ml/" title="Statistik, Data Science und Machine Learning" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/data-librarian/organisation/" title="Kursorganisation und Vorbereitungen" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -2059,19 +2587,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/data-librarian/js/clipboard.min.js?1576672524"></script>
-    <script src="/data-librarian/js/perfect-scrollbar.min.js?1576672524"></script>
-    <script src="/data-librarian/js/perfect-scrollbar.jquery.min.js?1576672524"></script>
-    <script src="/data-librarian/js/jquery.sticky.js?1576672524"></script>
-    <script src="/data-librarian/js/featherlight.min.js?1576672524"></script>
-    <script src="/data-librarian/js/highlight.pack.js?1576672524"></script>
+    <script src="/data-librarian/js/clipboard.min.js?1576672523"></script>
+    <script src="/data-librarian/js/perfect-scrollbar.min.js?1576672523"></script>
+    <script src="/data-librarian/js/perfect-scrollbar.jquery.min.js?1576672523"></script>
+    <script src="/data-librarian/js/jquery.sticky.js?1576672523"></script>
+    <script src="/data-librarian/js/featherlight.min.js?1576672523"></script>
+    <script src="/data-librarian/js/highlight.pack.js?1576672523"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/data-librarian/js/modernizr.custom-3.6.0.js?1576672524"></script>
-    <script src="/data-librarian/js/learn.js?1576672524"></script>
-    <script src="/data-librarian/js/hugo-learn.js?1576672524"></script>
+    <script src="/data-librarian/js/modernizr.custom-3.6.0.js?1576672523"></script>
+    <script src="/data-librarian/js/learn.js?1576672523"></script>
+    <script src="/data-librarian/js/hugo-learn.js?1576672523"></script>
 
-    <link href="/data-librarian/mermaid/mermaid.css?1576672524" rel="stylesheet" />
-    <script src="/data-librarian/mermaid/mermaid.js?1576672524"></script>
+    <link href="/data-librarian/mermaid/mermaid.css?1576672523" rel="stylesheet" />
+    <script src="/data-librarian/mermaid/mermaid.js?1576672523"></script>
 
     <script>
         mermaid.initialize({ startOnLoad: true });
@@ -2115,3 +2643,4 @@
 
   </body>
 </html>
+

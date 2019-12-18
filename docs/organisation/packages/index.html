@@ -12,25 +12,25 @@
     <title>Python Pakete und Bibliothekten :: data librarian - modul 3 - daten analysieren und verstehen</title>
 
     
-    <link href="/data-librarian/css/nucleus.css?1576606102" rel="stylesheet">
-    <link href="/data-librarian/css/fontawesome-all.min.css?1576606102" rel="stylesheet">
-    <link href="/data-librarian/css/hybrid.css?1576606102" rel="stylesheet">
-    <link href="/data-librarian/css/featherlight.min.css?1576606102" rel="stylesheet">
-    <link href="/data-librarian/css/perfect-scrollbar.min.css?1576606102" rel="stylesheet">
-    <link href="/data-librarian/css/auto-complete.css?1576606102" rel="stylesheet">
-    <link href="/data-librarian/css/atom-one-dark-reasonable.css?1576606102" rel="stylesheet">
-    <link href="/data-librarian/css/theme.css?1576606102" rel="stylesheet">
-    <link href="/data-librarian/css/hugo-theme.css?1576606102" rel="stylesheet">
+    <link href="/data-librarian/css/nucleus.css?1576672524" rel="stylesheet">
+    <link href="/data-librarian/css/fontawesome-all.min.css?1576672524" rel="stylesheet">
+    <link href="/data-librarian/css/hybrid.css?1576672524" rel="stylesheet">
+    <link href="/data-librarian/css/featherlight.min.css?1576672524" rel="stylesheet">
+    <link href="/data-librarian/css/perfect-scrollbar.min.css?1576672524" rel="stylesheet">
+    <link href="/data-librarian/css/auto-complete.css?1576672524" rel="stylesheet">
+    <link href="/data-librarian/css/atom-one-dark-reasonable.css?1576672524" rel="stylesheet">
+    <link href="/data-librarian/css/theme.css?1576672524" rel="stylesheet">
+    <link href="/data-librarian/css/hugo-theme.css?1576672524" rel="stylesheet">
 
 
 
     
-      <link href="/data-librarian/css/theme-green.css?1576606102" rel="stylesheet">
+      <link href="/data-librarian/css/theme-green.css?1576672524" rel="stylesheet">
     
-    <link href="/data-librarian/css/custom.css?1576606102" rel="stylesheet">
+    <link href="/data-librarian/css/custom.css?1576672524" rel="stylesheet">
 
 
-    <script src="/data-librarian/js/jquery-3.3.1.min.js?1576606102"></script>
+    <script src="/data-librarian/js/jquery-3.3.1.min.js?1576672524"></script>
 
 
 
@@ -62,14 +62,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/data-librarian/js/lunr.min.js?1576606102"></script>
-<script type="text/javascript" src="/data-librarian/js/auto-complete.js?1576606102"></script>
+<script type="text/javascript" src="/data-librarian/js/lunr.min.js?1576672524"></script>
+<script type="text/javascript" src="/data-librarian/js/auto-complete.js?1576672524"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/bonartm.github.io\/data-librarian\/";
     
 </script>
-<script type="text/javascript" src="/data-librarian/js/search.js?1576606102"></script>
+<script type="text/javascript" src="/data-librarian/js/search.js?1576672524"></script>
 
     
   </div>
@@ -695,9 +695,9 @@
  
   
     
-      <li data-nav-id="/data-librarian/basics/quiz_pandas/" title="Quiz: Pandas-Bibliothek" class="dd-item ">
+      <li data-nav-id="/data-librarian/basics/quiz_pandas/" title="Recap: Quiz" class="dd-item ">
         <a href="/data-librarian/basics/quiz_pandas/">
-        Quiz: Pandas-Bibliothek
+        Recap: Quiz
         <i class="fas fa-check read-icon"></i>
         </a>
     </li>
@@ -1010,9 +1010,9 @@
  
   
     
-      <li data-nav-id="/data-librarian/descriptive_statistics/quiz_statistics/" title="Quiz: Deskriptive Statistik" class="dd-item ">
+      <li data-nav-id="/data-librarian/descriptive_statistics/quiz_statistics/" title="Recap: Quiz" class="dd-item ">
         <a href="/data-librarian/descriptive_statistics/quiz_statistics/">
-        Quiz: Deskriptive Statistik
+        Recap: Quiz
         <i class="fas fa-check read-icon"></i>
         </a>
     </li>
@@ -1131,7 +1131,7 @@
         <ul>
           
               <li> 
-                  <a class="padding" href="https://bonartm.github.io/data-librarian/cheatsheet/"><i class='fas fa-cookie-bite'></i> Python Cheat Sheet</a>
+                  <a class="padding" href="https://bonartm.github.io/data-librarian/solutions/"><i class='fas fa-cookie-bite'></i> Lösungen zu den Kursaufgaben</a>
               </li>
           
               <li> 
@@ -1236,137 +1236,31 @@
 
 
 
-	<p>Die folgende Liste gibt einen kurzen Überblick über die wichtigsten Python Bibliotheken, von denen Sie manche im Modul näher kennenlernen werden.</p>
-<p>Im ersten Teil des Modules werden wir mit <code>pandas</code> und <code>seaborn</code> arbeiten.</p>
+	<p>Die folgende Liste gibt einen kurzen Überblick über die wichtigsten Python Bibliotheken, von denen Sie manche im Modul näher kennenlernen werden. Im ersten Teil des Modules werden wir hauptsächlich mit <code>pandas</code> und <code>seaborn</code> arbeiten.</p>
 
-
-
-
-
-
-
-<ul class="children children-li">
-	
-
-	
-		
-	
-
-	
-
-	
-		
-	
-		
-			
-				
-<li>
-<a href="/data-librarian/organisation/packages/numpy/" >numpy</a>
+<div class="customnotices">
+  <div class="notices_inner" id="tip">
+    <h4 id="programming-recap">Programming Recap</h4>
+<ul>
+<li>Module, Paket, Library
+<ul>
+<li>Ein Python Skript mit der Endung <code>.py</code> wird Modul genannt.</li>
+<li>Eine Sammlung von Modulen in einem Ordner, wird Paket (<code>package</code>) genannt.</li>
+<li>Eine Sammlung von Paketen innerhalb eines größeren Projekts wird Bibliothek (<code>library</code>) genannt.</li>
+<li>Ein <code>framework</code> ist eine große grundlegende Bibliothek, mit einem bestimmten Zweck und mit vielen Paketen, die voneinander abhängen und aufeinander aufbauen.</li>
+<li>Die Begriffe werden aber nicht einheitlich benutzt und der Übergang ist oft fließend.</li>
+</ul>
 </li>
-				
-
-				
-					
-<p>Effizientes Handling und Bearbeitung von numerischen Arrays.</p>
-					
-				
-			
-			
-		
-	
-		
-			
-				
-<li>
-<a href="/data-librarian/organisation/packages/pandas/" >pandas</a>
-</li>
-				
-
-				
-					
-<p>Bearbeitung, Transformation, Aggregation und Zusammenfassung von Datensätzen. Baut auf numpy auf.</p>
-					
-				
-			
-			
-		
-	
-		
-			
-				
-<li>
-<a href="/data-librarian/organisation/packages/matplotlib/" >matplotlib</a>
-</li>
-				
-
-				
-					
-<p>Bietet 2D Plotting Funktionalitäten.</p>
-					
-				
-			
-			
-		
-	
-		
-			
-				
-<li>
-<a href="/data-librarian/organisation/packages/seaborn/" >seaborn</a>
-</li>
-				
-
-				
-					
-<p>Verbesserung und Weiterentwicklung der matplotlib Bibliothek.</p>
-					
-				
-			
-			
-		
-	
-		
-			
-				
-<li>
-<a href="/data-librarian/organisation/packages/scipy/" >scipy</a>
-</li>
-				
-
-				
-					
-<p>Funktionen und Methoden aus der Statistik.</p>
-					
-				
-			
-			
-		
-	
-		
-			
-				
-<li>
-<a href="/data-librarian/organisation/packages/scikitlearn/" >scitkit-learn</a>
-</li>
-				
-
-				
-					
-<p>Bietet Funktionen und Methoden für maschinelles Lernen.</p>
-					
-				
-			
-			
-		
-	
-
-	
+<li>Kommentare stehen immer hinter dem <code>#</code> Zeichen.</li>
+<li>Text steht immer in Anführungszeichen, z.B <code>&quot;hallo&quot;</code> oder <code>'hi'</code>.</li>
+<li>Mit dem <code>import</code> Befehl können externe Bibliotheken mit mehr Funktionalitäten geladen werden.</li>
+<li>Mit dem Zuweisungsoperator <code>=</code> können Objekte einem Variablennamen oder einem Funktionswert zugeordnet werden, z.B: <code>x = 1</code>, <code>text = 'hallo'</code>.</li>
+<li>Funktionen werden mit runden Klammern aufgerufen und können Funktionsargumente besitzen, z.B. <code>sum([1, 2, 3])</code>.</li>
+<li>Viele Funktionen sind Bestandteil von Bibliotheken und werden dann wie folgt aufgerufen: <code>&lt;paketname&gt;.&lt;funktionsname&gt;(&lt;funktionsargumente&gt;)</code></li>
 </ul>
 
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-
-
+  </div>
+</div>
 
 
 
@@ -2175,19 +2069,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/data-librarian/js/clipboard.min.js?1576606102"></script>
-    <script src="/data-librarian/js/perfect-scrollbar.min.js?1576606102"></script>
-    <script src="/data-librarian/js/perfect-scrollbar.jquery.min.js?1576606102"></script>
-    <script src="/data-librarian/js/jquery.sticky.js?1576606102"></script>
-    <script src="/data-librarian/js/featherlight.min.js?1576606102"></script>
-    <script src="/data-librarian/js/highlight.pack.js?1576606102"></script>
+    <script src="/data-librarian/js/clipboard.min.js?1576672524"></script>
+    <script src="/data-librarian/js/perfect-scrollbar.min.js?1576672524"></script>
+    <script src="/data-librarian/js/perfect-scrollbar.jquery.min.js?1576672524"></script>
+    <script src="/data-librarian/js/jquery.sticky.js?1576672524"></script>
+    <script src="/data-librarian/js/featherlight.min.js?1576672524"></script>
+    <script src="/data-librarian/js/highlight.pack.js?1576672524"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/data-librarian/js/modernizr.custom-3.6.0.js?1576606102"></script>
-    <script src="/data-librarian/js/learn.js?1576606102"></script>
-    <script src="/data-librarian/js/hugo-learn.js?1576606102"></script>
+    <script src="/data-librarian/js/modernizr.custom-3.6.0.js?1576672524"></script>
+    <script src="/data-librarian/js/learn.js?1576672524"></script>
+    <script src="/data-librarian/js/hugo-learn.js?1576672524"></script>
 
-    <link href="/data-librarian/mermaid/mermaid.css?1576606102" rel="stylesheet" />
-    <script src="/data-librarian/mermaid/mermaid.js?1576606102"></script>
+    <link href="/data-librarian/mermaid/mermaid.css?1576672524" rel="stylesheet" />
+    <script src="/data-librarian/mermaid/mermaid.js?1576672524"></script>
 
     <script>
         mermaid.initialize({ startOnLoad: true });

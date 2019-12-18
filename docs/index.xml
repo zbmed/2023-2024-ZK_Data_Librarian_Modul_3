@@ -11,15 +11,6 @@
     
     
     <item>
-      <title>Cheat Sheet</title>
-      <link>https://bonartm.github.io/data-librarian/cheatsheet/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://bonartm.github.io/data-librarian/cheatsheet/</guid>
-      <description>Other Resources  https://librarycarpentry.org/ https://automatetheboringstuff.com/ https://librarycarpentry.org/lc-python-intro/  read in .csv files import pandas as pd file_path = &amp;#39;./Library_Usage.csv&amp;#39; df = pd.read_csv(file_path) show column names and their types df.columns df.dtypes number of rows len(df) summarize functions df.head() df.tail() df.describe() filter on columns df[[&amp;#34;colA&amp;#34;, &amp;#34;colB&amp;#34;, &amp;#34;colC&amp;#34;]] filter on rows by index df.iloc[[1, 10, 15]] filter on rows by logical query df.loc[df[&amp;#34;colA&amp;#34;] &amp;gt; 100] some descriptive statistics for columns df[&amp;quot;colA&amp;quot;].max() df[&amp;quot;colA&amp;quot;].max() df[&amp;quot;colA&amp;quot;].mean() df[&amp;quot;colA&amp;quot;].median() df[&amp;quot;colA&amp;quot;].</description>
-    </item>
-    
-    <item>
       <title>Häufigkeiten</title>
       <link>https://bonartm.github.io/data-librarian/descriptive_statistics/univariate/frequency/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -28,6 +19,16 @@
       <description>Kategoriale (nominale und ordinale) Variablen werden in Häufigkeitstabellen zusammengefasst. Dabei wird für jede Ausprägung die Anzahl der Beobachtungen gezählt:
 import pandas as pd df = pd.read_csv(&amp;#34;../data/Library_Usage.csv&amp;#34;) df[&amp;#39;Age Range&amp;#39;].value_counts()    Mit der Funktion value_counts() können Sie sich absolute Häufigkeitstabellen ausgeben lassen. Mit dem zusätzlichen Argumentaufruf normalize=True werden relative Häufigkeiten berechnet:
 df[&amp;#39;Age Range&amp;#39;].value_counts(normalize=True)    Der Modus ist dabei die Merkmalsausprägung, die die meisten Beobachtungen besitzen: df[&amp;#39;Age Range&amp;#39;].mode()    Visualisierung Häufigkeitstabellen lassen sich idealerweise als Balkendiagramme visualisieren:</description>
+    </item>
+    
+    <item>
+      <title>Lösungen zu den Kursaufgaben</title>
+      <link>https://bonartm.github.io/data-librarian/solutions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bonartm.github.io/data-librarian/solutions/</guid>
+      <description>Im Laufe des Kurses werden hier die Lösungen zu den einzelnen Aufgaben hochgeladen. Die Projektaufgaben werden am Präsenztag gesammelt besprochen.
+Kursorganisation und Vorbereitung Quiz  Strg+R https://docs.anaconda.com/anaconda/packages/pkg-docs/ len(df) https://seaborn.pydata.org/introduction.html  Grundlagen Grundbegriffe  Wie viele Merkmale besitzt der Datensatz? 15. Wie groß ist die Stichprobengröße des Datensatzes? 423448. Wer oder was sind die Merkmalsträger? Bibliothekskunden der SF Public Library. Von wann bis wann wurden die Daten erhoben? Das Bibliothekssystem wurde 2003 installiert.</description>
     </item>
     
     <item>
@@ -131,7 +132,7 @@ Wenn beispielsweise der Mittelwert einer statistischen Variable berechnet wird, 
       <guid>https://bonartm.github.io/data-librarian/basics/pandas/functions/</guid>
       <description>In der kommenden Woche erhalten Sie einen Überblick über die vielen deskriptiven Statistiken, die sich mit pandas ausrechnen lassen. Hier noch einmal eine Zusammenfassung und ein erster Ausblick:
 Mit df.head() können Sie sich die ersten $n$ Zeilen eines DataFrames anzeigen lassen:
-import pandas as pd df = pd.read_csv(&amp;#34;../data/Library_Usage.csv&amp;#34;) df.head(n=20)    Mit df.info() erhalten Sie speicherbezogene Informationen über das Objekt. Mit df.describe() werden nützliche deskriptive Statistiken für alle numerischen Spalten eines Datensatzes ausgegeben.</description>
+import pandas as pd df = pd.read_csv(&amp;#34;../data/Library_Usage.csv&amp;#34;) df.head()    Schauen Sie sich die Dokumentation für die Funktion head() hier an. Wie können Sie sich die ersten $100$ Zeilen anzeigen lassen?</description>
     </item>
     
     <item>
@@ -200,8 +201,8 @@ Darüber hinaus bieten Notebooks die Möglichkeit Text, Visualisierungen und Cod
       
       <guid>https://bonartm.github.io/data-librarian/basics/basic_terms/</guid>
       <description>In der Kursumgebung finden Sie das Einführungskapitel des Buchs Statistik: Der Weg zur Datenanalyse zum alleinigen persönlichen Gebrauch hier im Kurs hinterlegt.1
-Der Text gibt einen Einstieg in die Aufgaben und Anwendungsbereiche der Statistik und erklärt die grundlegenden Begriffe, mit denen Daten und Datensätze charakterisiert werden können.
-Beantworten und diskutieren Sie folgende Fragen konkret für den San Francisco Library Usage Datensatz. Halten Sie Ihre Ergebnisse in Stichpunkten in einem Jupyter Notebook fest.</description>
+Der Text gibt einen Einstieg in die Aufgaben und Anwendungsbereiche der Statistik und erklärt die grundlegenden Begriffe, mit denen Daten und Datensätze charakterisiert werden können. Nach der Einheit sollten Sie die folgenden Fragen beantworten können:
+ Was ist Statistik? Was macht Statistik? Welche grundlegenden Begriffe werden in der Statistik verwendet?</description>
     </item>
     
     <item>
@@ -234,7 +235,7 @@ In der Formel wird durch $n-1$ anstatt durch $n$ geteilt. Dies ist theoretisch v
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://bonartm.github.io/data-librarian/descriptive_statistics/univariate/symmetrie/</guid>
-      <description>Verschiedene univariate Verteilungen     Related files   distributions.ipynb  (83 ko)    Um eine metrische Verteilung charakterisieren zu können, ist neben der zentralen Lage- und Streuung auch deren Symmetrie und Schiefe von Bedeutung.
+      <description>Verschiedene univariate Verteilungen     Related files   distributions.ipynb  (74 ko)    Um eine metrische Verteilung charakterisieren zu können, ist neben der zentralen Lage- und Streuung auch deren Symmetrie und Schiefe von Bedeutung.
 Das Bild zeigt Histogramme für verschiedene simulierte Zufallswerte der Beta-Verteilung. Dabei wurden jeweils die Parameter der theoretischen Verteilung $\alpha$ und $\beta$ geändert. Somit kann eine große Bandbreite charakteristischer Verteilungen abgedeckt werden.</description>
     </item>
     
@@ -290,7 +291,7 @@ Die Ausdrücke im Nenner sind die jeweiligen Standardabweichungen der Reihen. Si
     </item>
     
     <item>
-      <title>Quiz: Pandas-Bibliothek</title>
+      <title>Recap: Quiz</title>
       <link>https://bonartm.github.io/data-librarian/basics/quiz_pandas/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -299,7 +300,7 @@ Die Ausdrücke im Nenner sind die jeweiligen Standardabweichungen der Reihen. Si
     </item>
     
     <item>
-      <title>Quiz: Deskriptive Statistik</title>
+      <title>Recap: Quiz</title>
       <link>https://bonartm.github.io/data-librarian/descriptive_statistics/quiz_statistics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

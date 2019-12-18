@@ -12,25 +12,25 @@
     <title>Wichtige Funktionen :: data librarian - modul 3 - daten analysieren und verstehen</title>
 
     
-    <link href="/data-librarian/css/nucleus.css?1576606102" rel="stylesheet">
-    <link href="/data-librarian/css/fontawesome-all.min.css?1576606102" rel="stylesheet">
-    <link href="/data-librarian/css/hybrid.css?1576606102" rel="stylesheet">
-    <link href="/data-librarian/css/featherlight.min.css?1576606102" rel="stylesheet">
-    <link href="/data-librarian/css/perfect-scrollbar.min.css?1576606102" rel="stylesheet">
-    <link href="/data-librarian/css/auto-complete.css?1576606102" rel="stylesheet">
-    <link href="/data-librarian/css/atom-one-dark-reasonable.css?1576606102" rel="stylesheet">
-    <link href="/data-librarian/css/theme.css?1576606102" rel="stylesheet">
-    <link href="/data-librarian/css/hugo-theme.css?1576606102" rel="stylesheet">
+    <link href="/data-librarian/css/nucleus.css?1576672524" rel="stylesheet">
+    <link href="/data-librarian/css/fontawesome-all.min.css?1576672524" rel="stylesheet">
+    <link href="/data-librarian/css/hybrid.css?1576672524" rel="stylesheet">
+    <link href="/data-librarian/css/featherlight.min.css?1576672524" rel="stylesheet">
+    <link href="/data-librarian/css/perfect-scrollbar.min.css?1576672524" rel="stylesheet">
+    <link href="/data-librarian/css/auto-complete.css?1576672524" rel="stylesheet">
+    <link href="/data-librarian/css/atom-one-dark-reasonable.css?1576672524" rel="stylesheet">
+    <link href="/data-librarian/css/theme.css?1576672524" rel="stylesheet">
+    <link href="/data-librarian/css/hugo-theme.css?1576672524" rel="stylesheet">
 
 
 
     
-      <link href="/data-librarian/css/theme-green.css?1576606102" rel="stylesheet">
+      <link href="/data-librarian/css/theme-green.css?1576672524" rel="stylesheet">
     
-    <link href="/data-librarian/css/custom.css?1576606102" rel="stylesheet">
+    <link href="/data-librarian/css/custom.css?1576672524" rel="stylesheet">
 
 
-    <script src="/data-librarian/js/jquery-3.3.1.min.js?1576606102"></script>
+    <script src="/data-librarian/js/jquery-3.3.1.min.js?1576672524"></script>
 
 
 
@@ -62,14 +62,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/data-librarian/js/lunr.min.js?1576606102"></script>
-<script type="text/javascript" src="/data-librarian/js/auto-complete.js?1576606102"></script>
+<script type="text/javascript" src="/data-librarian/js/lunr.min.js?1576672524"></script>
+<script type="text/javascript" src="/data-librarian/js/auto-complete.js?1576672524"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/bonartm.github.io\/data-librarian\/";
     
 </script>
-<script type="text/javascript" src="/data-librarian/js/search.js?1576606102"></script>
+<script type="text/javascript" src="/data-librarian/js/search.js?1576672524"></script>
 
     
   </div>
@@ -695,9 +695,9 @@
  
   
     
-      <li data-nav-id="/data-librarian/basics/quiz_pandas/" title="Quiz: Pandas-Bibliothek" class="dd-item ">
+      <li data-nav-id="/data-librarian/basics/quiz_pandas/" title="Recap: Quiz" class="dd-item ">
         <a href="/data-librarian/basics/quiz_pandas/">
-        Quiz: Pandas-Bibliothek
+        Recap: Quiz
         <i class="fas fa-check read-icon"></i>
         </a>
     </li>
@@ -1010,9 +1010,9 @@
  
   
     
-      <li data-nav-id="/data-librarian/descriptive_statistics/quiz_statistics/" title="Quiz: Deskriptive Statistik" class="dd-item ">
+      <li data-nav-id="/data-librarian/descriptive_statistics/quiz_statistics/" title="Recap: Quiz" class="dd-item ">
         <a href="/data-librarian/descriptive_statistics/quiz_statistics/">
-        Quiz: Deskriptive Statistik
+        Recap: Quiz
         <i class="fas fa-check read-icon"></i>
         </a>
     </li>
@@ -1131,7 +1131,7 @@
         <ul>
           
               <li> 
-                  <a class="padding" href="https://bonartm.github.io/data-librarian/cheatsheet/"><i class='fas fa-cookie-bite'></i> Python Cheat Sheet</a>
+                  <a class="padding" href="https://bonartm.github.io/data-librarian/solutions/"><i class='fas fa-cookie-bite'></i> Lösungen zu den Kursaufgaben</a>
               </li>
           
               <li> 
@@ -1248,8 +1248,16 @@
   <div class="notices_inner" id="code">
     <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd
 df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">../data/Library_Usage.csv</span><span style="color:#e6db74">&#34;</span>)
-df<span style="color:#f92672">.</span>head(n<span style="color:#f92672">=</span><span style="color:#ae81ff">20</span>)
+df<span style="color:#f92672">.</span>head()
 </code></pre></div>
+  </div>
+</div>
+
+
+<div class="customnotices">
+  <div class="notices_inner" id="exercise">
+    <p>Schauen Sie sich die Dokumentation für die Funktion <code>head()</code> <a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.head.html">hier</a> an. Wie können Sie sich die ersten $100$ Zeilen anzeigen lassen?</p>
+
   </div>
 </div>
 
@@ -1281,7 +1289,20 @@ df<span style="color:#f92672">.</span>head(n<span style="color:#f92672">=</span>
   </div>
 </div>
 
-
+<h3 id="read-in-csv-files">read in <code>.csv</code> files</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd
+file_path <span style="color:#f92672">=</span> <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">./Library_Usage.csv</span><span style="color:#e6db74">&#39;</span>
+df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(file_path)
+</code></pre></div><h3 id="show-column-names-and-their-types">show column names and their types</h3>
+<pre><code>df.columns
+df.dtypes
+</code></pre><h3 id="number-of-rows">number of rows</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">len(df)
+</code></pre></div><h3 id="summarize-functions">summarize functions</h3>
+<pre><code>df.head()
+df.tail()
+df.describe()
+</code></pre>
 
 <footer class=" footline" >
 	
@@ -2093,19 +2114,19 @@ df<span style="color:#f92672">.</span>head(n<span style="color:#f92672">=</span>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/data-librarian/js/clipboard.min.js?1576606102"></script>
-    <script src="/data-librarian/js/perfect-scrollbar.min.js?1576606102"></script>
-    <script src="/data-librarian/js/perfect-scrollbar.jquery.min.js?1576606102"></script>
-    <script src="/data-librarian/js/jquery.sticky.js?1576606102"></script>
-    <script src="/data-librarian/js/featherlight.min.js?1576606102"></script>
-    <script src="/data-librarian/js/highlight.pack.js?1576606102"></script>
+    <script src="/data-librarian/js/clipboard.min.js?1576672524"></script>
+    <script src="/data-librarian/js/perfect-scrollbar.min.js?1576672524"></script>
+    <script src="/data-librarian/js/perfect-scrollbar.jquery.min.js?1576672524"></script>
+    <script src="/data-librarian/js/jquery.sticky.js?1576672524"></script>
+    <script src="/data-librarian/js/featherlight.min.js?1576672524"></script>
+    <script src="/data-librarian/js/highlight.pack.js?1576672524"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/data-librarian/js/modernizr.custom-3.6.0.js?1576606102"></script>
-    <script src="/data-librarian/js/learn.js?1576606102"></script>
-    <script src="/data-librarian/js/hugo-learn.js?1576606102"></script>
+    <script src="/data-librarian/js/modernizr.custom-3.6.0.js?1576672524"></script>
+    <script src="/data-librarian/js/learn.js?1576672524"></script>
+    <script src="/data-librarian/js/hugo-learn.js?1576672524"></script>
 
-    <link href="/data-librarian/mermaid/mermaid.css?1576606102" rel="stylesheet" />
-    <script src="/data-librarian/mermaid/mermaid.js?1576606102"></script>
+    <link href="/data-librarian/mermaid/mermaid.css?1576672524" rel="stylesheet" />
+    <script src="/data-librarian/mermaid/mermaid.js?1576672524"></script>
 
     <script>
         mermaid.initialize({ startOnLoad: true });

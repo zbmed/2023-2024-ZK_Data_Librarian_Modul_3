@@ -70,7 +70,7 @@ Wenn beispielsweise der Mittelwert einer statistischen Variable berechnet wird, 
       <guid>https://bonartm.github.io/data-librarian/basics/pandas/functions/</guid>
       <description>In der kommenden Woche erhalten Sie einen Überblick über die vielen deskriptiven Statistiken, die sich mit pandas ausrechnen lassen. Hier noch einmal eine Zusammenfassung und ein erster Ausblick:
 Mit df.head() können Sie sich die ersten $n$ Zeilen eines DataFrames anzeigen lassen:
-import pandas as pd df = pd.read_csv(&amp;#34;../data/Library_Usage.csv&amp;#34;) df.head(n=20)    Mit df.info() erhalten Sie speicherbezogene Informationen über das Objekt. Mit df.describe() werden nützliche deskriptive Statistiken für alle numerischen Spalten eines Datensatzes ausgegeben.</description>
+import pandas as pd df = pd.read_csv(&amp;#34;../data/Library_Usage.csv&amp;#34;) df.head()    Schauen Sie sich die Dokumentation für die Funktion head() hier an. Wie können Sie sich die ersten $100$ Zeilen anzeigen lassen?</description>
     </item>
     
   </channel>

@@ -12,25 +12,25 @@
     <title>Ein- und Ausgabe :: data librarian - modul 3 - daten analysieren und verstehen</title>
 
     
-    <link href="/data-librarian/css/nucleus.css?1576606102" rel="stylesheet">
-    <link href="/data-librarian/css/fontawesome-all.min.css?1576606102" rel="stylesheet">
-    <link href="/data-librarian/css/hybrid.css?1576606102" rel="stylesheet">
-    <link href="/data-librarian/css/featherlight.min.css?1576606102" rel="stylesheet">
-    <link href="/data-librarian/css/perfect-scrollbar.min.css?1576606102" rel="stylesheet">
-    <link href="/data-librarian/css/auto-complete.css?1576606102" rel="stylesheet">
-    <link href="/data-librarian/css/atom-one-dark-reasonable.css?1576606102" rel="stylesheet">
-    <link href="/data-librarian/css/theme.css?1576606102" rel="stylesheet">
-    <link href="/data-librarian/css/hugo-theme.css?1576606102" rel="stylesheet">
+    <link href="/data-librarian/css/nucleus.css?1576672523" rel="stylesheet">
+    <link href="/data-librarian/css/fontawesome-all.min.css?1576672523" rel="stylesheet">
+    <link href="/data-librarian/css/hybrid.css?1576672523" rel="stylesheet">
+    <link href="/data-librarian/css/featherlight.min.css?1576672523" rel="stylesheet">
+    <link href="/data-librarian/css/perfect-scrollbar.min.css?1576672523" rel="stylesheet">
+    <link href="/data-librarian/css/auto-complete.css?1576672523" rel="stylesheet">
+    <link href="/data-librarian/css/atom-one-dark-reasonable.css?1576672523" rel="stylesheet">
+    <link href="/data-librarian/css/theme.css?1576672523" rel="stylesheet">
+    <link href="/data-librarian/css/hugo-theme.css?1576672523" rel="stylesheet">
 
 
 
     
-      <link href="/data-librarian/css/theme-green.css?1576606102" rel="stylesheet">
+      <link href="/data-librarian/css/theme-green.css?1576672523" rel="stylesheet">
     
-    <link href="/data-librarian/css/custom.css?1576606102" rel="stylesheet">
+    <link href="/data-librarian/css/custom.css?1576672523" rel="stylesheet">
 
 
-    <script src="/data-librarian/js/jquery-3.3.1.min.js?1576606102"></script>
+    <script src="/data-librarian/js/jquery-3.3.1.min.js?1576672523"></script>
 
 
 
@@ -62,14 +62,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/data-librarian/js/lunr.min.js?1576606102"></script>
-<script type="text/javascript" src="/data-librarian/js/auto-complete.js?1576606102"></script>
+<script type="text/javascript" src="/data-librarian/js/lunr.min.js?1576672523"></script>
+<script type="text/javascript" src="/data-librarian/js/auto-complete.js?1576672523"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/bonartm.github.io\/data-librarian\/";
     
 </script>
-<script type="text/javascript" src="/data-librarian/js/search.js?1576606102"></script>
+<script type="text/javascript" src="/data-librarian/js/search.js?1576672523"></script>
 
     
   </div>
@@ -695,9 +695,9 @@
  
   
     
-      <li data-nav-id="/data-librarian/basics/quiz_pandas/" title="Quiz: Pandas-Bibliothek" class="dd-item ">
+      <li data-nav-id="/data-librarian/basics/quiz_pandas/" title="Recap: Quiz" class="dd-item ">
         <a href="/data-librarian/basics/quiz_pandas/">
-        Quiz: Pandas-Bibliothek
+        Recap: Quiz
         <i class="fas fa-check read-icon"></i>
         </a>
     </li>
@@ -1010,9 +1010,9 @@
  
   
     
-      <li data-nav-id="/data-librarian/descriptive_statistics/quiz_statistics/" title="Quiz: Deskriptive Statistik" class="dd-item ">
+      <li data-nav-id="/data-librarian/descriptive_statistics/quiz_statistics/" title="Recap: Quiz" class="dd-item ">
         <a href="/data-librarian/descriptive_statistics/quiz_statistics/">
-        Quiz: Deskriptive Statistik
+        Recap: Quiz
         <i class="fas fa-check read-icon"></i>
         </a>
     </li>
@@ -1131,7 +1131,7 @@
         <ul>
           
               <li> 
-                  <a class="padding" href="https://bonartm.github.io/data-librarian/cheatsheet/"><i class='fas fa-cookie-bite'></i> Python Cheat Sheet</a>
+                  <a class="padding" href="https://bonartm.github.io/data-librarian/solutions/"><i class='fas fa-cookie-bite'></i> Lösungen zu den Kursaufgaben</a>
               </li>
           
               <li> 
@@ -1279,10 +1279,10 @@ df<span style="color:#f92672">.</span>head()
     <h3 id="datenrundreise">Datenrundreise</h3>
 <ul>
 <li>Informieren Sie sich <a href="https://pandas.pydata.org/pandas-docs/stable/reference/io.html">hier</a> über die verschiedenen Funktionen zur Ein- und Ausgabe.</li>
-<li>Lesen Sie den Datensatz <code>&quot;../data/Library_Usage_Small.csv&quot;</code> ein. Er enthält nur die ersten 100 Zeilen des originalen Datensatzes (aus Performancegründen).</li>
+<li>Lesen Sie den Datensatz <code>&quot;../data/Library_Usage_Small.csv&quot;</code> ein (Download <a href="/data-librarian/data/Library_Usage_Small.csv">hier</a>). Er enthält nur die ersten 10 Zeilen des originalen Datensatzes (aus Performancegründen).</li>
 <li>Speichern sie den <code>DataFrame</code> als <code>.json</code> ab.</li>
 <li>Lesen Sie die <code>.json</code> ein und speichern Sie den <code>DataFrame</code> als <code>.html</code> Tabelle ab (Die <code>.html</code> Datei lässt sich auch mit einem Browser öffnen).</li>
-<li>Lesen Sie dann die <code>.html</code> Datei ein und speichern Sie den <code>DataFrame</code> als <code>.xlsx</code> Datei ab (Die <code>.xlsx</code> Datei lässt sich auch mit Excel öffnen).</li>
+<li>Lesen Sie dann die <code>.html</code> Datei ein (Achtung: <code>read_html</code> gibt eine Liste von <code>DataFrame</code>s zurück!) und speichern Sie den <code>DataFrame</code> als <code>.xlsx</code> Datei ab (Die <code>.xlsx</code> Datei lässt sich auch mit Excel öffnen).</li>
 <li>Lesen Sie nun die <code>.xlsx</code> Datei ein und speichern Sie den <code>DataFrame</code> wieder als <code>.csv</code> ab. Achten Sie darauf, den ursprünglichen originalen Datensatz nicht zu überschreiben.</li>
 <li>Vergleichen Sie die originale <code>.csv</code> Version mit der Version, nach der Datenrundreise. Ist alles gleich geblieben?</li>
 </ul>
@@ -2119,19 +2119,19 @@ df<span style="color:#f92672">.</span>head()
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/data-librarian/js/clipboard.min.js?1576606102"></script>
-    <script src="/data-librarian/js/perfect-scrollbar.min.js?1576606102"></script>
-    <script src="/data-librarian/js/perfect-scrollbar.jquery.min.js?1576606102"></script>
-    <script src="/data-librarian/js/jquery.sticky.js?1576606102"></script>
-    <script src="/data-librarian/js/featherlight.min.js?1576606102"></script>
-    <script src="/data-librarian/js/highlight.pack.js?1576606102"></script>
+    <script src="/data-librarian/js/clipboard.min.js?1576672524"></script>
+    <script src="/data-librarian/js/perfect-scrollbar.min.js?1576672524"></script>
+    <script src="/data-librarian/js/perfect-scrollbar.jquery.min.js?1576672524"></script>
+    <script src="/data-librarian/js/jquery.sticky.js?1576672524"></script>
+    <script src="/data-librarian/js/featherlight.min.js?1576672524"></script>
+    <script src="/data-librarian/js/highlight.pack.js?1576672524"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/data-librarian/js/modernizr.custom-3.6.0.js?1576606102"></script>
-    <script src="/data-librarian/js/learn.js?1576606102"></script>
-    <script src="/data-librarian/js/hugo-learn.js?1576606102"></script>
+    <script src="/data-librarian/js/modernizr.custom-3.6.0.js?1576672524"></script>
+    <script src="/data-librarian/js/learn.js?1576672524"></script>
+    <script src="/data-librarian/js/hugo-learn.js?1576672524"></script>
 
-    <link href="/data-librarian/mermaid/mermaid.css?1576606102" rel="stylesheet" />
-    <script src="/data-librarian/mermaid/mermaid.js?1576606102"></script>
+    <link href="/data-librarian/mermaid/mermaid.css?1576672524" rel="stylesheet" />
+    <script src="/data-librarian/mermaid/mermaid.js?1576672524"></script>
 
     <script>
         mermaid.initialize({ startOnLoad: true });

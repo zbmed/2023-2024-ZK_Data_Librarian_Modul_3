@@ -51,7 +51,7 @@ In der Formel wird durch $n-1$ anstatt durch $n$ geteilt. Dies ist theoretisch v
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://bonartm.github.io/data-librarian/descriptive_statistics/univariate/symmetrie/</guid>
-      <description>Verschiedene univariate Verteilungen     Related files   distributions.ipynb  (83 ko)    Um eine metrische Verteilung charakterisieren zu können, ist neben der zentralen Lage- und Streuung auch deren Symmetrie und Schiefe von Bedeutung.
+      <description>Verschiedene univariate Verteilungen     Related files   distributions.ipynb  (74 ko)    Um eine metrische Verteilung charakterisieren zu können, ist neben der zentralen Lage- und Streuung auch deren Symmetrie und Schiefe von Bedeutung.
 Das Bild zeigt Histogramme für verschiedene simulierte Zufallswerte der Beta-Verteilung. Dabei wurden jeweils die Parameter der theoretischen Verteilung $\alpha$ und $\beta$ geändert. Somit kann eine große Bandbreite charakteristischer Verteilungen abgedeckt werden.</description>
     </item>
     
