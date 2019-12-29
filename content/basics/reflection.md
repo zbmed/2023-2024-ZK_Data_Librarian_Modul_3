@@ -30,6 +30,6 @@ Schreiben Sie einen **kurzen** Text über die Verwendung von Daten und quantitat
 3. Werden statistische Verfahren oder Maschinelles Lernen schon bei Ihnen eingesetzt?
 4. Welche Fragen oder Phänomene würden Sie gerne untersuchen? Was fänden Sie spannend herauszufinden?
 
-**Teilen** Sie Ihren Text mit den anderen KursteilnehmerInnen auf der [Kursplattform](https://zbiw.th-koeln.de/moodle/course/view.php?id=300). Wenn Sie für die Anderen **anonym** bleiben möchten, können Sie mir auch den Text schicken und ich lade ihn dann hoch.
+**Teilen** Sie Ihren Text mit den anderen KursteilnehmerInnen im Forum zu Modul 3 auf der [Kursplattform](https://zbiw.th-koeln.de/moodle/course/view.php?id=300). Wenn Sie für die Anderen **anonym** bleiben möchten, können Sie mir auch den Text schicken und ich stelle ihn dann rein.
 
 {{% /customnotice %}}

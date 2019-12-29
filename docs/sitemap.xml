@@ -3,10 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://bonartm.github.io/data-librarian/descriptive_statistics/univariate/frequency/</loc>
-  </url>
-  
-  <url>
     <loc>https://bonartm.github.io/data-librarian/solutions/</loc>
   </url>
   
@@ -19,43 +15,7 @@
   </url>
   
   <url>
-    <loc>https://bonartm.github.io/data-librarian/basics/pandas/series/</loc>
-  </url>
-  
-  <url>
-    <loc>https://bonartm.github.io/data-librarian/basics/ml/statistic/</loc>
-  </url>
-  
-  <url>
-    <loc>https://bonartm.github.io/data-librarian/basics/pandas/io/</loc>
-  </url>
-  
-  <url>
-    <loc>https://bonartm.github.io/data-librarian/basics/ml/ml/</loc>
-  </url>
-  
-  <url>
-    <loc>https://bonartm.github.io/data-librarian/basics/pandas/columns/</loc>
-  </url>
-  
-  <url>
-    <loc>https://bonartm.github.io/data-librarian/basics/ml/data-science/</loc>
-  </url>
-  
-  <url>
-    <loc>https://bonartm.github.io/data-librarian/basics/pandas/rows/</loc>
-  </url>
-  
-  <url>
-    <loc>https://bonartm.github.io/data-librarian/basics/pandas/na/</loc>
-  </url>
-  
-  <url>
     <loc>https://bonartm.github.io/data-librarian/organisation/</loc>
-  </url>
-  
-  <url>
-    <loc>https://bonartm.github.io/data-librarian/basics/pandas/functions/</loc>
   </url>
   
   <url>
@@ -87,87 +47,11 @@
   </url>
   
   <url>
-    <loc>https://bonartm.github.io/data-librarian/basics/ml/</loc>
-  </url>
-  
-  <url>
-    <loc>https://bonartm.github.io/data-librarian/basics/basic_terms/</loc>
-  </url>
-  
-  <url>
-    <loc>https://bonartm.github.io/data-librarian/descriptive_statistics/univariate/</loc>
-  </url>
-  
-  <url>
-    <loc>https://bonartm.github.io/data-librarian/descriptive_statistics/univariate/mean/</loc>
-  </url>
-  
-  <url>
-    <loc>https://bonartm.github.io/data-librarian/descriptive_statistics/univariate/variance/</loc>
-  </url>
-  
-  <url>
-    <loc>https://bonartm.github.io/data-librarian/descriptive_statistics/univariate/symmetrie/</loc>
-  </url>
-  
-  <url>
-    <loc>https://bonartm.github.io/data-librarian/descriptive_statistics/bivariate/</loc>
-  </url>
-  
-  <url>
-    <loc>https://bonartm.github.io/data-librarian/descriptive_statistics/bivariate/cross_tables/</loc>
-  </url>
-  
-  <url>
-    <loc>https://bonartm.github.io/data-librarian/descriptive_statistics/bivariate/correlation/</loc>
-  </url>
-  
-  <url>
-    <loc>https://bonartm.github.io/data-librarian/basics/pandas/</loc>
-  </url>
-  
-  <url>
-    <loc>https://bonartm.github.io/data-librarian/basics/reflection/</loc>
-  </url>
-  
-  <url>
-    <loc>https://bonartm.github.io/data-librarian/descriptive_statistics/visualizations/</loc>
-  </url>
-  
-  <url>
-    <loc>https://bonartm.github.io/data-librarian/descriptive_statistics/visualizations/tutorial/</loc>
-  </url>
-  
-  <url>
-    <loc>https://bonartm.github.io/data-librarian/descriptive_statistics/visualizations/examples/</loc>
-  </url>
-  
-  <url>
-    <loc>https://bonartm.github.io/data-librarian/basics/quiz_pandas/</loc>
-  </url>
-  
-  <url>
-    <loc>https://bonartm.github.io/data-librarian/descriptive_statistics/quiz_statistics/</loc>
-  </url>
-  
-  <url>
     <loc>https://bonartm.github.io/data-librarian/organisation/packages/pandas/</loc>
   </url>
   
   <url>
-    <loc>https://bonartm.github.io/data-librarian/inference/overview/</loc>
-  </url>
-  
-  <url>
-    <loc>https://bonartm.github.io/data-librarian/inference/example/</loc>
-  </url>
-  
-  <url>
     <loc>https://bonartm.github.io/data-librarian/organisation/packages/matplotlib/</loc>
-  </url>
-  
-  <url>
-    <loc>https://bonartm.github.io/data-librarian/inference/ttest/</loc>
   </url>
   
   <url>
@@ -180,18 +64,6 @@
   
   <url>
     <loc>https://bonartm.github.io/data-librarian/organisation/packages/scikitlearn/</loc>
-  </url>
-  
-  <url>
-    <loc>https://bonartm.github.io/data-librarian/basics/</loc>
-  </url>
-  
-  <url>
-    <loc>https://bonartm.github.io/data-librarian/descriptive_statistics/</loc>
-  </url>
-  
-  <url>
-    <loc>https://bonartm.github.io/data-librarian/inference/</loc>
   </url>
   
   <url>

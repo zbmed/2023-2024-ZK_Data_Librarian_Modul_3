@@ -2,7 +2,7 @@ baseURL = "https://bonartm.github.io/data-librarian/"
 languageCode = "de-DE"
 title = "data librarian - modul 3 - daten analysieren und verstehen"
 
-ignorefiles = [ "content/data/.*" ]
+ignorefiles = [ "content/data/.*", "content/basics/.*", "content/descriptive_statistics/.*", "content/inference/*"]
 
 # Change the default theme to be use when building the site with Hugo
 theme = "hugo-theme-learn"
@@ -56,23 +56,10 @@ url = "./organisation/schedule/"
 weight = 9
 
 [[menu.shortcuts]]
-name = "<i class='fab fa-github'></i> Github Repository"
-identifier = "github"
-url = "https://github.com/bonartm/data-librarian"
-weight = 10
-
-[[menu.shortcuts]]
-name = "<i class='fas fa-brain'></i> Moodle Kursumgebung"
+name = "<i class='fas fa-users'></i> Moodle Kursumgebung"
 identifier = "moodle"
 url = "https://zbiw.th-koeln.de/moodle/course/view.php?id=300"
 weight = 20
-
-[[menu.shortcuts]]
-name = "<i class='fas fa-user-edit'></i> Etherpad: Kollaborativer Texteditor"
-identifier = "Etherpad"
-url = "https://yourpart.eu/p/ipwIH0IqAz"
-weight = 20
-
 
 [[menu.shortcuts]]
 name = "<i class='fas fa-cookie-bite'></i> Lösungen zu den Kursaufgaben"

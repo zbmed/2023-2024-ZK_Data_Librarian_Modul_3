@@ -12,14 +12,17 @@ hidden = true
 
 Im Laufe des Kurses werden hier die Lösungen zu den einzelnen Aufgaben hochgeladen. Die Projektaufgaben werden am Präsenztag gesammelt besprochen.
 
+<!--
+
+
 ### Kursorganisation und Vorbereitung
 
 #### Quiz
 
-1. Strg+R
-2. https://docs.anaconda.com/anaconda/packages/pkg-docs/
-3. `len(df)`
-4. https://seaborn.pydata.org/introduction.html
+1. Strg+Enter
+2. siehe hier: https://docs.anaconda.com/anaconda/packages/pkg-docs/
+3. 423448, `len(df)`
+4. siehe (unter `sns.set()`): https://seaborn.pydata.org/introduction.html
 
 
 ### Grundlagen
@@ -134,3 +137,12 @@ Die Balkendiagramme beginnen nicht im Nullpunkt. Somit werden die relativen Unte
 
 
 {{%attachments title="Alle Lösungen" pattern="solutions" /%}}
+
+
+
+
+
+
+
+
+-->
