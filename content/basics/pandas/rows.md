@@ -71,6 +71,19 @@ Ausdruck | Beschreibung
 `~`  | elementweise logische negation (`True` ergibt `False` und umgekehrt)
 {{% /customnotice %}}
 
+Nützlich ist auch die Funktion `Series.between(left, right)`, mit der eine boolesche `Series` erstellt wird, die `True` ist wenn der Wert der ursprünglichen `Series` zwischen oder auf `left` und `right` liegt:
+
+{{% customnotice code %}}
+```python
+filter1 = (df['Total Checkouts'] >= 20) & (df['Total Checkouts'] <= 80)
+filter2 =  df['Total Checkous'].between(20, 80)
+all(filter1 == filter2)
+```
+{{% /customnotice %}}
+
+
+
+
 
 {{% customnotice exercise %}}
 1. Filter Sie den Datensatz nach Kindern unter 10 Jahren. Wie viele Einträge erhalten Sie?

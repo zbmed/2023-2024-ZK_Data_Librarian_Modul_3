@@ -12,7 +12,6 @@ hidden = true
 
 Im Laufe des Kurses werden hier die Lösungen zu den einzelnen Aufgaben hochgeladen. Die Projektaufgaben werden am Präsenztag gesammelt besprochen.
 
-<!--
 
 
 ### Kursorganisation und Vorbereitung
@@ -23,6 +22,8 @@ Im Laufe des Kurses werden hier die Lösungen zu den einzelnen Aufgaben hochgela
 2. siehe hier: https://docs.anaconda.com/anaconda/packages/pkg-docs/
 3. 423448, `len(df)`
 4. siehe (unter `sns.set()`): https://seaborn.pydata.org/introduction.html
+
+<!--
 
 
 ### Grundlagen
@@ -86,12 +87,21 @@ Im Laufe des Kurses werden hier die Lösungen zu den einzelnen Aufgaben hochgela
 
 ### Deskriptive Statistik und Visualisierungen
 
+#### Häufigkeiten
+
+{{%attachments title="Lösungen" pattern="solutions_frequency" /%}}
+
+
 
 #### Lagemaße
 
 Der Median ist robust gegenüber Ausreißern, da er nicht auf den absoluten sondern nur auf der relativen Reihung der Beobachtungen basiert. Wird beispielsweise der größte Wert einer Messreihe um den Faktor 1000 tausend vergrößert, so ändert sicht der Median nicht.
 
 Der Mittelwert hingegen basiert auf den absoluten Werten. Da die Variable `Total Checkouts` einige wenige sehr große Ausreißer enthält, ist der Mittelwert hier viel größer.
+
+#### Streuungsmaße
+
+{{%attachments title="Lösungen" pattern="solutions_variance" /%}}
 
 
 #### Symmetrie und Schiefe
@@ -127,8 +137,6 @@ Die Balkendiagramme beginnen nicht im Nullpunkt. Somit werden die relativen Unte
 - `df['Total Checkouts'].quantile(0.60)`
 - `df['Age Range'].mode()`
 - `df['Total Renewals'].quantile([0.25, 0.75]).diff()`
-
-
 
 
 ### Inferenzstatistik

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.62.0" />
+    <meta name="generator" content="Hugo 0.62.1" />
     <meta name="description" content="learning materials for the data librarian course">
 <meta name="author" content="Malte Bonart">
 
@@ -12,25 +12,25 @@
     <title>Lösungen zu den Kursaufgaben :: data librarian - modul 3 - daten analysieren und verstehen</title>
 
     
-    <link href="/data-librarian/css/nucleus.css?1577622386" rel="stylesheet">
-    <link href="/data-librarian/css/fontawesome-all.min.css?1577622386" rel="stylesheet">
-    <link href="/data-librarian/css/hybrid.css?1577622386" rel="stylesheet">
-    <link href="/data-librarian/css/featherlight.min.css?1577622386" rel="stylesheet">
-    <link href="/data-librarian/css/perfect-scrollbar.min.css?1577622386" rel="stylesheet">
-    <link href="/data-librarian/css/auto-complete.css?1577622386" rel="stylesheet">
-    <link href="/data-librarian/css/atom-one-dark-reasonable.css?1577622386" rel="stylesheet">
-    <link href="/data-librarian/css/theme.css?1577622386" rel="stylesheet">
-    <link href="/data-librarian/css/hugo-theme.css?1577622386" rel="stylesheet">
+    <link href="/data-librarian/css/nucleus.css?1577982828" rel="stylesheet">
+    <link href="/data-librarian/css/fontawesome-all.min.css?1577982828" rel="stylesheet">
+    <link href="/data-librarian/css/hybrid.css?1577982828" rel="stylesheet">
+    <link href="/data-librarian/css/featherlight.min.css?1577982828" rel="stylesheet">
+    <link href="/data-librarian/css/perfect-scrollbar.min.css?1577982828" rel="stylesheet">
+    <link href="/data-librarian/css/auto-complete.css?1577982828" rel="stylesheet">
+    <link href="/data-librarian/css/atom-one-dark-reasonable.css?1577982828" rel="stylesheet">
+    <link href="/data-librarian/css/theme.css?1577982828" rel="stylesheet">
+    <link href="/data-librarian/css/hugo-theme.css?1577982828" rel="stylesheet">
 
 
 
     
-      <link href="/data-librarian/css/theme-green.css?1577622386" rel="stylesheet">
+      <link href="/data-librarian/css/theme-green.css?1577982828" rel="stylesheet">
     
-    <link href="/data-librarian/css/custom.css?1577622386" rel="stylesheet">
+    <link href="/data-librarian/css/custom.css?1577982828" rel="stylesheet">
 
 
-    <script src="/data-librarian/js/jquery-3.3.1.min.js?1577622386"></script>
+    <script src="/data-librarian/js/jquery-3.3.1.min.js?1577982828"></script>
 
 
 
@@ -62,14 +62,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/data-librarian/js/lunr.min.js?1577622386"></script>
-<script type="text/javascript" src="/data-librarian/js/auto-complete.js?1577622386"></script>
+<script type="text/javascript" src="/data-librarian/js/lunr.min.js?1577982828"></script>
+<script type="text/javascript" src="/data-librarian/js/auto-complete.js?1577982828"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/bonartm.github.io\/data-librarian\/";
     
 </script>
-<script type="text/javascript" src="/data-librarian/js/search.js?1577622386"></script>
+<script type="text/javascript" src="/data-librarian/js/search.js?1577982828"></script>
 
     
   </div>
@@ -465,7 +465,15 @@
                 
                     <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#kursorganisation-und-vorbereitung">Kursorganisation und Vorbereitung</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
     </div>
 </div>
 
@@ -489,17 +497,15 @@
 
 
 <p>Im Laufe des Kurses werden hier die Lösungen zu den einzelnen Aufgaben hochgeladen. Die Projektaufgaben werden am Präsenztag gesammelt besprochen.</p>
+<h3 id="kursorganisation-und-vorbereitung">Kursorganisation und Vorbereitung</h3>
+<h4 id="quiz">Quiz</h4>
+<ol>
+<li>Strg+Enter</li>
+<li>siehe hier: <a href="https://docs.anaconda.com/anaconda/packages/pkg-docs/">https://docs.anaconda.com/anaconda/packages/pkg-docs/</a></li>
+<li>423448, <code>len(df)</code></li>
+<li>siehe (unter <code>sns.set()</code>): <a href="https://seaborn.pydata.org/introduction.html">https://seaborn.pydata.org/introduction.html</a></li>
+</ol>
 <!--
-
-
-### Kursorganisation und Vorbereitung
-
-#### Quiz
-
-1. Strg+Enter
-2. siehe hier: https://docs.anaconda.com/anaconda/packages/pkg-docs/
-3. 423448, `len(df)`
-4. siehe (unter `sns.set()`): https://seaborn.pydata.org/introduction.html
 
 
 ### Grundlagen
@@ -540,6 +546,11 @@
 		
 	
 	<div class="attachments-files">
+	
+		
+		
+			
+		
 	
 		
 		
@@ -663,6 +674,11 @@
 		
 		
 			
+		
+	
+		
+		
+			
 				<li>
 					<a href="/data-librarian/solutions.files/solutions_selection.ipynb" >
 						solutions_selection.ipynb
@@ -734,6 +750,11 @@
 		
 		
 			
+		
+	
+		
+		
+			
 				<li>
 					<a href="/data-librarian/solutions.files/solutions_na.ipynb" >
 						solutions_na.ipynb
@@ -764,12 +785,151 @@
 
 ### Deskriptive Statistik und Visualisierungen
 
+#### Häufigkeiten
+
+
+<section class="attachments ">
+	<label>
+		<i class="fas fa-paperclip" aria-hidden="true"></i>
+		Lösungen
+	</label>
+	
+		
+	
+	<div class="attachments-files">
+	
+		
+		
+			
+		
+	
+		
+		
+			
+		
+	
+		
+		
+			
+		
+	
+		
+		
+			
+		
+	
+		
+		
+			
+		
+	
+		
+		
+			
+		
+	
+		
+		
+			
+		
+	
+		
+		
+			
+		
+	
+		
+		
+			
+		
+	
+		
+		
+			
+		
+	
+	<div>
+	
+</section>
+
+
+
+
 
 #### Lagemaße
 
 Der Median ist robust gegenüber Ausreißern, da er nicht auf den absoluten sondern nur auf der relativen Reihung der Beobachtungen basiert. Wird beispielsweise der größte Wert einer Messreihe um den Faktor 1000 tausend vergrößert, so ändert sicht der Median nicht.
 
 Der Mittelwert hingegen basiert auf den absoluten Werten. Da die Variable `Total Checkouts` einige wenige sehr große Ausreißer enthält, ist der Mittelwert hier viel größer.
+
+#### Streuungsmaße
+
+
+<section class="attachments ">
+	<label>
+		<i class="fas fa-paperclip" aria-hidden="true"></i>
+		Lösungen
+	</label>
+	
+		
+	
+	<div class="attachments-files">
+	
+		
+		
+			
+		
+	
+		
+		
+			
+		
+	
+		
+		
+			
+		
+	
+		
+		
+			
+		
+	
+		
+		
+			
+		
+	
+		
+		
+			
+		
+	
+		
+		
+			
+		
+	
+		
+		
+			
+		
+	
+		
+		
+			
+		
+	
+		
+		
+			
+		
+	
+	<div>
+	
+</section>
+
+
 
 
 #### Symmetrie und Schiefe
@@ -798,6 +958,11 @@ Von oben links nach unten rechts:
 		
 	
 	<div class="attachments-files">
+	
+		
+		
+			
+		
 	
 		
 		
@@ -888,6 +1053,11 @@ Von oben links nach unten rechts:
 		
 		
 			
+		
+	
+		
+		
+			
 				<li>
 					<a href="/data-librarian/solutions.files/solutions_anscombe.ipynb" >
 						solutions_anscombe.ipynb
@@ -941,8 +1111,6 @@ Die Balkendiagramme beginnen nicht im Nullpunkt. Somit werden die relativen Unte
 - `df['Total Renewals'].quantile([0.25, 0.75]).diff()`
 
 
-
-
 ### Inferenzstatistik
 
 
@@ -989,11 +1157,16 @@ Die Balkendiagramme beginnen nicht im Nullpunkt. Somit werden die relativen Unte
 		
 		
 			
+		
+	
+		
+		
+			
 				<li>
 					<a href="/data-librarian/solutions.files/solutions_inference.ipynb" >
 						solutions_inference.ipynb
 					</a>
-					(1 ko)
+					(12 ko)
 				</li>
 			
 		
@@ -1025,6 +1198,11 @@ Die Balkendiagramme beginnen nicht im Nullpunkt. Somit werden die relativen Unte
 		
 	
 	<div class="attachments-files">
+	
+		
+		
+			
+		
 	
 		
 		
@@ -1084,7 +1262,7 @@ Die Balkendiagramme beginnen nicht im Nullpunkt. Somit werden die relativen Unte
 					<a href="/data-librarian/solutions.files/solutions_inference.ipynb" >
 						solutions_inference.ipynb
 					</a>
-					(1 ko)
+					(12 ko)
 				</li>
 			
 		
@@ -1409,19 +1587,19 @@ Die Balkendiagramme beginnen nicht im Nullpunkt. Somit werden die relativen Unte
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/data-librarian/js/clipboard.min.js?1577622386"></script>
-    <script src="/data-librarian/js/perfect-scrollbar.min.js?1577622386"></script>
-    <script src="/data-librarian/js/perfect-scrollbar.jquery.min.js?1577622386"></script>
-    <script src="/data-librarian/js/jquery.sticky.js?1577622386"></script>
-    <script src="/data-librarian/js/featherlight.min.js?1577622386"></script>
-    <script src="/data-librarian/js/highlight.pack.js?1577622386"></script>
+    <script src="/data-librarian/js/clipboard.min.js?1577982828"></script>
+    <script src="/data-librarian/js/perfect-scrollbar.min.js?1577982828"></script>
+    <script src="/data-librarian/js/perfect-scrollbar.jquery.min.js?1577982828"></script>
+    <script src="/data-librarian/js/jquery.sticky.js?1577982828"></script>
+    <script src="/data-librarian/js/featherlight.min.js?1577982828"></script>
+    <script src="/data-librarian/js/highlight.pack.js?1577982828"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/data-librarian/js/modernizr.custom-3.6.0.js?1577622386"></script>
-    <script src="/data-librarian/js/learn.js?1577622386"></script>
-    <script src="/data-librarian/js/hugo-learn.js?1577622386"></script>
+    <script src="/data-librarian/js/modernizr.custom-3.6.0.js?1577982828"></script>
+    <script src="/data-librarian/js/learn.js?1577982828"></script>
+    <script src="/data-librarian/js/hugo-learn.js?1577982828"></script>
 
-    <link href="/data-librarian/mermaid/mermaid.css?1577622386" rel="stylesheet" />
-    <script src="/data-librarian/mermaid/mermaid.js?1577622386"></script>
+    <link href="/data-librarian/mermaid/mermaid.css?1577982828" rel="stylesheet" />
+    <script src="/data-librarian/mermaid/mermaid.js?1577982828"></script>
 
     <script>
         mermaid.initialize({ startOnLoad: true });

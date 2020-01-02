@@ -36,10 +36,60 @@ sns.set() # sets the default seaborn theme
 
 # use sample to generate a random subsample
 df = pd.read_csv("../data/Library_Usage.csv").sample(n=1000)
-sns.scatterplot(x='Total Checkouts', y='Total Renewals', data=df)
+sns.relplot(x='Total Checkouts', y='Total Renewals', data=df)
 ```
 {{% /customnotice%}}
 
-Dies erzeugt ein Streudiagram zur Visualisierung einer bivariaten Verteilung mit metrischen Variablen. Jedes Wertepaar $(x_i,y_i)$ der Verteilung wird im Koordinatensystem als Punkt dargestellt.
+Dies erzeugt ein Streudiagram zur Visualisierung einer bivariaten Verteilung mit metrischen Variablen. Jedes Wertepaar $(x_i,y_i)$ der Verteilung wird im Koordinatensystem als Punkt dargestellt (Die Funktion `DataFrame.sample()` wird verwendet, um eine Zufalsstichprobe der Größe $n=1000$ aus dem Datenstatz zu erstellen. Dies dient zur besseren Lesbarkeit des Plots).  
 
-Mit dem zusätzlichen Befegl
+Mit den zusätzlichen Argumenten `hue` (Farbe der Punkte/ Linien/ Balken ...), `size` (Größe der Punkte/ Linien/ Balken ...), `style`  können weitere Eigenschaften des Plots mit anderen Variablen des Datensatzes verlinkt werden:
+
+{{% customnotice code%}}
+```python
+sns.relplot(x='Total Checkouts', y='Total Renewals', 
+                hue='Provided Email Address', style='Provided Email Address', 
+                size='Year Patron Registered', data=df)
+```
+{{% /customnotice%}}
+
+
+Mit dem Argument `palette` können verschiedene [Farbpaletten](https://seaborn.pydata.org/tutorial/color_palettes.html) ausgewählt werden. Zu empfehlen sind die Paletten von [ColorBrewer](https://jiffyclub.github.io/palettable/colorbrewer/qualitative/). Sie können zwischen den Kategorien `sequential`, `diverging` oder `qualitative` wählen. Mit der Funktion `sns.choose_colorbrewer_palette(data_type)` können Sie die Farbpalette ineraktiv auswählen (dies funktioniert nur in Jupyter Notebooks):
+
+
+{{% customnotice code%}}
+```python
+palette = sns.choose_colorbrewer_palette('qualitative')
+```
+{{% /customnotice%}}
+
+
+Plots können mit dem `row` und/ oder `col` Argument auch anhand einer oder mehrerer Variablen in Form von Spalten und/ oder Zeilen angeordnet werden:
+
+{{% customnotice code%}}
+```python
+sns.relplot(x='Total Checkouts', y='Total Renewals', 
+                row='Provided Email Address', col='Outside of County', data=df)
+```
+{{% /customnotice%}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

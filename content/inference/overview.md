@@ -1,8 +1,8 @@
 +++
-title = "Überblick: Statistische Inferenz"
+title = "Statistische Inferenz"
 # If set, this will be used for the page's menu entry (instead of the `title` attribute)
 # menuTitle = "Einführung"
-weight = 61
+weight = 1
 # The title of the page in menu will be prefixed by this HTML content
 # pre = "<b>4. </b>"
 # pre = "<i class='fab fa-github'></i>"
@@ -26,28 +26,26 @@ Bisher haben Sie vorliegende Daten einer **Stichprobe** mit Visualisierungen und
 
 Beispiel Wahlumfrage: Sie ziehen zufällig $n=100$ Personen aus dem Wahlregister und befragen Sie nach ihren Parteipräferenzen. Sie können dann beispielsweise den relativen Anteil der Personen in Ihrer Stichprobe, die eine bestimmte Partei favorisieren, bestimmen. Damit haben Sie einen **Schätzwert** für den tatsächlichen Wert, wenn Sie alle Personen des Wahlregisters befragt hätten.
 
-Ziehen Sie eine weitere Stichprobe, so werden die neuen Schätzwerte nicht genau mit denen aus der vorherigen Stichprobe übereinstimmen. Wollen Sie deswegen eine Aussage über die tatsächlichen Anteile in der Gesamtpopulation treffen, so ist diese immer mit **Unsicherheit** behaftet.
+Ziehen Sie eine weitere Stichprobe, so werden die neuen Schätzwerte nicht genau mit denen aus der vorherigen Stichprobe übereinstimmen. Ziehen Sie noch eine Stichprobe, so wird auch hier der Mittelwert wieder geringfügig anders sein. Wollen Sie deswegen eine Aussage über die tatsächlichen Anteile in der Gesamtpopulation treffen, so ist diese Aussage immer mit **Unsicherheit** behaftet.
 
-Der Mittelwert/ relative Anteil ändert sich mit jeder Stichprobe, die Sie ziehen. Damit sind diese Schätzwerte für sich gesehen statistische Variablen, die einer statistischen Verteilung folgen und die deskriptiv beschrieben werden können.
+Der Mittelwert/ relative Anteil ändert sich mit jeder Stichprobe, die Sie ziehen. Damit können die auf einer Stichprobe berechneten Schätzerte als statistische Variablen betrachtet werden. Wie für andere Variablen auch, kann diese **Stichprobenverteilung** deskriptiv beschrieben werden.
 
-Wie können Sie von Mittelwerten einer Stichprobe auf den "wahren" Wert in der Gesamtpopulation schließen? Wie können Sie die Unsicherheiten, die dabei auftreten quantifizieren? Mit diesen Fragen beschäftigt sich die **Inferenzstatistik**.
+In der Realität wird aber in der Regel nur eine einzige Stichprobe der Größe $n$ gezogen. Wie können Sie von Mittelwerten einer einzelnen Stichprobe auf den "wahren" zugrundeliegenden Wert in der Gesamtpopulation schließen? Wie können Sie die Unsicherheiten, die dabei auftreten quantifizieren? Mit diesen Fragen beschäftigt sich die **Inferenzstatistik!**
 
-Der **Stichprobenfehler** gibt an, wie stark ein Schätzwert (z.B. *Relativer Anteil Personen mit Präferenz für Partei A*) von Stichprobe zu Stichprobe schwankt. Damit wird also die **Varianz** eines Schätzers angegeben. Die theoretische Bestimmung des Stichprobenfehlers ist eine der Hauptaufgaben der Inferenzstatistik.
 
-In der Realität ziehen Sie nur eine Stichprobe und berechnen daraus einzelne Schätzer. Wie können Sie von dieser einzelnen Stichprobe auf die Varianz des Schätzers schließen?
-
-Der **Zentrale Grenzwertsatz** ist eine der Hauptaussagen der Inferenzstatistik. Aus ihm kann abgeleitet werden, dass der Mittelwert einer Variable aus einer ausreichend großen Stichprobe einer ganz bestimmten theoretischen Verteilung folgt. Diese Verteilung wird **Normalverteilung** genannt. Solange, die Stichprobe groß genug ist, spielt dabei die Verteilung der zugrundeliegenden Variablen keine Rolle; der Mittelwert folgt einer Normalverteilung!
-
-Die Normalverteilung wird durch eine mathematische Funktion beschrieben. Mit ihr kann man beispielsweise berechnen: Wie wahrscheinlich ist es, dass der Mittelwert einer Stichprobe größer als $10$ ist.
+{{< youtube QU8OLpSfzB8 >}}
 
 
 {{% customnotice tip%}}
 
-**Bias** beschreibt eine systematische Verzerrung des Schätzwertes vom wahren Wert, der geschätzt werden soll. Dies kann aufgrund von falschen Berechnungen des Schätzers oder häufiger, aufgrund von schlechten Stichproben passieren.
+Der **Stichprobenfehler** gibt an, wie stark ein Schätzwert (z.B. *Relativer Anteil Personen mit Präferenz für Partei A*) von Stichprobe zu Stichprobe schwankt. Damit wird also die **Varianz** eines Schätzers angegeben. Für viele Statistiken, wie das arithmetische Mittel, kann dessen Verteilung theoretisch hergeleitet werden. 
 
-Werden beispielsweise nur Personen in Großstädten nach ihren Wahlpräferenzen befrat, so sind die daraus gewonnen Daten nur sehr schlechte Schätzwerte für die wahren Werte der Gesamtpopulation, da bestimmte Präferenzen systematisch über- oder unterschätzt werden.
+Besitzt beispielsweise die Stichprobenverteilung für den Mittelwert eine hohe Varianz (d.h. mit jeder weiteren Stichprobe würden die berechneten Mittelwerte stark schwanken), dann lässt sich der tatsächliche Mittelwert in der Population nur schlecht eingrenzen. In der Regeln verringert sich die Varianz eines Schätzers je größer die Stichprobe ist. 
+
 
 {{% /customnotice %}}
+
+
 
 
 

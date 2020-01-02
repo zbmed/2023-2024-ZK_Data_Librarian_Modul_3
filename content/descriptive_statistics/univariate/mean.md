@@ -60,9 +60,9 @@ df['Total Checkouts'].median()
 - Was ziehen Sie daraus für Schlüsse für weitere statistische Analysen und Reports?
 {{% /customnotice %}}
 
-#### Quantile
+## Quantile
 
-Sie haben schon den Median $x_0.5$ als Lageparameter kennengelernt. Er teilt die geordnete Verteilung in zwei genau gleich große Teile. Allgemeiner lassen sich analog dazu die Quantile definieren: $x_{0.75}$ teil die geordnete Verteilung im Verhältnis 3:1. Das heißt, dass 75% der Beobachtungen kleiner als $x_{0.75}$ und 25% größer sind.
+Sie haben schon den Median $x_{0.5}$ als Lageparameter kennengelernt. Er teilt die geordnete Verteilung in zwei genau gleich große Teile. Allgemeiner lassen sich analog dazu die Quantile definieren: $x_{0.75}$ teil die geordnete Verteilung im Verhältnis 3:1. Das heißt, dass 75% der Beobachtungen kleiner als $x_{0.75}$ und 25% größer sind.
 Das $x_{0.25}$ Quantil teilt die Reihe im Verhältnis 1:3. Hier sind 25% der Beobachtungen kleiner und 75% größer.
 
 {{% customnotice code %}}
@@ -70,3 +70,24 @@ Das $x_{0.25}$ Quantil teilt die Reihe im Verhältnis 1:3. Hier sind 25% der Beo
 df['Total Checkouts'].quantile(q=[0.25, 0.5, 0.75])
 ```
 {{% /customnotice %}}
+
+
+Um Ausreißer in einer Variablen zu entfernen/ zu ersetzen, bietet es sich manchmal an, die größten (und/ oder kleinsten) $\alpha\\%$ Beobachtungen zu identifizieren: 
+
+{{% customnotice code %}}
+```python
+# removes 1% of the data at both ends of the distribution
+alpha = 0.01
+df['Total Checkouts'].quantile([alpha/2, 1-alpha/2])
+```
+{{% /customnotice %}}
+
+
+
+
+
+
+
+
+
+

@@ -17,7 +17,7 @@
       
       <guid>https://bonartm.github.io/data-librarian/solutions/</guid>
       <description>Im Laufe des Kurses werden hier die Lösungen zu den einzelnen Aufgaben hochgeladen. Die Projektaufgaben werden am Präsenztag gesammelt besprochen.
-Jan gilt.), diskret, `object` - `temp`: metrisch, stetig, `int` - `below_zero`: nominal, diskret, `boolean` #### Datenrundreise   Lösungen   solutions_datenrundreise.ipynb  (35 ko)    #### Exkurs: Einlesen von Daten - In Linux kann z.B. mit dem `free` Kommando der freie Speicherplatz ermittelt werden. Bei 16 Gigabyte Arbeitsspeicher werden ca.</description>
+Kursorganisation und Vorbereitung Quiz  Strg+Enter siehe hier: https://docs.anaconda.com/anaconda/packages/pkg-docs/ 423448, len(df) siehe (unter sns.set()): https://seaborn.pydata.org/introduction.html  Jan gilt.), diskret, `object` - `temp`: metrisch, stetig, `int` - `below_zero`: nominal, diskret, `boolean` #### Datenrundreise   Lösungen   solutions_datenrundreise.ipynb  (35 ko)    #### Exkurs: Einlesen von Daten - In Linux kann z.</description>
     </item>
     
     <item>

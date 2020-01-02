@@ -2,6 +2,7 @@ baseURL = "https://bonartm.github.io/data-librarian/"
 languageCode = "de-DE"
 title = "data librarian - modul 3 - daten analysieren und verstehen"
 
+
 ignorefiles = [ "content/data/.*", "content/basics/.*", "content/descriptive_statistics/.*", "content/inference/*"]
 
 # Change the default theme to be use when building the site with Hugo
