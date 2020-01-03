@@ -29,9 +29,3 @@ Der **erste Teil** des Moduls (21-01 - 15.02) wird von [Malte Bonart](mailto:mal
 
 Am **Präsenztag**, der am *05.03.2020* stattfindet, werden wir im voraus gesammelte Fragen gemeinsam beantworten und diskutieren. Sie werden Zeit haben, an einem persönlichen Datenanalyseprojekt zu arbeiten. Die Kursleiter werden Sie dabei unterstützen und individuell betreuen. Am Ende des Präsenztages stellen alle KursteilnehmerInnen ihre Ergebnisse in einer **Kurzpräsentation** vor.
 
-{{% customnotice tip%}}
-Den Source Code für diese Webseite und die weiteren Kursmaterialien finden Sie in einem öffentlichen [GitHub Repository](https://github.com/bonartm/data-librarian). Sie können sich **optional** das komplette Repository herunterladen indem sie folgenden Befehl in der Kommandozeile ausführen:
-```shell
-git clone https://github.com/bonartm/data-librarian.git
-```
-{{% /customnotice %}}
