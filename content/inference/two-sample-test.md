@@ -27,7 +27,7 @@ Ein häufiges Problem bei der statistischen Datenanalyse ist die Frage, ob **sig
 
 Von einem signifikanten Unterschied spricht man, wenn die Differenz zwischen den Mittelwerten zweier Stichproben so groß ist, dass es sehr Unwahrscheinlich ist, dass dieser Unterschied alleine aufgrund der rein zufälligen Schwankungen durch die Stichprobenziehung enstanden ist. 
 
-Wenn wir mit $\mu_x$ und $\mu_y$ die wahren aber unbekannten Mittelwerte in der Population bezeichnen und mit $\Delta_{xy}$ die Differenz dieser Mittelwerte, dann lautet unsere Hypothese:
+Wenn wir mit $\mu_x$ und $\mu_y$ die wahren aber unbekannten Mittelwerte in der Population bezeichnen und mit $\Delta_{xy}$ die Differenz dieser Mittelwerte, dann lautet unsere **Hypothese**:
 
 $$
 H_0: \mu_x = \mu_y \iff \Delta_{xy} = \mu_x - \mu_y = 0
@@ -39,11 +39,17 @@ Wir können das bisherige **Bootstrapping-Verfahren** auch hier anwenden, um die
 
 {{% customnotice alert%}}
 
-Beachten Sie, dass  sich das Verfahren und die Bestimmung der Konfidenzintervalle im Vergleich zur vorherigen Lektion nicht ändert. Einzig der zu interessierende Schätzwert wird ausgetauscht: Wo vorher nur die Stichprobenverteilung von $\bar{x}$ bestimmt wurde, ist es nun die Verteilung von $d_{xy} = \bar{x}-\bar{y}$.
+Beachten Sie, dass  sich das grundlegende Verfahren und die Bestimmung der Konfidenzintervalle im Vergleich zur vorherigen Lektion **nicht ändert**. Einzig der zu interessierende Schätzwert wird ausgetauscht: Wo vorher nur die Stichprobenverteilung von $\bar{x}$ bestimmt wurde, ist es nun die Verteilung von $d_{xy} = \bar{x}-\bar{y}$.
 
 {{% /customnotice%}}
 
 Zum Signifikanzniveau $\alpha=0.05$ erhalten wir mit den Quantilen $d_{\frac{\alpha}{2}}$ und $d_{1-\frac{\alpha}{2}}$ das 95%-Konfidenzintervall für die Mittelwertdifferenz. Mit einer Wahrscheinlichkeit von $1-\alpha = 95\\%$ überdeckt das Konfidenzintervall damit den unbekannten Populationsparameter $\Delta_{xy} = \mu_x - \mu_y$.
+
+{{% customnotice tip%}}
+
+Liegt das Konfidenz-Intervall für die Differenz zweier Mittelwerte ausschließlich im positiven oder negativem Bereich (also **außerhalb des Nullpunktes**), können wir daraus schließen, dass die beiden Stichproben mit hoher Evidenz unterschiedlichen Populationen mit verschiedenen Mittelwerten entstammen. Die aufgestellte Hypothese kann deswegen abgelehnt werden.
+
+{{% /customnotice%}}
 
 {{% customnotice code%}}
 
@@ -71,11 +77,7 @@ pd.Series(dxy).quantile((alpha/2, 1-alpha/2))
 
 
 
-{{% customnotice tip%}}
 
-Liegt das Konfidenz-Intervall für die Differenz zweier Mittelwerte ausschließlich im positiven oder negativem Bereich (also **außerhalb des Nullpunktes**), können wir daraus schließen, dass die beiden Stichproben mit hoher Evidenz unterschiedlichen Populationen mit verschiedenen Mittelwerten entstammen. 
-
-{{% /customnotice%}}
 
 
 

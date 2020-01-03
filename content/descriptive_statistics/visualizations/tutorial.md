@@ -24,58 +24,111 @@ LastModifierEmail = ""
 
 > Statistical analysis is a process of understanding how variables in a dataset relate to each other and how those relationships depend on other variables. Visualization can be a core component of this process because, when data are visualized properly, the human visual system can see trends and patterns that indicate a relationship. (https://seaborn.pydata.org/tutorial/relational.html)
 
-Die zahlreichen Funktionen, die `seaborn` bietet basieren immer auf dem gleichen Prinzip: Visualisiert werden (nominale, ordinale, metrische) Variablen eines Datensatzes, die in Form eines `DataFrame`s vorliegt. Das Skalenniveau der Variablen bestimmt dabei die Art der Visualisierung. Variablen können verschiedenen Eigenschaften des Diagramms zugeordnet werden z.B. Punktgröße oder Farbe). Am besten lässt sich das Prinzip an einem Beispiel erkennen:
+Die zahlreichen Funktionen, die `seaborn` bietet basieren immer auf dem gleichen Prinzip: Visualisiert werden (nominale, ordinale, metrische) **Variablen** eines Datensatzes, die in Form eines `DataFrame`s vorliegt. Das **Skalenniveau** der Variablen bestimmt dabei die Art der Visualisierung. Variablen können verschiedenen Eigenschaften des Diagramms zugeordnet werden (z.B. die Punktgröße oder Farbe der Balken). Am besten lässt sich das Prinzip an Beispielen erkennen:
+
+
+### Grundlagen
+
+Zuerst werden die benötigten Bibliotheken importiert und der Datensatz eingelesen. Panadas und numpy dienen zur Verarbeitung der Daten. **Seaborn** baut auf **matplotlib**, der Standard-Bibliothek für wissenschaftliche Grafiken, auf und bietete einige Verbesserungen und Vereinfachungen. Der Kommentar `# matplotlib inline` ist ein [Magic Command](https://ipython.readthedocs.io/en/stable/interactive/magics.html#magic-matplotlib) für den Python Kernel in Jupyter Notebooks. Mit diesem Befehl werden Plots direkt im Notebook angezeigt. 
+
+Mit `sns.set()` wird das grundlegende Design der Plots dem Design von Seaborn angepasst. Die Funktion `DataFrame.sample()` wird verwendet, um eine Zufalsstichprobe der Größe $n=1000$ aus dem Datenstatz zu erstellen. Dies dient zur **besseren Lesbarkeit** des Plots in diesem Tutorial. 
 
 {{% customnotice code%}}
 ```python
 import pandas as pd
+import matplotlib.pyplot as plt
 import seaborn as sns
-# command to print plots directly in jupyter
-%matplotlib inline
-sns.set() # sets the default seaborn theme
+import numpy as np
+#matplotlib inline
+sns.set()
 
 # use sample to generate a random subsample
 df = pd.read_csv("../data/Library_Usage.csv").sample(n=1000)
+```
+{{% /customnotice%}}
+
+### Der erste Plot
+
+{{% customnotice code%}}
+```python
 sns.relplot(x='Total Checkouts', y='Total Renewals', data=df)
 ```
 {{% /customnotice%}}
 
-Dies erzeugt ein Streudiagram zur Visualisierung einer bivariaten Verteilung mit metrischen Variablen. Jedes Wertepaar $(x_i,y_i)$ der Verteilung wird im Koordinatensystem als Punkt dargestellt (Die Funktion `DataFrame.sample()` wird verwendet, um eine Zufalsstichprobe der Größe $n=1000$ aus dem Datenstatz zu erstellen. Dies dient zur besseren Lesbarkeit des Plots).  
+Die Funktion `relplot()` erzeugt ein Streudiagram zur Visualisierung einer bivariaten Verteilung mit metrischen Variablen. Jedes Wertepaar $(x_i,y_i)$ der Verteilung wird im Koordinatensystem als Punkt dargestellt. Die Variablen des Datensatzes werden über ihre Spaltennamen mit den Axen x und y des Plots verlinkt. 
 
-Mit den zusätzlichen Argumenten `hue` (Farbe der Punkte/ Linien/ Balken ...), `size` (Größe der Punkte/ Linien/ Balken ...), `style`  können weitere Eigenschaften des Plots mit anderen Variablen des Datensatzes verlinkt werden:
+### Plotgröße
+
+Die Größe des Plots kann über die beiden Argumente `height` (Höhe in [inches](https://de.wikipedia.org/wiki/Zoll_(Einheit)) und `aspect` (Breite des Plots ergibt sich aus `aspect * height`) konfiguriert werden:
+
+{{% customnotice code%}}
+```python
+sns.relplot(x='Total Checkouts', y='Total Renewals', data=df
+            height=5, aspect=3)
+```
+{{% /customnotice%}}
+
+### Speichern
+
+
+Um den Plot als Bilddatei abzuspeichern wird die Funktion `savefig()` aus der matplotlib Bibliothek verwendet:
+
+{{% customnotice code%}}
+```python
+plt.savefig('../tutorial.png', dpi=150)
+```
+{{% /customnotice%}}
+
+
+
+### Weitere Eigenschaften
+
+Mit den zusätzlichen Argumenten `hue` (Farbe der Punkte/ Linien/ Balken ...), `size` (Größe der Punkte/ Linien/ Balken ...), `style`  können weitere Eigenschaften des Plots angepasst werden:
 
 {{% customnotice code%}}
 ```python
 sns.relplot(x='Total Checkouts', y='Total Renewals', 
-                hue='Provided Email Address', style='Provided Email Address', 
+                hue='Provided Email Address', style='Outside of County', 
                 size='Year Patron Registered', data=df)
 ```
 {{% /customnotice%}}
 
+Die vollständige Liste aller Optionen kann [hier](https://seaborn.pydata.org/generated/seaborn.relplot.html#seaborn.relplot) eingesehen werden. 
 
-Mit dem Argument `palette` können verschiedene [Farbpaletten](https://seaborn.pydata.org/tutorial/color_palettes.html) ausgewählt werden. Zu empfehlen sind die Paletten von [ColorBrewer](https://jiffyclub.github.io/palettable/colorbrewer/qualitative/). Sie können zwischen den Kategorien `sequential`, `diverging` oder `qualitative` wählen. Mit der Funktion `sns.choose_colorbrewer_palette(data_type)` können Sie die Farbpalette ineraktiv auswählen (dies funktioniert nur in Jupyter Notebooks):
 
-
-{{% customnotice code%}}
-```python
-palette = sns.choose_colorbrewer_palette('qualitative')
-```
-{{% /customnotice%}}
-
+### Plot-Gitter
 
 Plots können mit dem `row` und/ oder `col` Argument auch anhand einer oder mehrerer Variablen in Form von Spalten und/ oder Zeilen angeordnet werden:
 
 {{% customnotice code%}}
 ```python
 sns.relplot(x='Total Checkouts', y='Total Renewals', 
-                row='Provided Email Address', col='Outside of County', data=df)
+            size='Year Patron Registered',
+            row='Provided Email Address', col='Outside of County', data=df)
+```
+{{% /customnotice%}}
+
+Diese Form der Visualisierung ist in der Regel einem einzelnen Plot mit einer langen Legende vorzuziehen. 
+
+
+
+### Farbpaletten
+
+
+Mit dem Argument `palette` können verschiedene [Farbpaletten](https://seaborn.pydata.org/tutorial/color_palettes.html) für den `hue` Parameter ausgewählt werden. Zu empfehlen sind die Paletten von [ColorBrewer](https://s3.amazonaws.com/codecademy-content/programs/dataviz-python/unit-5/seaborn-design-2/article2_image9.png):
+
+{{% customnotice code%}}
+```python
+sns.relplot(x='Total Checkouts', y='Total Renewals', 
+            hue='Provided Email Address', 
+            col='Outside of County',
+            palette=sns.color_palette('Accent', 2), 
+            data=df)
 ```
 {{% /customnotice%}}
 
 
-
-
-
+Mit der Funktion `sns.color_palette` können verschiedene Paletten anhand ihres Namens ausgewählt werden. Wichtig ist hierbei, die Anzahl der benötigten Farben mit anzugeben. 
 
 
 

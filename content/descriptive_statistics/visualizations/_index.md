@@ -37,6 +37,11 @@ Auf der anderen Seite lassen sich schon mit wenig Programmcode annehmbare Visual
 
 ---
 
+{{% customnotice tip %}}
+Dieses [Cheat-Sheet](https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Python_Seaborn_Cheat_Sheet.pdf) gibt einen guten Überblick über die Erstellung von Plots mit Seaborn. 
+{{% /customnotice %}}
+
+
 {{% customnotice exercise %}}
 ### Statistik bei FoxNews
 

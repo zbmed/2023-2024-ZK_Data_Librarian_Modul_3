@@ -55,7 +55,7 @@ print(df)
 {{% customnotice exercise %}}
 - Welches Skalenniveau besitzen die Variablen im obigen Beispiel?
 - Sind die Variablen stetig oder diskret?
-- Was ist der Datentype jeder einzelnen Spalte?
+- Was ist der [Datentyp](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.dtypes.html) jeder einzelnen Spalte?
 {{% /customnotice %}}
 
 In der praktischen Datenanalyse werden Sie nur selten `DataFrames` oder `Series` manuell erstellen, sondern im Computer abgespeicherte Datentabellen aus anderen Formaten, wie Excel oder `.csv` einlesen.

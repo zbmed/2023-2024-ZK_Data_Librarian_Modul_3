@@ -42,7 +42,7 @@ df.to_json("../data/Library_Usage.json")
 
 {{% customnotice alert %}}
 
-- Manche Funktion aus dem `pandas` Paket sind **statische Funktionen**: Sie sind an **kein** konkretes Objekt wie ein `DataFrame` gebunden, sondern werden über den Klassennamen `pd` aufgerufen. Beispiele: `pd.read_csv`, `pd.to_numeric`, `pd.crosstab`.
+- Manche Funktion aus dem `pandas` Paket sind **statische Funktionen**: Sie sind an **kein** konkretes Objekt wie ein `DataFrame` gebunden, sondern werden über den Bibliotheksnamen `pd` aufgerufen. Beispiele: `pd.read_csv`, `pd.to_numeric`, `pd.crosstab`.
 - Andere Funktionen sind an ein bestimmtes Objekt, welches mit einer Variable referenziert wird, gebunden. In der Regel ist dies ein `DataFrame` oder eine `Series`. Beispiele: `df.to_csv`, `df.corr`, `df.head`, `x.mean`.
 - Machen Sie sich mit dem Unterschied vertraut: Was bedeuten `pd` und `df` und `x` in den Beispielen?
 {{% /customnotice %}}

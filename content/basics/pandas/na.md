@@ -22,11 +22,11 @@ LastModifierDisplayName = ""
 LastModifierEmail = ""
 +++
 
-Real erhobene Daten sind meistens unsauber und fehlerhaft. Ein häufiges Problem dabei sind fehlende Werte, also Beobachtungen für die manche Merkmale nicht erhoben wurden. In jedem Datensatz werden fehlende Werte anders gekennzeichnet, aber man findet meistens diese Kodierungen wieder: `"-999", "NA", " ", "None", "NULL", "#N/A"`.
+Real erhobene Daten sind meistens unsauber und fehlerhaft. Ein häufiges Problem dabei sind **fehlende Werte**, also Beobachtungen für die manche Merkmale nicht erhoben wurden. In jedem Datensatz werden fehlende Werte anders gekennzeichnet, aber man findet oft diese Kodierungen wieder: `"-999", "NA", " ", "None", "NULL", "#N/A"`.
 
-Wenn beispielsweise der Mittelwert einer statistischen Variable berechnet wird, so muss entschieden werden, wie mit fehlenden Werten umgegangen werden soll: Sollen die Werte entfernt werden? Sollen die fehlenden Werte durch durch einen bestimmten Wert ersetzt werden?
+Wenn beispielsweise der Mittelwert einer statistischen Variable berechnet wird, so muss entschieden werden, wie mit fehlenden Werten umgegangen werden soll: Sollen die Werte **entfernt** werden? Sollen die fehlenden Werte durch einen bestimmten Wert **ersetzt** werden?
 
-In `DataFrame`s werden fehlende Werte durch das Schlüsselwort `NaN` ("Not a Number") angezeigt. Beim Einlesen von Daten (siehe z.B. die [`read_csv` Funktion](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_csv.html)) können mit dem Argument `na_values` zusätzliche Kodierungen für fehlerhafte Werte mit angegeben werden.
+In `DataFrame`s werden fehlende Werte durch das Schlüsselwort `NaN` ("**Not a Number**") angezeigt. Beim Einlesen von Daten (siehe z.B. die [`read_csv` Funktion](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_csv.html)) können mit dem Argument `na_values` zusätzliche Kodierungen für fehlerhafte Werte mit angegeben werden.
 
 ### Fallbeispiel
 
@@ -47,7 +47,7 @@ df = pd.read_csv("../data/Library_Usage.csv", na_values="None")
 df['Circulation Active Year']
 ```
 
-Oder Sie führen nach dem Einlesen eine explizite Umwandlung des Datentyps durch:
+Oder Sie führen nach dem Einlesen eine **explizite Umwandlung** des Datentyps durch:
 
 ```python
 df = pd.read_csv("../data/Library_Usage.csv", na_values="None")
@@ -66,6 +66,8 @@ Was unterscheidet den Wert `None` vom Wert `"None"`? Was den Wert `5` vom Wert `
 
 #### Filter
 
+Die Funktionen `isna` (`notna`) geben eine boolesche `Series` zurück, die `True` ist, wenn an der Stelle ein fehlender Wert steht. Damit pandas fehlende Werte korrekt erkennt, müssen diese vorher erst in das interne Format `NaN` umgewandelt werden (siehe oben). 
+
 
 {{% customnotice code %}}
 ```python
@@ -73,6 +75,17 @@ df[df['Age Range'].isna()]
 df[df['Age Range'].notna()]
 ```
 {{% /customnotice %}}
+
+Mit diesem nützlichen Befehl können Sie sich schnell die Anzahl fehlender Werte in jeder Spalte ausgeben lassen: 
+
+{{% customnotice code %}}
+```python
+df.isna().sum()
+```
+{{% /customnotice %}}
+
+Dies funktioniert, da Python bei Bedarf einen booleschen Wert implizit in ein numerisches Format konvertiert. `True` wird zu 1 konvertiert und `False` zu 0. 
+
 
 #### Entfernen
 

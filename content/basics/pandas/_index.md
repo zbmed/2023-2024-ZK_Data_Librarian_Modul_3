@@ -70,10 +70,6 @@ data-librarian-3
 
 ---
 
-#### Weitere Ressourcen
-
-- Python Data Analaysis [Tutorials](https://www.featureranking.com/tutorials/python-tutorials/)
-- Interaktive Python Online-Tutorials auf [learnpython.org](https://www.learnpython.org/en/)
-- Einführung in Python auf [kaggle](https://www.kaggle.com/learn/python)
-- Pandas Tutorial auf [kaagle](https://www.kaggle.com/learn/pandas)
-- Pandas [Cheat Sheet](http://pandas.pydata.org/Pandas_Cheat_Sheet.pdf)
+{{% customnotice tip %}}
+Dieses [Cheat-Sheet](http://datacamp-community-prod.s3.amazonaws.com/dbed353d-2757-4617-8206-8767ab379ab3) gibt einen guten Überblick über die Datenverarbeitung mit Pandas. 
+{{% /customnotice %}}

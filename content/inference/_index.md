@@ -27,27 +27,27 @@ LastModifierEmail = ""
 
 # Ausblick: Grundlagen der Inferenzstatistik
 
-Diese Einheit gibt einen ersten Einblick in die angewandte Inferenzstatistik mit dem Bootstrapping-Verfahren und stellt die Berechnung von Konfidenzintervallen für den Mittelwerte und Median in Python vor. Die Inhalte und Aufgaben dieser Einheit sind etwas anspruchsvoller als die bisherigen Lektionen.
+Diese Einheit gibt einen ersten Einblick in die angewandte Inferenzstatistik mit dem **Bootstrapping-Verfahren** und stellt die Berechnung von Konfidenzintervallen für den Mittelwert und Median in Python vor. Die Inhalte und Aufgaben dieser Einheit sind anspruchsvoller als bisher. Wenn Sie Probleme mit der Lösung der Projektaufgabe haben, können wir diese am **Präsenztag** gemeinsam besprechen.
 
 ## Ziele
 
-- Testen Sie, ob signifikante Unterschiede zwischen den Mittelwerten zweier Populationen bestehen.
+- Testen Sie, ob signifikante Unterschiede zwischen den Mittelwerten zweier Sub-Populationen bestehen.
 
 {{% customnotice exercise %}}
 
-### Optionale Projektaufgabe
+### Projektaufgabe
 
-Unterscheidet sich das Ausleihverhalten von jungen und älteren Bibliotheksnutzern signifikant voneinander? Gehen Sie zur Beantwortung der Frage die folgenden Schritte durch:
+Unterscheidet sich das durchschnittliche **Ausleihverhalten** von jungen und älteren Bibliotheksnutzern signifikant voneinander? Gehen Sie zur Beantwortung der Frage die folgenden Schritte durch:
 
 1. Lesen Sie den Datensatz ein 
 2. Um eine homogene Stichprobe zu erhalten filtern Sie nach Bibliothekskunden die sich im Jahr 2010 registriert haben und auch noch im Jahr 2016 (als der Datensatz erstellt wurde) aktiv waren.
-3. Erstellen Sie nun eine `Series` der `Total Checkouts` für zwei Sub-Population: Betrachten Sie beispielsweise `YOUNG ADULT`s und `SENIOR` aus der Variable `Patron Type Definition`. 
-    - Wie viele Beobachtungen sind jeweils in den Stichproben? 
+3. Erstellen Sie jeweils eine `Series` der `Total Checkouts` für zwei Sub-Population: Betrachten Sie jeweils `YOUNG ADULT`s und `SENIOR`s aus der Variable `Patron Type Definition`. 
+    - Wie viele Beobachtungen sind jeweils in den beiden Populationen? 
     - Was sind deren Mittelwerte (Median, arithmetisches Mittel)? 
-4. Berechnen Sie das Konfidenzinterval für die Differenz der Mittelwerte (Mediane) mit dem Bootstrapping Verfahren!
-5. Wie interpretieren Sie das Ergebniss? Unterscheiden sich die Mittelwerte signifikant voneinander?
+    - Was ist Ihre Vermutung? Bestehen signifikante Unterschiede in den Mittelwerten dieser beiden Gruppen?
+4. Berechnen Sie das Konfidenzinterval für die Differenz der Mittelwerte (Mediane) mit dem [Bootstrapping Verfahren](/data-librarian/inference/two-sample-test/)!
+5. Wie interpretieren Sie das Ergebnis? Unterscheiden sich die Mittelwerte signifikant voneinander?
 6. Ändert sich das Ergebniss, wenn Sie das Signifikanzniveau $\alpha$ ändern?
-7. Führen Sie weitere Analysen mit verschiedenen Sub-populationen durch. 
 
 Schicken Sie bis spätestens zum Projekttag Ihren Report in Form eines integrierten Python Notebooks an malte@bonart.de.
 

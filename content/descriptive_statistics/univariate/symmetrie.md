@@ -28,7 +28,7 @@ pattern="distributions.ipynb" /%}}
 
 Um eine metrische Verteilung charakterisieren zu können, ist neben der zentralen Lage- und Streuung auch deren Symmetrie und Schiefe von Bedeutung. Die Symmetrie sagt etwas über die **(Un-)Gleichverteilung** einer Variablen aus. Bei stark assymetrischen Variablen (z.B. Haushaltseinkommen in Deutschland) ist das auftreten von kleinen Werten viel wahrscheinlicher, als das auftreten von sehr großen Werten (oder umgekehrt).
 
-Das Bild zeigt **Histogramme** für verschiedene simulierte Zufallswerte der [Beta-Verteilung](https://de.wikipedia.org/wiki/Beta-Verteilung). Dabei wurden jeweils die Parameter der theoretischen Verteilung $\alpha$ und $\beta$ geändert. Somit kann eine große Bandbreite charakteristischer Verteilungen abgedeckt werden. Neben dem Histogram wurde auch der empirische Median und Mittelwert der Verteilung als vertikale Linien eingezeichnet.
+Das Bild zeigt [**Histogramme**](https://de.wikipedia.org/wiki/Histogramm) für verschiedene simulierte Zufallswerte der [Beta-Verteilung](https://de.wikipedia.org/wiki/Beta-Verteilung). Dabei wurden jeweils die Parameter der theoretischen Verteilung $\alpha$ und $\beta$ geändert. Somit kann eine große Bandbreite charakteristischer Verteilungen abgedeckt werden. Neben dem Histogram wurde auch der empirische Median und Mittelwert der Verteilung als vertikale Linien eingezeichnet.
 
 Für symmetrische Verteilungen gilt, dass der Mittelwert und der Median gleich sind und das Histogram an diesen Achsen gespiegelt werden kann. Eine **linkssteile** (rechtschiefe) Verteilung ergibt sich durch einige überdurchschnittlich große Werte. In diesem Fall ist der Mittelwert größer als der Median. Eine **rechtssteile** (linksschiefe) Verteilung ist durch einige unterdurchschnittlich kleine Werte geprägt. Hier ist der Median größer als der Mittelwert.
 
@@ -37,7 +37,7 @@ Zudem kann eine Verteilung auch **Gleichverteilt, Bi- oder Multimodal** sein. Im
 
 {{% customnotice exercise %}}
 - Schauen Sie sich die verschiedenen Histogramme im Bild an und charakterisieren Sie jede einzelne Verteilung anhand von Schiefe, Symmetrie und dem Modus
-- Die Graphik wurde mit dem angehängten Jupyter Notebook generiert. Hier können Sie auch selber andere Verteilungen simulieren und visualisieren.
+- Die Grafik wurde mit dem angehängten Jupyter Notebook generiert. Hier können Sie auch selber andere Verteilungen simulieren und visualisieren.
 {{% /customnotice %}}
 
 {{% customnotice alert %}}

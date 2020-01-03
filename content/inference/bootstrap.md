@@ -27,7 +27,7 @@ LastModifierEmail = ""
 
 Das Ziel der Inferenzstatistik ist es, aus einer einzelnen Stichprobe $x_1, \dots, x_n$ die Stichproben-Verteilung eines Schätzers, wie dem Mittelwert $\bar{x}$ oder dem Median $x_{0.5}$, herzuleiten. Wenn die Stichproben-Verteilung eines Schätzers vorliegt kann damit der Wert des tatsächlichen unbekannten Populationsparameters eingegrenzt werden.
 
-Für viele Schätzer kann deren Stichproben-Verteilug theoretisch hergeleitet werden. Neben der theoretischen Herangehensweise, gibt es auch eine intuitive empirische Methode, das **Bootstrapping-Verfahren**. Es basiert auf der **Simulation** von vielen Stichproben. Simulation bedeutet, dass die Stichproben nicht real erhoben werden, sondern alle aus der einzigen vorhanden Stichprobe erstellt werden.
+Für viele Schätzer kann deren Stichproben-Verteilug theoretisch hergeleitet werden. Neben der theoretischen Herangehensweise, gibt es auch eine intuitive empirische Methode, das **Bootstrapping-Verfahren**. Es basiert auf der **Simulation** von vielen Stichproben. Simulation bedeutet, dass die Stichproben nicht real erhoben, sondern alle aus der einzigen vorhanden Stichprobe erstellt werden.
 
 Eine einzelne Bootstrapping-Stichprobe erhält man, indem aus der vorhanden Stichprobe der Größe $n$, genau $n$ Beobachtungen **mit Zurücklegen** zufällig gezogen werden. Das bedeutet, dass Beobachtungen mehrmals in der simulierten Stichprobe vorkommen können.
 
@@ -91,7 +91,7 @@ x_means.between(9,11).mean()
 - Betrachten Sie die Variable `'Total Renewals'`. Wie viele Verlängerungen wurden im Mittel durchgeführt?
 - Erstellen Sie, wie oben beschrieben, eine Stichprobenverteilung für den Mittelwert.
 - Wie viel Prozent der Stichproben-Mittelwerte liegen zwischen 89 und 92 Verlängerungen?
-- Wie groß müssen Sie das Intervall wählen, sodass 90% aller Stichproben-Mittelwerte darin liegen (Tip: Nutzen Sie die Funktion `pandas.Series.quantile`)?
+- Wie groß müssen Sie das Intervall wählen, sodass 90% aller Bootstrapping-Mittelwerte darin liegen (Tip: Nutzen Sie die Funktion `pandas.Series.quantile`)?
 
 {{% /customnotice %}}
 

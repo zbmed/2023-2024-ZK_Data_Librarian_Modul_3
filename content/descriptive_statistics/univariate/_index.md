@@ -24,12 +24,10 @@ LastModifierEmail = ""
 
 In der Statistik geben **Verteilungen** an, wie wahrscheinlich oder häufig eine bestimmte Merkmausausprägung oder Kombination von Merkmausausprägungen ist. Univariate Verteilung beschreiben dabei die Wahrscheinlichkeiten einer einzelnen statischen Variablen, während bivariate oder multivariate Verteilungen sich auf zwei oder mehr Variablen beziehen.
 
-**Empirische Verteilungen** beziehen sich dabei auf die Häufigkeiten in konkreten Daten während **theoretische Verteilungen** als mathematischen Funktionen, die von einigen wenigen Parametern abhängen, vorliegen. Eine Hauptaufgabe der schließenden Statistik ist es, die beobachtbaren Daten so zu nutzen, dass die Parameter von theoretischen Verteilungen korrekt geschätzt werden können.
-
-Statistiken, wie der Mittelwert oder der Modus dienen zur Beschreibungen und Charakterisierung von Verteilungen in einigen wenigen Kennzahlen. Dabei gibt es häufig Statistiken, die nur für bestimmte Skalenniveaus Sinn machen.
+**Empirische Verteilungen** beziehen sich dabei auf die Häufigkeiten in konkreten Daten während **theoretische Verteilungen** als mathematischen Funktionen, die von einigen wenigen Parametern abhängen, vorliegen. Statistiken, wie der Mittelwert oder der Modus dienen zur Beschreibungen und Charakterisierung von Verteilungen durch aussagekräftige Kennzahlen. Dabei gibt es Statistiken, die oft nur auf Variablen mit einem bestimmten Skalenniveaus anwendbar sind.
 
 
-**Kategoriale** (nominale und ordinale) Variablen werden in Häufigkeitstabellen zusammengefasst. Wichtige charakteristische Eigenschaften für **metrische Variablen** sind die zentrale Lage, die Streuung und die Symmetrie.
+**Kategoriale** (nominale und ordinale) Variablen können in Häufigkeitstabellen zusammengefasst werden. Wichtige charakteristische Eigenschaften für **metrische Variablen** sind die zentrale Lage, die Streuung und die Symmetrie.
 
 Nach dieser Einheit sollten Sie die folgenden Fragen beantworten können:
 

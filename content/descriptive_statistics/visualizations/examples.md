@@ -1,5 +1,5 @@
 +++
-title = "Beispiele"
+title = "Weitere Beispiele"
 # If set, this will be used for the page's menu entry (instead of the `title` attribute)
 # menuTitle = "Einführung"
 weight = 42
@@ -22,46 +22,82 @@ LastModifierDisplayName = ""
 LastModifierEmail = ""
 +++
 
+Im Tutorial haben Sie gesehen, wie Sie ein Streudiagramm erstellen können. Hier werden exemplarisch weitere Möglichkeiten gezeigt, die Daten des Datensatzes zu visualisieren. Die [wichtigste Funktion](https://seaborn.pydata.org/generated/seaborn.catplot.html#seaborn.catplot) ist hierbei `sns.catplot()`.
 
-
-#### Visualisierung
-
-Häufigkeitstabellen lassen sich idealerweise als Balkendiagramme visualisieren:
-
-{{% customnotice code %}}
 ```python
 import pandas as pd
 import seaborn as sns
+import matplotlib.pyplot as plt
+import numpy as np
+# matplotlib inline
 sns.set()
-%matplotlib inline
 
-df = pd.read_csv("../data/Library_Usage.csv", na_values=["none"])
-pd.crosstab(
-    df['Provided Email Address'],
-    df['Notice Preference Definition'],
-    margins=False, normalize=0
-).plot.bar()
+df = pd.read_csv("../data/Library_Usage.csv")
+
 ```
-{{% /customnotice %}}
+
+### Nominale und ordinale Variablen
 
 
-Kreuztabellen lassen sich als groupierte Balkendiagramme visualisieren:
+Univariate Häufigkeits- und Bivariate Kreuztatabellen können mit Balkendiagrammen visualisiert werden:
 
-{{% customnotice code %}}
+
 ```python
-import pandas as pd
-import seaborn as sns
-sns.set()
-%matplotlib inline
-
-df = pd.read_csv("../data/Library_Usage.csv", na_values=["none"])
-pd.crosstab(
-    df['Provided Email Address'],
-    df['Notice Preference Definition'],
-    margins=False, normalize=0
-).plot.bar()
+sns.catplot(y='Year Patron Registered',
+            data=df, kind='count', color="steelblue")
 ```
-{{% /customnotice %}}
 
 
-{{%attachments title="Related files" pattern="(.){2,}\.(csv|ipynb)" /%}}
+```python
+sns.catplot(y='Age Range', hue='Provided Email Address', 
+            data=df, kind='count')
+```
+
+
+```python
+sns.catplot(x='Patron Type Definition', 
+            data=df, kind='count', 
+            col='Year Patron Registered', col_wrap=4)
+```
+
+
+### Metrische Variablen
+
+Univariate Verteilungen werden mit Histogrammen oder Kernel-Dichte Schätzern visualisiert:
+
+```python
+# Histogram
+
+sns.distplot(df['Total Renewals'], kde=False)
+
+# With density estimation
+
+sns.distplot(df['Total Renewals'], kde=True)
+
+```
+
+
+### Kombination aus metrischen und nominalen/ ordinalen Variablen
+
+
+```python
+# Swarmplot
+
+sns.catplot(x='Year Patron Registered', y = 'Total Renewals',
+            data=df, kind='swarm', color="steelblue", aspect=4)
+            
+# Boxplot
+
+sns.catplot(col='Year Patron Registered', y = 'Total Renewals', hue='Provided Email Address',
+            data=df, kind='box', color="steelblue", aspect=4)
+```
+
+
+
+
+
+
+
+
+
+

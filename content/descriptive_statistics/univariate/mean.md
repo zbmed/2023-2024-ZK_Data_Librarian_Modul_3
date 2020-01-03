@@ -41,13 +41,13 @@ Eine zweite wichtige Statistik ist der **Median**. Er ergibt sich aus dem Wert d
 $$
 x_{0.5} =
 \begin{cases}
-x_{(n+1)/2}, \text{n ungerade} \\\\
-\frac{x_{n/2} + x_{n/2+1}}{2}, \text{n gerade}
+x_{(n+1)/2}~, \text{ n ungerade} \\\\
+\frac{x_{n/2} + x_{n/2+1}}{2}~, \text{ n gerade}
 \end{cases}
 $$
 für $x_1 < x_2 < \dots < x_n$.
 
-Beispiel: Für $x=[8, 10, 11, 30]$ ist der Median $\frac{x_2 + x_3}{2} = 10.5$.
+Beispiel: Für $x=[8, 10, 11, 30]$ ist $n=4$ gerade und der Median wird berechnet mit $\frac{x_2 + x_3}{2} = \frac{10+11}{2} = 10.5$.
 
 {{% customnotice code %}}
 ```python
