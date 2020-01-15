@@ -33,6 +33,7 @@ Im ersten Teil des Moduls werden Sie einen  [offenen Kundendatensatz](https://da
 
 
 {{% customnotice exercise%}}
+#### Anlegen eines Projektordners (15 Min)
 1. Besuchen Sie das [offene Daten-Portal](https://data.sfgov.org/Culture-and-Recreation/Library-Usage/qzz6-2jup) der Stadt San Francisco und informieren Sie sich über den Datensatz
 2. Erstellen Sie einen Ordner auf Ihrem Computer. Dieser Ordner wird Ihr **Projektordner** für dieses Modul. Dort legen Sie alle Datensätze und Jupyter Notebooks ab.
 3. Erstellen Sie einen Unterordner `./data/` und einen Unterordner `./notebooks/` innerhalb Ihres Projektordners.
@@ -45,8 +46,6 @@ data-librarian-3
 ├── notebooks
 │   └── tutorial_jupyter.ipynb
 ```
-
-
 {{% /customnotice %}}
 
 {{% customnotice tip%}}

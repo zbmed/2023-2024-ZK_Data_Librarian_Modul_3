@@ -1,5 +1,5 @@
 +++
-title = "Fehlende Werte"
+title = "Exkurs: Fehlende Werte"
 # If set, this will be used for the page's menu entry (instead of the `title` attribute)
 # menuTitle = "Einführung"
 weight = 5
@@ -112,6 +112,9 @@ Standardmäßig werden bei den Operationen `fillna` oder `dropna` neue `Series` 
 
 
 {{% customnotice exercise %}}
+
+#### Fehlende Werte (20 Min)
+
 - Welche Spalten enthalten alles fehlende Werte?
 - Lesen Sie den Datensatz ein und erstellen Sie einen `DataFrame` der keine Beobachtungen mit fehlenden Werten mehr enthält.
 - Speicher Sie diesen unter dem Namen `Library_Usage_Clean.csv` ab.

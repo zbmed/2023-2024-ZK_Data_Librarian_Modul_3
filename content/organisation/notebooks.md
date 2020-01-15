@@ -31,6 +31,8 @@ Darüber hinaus bieten Notebooks die Möglichkeit **Text, Visualisierungen und C
 
 {{% customnotice exercise%}}
 
+#### Notebooks (20 Min)
+
 1. Laden Sie [dieses Notebook](../notebooks.files/tutorial_jupyter.ipynb) herunter (Rechtsklick -> Ziel/Link speichern unter...)
 2. Starten Sie *Jupyter Notebook* über die Kommandozeile oder über den *Anaconda Navigator*
 3. Navigieren Sie zu dem Speicherort des Notebooks und öffnen Sie es.

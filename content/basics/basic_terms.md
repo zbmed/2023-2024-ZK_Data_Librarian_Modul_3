@@ -42,6 +42,8 @@ Der Text gibt einen **Einstieg** in die Aufgaben und Anwendungsbereiche der Stat
 
 {{% customnotice exercise %}}
 
+#### Grundbegriffe (45 Min)
+
 Beantworten und diskutieren Sie folgende Fragen konkret für den [San Francisco Library Usage](/data-librarian/organisation/dataset/) Datensatz. Halten Sie Ihre Ergebnisse in Stichpunkten in einem *Jupyter Notebook* fest. Nicht alle Fragen lassen sich klar beantworten.
 
 1. Wie viele Merkmale besitzt der Datensatz?

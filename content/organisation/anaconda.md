@@ -27,7 +27,8 @@ LastModifierEmail = ""
 **Anaconda** basiert auf *conda*. Mit [Anaconda](https://www.anaconda.com/distribution/) werden eine Vielzahl von Paketen, die für die Datenanalyse gebraucht werden, schon vorinstalliert. Außerdem bietet *Anaconda* eine vorinstallierte Entwicklungsumgebung ([Spyder IDE](https://www.spyder-ide.org/)) und eine vorinstallierte Version von *Jupyter*, mit der [Notebooks](https://jupyter.org/) gestartet werden können.
 
 {{% customnotice exercise%}}
-- Informieren Sie sich über die Unterschiede von *Anaconda* und *Miniconda*!
+#### Anaconda (10 Min)
+
 - Wenn noch nicht geschehen, können Sie Anaconda [hier](https://www.anaconda.com/distribution/) für Ihr Betriebssystem herunterladen. Wir verwenden die Version für **Python 3.7**.
 - Öffnen Sie den mit Anaconda installierten *Anaconda Navigator* und verschaffen Sie sich einen Überblick über die vorhandenen Programme. 
 {{% /customnotice %}}

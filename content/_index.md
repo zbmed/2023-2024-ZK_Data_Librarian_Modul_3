@@ -25,3 +25,5 @@ Nachdem Sie im ersten Modul schon die grundlegenden Werkzeuge und Programmiertec
 - Diese Webseite ist für alle Endgeräte optimiert. Sie können deswegen auch Ihr Smartphone oder Tablet zum Lesen nutzen.
 - **Starten** Sie nun mit der ersten Kurseinheit indem Sie auf </i> <i class="fas fa-chevron-right"></i> klicken oder mit den Pfeiltasten <i class="fas fa-arrows-alt-h"></i> navigieren.
 {{% /customnotice %}}
+
+

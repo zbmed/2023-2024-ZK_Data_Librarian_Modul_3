@@ -53,6 +53,9 @@ print(df)
 {{% /customnotice %}}
 
 {{% customnotice exercise %}}
+
+#### Skalenniveau und Datentypen (10 Min)
+
 - Welches Skalenniveau besitzen die Variablen im obigen Beispiel?
 - Sind die Variablen stetig oder diskret?
 - Was ist der [Datentyp](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.dtypes.html) jeder einzelnen Spalte?

@@ -81,7 +81,7 @@ Im zweiten Beispiel wurde der Logarithmus auf den Werten der Spalte `Total Renew
 
 {{% customnotice exercise %}}
 
-### Fallstudie: Feature Engineering
+### Fallstudie: Feature Engineering (20 Min)
 
 Ziel ist es, eine neue Variable `Membership Duration` zu erstellen, die für jeden Kunden die aktive Mitgliedschaft in Monaten seit der Registrierung misst. Die aktive Mitgliedschaft wird definiert als:
 

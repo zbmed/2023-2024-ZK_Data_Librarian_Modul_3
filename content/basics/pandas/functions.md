@@ -36,6 +36,9 @@ Analog dazu funktioniert die Funktion `df.tail()`.
 
 
 {{% customnotice exercise %}}
+
+Pandas Funktionen (5 Min)
+
 Schauen Sie sich die Dokumentation für die Funktion `head()` [hier](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.head.html) an. Wie können Sie sich die ersten $100$ Zeilen anzeigen lassen?
 {{% /customnotice %}}
 

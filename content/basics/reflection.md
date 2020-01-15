@@ -23,6 +23,8 @@ LastModifierEmail = ""
 
 {{% customnotice exercise %}}
 
+#### Reflektion (15 Min)
+
 Schreiben Sie einen **kurzen** Text über die Verwendung von Daten und quantitativen Methoden an Ihrem Arbeitsplatz. Denken Sie dabei über folgende Fragen nach:
 
 1. Welche Daten sind bei Ihnen vorhanden?

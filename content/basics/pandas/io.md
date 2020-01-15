@@ -50,7 +50,7 @@ df.to_json("../data/Library_Usage.json")
 
 {{% customnotice exercise %}}
 
-### Datenrundreise
+### Exkurs: Datenrundreise (20 Min)
 
 - Informieren Sie sich [hier](https://pandas.pydata.org/pandas-docs/stable/reference/io.html) über die verschiedenen Funktionen zur Ein- und Ausgabe.
 - Lesen Sie den Datensatz `"../data/Library_Usage_Small.csv"` ein (Download [hier](/data-librarian/data/Library_Usage_Small.csv)). Er enthält nur die ersten 10 Zeilen des originalen Datensatzes (aus Performancegründen).
@@ -72,6 +72,8 @@ Deswegen gibt es neben dem Festplattenspeicher auch noch den **Arbeitsspeicher (
 Da normalerweise der Datensatz komplett in den Arbeitsspeicher geladen werden muss, können prinzipiell nicht beliebig große Datenmengen bearbeitet werden.
 
 {{% customnotice exercise %}}
+
+#### Arbeitsspeicher (30 Min)
 
 - Finden Sie heraus, wie viel **freier** Arbeitsspeicher Ihr Computer hat (Das Betriebssystem und Hintergrundprogramme verbrauchen auch RAM).
 - Wie viele `int64` Werte, also Zahlen, die 8 Byte (=64 Bit) Speicher benötigen, können Sie damit theoretisch in den Arbeitsspeicher laden? Tip: Nutzen sie [Google zum Umrechnen](https://www.google.com/search?q=15.4+GiB+in+Byte).
