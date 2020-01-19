@@ -11,7 +11,7 @@
     
     
     <item>
-      <title>Überblick: Statistische Inferenz</title>
+      <title>Statistische Inferenz</title>
       <link>https://bonartm.github.io/data-librarian/inference/overview/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -21,22 +21,33 @@ Beispiel Wahlumfrage: Sie ziehen zufällig $n=100$ Personen aus dem Wahlregister
     </item>
     
     <item>
-      <title>Beispiel: Würfelwurf</title>
-      <link>https://bonartm.github.io/data-librarian/inference/example/</link>
+      <title>Das Bootstrapping Verfahren</title>
+      <link>https://bonartm.github.io/data-librarian/inference/bootstrap/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bonartm.github.io/data-librarian/inference/example/</guid>
-      <description>Das würfeln eines Würfels ist ein Zufallsprozess, mit den Ereignissen $\{1, 2, 3, 4, 5, 6\}$. Wenn $X$ das Ergebnis eines einzelnen Würfelwurfs beschreibt dann kann die Wahrscheinlichkeit, dass der Würfelwurf Eins ergibt mit $P(X = 1)$ geschrieben werden. Ist der würfel fair und würfeln wir diesen nun viele hunderttausende Mal, so wird der relative Anteil der Einserwürfe $P(X=1) = \frac{1}{6}$ ergeben.
-Wahrscheinlichkeiten nehmen immer Werte zwischen Null und Eins an und können deswegen auch als Prozente zwischen $0%$ und $100%$ angegeben werden.</description>
+      <guid>https://bonartm.github.io/data-librarian/inference/bootstrap/</guid>
+      <description>Das Ziel der Inferenzstatistik ist es, aus einer einzelnen Stichprobe $x_1, \dots, x_n$ die Stichproben-Verteilung eines Schätzers, wie dem Mittelwert $\bar{x}$ oder dem Median $x_{0.5}$, herzuleiten. Wenn die Stichproben-Verteilung eines Schätzers vorliegt kann damit der Wert des tatsächlichen unbekannten Populationsparameters eingegrenzt werden.
+Für viele Schätzer kann deren Stichproben-Verteilug theoretisch hergeleitet werden. Neben der theoretischen Herangehensweise, gibt es auch eine intuitive empirische Methode, das Bootstrapping-Verfahren. Es basiert auf der Simulation von vielen Stichproben.</description>
+    </item>
+    
+    <item>
+      <title>Konfidenzintervalle und Signifikanz</title>
+      <link>https://bonartm.github.io/data-librarian/inference/significance/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bonartm.github.io/data-librarian/inference/significance/</guid>
+      <description>Im vorherigen Beispiel haben Sie mit Hilfe des Bootstrapping-Verfahrens die Stichprobenverteilung geschätzt. Wenn die Stichprobenverteilung bekannt ist, können damit Aussagen über den tatsächlichen Parameter in der Population (im Bild mit $\mu$ bezeichnet) getroffen werden.
+Eine häufig angewandte Methode sind Konfidenzintervalle (KI). Sie geben einen Bereich aus der Stichprobenverteilung des Schätzwertes an, der den wahren Wert in der Population mit hoher Wahrscheinlichkeit überdeckt. Die Wahrscheinlichkeit wird mit $1-\alpha$ angegeben. Der Wert $\alpha$ wird Signifikanzniveau gennannt und vor der Bestimmung des Intervalls festgelegt.</description>
     </item>
     
     <item>
       <title>Mittelwertvergleiche</title>
-      <link>https://bonartm.github.io/data-librarian/inference/ttest/</link>
+      <link>https://bonartm.github.io/data-librarian/inference/two-sample-test/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bonartm.github.io/data-librarian/inference/ttest/</guid>
-      <description>In der Praxis, werden Häufig zwei Mittelwerte von Untergruppen einer Variable darauf getestet,</description>
+      <guid>https://bonartm.github.io/data-librarian/inference/two-sample-test/</guid>
+      <description>Ein häufiges Problem bei der statistischen Datenanalyse ist die Frage, ob signifikante Unterschiede in den Mittelwerten zweier Subpopulationen bestehen: Leihen Frauen beispielsweise im Mittel signifikant mehr aus als männliche Bibliothekskunden? Tätigen Kunden im Ruhestand im Mittel weniger Verlängerungen als junge Kunden?
+Von einem signifikanten Unterschied spricht man, wenn die Differenz zwischen den Mittelwerten zweier Stichproben so groß ist, dass es sehr Unwahrscheinlich ist, dass dieser Unterschied alleine aufgrund der rein zufälligen Schwankungen durch die Stichprobenziehung enstanden ist.</description>
     </item>
     
   </channel>

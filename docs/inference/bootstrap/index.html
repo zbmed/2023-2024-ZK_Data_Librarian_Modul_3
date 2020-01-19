@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/data-librarian/images/favicon.png" type="image/png">
 
-    <title>Praktische Einführung in Pandas :: data librarian - modul 3 - daten analysieren und verstehen</title>
+    <title>Das Bootstrapping Verfahren :: data librarian - modul 3 - daten analysieren und verstehen</title>
 
     
     <link href="/data-librarian/css/nucleus.css?1579434066" rel="stylesheet">
@@ -42,7 +42,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/data-librarian/basics/pandas/">
+  <body class="" data-url="/data-librarian/inference/bootstrap/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -386,7 +386,7 @@
   
     
     <li data-nav-id="/data-librarian/basics/" title="Grundlagen" class="dd-item 
-        parent
+        
         
         
         ">
@@ -527,8 +527,8 @@
   
     
     <li data-nav-id="/data-librarian/basics/pandas/" title="Praktische Einführung in Pandas" class="dd-item 
-        parent
-        active
+        
+        
         
         ">
       <a href="/data-librarian/basics/pandas/">
@@ -1037,7 +1037,7 @@
   
     
     <li data-nav-id="/data-librarian/inference/" title="Inferenzstatistik" class="dd-item 
-        
+        parent
         
         
         ">
@@ -1082,7 +1082,7 @@
  
   
     
-      <li data-nav-id="/data-librarian/inference/bootstrap/" title="Das Bootstrapping Verfahren" class="dd-item ">
+      <li data-nav-id="/data-librarian/inference/bootstrap/" title="Das Bootstrapping Verfahren" class="dd-item active">
         <a href="/data-librarian/inference/bootstrap/">
         Das Bootstrapping Verfahren
         <i class="fas fa-check read-icon"></i>
@@ -1217,7 +1217,7 @@
             
           
           
-            <a href='/data-librarian/'>Modul 3</a> > <a href='/data-librarian/basics/'>Grundlagen</a> > Praktische Einführung in Pandas
+            <a href='/data-librarian/'>Modul 3</a> > <a href='/data-librarian/inference/'>Inferenzstatistik</a> > Das Bootstrapping Verfahren
           
         
           
@@ -1239,86 +1239,75 @@
           
             <h1>
               
-              Praktische Einführung in Pandas
+              Das Bootstrapping Verfahren
             </h1>
           
 
         
 
 
-
-	<p>Grundlage der statistischen Analyse sind <strong>Datentabellen</strong>: Jede Zeile der Tabelle entspricht einer Beobachtung. Jede Spalte entspricht einer statistischen Variable. Neue Beobachtungen und Variablen können dadurch einfach an die schon bestehende Tabelle angefügt werden.</p>
-
-<div class="customnotices">
-  <div class="notices_inner" id="alert">
-    <p>Achten Sie darauf, dass wenn es um Statistik und Programmierung geht mit &ldquo;Variable&rdquo; zwei Dinge gemeint sind:</p>
-<ol>
-<li><a href="https://de.wikipedia.org/wiki/Statistische_Variable">Variable</a> im Kontext eines statistischen Merkmals, das in der Regel als Spalte eines Datensatzes vorliegt.</li>
-<li><a href="https://de.wikipedia.org/wiki/Variable_(Programmierung)">Variablen</a> im Kontext von Programmiersprachen beschreiben benannte Referenzen auf bestimmte Datenstrukturen oder Objekte (z.B. <code>numbers = [1, 2, 3]</code>).</li>
-</ol>
-
-  </div>
-</div>
-
-<p>Am Beginn jeder statistischen Analyse steht die <strong>Aufbereitung und Bereinigung</strong> der Daten. Damit ist die Behandlung von fehlenden oder falsch kodierten Werten, die <strong>Umkodierung</strong> und <strong>Transformation</strong> von statistischen Variablen oder die Berechnung neuer Spalten gemeint. Oft sind auch nur Untergruppen von Beobachtungen mit bestimmten Merkmausausprägungen von Interesse.</p>
-<p>Viele statistische Methoden erfordern auch, dass die Daten nur als numerische Werte vorliegen. Daher müssen ordinale oder nominale Variablen, die als Text gespeichert sind (zum Beispiel <code>['male', 'female', 'female', ...]</code>) in entsprechende numerische Werte <strong>umkodiert</strong> werden. Dabei wird jeder Kategorie ein numerischer Wert zugeordnet.</p>
-<p>Das Standard-Paket um mit Datentabellen in Python zu arbeiten, ist <code>pandas</code>. Das folgende Kapitel stellt anhand von vielen praktischen <strong>Beispielen</strong> zum Nachmachen die grundlegenden Konzepte in <code>pandas</code> vor. Ein Überblick über die Bibliothek und weitere relevante Python-Pakete gibt es <a href="/data-librarian/organisation/packages/pandas/">hier</a>.</p>
-
-<div class="customnotices">
-  <div class="notices_inner" id="exercise">
-    <ol>
-<li>Erstellen Sie ein Jupyter Notebook in Ihrem <a href="/data-librarian/organisation/dataset/">Projektordner</a> unter <code>./notebooks</code>.</li>
-<li>Führen Sie die Beispiele in den folgenden Kurseinheiten im Notebook aus.</li>
-<li>Nach dieser Einheit sollten sie die folgenden Fragen beantworten können:
-<ul>
-<li>Wie kann ich Tabellendaten in pandas einlesen?</li>
-<li>Wie werden Daten in pandas angeordnet?</li>
-<li>Welche Datentypen können Spalten eines DataFrames annehmen?</li>
-<li>Wie kann ich einzelne Spalten oder Zeilen eines DataFrames auswählen?</li>
-</ul>
-</li>
-</ol>
-
-  </div>
-</div>
-
+<p><img src="../bootstrap.files/bootstrap.png" alt=""></p>
+<p>Das Ziel der Inferenzstatistik ist es, aus einer einzelnen Stichprobe $x_1, \dots, x_n$ die Stichproben-Verteilung eines Schätzers, wie dem Mittelwert $\bar{x}$ oder dem Median $x_{0.5}$, herzuleiten. Wenn die Stichproben-Verteilung eines Schätzers vorliegt kann damit der Wert des tatsächlichen unbekannten Populationsparameters eingegrenzt werden.</p>
+<p>Für viele Schätzer kann deren Stichproben-Verteilug theoretisch hergeleitet werden. Neben der theoretischen Herangehensweise, gibt es auch eine intuitive empirische Methode, das <strong>Bootstrapping-Verfahren</strong>. Es basiert auf der <strong>Simulation</strong> von vielen Stichproben. Simulation bedeutet, dass die Stichproben nicht real erhoben, sondern alle aus der einzigen vorhanden Stichprobe erstellt werden.</p>
+<p>Eine einzelne Bootstrapping-Stichprobe erhält man, indem aus der vorhanden Stichprobe der Größe $n$, genau $n$ Beobachtungen <strong>mit Zurücklegen</strong> zufällig gezogen werden. Das bedeutet, dass Beobachtungen mehrmals in der simulierten Stichprobe vorkommen können.</p>
 
 <div class="customnotices">
   <div class="notices_inner" id="tip">
-    <p>Ihre Verzeichnisstruktur vom Projektordner sollte jetzt so aussehen:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">data-librarian-3
-├── data
-│   └── Library_Usage.csv
-├── notebooks
-│   ├── pandas_introduction.ipynb
-│   └── tutorial_jupyter.ipynb
+    <h4 id="beispiel">Beispiel</h4>
+<p>Nehmen Sie an, dass die Stichprobe die folgenden $n=7$ Werte enthält:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd
+x <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>Series([<span style="color:#ae81ff">21</span>, <span style="color:#ae81ff">13</span>,  <span style="color:#ae81ff">8</span>, <span style="color:#ae81ff">14</span>, <span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">12</span>,  <span style="color:#ae81ff">5</span>])
+x<span style="color:#f92672">.</span>mean()
+</code></pre></div><p>Eine simulierte Bootstrapping-Stichprobe erhalten Sie indem Sie aus der vorhandenen Stichprobe genau $n=7$ Werte mit Zurücklegen (<code>replace=True</code>) zufällig auswählen:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">x<span style="color:#f92672">.</span>sample(n<span style="color:#f92672">=</span>len(x), replace<span style="color:#f92672">=</span>True) 
 </code></pre></div>
   </div>
 </div>
 
-<h4 id="what-is-pandas-introduction-video-by-giles-mcmullen--untertitel-auswählbar">What is Pandas? Introduction Video by Giles McMullen ( Untertitel auswählbar)</h4>
-
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/dcqPhpY7tWk" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
-
-<hr>
+<p>Für jede simulierte Stichprobe wird daraufhin der zu interessierende Schätzerwert berechnet. Um möglichst exakte Ergebnisse zu erhalten sollten mindestens $S \geq 5000$ Simulationen durchgeführt werden. Man erhält damit eine Ännäherung an die tatsächliche Stichprobenverteilung des Schätzwerts:</p>
 
 <div class="customnotices">
   <div class="notices_inner" id="tip">
-    <p>Dieses <a href="http://datacamp-community-prod.s3.amazonaws.com/dbed353d-2757-4617-8206-8767ab379ab3">Cheat-Sheet</a> gibt einen guten Überblick über die Datenverarbeitung mit Pandas.</p>
-
+    <h4 id="beispiel-fortsetzung">Beispiel (Fortsetzung)</h4>
+<p>Wir erstellen eine Bootstrapping-Verteilung für den Stichproben-Mittelwert. Die Anzahl der Simuluationen wird auf $S=10000$ festgelegt. Mit einer For-Loop Schleife wird die Simulation wiederholt. In jeder Simulation wird eine Bootstrapping-Stichprobe erstellt und deren Mittelwert berechnet.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">x_means <span style="color:#f92672">=</span> []
+S<span style="color:#f92672">=</span><span style="color:#ae81ff">10000</span>
+<span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(S):
+    x_mean <span style="color:#f92672">=</span> x<span style="color:#f92672">.</span>sample(n<span style="color:#f92672">=</span>len(x), replace<span style="color:#f92672">=</span>True)<span style="color:#f92672">.</span>mean()
+    x_means<span style="color:#f92672">.</span>append(x_mean)
+</code></pre></div><p>Die Mittelwerte jeder Simulation werden in der Liste <code>x_means</code> abgespeichert. Die Liste enthält nun eine empirische Stichprobenverteilung des Mittelwerts. Nun können Sie sich die Verteilung des Stichproben-Mittelwertes beispielsweise in einem Histogram ansehen:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e">#matplotlib inline</span>
+<span style="color:#f92672">import</span> seaborn <span style="color:#f92672">as</span> sns
+sns<span style="color:#f92672">.</span>set()
+sns<span style="color:#f92672">.</span>distplot(x_means, kde<span style="color:#f92672">=</span>False, bins<span style="color:#f92672">=</span><span style="color:#ae81ff">35</span>)
+</code></pre></div><p>Wie viele Mittelwerte liegen zwischen 9 und 11?</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">x_means <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>Series(x_means)
+x_means<span style="color:#f92672">.</span>between(<span style="color:#ae81ff">9</span>,<span style="color:#ae81ff">11</span>)<span style="color:#f92672">.</span>mean()
+</code></pre></div>
   </div>
 </div>
 
 
+<div class="customnotices">
+  <div class="notices_inner" id="exercise">
+    <ul>
+<li>Lesen Sie den Datensatz ein</li>
+<li>Um eine homogene Stichprobe zu erhalten filtern Sie nach Bibliothekskunden die sich im Jahr 2010 registriert haben und auch noch im Jahr 2016 (als der Datensatz erstellt wurde) aktiv waren. Achtung: Die Spalte <code>'Circulation Active Year'</code> wird standardmäßig als Text eingelesen.</li>
+<li>Betrachten Sie die Variable <code>'Total Renewals'</code>. Wie viele Verlängerungen wurden im Mittel durchgeführt?</li>
+<li>Erstellen Sie, wie oben beschrieben, eine Stichprobenverteilung für den Mittelwert.</li>
+<li>Wie viel Prozent der Stichproben-Mittelwerte liegen zwischen 89 und 92 Verlängerungen?</li>
+<li>Wie groß müssen Sie das Intervall wählen, sodass 90% aller Bootstrapping-Mittelwerte darin liegen (Tip: Nutzen Sie die Funktion <code>pandas.Series.quantile</code>)?</li>
+</ul>
 
+  </div>
+</div>
 
 
 
 <footer class=" footline" >
 	
 </footer>
+
 
         
         </div>
@@ -1580,7 +1569,6 @@
             
                 
                     
-                    
                 
                 
 
@@ -1595,9 +1583,6 @@
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -1679,7 +1664,6 @@
             
                 
                     
-                    
                 
                 
 
@@ -1692,9 +1676,6 @@
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -2040,6 +2021,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -2052,6 +2034,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -2069,6 +2054,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -2084,6 +2070,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -2124,10 +2113,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/data-librarian/basics/basic_terms/" title="Grundbegriffe der Statistik"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/data-librarian/inference/overview/" title="Statistische Inferenz"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/data-librarian/basics/pandas/series/" title="Series und DataFrames" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/data-librarian/inference/significance/" title="Konfidenzintervalle und Signifikanz" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -2193,3 +2182,4 @@
 
   </body>
 </html>
+

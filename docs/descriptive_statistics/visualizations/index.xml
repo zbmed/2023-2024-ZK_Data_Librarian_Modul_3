@@ -21,14 +21,14 @@
     </item>
     
     <item>
-      <title>Beispiele</title>
+      <title>Weitere Beispiele</title>
       <link>https://bonartm.github.io/data-librarian/descriptive_statistics/visualizations/examples/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://bonartm.github.io/data-librarian/descriptive_statistics/visualizations/examples/</guid>
-      <description>Visualisierung Häufigkeitstabellen lassen sich idealerweise als Balkendiagramme visualisieren:
-import pandas as pd import seaborn as sns sns.set() %matplotlib inline df = pd.read_csv(&amp;#34;../data/Library_Usage.csv&amp;#34;, na_values=[&amp;#34;none&amp;#34;]) pd.crosstab( df[&amp;#39;Provided Email Address&amp;#39;], df[&amp;#39;Notice Preference Definition&amp;#39;], margins=False, normalize=0 ).plot.bar()    Kreuztabellen lassen sich als groupierte Balkendiagramme visualisieren:
-import pandas as pd import seaborn as sns sns.set() %matplotlib inline df = pd.read_csv(&amp;#34;../data/Library_Usage.csv&amp;#34;, na_values=[&amp;#34;none&amp;#34;]) pd.crosstab( df[&amp;#39;Provided Email Address&amp;#39;], df[&amp;#39;Notice Preference Definition&amp;#39;], margins=False, normalize=0 ).plot.bar()      Related files   examples.</description>
+      <description>Im Tutorial haben Sie gesehen, wie Sie ein Streudiagramm erstellen können. Hier werden exemplarisch weitere Möglichkeiten gezeigt, die Daten des Datensatzes zu visualisieren. Die wichtigste Funktion ist hierbei sns.catplot().
+import pandas as pd import seaborn as sns import matplotlib.pyplot as plt import numpy as np # matplotlib inline sns.set() df = pd.read_csv(&amp;#34;../data/Library_Usage.csv&amp;#34;) Nominale und ordinale Variablen Univariate Häufigkeits- und Bivariate Kreuztatabellen können mit Balkendiagrammen visualisiert werden:
+sns.catplot(y=&amp;#39;Year Patron Registered&amp;#39;, data=df, kind=&amp;#39;count&amp;#39;, color=&amp;#34;steelblue&amp;#34;) sns.</description>
     </item>
     
   </channel>
