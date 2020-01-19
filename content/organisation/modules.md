@@ -25,7 +25,6 @@ Wir haben das Modul in **wöchentliche Einheiten**, die jeweils ein Gebiet aufgr
 
 Jede Einheit umfasst kleine praktische Projektaufgaben, welche Sie in Form eines [Jupyter Notebooks](https://jupyter.org/) bearbeiten und aufbereiten. Zu jeder Einheit werden viele verschiedene **Aufgaben** mit **unterschiedlichem Schwierigkeitsgrad** angeboten. Wenn Sie mit einer Aufgabe nicht weiterkommen oder zu viel Zeit aufwenden müssen, können Sie diese am Präsenztag mit den Betreuern besprechen.
 
-Der **erste Teil** des Moduls (21-01 - 15.02) wird von [Malte Bonart](mailto:malte@bonart.de) betreut und behandelt grundlegende klassische Konzepte der angewandten Statistik. Der **zweite Teil** des Moduls (16.02 - 04.03) wird von [Konrad Förstner](mailto:foerstner@zbmed.de) betreut und gibt einen Überblick über Themen des Maschinellen Lernens.
+Der **erste Teil** des Moduls (*21.01.2020 - 15.02.2020*) wird von [Malte Bonart](mailto:malte@bonart.de) betreut und behandelt grundlegende klassische Konzepte der angewandten Statistik. Der **zweite Teil** des Moduls (*16.02.2020 - 04.03.2020*) wird von [Konrad Förstner](mailto:foerstner@zbmed.de) betreut und gibt einen Überblick über Themen des maschinellen Lernens.
 
 Am **Präsenztag**, der am *05.03.2020* stattfindet, werden wir im voraus gesammelte Fragen gemeinsam beantworten und diskutieren. Sie werden Zeit haben, an einem persönlichen Datenanalyseprojekt zu arbeiten. Die Kursleiter werden Sie dabei unterstützen und individuell betreuen. Am Ende des Präsenztages stellen alle KursteilnehmerInnen ihre Ergebnisse in einer **Kurzpräsentation** vor.
-
