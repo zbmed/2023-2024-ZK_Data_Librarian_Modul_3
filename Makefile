@@ -1,5 +1,5 @@
 html:
-	hugo -d ./docs
+	hugo -d ./public
 
 serve:
 	hugo server
