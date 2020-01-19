@@ -11,6 +11,16 @@
     
     
     <item>
+      <title>Bivariate Verteilungen</title>
+      <link>https://bonartm.github.io/data-librarian/descriptive_statistics/bivariate/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bonartm.github.io/data-librarian/descriptive_statistics/bivariate/</guid>
+      <description>Bisher haben Sie immer nur einzelne Variable betrachtet, zusammengefasst oder visualisiert. In vielen Fällen ist jedoch der Zusammenhang zwischen zwei Variablen von Interesse. Nach dieser Einheit sollten Sie die folgenden Fragen beantworten können:
+ Leihen ältere Bibliothekskunden im Schnitt mehr Bücher aus als jüngere? Führen Kunden, die häufiger Ausleihen tätigen, im Schnitt auch häufiger Verlängerungen durch? Nimmt die Anzahl der Ausleihen mit zunehmender Dauer der Mitgliedschaft ab?  Zwei Variablen, die keinen Zusammenhang aufweisen, nennt man statistisch unabhängige Variablen.</description>
+    </item>
+    
+    <item>
       <title>Recap: Quiz</title>
       <link>https://bonartm.github.io/data-librarian/descriptive_statistics/quiz_statistics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

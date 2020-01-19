@@ -30,8 +30,9 @@ Bisher haben Sie immer nur einzelne Variable betrachtet, zusammengefasst oder vi
 
 Zwei Variablen, die keinen Zusammenhang aufweisen, nennt man **statistisch unabhängige** Variablen. Für zwei metrische Variablen kann man außerdem zwischen einem positiven oder einem negativem Zusammenhang unterscheiden.
 
-![](./_index.files/boxplots.png)
+![](./files/boxplots.png)
 *Boxplot-Verteilung der Ausleihen nach Jahr der Registrierung*.
 
 
 {{%attachments title="Related files" pattern="(.){2,}\.(csv|ipynb)" /%}}
+
