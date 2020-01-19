@@ -59,7 +59,7 @@ div.notices_inner:first-child:before {
     background: #E6F9E6;
 }
 #tip:first-child:after {
-  content: 'Tip'
+  content: 'Tipp'
 }
 #tip:first-child:before {
     content: "\f0eb";
