@@ -3,7 +3,10 @@ languageCode = "de-DE"
 title = "data librarian - modul 3 - daten analysieren und verstehen"
 
 
-# ignorefiles = [ "content/data/.*", "content/basics/.*", "content/descriptive_statistics/.*", "content/inference/*"]
+# ignorefiles = [ "content/data/.*", "content/basics/.*",
+# "content/descriptive_statistics/.*", "content/inference/*",
+# "content/machine_learning_basics/*", "content/machine_learning_methods/*",
+# "content/text_mining/*"]
 ignorefiles = [ "content/data/.*"]
 
 # Change the default theme to be use when building the site with Hugo
