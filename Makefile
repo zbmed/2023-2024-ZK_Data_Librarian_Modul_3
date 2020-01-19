@@ -1,8 +1,8 @@
 html:
-	hugo
+	hugo -d ./docs
 
 serve:
 	hugo server
 
 clean:
-	rm -rf public
+	rm -rf docs
