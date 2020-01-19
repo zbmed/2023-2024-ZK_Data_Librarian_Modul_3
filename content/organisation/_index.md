@@ -18,7 +18,7 @@ Diese Einheit gibt einen Überblick über die Kursinhalte, wichtige Termine und 
 ## Ziele
 
 - Installieren Sie Anaconda mit Python 3.7 auf Ihrem Rechner
-- In Modul 1 haben Sie eine Git Repositorium erstellt und GitHub gespiegelt. Bitte erstellen Sie in diesem Repositorium einen Ordner namen `Module_3` und fügen Sie einen Datensatz Ihrem Projektordner hinzu. Füge Sie die Datein auch in das Git-Repositorium hinzu (kleine Erinnerung `git add ` und `git commit -m "Erläuterung"`, [große Erinnerung](https://librarycarpentry.org/lc-git/)).
+- In Modul 1 haben Sie eine Git Repositorium erstellt und GitHub gespiegelt. Bitte erstellen Sie in diesem Repositorium einen Ordner namen `Module_3` und fügen Sie [den Datensatz](https://bonartm.github.io/data-librarian/organisation/dataset/) Ihrem Projektordner hinzu. Füge Sie die Datein auch in das Git-Repositorium hinzu (kleine Erinnerung `git add ` und `git commit -m "Erläuterung"`, [große Erinnerung](https://librarycarpentry.org/lc-git/)).
 - Stellen Sie sicher, dass Python Notebooks lokal ausgeführt werden können
 - Wiederholen Sie die grundlegenden Python Programmier-Basics aus dem ersten Modul
 
