@@ -13,7 +13,7 @@ LastModifierEmail = ""
 
 # Kursorganisation und Vorbereitungen
 
-Diese Einheit gibt einen Überblick über die Kursinhalte, wichtige Termine und die benötigte Software und Python-Pakete. Viele der hier besprochenen Dinge werden Ihnen schon bekannt vorkommen und die Software haben Sie voraussichtlich auch schon auf Ihrem Rechner installiert.
+Diese Einheit gibt einen Überblick über die Kursinhalte, wichtige Termine und die benötigte Software und Python-Pakete. Viele der hier besprochenen Dinge werden Ihnen schon bekannt vorkommen und die Software haben Sie schon für die vorherigen Module auf Ihrem Rechner installiert.
 
 ## Ziele
 
