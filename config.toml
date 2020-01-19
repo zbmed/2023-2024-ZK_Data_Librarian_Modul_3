@@ -3,11 +3,15 @@ languageCode = "de-DE"
 title = "data librarian - modul 3 - daten analysieren und verstehen"
 
 
-# ignorefiles = [ "content/data/.*", "content/basics/.*",
-# "content/descriptive_statistics/.*", "content/inference/*",
-# "content/machine_learning_basics/*", "content/machine_learning_methods/*",
-# "content/text_mining/*"]
-ignorefiles = [ "content/data/.*"]
+ignorefiles = [ "content/data/.*",
+	    "content/basics/.*",
+	    "content/descriptive_statistics/.*",
+	    "content/inference/*",
+	    "content/machine_learning_basics/*",
+	    "content/machine_learning_methods/*",
+	    "content/text_mining/*"]
+
+# ignorefiles = [ "content/data/.*"]
 
 # Change the default theme to be use when building the site with Hugo
 theme = "hugo-theme-learn"
@@ -29,7 +33,7 @@ enableInlineShortcodes = false
   # See the config.toml file from this documentation site to have an example.
   editURL = ""
   # Author of the site, will be used in meta information
-  author = "Malte Bonart"
+  author = "Malte Bonart and Konrad Förstner"
   # Description of the site, will be used in meta information
   description = "learning materials for the data librarian course"
   # Shows a checkmark for visited pages on the menu
