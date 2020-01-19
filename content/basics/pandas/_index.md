@@ -53,7 +53,7 @@ Das Standard-Paket um mit Datentabellen in Python zu arbeiten, ist `pandas`. Das
 {{% customnotice tip %}}
 Ihre Verzeichnisstruktur vom Projektordner sollte jetzt so aussehen:
 ```shell
-data-librarian-3
+Module_3
 ├── data
 │   └── Library_Usage.csv
 ├── notebooks

@@ -40,7 +40,7 @@ Im ersten Teil des Moduls werden Sie einen  [offenen Kundendatensatz](https://da
 4. Laden Sie den Datensatz [Library_Usage.csv](https://data.sfgov.org/api/views/qzz6-2jup/rows.csv?accessType=DOWNLOAD) aus dem Internet herunter und speichern Sie ihn im Projektordner im Unter-Ordner `./data/` ab.
 5. Stellen Sie sicher, dass Ihr Projektordner die folgende Verzeichnisstruktur aufweist:
 ```shell
-data-librarian-3
+Module_3
 ├── data
 │   └── Library_Usage.csv
 ├── notebooks
