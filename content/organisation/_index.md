@@ -18,13 +18,13 @@ Diese Einheit gibt einen Überblick über die Kursinhalte, wichtige Termine und 
 ## Ziele
 
 - Installieren Sie Anaconda mit Python 3.7 auf Ihrem Rechner
-- Erstellen Sie einen Projektordner und fügen Sie einen Datensatz Ihrem Projektordner hinzu
+- In Modul 1 haben Sie eine Git Repositorium erstellt und GitHub gespiegelt. Bitte erstellen Sie in diesem Repositorium einen Ordner namen `Module_3` und fügen Sie einen Datensatz Ihrem Projektordner hinzu. Füge Sie die Datein auch in das Git-Repositorium hinzu (kleine Erinnerung `git add ` und `git commit -m "Erläuterung"`, [große Erinnerung](https://librarycarpentry.org/lc-git/)).
 - Stellen Sie sicher, dass Python Notebooks lokal ausgeführt werden können
 - Wiederholen Sie die grundlegenden Python Programmier-Basics aus dem ersten Modul
 
 {{% customnotice tip %}}
 
-Dieses [Cheat-Sheet](https://s3.amazonaws.com/assets.datacamp.com/blog_assets/PythonForDataScience.pdf) gibt einen guten Überblick über die wichtigsten Befehle in Python. 
+Unsere [Python-Kurzreferenz](https://github.com/foerstner-lab/Bits_and_pieces_for_the_carpentries_workshops/blob/master/short_references/Kurzreferenz_python.pdf) oder dieses [Cheat-Sheet](https://s3.amazonaws.com/assets.datacamp.com/blog_assets/PythonForDataScience.pdf) gibt einen guten Überblick über die wichtigsten Befehle in Python. 
 
 #### Weitere Ressourcen
 
