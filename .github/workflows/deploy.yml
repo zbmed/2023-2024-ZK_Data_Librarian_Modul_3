@@ -10,11 +10,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout master
-        uses: actions/checkout@v1
+        uses: actions/checkout@v1@
         with:
           submodules: true
       - name: Deploy the site
-        uses: bonartm/hugo-deploy-gh-pages
+        uses: bonartm/hugo-deploy-gh-pages@master
         env:
           GITHUB_ACTOR: bonartm 
           HUGO_VERSION: 0.62.2
