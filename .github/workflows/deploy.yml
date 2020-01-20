@@ -14,7 +14,7 @@ jobs:
         with:
           submodules: true
       - name: Deploy the site
-        uses: bonartm/hugo-deploy-gh-pages@1.1.0
+        uses: bonartm/hugo-deploy-gh-pages
         env:
           GITHUB_ACTOR: bonartm 
           HUGO_VERSION: 0.62.2
