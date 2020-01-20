@@ -14,8 +14,9 @@ jobs:
         with:
           submodules: true
       - name: Deploy the site
-        uses: benmatselby/hugo-deploy-gh-pages@1.1.0
+        uses: bonartm/hugo-deploy-gh-pages@1.1.0
         env:
+          GITHUB_ACTOR: bonartm 
           HUGO_VERSION: 0.62.2
           TARGET_REPO: bonartm/data-librarian
           TOKEN: ${{ secrets.deploy_key }}
