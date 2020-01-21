@@ -13,7 +13,7 @@ chapter = true
 hidden = false
 +++
 
-# Daten analysieren und verstehen
+# Daten analysieren und darstellen
 
 
 Herzlichen Willkommen zum dritten Modul **Daten analysieren und darstellen** des ZBWI Zertifikationskurs "Data Librarian". In diesem Modul möchten wir Ihnen einen praktischen Einblick in die Datenanalyse mit der Programmiersprache Python geben.

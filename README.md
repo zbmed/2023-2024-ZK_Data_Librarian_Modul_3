@@ -1,6 +1,6 @@
 # Website for the Data-Librarian Course
 
-This is the [hugo](https://gohugo.io/) based website for the third module "Daten analysieren und verstehen"
+This is the [hugo](https://gohugo.io/) based website for the third module "Daten analysieren und darstellen"
 
 ## Add content
 

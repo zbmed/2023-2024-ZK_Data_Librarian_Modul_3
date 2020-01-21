@@ -1,6 +1,6 @@
 baseURL = "https://bonartm.github.io/data-librarian/"
 languageCode = "de-DE"
-title = "data librarian - modul 3 - daten analysieren und verstehen"
+title = "data librarian - modul 3 - daten analysieren und darstellen"
 
 
 ignorefiles = [ "content/data/.*",
