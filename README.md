@@ -31,24 +31,28 @@ A simple [quiz](https://github.com/bonartm/hugo-quiz) is also provided:
 {{% /quiz %}}
 ```
 
-## Website Deployment
+## Build
 
-The website of this project is hosted on github pages and is based on [hugo](https://gohugo.io/) and the [hugo-learn](https://github.com/matcornic/hugo-theme-learn/) theme.
+this project is based on [hugo](https://gohugo.io/) and the [hugo-learn](https://github.com/matcornic/hugo-theme-learn/) theme.
 
-
-- clone the [learn-theme](https://learn.netlify.com/en/basics/installation/) into the `hugo/themes` folder
+- add the [learn-theme](https://learn.netlify.com/en/basics/installation/) as a submodule to the `hugo/themes` folder
 ```shell
 cd themes
-git clone https://github.com/matcornic/hugo-theme-learn.git
+git submodule add https://github.com/matcornic/hugo-theme-learn.git
 ```
 - run hugo test server
 ```shell
 hugo server
 ```
-- build website
+- build website locally
 ```shell
-hugo -d ./docs
+hugo
 ```
+
+## Deploy
+
+Automatic deployment to the `gh-pages` branch via [GitHub Actions For Hugo](https://github.com/peaceiris/actions-hugo/blob/master/README.md)
+
 
 ## Credits
 
