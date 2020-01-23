@@ -30,7 +30,7 @@ description = "Bietet 2D Plotting Funktionalitäten."
 {{% customnotice code%}}
 ```python
 # import the package and give it the shorter name 'plt'
-# matplotlib inline
+matplotlib inline
 import matplotlib.pyplot as plt
 
 # create some dummy data
