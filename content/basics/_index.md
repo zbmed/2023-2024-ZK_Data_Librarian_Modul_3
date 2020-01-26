@@ -27,7 +27,10 @@ LastModifierEmail = ""
 
 # Grundlagen der Datenanalyse in Python
 
-Diese Einheit gibt eine Einführung in die Aufgaben und grundlegenden Begriffe der angewandten Statistik. Im zweiten Teil wird das `pandas` Paket vorgestellt und gezeigt, wie Datensätze eingelesen und bearbeitet werden können.
+Diese Einheit gibt eine Einführung in die Aufgaben und grundlegenden Begriffe der angewandten Statistik. Im zweiten Teil wird das `pandas` Paket vorgestellt und gezeigt, wie Datensätze eingelesen und bearbeitet werden können. Manche Lektionen und Aufgaben sind als *Exkurs* markiert. Diese Aufgaben sind für Interessierte und dauern meist etwas länger oder sind schwieriger zu lösen.
+
+Versuchen Sie zuerst die Aufgaben innerhalb der angegeben Zeit selbstständig zu lösen. Versuchen Sie danach mit Hilfe der Musterlösung die Lösung nachzuvollziehen. Schreiben Sie sich bei Problemen Ihre Fragen auf, damit wir diese am Präsenztag zusammen besprechen können. 
+
 
 ## Ziele
 
@@ -42,7 +45,7 @@ Diese Einheit gibt eine Einführung in die Aufgaben und grundlegenden Begriffe d
 Die Pressestelle der San Francisco Public Library möchte einen Online-Artikel zum Kundenstamm der Bibliothek erstellen. Dazu hat sie Ihnen [einen Datensatz](/data-librarian/organisation/dataset/) geschickt, den Sie auswerten sollen.
 
 1. Erstellen Sie eine Beschreibung des Datensatzes unter Verwendung des [statistischen Grundvokabulars](/data-librarian/basics/basic_terms/).
-2. Lesen Sie [den Datensatz ein](/data-librarian/basics/pandas/io) ein
+2. [Lesen Sie den Datensatz ein](/data-librarian/basics/pandas/io)
 3. Bereinigen Sie den Datensatz von [fehlenden Werten](/data-librarian/basics/pandas/na) und berechnen Sie [die neue Variable](/data-librarian/basics/pandas/columns/#fallstudie-feature-engineering) `Membership Duration`.
 
 

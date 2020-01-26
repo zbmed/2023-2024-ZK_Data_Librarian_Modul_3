@@ -22,15 +22,13 @@ LastModifierDisplayName = ""
 LastModifierEmail = ""
 +++
 
-Die Zeilen eines `DataFrame`s werden über einen **Zeilenindex** (`loc[]`), über die aufsteigenden **Zeilennummern** (`iloc[]`) oder über **logische Ausdrücke** (`[]` oder `loc[]`) referenziert.
-
-Hier wird nur der wichtigste letzte Fall näher betrachtet:
+Die Zeilen eines `DataFrame`s können über drei verschiedene Arten ausgewählt werden. Das System kann am Anfang etwas verwirrend sein. Wir betrachten hier nur den wichtigsten Fall der Zeilenauswahl: Die Auswahl über **logische Ausdrücke** mittels `loc[]`:
 
 {{% customnotice code %}}
 ```python
 import pandas as pd
 df = pd.read_csv("../data/Library_Usage.csv")
-df[df['Total Checkouts'] > 10000]
+df.loc[df['Total Checkouts'] > 10000]
 ```
 {{% /customnotice %}}
 
@@ -42,8 +40,8 @@ Anstatt alles in einer Zeile zu schreiben, können wir auch eine Hilfsvariable e
 
 {{% customnotice code %}}
 ```python
-filter = df['Total Checkouts'] > 10000
-df[filter]
+row_filter = df['Total Checkouts'] > 10000
+df.loc[row_filter]
 ```
 {{% /customnotice %}}
 
@@ -51,8 +49,8 @@ Für den booleschen Zeilenfilter können komplexe logische Ausdrücke unter Zuhi
 
 {{% customnotice code %}}
 ```python
-filter = (df['Patron Type Definition'] == 'SENIOR') & (df['Notice Preference Definition'] == 'email')
-df[filter]
+row_filter = (df['Patron Type Definition'] == 'SENIOR') & (df['Notice Preference Definition'] == 'email')
+df.loc[row_filter]
 ```
 {{% /customnotice %}}
 
@@ -71,7 +69,7 @@ Ausdruck | Beschreibung
 `~`  | elementweise logische negation (`True` ergibt `False` und umgekehrt)
 {{% /customnotice %}}
 
-Nützlich ist auch die Funktion `Series.between(left, right)`, mit der eine boolesche `Series` erstellt wird, die `True` ist wenn der Wert der ursprünglichen `Series` zwischen oder auf `left` und `right` liegt:
+Nützlich ist auch die Funktion `Series.between(left, right)`, mit der eine boolesche `Series` erstellt wird, die `True` ist wenn der Wert der ursprünglichen `Series` zwischen oder auf den Werten `left` und `right` liegt. Im folgenden Beispiel wird gezeigt, dass die beiden Filter das gleiche Ergebnis liefern:
 
 {{% customnotice code %}}
 ```python
@@ -80,10 +78,6 @@ filter2 =  df['Total Checkous'].between(20, 80)
 all(filter1 == filter2)
 ```
 {{% /customnotice %}}
-
-
-
-
 
 {{% customnotice exercise %}}
 

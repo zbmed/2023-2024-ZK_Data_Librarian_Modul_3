@@ -39,7 +39,7 @@ Ein Datentyp ist die grundlegende Einheit, in der einzelne Werte in einer Progra
 
 Ein `DataFrame` fasst mehrere `Series` **gleicher Länge** zu einer Datentabelle mit Zeilen (Beobachtungen), Spalten (Variablen) und Spaltennamen (Variablennamen) zusammen.
 
-`DataFrames` können aus Daten in Form von Python Dictionaries konstruiert werden:
+Ein reguläres [Python-Dictionary](https://docs.python.org/3/tutorial/datastructures.html#dictionaries) mit den Spaltennamen als *Keys* und den *Values* in Form von [Python-Listen](https://docs.python.org/3/tutorial/datastructures.html) kann in ein `DataFrame` transfomiert werden:
 
 {{% customnotice code %}}
 ```python
@@ -52,13 +52,18 @@ print(df)
 ```
 {{% /customnotice %}}
 
+In der praktischen Datenanalyse werden Sie nur selten `DataFrames` oder `Series` manuell erstellen, sondern im Computer abgespeicherte Datentabellen aus anderen Formaten, wie Excel oder `.csv` einlesen.
+
 {{% customnotice exercise %}}
 
-#### Skalenniveau und Datentypen (10 Min)
+#### Skalenniveau und Datentypen (15 Min)
 
 - Welches Skalenniveau besitzen die Variablen im obigen Beispiel?
 - Sind die Variablen stetig oder diskret?
 - Was ist der [Datentyp](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.dtypes.html) jeder einzelnen Spalte?
+- Erweitern Sie das Python-Dictionary und 
+    - erstellen Sie eine neue *Zeile* mit den Werten `('Apr', 5, False)`
+    - erstellen Sie eine neue *Spalte* `year` mit den Werten `(2020, 2020, 2020, 2020)`
 {{% /customnotice %}}
 
-In der praktischen Datenanalyse werden Sie nur selten `DataFrames` oder `Series` manuell erstellen, sondern im Computer abgespeicherte Datentabellen aus anderen Formaten, wie Excel oder `.csv` einlesen.
+

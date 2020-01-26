@@ -32,14 +32,14 @@ df.columns
 ```
 {{% /customnotice %}}
 
-Einzelne Spalten können wie bei einem Python Dictionary mit `df[<name>]` ausgewählt werden. Mehre Spalten mit `df[[<name1>, <name2]]`. Wenn Sie mehrere Spalten auswählen erhalten Sie einen `DataFrame` zurück. Bei einer Spalte, eine `Series`. Das Ergebnis der Auswahl können Sie bei Bedarf wieder in einer Variablen abspeichern:
-
+Einzelne `Series` können wie bei einem Python Dictionary mit `df[<name>]` extrahiert werden. Mehre Spalten mit `df[[<name1>, <name2]]`. Wenn Sie Spalten mit der doppelten Liste `[[...]]` auswählen erhalten Sie in jedem Fall wieder einen `DataFrame` zurück. Das Ergebnis der Auswahl können Sie bei Bedarf wieder in einer Variablen abspeichern:
+Versuc
 {{% customnotice code %}}
 ```python
 x = df['Total Renewals']
 df[['Total Renewals', 'Total Checkouts']]
-filter = ['Total Renewals', 'Total Checkouts'] # auxiliary variable
-subset = df[filter]
+column_names = ['Total Renewals', 'Total Checkouts'] # auxiliary variable
+subset = df[column_names]
 print(x)
 print(subset)
 ```
@@ -52,9 +52,11 @@ Spalten können mit einer Zuweisung (`=`) überschrieben oder neu erstellt werde
 df['dummy_variable'] = 5
 {{% /customnotice %}}
 
-Bei der Auswahl von Spalten und Zeilen wird **keine Kopie** des `DataFrame`s  oder der `Series` erstellt, sondern nur eine Referenz auf die ursprüngliche Tabelle. Wenn Sie Daten in der ursprünglichen Tabelle ändern, so ändert sich auch die Referenz:
+{{% customnotice alert %}}
 
-{{% customnotice code %}}
+
+Bei der Auswahl von Spalten und Zeilen wird **keine Kopie** des `DataFrame`s  oder der `Series` erstellt, sondern nur eine **Referenz** auf die ursprüngliche Tabelle. Wenn Sie Daten in der ursprünglichen Tabelle ändern, so ändert sich auch die Referenz:
+
 ```python
 x = df['Total Renewals']
 df['Total Renewals'] = 5
@@ -74,20 +76,23 @@ df['log_renewals'] = np.log(df['Total Renewals'])
 ```
 {{% /customnotice %}}
 
-Im ersten Beispiel wurde zuerst die Anweisung `df['Patron Type Definition'] == 'ADULT'` durchgeführt. Das implizite Ergebnis dieser Anweisung ist eine `Series` mit booleschen Werten (`True` oder `False`). Die neu erstellte `Series` wird dann in einer neuen Spalte `is_adult` dem `DataFrame` angehängt.
+Im ersten Beispiel wurde zuerst die Anweisung `df['Patron Type Definition'] == 'ADULT'` durchgeführt. Das implizite Ergebnis dieser Anweisung ist eine `Series` mit booleschen Werten `True` oder `False`. Die neu erstellte `Series` wird dann in einer neuen Spalte `is_adult` dem `DataFrame` angehängt.
 
 Im zweiten Beispiel wurde der Logarithmus auf den Werten der Spalte `Total Renewals` berechnet und einer neuen Spalte `log_renewals` zugewiesen.
 
 
 {{% customnotice exercise %}}
 
-### Fallstudie: Feature Engineering (20 Min)
+### Fallstudie: Feature Engineering (30 Min)
 
 Ziel ist es, eine neue Variable `Membership Duration` zu erstellen, die für jeden Kunden die aktive Mitgliedschaft in Monaten seit der Registrierung misst. Die aktive Mitgliedschaft wird definiert als:
 
 ```shell
 'Membership Duration' = ('Circulation Active Year' - 'Year Patron Registered')*12 + 'Circulation Active Month'
 ```
+
+Versuchen Sie die folgenden Codebeispiele nachzuvollziehen, auch wenn Sie nicht alle Funktionen im Detail kennen oder verstehen. 
+
 
 1. Die Spalte `Circulation Active Year` ist als Text und nicht als Zahl abgespeichert! Konvertieren Sie die Spalte in ein numerisches Format. Überschreiben Sie die ursprüngliche Variable mit den neuen Werten. Nutzen Sie dieses Codesnippet:
 
@@ -99,23 +104,32 @@ pd.to_numeric(
 ```
 
 
-  2. Die Spalte `Circulation Active Month` enthält die Monatsnamen als Text. Für die Berechnung muss diese in ein numerisches Format konvertiert werden. Die Umcodierung kann händisch erfolgen. Sie können aber auch dieses Codesnippet nutzen::
+2. Die Spalte `Circulation Active Month` enthält die Monatsnamen als Text. Für die Berechnung muss diese in ein numerisches Format konvertiert werden. 
+  
+    - Zuerst konvertieren wir die Spalte in ein Datumsformat. Das geht mit der Funktion `pd.to_datetime`. Überschreiben Sie wieder die ursprüngliche Variable mit den neuen Werten. Sie können dieses Codesnippet nutzen:
+
+    ```python
+    pd.to_datetime(
+        df['Circulation Active Month'],
+        errors='coerce',
+        format="%B"
+    )
+    ```
+
+    - Jetzt extrahieren wir den Monat als Zahl aus der Spalte: 
+
+
+    ```python
+    df['Circulation Active Month'].dt.month
+    ```
+
+
+  3. Berechnen Sie nun die aktive Mitgliedschaftsdauer in Monaten wie oben definiert und weisen Sie das Ergebnis der Spalte `Membership Duration` zu. 
+
+  4. Nehmen Sie an, dass Einträge mit fehlenden Werten bedeutet, dass die Person `0` Monate aktiv Mitglied gewesen ist. Ersetzen Sie dazu alle `NaN` values in der neuen Variable mit der Zahl `0`. Nutzen Sie dieses Codesnippet (siehe auch [diese Lektion](/data-librarian/basics/pandas/na/) über die Behandlung fehlender Werte):
 
 ```python
-df['Circulation Active Month'] = pd.to_datetime(
-  df['Circulation Active Month'],
-  errors='coerce',
-  format="%B"
-)
-df['Circulation Active Month'].dt.month
-```
-
-  3. Berechnen Sie nun die aktive Mitgliedschaftsdauer in Monaten wie oben definiert.
-
-  4. Nehmen Sie an, dass Einträge mit fehlenden Werten eine aktive Mitgliedschaft von Null Monaten bedeuten. Ersetzen Sie dazu alle `NaN` values in der neuen Variable mit der Zahl `0`. Nutzen Sie dieses Codesnippet:
-
-```python
-df['Membership Duration'].fillna(0, inplace=True)
+df['Membership Duration'].fillna(0)
 ```
 
 {{% /customnotice %}}

@@ -25,7 +25,7 @@ LastModifierEmail = ""
 Grundlage der statistischen Analyse sind **Datentabellen**: Jede Zeile der Tabelle entspricht einer Beobachtung. Jede Spalte entspricht einer statistischen Variable. Neue Beobachtungen und Variablen können dadurch einfach an die schon bestehende Tabelle angefügt werden.
 
 {{% customnotice alert %}}
-Achten Sie darauf, dass wenn es um Statistik und Programmierung geht mit "Variable" zwei Dinge gemeint sind:
+Wenn es um Statistik und Programmierung geht werden mit "Variable" oft zwei unterschiedliche Dinge benannt:
 1. [Variable](https://de.wikipedia.org/wiki/Statistische_Variable) im Kontext eines statistischen Merkmals, das in der Regel als Spalte eines Datensatzes vorliegt.
 2. [Variablen](https://de.wikipedia.org/wiki/Variable_(Programmierung)) im Kontext von Programmiersprachen beschreiben benannte Referenzen auf bestimmte Datenstrukturen oder Objekte (z.B. `numbers = [1, 2, 3]`).
 {{% /customnotice %}}
@@ -35,12 +35,12 @@ Am Beginn jeder statistischen Analyse steht die **Aufbereitung und Bereinigung**
 
 Viele statistische Methoden erfordern auch, dass die Daten nur als numerische Werte vorliegen. Daher müssen ordinale oder nominale Variablen, die als Text gespeichert sind (zum Beispiel `['male', 'female', 'female', ...]`) in entsprechende numerische Werte **umkodiert** werden. Dabei wird jeder Kategorie ein numerischer Wert zugeordnet.
 
-Das Standard-Paket um mit Datentabellen in Python zu arbeiten, ist `pandas`. Das folgende Kapitel stellt anhand von vielen praktischen **Beispielen** zum Nachmachen die grundlegenden Konzepte in `pandas` vor. Ein Überblick über die Bibliothek und weitere relevante Python-Pakete gibt es [hier](/data-librarian/organisation/packages/pandas/).
+Das Standard-Paket um mit Datentabellen in Python zu arbeiten, ist `pandas`. Das folgende Kapitel stellt anhand von vielen praktischen **Beispielen** und **Übungen** die grundlegenden Konzepte in `pandas` vor.
 
 
 {{% customnotice exercise %}}
 1. Erstellen Sie ein Jupyter Notebook in Ihrem [Projektordner](/data-librarian/organisation/dataset/) unter `./notebooks`.
-2. Führen Sie die Beispiele in den folgenden Kurseinheiten im Notebook aus.
+2. Führen Sie die Beispiele in den folgenden Abschnitten aus und versuchen Sie, die Aufgaben zu lösen. 
 3. Nach dieser Einheit sollten sie die folgenden Fragen beantworten können:
     - Wie kann ich Tabellendaten in pandas einlesen?
     - Wie werden Daten in pandas angeordnet?
@@ -51,7 +51,7 @@ Das Standard-Paket um mit Datentabellen in Python zu arbeiten, ist `pandas`. Das
 
 
 {{% customnotice tip %}}
-Ihre Verzeichnisstruktur vom Projektordner sollte jetzt so aussehen:
+Ihre Verzeichnisstruktur vom Projektordner sollte jetzt ungefähr so aussehen:
 ```shell
 Module_3
 ├── data
