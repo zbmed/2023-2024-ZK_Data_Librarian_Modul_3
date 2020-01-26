@@ -1,5 +1,5 @@
 +++
-title = "Reflexion: Daten an Ihrem Arbeitsplatz"
+title = "Reflexion: Datenprojekte an Ihrer Arbeitsstelle"
 
 weight = 40
 # The title of the page in menu will be prefixed by this HTML content
@@ -23,7 +23,7 @@ LastModifierEmail = ""
 
 {{% customnotice exercise %}}
 
-#### Reflektion (15 Min)
+#### Datenprojekte an Ihrer Arbeitsstelle (20 Min)
 
 Schreiben Sie einen **kurzen** Text über die Verwendung von Daten und quantitativen Methoden an Ihrem Arbeitsplatz. Denken Sie dabei über folgende Fragen nach:
 

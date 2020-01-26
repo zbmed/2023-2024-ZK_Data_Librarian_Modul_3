@@ -29,14 +29,12 @@ Maschinelles Lernen (*Machine Learning* oder *Statistical Learning*) bedeutet in
 Im Maschinellen Lernen steht insbesondere die **Vorhersagekraft** und **Generalisierbarkeit** von statistischen Methoden und Algorithmen im Vordergrund. Ziel ist es, möglichst gute Prognosen, beispielsweise bei der Gesichtserkennung, zu machen. Die klassische Statistik dagegen ist stärker an den kausalen Zusammenhängen und der Stärke von signifikanten Einflüssen einzelner Faktoren auf ein Resultat interessiert.
 
 {{% customnotice tip%}}
-**Teachable Machine** von Google ermöglicht das Trainieren von Machine Learning Modellen im eigenen Web-Browser ohne das Programmiercode geschrieben werden muss. Somit wird das Grundprinzip des Machinellen Lernens (hier: Supervised Learning) auch ohne Vorkenntnisse erfahrbar und man bekommt ein gutes Gespür für die Möglichkeiten und Grenzen der Methode.
-
-Experimentieren Sie zum Beispiel mit dem [*Bild-Klassifikator*](https://teachablemachine.withgoogle.com/train/image).
+**Teachable Machine** von Google ermöglicht das Trainieren von Machine Learning Modellen im eigenen Web-Browser ohne das Programmiercode geschrieben werden muss. Somit wird das Grundprinzip des Maschinellen Lernens auch ohne Vorkenntnisse erfahrbar und man bekommt ein gutes Gespür für die Möglichkeiten und Grenzen der Methode. Experimentieren Sie zum Beispiel mit dem [*Bild-Klassifikator*](https://teachablemachine.withgoogle.com/train/image).
 {{% /customnotice %}}
 
 Maschinelles Lernen und die angewandte Statistik besitzen große Überschneidungen und beide Gebiete bauen auf Erkenntnissen der Wahrscheinlichkeitstheorie auf. Machine Learning ist dabei auch ein Teilgebiet der **Künstlichen Intelligenz**, die als die *Automatisierung von intellektuelle Aufgaben, die normalerweise von Menschen durchgeführt werden* verstanden wird.[^2]
 
-KI kann auch allein mit durch Programmierer fest eingebauten Regeln entstehen. Diese Regeln legen fest, wie eine Eingabe (z.B *Pixelwerte eines Bilds* oder die *Anzahl der gestrigen Sonnenstunden*) in eine Ausgabe (Wahrscheinlichkeit für ein *Katzenbild* oder *heutige Regenwahrscheinlichkeit*) transformiert wird. Damit diese Art der KI erfolgreich ist, braucht es ein großes Vorwissen und spezielle Expertise. Algorithmen des Maschinellen Lernens werden hingegen **trainiert**, d.h. sie lernen selbstständig die optimalen Regeln,die von einer Eingabe zu einer Ausgabe schließen lassen. Damit diese Transformation erfolg hat benötigt das System viele Beispiele, für die die Ausgabe bekannt ist.[^2]
+KI kann auch allein mit durch Programmierer fest eingebauten Regeln entstehen. Diese Regeln legen fest, wie eine Eingabe (z.B *Pixelwerte eines Bilds* oder die *Anzahl der gestrigen Sonnenstunden*) in eine Ausgabe (Wahrscheinlichkeit für ein *Katzenbild* oder *heutige Regenwahrscheinlichkeit*) transformiert wird. Damit diese Art der KI erfolgreich ist, braucht es ein großes Vorwissen und spezielle Expertise. Algorithmen des Maschinellen Lernens werden hingegen **trainiert**, d.h. sie lernen selbstständig die optimalen Regeln,die von einer Eingabe zu einer Ausgabe schließen lassen. Damit diese Transformation Erfolg hat benötigt das System viele Beispiele, für die die Ausgabe bekannt ist, um von diesen zu lernen.[^2]
 
 
 

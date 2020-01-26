@@ -23,7 +23,7 @@ LastModifierEmail = ""
 +++
 
 
-Seit einigen Jahren sind *Data Science* und *Machine Learning* zu alltäglichen Begriffen geworden. Studiengänge im Bereich Data Science werden [neu eingerichtet](https://www.th-koeln.de/studium/data-and-information-science-bachelor--inhalte_52782.php) oder schon bestehende Abschlüsse [umbenannt](http://west.uni-koblenz.de/studying/mwds). Anwendungen des Maschinellen Lernens sind Thema in [Massenmedien](https://www.sueddeutsche.de/thema/K%C3%BCnstliche_Intelligenz). Der Zertifikationskurs [*Data Librarian*](https://www.th-koeln.de/weiterbildung/zertifikatskurs-data-librarian_63393.php) spiegelt diese Popularität wieder.
+Seit einigen Jahren sind *Data Science* und *Machine Learning* zu alltäglichen Begriffen geworden. Studiengänge im Bereich Data Science werden [neu eingerichtet](https://www.th-koeln.de/studium/data-and-information-science-bachelor--inhalte_52782.php) oder schon bestehende Abschlüsse [umbenannt](http://west.uni-koblenz.de/studying/mwds). Anwendungen des Maschinellen Lernens sind Thema in [Massenmedien](https://www.sueddeutsche.de/thema/K%C3%BCnstliche_Intelligenz). Der Zertifikatskurs [*Data Librarian*](https://www.th-koeln.de/weiterbildung/zertifikatskurs-data-librarian_63393.php) spiegelt diese Popularität wieder.
 
 Um die Zusammenhänge zwischen den Fachgebieten besser zu verstehen, wird im folgenden wird ein kurzer Überblick über die Begriffe gegeben. Für Interessierte gibt es Verweise zu weiteren Quellen.
 

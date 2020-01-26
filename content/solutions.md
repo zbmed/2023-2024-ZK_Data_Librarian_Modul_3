@@ -23,7 +23,6 @@ Im Laufe des Kurses werden hier die Lösungen zu den einzelnen Aufgaben hochgela
 3. 423448, `len(df)`
 4. siehe (unter `sns.set()`): https://seaborn.pydata.org/introduction.html
 
-<!--
 
 
 ### Grundlagen
@@ -52,16 +51,23 @@ Im Laufe des Kurses werden hier die Lösungen zu den einzelnen Aufgaben hochgela
 - `temp`: metrisch, stetig, `int`
 - `below_zero`: nominal, diskret, `boolean`
 
+{{%attachments title="Lösungen" pattern="solutions_dataframe" /%}}
+
+
 #### Datenrundreise
 
 {{%attachments title="Lösungen" pattern="solutions_datenrundreise" /%}}
 
 #### Exkurs: Einlesen von Daten
 
-- In Linux kann z.B. mit dem `free` Kommando der freie Speicherplatz ermittelt werden. Bei 16 Gigabyte Arbeitsspeicher werden ca. 3 Gigabyte vom System verbraucht.
-- 12 Gigabyte sind 12 000 000 000 Bytes. Somit können theoretisch 1 500 000 000 Zahlen vom Typ `int64` eingelesen werden.
-- Eine Tabelle mit 100 Variablen kann somit 120 Millionen Beobachtungen enthalten.
+- In Linux kann z.B. mit dem `free` Kommando der freie Speicherplatz ermittelt werden. Bei 8 Gigabyte Arbeitsspeicher werden ca. 3 Gigabyte vom System verbraucht.
+- 5 Gigabyte sind 5 000 000 000 Bytes. Somit können theoretisch 625 000 000 Zahlen vom Typ `int64` eingelesen werden.
+- Eine Tabelle mit 100 Variablen kann somit 6.25 Millionen Beobachtungen enthalten.
 - Der Library Datensatz verbraucht ca. 220 Megabyte im Arbeitsspeicher (`df.info(memory_usage='deep')`).
+
+#### Feature Engineering
+
+{{%attachments title="Lösungen" pattern="solutions_fe" /%}}
 
 
 #### Spalten und Zeilen
@@ -83,6 +89,9 @@ Im Laufe des Kurses werden hier die Lösungen zu den einzelnen Aufgaben hochgela
 - `len(df)` oder `df.shape[0]`
 - `df['Age Range'].isna().sum()`
 - `len(df[(df['Age Range'] == '60 to 64 years') & (df['Circulation Active Year'] == '2016')])`
+
+
+<!--
 
 
 ### Deskriptive Statistik und Visualisierungen

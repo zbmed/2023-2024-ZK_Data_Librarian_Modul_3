@@ -1,5 +1,5 @@
 +++
-title = "Überblick: Funktionen in Pandas"
+title = "Nützliche Funktionen in Pandas"
 # If set, this will be used for the page's menu entry (instead of the `title` attribute)
 # menuTitle = "Einführung"
 weight = 10

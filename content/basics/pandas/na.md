@@ -56,6 +56,9 @@ df['Circulation Active Year']
 ```
 
 {{% customnotice exercise %}}
+
+#### Datentypen (1 Minute)
+
 Was unterscheidet den Wert `None` vom Wert `"None"`? Was den Wert `5` vom Wert `"5"`? Was den Wert `"NaN"` vom Wert `NaN`? Ist `True` und `"True"` das gleiche?
 {{% /customnotice %}}
 
@@ -66,7 +69,7 @@ Was unterscheidet den Wert `None` vom Wert `"None"`? Was den Wert `5` vom Wert `
 
 #### Filter
 
-Die Funktionen `isna` (`notna`) geben eine boolesche `Series` zurück, die `True` ist, wenn an der Stelle ein fehlender Wert steht. Damit pandas fehlende Werte korrekt erkennt, müssen diese vorher erst in das interne Format `NaN` umgewandelt werden (siehe oben). 
+Die Funktionen `isna` (`notna`) geben eine boolesche `Series` zurück, die `True` (`False`) ist, wenn an der Stelle ein fehlender Wert steht. Damit pandas fehlende Werte korrekt erkennt, müssen diese vorher erst in das interne Format `NaN` umgewandelt werden (siehe oben). 
 
 
 {{% customnotice code %}}
@@ -113,7 +116,7 @@ Standardmäßig werden bei den Operationen `fillna` oder `dropna` neue `Series` 
 
 {{% customnotice exercise %}}
 
-#### Fehlende Werte (20 Min)
+#### Exkurs: Fehlende Werte (20 Min)
 
 - Welche Spalten enthalten alles fehlende Werte?
 - Lesen Sie den Datensatz ein und erstellen Sie einen `DataFrame` der keine Beobachtungen mit fehlenden Werten mehr enthält.

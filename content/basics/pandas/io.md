@@ -38,19 +38,28 @@ Um einen eingelesenen Datensatz beispielsweise im `.json` Textformat zu speicher
 ```python
 df.to_json("../data/Library_Usage.json")
 ```
+
 {{% /customnotice %}}
 
 {{% customnotice alert %}}
 
-- Manche Funktion aus dem `pandas` Paket sind **statische Funktionen**: Sie sind an **kein** konkretes Objekt wie ein `DataFrame` gebunden, sondern werden über den Bibliotheksnamen `pd` aufgerufen. Beispiele: `pd.read_csv`, `pd.to_numeric`, `pd.crosstab`.
+- Manche Funktion aus dem `pandas` Paket sind **statische Funktionen**: Sie sind an **kein** konkretes Objekt gebunden, sondern werden über den Bibliotheksnamen `pd` aufgerufen. Beispiele: `pd.read_csv`, `pd.to_numeric`, `pd.crosstab`.
 - Andere Funktionen sind an ein bestimmtes Objekt, welches mit einer Variable referenziert wird, gebunden. In der Regel ist dies ein `DataFrame` oder eine `Series`. Beispiele: `df.to_csv`, `df.corr`, `df.head`, `x.mean`.
 - Machen Sie sich mit dem Unterschied vertraut: Was bedeuten `pd` und `df` und `x` in den Beispielen?
 {{% /customnotice %}}
 
 
+### Exkurs: *Einlesen* von Daten
+
+Die **Festplatte** des Computers dient zur **persistenten Speicherung** von Dateien. Auch wenn der Strom weg ist, bleiben diese darauf erhalten. Die hohe Speicherfähigkeit hat ihren Preis: Die Zugriffszeiten, d.h. die Zeit die die Festplatte benötigt um z.B. Zeilen einer Textdatei zu lesen und die Werte an den Prozessor zu übergeben, sind hoch.
+
+Deswegen gibt es neben dem Festplattenspeicher auch noch den **Arbeitsspeicher (RAM)**. Dessen Zugriffszeiten sind wesentlich schneller, die Daten sind jedoch nicht persistent. Wenn Sie z.B. eine Tabelle mit Excel öffnen, dann werden die Daten von der Festplatte in den Arbeitsspeicher geladen. Das gleiche, nur ohne graphische Oberfläche, passiert, wenn Sie Daten mit dem `pandas` Paket einlesen.
+
+Da normalerweise der Datensatz komplett in den Arbeitsspeicher geladen werden muss, können prinzipiell nicht beliebig große Datenmengen bearbeitet werden.
+
 {{% customnotice exercise %}}
 
-### Exkurs: Datenrundreise (20 Min)
+### Exkurs: Datenrundreise (30 Min)
 
 - Informieren Sie sich [hier](https://pandas.pydata.org/pandas-docs/stable/reference/io.html) über die verschiedenen Funktionen zur Ein- und Ausgabe.
 - Lesen Sie den Datensatz `"../data/Library_Usage_Small.csv"` ein (Download [hier](/data-librarian/data/Library_Usage_Small.csv)). Er enthält nur die ersten 10 Zeilen des originalen Datensatzes (aus Performancegründen).
@@ -62,22 +71,13 @@ df.to_json("../data/Library_Usage.json")
 
 {{% /customnotice %}}
 
-
-#### Exkurs: *Einlesen* von Daten
-
-Die **Festplatte** des Computers dient zur **persistenten Speicherung** von Dateien. Auch wenn der Strom weg ist, bleiben diese darauf erhalten. Die hohe Speicherfähigkeit hat ihren Preis: Die Zugriffszeiten, d.h. die Zeit die die Festplatte benötigt um z.B. Zeilen einer Textdatei zu lesen und die Werte an den Prozessor zu übergeben, sind hoch.
-
-Deswegen gibt es neben dem Festplattenspeicher auch noch den **Arbeitsspeicher (RAM)**. Dessen Zugriffszeiten sind wesentlich schneller, die Daten sind jedoch nicht persistent. Wenn Sie z.B. eine Tabelle mit Excel öffnen, dann werden die Daten von der Festplatte in den Arbeitsspeicher geladen. Das gleiche, nur ohne graphische Oberfläche, passiert, wenn Sie Daten mit dem `pandas` Paket einlesen.
-
-Da normalerweise der Datensatz komplett in den Arbeitsspeicher geladen werden muss, können prinzipiell nicht beliebig große Datenmengen bearbeitet werden.
-
 {{% customnotice exercise %}}
 
-#### Arbeitsspeicher (30 Min)
+#### Exkurs: Arbeitsspeicher (30 Min)
 
 - Finden Sie heraus, wie viel **freier** Arbeitsspeicher Ihr Computer hat (Das Betriebssystem und Hintergrundprogramme verbrauchen auch RAM).
 - Wie viele `int64` Werte, also Zahlen, die 8 Byte (=64 Bit) Speicher benötigen, können Sie damit theoretisch in den Arbeitsspeicher laden? Tip: Nutzen sie [Google zum Umrechnen](https://www.google.com/search?q=15.4+GiB+in+Byte).
 - Wie viele Beobachtungen kann eine Tabelle mit 100 numerischen Variablen damit maximal theoretisch haben, damit Sie diese noch bearbeiten können?
-- Nutzen Sie die [Funktion `memory_usage`](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.memory_usage.html) um sich den tatsächlich benötigten Speicher eines `DataFrames` oder einer `Series` anzeigen zu lassen. Mit dem Funktionsargument `deep=True` wird der Wert genau ermittelt und nicht nur geschätzt. 
+- Nutzen Sie die [Funktion `df.memory_usage()`](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.memory_usage.html) um sich den tatsächlich benötigten Speicher eines `DataFrames` oder einer `Series` anzeigen zu lassen. Mit dem Funktionsargument `deep=True` wird der Wert genau ermittelt und nicht nur geschätzt. 
 
 {{% /customnotice %}}
