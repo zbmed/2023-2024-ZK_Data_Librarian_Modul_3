@@ -33,12 +33,12 @@ Numpy bietet neben dem `array` viele Funktionen an, mit denen sich effizient Ber
 import numpy as np
 
 # create 100 randomly distributed numbers
-X = np.normal.random(size=100)
+X = np.random.normal(size=100)
 
 # transform X into a 2-dimensional array of size 20x5
 X.reshape((20, 5))
 
-# calculate the matrix dot product: X*X', where X' is the transformation of X
+# calculate the matrix dot product: X*X', where X' is the transpose of X
 X.dot(X.T)
 ```
 {{% /customnotice %}}
