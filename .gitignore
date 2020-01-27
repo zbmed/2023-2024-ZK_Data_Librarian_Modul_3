@@ -1,6 +1,6 @@
 .ipynb_checkpoints
 
-/content/data/*
+#/content/data/*
 
 ## OS Files
 # Windows
