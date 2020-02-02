@@ -22,21 +22,21 @@ LastModifierDisplayName = ""
 LastModifierEmail = ""
 +++
 
-{{< figure src="/data-librarian/images/distributions.png" title="Verschiedene univariate  Verteilungen" width="40%" >}}
+{{< figure src="/data-librarian/images/distributions.png" title="Verschiedene univariate  Verteilungen" width="50%" >}}
 {{%attachments title="Related files"
 pattern="distributions.ipynb" /%}}
 
-Um eine metrische Verteilung charakterisieren zu können, ist neben der zentralen Lage- und Streuung auch deren Symmetrie und Schiefe von Bedeutung. Die Symmetrie sagt etwas über die **(Un-)Gleichverteilung** einer Variablen aus. Bei stark assymetrischen Variablen (z.B. Haushaltseinkommen in Deutschland) ist das auftreten von kleinen Werten viel wahrscheinlicher, als das auftreten von sehr großen Werten (oder umgekehrt).
+Um eine metrische Verteilung charakterisieren zu können, ist neben der zentralen Lage- und Streuung auch deren Symmetrie und Schiefe von Bedeutung. Die Symmetrie sagt etwas über die **(Un-)Gleichverteilung** der Werte einer Variablen aus. Bei stark asymmetrischen Variablen (z.B. Haushaltseinkommen in Deutschland) ist das auftreten von kleinen Werten viel wahrscheinlicher, als das auftreten von sehr großen Werten (oder umgekehrt).
 
-Das Bild zeigt [**Histogramme**](https://de.wikipedia.org/wiki/Histogramm) für verschiedene simulierte Zufallswerte der [Beta-Verteilung](https://de.wikipedia.org/wiki/Beta-Verteilung). Dabei wurden jeweils die Parameter der theoretischen Verteilung $\alpha$ und $\beta$ geändert. Somit kann eine große Bandbreite charakteristischer Verteilungen abgedeckt werden. Neben dem Histogram wurde auch der empirische Median und Mittelwert der Verteilung als vertikale Linien eingezeichnet.
+Das Bild zeigt [**Histogramme**](https://de.wikipedia.org/wiki/Histogramm) für verschiedene simulierte Zufallswerte der [Beta-Verteilung](https://de.wikipedia.org/wiki/Beta-Verteilung). Dabei wurden jeweils die Parameter der theoretischen Verteilung $\alpha$ und $\beta$ geändert. Somit kann eine große Bandbreite charakteristischer Verteilungen abgedeckt werden. Neben dem Histogramm wurde auch der empirische Median und Mittelwert der Verteilung als vertikale Linien eingezeichnet.
 
-Für symmetrische Verteilungen gilt, dass der Mittelwert und der Median gleich sind und das Histogram an diesen Achsen gespiegelt werden kann. Eine **linkssteile** (rechtschiefe) Verteilung ergibt sich durch einige überdurchschnittlich große Werte. In diesem Fall ist der Mittelwert größer als der Median. Eine **rechtssteile** (linksschiefe) Verteilung ist durch einige unterdurchschnittlich kleine Werte geprägt. Hier ist der Median größer als der Mittelwert.
+Für symmetrische Verteilungen gilt, dass der Mittelwert und der Median gleich sind und das Histogramm an diesen Achsen gespiegelt werden kann. Eine **linkssteile** (rechtschiefe) Verteilung ergibt sich durch einige überdurchschnittlich große Werte. In diesem Fall ist der Mittelwert größer als der Median. Eine **rechtssteile** (linksschiefe) Verteilung ist durch einige unterdurchschnittlich kleine Werte geprägt. Hier ist der Median größer als der Mittelwert.
 
-Zudem kann eine Verteilung auch **Gleichverteilt, Bi- oder Multimodal** sein. Im ersten Fall gibt es keinen Modus, also kein Wert der Verteilung, der am Häufigsten vorkommt. In den letzteren Fällen gibt es ein oder mehrere Modi. Im Histogram sind multimodale Verteilungen daran zu erkennen, dass sie typischerweise über zwei oder mehr "Gipfel" verfügen.
+Zudem kann eine Verteilung auch **Gleichverteilt, Bi- oder Multimodal** sein. Im ersten Fall gibt es keinen Modus, also keinen Wert der Verteilung, der am Häufigsten vorkommt. In den letzteren Fällen gibt es ein oder mehrere Modi. Im Histogramm sind multimodale Verteilungen daran zu erkennen, dass sie typischerweise über zwei oder mehr "Gipfel" verfügen.
 
 
 {{% customnotice exercise %}}
-- Schauen Sie sich die verschiedenen Histogramme im Bild an und charakterisieren Sie jede einzelne Verteilung anhand von Schiefe, Symmetrie und dem Modus
+- Schauen Sie sich die verschiedenen Histogramme im Bild an und charakterisieren Sie jede einzelne Verteilung anhand von Schiefe, Symmetrie und Modus
 - Die Grafik wurde mit dem angehängten Jupyter Notebook generiert. Hier können Sie auch selber andere Verteilungen simulieren und visualisieren.
 {{% /customnotice %}}
 
@@ -48,9 +48,9 @@ Zudem kann eine Verteilung auch **Gleichverteilt, Bi- oder Multimodal** sein. Im
 {{% /customnotice %}}
 
 
-### Fallstudie: Verteilung der Ausleihen pro Kunde
+### Verteilung der Ausleihen pro Kunde
 
-Mit dem folgenden Beispiel können Sie ein Histogram über die Anzahl der Ausleihen im Datensatz erstellen:
+Mit dem folgenden Beispiel können Sie ein Histogramm über die Anzahl der Ausleihen im Datensatz erstellen:
 
 {{% customnotice code %}}
 ```
@@ -68,9 +68,10 @@ Das Histogram zeigt, dass die Verteilung der Ausleihen durch einige sehr große 
 
 {{% customnotice exercise %}}
 
+#### Exkurs: Ausreißerentfernung III (30 Min)
+
 - Erstellen Sie einer neue Spalte `'Total Checkouts Sqrt'` die die Wurzel über die Ausleihen enthält. Die Wurzel können sie mit `df['Total Checkouts']**(0.5)` berechnen.
-- Schauen Sie sich das Histogram von `'Total Checkouts Sqrt'` und charakterisieren Sie die Verteilung.
-- Entfernen Sie nun die 5% größten Ausreißer aus dem Datensatz, indem Sie diesen nach Personen mit weniger als 816 Ausleihen filtern.
-- Schauen Sie sich die Verteilung für `'Total Checkouts'` des gefilterten Datensatzes in einem Histogram an und charakterisieren Sie diese.
-- Welche Methode finden Sie besser geeignet, um mit fehlenden Werten umzugehen? Fallen Ihnen Vor- und Nachteile der jeweiligen Methoden ein?
+- Schauen Sie sich das Histogramm von `'Total Checkouts Sqrt'` und charakterisieren Sie die Verteilung.
+- Vergleichen Sie diese Methode mit den vorherigen zwei Verfahren zur Ausreißerbehandlung. Welche Methode finden Sie besser geeignet, um mit fehlenden Werten umzugehen? 
+- Fallen Ihnen Vor- und Nachteile der jeweiligen Methoden ein?
 {{% /customnotice%}}

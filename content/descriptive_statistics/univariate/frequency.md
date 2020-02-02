@@ -22,7 +22,7 @@ LastModifierDisplayName = ""
 LastModifierEmail = ""
 +++
 
-Kategoriale (nominale und ordinale) Variablen werden in **Häufigkeitstabellen** zusammengefasst. Dabei wird für jede Ausprägung die Anzahl der Beobachtungen gezählt:
+Kategoriale Variablen werden in **Häufigkeitstabellen** zusammengefasst. Dabei wird für jede Ausprägung die Anzahl der Beobachtungen gezählt:
 
 {{% customnotice code %}}
 ```python
@@ -40,7 +40,7 @@ df['Age Range'].value_counts(normalize=True)
 ```
 {{% /customnotice %}}
 
-Der **Modus** ist dabei die Merkmalsausprägung, die die meisten Beobachtungen besitzen:
+Der **Modus** sind dabei die Merkmalsausprägungen, die die meisten Beobachtungen besitzen:
 {{% customnotice code %}}
 ```python
 age_mode = df['Age Range'].mode()
@@ -49,7 +49,11 @@ age_mode[0]
 {{% /customnotice %}}
 
 {{% customnotice exercise %}}
-- Erstellen Sie eine Häufigkeitsverteilung für die Variable `'Year Patron Registered'`. Wie viel Prozent der Kunden wurden 2013 im System registriert? Wie viele in den kommenden Jahren? Was fällt Ihnen auf?
-- Wie viel Prozent der Kunden sind zwischen 25 und 34 Jahren?
-- Ersetzen Sie die fehlenden Werte in der Spalte `Age Range` durch den Modus dieser Spalte. Denken Sie, es handelt sich dabei um eine gute Methode, fehlende Werte zu ersetzen? Welche anderen Strategien fallen Ihnen ein?
+
+#### Häufigkeiten (20 Min)
+
+1. Erstellen Sie eine Häufigkeitsverteilung für die Variable `'Year Patron Registered'`. Wie viel Prozent der Kunden wurden 2013 im System registriert? Wie viele in den kommenden Jahren? Was fällt Ihnen auf?
+2. Wie viel Prozent der Kunden sind zwischen 25 und 34 Jahren?
+3. Ersetzen Sie die fehlenden Werte in der Spalte `Age Range` durch den Modus dieser Spalte. Nutzen Sie dazu die Funktion `DataFrame.fillna` (siehe [hier](https://devdocs.io/pandas~0.25/reference/api/pandas.dataframe.fillna) für die Dokumentation). 
+4. Denken Sie, es handelt sich dabei um eine gute Methode, fehlende Werte zu ersetzen? Welche anderen Strategien fallen Ihnen ein?
 {{% /customnotice %}}

@@ -22,17 +22,31 @@ LastModifierDisplayName = ""
 LastModifierEmail = ""
 +++
 
-In der Statistik geben **Verteilungen** an, wie wahrscheinlich oder häufig eine bestimmte Merkmausausprägung oder Kombination von Merkmausausprägungen ist. Univariate Verteilung beschreiben dabei die Wahrscheinlichkeiten einer einzelnen statischen Variablen, während bivariate oder multivariate Verteilungen sich auf zwei oder mehr Variablen beziehen.
+In der Statistik geben **Verteilungen** an, wie wahrscheinlich oder häufig eine bestimmte Merkmausausprägung oder eine Kombination von Merkmausausprägungen ist. Univariate Verteilung beschreiben dabei die Wahrscheinlichkeiten einer einzelnen statischen Variablen, während bivariate oder multivariate Verteilungen sich auf zwei oder mehr Variablen beziehen.
 
-**Empirische Verteilungen** beziehen sich dabei auf die Häufigkeiten in konkreten Daten während **theoretische Verteilungen** als mathematischen Funktionen, die von einigen wenigen Parametern abhängen, vorliegen. Statistiken, wie der Mittelwert oder der Modus dienen zur Beschreibungen und Charakterisierung von Verteilungen durch aussagekräftige Kennzahlen. Dabei gibt es Statistiken, die oft nur auf Variablen mit einem bestimmten Skalenniveaus anwendbar sind.
+**Empirische Verteilungen** beziehen sich dabei auf die Häufigkeiten in beobachtbaren Daten während **theoretische Verteilungen** mathematische Funktionen sind, die meist von einigen wenigen Parametern abhängen.
+
+Beispielsweise kann die [Normalverteilung](https://de.wikipedia.org/wiki/Normalverteilung) über die beiden Parameter Erwartungswert (`loc`) und Varianz (`scale`) beschrieben werden. Zufällig generierte Zahlen aus dieser Verteilung können Sie beispielsweise mit `numpy` erhalten:
+
+{{% customnotice code %}}
+```
+import numpy as np
+
+np.random.normal(loc=3, scale=3, size=10)
+```
+{{% /customnotice %}}
+
+---
+
+Statistiken, wie der Mittelwert, die Varianz oder der Modus dienen zur Beschreibungen und Charakterisierung von Verteilungen mittels einiger weniger aussagekräftigen Kennzahlen. Dabei gibt es Statistiken, die oft nur auf Variablen eines bestimmten Skalenniveaus anwendbar sind.
 
 
-**Kategoriale** (nominale und ordinale) Variablen können in Häufigkeitstabellen zusammengefasst werden. Wichtige charakteristische Eigenschaften für **metrische Variablen** sind die zentrale Lage, die Streuung und die Symmetrie.
+**Kategoriale** (nominale und ordinale) Variablen werden typischerweise in Häufigkeitstabellen zusammengefasst. Wichtige Kennzahlen für **metrische Variablen** sind die zentrale Lage, Modalität, Streuung und die Symmetrie.
 
 Nach dieser Einheit sollten Sie die folgenden Fragen beantworten können:
 
 - Wie erstelle und interpretiere ich eine (relative) Häufigkeitstabelle?
-- Welche grundlegenden Statistiken kann ich mit Pandas Funktionen ausrechnen?
+- Welche grundlegenden Statistiken kann ich mit `pandas`-Funktionen ausrechnen?
 - Was ist der Unterschied zwischen dem Median und dem arithmetischem Mittel?
 - Welche Funktionen gibt es, um die Streuung einer Variablen zu messen?
 - Welche univariaten Verteilungstypen gibt es?

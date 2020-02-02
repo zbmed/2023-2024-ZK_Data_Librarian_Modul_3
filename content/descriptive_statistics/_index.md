@@ -27,13 +27,15 @@ LastModifierEmail = ""
 
 # Deskriptive Statistik II und Visualisierungen
 
-Dieses Modul gibt eine Einführung in die deskriptive Statistik mit `pandas` und zeigt, wie statistische Visualisierungen in Python erstellt werden können.
+Dieses Modul gibt eine Einführung in die deskriptive Statistik mit `pandas` und zeigt, wie statistische Visualisierungen in Python erstellt werden können. 
+
+Versuchen Sie zuerst die Aufgaben innerhalb der angegeben Zeit selbstständig zu lösen. Versuchen Sie danach mit Hilfe der Musterlösung die Lösung nachzuvollziehen. Schreiben Sie sich bei Problemen Ihre Fragen auf, damit wir diese am Präsenztag zusammen besprechen können. 
 
 ## Ziele
 
 - Berechnen und interpretieren Sie grundlegende Lage- und Streuungsmaße
 - Beschreiben Sie univariate stetige und diskrete Verteilungen
-- Beschreiben und Berechnen Sie Statistiken für stetige und diskrete bivariate Verteilungen
+- Beschreiben und berechnen Sie Statistiken für stetige und diskrete bivariate Verteilungen
 - Erstellen Sie einfache Visualisierungen
 
 {{% customnotice exercise %}}
@@ -47,7 +49,7 @@ Für eine erste Demo sind Sie verantwortlich.
 - Berechnen Sie 2-3 Statistiken und Erstellen Sie 2-3 Visualisierungen basierend auf den Informationen im [Datensatz](/data-librarian/organisation/dataset/).
 - Nutzen Sie `pandas` zur Berechnung der Statistiken und `seaborn` für die Visualisierungen.
 
-Schicken Sie bis spätestens zum Projekttag Ihren Report in Form eines integrierten *Python Notebooks* an [malte@bonart.de](mailto:malte@bonart.de).
+Schicken Sie bis spätestens zum Projekttag Ihren Report in Form eines *Python Notebooks* an [malte@bonart.de](mailto:malte@bonart.de?subject=data%20librarian:%20library%20usage%20report).
 {{% /customnotice %}}
 
 

@@ -24,13 +24,16 @@ LastModifierEmail = ""
 
 Um zwei ordinale oder nominale Variablen miteinander zu vergleichen, eignen sich **Kreuztabellen**. Jeder Wert in der Kreuztabelle entspricht der Anzahl der Beobachtungen im Datensatz mit genau dieser Kombination an Merkmalsausprägungen.
 
-Hier ein Beispiel, mit dem Argument `na_values="none"` markiert `pandas` die `"none"` Einträge in der Spalte `'Notice Preference Definition'` als fehlende Werte:
+Hier ein Beispiel (mit dem Argument `na_values="none"` markiert `pandas` die `"none"` Einträge in der Spalte `'Notice Preference Definition'` als fehlende Werte):
 
 {{% customnotice code %}}
 ```python
 import pandas as pd
 
-df = pd.read_csv("../data/Library_Usage.csv", na_values="none")
+df = pd.read_csv(
+    "../data/Library_Usage.csv", 
+    na_values="none"
+)
 pd.crosstab(
     df['Provided Email Address'],
     df['Notice Preference Definition'],
@@ -38,6 +41,8 @@ pd.crosstab(
 )
 ```
 {{% /customnotice %}}
+
+
 
 Notice Preference 	| email 	| phone 	| print | all
 :--- | :--- | :--- | :--- | :---

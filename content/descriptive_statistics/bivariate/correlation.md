@@ -27,8 +27,9 @@ Der Korrelationskoeffizient $\rho\_{x, y}$ misst für zwei **metrische** Variabl
 
 {{< figure src="../correlation.files/correlation.png" title="" width="60%" >}}
 
+{{%attachments title="Related files" pattern="correlation.ipynb" /%}}
 
----
+
 
 Der Korrelationskoeffizient ist definiert als:
 $$
@@ -46,9 +47,7 @@ $$
 
 Nehmen Sie vereinfachend an, dass $\bar{x} = \bar{y} = 0$. Die Kovarianz ist dann der Mittelwert über die paarweise miteinander multiplizierten Beobachtungen. Sind beide Faktoren positiv oder beide Faktoren negativ, so tragen diese zu einer positiven Kovarianz bei. Haben die Faktoren unterschiedliche Vorzeichen, so tragen diese zu einer negativen Kovarianz bei. Kleine numerische Werte tragen nur wenig zur Kovarianz bei.
 
----
-
-Mit [pandas](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.corr.html) können Sie auch Korrelationen ausrechnen:
+Mit [pandas](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.corr.html) können Sie natürlich auch Korrelationen ausrechnen:
 {{% customnotice code%}}
 ```python
 import pandas as pd
@@ -59,24 +58,24 @@ df['Total Checkouts'].corr(df['Total Renewals'])
 {{% /customnotice%}}
 
 
+{{% customnotice exercise%}}
+
+#### Anscombe-Quartett (30 Min)
+
+Das Anscombe Quartett ist ein Datenstatz, der aus 4 bivariaten Verteilungen besteht. Über die Spaltennamen `['x1', 'y1'], ['x2', 'y2'], ..., ['x4', 'y4']` können die zusammengehörenden Datenpaare ausgewählt werden.
+
+1. Lesen Sie [den Datensatz](../correlation.files/anscombe.csv) ein.
+2. Berechnen Sie den Mittelwert, Median und die Standardabweichung der Spalten.
+3. Berechnen Sie jeweils die Korrelation zweier zusammenhängender Spalten `[x<i>, y<i>]`.
+4. Erstellen Sie jeweils ein Streudiagram zweier zusammenhängender Spalten `[x<i>, y<i>]`.
+5. Was fällt Ihnen auf? Informieren Sie sich über den Datensatz [hier](https://de.wikipedia.org/wiki/Anscombe-Quartett).
+{{% /customnotice %}}
+
+{{%attachments title="Related files" pattern="(.){2,}\.(csv|ipynb)" /%}}
+
 ---
 
 {{< figure src="/data-librarian/images/spurious_correlation.png"
 caption="Beispiel für [Scheinkorrelation](https://de.wikipedia.org/wiki/Korrelation#Korrelation_und_Kausalzusammenhang) in Zeitreihen ($\rho_{x,y}=0.99$): Große positive oder negative Korrelationen sind kein Indiz für kausale Zusammenhänge!"
 attr="Quelle: tylervigen.com" width="100%"
 attrlink="https://www.tylervigen.com/spurious-correlations" >}}
-
-
-{{% customnotice exercise%}}
-### Anscombe-Quartett
-
-Das Anscombe Quartett ist ein Datenstatz, der aus 4 bivariaten Verteilungen besteht. Über die Spaltennamen `['x1', 'y1'], ['x2', 'y2'], ..., ['x4', 'y4']` können die zusammengehörenden Datenpaare ausgewählt werden.
-
-1. Lesen Sie [diesen Datensatz](../correlation.files/anscombe.csv) ein.
-2. Berechnen Sie den Mittelwert, Median und die Standardabweichung der Spalten
-3. Berechnen Sie jeweils die Korrelation zweier zusammenhängender Spalten `[x<i>, y<i>]`
-4. Erstellen Sie jeweils ein Streudiagram zweier zusammenhängender Spalten `[x<i>, y<i>]`
-5. Was fällt Ihnen auf? Informieren Sie sich über den Datensatz [hier](https://de.wikipedia.org/wiki/Anscombe-Quartett).
-{{% /customnotice %}}
-
-{{%attachments title="Related files" pattern="(.){2,}\.(csv|ipynb)" /%}}

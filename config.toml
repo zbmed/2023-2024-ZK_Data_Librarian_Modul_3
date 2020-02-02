@@ -4,11 +4,11 @@ title = "data librarian - modul 3 - daten analysieren und darstellen"
 
 
 ignorefiles = [
-	    "content/descriptive_statistics/.*",
 	    "content/inference/*",
 	    "content/machine_learning_basics/*",
 	    "content/machine_learning_methods/*",
-	    "content/text_mining/*"]
+	    "content/text_mining/*",
+	    "content/data/.*"]
 
 # ignorefiles = [ "content/data/.*"]
 

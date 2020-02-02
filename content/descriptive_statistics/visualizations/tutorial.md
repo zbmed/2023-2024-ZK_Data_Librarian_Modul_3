@@ -22,14 +22,14 @@ LastModifierDisplayName = ""
 LastModifierEmail = ""
 +++
 
-> Statistical analysis is a process of understanding how variables in a dataset relate to each other and how those relationships depend on other variables. Visualization can be a core component of this process because, when data are visualized properly, the human visual system can see trends and patterns that indicate a relationship. (https://seaborn.pydata.org/tutorial/relational.html)
+> Statistical analysis is a process of understanding how variables in a dataset relate to each other and how those relationships depend on other variables. Visualization can be a core component of this process because, when data are visualized properly, the human visual system can see trends and patterns that indicate a relationship. *https://seaborn.pydata.org/tutorial/relational.html*
 
-Die zahlreichen Funktionen, die `seaborn` bietet basieren immer auf dem gleichen Prinzip: Visualisiert werden (nominale, ordinale, metrische) **Variablen** eines Datensatzes, die in Form eines `DataFrame`s vorliegt. Das **Skalenniveau** der Variablen bestimmt dabei die Art der Visualisierung. Variablen können verschiedenen Eigenschaften des Diagramms zugeordnet werden (z.B. die Punktgröße oder Farbe der Balken). Am besten lässt sich das Prinzip an Beispielen erkennen:
+Die zahlreichen Funktionen, die `seaborn` bietet basieren immer auf dem gleichen Prinzip: Visualisiert werden (nominale, ordinale, metrische) **Variablen** eines Datensatzes, die in Form eines `DataFrame`s vorliegen. Das **Skalenniveau** der Variablen bestimmt dabei die Art der Visualisierung. Variablen können verschiedenen Eigenschaften des Diagramms zugeordnet werden (z.B. die Punktgröße oder Farbe der Balken). Am besten lässt sich das Prinzip an einem Beispiel erkennen.
 
 
 ### Grundlagen
 
-Zuerst werden die benötigten Bibliotheken importiert und der Datensatz eingelesen. Panadas und numpy dienen zur Verarbeitung der Daten. **Seaborn** baut auf **matplotlib**, der Standard-Bibliothek für wissenschaftliche Grafiken, auf und bietete einige Verbesserungen und Vereinfachungen. Der Kommentar `# matplotlib inline` ist ein [Magic Command](https://ipython.readthedocs.io/en/stable/interactive/magics.html#magic-matplotlib) für den Python Kernel in Jupyter Notebooks. Mit diesem Befehl werden Plots direkt im Notebook angezeigt. 
+Zuerst werden die benötigten Bibliotheken importiert und der Datensatz eingelesen. Panadas und numpy dienen zur Verarbeitung der Daten. **Seaborn** baut auf **matplotlib**, der Standard-Bibliothek für wissenschaftliche Grafiken, auf und bietete einige Verbesserungen und Vereinfachungen. Der Kommentar `% matplotlib inline` ist ein [Magic Command](https://ipython.readthedocs.io/en/stable/interactive/magics.html#magic-matplotlib) für den Python Kernel in Jupyter Notebooks. Mit diesem Befehl werden Plots direkt im Notebook angezeigt. 
 
 Mit `sns.set()` wird das grundlegende Design der Plots dem Design von Seaborn angepasst. Die Funktion `DataFrame.sample()` wird verwendet, um eine Zufalsstichprobe der Größe $n=1000$ aus dem Datenstatz zu erstellen. Dies dient zur **besseren Lesbarkeit** des Plots in diesem Tutorial. 
 
@@ -39,7 +39,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
-#matplotlib inline
+%matplotlib inline
 sns.set()
 
 # use sample to generate a random subsample
