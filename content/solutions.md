@@ -91,9 +91,6 @@ Im Laufe des Kurses werden hier die Lösungen zu den einzelnen Aufgaben hochgela
 - `len(df[(df['Age Range'] == '60 to 64 years') & (df['Circulation Active Year'] == '2016')])`
 
 
-<!--
-
-
 ### Deskriptive Statistik und Visualisierungen
 
 #### Häufigkeiten
@@ -146,6 +143,9 @@ Die Balkendiagramme beginnen nicht im Nullpunkt. Somit werden die relativen Unte
 - `df['Total Checkouts'].quantile(0.60)`
 - `df['Age Range'].mode()`
 - `df['Total Renewals'].quantile([0.25, 0.75]).diff()`
+
+
+<!--
 
 
 ### Inferenzstatistik

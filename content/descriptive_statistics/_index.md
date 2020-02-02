@@ -49,7 +49,7 @@ Für eine erste Demo sind Sie verantwortlich.
 - Berechnen Sie 2-3 Statistiken und Erstellen Sie 2-3 Visualisierungen basierend auf den Informationen im [Datensatz](/data-librarian/organisation/dataset/).
 - Nutzen Sie `pandas` zur Berechnung der Statistiken und `seaborn` für die Visualisierungen.
 
-Schicken Sie bis spätestens zum Projekttag Ihren Report in Form eines *Python Notebooks* an [malte@bonart.de](mailto:malte@bonart.de?subject=data%20librarian:%20library%20usage%20report).
+Schicken Sie bis spätestens zum Projekttag Ihren Report in Form eines *Python Notebooks* an [malte@bonart.de](mailto:malte@bonart.de?subject=data%20librarian:%20library%20usage%20report). Sie können Ihr Notebook auch gerne mit den anderen Studierenden auf der Kursplatform teilen. 
 {{% /customnotice %}}
 
 
