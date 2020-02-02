@@ -25,7 +25,7 @@ LastModifierEmail = ""
 
 ### 03.02 – 09.02
 
-# Deskriptive Statistik II und Visualisierungen
+# Deskriptive Statistik und Visualisierungen
 
 Dieses Modul gibt eine Einführung in die deskriptive Statistik mit `pandas` und zeigt, wie statistische Visualisierungen in Python erstellt werden können. 
 
