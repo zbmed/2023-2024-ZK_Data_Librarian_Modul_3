@@ -27,7 +27,7 @@ LastModifierEmail = ""
 
 Das Ziel der Inferenzstatistik ist es, aus einer einzelnen Stichprobe $x_1, \dots, x_n$ die Stichproben-Verteilung eines Schätzers, wie dem Mittelwert $\bar{x}$ oder dem Median $x_{0.5}$, herzuleiten. Wenn die Stichproben-Verteilung eines Schätzers vorliegt kann damit der Wert des tatsächlichen unbekannten Populationsparameters eingegrenzt werden.
 
-Für viele Schätzer kann deren Stichproben-Verteilug theoretisch hergeleitet werden. Neben der theoretischen Herangehensweise, gibt es auch eine intuitive empirische Methode, das **Bootstrapping-Verfahren**. Es basiert auf der **Simulation** von vielen Stichproben. Simulation bedeutet, dass die Stichproben nicht real erhoben, sondern alle aus der einzigen vorhanden Stichprobe erstellt werden.
+Für viele Schätzer kann deren Stichproben-Verteilung theoretisch hergeleitet werden. Neben der theoretischen Herangehensweise, gibt es auch eine intuitive empirische Methode, das **Bootstrapping-Verfahren**. Es basiert auf der **Simulation** von vielen Stichproben. Simulation bedeutet, dass die Stichproben nicht real erhoben, sondern alle aus der einzigen vorhanden Stichprobe erstellt werden.
 
 Eine einzelne Bootstrapping-Stichprobe erhält man, indem aus der vorhanden Stichprobe der Größe $n$, genau $n$ Beobachtungen **mit Zurücklegen** zufällig gezogen werden. Das bedeutet, dass Beobachtungen mehrmals in der simulierten Stichprobe vorkommen können.
 
@@ -43,20 +43,20 @@ x = pd.Series([21, 13,  8, 14, 10, 12,  5])
 x.mean()
 ```
 
-Eine simulierte Bootstrapping-Stichprobe erhalten Sie indem Sie aus der vorhandenen Stichprobe genau $n=7$ Werte mit Zurücklegen (`replace=True`) zufällig auswählen:
+Eine simulierte Bootstrapping-Stichprobe erhalten Sie, indem Sie aus der vorhandenen Stichprobe genau $n=7$ Werte mit Zurücklegen (`replace=True`) zufällig auswählen:
 
 ```python
 x.sample(n=len(x), replace=True) 
 ```
 {{% /customnotice %}}
 
-Für jede simulierte Stichprobe wird daraufhin der zu interessierende Schätzerwert berechnet. Um möglichst exakte Ergebnisse zu erhalten sollten mindestens $S \geq 5000$ Simulationen durchgeführt werden. Man erhält damit eine Ännäherung an die tatsächliche Stichprobenverteilung des Schätzwerts:
+Für jede simulierte Stichprobe wird daraufhin der zu interessierende Schätzwert berechnet. Um möglichst exakte Ergebnisse zu erhalten sollten mindestens $S \geq 5000$ Simulationen durchgeführt werden. Man erhält damit eine Annäherung an die tatsächliche Stichprobenverteilung des Schätzwerts:
 
 {{% customnotice tip%}}
 
 #### Beispiel (Fortsetzung)
 
-Wir erstellen eine Bootstrapping-Verteilung für den Stichproben-Mittelwert. Die Anzahl der Simuluationen wird auf $S=10000$ festgelegt. Mit einer For-Loop Schleife wird die Simulation wiederholt. In jeder Simulation wird eine Bootstrapping-Stichprobe erstellt und deren Mittelwert berechnet. 
+Wir erstellen eine Bootstrapping-Verteilung für den Stichproben-Mittelwert. Die Anzahl der Simulationen wird auf $S=10000$ festgelegt. Mit einer `for` Schleife wird die Simulation wiederholt. In jeder Simulation wird eine Bootstrapping-Stichprobe erstellt und deren Mittelwert berechnet. 
 
 ```python
 x_means = []
@@ -66,7 +66,7 @@ for i in range(S):
     x_means.append(x_mean)
 ```
 
-Die Mittelwerte jeder Simulation werden in der Liste `x_means` abgespeichert. Die Liste enthält nun eine empirische Stichprobenverteilung des Mittelwerts. Nun können Sie sich die Verteilung des Stichproben-Mittelwertes beispielsweise in einem Histogram ansehen:
+Die Mittelwerte jeder Simulation werden in der Liste `x_means` abgespeichert. Die Liste enthält nun eine empirische Stichprobenverteilung des Mittelwerts. Nun können Sie sich die Verteilung des Stichproben-Mittelwertes beispielsweise in einem Histogramm ansehen:
 
 ```python
 #matplotlib inline

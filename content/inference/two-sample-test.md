@@ -25,7 +25,7 @@ LastModifierEmail = ""
 
 Ein häufiges Problem bei der statistischen Datenanalyse ist die Frage, ob **signifikante Unterschiede** in den Mittelwerten zweier Subpopulationen bestehen: Leihen Frauen beispielsweise im Mittel signifikant mehr aus als männliche Bibliothekskunden? Tätigen Kunden im Ruhestand im Mittel weniger Verlängerungen als junge Kunden?
 
-Von einem signifikanten Unterschied spricht man, wenn die Differenz zwischen den Mittelwerten zweier Stichproben so groß ist, dass es sehr Unwahrscheinlich ist, dass dieser Unterschied alleine aufgrund der rein zufälligen Schwankungen durch die Stichprobenziehung enstanden ist. 
+Von einem signifikanten Unterschied spricht man, wenn die Differenz zwischen den Mittelwerten zweier Stichproben so groß ist, dass es sehr Unwahrscheinlich ist, dass dieser Unterschied alleine aufgrund der rein zufälligen Schwankungen durch die Stichprobenziehung entstanden ist. 
 
 Wenn wir mit $\mu_x$ und $\mu_y$ die wahren aber unbekannten Mittelwerte in der Population bezeichnen und mit $\Delta_{xy}$ die Differenz dieser Mittelwerte, dann lautet unsere **Hypothese**:
 
@@ -48,6 +48,8 @@ Zum Signifikanzniveau $\alpha=0.05$ erhalten wir mit den Quantilen $d_{\frac{\al
 {{% customnotice tip%}}
 
 Liegt das Konfidenz-Intervall für die Differenz zweier Mittelwerte ausschließlich im positiven oder negativem Bereich (also **außerhalb des Nullpunktes**), können wir daraus schließen, dass die beiden Stichproben mit hoher Evidenz unterschiedlichen Populationen mit verschiedenen Mittelwerten entstammen. Die aufgestellte Hypothese kann deswegen abgelehnt werden.
+
+Überdeckt das KI hingegen die Null, so kann nicht ausgeschlossen werden, dass die wahre Mittelwertdifferenz Null ist. In diesem Fall können wir die Hypothese nicht ablehnen. 
 
 {{% /customnotice%}}
 
