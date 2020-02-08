@@ -124,6 +124,11 @@ Von oben links nach unten rechts:
 - Unimodal, Rechtsschief/ Linkssteil
 - Unimodal, Symmetrisch
 
+#### Ausreißerentfernung
+
+{{%attachments title="Lösungen" pattern="solutions_outlier" /%}}
+
+
 #### Symmetrie: Fallstudie
 
 {{%attachments title="Lösungen" pattern="solutions_case_study" /%}}

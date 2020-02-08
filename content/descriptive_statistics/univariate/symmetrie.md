@@ -70,7 +70,7 @@ Das Histogram zeigt, dass die Verteilung der Ausleihen durch einige sehr große 
 
 #### Exkurs: Ausreißerentfernung III (30 Min)
 
-- Erstellen Sie einer neue Spalte `'Total Checkouts Sqrt'` die die Wurzel über die Ausleihen enthält. Die Wurzel können sie mit `df['Total Checkouts']**(0.5)` berechnen.
+- Erstellen Sie einer neue Spalte `'Total Checkouts Sqrt'` die die Wurzel über die Spalte `Total Checkouts` enthält. Die Wurzel für jede Beobachtung können sie mit `df['Total Checkouts']**(0.5)` berechnen.
 - Schauen Sie sich das Histogramm von `'Total Checkouts Sqrt'` und charakterisieren Sie die Verteilung.
 - Vergleichen Sie diese Methode mit den vorherigen zwei Verfahren zur Ausreißerbehandlung. Welche Methode finden Sie besser geeignet, um mit fehlenden Werten umzugehen? 
 - Fallen Ihnen Vor- und Nachteile der jeweiligen Methoden ein?

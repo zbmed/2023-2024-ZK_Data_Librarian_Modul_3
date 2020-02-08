@@ -94,10 +94,9 @@ df['Total Checkouts'].quantile([alpha/2, 1-alpha/2])
 
 #### Exkurs: Ausreißerentfernung I (30 Min)
 
-- Identifzieren Sie jeweils die 1.5% größten Ausreißer in den Spalten `Total Checkouts` und `Total Renewals`.
-- Wie viel Prozent der Beobachtungen sind Ausreißer in beiden Spalten?
-- Erstellen Sie einen Datensatz, für den die Ausreißer entfernt sind.
-- Handelt es sich hierbei um eine gute Methode, Ausreißer zu entfernen? Welche anderen Strategien kennen Sie?
+- Identifzieren Sie jeweils die 1.5% größten Werte in der Spalte `Total Checkouts`. Definieren Sie diese Werte als Ausreißer. 
+- Erstellen Sie einen Datensatz, für den diese Ausreißer entfernt sind.
+- Handelt es sich hierbei um eine gute Methode, Ausreißer zu identifizieren und zu behandeln? Welche anderen Strategien kennen Sie?
 {{% /customnotice %}}
 
 

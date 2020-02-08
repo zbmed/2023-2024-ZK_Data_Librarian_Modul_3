@@ -72,7 +72,7 @@ Berechnungen auf schon bestehenden Variablen können auch direkt einer neuen Spa
 import numpy as np
 
 df['is_adult'] = df['Patron Type Definition'] == 'ADULT'
-df['log_renewals'] = np.log(df['Total Renewals'])
+df['log_renewals'] = np.log(df['Total Renewals'] + 1)
 ```
 {{% /customnotice %}}
 
