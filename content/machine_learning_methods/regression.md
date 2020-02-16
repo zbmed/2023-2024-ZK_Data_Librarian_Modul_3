@@ -102,6 +102,7 @@ Trainings- und ein Testset auf.
 
 {{% customnotice code %}}
 ```python
+from sklearn.model_selection import train_test_split
 X_reg_train, X_reg_test, y_reg_train, y_reg_test = train_test_split(X_reg, y_reg)
 ```
 {{% /customnotice %}}
