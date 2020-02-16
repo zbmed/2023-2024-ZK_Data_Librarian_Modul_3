@@ -88,7 +88,7 @@ sns.catplot(x='Year Patron Registered', y = 'Total Renewals',
             
 # Boxplot
 
-sns.catplot(col='Year Patron Registered', y = 'Total Renewals', hue='Provided Email Address',
+sns.catplot(col='Year Patron Registered', y = 'Total Renewals',
             data=df, kind='box', color="steelblue", aspect=4)
 ```
 
