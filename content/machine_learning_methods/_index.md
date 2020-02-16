@@ -27,15 +27,15 @@ LastModifierEmail = ""
 
 # Zielsetzung
 
-Nachdem wir uns letzte Woche ein theoretischs Fundament zum
+Nachdem wir uns letzte Woche ein theoretisches Fundament zum
 maschinellen Lernen erarbeitet haben, möchten wir in dieser Woche
 praktisch mit der Python-Library
 [scikit-learn](https://scikit-learn.org) maschinelle Lernverfahren
-anwenden. Auch hier ist das ziele ein grundsätzliches Verständnis ohne
-viele Detail. Die Library scikit-learn biete ein sehr schönes
+anwenden. Auch hier ist das Ziel ein grundsätzliches Verständnis ohne
+viele Detail. Die Library `scikit-learn` biete ein sehr schönes
 konsistentes Interface zu verschiedenen Verfahren und Hauptziel ist es
 hierfür ein Gefühl zu erlangen. Die in der letzte Wochen
-angesprochenen Themen wie Feature-Scalierung und Cross-Validation
+angesprochenen Themen wie Feature-Skalierung und Cross-Validation
 werden zum Beispiel nicht durchführen.
 
 Für die Durchführung erstellen Sie bitte einen Ordner
@@ -46,4 +46,4 @@ obligatorisch, Regression und Dimensionreduktion-Übungen sind
 fakultativ. Die Einreichung der Ergebnisse erfolgt über einen Commit
 bis zum Präsenztag. Musterlösungen sind [hier](./solutions) zu finden.
 
-Jetzt wünschen wir viel Spaß scikit-learn.
+Jetzt wünschen wir viel Spaß mit `scikit-learn`.
