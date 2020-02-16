@@ -1,5 +1,5 @@
 +++
-title = "Machinelles Lernen - Supervised und Unsupervised Learning"
+title = "Machinelles Lernen - Praxis mit scikit-learn"
 # If set, this will be used for the page's menu entry (instead of the `title` attribute)
 # menuTitle = "Einführung"
 weight = 400
@@ -25,18 +25,25 @@ LastModifierEmail = ""
 
 ### 17.02 – 23.02
 
-# Grundlagen des maschinellen Lernens
+# Zielsetzung
 
-...
+Nachdem wir uns letzte Woche ein theoretischs Fundament zum
+maschinellen Lernen erarbeitet haben, möchten wir in dieser Woche
+praktisch mit der Python-Library
+[scikit-learn](https://scikit-learn.org) maschinelle Lernverfahren
+anwenden. Auch hier ist das ziele ein grundsätzliches Verständnis ohne
+viele Detail. Die Library scikit-learn biete ein sehr schönes
+konsistentes Interface zu verschiedenen Verfahren und Hauptziel ist es
+hierfür ein Gefühl zu erlangen. Die in der letzte Wochen
+angesprochenen Themen wie Feature-Scalierung und Cross-Validation
+werden zum Beispiel nicht durchführen.
 
-## Ziele
+Für die Durchführung erstellen Sie bitte einen Ordner
+`maschine_learning` in ihrem Modul-Ordner. In diesem soll für jedes
+der drei Themen (Klassifikation, Regression, Dimensionreduktion) ein
+Jupyter-Notebook erstellt werden. Die Klassifikation ist
+obligatorisch, Regression und Dimensionreduktion sind fakultativ. Die
+Einreichung der Ergebnisse erfolgt über einen Commit bis zum
+Präsenztag. Musterlösungen sind [hier](./solutions) zu finden.
 
-- ...
-
-{{% customnotice exercise %}}
-
-### Projektaufgabe
-
-....
-
-{{% /customnotice %}}
+Jetzt wünschen wir viel Spaß scikit-learn.
