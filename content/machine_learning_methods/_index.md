@@ -1,7 +1,7 @@
 +++
 title = "Machinelles Lernen - Praxis mit scikit-learn"
 # If set, this will be used for the page's menu entry (instead of the `title` attribute)
-# menuTitle = "Einführung"
+# menuTitle = ""
 weight = 400
 # The title of the page in menu will be prefixed by this HTML content
  pre = "<b>6. </b>"
@@ -25,7 +25,9 @@ LastModifierEmail = ""
 
 ### 17.02 – 23.02
 
-# Zielsetzung
+# Machinelles Lernen - Praxis mit scikit-learn
+
+## Zielsetzung
 
 Nachdem wir uns letzte Woche ein theoretisches Fundament zum
 maschinellen Lernen erarbeitet haben, möchten wir in dieser Woche
