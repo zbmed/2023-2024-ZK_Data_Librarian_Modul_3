@@ -2,7 +2,7 @@
 title = "Machinelles Lernen - Praxis mit scikit-learn"
 # If set, this will be used for the page's menu entry (instead of the `title` attribute)
 # menuTitle = ""
-weight = 400
+weight = 600
 # The title of the page in menu will be prefixed by this HTML content
  pre = "<b>6. </b>"
 # pre = "<i class='fab fa-github'></i>"
