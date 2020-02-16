@@ -39,7 +39,7 @@ angesprochenen Themen wie Feature-Scalierung und Cross-Validation
 werden zum Beispiel nicht durchführen.
 
 Für die Durchführung erstellen Sie bitte einen Ordner
-`maschine_learning` in ihrem Modul-Ordner. In diesem soll für jedes
+`machine_learning` in ihrem Modul-Ordner. In diesem soll für jedes
 der drei Themen (Klassifikation, Regression, Dimensionreduktion) ein
 Jupyter-Notebook erstellt werden. Die Klassifikation ist
 obligatorisch, Regression und Dimensionreduktion sind fakultativ. Die
