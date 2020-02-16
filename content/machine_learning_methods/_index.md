@@ -39,11 +39,11 @@ angesprochenen Themen wie Feature-Scalierung und Cross-Validation
 werden zum Beispiel nicht durchführen.
 
 Für die Durchführung erstellen Sie bitte einen Ordner
-`machine_learning` in ihrem Modul-Ordner. In diesem soll für jedes
-der drei Themen (Klassifikation, Regression, Dimensionreduktion) ein
-Jupyter-Notebook erstellt werden. Die Klassifikation ist
-obligatorisch, Regression und Dimensionreduktion sind fakultativ. Die
-Einreichung der Ergebnisse erfolgt über einen Commit bis zum
-Präsenztag. Musterlösungen sind [hier](./solutions) zu finden.
+`machine_learning` in ihrem Modul-Ordner. In diesem soll für jedes der
+drei Themen (Klassifikation, Regression, Dimensionreduktion) ein
+Jupyter-Notebook erstellt werden. Die Klassifikation-Übung ist
+obligatorisch, Regression und Dimensionreduktion-Übungen sind
+fakultativ. Die Einreichung der Ergebnisse erfolgt über einen Commit
+bis zum Präsenztag. Musterlösungen sind [hier](./solutions) zu finden.
 
 Jetzt wünschen wir viel Spaß scikit-learn.
