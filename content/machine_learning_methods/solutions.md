@@ -22,8 +22,8 @@ LastModifierDisplayName = ""
 LastModifierEmail = ""
 +++
 
-Hier die Jupyter Notebooks mit Musterlösungen:
-- [Klassifikation](solution_jupyter_notebooks/Klassifikation.ipynb)
-- [Regression](solution_jupyter_notebooks/Regression.ipynb)
-- [Dimensionsreduktion](solution_jupyter_notebooks/Dimensionsreduktion.ipynb)
+Hier die Jupyter Notebooks mit Musterlösungen (ablegen mit "Speichern unter"):
+- [Klassifikation](https://raw.githubusercontent.com/bonartm/data-librarian/master/content/machine_learning_methods/solution_jupyter_notebooks/Klassifikation.ipynb)
+- [Regression](https://raw.githubusercontent.com/bonartm/data-librarian/master/content/machine_learning_methods/solution_jupyter_notebooks/Regression.ipynb)
+- [Dimensionsreduktion](https://raw.githubusercontent.com/bonartm/data-librarian/master/content/machine_learning_methods/solution_jupyter_notebooks/Dimensionsreduktion.ipynb)
 
