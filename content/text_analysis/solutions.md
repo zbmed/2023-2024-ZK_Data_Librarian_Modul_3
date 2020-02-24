@@ -22,5 +22,5 @@ LastModifierDisplayName = ""
 LastModifierEmail = ""
 +++
 
-[Hier]() ist das Jupyter Notebooks mit der
+[Hier](https://github.com/bonartm/data-librarian/blob/master/content/text_analysis/solution_files/Text-Klassifikation.ipynb) ist das Jupyter Notebooks mit der
 Text-Klassifikation-Musterlösung (ablegen mit "Speichern unter").
