@@ -35,7 +35,10 @@ von scikit-learn zur Textanalyse.
 Wir nutzen Dokumente von mehreren Newsgroups und trainieren damit
 einen Classifier, der dann ein Zudornung von neuen Texten auf eine
 dieser Gruppen durchführen kann. Sprich die Newsgroups stellen die
-Klassen/Tags dar, mit denen wir neue Texte klassifizieren.
+Klassen/Tags dar, mit denen wir neue Texte klassifizieren. Wie nutzen
+eine einfachen
+[Bag-of-Word](https://en.wikipedia.org/wiki/Bag-of-words_model)-Ansatz
+in dem wir (normalisierte) Häufigkeit von Wörtern als Features nutzen.
 
 In diesem Fall liegen die Daten noch nicht als Teil von `scikit-learn`
 vor, es wird aber eine Funktion angeboten, mit die Daten bezogen werden
