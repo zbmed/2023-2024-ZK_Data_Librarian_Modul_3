@@ -131,8 +131,6 @@ newsgroup_posts_train.target_names[newsgroup_posts_train.target[6]]
 ```
 {{% /customnotice %}}
 
-
-
 Um die Wörter zu zählen, aber auch um Stopwörte zu entfernen und zu
 Tokenisieren nutzen wir ein Objekt der
 [CountVectorizer-Klasse](https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.CountVectorizer.html)
