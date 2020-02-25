@@ -31,12 +31,12 @@ LastModifierEmail = ""
 Final möchte wir mittels maschinellen Lernens Texte automatisch
 analysieren. Auch hier wollen wir an einem kleinen Beispiel das
 Verständnis für die Grundlagen und mögliche Anwendungen entwickelt. In
-dem Beispiel werden Texte in Kategorien einteilen und somit einen
-kleines automatisch Verschlagwortung-Werkzeug erstellen. Dazu greifen
-wir auf das in der letzte Woche Erlernte zu Klassifizierugserfahren,
+dem Beispiel werden wir Texte in Kategorien zuordnen und somit ein
+kleines automatisches Verschlagwortungswerkzeug erstellen. Dazu bauen
+wir auf das in der letzte Woche Erlernte zu Klassifizierugsverfahren,
 aber auch auf einige Punkte aus Modul 2 namentlich Text-Frequency (TF)
-und und [Term frequency–inverse document
-frequency](https://de.wikipedia.org/wiki/Tf-idf-Ma%C3%9F) (TFIDF))
+und und [Term frequency inverse document
+frequency](https://de.wikipedia.org/wiki/Tf-idf-Ma%C3%9F) (TFIDF)),
 auf. Für die Implementation greifen wir wieder `scikit-learn` zurück.
 
 Bitte nutzen Sie den Ordner `machine_learning` in ihrem Modul-Ordner

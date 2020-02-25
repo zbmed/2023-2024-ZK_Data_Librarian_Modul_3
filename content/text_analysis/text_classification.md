@@ -34,9 +34,12 @@ von scikit-learn zur Textanalyse.
 
 Wir nutzen Dokumente von mehreren Newsgroups und trainieren damit
 einen Classifier, der dann ein Zudornung von neuen Texten auf eine
-dieser Gruppen machen kann. Sprich die Newsgroups stellen die Klassen
-dar.
+dieser Gruppen durchführen kann. Sprich die Newsgroups stellen die
+Klassen/Tags dar, mit denen wir neue Texte klassifizieren.
 
+In diesem Fall liegen die Daten noch nicht als Teil von `scikit-learn`
+vor, es wird aber eine Funktion angeboten, mit die Daten bezogen werden
+können.
 
 {{% customnotice code %}}
 ```python
@@ -46,7 +49,7 @@ from sklearn.datasets import fetch_20newsgroups
 
 
 
-Wir legen vier Klassen, die wir nutzen wollen, fest.
+Wir legen vier Newsgroups, die wir nutzen wollen, fest.
 
 {{% customnotice code %}}
 ```python
@@ -55,7 +58,7 @@ selected_categories = ["sci.crypt", "sci.electronics", "sci.med", "sci.space"]
 {{% /customnotice %}}
 
 
-Wir beziehen die Trainingset- und eine Testsets-Dokumente.
+Wir beziehen die Trainingset- und Testsets-Dokumente.
 
 {{% customnotice code %}}
 ```python
@@ -73,7 +76,7 @@ newsgroup_posts_test = fetch_20newsgroups(
 {{% /customnotice %}}
 
 
-Die Objekte, die wir erhalten, werden sind ebenfalls `scikit-learn`-Bunches ...
+Die Objekte, die wir erhalten, sind `scikit-learn`-Bunches ...
 {{% customnotice code %}}
 ```python
 type(newsgroup_posts_train)
@@ -89,7 +92,8 @@ dir(newsgroup_posts_train)
 {{% /customnotice %}}
 
 
-U.a. die übliche Beschreibung des Datensets, die wir uns jetzt einmal ansehen.
+U.a. exitiert die übliche Beschreibung des Datensets im Attribute
+`DESCR`, was wir uns ansehen können.
 
 {{% customnotice code %}}
 ```python
@@ -97,9 +101,8 @@ print(newsgroup_posts_train.DESCR)
 ```
 {{% /customnotice %}}
 
-
-Die Daten ist keine Matrix, sondern besteht aus Newsgroup-Messages.
-Ein Beispiel:
+Das Attribut `data` enthält in diesem Fall keine Matrix, sondern
+Newsgroup-Message-Texte.  Ein Beispiel schauen wir uns an:
 
 {{% customnotice code %}}
 ```python
@@ -108,12 +111,17 @@ print(newsgroup_posts_train.data[6])
 {{% /customnotice %}}
 
 
+Die Targets sind die Newsgroup-Namen. Diese Klassen sind wie üblich
+für `scikit-learn` als Zahlen dargestellt, die wir mittels
+`target_names` auflösen können.
 
+{{% customnotice code %}}
+```python
+print(newsgroup_posts_train.target_names)
+```
+{{% /customnotice %}}
 
-
-Die Targets sind die Newsgroups (wieder als Zahlen dargetellt, die wir
-über `target_names` auflösen können).
-
+Für unsere Beispiel-Message:
 {{% customnotice code %}}
 ```python
 newsgroup_posts_train.target_names[newsgroup_posts_train.target[6]]
@@ -123,36 +131,17 @@ newsgroup_posts_train.target_names[newsgroup_posts_train.target[6]]
 
 
 Um die Wörter zu zählen, aber auch um Stopwörte zu entfernen und zu
-Tokenisieren nutzen wir ein Objekt der [CountVectorizer-Klasse](https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.CountVectorizer.html).
+Tokenisieren nutzen wir ein Objekt der
+[CountVectorizer-Klasse](https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.CountVectorizer.html)
+bzw. dessen `fit`-Methode
 
 {{% customnotice code %}}
 ```python
 from sklearn.feature_extraction.text import CountVectorizer
-```
-{{% /customnotice %}}
-
-
-
-
-
-{{% customnotice code %}}
-```python
 count_vect = CountVectorizer()
-```
-{{% /customnotice %}}
-
-
-
-
-
-{{% customnotice code %}}
-```python
 count_vect.fit(newsgroup_posts_train.data)
 ```
 {{% /customnotice %}}
-
-
-
 
 
 Über alle Dokumente bekommen wir die folgende Zahl an Wörtern:
@@ -163,9 +152,6 @@ len(count_vect.get_feature_names())
 {{% /customnotice %}}
 
 
-
-
-
 Wir können uns ein paar anschauen ...
 {{% customnotice code %}}
 ```python
@@ -174,7 +160,7 @@ count_vect.get_feature_names()[10000:10050]
 {{% /customnotice %}}
 
 
-... oder sogar das counting-Diktionary mit den Wörtern und ihre
+... oder sogar das counting-Dictionary mit den Wörtern und ihre
 Vorkommen-Anzahl bekommen (Achtung: groß!).
 
 {{% customnotice code %}}
@@ -192,9 +178,7 @@ X_train_counts = count_vect.transform(newsgroup_posts_train.data)
 ```
 {{% /customnotice %}}
 
-
-
-
+Die Matrix, die wir erhalten, hat folgende Maße:
 {{% customnotice code %}}
 ```python
 X_train_counts.shape
@@ -205,45 +189,26 @@ X_train_counts.shape
 
 Wir normalisieren die Wörtercoutings auf die Anzahl an Wörter im Text
 (Term Frequency - TF). Dazu nutzen wir eine Objekt der Klasse
-TfidfTransformer (schalten das idf (Inverse Document Frequency) aber
+[TfidfTransformer](https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfTransformer.html)
+(schalten die idf-Normalisierung (Inverse Document Frequency) dabei
 ab.)
 
 {{% customnotice code %}}
 ```python
 from sklearn.feature_extraction.text import TfidfTransformer
-```
-{{% /customnotice %}}
-
-
-
-
-{{% customnotice code %}}
-```python
 tf_transformer = TfidfTransformer(use_idf=False)
 ```
 {{% /customnotice %}}
 
-
-
-
+Die Normalisierung erfolgt mit den Methoden `fit` und `transform`.
 {{% customnotice code %}}
 ```python
 tf_transformer.fit(X_train_counts)
-```
-{{% /customnotice %}}
-
-
-
-
-{{% customnotice code %}}
-```python
 X_train_tf = tf_transformer.transform(X_train_counts)
 ```
 {{% /customnotice %}}
 
-
-
-Die Matrix die wir erhalte hat folgende Maße:
+Die Matrix, die wir erhalten, hat folgende Maße:
 {{% customnotice code %}}
 ```python
 X_train_tf.shape
@@ -251,9 +216,9 @@ X_train_tf.shape
 {{% /customnotice %}}
 
 
-
-Jetzt können wir einen Klassifikator (wir Nutzen hier eine
-Random-Forest-Klassifikator) erstellen
+Jetzt können wir einen Klassifikator erstellen. Wir Nutzen hier eine
+Random-Forest-Klassifikator, könnten aber auch eine andere Methode
+wählen.
 
 {{% customnotice code %}}
 ```python
@@ -262,11 +227,9 @@ tf_random_forest_classifier = RandomForestClassifier()
 ```
 {{% /customnotice %}}
 
+Wie bei allen Supervised-Learning-Verfahren trainieren wir den
+Klassikator mit der Trainingsmatrix.
 
-
-
-
-... und diesem mit der Matrix trainieren.
 {{% customnotice code %}}
 ```python
 tf_random_forest_classifier.fit(X_train_tf, newsgroup_posts_train.target)
@@ -274,12 +237,10 @@ tf_random_forest_classifier.fit(X_train_tf, newsgroup_posts_train.target)
 {{% /customnotice %}}
 
 
+Um zu testen wie gut der Klassifikator funktioniert, prozessieren wir
+das Test-Set mit dem CountVectorizer-Objekt und führen die gleiche
+TF-Transformation durch.
 
-
-
-Um zu testen wie gut der Klassifikator funktioniert prozessieren
-wir das Test-Set mit dem CountVectorizer-Objekt und führen 
-die gleich TF-Transformation durch.
 {{% customnotice code %}}
 ```python
 X_test_counts = count_vect.transform(newsgroup_posts_test.data)
@@ -287,8 +248,8 @@ X_test_tf = tf_transformer.transform(X_test_counts)
 ```
 {{% /customnotice %}}
 
-
-
+Ein kurze Blick auf die Maße der Matrix, zeigt uns, dass die Anzahl an
+Spalten (Features) gleich ist wie bei der Trainingsmatrix. 
 
 {{% customnotice code %}}
 ```python
@@ -296,8 +257,8 @@ X_test_counts.shape
 ```
 {{% /customnotice %}}
 
-
-
+Jetzt können wir mit der `score`-Methods die Güte des Klassikators auf
+dem Test-Set prüfen.
 
 {{% customnotice code %}}
 ```python
@@ -306,14 +267,11 @@ tf_random_forest_classifier.score(X_test_tf, newsgroup_posts_test.target)
 {{% /customnotice %}}
 
 
+Der Klassifikator scheint gut genug zu funktionieren. Wir können jetzt
+Listen von Dokumenten klassifizieren. Wir nehmen zwei Dokumete aus
+unserem Test-Set und erstellen zusätzlich ein sehr kleines eigene
+Dokument, das nur aus einem Satz bestehent.
 
-
-
-Der Klassifikator scheint gut genug zu funktionieren.
-Wir können jetzt List von Dokumenten klassifizieren.
-Wir nehmen zwei Dokumeten aus unserem Test-Set und
-erstellen zusätzlich ein sehr kleinen eigene, aus einem
-Satz bestehendes.
 {{% customnotice code %}}
 ```python
 docs_to_classify = [
@@ -323,17 +281,12 @@ docs_to_classify = [
 ```
 {{% /customnotice %}}
 
-
-
 Werfen wir einen kurzen Blick auf die zwei Dokumente aus dem Testset.
 {{% customnotice code %}}
 ```python
 print(newsgroup_posts_test.data[1])
 ```
 {{% /customnotice %}}
-
-
-
 
 {{% customnotice code %}}
 ```python
@@ -342,7 +295,8 @@ print(newsgroup_posts_test.data[7])
 {{% /customnotice %}}
 
 
-Auch diese müssen wir wir die Traininsdokumente in Matrizen transformieren:
+Auch diese neu zu klassifizierenden Dokumente müssen wir wie die
+Traininsdokumente in Matrizen transformieren:
 
 {{% customnotice code %}}
 ```python
@@ -352,7 +306,7 @@ X_to_classify_tfidf = tf_transformer.transform(X_to_classify_counts)
 {{% /customnotice %}}
 
 
-Und können dann die Klassifikation durchführen:
+Jetzt können wir mit dieser Matrix die Klassifikation durchführen ...
 
 {{% customnotice code %}}
 ```python
@@ -360,6 +314,7 @@ predicted_classes = tf_random_forest_classifier.predict(X_to_classify_tfidf)
 ```
 {{% /customnotice %}}
 
+... und uns die Klassen anschauen, mit denen die Dokumente versehen wurden.
 
 {{% customnotice code %}}
 ```python
@@ -369,9 +324,9 @@ for predicted_class in predicted_classes:
 {{% /customnotice %}}
 
 
-Um den Klassifikator zu verbessern nutzen wird statt der Term-Frequenz
-TFIDF (Term Frequency times Inverse Document Frequency) und erstellen
-damit unser Matrizen. 
+Um den Klassifikator zu verbessern, probieren wird statt der
+Term-Frequenz nun die TFIDF (Term Frequency times Inverse Document
+Frequency) und erstellen damit unsere Matrizen.
 
 {{% customnotice code %}}
 ```python
@@ -380,5 +335,5 @@ tfidf_transformer = TfidfTransformer(use_idf=True).fit(X_train_counts)
 {{% /customnotice %}}
 
 Machen Sie äquivalent zu oben weiter (Training, Scoring und
-Prediction). Ist das Ergebnis besser? Gern kann auch noch mit anderen
-Klassifikator-Ansätzen anstelle von Randeom Forest experiment werden.
+Prediction). Ist das Ergebnis besser? Gerne kann hier mit anderen
+Klassifikator-Type anstelle von Randeom Forest experiment werden.
