@@ -324,7 +324,6 @@ for predicted_class in predicted_classes:
 ```
 {{% /customnotice %}}
 
-
 Um den Klassifikator zu verbessern, probieren wird statt der
 Term-Frequenz nun die TFIDF (Term Frequency times Inverse Document
 Frequency) und erstellen damit unsere Matrizen.
@@ -335,6 +334,10 @@ tfidf_transformer = TfidfTransformer(use_idf=True).fit(X_train_counts)
 ```
 {{% /customnotice %}}
 
-Machen Sie äquivalent zu oben weiter (Training, Scoring und
-Prediction). Ist das Ergebnis besser? Gerne kann hier mit anderen
-Klassifikator-Type anstelle von Randeom Forest experiment werden.
+Machen Sie mit diesem TFIDF-Ansatz äquivalent zu der Klassifikation
+mit dem TF-Ansatz weiter. D.h. führen Sie alle nötigen Schritte wie
+Training, Scoring und Prediction durch. Ist das Ergebnis besser? Gerne
+können Sie zusätzlich mit anderen Klassifikator-Typen anstelle von
+Randeom Forest experiment werden (z.B. SVMs oder neuronale Netze), um
+zu sehen ob dies zu einer besseren Klassifikation führt.
+
