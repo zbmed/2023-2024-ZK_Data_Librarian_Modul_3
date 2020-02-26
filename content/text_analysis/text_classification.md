@@ -338,6 +338,6 @@ Machen Sie mit diesem TFIDF-Ansatz äquivalent zu der Klassifikation
 mit dem TF-Ansatz weiter. D.h. führen Sie alle nötigen Schritte wie
 Training, Scoring und Prediction durch. Ist das Ergebnis besser? Gerne
 können Sie zusätzlich mit anderen Klassifikator-Typen anstelle von
-Randeom Forest experiment werden (z.B. SVMs oder neuronale Netze), um
-zu sehen ob dies zu einer besseren Klassifikation führt.
+Randeom Forest experiment werden (z.B. SVMs oder neuronale Netzen), um
+zu testen, ob dies zu einer besseren Klassifikation führt.
 
