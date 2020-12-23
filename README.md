@@ -60,4 +60,4 @@ This website uses a modified version of the [Learn Theme for Hugo](https://theme
 
 ## License
 
-The content of the website for this project are licensed under the [Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/). The underlying source code is licensed under the MIT license.
+The content of the website for this project are licensed under the [Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/). The underlying source code is licensed under the MIT license.
