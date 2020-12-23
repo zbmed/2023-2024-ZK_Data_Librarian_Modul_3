@@ -24,7 +24,7 @@ enableInlineShortcodes = false
   # See the config.toml file from this documentation site to have an example.
   editURL = ""
   # Author of the site, will be used in meta information
-  author = "Malte Bonart and Konrad Förstner"
+  author = "Malte Bonart, Ania Lopez and Konrad Förstner"
   # Description of the site, will be used in meta information
   description = "learning materials for the data librarian course"
   # Shows a checkmark for visited pages on the menu
