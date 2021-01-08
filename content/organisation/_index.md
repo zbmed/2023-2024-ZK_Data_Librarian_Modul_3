@@ -9,7 +9,7 @@ LastModifierEmail = ""
 
 +++
 
-### 21.01 – 26.01
+### 22.02.21 – 27.02.21
 
 # Kursorganisation und Vorbereitungen
 
@@ -17,14 +17,16 @@ Diese Einheit gibt einen Überblick über die Kursinhalte, wichtige Termine und 
 
 ## Ziele
 
-- Installieren Sie Anaconda mit Python 3.7 auf Ihrem Rechner
-- In Modul 1 haben Sie eine Git Repositorium erstellt und GitHub gespiegelt. Bitte erstellen Sie in diesem Repositorium einen Ordner namen `Module_3` und fügen Sie [den Datensatz](https://bonartm.github.io/data-librarian/organisation/dataset/) Ihrem Projektordner hinzu. Füge Sie die Datein auch in das Git-Repositorium hinzu (kleine Erinnerung `git add ` und `git commit -m "Erläuterung"`, [große Erinnerung](https://librarycarpentry.org/lc-git/)).
-- Stellen Sie sicher, dass Python Notebooks lokal ausgeführt werden können
-- Wiederholen Sie die grundlegenden Python Programmier-Basics aus dem ersten Modul
+- Überblick über das gesamte Modul (Kurseinheiten, Termine)
+- Installation von Anaconda mit Python 3.7 auf Ihrem Rechner
+- Installation bzw. Nutzung von Jupyter Notebooks auf Ihrem Rechner
+- Anpassung des eigenen Git-Repositoriums für das Arbeiten mit einem offenen Datensatz der San Francisco Library
+- Überblick über verschiedene Python Pakete und Bibliotheken
+
 
 {{% customnotice tip %}}
 
-Unsere [Python-Kurzreferenz](https://github.com/foerstner-lab/Bits_and_pieces_for_the_carpentries_workshops/blob/master/short_references/Kurzreferenz_python.pdf) oder dieses [Cheat-Sheet](https://s3.amazonaws.com/assets.datacamp.com/blog_assets/PythonForDataScience.pdf) gibt einen guten Überblick über die wichtigsten Befehle in Python. 
+Zum schnellen Nachschlagen: Unsere [Python-Kurzreferenz](https://github.com/foerstner-lab/Bits_and_pieces_for_the_carpentries_workshops/blob/master/short_references/Kurzreferenz_python.pdf) oder dieses [Cheat-Sheet](https://s3.amazonaws.com/assets.datacamp.com/blog_assets/PythonForDataScience.pdf) gibt einen guten Überblick über die wichtigsten Befehle in Python. 
 
 #### Weitere Ressourcen
 

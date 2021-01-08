@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Deskriptive Statistik und Visualisierungen on data librarian - modul 3 - daten analysieren und darstellen</title>
+    <link>https://bonartm.github.io/data-librarian/descriptive_statistics/</link>
+    <description>Recent content in Deskriptive Statistik und Visualisierungen on data librarian - modul 3 - daten analysieren und darstellen</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-DE</language><atom:link href="https://bonartm.github.io/data-librarian/descriptive_statistics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Recap: Quiz</title>
+      <link>https://bonartm.github.io/data-librarian/descriptive_statistics/quiz_statistics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bonartm.github.io/data-librarian/descriptive_statistics/quiz_statistics/</guid>
+      <description>.quiz fieldset { border-color: black; border-width: 10px; margin-bottom: 1em; } .quiz legend { font-size: 105%; font-weight: 600; padding-left: 15px; padding-right: 15px; padding-top: 15px; } .quiz label { display: block; line-height: 1.75em; } .quiz input[type=&#34;radio&#34;] { margin-right: 10px; page-break-after: avoid; page-break-before: avoid; } .quiz input[type=&#34;submit&#34;] { background: black; color: white; display: block; font-size: 120%; font-weight: 600; height: 2.5em; margin-top: 2em; text-transform: uppercase; width: 100%; } .quiz table { color: white; font-weight: bold; margin: 1em auto 2em auto; width: 100%; } .</description>
+    </item>
+    
+  </channel>
+</rss>
