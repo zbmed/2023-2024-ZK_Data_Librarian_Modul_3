@@ -2,7 +2,7 @@
 title = "Conda und Anaconda"
 # If set, this will be used for the page's menu entry (instead of the `title` attribute)
 # menuTitle = "Einstieg"
-weight = 13
+weight = 14
 # The title of the page in menu will be prefixed by this HTML content
 # pre = "<b>1. </b>"
 # pre = "<i class='fab fa-github'></i>"
@@ -27,7 +27,7 @@ LastModifierEmail = ""
 **Anaconda** basiert auf *conda*. Mit [Anaconda](https://www.anaconda.com/distribution/) werden eine Vielzahl von Paketen, die für die Datenanalyse gebraucht werden, schon vorinstalliert. Außerdem bietet *Anaconda* eine vorinstallierte Entwicklungsumgebung ([Spyder IDE](https://www.spyder-ide.org/)) und eine vorinstallierte Version von *Jupyter*, mit der [Notebooks](https://jupyter.org/) gestartet werden können.
 
 {{% customnotice exercise%}}
-#### Anaconda (10 Min)
+#### 1.3 Anaconda (10 Min)
 
 - Wenn noch nicht geschehen, können Sie Anaconda [hier](https://www.anaconda.com/distribution/) für Ihr Betriebssystem herunterladen. Wir verwenden die Version für **Python 3.7**.
 - Öffnen Sie den mit Anaconda installierten *Anaconda Navigator* und verschaffen Sie sich einen Überblick über die vorhandenen Programme. 

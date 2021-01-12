@@ -9,7 +9,7 @@ LastModifierEmail = ""
 
 +++
 
-### 22.02.21 – 27.02.21
+### 22.02.21 – 28.02.21
 
 # Kursorganisation und Vorbereitungen
 

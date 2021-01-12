@@ -4,7 +4,7 @@ title = "Kurseinheiten"
 # menuTitle = "Einstieg"
 weight = 11
 # The title of the page in menu will be prefixed by this HTML content
- # pre = "<b>1. </b>"
+# pre = "<b>1. </b>"
 # pre = "<i class='fab fa-github'></i>"
 # Table of content (toc) is enabled by default. Set this parameter to true to disable it.
 # Note: Toc is always disabled for chapter pages
