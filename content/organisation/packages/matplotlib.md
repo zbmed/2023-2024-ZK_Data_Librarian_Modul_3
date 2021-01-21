@@ -43,9 +43,9 @@ plt.plot(x, x, c="green", linestyle='', marker='+')
 
 {{% customnotice exercise%}}
 
-#### matplotlib (15 Min)
+#### 1.6 matplotlib (15 Min)
 
-- Kopieren Sie den Code in ein Jupyter Notebook.
-- Ändern Sie die Farbe der Pukte im Plot von grün auf schwarz.
-- Ändern Sie den Aufruf so um, dass statt Punkte, Linien angezeigt werden. [Hier](https://matplotlib.org/3.1.1/api/_as_gen/matplotlib.pyplot.plot.html) finden Sie die Dokumentation der Funktion `matplotlib.pyplot.plot`.
+- Kopiere das obere Codebeispiel in ein Jupyter Notebook, speichere es in Deinem Projektordner und führe es aus.
+- Ändere die Farbe der Pukte im Plot von grün auf schwarz.
+- Ändere den Aufruf so um, dass statt Punkte, Linien angezeigt werden. [Hier](https://matplotlib.org/3.1.1/api/_as_gen/matplotlib.pyplot.plot.html) findest Du die Dokumentation der Funktion `matplotlib.pyplot.plot`.
 {{% /customnotice %}}

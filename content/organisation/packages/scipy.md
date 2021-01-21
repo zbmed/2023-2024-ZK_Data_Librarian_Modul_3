@@ -25,7 +25,7 @@ description = "Funktionen und Methoden aus der Statistik."
 
 [scipy](https://docs.scipy.org/doc/scipy/reference/) ist fest mit numpy und pandas verbunden und bietet eine Menge an Funktionen und Methoden aus der Mathematik und Statistik an.
 
-Für uns ist vor alle das Paket `scipy.stats` Interessant. Mit ihm können Zufallszahlen aus verschiedensten statistischen Verteilungen generiert werden oder auch statistische Tests durchgeführt werden. [Hier](https://docs.scipy.org/doc/scipy/reference/stats.html) finden Sie einen Überblick über alle Methoden des Pakets.
+Für uns ist vor alle das Paket `scipy.stats` Interessant. Mit ihm können Zufallszahlen aus verschiedensten statistischen Verteilungen generiert werden oder auch statistische Tests durchgeführt werden. [Hier](https://docs.scipy.org/doc/scipy/reference/stats.html) findest Du einen Überblick über alle Methoden des Pakets.
 
 Im folgenden Beispiel wird ein [Zweistichproben-t-Test](https://de.wikipedia.org/wiki/Zweistichproben-t-Test) an zwei numerischen Listen durchgeführt.
 

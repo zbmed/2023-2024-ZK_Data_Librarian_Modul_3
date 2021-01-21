@@ -21,7 +21,7 @@ LastModifierDisplayName = ""
 LastModifierEmail = ""
 +++
 
-Die folgende Liste gibt einen kurzen Überblick über die wichtigsten Python Bibliotheken, von denen Sie manche im Modul näher kennenlernen werden. Im ersten Teil des Modules werden wir hauptsächlich mit `pandas` und `seaborn` arbeiten.
+Die folgende Liste gibt einen kurzen Überblick über die wichtigsten Python Bibliotheken, von denen Du manche im Modul näher kennenlernen wirst. Im ersten Teil des Modules werden wir hauptsächlich mit `pandas` und `seaborn` arbeiten.
 
 {{% customnotice tip%}}
 

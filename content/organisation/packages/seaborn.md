@@ -27,7 +27,7 @@ description = "Verbesserung und Weiterentwicklung der matplotlib Bibliothek."
 
 Eine wichtige Funktion ist die `sns.set()` Methode. Wenn sie am Anfang eines Python-Scripts ausgeführt wird, wird intern das Design der Plots erheblich verbessert. Alle plots, die nach dem Aufruf der Funktion erstellt werden, sehen viel besser aus.
 
-Testen Sie den Unterschied mit dem folgenden Beispiel:
+Teste den Unterschied mit dem folgenden Beispiel:
 
 
 {{% customnotice code%}}
@@ -46,5 +46,5 @@ plt.plot(x, x)
 {{% /customnotice %}}
 
 {{% customnotice tip%}}
-Wenn Sie im Jupyter Notebook das Code-Beispiel ausgeführt haben und danach den Aufruf `sns.set()` entfernen, ändert sich das Design des Plots erstmal nicht. Für einen "Reset" müssen Sie den Kernel (also der im Hintergrund laufende Python Prozess) mit einem Klick auf <i class="fas fa-redo"></i> neu starten.
+Wenn Du im Jupyter Notebook das Code-Beispiel ausgeführst hast und danach den Aufruf `sns.set()` entfernst, ändert sich das Design des Plots erstmal nicht. Für einen "Reset" musst Du den Kernel (also der im Hintergrund laufende Python Prozess) mit einem Klick auf <i class="fas fa-redo"></i> neu starten.
 {{% /customnotice %}}

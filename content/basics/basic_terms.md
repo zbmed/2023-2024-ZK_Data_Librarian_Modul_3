@@ -26,9 +26,9 @@ LastModifierEmail = ""
 
 
 
-In der [Kursumgebung](https://zbiw.th-koeln.de/moodle/course/view.php?id=300) finden Sie das Einführungskapitel des Buchs *Statistik: Der Weg zur Datenanalyse* zum alleinigen persönlichen Gebrauch hier im Kurs hinterlegt.[^1]
+In der [Moodle-Kursumgebung](https://zbiw.th-koeln.de/moodle/mod/book/view.php) ist das Einführungskapitel des Buchs *Statistik: Der Weg zur Datenanalyse* zum alleinigen persönlichen Gebrauch hinterlegt.[^1]
 
-Der Text gibt einen **Einstieg** in die Aufgaben und Anwendungsbereiche der Statistik und erklärt die **grundlegenden Begriffe**, mit denen Daten und Datensätze charakterisiert werden können. Nach der Einheit sollten Sie die folgenden Fragen beantworten können:
+Der Text gibt einen **Einstieg** in die Aufgaben und Anwendungsbereiche der Statistik und erklärt die **grundlegenden Begriffe**, mit denen Daten und Datensätze charakterisiert werden können. Nach der Lektüre solltest Du beispielsweise die folgenden Fragen beantworten können:
 
 - Was ist Statistik? Was macht Statistik?
 - Welche grundlegenden Begriffe werden in der Statistik verwendet?
@@ -36,9 +36,9 @@ Der Text gibt einen **Einstieg** in die Aufgaben und Anwendungsbereiche der Stat
 
 {{% customnotice exercise %}}
 
-#### Grundbegriffe (60 Min)
+#### 2.1 Grundbegriffe (60 Min)
 
-Beantworten und diskutieren Sie folgende Fragen konkret für den [San Francisco Library Usage](/data-librarian/organisation/dataset/) Datensatz. Halten Sie Ihre Ergebnisse in Stichpunkten fest.
+Beantworte und diskutiere die folgenden Fragen konkret für den in Einheit 1 heruntergeladenen [San Francisco Library Usage](/data-librarian/organisation/dataset/) Datensatz. Notiere Deine Ergebnisse in Stichpunkte. 
 
 1. Wie viele Merkmale besitzt der Datensatz?
 2. Wie groß ist die Stichprobengröße des Datensatzes?
@@ -55,7 +55,7 @@ Beantworten und diskutieren Sie folgende Fragen konkret für den [San Francisco 
 ---
 
 
-Zu empfehlen sind auch die **englischen Lehrbücher** von [OpenIntro](https://www.openintro.org/stat/textbook.php?stat_book=isrs). Sie können kostenlos auf der Webseite heruntergeladen werden. Für diesen Kurs sind insbesondere die **ersten zwei Kapitel** des Buchs [Introductory Statistics with Randomization and Simulation](https://drive.google.com/file/d/0B-DHaDEbiOGkRHNndUlBaHVmaGM/edit) relevant. [^2]
+Zu empfehlen sind auch die **englischen Lehrbücher** von [OpenIntro](https://www.openintro.org/stat/textbook.php?stat_book=isrs). Sie können kostenlos auf der Webseite heruntergeladen werden. Für diesen Kurs sind insbesondere die **ersten zwei Kapitel** des Buchs [Introductory Statistics with Randomization and Simulation](https://drive.google.com/file/d/0B-DHaDEbiOGkRHNndUlBaHVmaGM/edit) [^2] relevant. Auch diese Literaturhinweise sind in der [Moodle-Kursumgebung](https://zbiw.th-koeln.de/moodle/mod/book/view.php) hinterlegt.
 
 
 [^1]: Fahrmeir, Ludwig, Christian Heumann, Rita Künstler, Iris Pigeot, and Gerhard Tutz. Statistik: Der Weg zur Datenanalyse. Springer-Verlag, 2016, https://www.springer.com/de/book/9783662503713.

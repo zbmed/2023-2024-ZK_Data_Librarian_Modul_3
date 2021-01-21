@@ -1,5 +1,5 @@
 +++
-title = "Termine"
+title = "Termine und Kurseinheiten"
 weight = 12
 # The title of the page in menu will be prefixed by this HTML content
 # pre = "<b>1. </b>"
@@ -19,12 +19,12 @@ LastModifierDisplayName = ""
 LastModifierEmail = ""
 +++
 
-Hier finden Sie einen Überblick über die einzelnen Moduleinheiten.
+Hier findest Du einen Überblick über die einzelnen Moduleinheiten.
 
 | Datum         | Titel                                                      | Ziele                                                                                                                                                                                                                                                                                                                                   |
 |---------------|------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 22.02 – 28.02 | 1. Kursorganisation und Vorbereitungen                                               | Überblick über das gesamte Modul (Kurseinheiten, Termine <br> Installation von Anaconda mit Python 3.7 auf Ihrem Rechner <br> Installation bzw. Nutzung von Jupyter Notebooks auf Ihrem Rechner <br> Anpassung des eigenen Git-Repositoriums für das Arbeiten mit einem offenen Datensatz der San Francisco Library <br> Überblick über verschiedene Python Pakete und Bibliotheken                                                                                                                                                       |
-| 22.02 – 03.03 | 2. Grundlagen der Datenanalyse in Python                                                | Beschreiben Sie Datensätze mit dem statistischen Grundvokabular <br> Lesen Sie Datensätze als `DataFrame`s in Python ein <br> Filtern Sie `DataFrames` nach Spalten oder Zeilen <br> Erstellen Sie neue Variablen                                                                                                                       |
+| 22.02 – 28.02 | 1. Kursorganisation und Vorbereitungen                     |  Überblick über das gesamte Modul (Kurseinheiten, Termine) <br> Anpassung des eigenen Git-Repositoriums für das Arbeiten mit einem offenen Datensatz der San Francisco Library <br> Erinnerung: Installation von Anaconda mit Python 3.7 auf Ihrem Rechner <br> Erinnerung: Installation bzw. Nutzung von Jupyter Notebooks auf Ihrem Rechner <br> Überblick über verschiedene Python Pakete und Bibliotheken |
+| 22.02 – 03.03 | 2. Grundlagen der Datenanalyse in Python                   | Beschreiben Sie Datensätze mit dem statistischen Grundvokabular <br> Lesen Sie Datensätze als `DataFrame`s in Python ein <br> Filtern Sie `DataFrames` nach Spalten oder Zeilen <br> Erstellen Sie neue Variablen                                                                                                                       |
 | 04.03 – 10.03 | 3. Deskriptive Statistik und Visualisierung                   | Berechnen Sie grundlegende Lage- und Streuungsmaße <br> Berechnen Sie Statistiken für bivariate Verteilungen <br> Erstellen Sie einfache Visualisierungen                                                                                                                                                                               |
 |  | 4. Exkurs: Inferenzstatistik <br> (freiwillige Vertiefung)       | Führen Sie einen Zwei-Stichproben Mittelwerttest durch <br>                                                                                                                                                                                                                                                                             |
 | 11.03 – 17.03 | 5. Maschinelles Lernen - Grundlagen / 6. Maschinelles Lernen - Praxis mit scikit-learn     |  Führen Sie Regression, Klassifikation und Dimensionreduktion mit `scikit-learn` durch                                                                                                                                                                                                                                                         |

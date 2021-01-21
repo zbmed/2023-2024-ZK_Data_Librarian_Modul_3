@@ -14,9 +14,10 @@ Im Laufe des Kurses werden hier die Lösungen zu den einzelnen Aufgaben hochgela
 
 
 
-### Kursorganisation und Vorbereitung
-
+### 1. Kursorganisation und Vorbereitung
+ 
 #### Quiz
+
 
 1. Strg+Enter
 2. siehe hier: https://docs.anaconda.com/anaconda/packages/pkg-docs/
@@ -24,10 +25,9 @@ Im Laufe des Kurses werden hier die Lösungen zu den einzelnen Aufgaben hochgela
 4. siehe (unter `sns.set()`): https://seaborn.pydata.org/introduction.html
 
 
+### 2. Grundlagen der Datenanalyse in Python
 
-### Grundlagen
-
-#### Grundbegriffe
+#### 2.1 Grundbegriffe 
 
 - Wie viele Merkmale besitzt der Datensatz? 15.
 - Wie groß ist die Stichprobengröße des Datensatzes? 423448.
@@ -45,7 +45,10 @@ Im Laufe des Kurses werden hier die Lösungen zu den einzelnen Aufgaben hochgela
 - Handelt es sich um Querschnitts-, Längsschnitss- oder Paneldaten?
   - Querschnittsdaten
 
-#### Series und DataFrames
+
+
+<!--
+#### 2.2 Series und DataFrames
 
 - `month`: nominal (oder ordinal, wenn z.B. Dez > Jan gilt.), diskret, `object`
 - `temp`: metrisch, stetig, `int`
@@ -54,7 +57,7 @@ Im Laufe des Kurses werden hier die Lösungen zu den einzelnen Aufgaben hochgela
 {{%attachments title="Lösungen" pattern="solutions_dataframe" /%}}
 
 
-#### Datenrundreise
+#### 2.3 Datenrundreise
 
 {{%attachments title="Lösungen" pattern="solutions_datenrundreise" /%}}
 
@@ -91,7 +94,7 @@ Im Laufe des Kurses werden hier die Lösungen zu den einzelnen Aufgaben hochgela
 - `len(df[(df['Age Range'] == '60 to 64 years') & (df['Circulation Active Year'] == '2016')])`
 
 
-### Deskriptive Statistik und Visualisierungen
+### 3. Deskriptive Statistik und Visualisierungen
 
 #### Häufigkeiten
 
@@ -152,14 +155,14 @@ Die Balkendiagramme beginnen nicht im Nullpunkt. Somit werden die relativen Unte
 
 
 
-### Inferenzstatistik
+### 4. Exkurs: Inferenzstatistik
 
 {{%attachments title="Lösungen" pattern="solutions_inference" /%}}
 
 
 {{%attachments title="Alle Lösungen" pattern="solutions" /%}}
 
-
+-->
 
 
 

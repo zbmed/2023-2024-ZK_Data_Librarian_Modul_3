@@ -21,26 +21,26 @@ LastModifierDisplayName = ""
 LastModifierEmail = ""
 +++
 
-Im gesamten Modul werden wir wieder mit Git arbeiten. Darüber hinaus werden wir mit einem offenen Kundendatensatz der Bibliothek in San Francisco arbeiten. Führen Sie daher die unteren Anpassungen durch.
+Im gesamten Modul werden wir wieder mit Git arbeiten. Darüber hinaus werden wir mit einem offenen Kundendatensatz der öffentlichen Bibliothek in San Francisco arbeiten. Führe daher die unteren Anpassungen durch.
 
 {{% customnotice exercise%}}
 #### 1.1. Anlegen eines Projektordners und Nutzung von Git (15 Min)
-1. Im Modul 1 haben Sie ein Git Repositorium erstellt und GitHub gespiegelt. Bitte erstellen Sie in diesem Repositorium einen Ordner mit dem Namen `Modul_3`. Dieser Ordner wird Ihr **Projektordner** für dieses Modul. Dort legen Sie alle Datensätze und Jupyter Notebooks ab.
-2. Erstellen Sie einen Unterordner `./data/` und einen Unterordner `./notebooks/` innerhalb Ihres Projektordners.
-3. Fügen Sie die Dateien auch in das Git-Repositorium hinzu (kleine Erinnerung `git add ` und `git commit -m "Erläuterung"`, [große Erinnerung](https://librarycarpentry.org/lc-git/)).
+1. Im Modul 1 hast Du ein Git Repositorium erstellt und GitHub gespiegelt. Bitte erstelle in diesem Repositorium einen Ordner mit dem Namen `Modul_3`. Dieser Ordner wird Dein **Projektordner** für dieses Modul. Dort legst Du alle Datensätze und Jupyter Notebooks ab.
+2. Erstelle einen Unterordner `./data/` und einen Unterordner `./notebooks/` innerhalb Deines Projektordners.
+3. Füge die Dateien auch in das Git-Repositorium hinzu (kleine Erinnerung `git add ` und `git commit -m "Erläuterung"`, [große Erinnerung](https://librarycarpentry.org/lc-git/)).
 {{% /customnotice %}}
 
 
-Im ersten Teil des Moduls werden Sie einen offenen Kundendatensatz der Bibliothek in San Francisco analysieren.
+Im ersten Teil des Moduls werden wir einen offenen Kundendatensatz der Bibliothek in San Francisco analysieren.
 
 > The Integrated Library System (ILS) is composed of bibliographic records including inventoried items, and patron records including circulation data. The data is used in the daily operation of the library, including circulation, online public catalog, cataloging, acquisitions, collection development, processing, and serials control. This dataset represents the usage of inventoried items by patrons ... (*Abstract taken from [here](https://data.sfgov.org/Culture-and-Recreation/Library-Usage/qzz6-2jup)*)
 
 
 {{% customnotice exercise%}}
 #### 1.2 Arbeiten mit dem Datensatz der [SFPL](https://sfpl.org/) (20 Min)
-1. Besuchen Sie das [offene Daten-Portal](https://data.sfgov.org/Culture-and-Recreation/Library-Usage/qzz6-2jup) der Stadt San Francisco und informieren Sie sich über den Datensatz.
-2. Laden Sie den Datensatz [Library_Usage.csv](https://data.sfgov.org/api/views/qzz6-2jup/rows.csv?accessType=DOWNLOAD) aus dem Internet herunter und speichern Sie ihn im Projektordner im Unter-Ordner `./data/` ab.
-3. Stellen Sie sicher, dass Ihr Projektordner die folgende Verzeichnisstruktur aufweist:
+1. Besuche das [offene Daten-Portal](https://data.sfgov.org/Culture-and-Recreation/Library-Usage/qzz6-2jup) der Stadt San Francisco und informiere Dich über den Datensatz.
+2. Lade den Datensatz [Library_Usage.csv](https://data.sfgov.org/api/views/qzz6-2jup/rows.csv?accessType=DOWNLOAD) aus dem Internet herunter und speichere ihn im Projektordner im Unter-Ordner `./data/` ab.
+3. Stell sicher, dass Dein Projektordner die folgende Verzeichnisstruktur aufweist:
 ```shell
 Module_3
 ├── data

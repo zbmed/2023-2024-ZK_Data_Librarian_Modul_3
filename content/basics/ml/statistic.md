@@ -30,4 +30,4 @@ Statistik ist die traditionelle Wissenschaft von der **Erhebung und Analyse von 
 
 
 
-Lesen Sie mehr über die Grundlagen der Statistik im Kapitel [Grundbegriffe der Statistik](/data-librarian/basics/basic_terms/).
+Im Kapitel [Grundbegriffe der Statistik](/data-librarian/basics/basic_terms/) wirst Du mehr über die Grundlagen der Statistik nachschlagen können.

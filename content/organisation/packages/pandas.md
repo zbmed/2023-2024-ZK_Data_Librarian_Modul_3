@@ -49,9 +49,9 @@ df.describe()
 
 {{% customnotice exercise%}}
 
-#### Pandas (15 Min)
+#### 1.5 pandas (15 Min)
 
-- Kopieren Sie das Codebeispiel in ein Jupyter Notebook und führen Sie es aus.
-- Fügen Sie weitere Temperatur und Monats-Werte dem DataFrame hinzu.
+- Kopiere das obere Codebeispiel in ein Jupyter Notebook, speichere es in Deinem Projektordner und führe es aus.
+- Füge weitere Temperatur und Monats-Werte dem DataFrame hinzu.
 - Welche Statistiken liefert ein Aufruf der Funktion `describe()`?
 {{% /customnotice %}}

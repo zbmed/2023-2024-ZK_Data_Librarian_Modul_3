@@ -1,5 +1,5 @@
 +++
-title = "Grundlagen"
+title = "Grundlagen der Datenanalyse in Python"
 # If set, this will be used for the page's menu entry (instead of the `title` attribute)
 # menuTitle = "Einführung"
 weight = 200
@@ -23,13 +23,13 @@ LastModifierEmail = ""
 +++
 
 
-### 27.01 – 02.02
+### 22.02.21 – 03.03.21
 
 # Grundlagen der Datenanalyse in Python
 
 Diese Einheit gibt eine Einführung in die Aufgaben und grundlegenden Begriffe der angewandten Statistik. Im zweiten Teil wird das `pandas` Paket vorgestellt und gezeigt, wie Datensätze eingelesen und bearbeitet werden können. Manche Lektionen und Aufgaben sind als *Exkurs* markiert. Diese Aufgaben sind für Interessierte und dauern meist etwas länger oder sind schwieriger zu lösen.
 
-Versuchen Sie zuerst die Aufgaben innerhalb der angegeben Zeit selbstständig zu lösen. Versuchen Sie danach mit Hilfe der Musterlösung die Lösung nachzuvollziehen. Schreiben Sie sich bei Problemen Ihre Fragen auf, damit wir diese am Präsenztag zusammen besprechen können. 
+Versuche zuerst die Aufgaben innerhalb der angegeben Zeit selbstständig zu lösen. Versuche danach mit Hilfe der Musterlösung die Lösung nachzuvollziehen. Schreibe Dir bei Problemen Deine Fragen auf, damit wir diese am Präsenztag zusammen besprechen können. 
 
 
 ## Ziele

@@ -13,14 +13,14 @@ LastModifierEmail = ""
 
 # Kursorganisation und Vorbereitungen
 
-Diese Einheit gibt einen Überblick über die Kursinhalte, wichtige Termine und die benötigte Software und Python-Pakete. Viele der hier besprochenen Dinge werden Ihnen schon bekannt vorkommen und die Software haben Sie schon für die vorherigen Module auf Ihrem Rechner installiert.
+Diese Einheit gibt einen Überblick über die Kursinhalte, wichtige Termine und die benötigte Software und Python-Pakete. Viele der hier besprochenen Dinge werden Dir schon bekannt vorkommen und die Software hast Du schon für die vorherigen Module auf Deinem Rechner installiert. 
 
 ## Ziele
 
 - Überblick über das gesamte Modul (Kurseinheiten, Termine)
-- Installation von Anaconda mit Python 3.7 auf Ihrem Rechner
-- Installation bzw. Nutzung von Jupyter Notebooks auf Ihrem Rechner
 - Anpassung des eigenen Git-Repositoriums für das Arbeiten mit einem offenen Datensatz der San Francisco Library
+- Erinnerung: Installation von Anaconda mit Python 3.7 auf Ihrem Rechner
+- Erinnerung: Installation bzw. Nutzung von Jupyter Notebooks auf Ihrem Rechner
 - Überblick über verschiedene Python Pakete und Bibliotheken
 
 

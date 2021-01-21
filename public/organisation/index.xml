@@ -7,23 +7,33 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>de-DE</language><atom:link href="https://bonartm.github.io/data-librarian/organisation/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Kurseinheiten</title>
+      <title>Kursorganisation</title>
       <link>https://bonartm.github.io/data-librarian/organisation/modules/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://bonartm.github.io/data-librarian/organisation/modules/</guid>
-      <description>Wir haben das Modul in wöchentliche Einheiten, die jeweils ein Gebiet aufgreifen und vertiefen, unterteilt. Sie können sich die Zeit für die Bearbeitung der Einheiten selber aufteilen, sollten aber jede Einheit am Ende der jeweiligen Woche abgeschlossen haben. Am Ende einer Woche wird die nächste Einheit auf dieser Webeite freigeschaltet.
-Jede Einheit umfasst kleine praktische Projektaufgaben, welche Sie in Form eines Jupyter Notebooks bearbeiten und aufbereiten. Zu jeder Einheit werden viele verschiedene Aufgaben mit unterschiedlichem Schwierigkeitsgrad angeboten.</description>
+      <description>Wir haben das Modul in ca. wöchentliche Einheiten, die jeweils ein Gebiet aufgreifen und vertiefen, unterteilt. Du kannst Dir die Zeit für die Bearbeitung der Einheiten selber aufteilen, solltest aber jede Einheit am Ende der jeweiligen Woche abgeschlossen haben. Zum entsprechenden Termin wird die nächste Einheit auf dieser Website freigeschaltet.
+Jede Einheit umfasst kleine praktische Projektaufgaben, welche Du in Form eines Jupyter Notebooks bearbeitest und aufbereitest. Zu jeder Einheit werden viele verschiedene Aufgaben mit unterschiedlichem Schwierigkeitsgrad angeboten.</description>
     </item>
     
     <item>
-      <title>Termine</title>
+      <title>Termine und Kurseinheiten</title>
       <link>https://bonartm.github.io/data-librarian/organisation/schedule/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://bonartm.github.io/data-librarian/organisation/schedule/</guid>
-      <description>Hier finden Sie einen Überblick über die einzelnen Moduleinheiten.
-   Datum Titel Ziele     21.01 – 26.01 Vorbereitung Installieren Sie die benötigte Software Laden Sie die Kursmaterialien und Datensätze herunter Stellen Sie sicher, dass Python Notebooks lokal ausgeführt werden können   27.01 – 02.02 Grundlagen Beschreiben Sie Datensätze mit dem statistischen Grundvokabular Lesen Sie Datensätze als DataFrames in Python ein Filtern Sie DataFrames nach Spalten oder Zeilen Erstellen Sie neue Variablen   03.</description>
+      <description>Hier findest Du einen Überblick über die einzelnen Moduleinheiten.
+   Datum Titel Ziele     22.02 – 28.02 1. Kursorganisation und Vorbereitungen Überblick über das gesamte Modul (Kurseinheiten, Termine) Anpassung des eigenen Git-Repositoriums für das Arbeiten mit einem offenen Datensatz der San Francisco Library Erinnerung: Installation von Anaconda mit Python 3.7 auf Ihrem Rechner Erinnerung: Installation bzw. Nutzung von Jupyter Notebooks auf Ihrem Rechner Überblick über verschiedene Python Pakete und Bibliotheken   22.</description>
+    </item>
+    
+    <item>
+      <title>Projektordner und Datensatz</title>
+      <link>https://bonartm.github.io/data-librarian/organisation/dataset/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bonartm.github.io/data-librarian/organisation/dataset/</guid>
+      <description>Im gesamten Modul werden wir wieder mit Git arbeiten. Darüber hinaus werden wir mit einem offenen Kundendatensatz der öffentlichen Bibliothek in San Francisco arbeiten. Führe daher die unteren Anpassungen durch.
+1.1. Anlegen eines Projektordners und Nutzung von Git (15 Min)  Im Modul 1 hast Du ein Git Repositorium erstellt und GitHub gespiegelt. Bitte erstelle in diesem Repositorium einen Ordner mit dem Namen Modul_3. Dieser Ordner wird Dein Projektordner für dieses Modul.</description>
     </item>
     
     <item>
@@ -41,19 +51,10 @@ Jede Einheit umfasst kleine praktische Projektaufgaben, welche Sie in Form eines
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://bonartm.github.io/data-librarian/organisation/notebooks/</guid>
-      <description>Die Projekt-Aufgaben und Code-Beispiele in diesem Modul werden über Jupyter Notebooks erstellt und verteilt.
+      <description>Hier findet sich eine kleine Erinnerung und Beispielaufgabe zum Thema Jupyter Notebooks.
+Die Projekt-Aufgaben und Code-Beispiele in diesem Modul werden über Jupyter Notebooks erstellt und verteilt.
 Jupyter Notebooks bieten eine browserbasierte graphische Schnittstelle zur Python Programmierumgebung. Deswegen können Notebooks auf jedem System gestartet werden, man benötigt dazu nur einen Web-Browser und eine lokale installierte Version von Python.
-Darüber hinaus bieten Notebooks die Möglichkeit Text, Visualisierungen und Code in einer integrierten Datei zu erstellen. Somit können einfach statistische Reports und Analysen erstellt werden. Die Replizierbarkeit der Ergebnisse ist auch gewährleistet, da jede Person, die Programmierschritte im Notebook auf dem eignen Rechner wiederholen kann.</description>
-    </item>
-    
-    <item>
-      <title>San Francisco Library Usage</title>
-      <link>https://bonartm.github.io/data-librarian/organisation/dataset/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://bonartm.github.io/data-librarian/organisation/dataset/</guid>
-      <description>Im ersten Teil des Moduls werden Sie einen offenen Kundendatensatz der Bibliothek in San Francisco analysieren.
- The Integrated Library System (ILS) is composed of bibliographic records including inventoried items, and patron records including circulation data. The data is used in the daily operation of the library, including circulation, online public catalog, cataloging, acquisitions, collection development, processing, and serials control. This dataset represents the usage of inventoried items by patrons &amp;hellip; (Abstract taken from here)</description>
+Darüber hinaus bieten Notebooks die Möglichkeit Text, Visualisierungen und Code in einer integrierten Datei zu erstellen.</description>
     </item>
     
     <item>

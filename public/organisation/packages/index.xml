@@ -55,7 +55,7 @@ Eine wichtige Funktion ist die sns.set() Methode. Wenn sie am Anfang eines Pytho
       
       <guid>https://bonartm.github.io/data-librarian/organisation/packages/scipy/</guid>
       <description>scipy ist fest mit numpy und pandas verbunden und bietet eine Menge an Funktionen und Methoden aus der Mathematik und Statistik an.
-Für uns ist vor alle das Paket scipy.stats Interessant. Mit ihm können Zufallszahlen aus verschiedensten statistischen Verteilungen generiert werden oder auch statistische Tests durchgeführt werden. Hier finden Sie einen Überblick über alle Methoden des Pakets.
+Für uns ist vor alle das Paket scipy.stats Interessant. Mit ihm können Zufallszahlen aus verschiedensten statistischen Verteilungen generiert werden oder auch statistische Tests durchgeführt werden. Hier findest Du einen Überblick über alle Methoden des Pakets.
 Im folgenden Beispiel wird ein Zweistichproben-t-Test an zwei numerischen Listen durchgeführt.
 # import the package stats from the library scipy from scipy import stats # create two numerical arrays x = [12, 10, 11, 13, 14, 10, 13, 13, 22] y = [1, 4, 2, 3, 5, 2, 1, 0, 0, 1, 2] # perform a two sample t-test, to test if the samples have different means stats.</description>
     </item>

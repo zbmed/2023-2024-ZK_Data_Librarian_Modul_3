@@ -22,7 +22,7 @@ LastModifierDisplayName = ""
 LastModifierEmail = ""
 +++
 
-Ein Data Scientist ist eine Person, die oder der Wissen und Erkenntnisse aus **strukturierten** und **unstrukturierten Daten** gewinnt. Data Science ist eine interdisziplinäre Disziplin und liegt irgendwo in der Schnittmenge von angewandter Statistik, angewandter Informatik (*Hacking skills*) und spezielles Fachwissen (*domain knowledge*/ *substantive expertise*).
+Ein Data Scientist ist eine Person, die oder der Wissen und Erkenntnisse aus **strukturierten** und **unstrukturierten Daten** gewinnt. Data Science ist eine interdisziplinäre Disziplin und liegt irgendwo in der Schnittmenge von angewandter Statistik, angewandter Informatik (*Hacking skills*) und spezielles Fachwissen (*domain knowledge* / *substantive expertise*).
 
 Aufgrund der stark angewachsenen Mengen an unstrukturierten Daten aus **heterogenen Datenquellen** (Text, Bilder, Sensoren, Netzwerke, Videos, ...) reichen die Methoden und Fertigkeiten, die die Statistik traditionellerweise liefert und vermittelt, nicht mehr aus, um diese Daten **effizient** zu strukturieren, aggregieren, kombinieren, analysieren und visualisieren zu können:
 
