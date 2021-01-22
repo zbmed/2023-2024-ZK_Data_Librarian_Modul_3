@@ -22,7 +22,7 @@ LastModifierDisplayName = ""
 LastModifierEmail = ""
 +++
 
-`Series` und `DataFrames` sind die zentralen Datenstrukturen in Pandas. `Series` sind wie standardmäßige Listen in Python, mit dem wichtigen Unterschied, dass `Series` nur Werte eines einzelnen Datentyps enthalten können.
+**Series** und **DataFrames** sind die zentralen Datenstrukturen in Pandas. `Series` sind wie standardmäßige Listen in Python, mit dem wichtigen Unterschied, dass `Series` nur Werte eines einzelnen Datentyps enthalten können.
 
 {{% customnotice code %}}
 ```python
@@ -52,18 +52,18 @@ print(df)
 ```
 {{% /customnotice %}}
 
-In der praktischen Datenanalyse werden Sie nur selten `DataFrames` oder `Series` manuell erstellen, sondern im Computer abgespeicherte Datentabellen aus anderen Formaten, wie Excel oder `.csv` einlesen.
+In der praktischen Datenanalyse wirst Du nur selten `DataFrames` oder `Series` manuell erstellen, sondern im Computer abgespeicherte Datentabellen aus anderen Formaten, wie Excel oder `.csv` einlesen.
 
 {{% customnotice exercise %}}
 
-#### Skalenniveau und Datentypen (15 Min)
+#### 2.2 Skalenniveau und Datentypen (15 Min)
 
 - Welches Skalenniveau besitzen die Variablen im obigen Beispiel?
 - Sind die Variablen stetig oder diskret?
 - Was ist der [Datentyp](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.dtypes.html) jeder einzelnen Spalte?
-- Erweitern Sie das Python-Dictionary und 
-    - erstellen Sie eine neue *Zeile* mit den Werten `('Apr', 5, False)`
-    - erstellen Sie eine neue *Spalte* `year` mit den Werten `(2020, 2020, 2020, 2020)`
+- Erweitere das Python-Dictionary und 
+    - erstelle eine neue *Zeile* mit den Werten `('Apr', 5, False)`
+    - erstelle eine neue *Spalte* `year` mit den Werten `(2020, 2020, 2020, 2020)`
 {{% /customnotice %}}
 
 

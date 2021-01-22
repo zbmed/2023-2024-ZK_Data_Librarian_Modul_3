@@ -26,7 +26,7 @@ LastModifierEmail = ""
 
 
 
-In der [Moodle-Kursumgebung](https://zbiw.th-koeln.de/moodle/mod/book/view.php) ist das Einführungskapitel des Buchs *Statistik: Der Weg zur Datenanalyse* zum alleinigen persönlichen Gebrauch hinterlegt.[^1]
+In der [Moodle-Kursumgebung](https://zbiw.th-koeln.de/moodle/mod/book/view.php?id=6552) ist das Einführungskapitel des Buchs *Statistik: Der Weg zur Datenanalyse* zum alleinigen persönlichen Gebrauch hinterlegt.[^1]
 
 Der Text gibt einen **Einstieg** in die Aufgaben und Anwendungsbereiche der Statistik und erklärt die **grundlegenden Begriffe**, mit denen Daten und Datensätze charakterisiert werden können. Nach der Lektüre solltest Du beispielsweise die folgenden Fragen beantworten können:
 
@@ -55,7 +55,7 @@ Beantworte und diskutiere die folgenden Fragen konkret für den in Einheit 1 her
 ---
 
 
-Zu empfehlen sind auch die **englischen Lehrbücher** von [OpenIntro](https://www.openintro.org/stat/textbook.php?stat_book=isrs). Sie können kostenlos auf der Webseite heruntergeladen werden. Für diesen Kurs sind insbesondere die **ersten zwei Kapitel** des Buchs [Introductory Statistics with Randomization and Simulation](https://drive.google.com/file/d/0B-DHaDEbiOGkRHNndUlBaHVmaGM/edit) [^2] relevant. Auch diese Literaturhinweise sind in der [Moodle-Kursumgebung](https://zbiw.th-koeln.de/moodle/mod/book/view.php) hinterlegt.
+Über das oben genannte Kapitel hinaus sind auch die **englischen Lehrbücher** von [OpenIntro](https://www.openintro.org/stat/textbook.php?stat_book=isrs) zu empfehlen. Sie können kostenlos auf der Webseite heruntergeladen werden. Für diesen Kurs sind insbesondere die **ersten zwei Kapitel** des Buchs [Introductory Statistics with Randomization and Simulation](https://drive.google.com/file/d/0B-DHaDEbiOGkRHNndUlBaHVmaGM/edit) [^2] relevant. Auch diese Literaturhinweise sind in der [Moodle-Kursumgebung](https://zbiw.th-koeln.de/moodle/mod/book/view.php) hinterlegt.
 
 
 [^1]: Fahrmeir, Ludwig, Christian Heumann, Rita Künstler, Iris Pigeot, and Gerhard Tutz. Statistik: Der Weg zur Datenanalyse. Springer-Verlag, 2016, https://www.springer.com/de/book/9783662503713.

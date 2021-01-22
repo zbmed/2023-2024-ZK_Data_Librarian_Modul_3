@@ -27,26 +27,28 @@ LastModifierEmail = ""
 
 # Grundlagen der Datenanalyse in Python
 
-Diese Einheit gibt eine Einführung in die Aufgaben und grundlegenden Begriffe der angewandten Statistik. Im zweiten Teil wird das `pandas` Paket vorgestellt und gezeigt, wie Datensätze eingelesen und bearbeitet werden können. Manche Lektionen und Aufgaben sind als *Exkurs* markiert. Diese Aufgaben sind für Interessierte und dauern meist etwas länger oder sind schwieriger zu lösen.
+Diese Einheit gibt in einem ersten Teil eine Einführung in die Aufgaben und grundlegenden Begriffe der angewandten Statistik. Im zweiten (mehr praktischen) Teil wird das `pandas` Paket vorgestellt und gezeigt, wie Datensätze eingelesen und bearbeitet werden können. Manche Lektionen und Aufgaben sind als *Exkurs* markiert. Diese Aufgaben sind für Interessierte und dauern meist etwas länger oder sind schwieriger zu lösen.
 
+Die Projektaufgabe fasst die in dieser Einheit gelernten Inhalte in Form einer konkreten Aufgabenstellung zusammen, wie sie in der Praxis vorkommen könnte. Nach Bearbeitung aller einzelnen Aufgaben dieser Einheit ist die Projektaufgabe einfach zu bearbeiten. 
+
+<!--
 Versuche zuerst die Aufgaben innerhalb der angegeben Zeit selbstständig zu lösen. Versuche danach mit Hilfe der Musterlösung die Lösung nachzuvollziehen. Schreibe Dir bei Problemen Deine Fragen auf, damit wir diese am Präsenztag zusammen besprechen können. 
-
+-->
 
 ## Ziele
 
-- Beschreiben Sie Datensätze mit dem statistischen Grundvokabular
-- Lesen Sie Datensätze als `DataFrame`s in Python ein und aus
-- Filtern Sie `DataFrame`s nach Spalten oder Zeilen
-- Erstellen Sie neue Variablen
+- Beschreibung eines Datensatzes mit dem statistischen Grundvokabular
+- Ein- und Auslesen von Datensätzen als `DataFrame`s in Python
+- Filtern von `DataFrame`s nach Spalten oder Zeilen
+- Erstellung neuer Variablen
 {{% customnotice exercise %}}
 
-### Projektaufgabe
+### Projektaufgabe: Grundlagen der Datenanalyse in Python
+Die Pressestelle der San Francisco Public Library möchte einen Online-Artikel zum Kundenstamm der Bibliothek erstellen. Dazu hat sie Dir [einen Datensatz](/data-librarian/organisation/dataset/) geschickt, den Du auswerten sollst.
 
-Die Pressestelle der San Francisco Public Library möchte einen Online-Artikel zum Kundenstamm der Bibliothek erstellen. Dazu hat sie Ihnen [einen Datensatz](/data-librarian/organisation/dataset/) geschickt, den Sie auswerten sollen.
-
-1. Erstellen Sie eine Beschreibung des Datensatzes unter Verwendung des [statistischen Grundvokabulars](/data-librarian/basics/basic_terms/).
-2. [Lesen Sie den Datensatz ein](/data-librarian/basics/pandas/io)
-3. Bereinigen Sie den Datensatz von [fehlenden Werten](/data-librarian/basics/pandas/na) und berechnen Sie [die neue Variable](/data-librarian/basics/pandas/columns/#fallstudie-feature-engineering) `Membership Duration`.
+1. Erstelle eine Beschreibung des Datensatzes unter Verwendung des [statistischen Grundvokabulars](/data-librarian/basics/basic_terms/).
+2. [Lese den Datensatz ein](/data-librarian/basics/pandas/io)
+3. Bereinige den Datensatz von [fehlenden Werten](/data-librarian/basics/pandas/na) und berechne die [neue Variable](/data-librarian/basics/pandas/columns/#fallstudie-feature-engineering) `Membership Duration`.
 
 
 {{% /customnotice %}}

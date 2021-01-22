@@ -38,16 +38,16 @@ import pandas as pd
 df = pd.read_csv("../data/Library_Usage.csv")
 df['Circulation Active Year']
 ```
-Obwohl die Spalte `'Circulation Active Year'` numerisch ist, wird Sie von `pandas` als Text abgespeichert, da `"None"` nicht als Zahl erkannt wird. Möchten Sie z.B. `2019 - df['Circulation Active Year']` berechnen, so werden Sie eine Fehlermeldung erhalten, da für Text-Werte keine Substraktionen durchgeführt werden können.
+Obwohl die Spalte `'Circulation Active Year'` numerisch ist, wird Sie von `pandas` als Text abgespeichert, da `"None"` nicht als Zahl erkannt wird. Möchtest Du z.B. `2019 - df['Circulation Active Year']` berechnen, so wirst Du eine Fehlermeldung erhalten, da für Text-Werte keine Substraktionen durchgeführt werden können.
 
-Um das Problem zu beheben können Sie auf zwei Arten vorgehen. Sie können schon beim Einlesen, die Kodierung für fehlende Werte mit angeben:
+Um das Problem zu beheben kannst Du auf zwei Arten vorgehen. Du kannst bereits beim Einlesen die Kodierung für fehlende Werte mit angeben:
 
 ```python
 df = pd.read_csv("../data/Library_Usage.csv", na_values="None")
 df['Circulation Active Year']
 ```
 
-Oder Sie führen nach dem Einlesen eine **explizite Umwandlung** des Datentyps durch:
+Oder Du führst nach dem Einlesen eine **explizite Umwandlung** des Datentyps durch:
 
 ```python
 df = pd.read_csv("../data/Library_Usage.csv", na_values="None")
@@ -57,7 +57,7 @@ df['Circulation Active Year']
 
 {{% customnotice exercise %}}
 
-#### Datentypen (1 Minute)
+#### 2.7  Datentypen (1 Minute)
 
 Was unterscheidet den Wert `None` vom Wert `"None"`? Was den Wert `5` vom Wert `"5"`? Was den Wert `"NaN"` vom Wert `NaN`? Ist `True` und `"True"` das gleiche?
 {{% /customnotice %}}
@@ -79,7 +79,7 @@ df[df['Age Range'].notna()]
 ```
 {{% /customnotice %}}
 
-Mit diesem nützlichen Befehl können Sie sich schnell die Anzahl fehlender Werte in jeder Spalte ausgeben lassen: 
+Mit diesem nützlichen Befehl kannst Du Dir schnell die Anzahl fehlender Werte in jeder Spalte ausgeben lassen: 
 
 {{% customnotice code %}}
 ```python
@@ -116,10 +116,10 @@ Standardmäßig werden bei den Operationen `fillna` oder `dropna` neue `Series` 
 
 {{% customnotice exercise %}}
 
-#### Exkurs: Fehlende Werte (20 Min)
+#### 2.8 Exkurs: Fehlende Werte (20 Min)
 
 - Welche Spalten enthalten alles fehlende Werte?
-- Lesen Sie den Datensatz ein und erstellen Sie einen `DataFrame` der keine Beobachtungen mit fehlenden Werten mehr enthält.
-- Speicher Sie diesen unter dem Namen `Library_Usage_Clean.csv` ab.
+- Lies den Datensatz ein und erstelle einen `DataFrame` der keine Beobachtungen mit fehlenden Werten mehr enthält.
+- Speichere diesen unter dem Namen `Library_Usage_Clean.csv` ab.
 - Wie viele Beobachtungen wurden dabei entfernt?
 {{% /customnotice %}}

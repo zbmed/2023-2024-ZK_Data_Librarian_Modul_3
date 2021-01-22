@@ -32,8 +32,8 @@ df.columns
 ```
 {{% /customnotice %}}
 
-Einzelne `Series` können wie bei einem Python Dictionary mit `df[<name>]` extrahiert werden. Mehre Spalten mit `df[[<name1>, <name2]]`. Wenn Sie Spalten mit der doppelten Liste `[[...]]` auswählen erhalten Sie in jedem Fall wieder einen `DataFrame` zurück. Das Ergebnis der Auswahl können Sie bei Bedarf wieder in einer Variablen abspeichern:
-Versuc
+Einzelne `Series` können wie bei einem Python Dictionary mit `df[<name>]` extrahiert werden. Mehre Spalten mit `df[[<name1>, <name2]]`. Wenn Du Spalten mit der doppelten Liste `[[...]]` auswählst erhältst Du in jedem Fall wieder einen `DataFrame` zurück. Das Ergebnis der Auswahl kannst Du bei Bedarf wieder in einer Variablen abspeichern:
+
 {{% customnotice code %}}
 ```python
 x = df['Total Renewals']
@@ -55,13 +55,14 @@ df['dummy_variable'] = 5
 {{% customnotice alert %}}
 
 
-Bei der Auswahl von Spalten und Zeilen wird **keine Kopie** des `DataFrame`s  oder der `Series` erstellt, sondern nur eine **Referenz** auf die ursprüngliche Tabelle. Wenn Sie Daten in der ursprünglichen Tabelle ändern, so ändert sich auch die Referenz:
+Bei der Auswahl von Spalten und Zeilen wird **keine Kopie** des `DataFrame`s  oder der `Series` erstellt, sondern nur eine **Referenz** auf die ursprüngliche Tabelle. Wenn Du Daten in der ursprünglichen Tabelle änderst, so ändert sich auch die Referenz:
 
 ```python
 x = df['Total Renewals']
 df['Total Renewals'] = 5
 x
 ```
+
 {{% /customnotice %}}
 
 Berechnungen auf schon bestehenden Variablen können auch direkt einer neuen Spalte zugeordnet werden:
@@ -83,7 +84,7 @@ Im zweiten Beispiel wurde der Logarithmus auf den Werten der Spalte `Total Renew
 
 {{% customnotice exercise %}}
 
-### Fallstudie: Feature Engineering (30 Min)
+#### 2.5 Fallstudie: Feature Engineering (30 Min)
 
 Ziel ist es, eine neue Variable `Membership Duration` zu erstellen, die für jeden Kunden die aktive Mitgliedschaft in Monaten seit der Registrierung misst. Die aktive Mitgliedschaft wird definiert als:
 
@@ -91,10 +92,10 @@ Ziel ist es, eine neue Variable `Membership Duration` zu erstellen, die für jed
 'Membership Duration' = ('Circulation Active Year' - 'Year Patron Registered')*12 + 'Circulation Active Month'
 ```
 
-Versuchen Sie die folgenden Codebeispiele nachzuvollziehen, auch wenn Sie nicht alle Funktionen im Detail kennen oder verstehen. 
+Versuche die folgenden Codebeispiele nachzuvollziehen, auch wenn Du nicht alle Funktionen im Detail kennst oder verstehst. 
 
 
-1. Die Spalte `Circulation Active Year` ist als Text und nicht als Zahl abgespeichert! Konvertieren Sie die Spalte in ein numerisches Format. Überschreiben Sie die ursprüngliche Variable mit den neuen Werten. Nutzen Sie dieses Codesnippet:
+1. Die Spalte `Circulation Active Year` ist als Text und nicht als Zahl abgespeichert! Konvertiere die Spalte in ein numerisches Format. Überschreibe die ursprüngliche Variable mit den neuen Werten. Nutze dieses Codesnippet:
 
 
 ```python
@@ -106,7 +107,7 @@ pd.to_numeric(
 
 2. Die Spalte `Circulation Active Month` enthält die Monatsnamen als Text. Für die Berechnung muss diese in ein numerisches Format konvertiert werden. 
   
-    - Zuerst konvertieren wir die Spalte in ein Datumsformat. Das geht mit der Funktion `pd.to_datetime`. Überschreiben Sie wieder die ursprüngliche Variable mit den neuen Werten. Sie können dieses Codesnippet nutzen:
+    - Zuerst konvertieren wir die Spalte in ein Datumsformat. Das geht mit der Funktion `pd.to_datetime`. Überschreibe wieder die ursprüngliche Variable mit den neuen Werten. Du kannst dieses Codesnippet nutzen:
 
     ```python
     pd.to_datetime(
@@ -124,9 +125,9 @@ pd.to_numeric(
     ```
 
 
-  3. Berechnen Sie nun die aktive Mitgliedschaftsdauer in Monaten wie oben definiert und weisen Sie das Ergebnis der Spalte `Membership Duration` zu. 
+  3. Berechne nun die aktive Mitgliedschaftsdauer in Monaten wie oben definiert und weise das Ergebnis der Spalte `Membership Duration` zu. 
 
-  4. Nehmen Sie an, dass Einträge mit fehlenden Werten bedeutet, dass die Person `0` Monate aktiv Mitglied gewesen ist. Ersetzen Sie dazu alle `NaN` values in der neuen Variable mit der Zahl `0`. Nutzen Sie dieses Codesnippet (siehe auch [diese Lektion](/data-librarian/basics/pandas/na/) über die Behandlung fehlender Werte):
+  4. Nimm an, dass Einträge mit fehlenden Werten bedeutet, dass die Person `0` Monate aktiv Mitglied gewesen ist. Ersetze dazu alle `NaN` values in der neuen Variable mit der Zahl `0`. Nutze dieses Codesnippet (siehe auch den nachfolgenden Abschnitt [Exkurs: Fehlende Werte](/data-librarian/basics/pandas/na/) über die Behandlung fehlender Werte):
 
 ```python
 df['Membership Duration'].fillna(0)

@@ -26,7 +26,7 @@ In der Statistik geben **Verteilungen** an, wie wahrscheinlich oder häufig eine
 
 **Empirische Verteilungen** beziehen sich dabei auf die Häufigkeiten in beobachtbaren Daten während **theoretische Verteilungen** mathematische Funktionen sind, die meist von einigen wenigen Parametern abhängen.
 
-Beispielsweise kann die [Normalverteilung](https://de.wikipedia.org/wiki/Normalverteilung) über die beiden Parameter Erwartungswert (`loc`) und Varianz (`scale`) beschrieben werden. Zufällig generierte Zahlen aus dieser Verteilung können Sie beispielsweise mit `numpy` erhalten:
+Beispielsweise kann die [Normalverteilung](https://de.wikipedia.org/wiki/Normalverteilung) über die beiden Parameter Erwartungswert (`loc`) und Varianz (`scale`) beschrieben werden. Zufällig generierte Zahlen aus dieser Verteilung kann man beispielsweise mit `numpy` erhalten:
 
 {{% customnotice code %}}
 ```
@@ -41,9 +41,9 @@ np.random.normal(loc=3, scale=3, size=10)
 Statistiken, wie der Mittelwert, die Varianz oder der Modus dienen zur Beschreibungen und Charakterisierung von Verteilungen mittels einiger weniger aussagekräftigen Kennzahlen. Dabei gibt es Statistiken, die oft nur auf Variablen eines bestimmten Skalenniveaus anwendbar sind.
 
 
-**Kategoriale** (nominale und ordinale) Variablen werden typischerweise in Häufigkeitstabellen zusammengefasst. Wichtige Kennzahlen für **metrische Variablen** sind die zentrale Lage, Modalität, Streuung und die Symmetrie.
+**Kategoriale Variablen** (nominale und ordinale Variablen, [kleine Erinnerung](/data-librarian/basics/basic_terms/)) werden typischerweise in Häufigkeitstabellen zusammengefasst. Wichtige Kennzahlen für **metrische Variablen** sind die zentrale Lage, Modalität, Streuung und die Symmetrie. 
 
-Nach dieser Einheit sollten Sie die folgenden Fragen beantworten können:
+Nach dieser Einheit solltest Du die folgenden Fragen beantworten können:
 
 - Wie erstelle und interpretiere ich eine (relative) Häufigkeitstabelle?
 - Welche grundlegenden Statistiken kann ich mit `pandas`-Funktionen ausrechnen?
@@ -53,6 +53,6 @@ Nach dieser Einheit sollten Sie die folgenden Fragen beantworten können:
 
 {{% customnotice tip %}}
 
-Im Folgenden werden mit $x = x_1, \dots, x_n$ eine univariate Reihe von Beobachtungen beschrieben, mit $n$ die Anzahl der Beobachtungen. $x_i$ beschreibt die Beobachtung an der *i*-ten Stelle.
+Im Folgenden werden mit $x = x_1, \dots, x_n$ eine (univariate) Reihe von Beobachtungen beschrieben. Dabei stellt $n$ die Anzahl der Beobachtungen dar und $x_i$ beschreibt die Beobachtung an der *i*-ten Stelle.
 
 {{% /customnotice%}}

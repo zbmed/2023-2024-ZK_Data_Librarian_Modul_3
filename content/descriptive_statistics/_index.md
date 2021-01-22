@@ -23,14 +23,14 @@ LastModifierEmail = ""
 +++
 
 
-### 03.02 – 09.02
+### 04.03.21 – 10.03.21
 
 # Deskriptive Statistik und Visualisierungen
 
 Dieses Modul gibt eine Einführung in die deskriptive Statistik mit `pandas` und zeigt, wie statistische Visualisierungen in Python erstellt werden können. 
 
-Versuchen Sie zuerst die Aufgaben innerhalb der angegeben Zeit selbstständig zu lösen. Versuchen Sie danach mit Hilfe der Musterlösung die Lösung nachzuvollziehen. Schreiben Sie sich bei Problemen Ihre Fragen auf, damit wir diese am Präsenztag zusammen besprechen können. 
-
+<!-- Versuchen Sie zuerst die Aufgaben innerhalb der angegeben Zeit selbstständig zu lösen. Versuchen Sie danach mit Hilfe der Musterlösung die Lösung nachzuvollziehen. Schreiben Sie sich bei Problemen Ihre Fragen auf, damit wir diese am Präsenztag zusammen besprechen können. 
+-->
 ## Ziele
 
 - Berechnen und interpretieren Sie grundlegende Lage- und Streuungsmaße

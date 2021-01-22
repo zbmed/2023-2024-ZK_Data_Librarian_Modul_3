@@ -47,44 +47,46 @@ Im Laufe des Kurses werden hier die Lösungen zu den einzelnen Aufgaben hochgela
 
 
 
-<!--
-#### 2.2 Series und DataFrames
+
+#### 2.2 Skalenniveau und Datentypen
 
 - `month`: nominal (oder ordinal, wenn z.B. Dez > Jan gilt.), diskret, `object`
 - `temp`: metrisch, stetig, `int`
 - `below_zero`: nominal, diskret, `boolean`
 
-{{%attachments title="Lösungen" pattern="solutions_dataframe" /%}}
+{{%attachments title="Lösungen" pattern="2.2.solutions_dataframe" /%}}
 
 
-#### 2.3 Datenrundreise
+#### 2.3 Exkurs: Datenrundreise
 
-{{%attachments title="Lösungen" pattern="solutions_datenrundreise" /%}}
+{{%attachments title="Lösungen" pattern="2.3.solutions_datenrundreise" /%}}
 
-#### Exkurs: Einlesen von Daten
+#### 2.4 Exkurs: Arbeitsspeicher
 
 - In Linux kann z.B. mit dem `free` Kommando der freie Speicherplatz ermittelt werden. Bei 8 Gigabyte Arbeitsspeicher werden ca. 3 Gigabyte vom System verbraucht.
 - 5 Gigabyte sind 5 000 000 000 Bytes. Somit können theoretisch 625 000 000 Zahlen vom Typ `int64` eingelesen werden.
 - Eine Tabelle mit 100 Variablen kann somit 6.25 Millionen Beobachtungen enthalten.
 - Der Library Datensatz verbraucht ca. 220 Megabyte im Arbeitsspeicher (`df.info(memory_usage='deep')`).
 
-#### Feature Engineering
+#### 2.5 Fallstudie: Feature Engineering
 
-{{%attachments title="Lösungen" pattern="solutions_fe" /%}}
+{{%attachments title="Lösungen" pattern="2.5.solutions_fe" /%}}
 
 
-#### Spalten und Zeilen
+#### 2.6 Filtern
 
-{{%attachments title="Lösungen" pattern="solutions_selection" /%}}
+{{%attachments title="Lösungen" pattern="2.6.solutions_selection" /%}}
 
-#### Fehlende Werte
+#### 2.7 Datentypen
 
 - `None` ist ein spezieller Datentyp in Python der fehlende Objekte oder Variablen bezeichnet.
 -  `5` ist eine ganzzahlige Zahl vom Typ `int`
 - `True` ist eine binäre Zahl vom Typ `boolean`
 - Die entsprechenden Ausdrücke in `""` repräsentieren jeweils einen **Text** vom Typ `str` (oder `object` in pandas)
 
-{{%attachments title="Weitere Lösungen" pattern="solutions_na" /%}}
+#### 2.8 Exkurs: Fehlende Werte
+
+{{%attachments title="Lösungen" pattern="2.8.solutions_na" /%}}
 
 #### Quiz
 
@@ -93,7 +95,7 @@ Im Laufe des Kurses werden hier die Lösungen zu den einzelnen Aufgaben hochgela
 - `df['Age Range'].isna().sum()`
 - `len(df[(df['Age Range'] == '60 to 64 years') & (df['Circulation Active Year'] == '2016')])`
 
-
+<!--
 ### 3. Deskriptive Statistik und Visualisierungen
 
 #### Häufigkeiten

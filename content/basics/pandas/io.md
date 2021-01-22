@@ -22,7 +22,7 @@ LastModifierDisplayName = ""
 LastModifierEmail = ""
 +++
 
-Die Funktionen zur Ein- und Ausgabe von Daten in `pandas` sind umfangreich aber systematisch organisiert. Um beispielsweise eine `.csv` Datei einzulesen und in einer Variable zu speichern verwenden Sie die Funktion `read_csv`:
+Die Funktionen zur Ein- und Ausgabe von Daten in `pandas` sind umfangreich aber systematisch organisiert. Um beispielsweise eine `.csv` Datei einzulesen und in einer Variable zu speichern verwendet man die Funktion `read_csv`:
 
 {{% customnotice code %}}
 ```python
@@ -32,7 +32,7 @@ df.head()
 ```
 {{% /customnotice %}}
 
-Um einen eingelesenen Datensatz beispielsweise im `.json` Textformat zu speichern verwenden Sie die Funktion `to_json`:
+Um einen eingelesenen Datensatz beispielsweise im `.json` Textformat zu speichern verwendet man die Funktion `to_json`:
 
 {{% customnotice code %}}
 ```python
@@ -45,7 +45,7 @@ df.to_json("../data/Library_Usage.json")
 
 - Manche Funktion aus dem `pandas` Paket sind **statische Funktionen**: Sie sind an **kein** konkretes Objekt gebunden, sondern werden über den Bibliotheksnamen `pd` aufgerufen. Beispiele: `pd.read_csv`, `pd.to_numeric`, `pd.crosstab`.
 - Andere Funktionen sind an ein bestimmtes Objekt, welches mit einer Variable referenziert wird, gebunden. In der Regel ist dies ein `DataFrame` oder eine `Series`. Beispiele: `df.to_csv`, `df.corr`, `df.head`, `x.mean`.
-- Machen Sie sich mit dem Unterschied vertraut: Was bedeuten `pd` und `df` und `x` in den Beispielen?
+- Mache Dich mit dem Unterschied vertraut: Was bedeuten `pd` und `df` und `x` in den Beispielen?
 {{% /customnotice %}}
 
 
@@ -53,27 +53,27 @@ df.to_json("../data/Library_Usage.json")
 
 Die **Festplatte** des Computers dient zur **persistenten Speicherung** von Dateien. Auch wenn der Strom weg ist, bleiben diese darauf erhalten. Die hohe Speicherfähigkeit hat ihren Preis: Die Zugriffszeiten, d.h. die Zeit die die Festplatte benötigt um z.B. Zeilen einer Textdatei zu lesen und die Werte an den Prozessor zu übergeben, sind hoch.
 
-Deswegen gibt es neben dem Festplattenspeicher auch noch den **Arbeitsspeicher (RAM)**. Dessen Zugriffszeiten sind wesentlich schneller, die Daten sind jedoch nicht persistent. Wenn Sie z.B. eine Tabelle mit Excel öffnen, dann werden die Daten von der Festplatte in den Arbeitsspeicher geladen. Das gleiche, nur ohne graphische Oberfläche, passiert, wenn Sie Daten mit dem `pandas` Paket einlesen.
+Deswegen gibt es neben dem Festplattenspeicher auch noch den **Arbeitsspeicher (RAM)**. Dessen Zugriffszeiten sind wesentlich schneller, die Daten sind jedoch nicht persistent. Wenn Du z.B. eine Tabelle mit Excel öffnest, dann werden die Daten von der Festplatte in den Arbeitsspeicher geladen. Das gleiche, nur ohne graphische Oberfläche, passiert, wenn Du Daten mit dem `pandas` Paket einliest.
 
 Da normalerweise der Datensatz komplett in den Arbeitsspeicher geladen werden muss, können prinzipiell nicht beliebig große Datenmengen bearbeitet werden.
 
 {{% customnotice exercise %}}
 
-### Exkurs: Datenrundreise (30 Min)
+#### 2.3 Exkurs: Datenrundreise (30 Min)
 
-- Informieren Sie sich [hier](https://pandas.pydata.org/pandas-docs/stable/reference/io.html) über die verschiedenen Funktionen zur Ein- und Ausgabe.
-- Lesen Sie den Datensatz `"../data/Library_Usage_Small.csv"` ein (Download [hier](/data-librarian/data/Library_Usage_Small.csv)). Er enthält nur die ersten 10 Zeilen des originalen Datensatzes (aus Performancegründen).
-- Speichern sie den `DataFrame` als `.json` ab.
-- Lesen Sie die `.json` ein und speichern Sie den `DataFrame` als `.html` Tabelle ab (Die `.html` Datei lässt sich auch mit einem Browser öffnen).
-- Lesen Sie dann die `.html` Datei ein (Achtung: `read_html` gibt eine Liste von `DataFrame`s zurück!) und speichern Sie den `DataFrame` als `.xlsx` Datei ab (Die `.xlsx` Datei lässt sich auch mit Excel öffnen).
-- Lesen Sie nun die `.xlsx` Datei ein und speichern Sie den `DataFrame` wieder als `.csv` ab. Achten Sie darauf, den ursprünglichen originalen Datensatz nicht zu überschreiben.
-- Vergleichen Sie die originale `.csv` Version mit der Version, nach der Datenrundreise. Ist alles gleich geblieben?
+- Informiere Dich [hier](https://pandas.pydata.org/pandas-docs/stable/reference/io.html) über die verschiedenen Funktionen zur Ein- und Ausgabe.
+- Lies den Datensatz `"../data/Library_Usage_Small.csv"` ein (Download [hier](/data-librarian/data/Library_Usage_Small.csv)). Er enthält nur die ersten 10 Zeilen des originalen Datensatzes (aus Performancegründen).
+- Speichere den `DataFrame` als `.json` ab.
+- Lies die `.json` ein und speichere den `DataFrame` als `.html` Tabelle ab (Die `.html` Datei lässt sich auch mit einem Browser öffnen).
+- Lies dann die `.html` Datei ein (Achtung: `read_html` gibt eine Liste von `DataFrame`s zurück!) und speichere den `DataFrame` als `.xlsx` Datei ab (Die `.xlsx` Datei lässt sich auch mit Excel öffnen).
+- Lies nun die `.xlsx` Datei ein und speichere den `DataFrame` wieder als `.csv` ab. Achte darauf, den ursprünglichen originalen Datensatz nicht zu überschreiben.
+- Vergleiche Sie die originale `.csv` Version mit der Version, nach der Datenrundreise. Ist alles gleich geblieben?
 
 {{% /customnotice %}}
 
 {{% customnotice exercise %}}
 
-#### Exkurs: Arbeitsspeicher (30 Min)
+#### 2.4 Exkurs: Arbeitsspeicher (30 Min)
 
 - Finden Sie heraus, wie viel **freier** Arbeitsspeicher Ihr Computer hat (Das Betriebssystem und Hintergrundprogramme verbrauchen auch RAM).
 - Wie viele `int64` Werte, also Zahlen, die 8 Byte (=64 Bit) Speicher benötigen, können Sie damit theoretisch in den Arbeitsspeicher laden? Tip: Nutzen sie [Google zum Umrechnen](https://www.google.com/search?q=15.4+GiB+in+Byte).

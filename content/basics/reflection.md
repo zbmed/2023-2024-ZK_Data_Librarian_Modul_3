@@ -1,5 +1,5 @@
 +++
-title = "Reflexion: Datenprojekte an Ihrer Arbeitsstelle"
+title = "Reflexion: Datenprojekte an der eigenen Arbeitsstelle"
 
 weight = 40
 # The title of the page in menu will be prefixed by this HTML content
@@ -23,15 +23,15 @@ LastModifierEmail = ""
 
 {{% customnotice exercise %}}
 
-#### Datenprojekte an Ihrer Arbeitsstelle (20 Min)
+#### 2.10 Datenprojekte an der eigenen Arbeitsstelle (20 Min)
 
-Schreiben Sie einen **kurzen** Text über die Verwendung von Daten und quantitativen Methoden an Ihrem Arbeitsplatz. Denken Sie dabei über folgende Fragen nach:
+Schreibe einen **kurzen** Text über die Verwendung von Daten und quantitativen Methoden an Deinem Arbeitsplatz. Denk dabei über folgende Fragen nach:
 
-1. Welche Daten sind bei Ihnen vorhanden?
-2. Mit welchen Daten arbeiten Sie oder würden Sie gerne arbeiten?
-3. Werden statistische Verfahren oder Maschinelles Lernen schon bei Ihnen eingesetzt?
-4. Welche Fragen oder Phänomene würden Sie gerne untersuchen? Was fänden Sie spannend herauszufinden?
+1. Welche Daten sind an Deiner Arbeitsstelle vorhanden?
+2. Mit welchen Daten arbeitest Du oder würdest Du gerne arbeiten?
+3. Werden statistische Verfahren oder Maschinelles Lernen schon an Deiner Arbeitsstelle eingesetzt?
+4. Welche Fragen oder Phänomene würdest Du gerne untersuchen? Was fändest Du spannend herauszufinden?
 
-**Teilen** Sie Ihren Text mit den anderen KursteilnehmerInnen im Forum zu Modul 3 auf der [Kursplattform](https://zbiw.th-koeln.de/moodle/course/view.php?id=300). Wenn Sie für die Anderen **anonym** bleiben möchten, können Sie mir auch den Text schicken und ich stelle ihn dann rein.
+**Teile** Deinen Text mit den anderen KursteilnehmerInnen im Forum zu Modul 3 auf der [Moodle-Kursplattform](https://zbiw.th-koeln.de/moodle/mod/forum/view.php?id=6539). Wenn Du für die anderen lieber **anonym** bleiben möchtest, kannst Du mir auch den Text schicken und ich stelle ihn dann rein.
 
 {{% /customnotice %}}

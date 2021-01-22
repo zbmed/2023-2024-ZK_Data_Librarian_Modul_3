@@ -22,7 +22,7 @@ LastModifierDisplayName = ""
 LastModifierEmail = ""
 +++
 
-Mit `df.head()` können Sie sich die ersten $n$ Zeilen eines `DataFrame`s anzeigen lassen:
+Mit `df.head()` kannst Du Dir die ersten $n$ Zeilen eines `DataFrame`s anzeigen lassen:
 
 {{% customnotice code %}}
 ```python
@@ -37,13 +37,13 @@ Analog dazu funktioniert die Funktion `df.tail()`.
 
 {{% customnotice exercise %}}
 
-Pandas Funktionen (5 Min)
+#### 2.9 Pandas Funktionen (5 Min)
 
 Schauen Sie sich die Dokumentation für die Funktion `head()` [hier](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.head.html) an. Wie können Sie sich die ersten $100$ Zeilen anzeigen lassen?
 {{% /customnotice %}}
 
 
-Mit `df.info()` erhalten Sie speicherbezogene Informationen über das Objekt. Mit `df.describe()` werden nützliche deskriptive Statistiken für alle numerischen Spalten eines Datensatzes ausgegeben. Um alle Spalten miteinzubeziehen nutzen sie das Funktionsargument `include='all'`:
+Mit `df.info()` erhältst Du speicherbezogene Informationen über das Objekt. Mit `df.describe()` werden nützliche deskriptive Statistiken für alle numerischen Spalten eines Datensatzes ausgegeben. Um alle Spalten miteinzubeziehen nutze das Funktionsargument `include='all'`:
 
 {{% customnotice code %}}
 ```python
