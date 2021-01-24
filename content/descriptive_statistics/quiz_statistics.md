@@ -1,7 +1,7 @@
 +++
 title = "Recap: Quiz"
 
-weight = 60
+weight = 45
 # The title of the page in menu will be prefixed by this HTML content
 # pre = "<b>2. </b>"
 # pre = "<i class='fab fa-github'></i>"

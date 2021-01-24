@@ -22,7 +22,7 @@ LastModifierDisplayName = ""
 LastModifierEmail = ""
 +++
 
-Kategoriale Variablen werden in **Häufigkeitstabellen** zusammengefasst. Dabei wird für jede Ausprägung die Anzahl der Beobachtungen gezählt:
+**Kategoriale Variablen** werden in *Häufigkeitstabellen* zusammengefasst. Dabei wird für jede Ausprägung die Anzahl der Beobachtungen gezählt:
 
 {{% customnotice code %}}
 ```python
@@ -32,7 +32,7 @@ df['Age Range'].value_counts()
 ```
 {{% /customnotice %}}
 
-Mit der Funktion `value_counts()` können Sie sich absolute Häufigkeitstabellen ausgeben lassen. Mit dem zusätzlichen Argumentaufruf `normalize=True` werden relative Häufigkeiten berechnet:
+Mit der Funktion `value_counts()` kann man sich absolute Häufigkeitstabellen ausgeben lassen. Mit dem zusätzlichen Argumentaufruf `normalize=True` werden relative Häufigkeiten berechnet:
 
 {{% customnotice code %}}
 ```python
@@ -50,10 +50,10 @@ age_mode[0]
 
 {{% customnotice exercise %}}
 
-#### Häufigkeiten (20 Min)
+#### 3.1 Häufigkeiten (20 Min)
 
-1. Erstellen Sie eine Häufigkeitsverteilung für die Variable `'Year Patron Registered'`. Wie viel Prozent der Kunden wurden 2013 im System registriert? Wie viele in den kommenden Jahren? Was fällt Ihnen auf?
-2. Wie viel Prozent der Kunden sind zwischen 25 und 34 Jahren?
-3. Ersetzen Sie die fehlenden Werte in der Spalte `Age Range` durch den Modus dieser Spalte. Nutzen Sie dazu die Funktion `DataFrame.fillna` (siehe [hier](https://devdocs.io/pandas~0.25/reference/api/pandas.dataframe.fillna) für die Dokumentation). 
-4. Denken Sie, es handelt sich dabei um eine gute Methode, fehlende Werte zu ersetzen? Welche anderen Strategien fallen Ihnen ein?
+1. Erstelle eine Häufigkeitsverteilung für die Variable `'Year Patron Registered'`. Wieviel Prozent der Kunden wurden 2013 im System registriert? Wie viele in den kommenden Jahren? Was fällt Dir auf?
+2. Wieviel Prozent der Kunden sind zwischen 25 und 34 Jahren?
+3. Ersetze die fehlenden Werte in der Spalte `Age Range` durch den Modus dieser Spalte. Nutzen Sie dazu die Funktion `DataFrame.fillna` (siehe [hier](https://devdocs.io/pandas~0.25/reference/api/pandas.dataframe.fillna) für die Dokumentation). 
+4. Denkst Du, es handelt sich dabei um eine gute Methode, fehlende Werte zu ersetzen? Welche anderen Strategien fallen Dir ein?
 {{% /customnotice %}}

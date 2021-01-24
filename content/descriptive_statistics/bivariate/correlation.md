@@ -1,7 +1,7 @@
 +++
 title = "Korrelation"
 # If set, this will be used for the page's menu entry (instead of the `title` attribute)
-# menuTitle = "Einführung"
+# menuTitle = "Korrelation"
 weight = 36
 # The title of the page in menu will be prefixed by this HTML content
 # pre = "<b>2. </b>"
@@ -22,6 +22,10 @@ LastModifierDisplayName = ""
 LastModifierEmail = ""
 +++
 
+Für **metrische** Variablen lässt sich die sog. *Kovarianz* berechnen, die Auskunft über den Zusammenhang von zwei Variablen gibt.
+
+
+
 Der Korrelationskoeffizient $\rho\_{x, y}$ misst für zwei **metrische** Variablen $x$ und $y$ die Stärke des **linearen Zusammenhangs**. Der Koeffizient kann zwischen $-1$ (negativer Zusammenhang) und $1$ (positiver Zusammenhang) variieren:
 
 
@@ -33,14 +37,16 @@ Der Korrelationskoeffizient $\rho\_{x, y}$ misst für zwei **metrische** Variabl
 
 Der Korrelationskoeffizient ist definiert als:
 $$
-\rho_{x, y} = \frac{s_{x, y}^2}{s_xs_y} = \frac{\sum_{i=1}^{N}(x_i-\bar{x})(y_i-\bar{y})}{\sqrt{\sum_{i=1}^{N}(x_i-\bar{x})^2\sum_{i=1}^{N}(y_i-\bar{y})^2}}
+\rho_{x, y} = \frac{s_{x, y}^2}{s_xs_y} = \frac{\sum_{i=1}^{N}(x_i-\bar{x})(y_i-\bar{y})}{\sqrt{\sum_{i=1}^{N}(x_i-\bar{x})^2\sum_{i=1}^{N}(y_i-\bar{y})^2}} .
 $$
 
-Die Ausdrücke im Nenner sind die jeweiligen [Standardabweichungen](../../univariate/variance) der Reihen. Sie dienen zur Normalisierung der Statistik, sodass diese nur Werte zwischen $-1$ und $1$ annimmt. Beachten Sie, dass in der Formel der Bruch durch $\frac{1}{N-1}$ gekürzt wurde.
+Die Ausdrücke im Nenner sind die jeweiligen [Standardabweichungen](../../univariate/variance) der Reihen. Sie dienen zur Normalisierung der Statistik, sodass diese nur Werte zwischen $-1$ und $1$ annimmt. 
 
+<!-- Beachten Sie, dass in der Formel der Bruch durch $\frac{1}{N-1}$ gekürzt wurde.
+-->
 Im Zähler steht die empirische **Kovarianz** definiert als:
 $$
-s_{x, y}^2 = \frac{1}{N-1}\sum_{i=1}^{N}(x_i-\bar{x})(y_i-\bar{y})
+s_{x, y}^2 = \frac{1}{N-1}\sum_{i=1}^{N}(x_i-\bar{x})(y_i-\bar{y}) .
 $$
 
 

@@ -41,7 +41,7 @@ np.random.normal(loc=3, scale=3, size=10)
 Statistiken, wie der Mittelwert, die Varianz oder der Modus dienen zur Beschreibungen und Charakterisierung von Verteilungen mittels einiger weniger aussagekräftigen Kennzahlen. Dabei gibt es Statistiken, die oft nur auf Variablen eines bestimmten Skalenniveaus anwendbar sind.
 
 
-**Kategoriale Variablen** (nominale und ordinale Variablen, [kleine Erinnerung](/data-librarian/basics/basic_terms/)) werden typischerweise in Häufigkeitstabellen zusammengefasst. Wichtige Kennzahlen für **metrische Variablen** sind die zentrale Lage, Modalität, Streuung und die Symmetrie. 
+**Kategoriale Variablen** (nominale und ordinale Variablen, [kleine Erinnerung](/data-librarian/basics/basic_terms/)) werden typischerweise in *Häufigkeitstabellen* zusammengefasst. Wichtige Kennzahlen für **metrische Variablen** sind die *zentrale Lage*, *Modalität*, *Streuung* und die *Symmetrie*. 
 
 Nach dieser Einheit solltest Du die folgenden Fragen beantworten können:
 

@@ -22,7 +22,7 @@ LastModifierDisplayName = ""
 LastModifierEmail = ""
 +++
 
-Für **metrische Variablen** beschreiben Lagemaße die Zentralität einer Verteilung. 
+Für **metrische Variablen** beschreiben *Lagemaße* die Zentralität einer Verteilung. 
 
 ### Mittelwert
 
@@ -63,16 +63,25 @@ df['Total Checkouts'].median()
 
 {{% customnotice exercise %}}
 
-#### Mittelwert und Median (20 Min)
+#### 3.2 Mittelwert und Median (20 Min)
 
-- Schauen Sie sich den Mittelwert und den Median der Variable `Total Checkouts` an. Warum sind die beiden Werte so unterschiedlich?
-- Was ziehen Sie daraus für Schlüsse für weitere statistische Analysen und Reports?
+- Schau Dir den Mittelwert und den Median der Variable `Total Checkouts` an. Warum sind die beiden Werte so unterschiedlich?
+- Was ziehst Du daraus für Schlüsse für weitere statistische Analysen und Reports?
+{{% /customnotice %}}
+
+{{% customnotice tip%}}
+Wenn Dir nach der Aufgabe zum Mittelwert und Median die Begriffe noch nicht klar sind und Dich die oberen Formeln sehr abschrecken, kann es auch manchmal hilfreich sein, sich diese Statistiken mit einfachen Beispielen aus der Schule erklären zu lassen. 
+
+Empfehlenswert sind hierzu die Videos von [Lehrerschmidt](https://www.youtube.com/c/lehrerschmidt/featured) auf Youtube.
+
+Versuche im Anschluss anhand der einfachen Beispiele, die oberen Formeln nachzuvollziehen.
+
 {{% /customnotice %}}
 
 ### Quantile
 
-Sie haben schon den Median $x_{0.5}$ als Lageparameter kennengelernt. Er teilt die geordnete Verteilung in zwei genau gleich große Teile. Allgemeiner lassen sich dazu die Quantile definieren: $x_{0.75}$ teil die geordnete Verteilung im Verhältnis 3:1. Das heißt, dass 75% der Beobachtungen kleiner als $x_{0.75}$ und 25% größer sind.
-Das $x_{0.25}$ Quantil teilt die Reihe im Verhältnis 1:3. Hier sind 25% der Beobachtungen kleiner und 75% größer.
+Wir haben schon den Median als Lageparameter kennengelernt, dieser wird auch als $x_{0.5}$ bezeichnet. Er teilt die geordnete Verteilung in zwei genau gleich große Teile. Allgemeiner lassen sich dazu die Quantile definieren: $x_{0.75}$ teilt die geordnete Verteilung im Verhältnis 3:1. Das heißt, dass 75% der Beobachtungen kleiner als $x_{0.75}$ und 25% größer sind.
+Das $x_{0.25}$ Quantil teilt die Reihe im Verhältnis 1:3. Hier sind 25% der Beobachtungen kleiner und 75% größer als der Wert $x_{0.25}$.
 
 {{% customnotice code %}}
 ```python
@@ -80,19 +89,19 @@ df['Total Checkouts'].quantile(q=[0.25, 0.5, 0.75])
 ```
 {{% /customnotice %}}
 
-Um Ausreißer in einer Variablen zu entfernen/ zu ersetzen, bietet es sich manchmal an, die größten (und/ oder kleinsten) $\alpha\\%$ Beobachtungen zu identifizieren: 
+Um Ausreißer in einer Variablen zu entfernen bzw. zu ersetzen, bietet es sich manchmal an, die größten (und oder kleinsten) $\alpha\\%$ Beobachtungen zu identifizieren: 
 
 {{% customnotice code %}}
 ```python
-# identifies 1% of the data at both ends of the distribution
-alpha = 0.01
-df['Total Checkouts'].quantile([alpha/2, 1-alpha/2])
+# identifies 0.5% of the data at both ends of the distribution
+alpha = 0.005
+df['Total Checkouts'].quantile([alpha, 1-alpha])
 ```
 {{% /customnotice %}}
 
 {{% customnotice exercise %}}
 
-#### Exkurs: Ausreißerentfernung I (30 Min)
+#### 3.3 Exkurs: Ausreißerentfernung I (30 Min)
 
 - Identifzieren Sie jeweils die 1.5% größten Werte in der Spalte `Total Checkouts`. Definieren Sie diese Werte als Ausreißer. 
 - Erstellen Sie einen Datensatz, für den diese Ausreißer entfernt sind.

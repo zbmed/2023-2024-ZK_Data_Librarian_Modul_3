@@ -44,7 +44,7 @@ pd.crosstab(
 
 
 
-Notice Preference 	| email 	| phone 	| print | all
+Notice Preference Definition	| email 	| phone 	| print | all
 :--- | :--- | :--- | :--- | :---
 **Provided Email Address** | | | |
 False 	|95 |	58362 |	 28569| 87026
@@ -65,14 +65,21 @@ pd.crosstab(
 
 Ergibt eine Normalisierung der Spalten, sodass sich diese jeweils zu 100% aufaddieren:
 
-Notice Preference 	| email 	| phone 	| print |	all
+Notice Preference Definition	| email 	| phone 	| print |	all
 :--- | :--- | :--- | :--- | :---
 **Provided Email Address** | | | |			
 False 	|0.000293 	|0.856099 |	0.911699 |	0.205519
 True 	|0.999707 	|0.143901 	|0.088301 	|0.794481
 
-> Von den Kunden, die per Mail informiert werden möchten, haben 99.97% eine Mail Adresse angegeben. Nur 8.83% der Kunden die per Telefon informiert werden möchten, haben eine Mail Adresse angegeben.
+> Von den Kunden, die per Mail informiert werden möchten, haben 99.97% eine Mail Adresse angegeben. Nur 14.39% der Kunden die telefonisch informiert werden möchten, haben eine Mail Adresse angegeben. 
 
 Wird das Argument `normalize=0` verwendet, so werden die Zeilen der Tabelle normalisiert. Entsprecht ändern sich die Interpretation:
+
+Notice Preference Definition |	email |	phone |	print
+:--- | :--- | :--- | :--- 
+**Provided Email Address** | | | | 			
+False 	|0.001092 	|0.670627 	|0.328281
+True 	|0.962615 	|0.029160 	|0.008225
+All 	|0.765004 	|0.160994 	|0.074003
 
 > Von den Kunden, die eine Mail angeben haben, möchten 96% per Mail informiert werden. Von den Kunden, die keine Mail angegeben haben, möchten 67% per Telefon informiert werden.

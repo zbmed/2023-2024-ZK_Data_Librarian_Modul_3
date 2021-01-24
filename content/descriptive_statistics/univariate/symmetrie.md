@@ -26,7 +26,7 @@ LastModifierEmail = ""
 {{%attachments title="Related files"
 pattern="distributions.ipynb" /%}}
 
-Um eine metrische Verteilung charakterisieren zu können, ist neben der zentralen Lage- und Streuung auch deren Symmetrie und Schiefe von Bedeutung. Die Symmetrie sagt etwas über die **(Un-)Gleichverteilung** der Werte einer Variablen aus. Bei stark asymmetrischen Variablen (z.B. Haushaltseinkommen in Deutschland) ist das auftreten von kleinen Werten viel wahrscheinlicher, als das auftreten von sehr großen Werten (oder umgekehrt).
+Um eine metrische Verteilung charakterisieren zu können, ist neben der zentralen Lage- und Streuung auch deren *Symmetrie* und *Schiefe* von Bedeutung. Die Symmetrie sagt etwas über die **(Un-)Gleichverteilung** der Werte einer Variablen aus. Bei stark asymmetrischen Variablen (z.B. Haushaltseinkommen in Deutschland) ist das auftreten von kleinen Werten viel wahrscheinlicher, als das auftreten von sehr großen Werten (oder umgekehrt).
 
 Das Bild zeigt [**Histogramme**](https://de.wikipedia.org/wiki/Histogramm) für verschiedene simulierte Zufallswerte der [Beta-Verteilung](https://de.wikipedia.org/wiki/Beta-Verteilung). Dabei wurden jeweils die Parameter der theoretischen Verteilung $\alpha$ und $\beta$ geändert. Somit kann eine große Bandbreite charakteristischer Verteilungen abgedeckt werden. Neben dem Histogramm wurde auch der empirische Median und Mittelwert der Verteilung als vertikale Linien eingezeichnet.
 
@@ -36,21 +36,23 @@ Zudem kann eine Verteilung auch **Gleichverteilt, Bi- oder Multimodal** sein. Im
 
 
 {{% customnotice exercise %}}
-- Schauen Sie sich die verschiedenen Histogramme im Bild an und charakterisieren Sie jede einzelne Verteilung anhand von Schiefe, Symmetrie und Modus
-- Die Grafik wurde mit dem angehängten Jupyter Notebook generiert. Hier können Sie auch selber andere Verteilungen simulieren und visualisieren.
+
+#### 3.6 Symmetrie und Schiefe (15 Min)
+- Schau Dir die verschiedenen Histogramme im Bild an und charakterisiere jede einzelne Verteilung anhand von Schiefe, Symmetrie und Modus
+- Die Grafik wurde mit dem angehängten Jupyter Notebook generiert. Hier kannst Du auch selber andere Verteilungen simulieren und visualisieren.
 {{% /customnotice %}}
 
 {{% customnotice alert %}}
 - Der Mittelwert und die Standardabweichung basieren auf den absoluten numerischen Werten der Beobachtungen. Deswegen können untypische sehr große oder sehr kleine Werte einer Verteilung ("Ausreißer") diese Statistiken nach oben oder unten **verzerren**.
 - Der Median und der Interquartilsabstand (IQR) hingegen basiert alleine auf der nach Größe sortierten Reihung der Beobachtungen und nicht auf den absoluten Werten. Deswegen sind diese Statistiken **robust** vor Ausreißern.
 - Bei nicht-symmetrischen Verteilungen oder wenn Ausreißer vorliegen sollten deswegen immer auch robuste Statistiken mit angegeben werden.
-- Ist die Verteilung **Bi- oder Multimodal** so können die Lagemaße Mittelwert und Median irreführend sein, da sie in der Regel nicht mit den "Gipfeln" der Verteilung (Modus) übereinstimmen.
+- Ist die Verteilung **Bi- oder Multimodal** (s. nachfolgende Einheit) so können die Lagemaße Mittelwert und Median irreführend sein, da sie in der Regel nicht mit den "Gipfeln" der Verteilung (Modus) übereinstimmen.
 {{% /customnotice %}}
 
 
 ### Verteilung der Ausleihen pro Kunde
 
-Mit dem folgenden Beispiel können Sie ein Histogramm über die Anzahl der Ausleihen im Datensatz erstellen:
+Mit dem folgenden Beispiel kannst Du ein Histogramm über die Anzahl der Ausleihen im Datensatz erstellen:
 
 {{% customnotice code %}}
 ```
@@ -68,10 +70,10 @@ Das Histogram zeigt, dass die Verteilung der Ausleihen durch einige sehr große 
 
 {{% customnotice exercise %}}
 
-#### Exkurs: Ausreißerentfernung III (30 Min)
+#### 3.7 Exkurs: Ausreißerentfernung III (30 Min)
 
-- Erstellen Sie einer neue Spalte `'Total Checkouts Sqrt'` die die Wurzel über die Spalte `Total Checkouts` enthält. Die Wurzel für jede Beobachtung können sie mit `df['Total Checkouts']**(0.5)` berechnen.
-- Schauen Sie sich das Histogramm von `'Total Checkouts Sqrt'` und charakterisieren Sie die Verteilung.
-- Vergleichen Sie diese Methode mit den vorherigen zwei Verfahren zur Ausreißerbehandlung. Welche Methode finden Sie besser geeignet, um mit fehlenden Werten umzugehen? 
-- Fallen Ihnen Vor- und Nachteile der jeweiligen Methoden ein?
+- Erstelle eine neue Spalte `'Total Checkouts Sqrt'`, die die Wurzel über die Spalte `Total Checkouts` enthält. Die Wurzel für jede Beobachtung kannst Du mit `df['Total Checkouts']**(0.5)` berechnen.
+- Schaue Dir das Histogramm von `'Total Checkouts Sqrt'` an und charakterisiere die Verteilung.
+- Vergleiche diese Methode mit den vorherigen zwei Verfahren zur Ausreißerbehandlung (Aufgaben 3.3 und 3.5). Welche Methode findest Du besser geeignet, um mit fehlenden Werten umzugehen? 
+- Fallen Dir Vor- und Nachteile der jeweiligen Methoden ein?
 {{% /customnotice%}}

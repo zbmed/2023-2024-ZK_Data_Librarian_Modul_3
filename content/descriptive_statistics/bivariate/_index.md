@@ -22,7 +22,9 @@ LastModifierDisplayName = ""
 LastModifierEmail = ""
 +++
 
-Bisher haben Sie immer nur einzelne Variablen betrachtet, zusammengefasst oder visualisiert. In vielen Fällen ist jedoch der **Zusammenhang** zwischen zwei Variablen von Interesse. Nach diesem Kapitel sollten Sie die folgenden Fragen beantworten können:
+Bisher haben wir immer nur einzelne Variablen betrachtet, zusammengefasst oder visualisiert. In vielen Fällen ist jedoch der **Zusammenhang** zwischen zwei Variablen von Interesse. 
+
+Nach diesem Kapitel solltest Du  beispielsweise die folgenden Fragen beantworten können:
 
 - Leihen ältere Bibliothekskunden im Schnitt mehr Bücher aus als jüngere?
 - Führen Kunden, die häufiger Ausleihen tätigen,  im Schnitt auch häufiger Verlängerungen durch?
