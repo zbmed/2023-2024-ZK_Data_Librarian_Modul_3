@@ -39,7 +39,7 @@ Zudem kann eine Verteilung auch **Gleichverteilt, Bi- oder Multimodal** sein. Im
 
 #### 3.6 Symmetrie und Schiefe (15 Min)
 - Schau Dir die verschiedenen Histogramme im Bild an und charakterisiere jede einzelne Verteilung anhand von Schiefe, Symmetrie und Modus
-- Die Grafik wurde mit dem angehängten Jupyter Notebook generiert. Hier kannst Du auch selber andere Verteilungen simulieren und visualisieren.
+- Die Grafik wurde mit dem oben angehängten Jupyter Notebook generiert. Hier kannst Du auch selber andere Verteilungen simulieren und visualisieren.
 {{% /customnotice %}}
 
 {{% customnotice alert %}}

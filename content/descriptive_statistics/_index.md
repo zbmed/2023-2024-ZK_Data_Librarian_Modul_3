@@ -1,7 +1,7 @@
 +++
 title = "Deskriptive Statistik und Visualisierungen"
 # If set, this will be used for the page's menu entry (instead of the `title` attribute)
-# menuTitle = "Einführung"
+# menuTitle = "Deskriptive Statistik und Visualisierungen"
 weight = 300
 # The title of the page in menu will be prefixed by this HTML content
  pre = "<b>3. </b>"
@@ -27,34 +27,36 @@ LastModifierEmail = ""
 
 # Deskriptive Statistik und Visualisierungen
 
-Dieses Modul gibt eine Einführung in die deskriptive Statistik mit `pandas` und zeigt, wie statistische Visualisierungen in Python erstellt werden können. 
+Diese Einheit gibt eine Einführung in die deskriptive Statistik mit `pandas` und zeigt, wie statistische Visualisierungen in Python erstellt werden können. 
+
+Vorausgesetzt wird statistisches Grundvokabular, wie in der letzten Einheit [behandelt](/data-librarian/basics/basic-terms). 
 
 <!-- Versuchen Sie zuerst die Aufgaben innerhalb der angegeben Zeit selbstständig zu lösen. Versuchen Sie danach mit Hilfe der Musterlösung die Lösung nachzuvollziehen. Schreiben Sie sich bei Problemen Ihre Fragen auf, damit wir diese am Präsenztag zusammen besprechen können. 
 -->
 ## Ziele
 
-- Berechnen und interpretieren Sie grundlegende Lage- und Streuungsmaße
-- Beschreiben Sie univariate stetige und diskrete Verteilungen
-- Beschreiben und berechnen Sie Statistiken für stetige und diskrete bivariate Verteilungen
-- Erstellen Sie einfache Visualisierungen
+- Berechnung und Interpretation von grundlegenden Lage- und Streuungsmaßen
+- Beschreibung von univariaten stetigen und diskreten Verteilungen
+- Beschreibung und Berechnung von Statistiken für stetige und diskrete bivariate Verteilungen
+- Erstellung von einfachen Visualisierungen
 
 {{% customnotice exercise %}}
 
-### Projektaufgabe
+### Projektaufgabe - Deskriptive Statistik und Visualisierungen
 
 Für den Online-Artikel zum Kundenstamm der Bibliothek braucht die Pressestelle einige interessanten Zahlen zum Thema Alter und Bibliotheksnutzung. Außerdem möchte sie die Daten in einer Info-Graphik zusammenstellen.
 
-Für eine erste Demo sind Sie verantwortlich.
+Für eine erste Demo bist Du verantwortlich.
 
-- Berechnen Sie 2-3 Statistiken und Erstellen Sie 2-3 Visualisierungen basierend auf den Informationen im [Datensatz](/data-librarian/organisation/dataset/).
-- Nutzen Sie `pandas` zur Berechnung der Statistiken und `seaborn` für die Visualisierungen.
+- Berechne 2-3 Statistiken und erstelle 2-3 Visualisierungen basierend auf den Informationen im [Datensatz](/data-librarian/organisation/dataset/).
+- Nutze `pandas` zur Berechnung der Statistiken und `seaborn` für die Visualisierungen.
 
-Schicken Sie bis spätestens zum Projekttag Ihren Report in Form eines *Python Notebooks* an [malte@bonart.de](mailto:malte@bonart.de?subject=data%20librarian:%20library%20usage%20report). Sie können Ihr Notebook auch gerne mit den anderen Studierenden auf der Kursplatform teilen. 
+Schicke bis spätestens  17.03.21 Ihren Report in Form eines *Jupyter Notebooks* an [ania.lopez@uni-due.de](mailto:ania.lopez@uni-due.de?subject=data%20librarian:%20library%20usage%20report). Du kannst Dein Notebook auch gerne mit den anderen Studierenden auf Moodle im Forum teilen. 
 {{% /customnotice %}}
 
 
 {{% customnotice tip %}}
-Beispielfragen, die Sie mit dem Datensatz beantworten und visualisieren können:
+Beispielfragen, die Du mit dem Datensatz beantworten und visualisieren kannst:
 
 - Wie viele Senioren und Kinder sind Kunden der San Francisco Public Library?
 - Wie viele Nutzer möchten per Mail informiert werden?

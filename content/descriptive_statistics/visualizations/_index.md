@@ -30,7 +30,7 @@ Im folgenden Abschnitt, wird ein Überblick über verschiedene Visualisierungsfo
 
 Das Thema Visualisierungen ist **komplex**: Es gibt sehr viele Parameter und Stellschrauben, die man auswendig lernen oder in den Dokumentationen der Bibliotheken [pandas](https://pandas.pydata.org/pandas-docs/stable/user_guide/visualization.html), [seaborn](https://seaborn.pydata.org/tutorial.html) und [matplotlib](https://matplotlib.org/tutorials/index.html) Nachschlagen muss. Die Erstellung von eindrucksvollen und aussagekräftigen Graphiken erfordert viel Praxiserfahrung, Zeit und Mühe.
 
-Auf der anderen Seite lassen sich schon mit wenig Programmcode annehmbare Visualisierungen erstellen. Am besten orientieren Sie sich an den zahlreiche Beispielen Online und ändern den Code Ihren Erfordernissen an. Nach dem Kapitel sollten Sie die folgenden Fragen beantworten können:
+Auf der anderen Seite lassen sich schon mit wenig Programmcode annehmbare Visualisierungen erstellen. Am besten orientieren Sie sich an den zahlreiche Beispielen Online und ändern den Code Ihren Erfordernissen an. Nach dem Kapitel solltest Du die folgenden Fragen beantworten können:
 
 - Wie können uni- und bivariate Verteilungen in Pandas visualisiert werden?
 - Wie interpretiere und erstelle ich Boxplots, Histogramme und Streudiagramme?
@@ -43,10 +43,10 @@ Dieses [Cheat-Sheet](https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Py
 
 
 {{% customnotice exercise %}}
-#### Balkendiagramme bei FoxNews (15 Min)
+#### 3.9 Balkendiagramme bei FoxNews (15 Min)
 
-- Was fällt Ihnen an den folgenden Diagrammen von FoxNews auf?
-- Was würden Sie anders machen?
+- Was fällt Dir an den folgenden Diagrammen von FoxNews auf?
+- Was würdest Du anders machen?
 - Welche Botschaft wollten die "Designer" vermutlich vermitteln? Passt die Botschaft mit den Daten zusammen?
 (s. auch [Quelle und Hintergründe](https://flowingdata.com/2012/08/06/fox-news-continues-charting-excellence/) oder auch [dieses Beispiel](https://flowingdata.com/2011/12/12/fox-news-still-makes-awesome-charts/))
 

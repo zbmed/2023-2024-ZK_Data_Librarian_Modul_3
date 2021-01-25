@@ -155,7 +155,6 @@ Die Balkendiagramme beginnen nicht im Nullpunkt. Somit werden die relativen Unte
 - `df['Total Renewals'].quantile([0.25, 0.75]).diff()`
 
 
-<!--
 
 ### 4. Exkurs: Inferenzstatistik
 
@@ -164,7 +163,7 @@ Die Balkendiagramme beginnen nicht im Nullpunkt. Somit werden die relativen Unte
 
 {{%attachments title="Alle Lösungen" pattern="solutions" /%}}
 
--->
+
 
 
 

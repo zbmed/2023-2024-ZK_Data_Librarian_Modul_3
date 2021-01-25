@@ -22,7 +22,7 @@ LastModifierDisplayName = ""
 LastModifierEmail = ""
 +++
 
-Im Tutorial haben Sie gesehen, wie Sie ein Streudiagramm erstellen können. Hier werden exemplarisch weitere Möglichkeiten gezeigt, die Daten des Datensatzes zu visualisieren. Die [wichtigste Funktion](https://seaborn.pydata.org/generated/seaborn.catplot.html#seaborn.catplot) ist hierbei `sns.catplot()`.
+Im Tutorial hast Du gesehen, wie Du ein Streudiagramm erstellen kannst. Hier werden exemplarisch weitere Möglichkeiten gezeigt, die Daten des Datensatzes zu visualisieren. Die [wichtigste Funktion](https://seaborn.pydata.org/generated/seaborn.catplot.html#seaborn.catplot) ist hierbei `sns.catplot()`.
 
 ```python
 import pandas as pd

@@ -25,7 +25,7 @@ LastModifierEmail = ""
 
 # Exkurs: Grundlagen der Inferenzstatistik mit dem Bootstrapping Verfahren
 
-Diese Einheit gibt einen ersten Einblick in die angewandte Inferenzstatistik mit dem **Bootstrapping-Verfahren** und stellt die Berechnung von Konfidenzintervallen für den Mittelwert und Median in Python vor. Die Inhalte und Aufgaben dieser Einheit sind anspruchsvoller als bisher und deswegen **optional** als Herausforderung für Interessierte KursteilnehmerInnen.
+Diese Einheit gibt einen ersten Einblick in die angewandte Inferenzstatistik mit dem **Bootstrapping-Verfahren** und stellt die Berechnung von Konfidenzintervallen für den Mittelwert und Median in Python vor. Die Inhalte und Aufgaben dieser Einheit sind anspruchsvoller als bisher und deswegen **optional** als Herausforderung für interessierte KursteilnehmerInnen.
 
 ## Ziele
 
