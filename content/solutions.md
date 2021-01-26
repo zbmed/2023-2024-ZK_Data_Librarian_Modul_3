@@ -10,10 +10,22 @@ chapter = false
 hidden = true
 +++
 
-Im Laufe des Kurses werden hier die Lösungen zu den einzelnen Aufgaben hochgeladen. Die Projektaufgaben werden am Präsenztag gesammelt besprochen.
+Hier finden sich die Musterlösungen aller Einheiten im Überblick.
+
+##### [1. Kursorganisation und Vorbereitung](/data-librarian/organisation/solutions/)
+
+##### [2. Grundlagen der Datenanalyse in Python](http://localhost:1313/data-librarian/basics/solutions/)
+
+##### [3. Deskriptive Statistik und Visualisierungen](http://localhost:1313/data-librarian/descriptive_statistics/solutions/)
+
+##### [4. Exkurs: Inferenzstatistik](http://localhost:1313/data-librarian/inference/solutions/)
 
 
+##### [6. Maschinelles Lernen - Praxis mit scikit-Learn](/data-librarian/machine_learning_methods/solutions/)
 
+##### [7. Maschinelles Lernen - Automatische Textanalyse](/data-librarian/text_analysis/solutions/)
+
+<!--
 ### 1. Kursorganisation und Vorbereitung
  
 #### Quiz
@@ -164,7 +176,7 @@ Die Balkendiagramme beginnen nicht im Nullpunkt. Somit werden die relativen Unte
 {{%attachments title="Alle Lösungen" pattern="solutions" /%}}
 
 
-
+-->
 
 
 

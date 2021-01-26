@@ -25,7 +25,7 @@ description = "Effizientes Handling und Bearbeitung von numerischen Arrays."
 
 [numpy](https://numpy.org/) bietet den [`array`](https://docs.scipy.org/doc/numpy/reference/generated/numpy.array.html) als zentrale Datenstruktur. Mit ihm lassen sich numerische Daten effizient im Arbeitsspeicher (RAM) erstellen, ein- und auslesen, bearbeiten und aggregieren.
 
-Numpy bietet neben dem `array` viele Funktionen an, mit denen sich effizient Berechnungen auf diesen durchführen lassen können. Außerdem wird die klassische [Matrizenrechnung](https://de.wikipedia.org/wiki/Matrix_(Mathematik)) unterstützt.
+Numpy bietet neben dem `array` viele Funktionen an, mit denen sich effizient Berechnungen auf diesen durchführen lassen können. Außerdem wird die klassische [Matrizenrechnung](https://de.wikipedia.org/wiki/Matrix_(Mathematik)) unterstützt (s. nachfolgendes Beispiel).
 
 {{% customnotice code%}}
 ```python
@@ -43,6 +43,14 @@ X.dot(X.T)
 ```
 {{% /customnotice %}}
 
-Beispielsweise kann ein Bild als dreidimensionales numpy array dargestellt werden: Die ersten zwei Dimensionen beschreiben die Farbintensität der Pixel auf einer zweidimensionalen Fläche. Die dritte Dimension speichert die jeweiligen Pixelwerte für die Farbkanäle rot, grün und blau.
+
+
+{{% customnotice tip%}}
+Wenn Dir die Matrizenrechnung nicht geläufig ist, probiere aus das obere Beispiel nachzuvollziehen, indem Du mit ganz einfachen 2x2-dimensionale Matrizen rechnest, denen Du vorab einfache feste Werte vorgibst.
+{{% /customnotice %}}
+
+
+
+MIit numpy kann beispielsweise ein Bild als dreidimensionales numpy array dargestellt werden: Die ersten zwei Dimensionen beschreiben die Farbintensität der Pixel auf einer zweidimensionalen Fläche. Die dritte Dimension speichert die jeweiligen Pixelwerte für die Farbkanäle rot, grün und blau.
 
 {{< figure src="https://www.oreilly.com/library/view/elegant-scipy/9781491922927/assets/elsp_0105.png" attr="https://www.oreilly.com/library/view/elegant-scipy/9781491922927/ch01.html" >}}

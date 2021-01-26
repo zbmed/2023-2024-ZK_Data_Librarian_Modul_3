@@ -21,25 +21,26 @@ LastModifierDisplayName = ""
 LastModifierEmail = ""
 +++
 
-## 3. Deskriptive Statistik und Visualisierungen
+### 3. Deskriptive Statistik und Visualisierungen
+
+#### 3.1 Häufigkeiten
+
+{{%attachments title="Lösungen" pattern="3.1.solutions_frequency" /%}}
 
 
 
-{{%attachments title="3.1 Häufigkeiten" pattern="3.1.solutions_frequency" /%}}
-
-
-
-##### 3.2 Mittelwert und Median
+#### 3.2 Mittelwert und Median
 
 Der Median ist robust gegenüber Ausreißern, da er nicht auf den absoluten sondern nur auf der relativen Reihung der Beobachtungen basiert. Wird beispielsweise der größte Wert einer Messreihe um den Faktor 1000 tausend vergrößert, so ändert sicht der Median nicht.
 
 Der Mittelwert hingegen basiert auf den absoluten Werten. Da die Variable `Total Checkouts` einige wenige sehr große Ausreißer enthält, ist der Mittelwert hier viel größer.
 
+#### 3.4 Varianz
 
-{{%attachments title="3.4 Varianz" pattern="3.4.solutions_variance" /%}}
+{{%attachments title="Lösungen" pattern="3.4.solutions_variance" /%}}
 
 
-##### 3.6 Symmetrie und Schiefe
+#### 3.6 Symmetrie und Schiefe
 
 Von oben links nach unten rechts:
 
@@ -53,26 +54,29 @@ Von oben links nach unten rechts:
 - Unimodal, Rechtsschief/ Linkssteil
 - Unimodal, Symmetrisch
 
+#### Exkurs Ausreißerentfernung (Aufgaben 3.3, 3.5 und 3.7)
 
-{{%attachments title="Exkurs: Ausreißerentfernung (Aufgaben 3.3, 3.5 und 3.7)" pattern="solutions_outlier" /%}}
+{{%attachments title="Lösungen" pattern="solutions_outlier" /%}}
 
-<!--
+
 #### Symmetrie: Fallstudie
 
 {{%attachments title="Lösungen" pattern="solutions_case_study" /%}}
--->
 
+#### Korrelation: Anscombe-Quartett
 
-{{%attachments title="3.8 Exkurs: Anscombe-Quartett" pattern="3.8.solutions_anscombe" /%}}
+{{%attachments title="Lösungen" pattern="solutions_anscombe" /%}}
 
-##### 3.9 Fox News
+#### Fox News
 
-Die Balkendiagramme beginnen nicht im Nullpunkt. Somit werden die relativen Unterschiede viel größer dargestellt als sie in Wahrheit sind.
+Die Balkendiagramme beginnen nicht im Nullpunkt. Somit werden die relativen Unterschiede viel größer dargestellt, als sie in Wahrheit sind.
 
-##### Quiz
+#### Quiz
 
 - rechtsschief
 - `df['Provided Email Address'][df['Age Range'] == '0 to 9 years'].sum()`
 - `df['Total Checkouts'].quantile(0.60)`
 - `df['Age Range'].mode()`
 - `df['Total Renewals'].quantile([0.25, 0.75]).diff()`
+
+

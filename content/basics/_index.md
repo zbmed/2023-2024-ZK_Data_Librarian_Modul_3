@@ -23,7 +23,7 @@ LastModifierEmail = ""
 +++
 
 
-### 22.02.21 – 03.03.21
+### 27.02.21 – 03.03.21
 
 # Grundlagen der Datenanalyse in Python
 

@@ -46,12 +46,13 @@ Vorausgesetzt wird statistisches Grundvokabular, wie in der letzten Einheit [beh
 
 Für den Online-Artikel zum Kundenstamm der Bibliothek braucht die Pressestelle einige interessanten Zahlen zum Thema Alter und Bibliotheksnutzung. Außerdem möchte sie die Daten in einer Info-Graphik zusammenstellen.
 
-Für eine erste Demo bist Du verantwortlich.
+Für eine erste Demo bist Du verantwortlich:
 
 - Berechne 2-3 Statistiken und erstelle 2-3 Visualisierungen basierend auf den Informationen im [Datensatz](/data-librarian/organisation/dataset/).
 - Nutze `pandas` zur Berechnung der Statistiken und `seaborn` für die Visualisierungen.
 
-Schicke bis spätestens  17.03.21 Ihren Report in Form eines *Jupyter Notebooks* an [ania.lopez@uni-due.de](mailto:ania.lopez@uni-due.de?subject=data%20librarian:%20library%20usage%20report). Du kannst Dein Notebook auch gerne mit den anderen Studierenden auf Moodle im Forum teilen. 
+Lade bis spätestens **17.03.21** Deinen Report in Form eines *Jupyter Notebooks* in der [Dateiablage](https://zbiw.th-koeln.de/moodle/mod/assign/view.php?id=6568) in Moodle hoch.
+
 {{% /customnotice %}}
 
 

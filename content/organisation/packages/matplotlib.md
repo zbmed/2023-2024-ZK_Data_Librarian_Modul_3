@@ -24,7 +24,7 @@ description = "Bietet 2D Plotting Funktionalitäten."
 
 
 
-[matplotlib](https://matplotlib.org/) ist das Standard-Paket zum Erstellen von wissenschaftlichen 2-dimensionalen statischen Graphiken. Die grundlegende Struktur in matplotlib ist `figure`, eine leere graphische Fläche, die mit Linien, Balken, Punten, Beschriftungen und Axen befüllt werden kann. Der fertige Plot kann dann in diversen Formaten abgespeichert oder auf dem Bildschirm angezeigt werden.
+[matplotlib](https://matplotlib.org/) ist das Standard-Paket zum Erstellen von wissenschaftlichen 2-dimensionalen statischen Graphiken. Die grundlegende Struktur in matplotlib ist `figure`, eine leere graphische Fläche, die mit Linien, Balken, Punkten, Beschriftungen und Axen befüllt werden kann. Der fertige Plot kann dann in diversen Formaten abgespeichert oder auf dem Bildschirm angezeigt werden.
 
 
 {{% customnotice code%}}

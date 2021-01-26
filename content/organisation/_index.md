@@ -9,7 +9,7 @@ LastModifierEmail = ""
 
 +++
 
-### 22.02.21 – 28.02.21
+### 22.02.21 – 26.02.21
 
 # Kursorganisation und Vorbereitungen
 
@@ -19,8 +19,8 @@ Diese Einheit gibt einen Überblick über die Kursinhalte, wichtige Termine und 
 
 - Überblick über das gesamte Modul (Kurseinheiten, Termine)
 - Anpassung des eigenen Git-Repositoriums für das Arbeiten mit einem offenen Datensatz der San Francisco Library
-- Erinnerung: Installation von Anaconda mit Python 3.7 auf Ihrem Rechner
-- Erinnerung: Installation bzw. Nutzung von Jupyter Notebooks auf Ihrem Rechner
+- Erinnerung: Installation von Anaconda mit Python 3.7 auf Deinem Rechner
+- Erinnerung: Installation bzw. Nutzung von Jupyter Notebooks auf Deinem Rechner
 - Überblick über verschiedene Python Pakete und Bibliotheken
 
 

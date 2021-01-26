@@ -28,7 +28,7 @@ description = "Bearbeitung, Transformation, Aggregation und Zusammenfassung von 
 
 In einem `DataFrame` werden mehrere `Series` *gleicher* Länge spaltenweise zu einer zweidimensionalen Tabelle (wie einer Excel Tabelle) zusammengefasst. Ein `DataFrame` besitzt außerdem auch immer Spalten- und Zeilennamen.
 
-Wie auch numpy, bietet pandas darüber hinaus viele Funktionen aus der Statistik, zum Beschreiben von Daten. Eine Übersicht gibt es [hier](https://pandas.pydata.org/pandas-docs/stable/reference/series.html#computations-descriptive-stats).
+Wie auch numpy, bietet pandas darüber hinaus viele Funktionen aus der Statistik zum Beschreiben von Daten. Eine Übersicht gibt es [hier](https://pandas.pydata.org/pandas-docs/stable/reference/series.html#computations-descriptive-stats).
 
 
 {{% customnotice code%}}

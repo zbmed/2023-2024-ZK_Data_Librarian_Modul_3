@@ -23,7 +23,7 @@ LastModifierEmail = ""
 +++
 
 
-### 10.02 – 16.02
+### 11.03.21 – 17.03.21
 
 # Einführung in das Maschinelle Lernen
 
