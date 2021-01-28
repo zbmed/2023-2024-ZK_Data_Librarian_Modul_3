@@ -37,7 +37,7 @@ Versuche zuerst die Aufgaben innerhalb der angegeben Zeit selbstständig zu lös
 
 ## Ziele
 
-- Beschreibung eines Datensatzes mit dem statistischen Grundvokabular
+- Kenntnisse des statistischen Grundvokabulars und Anwendung auf die Beschreibung eines Datensatzes
 - Ein- und Auslesen von Datensätzen als `DataFrame`s in Python
 - Filtern von `DataFrame`s nach Spalten oder Zeilen
 - Erstellung neuer Variablen
@@ -47,8 +47,10 @@ Versuche zuerst die Aufgaben innerhalb der angegeben Zeit selbstständig zu lös
 Die Pressestelle der San Francisco Public Library möchte einen Online-Artikel zum Kundenstamm der Bibliothek erstellen. Dazu hat sie Dir [einen Datensatz](/data-librarian/organisation/dataset/) geschickt, den Du auswerten sollst.
 
 1. Erstelle eine Beschreibung des Datensatzes unter Verwendung des [statistischen Grundvokabulars](/data-librarian/basics/basic_terms/).
-2. [Lese den Datensatz ein](/data-librarian/basics/pandas/io)
+2. Lies den Datensatz [ein](/data-librarian/basics/pandas/io).
 3. Bereinige den Datensatz von [fehlenden Werten](/data-librarian/basics/pandas/na) und berechne die [neue Variable](/data-librarian/basics/pandas/columns/#fallstudie-feature-engineering) `Membership Duration`.
+
+Die bearbeitete Projektaufgabe kannst Du in Deinem Git-Repositorium als Notebook bzw. Markdown-Datei speichern. 
 
 
 {{% /customnotice %}}

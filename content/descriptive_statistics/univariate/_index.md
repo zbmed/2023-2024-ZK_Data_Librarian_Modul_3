@@ -43,7 +43,7 @@ Statistiken, wie der Mittelwert, die Varianz oder der Modus dienen zur Beschreib
 
 **Kategoriale Variablen** (nominale und ordinale Variablen, [kleine Erinnerung](/data-librarian/basics/basic_terms/)) werden typischerweise in *Häufigkeitstabellen* zusammengefasst. Wichtige Kennzahlen für **metrische Variablen** sind die *zentrale Lage*, *Modalität*, *Streuung* und die *Symmetrie*. 
 
-Nach dieser Einheit solltest Du die folgenden Fragen beantworten können:
+Nach diesem Kapitel solltest Du die folgenden Fragen beantworten können:
 
 - Wie erstelle und interpretiere ich eine (relative) Häufigkeitstabelle?
 - Welche grundlegenden Statistiken kann ich mit `pandas`-Funktionen ausrechnen?
@@ -54,5 +54,7 @@ Nach dieser Einheit solltest Du die folgenden Fragen beantworten können:
 {{% customnotice tip %}}
 
 Im Folgenden werden mit $x = x_1, \dots, x_n$ eine (univariate) Reihe von Beobachtungen beschrieben. Dabei stellt $n$ die Anzahl der Beobachtungen dar und $x_i$ beschreibt die Beobachtung an der *i*-ten Stelle.
+
+Beispiel Wahlumfrage: Es werden zufällig n=100 Personen aus dem Wahlregister gezogen und nach nach ihren Parteipräferenzen befragt. 
 
 {{% /customnotice%}}

@@ -75,9 +75,9 @@ Da normalerweise der Datensatz komplett in den Arbeitsspeicher geladen werden mu
 
 #### 2.4 Exkurs: Arbeitsspeicher (30 Min)
 
-- Finden Sie heraus, wie viel **freier** Arbeitsspeicher Ihr Computer hat (Das Betriebssystem und Hintergrundprogramme verbrauchen auch RAM).
-- Wie viele `int64` Werte, also Zahlen, die 8 Byte (=64 Bit) Speicher benötigen, können Sie damit theoretisch in den Arbeitsspeicher laden? Tip: Nutzen sie [Google zum Umrechnen](https://www.google.com/search?q=15.4+GiB+in+Byte).
-- Wie viele Beobachtungen kann eine Tabelle mit 100 numerischen Variablen damit maximal theoretisch haben, damit Sie diese noch bearbeiten können?
-- Nutzen Sie die [Funktion `df.memory_usage()`](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.memory_usage.html) um sich den tatsächlich benötigten Speicher eines `DataFrames` oder einer `Series` anzeigen zu lassen. Mit dem Funktionsargument `deep=True` wird der Wert genau ermittelt und nicht nur geschätzt. 
+- Finde heraus, wie viel **freier** Arbeitsspeicher Dein Computer hat (Das Betriebssystem und Hintergrundprogramme verbrauchen auch RAM).
+- Wie viele `int64` Werte, also Zahlen, die 8 Byte (=64 Bit) Speicher benötigen, kannst Du damit theoretisch in den Arbeitsspeicher laden? Tip: Nutze [Google zum Umrechnen](https://www.google.com/search?q=15.4+GiB+in+Byte).
+- Wie viele Beobachtungen kann eine Tabelle mit 100 numerischen Variablen damit maximal theoretisch haben, damit Du diese noch bearbeiten kannst?
+- Nutze die [Funktion `df.memory_usage()`](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.memory_usage.html) um Dir den tatsächlich benötigten Speicher eines `DataFrames` oder einer `Series` anzeigen zu lassen. Mit dem Funktionsargument `deep=True` wird der Wert genau ermittelt und nicht nur geschätzt. 
 
 {{% /customnotice %}}

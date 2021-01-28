@@ -32,7 +32,7 @@ df.columns
 ```
 {{% /customnotice %}}
 
-Einzelne `Series` können wie bei einem Python Dictionary mit `df[<name>]` extrahiert werden. Mehre Spalten mit `df[[<name1>, <name2]]`. Wenn Du Spalten mit der doppelten Liste `[[...]]` auswählst erhältst Du in jedem Fall wieder einen `DataFrame` zurück. Das Ergebnis der Auswahl kannst Du bei Bedarf wieder in einer Variablen abspeichern:
+Einzelne `Series` können wie bei einem Python Dictionary mit `df[<name>]` extrahiert werden. Mehre Spalten mit `df[[<name1>, <name2]]`. Wenn Du Spalten mit der doppelten Liste `[[...]]` auswählst, erhältst Du in jedem Fall wieder einen `DataFrame` zurück. Das Ergebnis der Auswahl kannst Du bei Bedarf wieder in einer Variablen abspeichern:
 
 {{% customnotice code %}}
 ```python

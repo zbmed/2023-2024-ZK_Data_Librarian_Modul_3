@@ -22,7 +22,7 @@ LastModifierDisplayName = ""
 LastModifierEmail = ""
 +++
 
-Die Zentralität einer Verteilung (die durch Lagemaße beschrieben wird) ist nur eine wichtige Kennzahl. *Streuungsmaße* geben zusätzlich an, wie stark die Daten einer Messreihe schwanken. Die Streuung einer Variable ist entscheidend z.B. bei der Beurteilung mit welcher Wahrscheinlichkeit extreme Werte vorkommen können.
+Die Zentralität einer Verteilung (die durch Lagemaße beschrieben wird) ist nur eine wichtige Kennzahl. *Streuungsmaße* geben zusätzlich an, wie stark die Daten einer Messreihe schwanken. Die Streuung einer Variable ist entscheidend z.B. bei der Beurteilung mit welcher Wahrscheinlichkeit extreme Werte vorkommen können. Die bekanntesten Streuungsmaße sind die Varianz, die Standardabweichung und der Variantionskoeffizient.
 
 
 ### Varianz
@@ -72,6 +72,8 @@ $$
 Welche Variable streut mehr: `'Total Checkouts'` oder `'Total Renewals'`? Vergleiche die Standardabweichungen und den Variationskoeffizienten miteinander. 
 {{% /customnotice %}}
 
+
+Weitere Steruungsmaße sind die Spannweite und der Interquartilabstand.
 
 ### Spannweite
 

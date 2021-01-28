@@ -27,19 +27,22 @@ Ein häufiges Problem bei der statistischen Datenanalyse ist die Frage, ob **sig
 
 Von einem signifikanten Unterschied spricht man, wenn die Differenz zwischen den Mittelwerten zweier Stichproben so groß ist, dass es sehr Unwahrscheinlich ist, dass dieser Unterschied alleine aufgrund der rein zufälligen Schwankungen durch die Stichprobenziehung entstanden ist. 
 
-Wenn wir mit $\mu_x$ und $\mu_y$ die wahren aber unbekannten Mittelwerte in der Population bezeichnen und mit $\Delta_{xy}$ die Differenz dieser Mittelwerte, dann lautet unsere **Hypothese**:
+Wenn wir mit $\mu_x$ und $\mu_y$ die wahren aber unbekannten Mittelwerte in der Population bezeichnen und mit $\Delta_{xy}$ die Differenz dieser Mittelwerte, dann lautet unsere Hypothese:
+
 
 $$
-H_0: \mu_x = \mu_y \iff \Delta_{xy} = \mu_x - \mu_y = 0
+H_0: \mu_x = \mu_y \iff \Delta_{xy} = \mu_x - \mu_y = 0.
 $$
 
-Wenn diese Hypothese zutrifft, dann gibt es keine Unterschiede in den Mittelwerten der beiden Populationen. Wie lässt sich diese Hypothese nun anhand von zwei Stichproben $x = x_1, \dots, x_{n_x}$ und $y = y_1, \dots, y_{n_y}$ und deren Mittelwerten $\bar{x}$ und $\bar{y}$ statistisch überprüfen?
+Wenn diese Hypothese zutrifft, dann gibt es keine Unterschiede in den Mittelwerten der beiden Populationen. 
+
+Wie lässt sich diese Hypothese nun anhand von zwei Stichproben $x = x_1, \dots, x_{n_x}$ und $y = y_1, \dots, y_{n_y}$ und deren Mittelwerten $\bar{x}$ und $\bar{y}$ statistisch überprüfen?
 
 Wir können das bisherige **Bootstrapping-Verfahren** auch hier anwenden, um die Stichprobenverteilung von $d_{xy} = \bar{x}-\bar{y}$ zu schätzen. In jeder Simulation $s = 1, \dots, S$ erstellen wir eine Bootstrapping-Stichprobe von $x$ und $y$ und berechnen darauf die Differenz $d_{xy}$ über die Mittelwerte. 
 
 {{% customnotice alert%}}
 
-Beachten Sie, dass  sich das grundlegende Verfahren und die Bestimmung der Konfidenzintervalle im Vergleich zur vorherigen Lektion **nicht ändert**. Einzig der zu interessierende Schätzwert wird ausgetauscht: Wo vorher nur die Stichprobenverteilung von $\bar{x}$ bestimmt wurde, ist es nun die Verteilung von $d_{xy} = \bar{x}-\bar{y}$.
+Beachte, dass sich das grundlegende Verfahren und die Bestimmung der Konfidenzintervalle im Vergleich zur vorherigen Lektion **nicht ändert**. Einzig der zu interessierende Schätzwert wird ausgetauscht: Wo vorher nur die Stichprobenverteilung von $\bar{x}$ bestimmt wurde, ist es nun die Verteilung von $d_{xy} = \bar{x}-\bar{y}$.
 
 {{% /customnotice%}}
 

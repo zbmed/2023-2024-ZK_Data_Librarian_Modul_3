@@ -58,7 +58,7 @@ weight = 9
 [[menu.shortcuts]]
 name = "<i class='fas fa-users'></i> Moodle Kursumgebung"
 identifier = "moodle"
-url = "https://zbiw.th-koeln.de/moodle/course/view.php?id=300"
+url = "https://zbiw.th-koeln.de/moodle/course/view.php?id=387&section=4"
 weight = 20
 
 [[menu.shortcuts]]

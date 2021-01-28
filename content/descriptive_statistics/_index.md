@@ -42,7 +42,7 @@ Vorausgesetzt wird statistisches Grundvokabular, wie in der letzten Einheit [beh
 
 {{% customnotice exercise %}}
 
-### Projektaufgabe - Deskriptive Statistik und Visualisierungen
+### Projektaufgabe: Deskriptive Statistik und Visualisierungen
 
 Für den Online-Artikel zum Kundenstamm der Bibliothek braucht die Pressestelle einige interessanten Zahlen zum Thema Alter und Bibliotheksnutzung. Außerdem möchte sie die Daten in einer Info-Graphik zusammenstellen.
 

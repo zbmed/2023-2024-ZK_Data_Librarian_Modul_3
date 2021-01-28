@@ -24,9 +24,12 @@ LastModifierEmail = ""
 
 Für **metrische Variablen** beschreiben *Lagemaße* die Zentralität einer Verteilung. 
 
+Wir werden uns hier auf die Lagemaße Mittelwert, Median und Quantil beschränken. 
+
+
 ### Mittelwert
 
-Das bekannteste Lagemaß ist der empirische **Mittelwert**:
+Das bekannteste Lagemaß ist der empirische **Mittelwert** (arithmetisches Mittel):
 
 $$
 \bar{x} = \frac{1}{n}\sum_{i=1}^{n}x_i = \frac{x_1 + x_2 + \dots + x_n}{n}

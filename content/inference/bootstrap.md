@@ -35,7 +35,7 @@ Eine einzelne Bootstrapping-Stichprobe erhält man, indem aus der vorhanden Stic
 
 #### Beispiel
 
-Nehmen Sie an, dass die Stichprobe die folgenden $n=7$ Werte enthält:
+Nimm an, dass die Stichprobe die folgenden $n=7$ Werte enthält:
 
 ```python
 import pandas as pd
@@ -43,7 +43,7 @@ x = pd.Series([21, 13,  8, 14, 10, 12,  5])
 x.mean()
 ```
 
-Eine simulierte Bootstrapping-Stichprobe erhalten Sie, indem Sie aus der vorhandenen Stichprobe genau $n=7$ Werte mit Zurücklegen (`replace=True`) zufällig auswählen:
+Eine simulierte Bootstrapping-Stichprobe erhältst Du, indem Du aus der vorhandenen Stichprobe genau $n=7$ Werte mit Zurücklegen (`replace=True`) zufällig auswählst:
 
 ```python
 x.sample(n=len(x), replace=True) 
@@ -66,7 +66,7 @@ for i in range(S):
     x_means.append(x_mean)
 ```
 
-Die Mittelwerte jeder Simulation werden in der Liste `x_means` abgespeichert. Die Liste enthält nun eine empirische Stichprobenverteilung des Mittelwerts. Nun können Sie sich die Verteilung des Stichproben-Mittelwertes beispielsweise in einem Histogramm ansehen:
+Die Mittelwerte jeder Simulation werden in der Liste `x_means` abgespeichert. Die Liste enthält nun eine empirische Stichprobenverteilung des Mittelwerts. Nun kannst Du Dir die Verteilung des Stichproben-Mittelwertes beispielsweise in einem Histogramm ansehen:
 
 ```python
 #matplotlib inline
@@ -86,12 +86,14 @@ x_means.between(9,11).mean()
 
 {{% customnotice exercise %}}
 
-- Lesen Sie den Datensatz ein
-- Um eine homogene Stichprobe zu erhalten filtern Sie nach Bibliothekskunden die sich im Jahr 2010 registriert haben und auch noch im Jahr 2016 (als der Datensatz erstellt wurde) aktiv waren. Achtung: Die Spalte `'Circulation Active Year'` wird standardmäßig als Text eingelesen. 
-- Betrachten Sie die Variable `'Total Renewals'`. Wie viele Verlängerungen wurden im Mittel durchgeführt?
-- Erstellen Sie, wie oben beschrieben, eine Stichprobenverteilung für den Mittelwert.
+#### 4.1 Bootstrapping-Verfahren
+
+- Lies Sie den [Datensatz](/data-librarian/organisation/dataset/) ein.
+- Um eine homogene Stichprobe zu erhalten filtere nach Bibliothekskunden die sich im Jahr 2010 registriert haben und auch noch im Jahr 2016 (als der Datensatz erstellt wurde) aktiv waren. [*Achtung: Die Spalte `'Circulation Active Year'` wird standardmäßig als Text eingelesen*] 
+- Betrachte die Variable `'Total Renewals'`. Wie viele Verlängerungen wurden im Mittel durchgeführt?
+- Erstelle, wie oben beschrieben, eine Stichprobenverteilung für den Mittelwert.
 - Wie viel Prozent der Stichproben-Mittelwerte liegen zwischen 89 und 92 Verlängerungen?
-- Wie groß müssen Sie das Intervall wählen, sodass 90% aller Bootstrapping-Mittelwerte darin liegen (Tip: Nutzen Sie die Funktion `pandas.Series.quantile`)?
+- Wie groß musst Du das Intervall wählen, so dass 90% aller Bootstrapping-Mittelwerte darin liegen? [*Tipp: Nutze die Funktion `pandas.Series.quantile`*]
 
 {{% /customnotice %}}
 

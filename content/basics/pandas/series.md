@@ -34,7 +34,7 @@ x.dtype
 {{% /customnotice %}}
 
 {{% customnotice tip %}}
-Ein Datentyp ist die grundlegende Einheit, in der einzelne Werte in einer Programmiersprache vom Computer gespeichert und verarbeitet werden können. Beispiele für Datentypen in `pandas` sind: `float` für Gleitkommazahlen, `int` für Ganzzahlen, `bool` für binäre `True`, `False` Werte oder `datetime` für Datumswerte. Text wird im pandas-spezifischen Format `object` abgespeichert. Für einen `DataFrame` der beispielsweise in einer Variable mit dem Namen `df` gepeichert ist, können Sie sich die Datentypen jeder Spalte mit `df.dtypes` ausgeben lassen.
+Ein Datentyp ist die grundlegende Einheit, in der einzelne Werte in einer Programmiersprache vom Computer gespeichert und verarbeitet werden können. Beispiele für Datentypen in `pandas` sind: `float` für Gleitkommazahlen, `int` für Ganzzahlen, `bool` für binäre `True`, `False` Werte oder `datetime` für Datumswerte. Text wird im pandas-spezifischen Format `object` abgespeichert. Für einen `DataFrame` der beispielsweise in einer Variable mit dem Namen `df` gepeichert ist, kannst Du Dir die Datentypen jeder Spalte mit `df.dtypes` ausgeben lassen.
 {{% /customnotice %}}
 
 Ein `DataFrame` fasst mehrere `Series` **gleicher Länge** zu einer Datentabelle mit Zeilen (Beobachtungen), Spalten (Variablen) und Spaltennamen (Variablennamen) zusammen.

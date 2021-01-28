@@ -43,7 +43,7 @@ Das Standard-Paket um mit Datentabellen in Python zu arbeiten, ist `pandas`. Das
 
 1. Erstelle ein Jupyter Notebook in Deinem [Projektordner](/data-librarian/organisation/dataset/) unter `./notebooks` mit dem Namen `pandas_introduction.ipynb`.
 2. Führe die Beispiele in den nachfolgenden Abschnitten aus und versuche, die Aufgaben zu lösen. 
-3. Nach dieser Einheit solltest Du die folgenden Fragen beantworten können:
+3. Nach diesem Kapitel solltest Du die folgenden Fragen beantworten können:
     - Wie kann ich Tabellendaten in pandas einlesen?
     - Wie werden Daten in pandas angeordnet?
     - Welche Datentypen können Spalten eines DataFrames annehmen?

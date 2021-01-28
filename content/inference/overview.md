@@ -22,15 +22,15 @@ LastModifierDisplayName = ""
 LastModifierEmail = ""
 +++
 
-Bisher haben Sie vorliegende Daten einer **Stichprobe** mit Visualisierungen und Statistiken beschrieben und zusammengefasst. Von Interesse sind aber in der Regel die Zusammenhänge und Statistiken in der **Gesamtpopulation**.
+Bisher haben wir vorliegende Daten einer **Stichprobe** mit Visualisierungen und Statistiken beschrieben und zusammengefasst. Von Interesse sind aber in der Regel die Zusammenhänge und Statistiken in der **Gesamtpopulation**.
 
-Beispiel Wahlumfrage: Sie ziehen zufällig $n=100$ Personen aus dem Wahlregister und befragen Sie nach ihren Parteipräferenzen. Sie können dann beispielsweise den relativen Anteil der Personen in Ihrer Stichprobe, die eine bestimmte Partei favorisieren, bestimmen. Damit haben Sie einen **Schätzwert** für den tatsächlichen Wert, wenn Sie alle Personen des Wahlregisters befragt hätten.
+Beispiel Wahlumfrage: Es werden zufällig $n=100$ Personen aus dem Wahlregister gezogen und nach nach ihren Parteipräferenzen befragt. Man kann dann beispielsweise den relativen Anteil der Personen in der Stichprobe, die eine bestimmte Partei favorisieren, bestimmen. Damit hat man einen **Schätzwert** für den tatsächlichen Wert, wenn man **alle** Personen des Wahlregisters befragt hätte.
 
-Ziehen Sie eine weitere Stichprobe, so werden die neuen Schätzwerte nicht genau mit denen aus der vorherigen Stichprobe übereinstimmen. Ziehen Sie noch eine Stichprobe, so wird auch hier der Mittelwert wieder geringfügig anders sein. Wollen Sie deswegen eine Aussage über die tatsächlichen Anteile in der Gesamtpopulation treffen, so ist diese Aussage immer mit **Unsicherheit** behaftet.
+Zieht man eine weitere Stichprobe, so werden die neuen Schätzwerte nicht genau mit denen aus der vorherigen Stichprobe übereinstimmen. Zieht man noch eine Stichprobe, so wird auch hier der Mittelwert wieder geringfügig anders sein. Will man deswegen eine Aussage über die tatsächlichen Anteile in der Gesamtpopulation treffen, so ist diese Aussage immer mit **Unsicherheit** behaftet.
 
-Der Mittelwert/ relative Anteil ändert sich mit jeder Stichprobe, die Sie ziehen. Damit können die auf einer Stichprobe berechneten Schätzwerte als statistische Variablen betrachtet werden. Wie für andere Variablen auch, kann diese **Stichprobenverteilung** deskriptiv beschrieben werden.
+Der Mittelwert/relative Anteil ändert sich mit jeder Stichprobe, die man zieht. Damit können die auf einer Stichprobe berechneten Schätzwerte als **statistische Variablen** betrachtet werden. Wie für andere Variablen auch, kann diese **Stichprobenverteilung** deskriptiv beschrieben werden.
 
-In der Realität wird aber in der Regel nur eine einzige Stichprobe der Größe $n$ gezogen. Wie können Sie von Mittelwerten einer einzelnen Stichprobe auf den "wahren" zugrundeliegenden Wert in der Gesamtpopulation schließen? Wie können Sie die Unsicherheiten, die dabei auftreten quantifizieren? Mit diesen Fragen beschäftigt sich die **Inferenzstatistik!**
+In der Realität wird aber in der Regel nur eine einzige Stichprobe der Größe $n$ gezogen. Wie kann mann dann von den Mittelwerten einer einzelnen Stichprobe auf den "wahren" zugrundeliegenden Wert in der Gesamtpopulation schließen? Wie kann man die Unsicherheiten, die dabei auftreten quantifizieren? Mit diesen Fragen beschäftigt sich die **Inferenzstatistik!**
 
 
 {{< youtube QU8OLpSfzB8 >}}
