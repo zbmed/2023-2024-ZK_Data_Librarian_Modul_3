@@ -59,15 +59,16 @@ Von oben links nach unten rechts:
 {{%attachments title="Lösungen" pattern="solutions_outlier" /%}}
 
 
-#### Symmetrie: Fallstudie
+<!--#### Symmetrie: Fallstudie
 
 {{%attachments title="Lösungen" pattern="solutions_case_study" /%}}
+-->
 
-#### Korrelation: Anscombe-Quartett
+#### 3.8 Exkurs: Anscombe-Quartett
 
 {{%attachments title="Lösungen" pattern="solutions_anscombe" /%}}
 
-#### Fox News
+#### 3.9 Balkendiagramme bei Fox News
 
 Die Balkendiagramme beginnen nicht im Nullpunkt. Somit werden die relativen Unterschiede viel größer dargestellt, als sie in Wahrheit sind.
 

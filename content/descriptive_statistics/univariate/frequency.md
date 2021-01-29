@@ -54,6 +54,6 @@ age_mode[0]
 
 1. Erstelle eine Häufigkeitsverteilung für die Variable `'Year Patron Registered'`. Wieviel Prozent der Kunden wurden 2013 im System registriert? Wie viele in den kommenden Jahren? Was fällt Dir auf?
 2. Wieviel Prozent der Kunden sind zwischen 25 und 34 Jahren?
-3. Ersetze die fehlenden Werte in der Spalte `Age Range` durch den Modus dieser Spalte. Nutzen Sie dazu die Funktion `DataFrame.fillna` (siehe [hier](https://devdocs.io/pandas~0.25/reference/api/pandas.dataframe.fillna) für die Dokumentation). 
+3. Ersetze die fehlenden Werte in der Spalte `Age Range` durch den Modus dieser Spalte. Nutze dazu die Funktion `DataFrame.fillna` (siehe [hier](https://devdocs.io/pandas~0.25/reference/api/pandas.dataframe.fillna) für die Dokumentation). 
 4. Denkst Du, es handelt sich dabei um eine gute Methode, fehlende Werte zu ersetzen? Welche anderen Strategien fallen Dir ein?
 {{% /customnotice %}}

@@ -24,7 +24,7 @@ LastModifierEmail = ""
 
 > Statistical analysis is a process of understanding how variables in a dataset relate to each other and how those relationships depend on other variables. Visualization can be a core component of this process because, when data are visualized properly, the human visual system can see trends and patterns that indicate a relationship. *https://seaborn.pydata.org/tutorial/relational.html*
 
-Die zahlreichen Funktionen, die `seaborn` bietet basieren immer auf dem gleichen Prinzip: Visualisiert werden (nominale, ordinale, metrische) **Variablen** eines Datensatzes, die in Form eines `DataFrame`s vorliegen. Das **Skalenniveau** der Variablen bestimmt dabei die Art der Visualisierung. Variablen können verschiedenen Eigenschaften des Diagramms zugeordnet werden (z.B. die Punktgröße oder Farbe der Balken). Am besten lässt sich das Prinzip an einem Beispiel erkennen.
+Die zahlreichen Funktionen, die `seaborn` bietet basieren immer auf dem gleichen Prinzip. Visualisiert werden (nominale, ordinale, metrische) **Variablen** eines Datensatzes, die in Form eines `DataFrame`s vorliegen. Das **Skalenniveau** der Variablen bestimmt dabei die Art der Visualisierung. Variablen können verschiedenen Eigenschaften des Diagramms zugeordnet werden (z.B. die Punktgröße oder Farbe der Balken). Am besten lässt sich das Prinzip an einem Beispiel erkennen.
 
 
 ### Grundlagen

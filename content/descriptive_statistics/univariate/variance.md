@@ -33,6 +33,16 @@ $$
 s^2_x = \frac{1}{n-1}\sum_{i=1}^{n}(x_i-\bar{x})^2
 $$
 
+
+{{% customnotice tip %}}
+
+Denk wieder an das Beispiel Wahlumfrage, wo $x_1, \dots, x_n$ die Beobachtungen beschreiben. Dabei stellt $n$ die Anzahl der Beobachtungen dar und $x_i$ beschreibt die Beobachtung an der *i*-ten Stelle. In der obigen Formel bezeichnet $\bar{x}$ den Mittelwert.
+
+{{% /customnotice%}}
+
+Angewendet auf unseren Datensatz für die Anzahl der Ausleihen:
+
+
 {{% customnotice code %}}
 ```python
 df['Total Checkouts'].var()
@@ -72,6 +82,7 @@ $$
 Welche Variable streut mehr: `'Total Checkouts'` oder `'Total Renewals'`? Vergleiche die Standardabweichungen und den Variationskoeffizienten miteinander. 
 {{% /customnotice %}}
 
+---
 
 Weitere Steruungsmaße sind die Spannweite und der Interquartilabstand.
 
@@ -104,7 +115,7 @@ df['Total Checkouts'].quantile(q=0.75) - df['Total Checkouts'].quantile(q=0.25)
 
 #### 3.5 Exkurs: Ausreißerentfernung II (30 Min)
 
-- Identifiziere positive Ausreißer in der Spalte `Total Checkouts`. Ausreißer werden jetzt definiert, als Beobachtungen $x_i$ für die gilt:
+- Identifiziere positive Ausreißer in der Spalte `Total Checkouts`. Ausreißer werden jetzt  als Beobachtungen $x_i$ definiert, für die gilt:
 $$
 x_i > x_{0.75} + 1.5x_{IQR}
 $$

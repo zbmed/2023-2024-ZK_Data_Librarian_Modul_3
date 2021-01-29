@@ -26,7 +26,7 @@ LastModifierEmail = ""
 {{%attachments title="Related files"
 pattern="distributions.ipynb" /%}}
 
-Um eine metrische Verteilung charakterisieren zu können, ist neben der zentralen Lage- und Streuung auch deren *Symmetrie* und *Schiefe* von Bedeutung. Die Symmetrie sagt etwas über die **(Un-)Gleichverteilung** der Werte einer Variablen aus. Bei stark asymmetrischen Variablen (z.B. Haushaltseinkommen in Deutschland) ist das auftreten von kleinen Werten viel wahrscheinlicher, als das auftreten von sehr großen Werten (oder umgekehrt).
+Um eine metrische Verteilung charakterisieren zu können, ist neben der zentralen Lage- und Streuung auch deren **Symmetrie** und **Schiefe** von Bedeutung. Die Symmetrie sagt etwas über die *(Un-)Gleichverteilung* der Werte einer Variablen aus. Bei stark asymmetrischen Variablen (z.B. Haushaltseinkommen in Deutschland) ist das auftreten von kleinen Werten viel wahrscheinlicher, als das auftreten von sehr großen Werten (oder umgekehrt).
 
 Das Bild zeigt [**Histogramme**](https://de.wikipedia.org/wiki/Histogramm) für verschiedene simulierte Zufallswerte der [Beta-Verteilung](https://de.wikipedia.org/wiki/Beta-Verteilung). Dabei wurden jeweils die Parameter der theoretischen Verteilung $\alpha$ und $\beta$ geändert. Somit kann eine große Bandbreite charakteristischer Verteilungen abgedeckt werden. Neben dem Histogramm wurde auch der empirische Median und Mittelwert der Verteilung als vertikale Linien eingezeichnet.
 
@@ -49,6 +49,7 @@ Zudem kann eine Verteilung auch **Gleichverteilt, Bi- oder Multimodal** sein. Im
 - Ist die Verteilung **Bi- oder Multimodal** (s. nachfolgende Einheit) so können die Lagemaße Mittelwert und Median irreführend sein, da sie in der Regel nicht mit den "Gipfeln" der Verteilung (Modus) übereinstimmen.
 {{% /customnotice %}}
 
+---
 
 ### Verteilung der Ausleihen pro Kunde
 

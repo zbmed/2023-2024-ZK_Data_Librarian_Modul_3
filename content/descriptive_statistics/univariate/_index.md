@@ -26,7 +26,7 @@ In der Statistik geben **Verteilungen** an, wie wahrscheinlich oder häufig eine
 
 **Empirische Verteilungen** beziehen sich dabei auf die Häufigkeiten in beobachtbaren Daten während **theoretische Verteilungen** mathematische Funktionen sind, die meist von einigen wenigen Parametern abhängen.
 
-Beispielsweise kann die [Normalverteilung](https://de.wikipedia.org/wiki/Normalverteilung) über die beiden Parameter Erwartungswert (`loc`) und Varianz (`scale`) beschrieben werden. Zufällig generierte Zahlen aus dieser Verteilung kann man beispielsweise mit `numpy` erhalten:
+<!--Beispielsweise kann die [Normalverteilung](https://de.wikipedia.org/wiki/Normalverteilung) über die beiden Parameter Erwartungswert (`loc`) und Varianz (`scale`) beschrieben werden. Zufällig generierte Zahlen aus dieser Verteilung kann man beispielsweise mit `numpy` erhalten:
 
 {{% customnotice code %}}
 ```
@@ -36,12 +36,14 @@ np.random.normal(loc=3, scale=3, size=10)
 ```
 {{% /customnotice %}}
 
+
 ---
+-->
 
-Statistiken, wie der Mittelwert, die Varianz oder der Modus dienen zur Beschreibungen und Charakterisierung von Verteilungen mittels einiger weniger aussagekräftigen Kennzahlen. Dabei gibt es Statistiken, die oft nur auf Variablen eines bestimmten Skalenniveaus anwendbar sind.
+Statistiken wie der Mittelwert oder die Varianz <!--oder der Modus--> dienen der Beschreibung und Charakterisierung von Verteilungen mittels einiger weniger aussagekräftigen Kennzahlen. Dabei gibt es Statistiken, die oft nur auf Variablen eines bestimmten Skalenniveaus ([kleine Erinnerung](/data-librarian/basics/basic_terms/)) anwendbar sind.
 
 
-**Kategoriale Variablen** (nominale und ordinale Variablen, [kleine Erinnerung](/data-librarian/basics/basic_terms/)) werden typischerweise in *Häufigkeitstabellen* zusammengefasst. Wichtige Kennzahlen für **metrische Variablen** sind die *zentrale Lage*, *Modalität*, *Streuung* und die *Symmetrie*. 
+*Kategoriale Variablen* (nominale und ordinale Variablen),  werden typischerweise in **Häufigkeitstabellen** zusammengefasst. Wichtige Kennzahlen für *metrische Variablen* sind hingegen u.a. die **zentrale Lage**, **Streuung** und die **Symmetrie**. 
 
 Nach diesem Kapitel solltest Du die folgenden Fragen beantworten können:
 
@@ -55,6 +57,6 @@ Nach diesem Kapitel solltest Du die folgenden Fragen beantworten können:
 
 Im Folgenden werden mit $x = x_1, \dots, x_n$ eine (univariate) Reihe von Beobachtungen beschrieben. Dabei stellt $n$ die Anzahl der Beobachtungen dar und $x_i$ beschreibt die Beobachtung an der *i*-ten Stelle.
 
-Beispiel Wahlumfrage: Es werden zufällig n=100 Personen aus dem Wahlregister gezogen und nach nach ihren Parteipräferenzen befragt. 
+Beispiel Wahlumfrage: Es werden zufällig n=100 Personen aus dem Wahlregister gezogen und nach nach ihren Parteipräferenzen befragt. Eine Beobachtung $x_i$ stellt dabei die Charakteristiken einer befragten Person $i$ dar (neben der Parteipräferenz können das allgemeine beschreibende Daten sein wie Alter, Geschlecht, etc.)
 
 {{% /customnotice%}}

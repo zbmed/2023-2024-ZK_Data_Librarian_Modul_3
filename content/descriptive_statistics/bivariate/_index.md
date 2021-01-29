@@ -33,7 +33,7 @@ Nach diesem Kapitel solltest Du  beispielsweise die folgenden Fragen beantworten
 Zwei Variablen, die keinen Zusammenhang aufweisen, nennt man **statistisch unabhängige** Variablen. Für zwei metrische Variablen kann man außerdem zwischen einem positiven oder einem negativem Zusammenhang unterscheiden.
 
 ![](/data-librarian/images/boxplots.png)
-*Boxplot-Verteilung der Ausleihen nach Jahr der Registrierung. Das Notebook können Sie [hier](/data-librarian/images/boxplots.ipynb) herunterladen.*
+*Boxplot-Verteilung der Ausleihen nach Jahr der Registrierung. Das Notebook kannst Du Dir [hier](/data-librarian/images/boxplots.ipynb) herunterladen.*
 
 
 

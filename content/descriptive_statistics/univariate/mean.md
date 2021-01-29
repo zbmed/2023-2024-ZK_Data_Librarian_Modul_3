@@ -24,7 +24,7 @@ LastModifierEmail = ""
 
 Für **metrische Variablen** beschreiben *Lagemaße* die Zentralität einer Verteilung. 
 
-Wir werden uns hier auf die Lagemaße Mittelwert, Median und Quantil beschränken. 
+Wir werden uns hier auf die Lagemaße *Mittelwert*, *Median* und *Quantil* beschränken. 
 
 
 ### Mittelwert
@@ -34,6 +34,15 @@ Das bekannteste Lagemaß ist der empirische **Mittelwert** (arithmetisches Mitte
 $$
 \bar{x} = \frac{1}{n}\sum_{i=1}^{n}x_i = \frac{x_1 + x_2 + \dots + x_n}{n}
 $$
+
+
+{{% customnotice tip %}}
+
+Denk wieder an das Beispiel Wahlumfrage, wo $x_1, \dots, x_n$ die Beobachtungen beschreiben. Dabei stellt $n$ die Anzahl der Beobachtungen dar und $x_i$ beschreibt die Beobachtung an der *i*-ten Stelle.
+
+{{% /customnotice%}}
+
+Hier ein Beispiel aus unserem Datensatz:
 
 {{% customnotice code %}}
 ```python
@@ -106,9 +115,9 @@ df['Total Checkouts'].quantile([alpha, 1-alpha])
 
 #### 3.3 Exkurs: Ausreißerentfernung I (30 Min)
 
-- Identifzieren Sie jeweils die 1.5% größten Werte in der Spalte `Total Checkouts`. Definieren Sie diese Werte als Ausreißer. 
-- Erstellen Sie einen Datensatz, für den diese Ausreißer entfernt sind.
-- Handelt es sich hierbei um eine gute Methode, Ausreißer zu identifizieren und zu behandeln? Welche anderen Strategien kennen Sie?
+- Identifziere jeweils die 1.5% größten Werte in der Spalte `Total Checkouts`. Definiere diese Werte als Ausreißer. 
+- Erstelle einen Datensatz, für den diese Ausreißer entfernt sind.
+- Handelt es sich hierbei um eine gute Methode, Ausreißer zu identifizieren und zu behandeln? Welche anderen Strategien kennst Du?
 {{% /customnotice %}}
 
 
