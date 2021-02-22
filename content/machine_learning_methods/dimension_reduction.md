@@ -22,7 +22,7 @@ LastModifierDisplayName = ""
 LastModifierEmail = ""
 +++
 
-Bitte erstellen Sie ein neues Jupyter-Notebook und nennen es
+Bitte erstelle ein neues Jupyter-Notebook und nennen es
 `Dimensionsreduktion`.
 
 

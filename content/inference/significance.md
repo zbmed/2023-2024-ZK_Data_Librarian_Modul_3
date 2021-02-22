@@ -27,7 +27,7 @@ LastModifierEmail = ""
 
 Im vorherigen Beispiel hast Du mit Hilfe des Bootstrapping-Verfahrens die Stichprobenverteilung geschätzt. Wenn die Stichprobenverteilung bekannt ist, können damit Aussagen über den tatsächlichen Parameter in der Population (im Bild mit $\mu$ bezeichnet) getroffen werden. 
 
-Eine häufig angewandte Methode sind **Konfidenzintervalle** (KI). Sie geben einen Bereich aus der Stichprobenverteilung des Schätzwertes an, der den wahren Wert in der Population mit hoher Wahrscheinlichkeit überdeckt. Die Wahrscheinlichkeit wird mit $1-\alpha$ angegeben. Der Wert $\alpha$ wird **Signifikanzniveau** genannt und vor der Bestimmung des Intervalls festgelegt. Üblicherweise wird $\alpha=0.10$, $\alpha=0.05$, oder $\alpha=0.01$ gesetzt. 
+Eine häufig angewandte Methode sind **Konfidenzintervalle** (KI). Man gibt einen Bereich aus der Stichprobenverteilung des Schätzwertes an, der den wahren Wert in der Population mit hoher Wahrscheinlichkeit überdeckt. Die Wahrscheinlichkeit wird mit $1-\alpha$ angegeben. Der Wert $\alpha$ wird **Signifikanzniveau** genannt und vor der Bestimmung des Intervalls festgelegt. Üblicherweise wird $\alpha=0.10$, $\alpha=0.05$, oder $\alpha=0.01$ gesetzt. 
 
 Ein breites Konfidenzintervall zeigt auf, dass die Schätzwerte stark schwanken und dass der wahre Populationsparameter deswegen nur sehr ungenau bestimmt werden kann. Mit größerer Stichprobengröße verkleinert sich in der Regel der Stichprobenfehler und damit auch das Intervall: Es können **präzisere Aussagen** über die Population getroffen werden.
 

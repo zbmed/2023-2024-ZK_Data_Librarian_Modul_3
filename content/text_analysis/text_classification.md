@@ -334,10 +334,10 @@ tfidf_transformer = TfidfTransformer(use_idf=True).fit(X_train_counts)
 ```
 {{% /customnotice %}}
 
-Machen Sie mit diesem TFIDF-Ansatz äquivalent zu der Klassifikation
-mit dem TF-Ansatz weiter. D.h. führen Sie alle nötigen Schritte wie
-Training, Scoring und Prediction durch. Ist das Ergebnis besser? Gerne
-können Sie zusätzlich mit anderen Klassifikator-Typen anstelle von
-Randeom Forest experiment werden (z.B. SVMs oder neuronale Netzen), um
-zu testen, ob dies zu einer besseren Klassifikation führt.
+Mach mit diesem TFIDF-Ansatz äquivalent zu der Klassifikation mit
+dem TF-Ansatz weiter. D.h. führe alle nötigen Schritte wie Training,
+Scoring und Prediction durch. Ist das Ergebnis besser? Gerne kannst
+Du zusätzlich mit anderen Klassifikator-Typen anstelle von Randeom
+Forest experiment werden (z.B. SVMs oder neuronale Netzen), um zu
+testen, ob dies zu einer besseren Klassifikation führt.
 

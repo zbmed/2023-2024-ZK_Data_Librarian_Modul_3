@@ -39,8 +39,7 @@ und und [Term frequency inverse document
 frequency](https://de.wikipedia.org/wiki/Tf-idf-Ma%C3%9F) (TFIDF)),
 auf. Für die Implementation greifen wir wieder `scikit-learn` zurück.
 
-Bitte nutzen Sie den Ordner `machine_learning` in ihrem Modul-Ordner
-und erstellen Sie darin einen ein Jupyter-Notebook names
-`Text-Analyse`. Die Einreichung der Ergebnisse erfolgt über einen
-Commit bis zum Präsenztag. Musterlösungen sind [hier](./solutions) zu
-finden.
+Bitte nutze den Ordner `machine_learning` in Deinem Modul-Ordner und
+erstelle darin einen ein Jupyter-Notebook names `Text-Analyse`. Die
+Einreichung der Ergebnisse erfolgt über einen Commit bis zum
+Präsenztag. Musterlösungen sind [hier](./solutions) zu finden.

@@ -22,7 +22,7 @@ LastModifierDisplayName = ""
 LastModifierEmail = ""
 +++
 
-Bitte erstellen Sie ein neues Jupyter-Notebook und nennen es
+Bitte erstell ein neues Jupyter-Notebook und nennen es
 `Klassifikation`.
 
 Wir nutzen ein Datenset, das handschriftliche Ziffern in Form von 8x8

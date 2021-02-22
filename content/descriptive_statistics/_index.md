@@ -31,7 +31,7 @@ Diese Einheit gibt eine Einführung in die deskriptive Statistik mit `pandas` un
 
 Vorausgesetzt wird statistisches Grundvokabular, wie in der letzten Einheit [behandelt](/data-librarian/basics/basic-terms). 
 
-<!-- Versuchen Sie zuerst die Aufgaben innerhalb der angegeben Zeit selbstständig zu lösen. Versuchen Sie danach mit Hilfe der Musterlösung die Lösung nachzuvollziehen. Schreiben Sie sich bei Problemen Ihre Fragen auf, damit wir diese am Präsenztag zusammen besprechen können. 
+<!-- Versuch zuerst die Aufgaben innerhalb der angegeben Zeit selbstständig zu lösen. Versuch danach mit Hilfe der Musterlösung die Lösung nachzuvollziehen. Schreibe  bei Problemen Deine Fragen auf, damit wir diese am Präsenztag zusammen besprechen können. 
 -->
 ## Ziele
 

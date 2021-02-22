@@ -22,8 +22,7 @@ LastModifierDisplayName = ""
 LastModifierEmail = ""
 +++
 
-Bitte erstellen Sie ein neues Jupyter-Notebook und nennen es
-`Regression`.
+Bitte erstell ein neues Jupyter-Notebook und nennen es`Regression`.
 
 Hier führen wir eine einfache Regression von zwei Features (also in
 zwei Dimensionen durch), da dies sich leichter visualisieren
