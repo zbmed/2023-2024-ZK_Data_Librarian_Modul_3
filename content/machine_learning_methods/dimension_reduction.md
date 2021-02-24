@@ -36,9 +36,10 @@ digits = load_digits()
 {{% /customnotice %}}
 
 Wir wollen mit einer Pricinple Component Analysis (PCA) die
-Reduktion durchführen, laden dafür die Klasse und erzeugen
-eine Instanz davon. Wir geben an dass wir danach nur zwei Dimensionen
-("components") erhalten würden.
+Dimensionreduktion durchführen. Hierzu laden wir zuerst die Klasse und
+erzeugen eine Instanz davon. Wir geben an, dass wir danach nur zwei
+Dimensionen ("components") erhalten möchten. Dadurch lassen sie die
+Daten später auf in einem Plot mit zwei Achsen abbilden.
 
 {{% customnotice code %}}
 ```python
@@ -89,7 +90,7 @@ tsne_result = tsne.fit_transform(digits.data)
 ```
 {{% /customnotice %}}
 
-Und auch hier das Ergebnis plotte. 
+Und stellen wir Ergebnis graphisch dar:
 
 {{% customnotice code %}}
 ```python
@@ -99,4 +100,5 @@ plt.colorbar()
 ```
 {{% /customnotice %}}
 
-Welches Verfahren zeigt eine höhere Trennschärfe?
+Vergleich die Ergebnisse beider Methode. Velches Verfahren zeigt eine
+höhere Trennschärfe?
