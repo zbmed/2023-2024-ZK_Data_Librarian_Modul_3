@@ -29,6 +29,7 @@ LastModifierEmail = ""
 {{% customnotice exercise%}}
 #### 1.3 Anaconda (10 Min)
 
-- Wenn noch nicht geschehen, kannst Du Anaconda [hier](https://www.anaconda.com/distribution/) für Dein Betriebssystem herunterladen. Wir verwenden die Version für **Python 3.7**.
-- Öffne den mit Anaconda installierten *Anaconda Navigator* und verschaff Dir einen Überblick über die vorhandenen Programme. 
+- Falls noch nicht getan (sollte durch Modul 1 und 2 aber der sein), kannst Du Anaconda [hier](https://www.anaconda.com/distribution/) für Dein Betriebssystem herunterladen. Wir verwenden die Version für **Python 3.8**.
+- [Öffne den mit Anaconda installierten *Anaconda
+  Navigator*](https://docs.anaconda.com/anaconda/navigator/getting-started/) und verschaff Dir einen Überblick über die vorhandenen Programme. 
 {{% /customnotice %}}
