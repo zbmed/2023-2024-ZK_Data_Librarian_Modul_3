@@ -26,7 +26,7 @@ Bitte erstell ein neues Jupyter-Notebook und nennen es
 `Klassifikation`.
 
 Wir nutzen ein Datenset, das handschriftliche Ziffern in Form von 8x8
-Feldern mit Werten der Farbstärkte darstellt. Ein Beschreibung des
+Feldern mit Werten der Farbstärkte darstellt. Eine Beschreibung des
 Datensets gib es bei
 [scikit-learn](https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_digits.html#sklearn.datasets.load_digits)
 und im [UC Irvine Machine Learning
