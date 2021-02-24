@@ -37,9 +37,9 @@ wir auf das in der letzte Woche Erlernte zu Klassifizierugsverfahren,
 aber auch auf einige Punkte aus Modul 2 namentlich Text-Frequency (TF)
 und und [Term frequency inverse document
 frequency](https://de.wikipedia.org/wiki/Tf-idf-Ma%C3%9F) (TFIDF),
-auf. Für die Implementation greifen wir wieder `scikit-learn` zurück.
+auf. Für die Implementation greifen wir wieder auf `scikit-learn` zurück.
 
-Bitte nutze den Ordner `machine_learning` in Deinem Modul-Ordner und
+Bitte nutz den Ordner `machine_learning` in Deinem Modul-Ordner und
 erstelle darin einen ein Jupyter-Notebook names `Text-Analyse`. Die
 Einreichung der Ergebnisse erfolgt über einen Commit bis zum
 Präsenztag. Musterlösungen sind [hier](./solutions) zu finden.

@@ -33,7 +33,7 @@ Tutorial](https://scikit-learn.org/stable/tutorial/text_analytics/working_with_t
 von scikit-learn zur Textanalyse.
 
 Wir nutzen Dokumente von mehreren Newsgroups und trainieren damit
-einen Classifier, der dann ein Zudornung von neuen Texten auf eine
+einen Classifier, der dann eine Zudordnung von neuen Texten auf eine
 dieser Gruppen durchführen kann. Sprich die Newsgroups stellen die
 Klassen/Tags dar, mit denen wir neue Texte klassifizieren. Wie nutzen
 eine einfachen
@@ -96,7 +96,7 @@ dir(newsgroup_posts_train)
 
 
 U.a. exitiert die übliche Beschreibung des Datensets im Attribute
-`DESCR`, was wir uns ansehen können.
+`DESCR`, die wir uns ansehen können.
 
 {{% customnotice code %}}
 ```python
@@ -115,8 +115,8 @@ print(newsgroup_posts_train.data[6])
 
 
 Die Targets sind die Newsgroup-Namen. Diese Klassen sind wie üblich
-für `scikit-learn` als Zahlen dargestellt, die wir mittels
-`target_names` auflösen können.
+für `scikit-learn` als Zahlen kodiert, die wir mittels `target_names`
+auflösen können.
 
 {{% customnotice code %}}
 ```python
@@ -153,7 +153,7 @@ len(count_vect.get_feature_names())
 {{% /customnotice %}}
 
 
-Wir können uns ein paar anschauen ...
+Wir können uns ein paar Beispiele ansehen ...
 {{% customnotice code %}}
 ```python
 count_vect.get_feature_names()[10000:10050]
@@ -162,7 +162,7 @@ count_vect.get_feature_names()[10000:10050]
 
 
 ... oder sogar das counting-Dictionary mit den Wörtern und ihre
-Vorkommen-Anzahl bekommen (Achtung: groß!).
+Vorkommen-Anzahl betrachten (Achtung: groß!).
 
 {{% customnotice code %}}
 ```python
@@ -324,9 +324,9 @@ for predicted_class in predicted_classes:
 ```
 {{% /customnotice %}}
 
-Um den Klassifikator zu verbessern, probieren wird statt der
-Term-Frequenz nun die TFIDF (Term Frequency times Inverse Document
-Frequency) und erstellen damit unsere Matrizen.
+Um den Klassifikator zu verbessern, testen wir statt der Term-Frequenz
+nun die TFIDF (Term Frequency times Inverse Document Frequency) und
+erstellen damit unsere Matrizen.
 
 {{% customnotice code %}}
 ```python
