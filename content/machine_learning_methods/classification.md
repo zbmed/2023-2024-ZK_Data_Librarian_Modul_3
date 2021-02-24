@@ -33,7 +33,7 @@ und im [UC Irvine Machine Learning
 Repository](https://archive.ics.uci.edu/ml/datasets/Optical+Recognition+of+Handwritten+Digits). Dieses
 Datenset bringt `scikit-learn` selber mit.
 
-Wir importieren eine Funktion zu laden des Datensets und rufen dieses auf.
+Wir importieren eine Funktion zum Laden des Datensets und rufen dieses auf.
 
 {{% customnotice code %}}
 ```python
@@ -121,7 +121,7 @@ digits.target
 Das Bunch-Objekt hat noch das Attribute `target_names`.
 Normalerweise wird jeder Zahl in `targent` hier ein Name zugeordnen.
 Da es sich aber tatsächlich um Ziffern von 0 - 9 handelt, ist das in diesem
-nicht wirklich nötig.
+nicht nötig.
 
 {{% customnotice code %}}
 ```python
@@ -138,7 +138,7 @@ len(digits.images)
 ```
 {{% /customnotice %}}
 
-Schauen wir uns zum Beispiel das erst Bild an ...
+Schauen wir uns zum Beispiel das erste Bild an ...
 
 {{% customnotice code %}}
 ```python
@@ -157,7 +157,7 @@ digits.images[9]
 
 Wir können die in dieser Form gespeicherten Farbintensitäten
 auch mit `matplotlib` anzeigen lassen. Hier zum Beispiel für die
-ersten 30 Bilder (wenn man mehr haben möchte muss man in `subplot`
+ersten 30 Bilder (wenn man mehr haben möchte, muss man in `subplot`
 mehr als 3 Zeilen angeben).
 
 {{% customnotice code %}}
@@ -177,7 +177,7 @@ ein Trainingsset (75%) und Testset (25%) aufgeteilt. Die Konvention
 ist hier eine großes `X` für den Variablen der Datenmatrix und ein kleines `y`
 für den Target-Vektor zu nutzen.
 
-Anmerkung - bei einigen der folgenden Schritte wird 
+Anmerkung: Bei einigen der folgenden Schritte wird 
 von zufälligen Zuständen ausgegagen. Um diese
 fest zu setzen und somit die Analyse reproduzierbar zu machen,
 kann man den Parameter `random_state` nutzen und mit einer Zahl
@@ -254,11 +254,11 @@ knn_clf.fit(X_train, y_train)
 ```
 {{% /customnotice %}}
 
-Herzlichen Glückwunsch - wir haben unser aller erstes 
-Klassifikator-Modell gebaut und trainiert. 
-Jetzt kann mit diesem neue Daten (also Vektoren der Länger 64, die
-die 8x8 Bilder darstellen) klassifizieren - in diesem
-Fall also Vorauszusagen, welche Ziffer dargestellt wurde.
+Herzlichen Glückwunsch - wir haben unser aller erstes
+Klassifikator-Modell gebaut und trainiert.  Jetzt kann mit diesem neue
+Daten (also Vektoren der Länger 64, die die 8x8 Bilder darstellen)
+klassifizieren - in diesem Fall also um vorauszusagen, welche Ziffer
+dargestellt wurde.
 
 Wir haben unsere Testdaten noch verfügbar und können die Methode `predict`
 des trainierten Klassifiers nutzen und erhalten die Voraussagen.
@@ -269,11 +269,11 @@ knn_clf.predict(X_test)
 ```
 {{% /customnotice %}}
 
-Da wir für das Testset aber auch wissen welche Ziffern tatsächlich 
-herauskommen sollte, können wir die Methode `score` des Klassifiers 
-nutzen. Diese führt die Voraussage durch und vergleicht sie mit den 
-tatsächlichen Target-Werten. Am Ende bekommen wir einen Wert zwischen 
-0 (schlecht) und 1 (gut).
+Da wir für das Testset wissen welche Ziffern tatsächlich herauskommen
+sollte, können wir die Methode `score` des Klassifiers nutzen. Diese
+führt die Voraussage durch und vergleicht sie mit den tatsächlichen
+Target-Werten. Am Ende bekommen wir einen Wert zwischen 0 (schlecht)
+und 1 (gut).
 
 {{% customnotice code %}}
 ```python
@@ -289,7 +289,9 @@ Das schöne an `scikit-learn` ist, dass alle Klassifikatoren
 die gleichen Methoden besitzten. Sprich anderen Klassifikatoren
 nutzen auch `fit`, `predict` und `score`.
 
-Machen wir eine Klassifikation mit einem Random-Forest-Klassifikator. Lesen sie nurden nächsten Code-Block und versuchen sie die Klassfikation damit erst einmal ohne auf die beiden darauf folgenden Blöcke.
+Machen wir nun eine Klassifikation mit einem
+Random-Forest-Klassifikator ganz äquivalent zu der vorherigen
+Herangehensweise:
 
 {{% customnotice code %}}
 ```python
@@ -336,7 +338,7 @@ mlpc.score(X_test, y_test)
 
 Wir können die Anzahl an Hidden-Layer und Anzahl an Nodes in diesen
 als Parameter setzen (hier 3 Schichten mit mit 200, 100 und 20 Nodes).
-Man kann das ganze kondenensiert schreiben, indem man die
+Man kann die Schritte kondenensiert schreiben, indem man die
 Methodenaufrufe direkt verknüpft.
 
 {{% customnotice code %}}
@@ -348,4 +350,7 @@ MLPClassifier(random_state=1, hidden_layer_sizes=(200, 100, 20)).fit(
 {{% /customnotice %}}
 
 Es gibt noch viele [weitere Klassifikatoren in
-scikit-learn](https://scikit-learn.org/stable/auto_examples/classification/plot_classifier_comparison.html). Für einen Einführung sollten dies 3 Bespiele aber reichen.   
+scikit-learn](https://scikit-learn.org/stable/auto_examples/classification/plot_classifier_comparison.html). Für
+einen Einführung sollten dies 3 Bespiele aber reichen. Wir konnten
+hier aber sehen, wie einfach sklearn es uns auf Grund der kosistenten
+Methoden macht, verschiedene Klassifikationsmethode zu nutzen.
