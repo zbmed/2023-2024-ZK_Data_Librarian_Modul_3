@@ -88,7 +88,7 @@ x_means.between(9,11).mean()
 
 #### 4.1 Bootstrapping-Verfahren
 
-- Lies Sie den [Datensatz](/data-librarian/organisation/dataset/) ein.
+- Lies Sie den [Datensatz](/2020-2021-ZK_Data_Librarian_Modul_3/organisation/dataset/) ein.
 - Um eine homogene Stichprobe zu erhalten filtere nach Bibliothekskunden die sich im Jahr 2010 registriert haben und auch noch im Jahr 2016 (als der Datensatz erstellt wurde) aktiv waren. [*Achtung: Die Spalte `'Circulation Active Year'` wird standardmäßig als Text eingelesen*] 
 - Betrachte die Variable `'Total Renewals'`. Wie viele Verlängerungen wurden im Mittel durchgeführt?
 - Erstelle, wie oben beschrieben, eine Stichprobenverteilung für den Mittelwert.

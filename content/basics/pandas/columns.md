@@ -127,7 +127,7 @@ pd.to_numeric(
 
   3. Berechne nun die aktive Mitgliedschaftsdauer in Monaten wie oben definiert und weise das Ergebnis der Spalte `Membership Duration` zu. 
 
-  4. Nimm an, dass Einträge mit fehlenden Werten bedeutet, dass die Person `0` Monate aktiv Mitglied gewesen ist. Ersetze dazu alle `NaN` values in der neuen Variable mit der Zahl `0`. Nutze dieses Codesnippet (siehe auch den nachfolgenden Abschnitt [Exkurs: Fehlende Werte](/data-librarian/basics/pandas/na/) über die Behandlung fehlender Werte):
+  4. Nimm an, dass Einträge mit fehlenden Werten bedeutet, dass die Person `0` Monate aktiv Mitglied gewesen ist. Ersetze dazu alle `NaN` values in der neuen Variable mit der Zahl `0`. Nutze dieses Codesnippet (siehe auch den nachfolgenden Abschnitt [Exkurs: Fehlende Werte](/2020-2021-ZK_Data_Librarian_Modul_3/basics/pandas/na/) über die Behandlung fehlender Werte):
 
 ```python
 df['Membership Duration'].fillna(0)

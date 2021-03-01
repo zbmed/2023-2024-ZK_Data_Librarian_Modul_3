@@ -44,11 +44,11 @@ Versuche zuerst die Aufgaben innerhalb der angegeben Zeit selbstständig zu lös
 {{% customnotice exercise %}}
 
 ### Projektaufgabe: Grundlagen der Datenanalyse in Python
-Die Pressestelle der San Francisco Public Library möchte einen Online-Artikel zum Kundenstamm der Bibliothek erstellen. Dazu hat sie Dir [einen Datensatz](/data-librarian/organisation/dataset/) geschickt, den Du auswerten sollst.
+Die Pressestelle der San Francisco Public Library möchte einen Online-Artikel zum Kundenstamm der Bibliothek erstellen. Dazu hat sie Dir [einen Datensatz](/2020-2021-ZK_Data_Librarian_Modul_3/organisation/dataset/) geschickt, den Du auswerten sollst.
 
-1. Erstelle eine Beschreibung des Datensatzes unter Verwendung des [statistischen Grundvokabulars](/data-librarian/basics/basic_terms/).
-2. Lies den Datensatz [ein](/data-librarian/basics/pandas/io).
-3. Bereinige den Datensatz von [fehlenden Werten](/data-librarian/basics/pandas/na) und berechne die [neue Variable](/data-librarian/basics/pandas/columns/#fallstudie-feature-engineering) `Membership Duration`.
+1. Erstelle eine Beschreibung des Datensatzes unter Verwendung des [statistischen Grundvokabulars](/2020-2021-ZK_Data_Librarian_Modul_3/basics/basic_terms/).
+2. Lies den Datensatz [ein](/2020-2021-ZK_Data_Librarian_Modul_3/basics/pandas/io).
+3. Bereinige den Datensatz von [fehlenden Werten](/2020-2021-ZK_Data_Librarian_Modul_3/basics/pandas/na) und berechne die [neue Variable](/2020-2021-ZK_Data_Librarian_Modul_3/basics/pandas/columns/#fallstudie-feature-engineering) `Membership Duration`.
 
 Die bearbeitete Projektaufgabe kannst Du in Deinem Git-Repositorium als Notebook bzw. Markdown-Datei speichern. 
 

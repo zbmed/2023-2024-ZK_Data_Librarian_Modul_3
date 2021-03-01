@@ -43,7 +43,7 @@ Der Text gibt einen **Einstieg** in die Aufgaben und Anwendungsbereiche der Stat
 
 #### 2.1 Grundbegriffe (60 Min)
 
-Beantworte und diskutiere die folgenden Fragen konkret für den in Einheit 1 heruntergeladenen [San Francisco Library Usage](/data-librarian/organisation/dataset/) Datensatz. Notiere Deine Ergebnisse in Stichpunkte. 
+Beantworte und diskutiere die folgenden Fragen konkret für den in Einheit 1 heruntergeladenen [San Francisco Library Usage](/2020-2021-ZK_Data_Librarian_Modul_3/organisation/dataset/) Datensatz. Notiere Deine Ergebnisse in Stichpunkte. 
 
 1. Wie viele Merkmale besitzt der Datensatz?
 2. Wie groß ist die Stichprobengröße des Datensatzes?
