@@ -74,7 +74,7 @@ Nützlich ist auch die Funktion `Series.between(left, right)`, mit der eine bool
 {{% customnotice code %}}
 ```python
 filter1 = (df['Total Checkouts'] >= 20) & (df['Total Checkouts'] <= 80)
-filter2 =  df['Total Checkous'].between(20, 80)
+filter2 =  df['Total Checkouts'].between(20, 80)
 all(filter1 == filter2)
 ```
 {{% /customnotice %}}
