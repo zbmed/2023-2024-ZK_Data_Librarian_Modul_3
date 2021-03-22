@@ -22,5 +22,5 @@ LastModifierDisplayName = ""
 LastModifierEmail = ""
 +++
 
-[Hier](https://raw.githubusercontent.com/bonartm/2020-2021-ZK_Data_Librarian_Modul_3/master/content/text_analysis/solution_files/Text-Klassifikation.ipynb) ist das Jupyter Notebooks mit der
+[Hier](https://raw.githubusercontent.com/zbmed/2020-2021-ZK_Data_Librarian_Modul_3/master/content/text_analysis/solution_files/Text-Klassifikation.ipynb) ist das Jupyter Notebooks mit der
 Text-Klassifikation-Musterlösung (ablegen mit "Speichern unter").
