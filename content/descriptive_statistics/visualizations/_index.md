@@ -28,7 +28,7 @@ LastModifierEmail = ""
 
 Im folgenden Abschnitt wird ein Überblick über verschiedene Visualisierungsformen gegeben und anhand von **Beispielen** gezeigt, wie diese in Python mit der Bibliothek **seaborn** programmiert werden können.
 
-Das Thema Visualisierungen ist **komplex**: Es gibt sehr viele Parameter und Stellschrauben, die man auswendig lernen oder in den Dokumentationen der Bibliotheken [pandas](https://pandas.pydata.org/pandas-docs/stable/user_guide/visualization.html), [seaborn](https://seaborn.pydata.org/tutorial.html) und [matplotlib](https://matplotlib.org/tutorials/index.html) Nachschlagen muss. Die Erstellung von eindrucksvollen und aussagekräftigen Graphiken erfordert viel Praxiserfahrung, Zeit und Mühe.
+Das Thema Visualisierungen ist **komplex**: Es gibt sehr viele Parameter und Stellschrauben, die man auswendig lernen oder in den Dokumentationen der Bibliotheken [pandas](https://pandas.pydata.org/pandas-docs/stable/user_guide/visualization.html), [seaborn](https://seaborn.pydata.org/tutorial.html) und [matplotlib](https://matplotlib.org/tutorials/index.html) Nachschlagen muss. Die Erstellung von eindrucksvollen und aussagekräftigen Graphiken erfordert viel Praxiserfahrung, Zeit und Mühe. Die [Einführungsseite von seaborn](https://seaborn.pydata.org/introduction.html) ist sehr hilfreich um eine erste Eindruck zu gewinne.
 
 Auf der anderen Seite lassen sich schon mit wenig Programmcode annehmbare Visualisierungen erstellen. Am besten orientierst Du Dich an den zahlreiche Beispielen online und änderst den Code Deinen Erfordernissen an. Nach dem Kapitel solltest Du die folgenden Fragen beantworten können:
 
@@ -36,6 +36,12 @@ Auf der anderen Seite lassen sich schon mit wenig Programmcode annehmbare Visual
 - Wie interpretiere und erstelle ich Boxplots, Histogramme und Streudiagramme?
 
 ---
+
+{{% customnotice tip %}}
+
+Das Buch "[Fundamentals of Data Visualization](https://learning.oreilly.com/library/view/fundamentals-of-data/9781492031079/)" (Claus O. Wilke, O'Reilly, 2019) vermittelt ein sehr gutes Grundverständnis wie man Daten effektiv in Visualisierungen übersetzt. Das Buch steht auch unter CC-BY-SA-Lizenz [online zur Verfügung](https://clauswilke.com/dataviz/). Zumindest das Kapitel [Visualizing data: Mapping data onto aesthetics](https://clauswilke.com/dataviz/aesthetic-mapping.html) sollte man sich unbedingt anschauen. Eine weitere gute, offene Quelle für Tipps zur Visualisierung stellt [Serie "Points of View"](http://blogs.nature.com/methagora/2013/07/data-visualization-points-of-view.html) von Nature Methods dar.
+"
+{{% /customnotice %}}
 
 {{% customnotice tip %}}
 Dieses [Cheat-Sheet](https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Python_Seaborn_Cheat_Sheet.pdf) gibt einen guten Überblick über die Erstellung von Plots mit Seaborn. 
