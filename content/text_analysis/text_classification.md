@@ -145,7 +145,8 @@ count_vect.fit(newsgroup_posts_train.data)
 {{% /customnotice %}}
 
 
-Über alle Dokumente bekommen wir die folgende Zahl an Wörtern:
+Über alle Dokumente bekommen wir die folgende Zusammenstellung der
+Wörter und ihre Indices (positionen im Array):
 {{% customnotice code %}}
 ```python
 len(count_vect.get_feature_names())
