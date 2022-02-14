@@ -1,0 +1,104 @@
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+}
+
+#body .padding {
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 3rem 3rem;
+    position: relative;
+}
+
+#code.notices_inner pre {
+  margin: 0rem 0;
+  padding: 0rem;
+}
+
+div.customnotices {
+    margin: 2rem 0;
+    position: relative;
+}
+
+div.notices_inner {
+    padding: 0px 15px 5px 15px;
+    display: block;
+    font-size: 1rem;
+    color: #666;
+    border-top-width: 2.5rem;
+    border-left-width: 5px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-style: solid;
+}
+
+div.notices_inner:first-child:after {
+    position: absolute;
+    top: 2px;
+    color: #fff;
+    left: 3rem;
+    font-size: 1.5rem;
+}
+
+div.notices_inner:first-child:before {
+  position: absolute;
+  top: 2px;
+  color: #fff;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  left: 10px;
+  font-size: 1.5rem;
+}
+
+
+#tip {
+    border-color: rgba(92, 184, 92, 0.8);
+    background: #E6F9E6;
+}
+#tip:first-child:after {
+  content: 'Tipp'
+}
+#tip:first-child:before {
+    content: "\f0eb";
+}
+
+
+#exercise {
+    border-color: #6AB0DE;
+    background: #E7F2FA;
+}
+#exercise:first-child:after {
+  content: 'Aufgabe'
+}
+#exercise:first-child:before {
+    content: "\f5fc";
+}
+
+
+#alert {
+    border-color: #a94442;
+    background: #f2dede;
+}
+#alert:first-child:after {
+  content: 'Hinweis'
+}
+#alert:first-child:before {
+    content: "\f071";
+}
+
+
+#code {
+    border-color: #5c5c5c;
+    background: #282c34;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+}
+#code:first-child:after {
+  content: 'Beispiel'
+}
+#code:first-child:before {
+    content: "\f121";
+}
