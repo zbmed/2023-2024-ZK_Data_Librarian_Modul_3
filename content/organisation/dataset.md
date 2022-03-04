@@ -31,7 +31,7 @@ Im gesamten Modul werden wir wieder mit Git arbeiten. Darüber hinaus werden wir
 {{% /customnotice %}}
 
 
-Im ersten Teil des Moduls werden wir einen offenen Kundendatensatz der Bibliothek in San Francisco analysieren.
+Im ersten Teil des Moduls werden wir einen offenen Kundendatensatz der öffentlichen Bibliothek in San Francisco analysieren.
 
 > The Integrated Library System (ILS) is composed of bibliographic records including inventoried items, and patron records including circulation data. The data is used in the daily operation of the library, including circulation, online public catalog, cataloging, acquisitions, collection development, processing, and serials control. This dataset represents the usage of inventoried items by patrons ... (*Abstract taken from [here](https://data.sfgov.org/Culture-and-Recreation/Library-Usage/qzz6-2jup)*)
 

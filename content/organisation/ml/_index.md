@@ -1,8 +1,8 @@
 +++
-title = "Statistik, Data Science und Machine Learning"
+title = "Einordnung: Statistik, Data Science und Machine Learning"
 # If set, this will be used for the page's menu entry (instead of the `title` attribute)
 # menuTitle = "Einführung"
-weight = 21
+weight = 40
 # The title of the page in menu will be prefixed by this HTML content
 # pre = "<b>2. </b>"
 # pre = "<i class='fab fa-github'></i>"
@@ -23,7 +23,7 @@ LastModifierEmail = ""
 +++
 
 
-Seit einigen Jahren sind *Data Science* und *Machine Learning* zu alltäglichen Begriffen geworden. Studiengänge im Bereich Data Science werden [neu eingerichtet](https://www.th-koeln.de/studium/data-and-information-science-bachelor--inhalte_52782.php) oder schon bestehende Abschlüsse [umbenannt](http://west.uni-koblenz.de/studying/mwds). Anwendungen des Maschinellen Lernens sind Thema in [Massenmedien](https://www.sueddeutsche.de/thema/K%C3%BCnstliche_Intelligenz). Der Zertifikatskurs [*Data Librarian*](https://www.th-koeln.de/weiterbildung/zertifikatskurs-2020-2021-ZK_Data_Librarian_Modul_3_63393.php) spiegelt diese Popularität wider.
+Seit einigen Jahren sind *Data Science* und *Machine Learning* zu alltäglichen Begriffen geworden. Studiengänge im Bereich Data Science werden [neu eingerichtet](https://www.th-koeln.de/studium/data-and-information-science-bachelor--inhalte_52782.php) oder schon bestehende Abschlüsse [umbenannt](http://west.uni-koblenz.de/studying/mwds). Anwendungen des Maschinellen Lernens sind Thema in [Massenmedien](https://www.sueddeutsche.de/thema/K%C3%BCnstliche_Intelligenz). Der Zertifikatskurs [*Data Librarian*](https://www.th-koeln.de/weiterbildung/zertifikatskurs-data-librarian_63393.php) spiegelt diese Popularität wider.
 
 Um die Zusammenhänge zwischen den Fachgebieten besser zu verstehen, wird im Folgenden ein kurzer Überblick über die Begriffe gegeben. Für Interessierte gibt es Verweise zu weiteren Quellen.
 

@@ -2,7 +2,7 @@
 title = "scipy"
 # If set, this will be used for the page's menu entry (instead of the `title` attribute)
 # menuTitle = "Einstieg"
-weight = 64
+weight = 22
 # The title of the page in menu will be prefixed by this HTML content
 # pre = "<b>1. </b>"
 # pre = "<i class='fab fa-github'></i>"

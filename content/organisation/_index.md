@@ -9,8 +9,6 @@ LastModifierEmail = ""
 
 +++
 
-### 22.02.21 – 26.02.21
-
 # Kursorganisation und Vorbereitungen
 
 Diese Einheit gibt einen Überblick über die Kursinhalte, wichtige Termine und die benötigte Software und Python-Pakete. Viele der hier besprochenen Dinge werden Dir schon bekannt vorkommen und die Software hast Du schon für die vorherigen Module auf Deinem Rechner installiert. 
@@ -22,6 +20,8 @@ Diese Einheit gibt einen Überblick über die Kursinhalte, wichtige Termine und 
 - Erinnerung: Installation von Anaconda mit Python 3.8 auf Deinem Rechner
 - Erinnerung: Installation bzw. Nutzung von Jupyter Notebooks auf Deinem Rechner
 - Überblick über verschiedene Python Pakete und Bibliotheken
+- Einordnung der Begriffe Statistik, Data Science und Machine Learning
+
 
 
 {{% customnotice tip %}}
