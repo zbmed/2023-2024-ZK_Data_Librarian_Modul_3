@@ -1,7 +1,7 @@
 baseURL = "https://zbmed.github.io/2021-2022-ZK_Data_Librarian_Modul_3/"
 
 languageCode = "de-DE"
-title = "data librarian - modul 3 - daten analysieren und darstellen"
+title = "Zertifikatskurs Data Librarian - Modul 3 - Daten analysieren und darstellen"
 
 #ignorefiles = []
 
@@ -14,7 +14,6 @@ unsafe= true
 # For search functionality
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
-
 
 
 enableInlineShortcodes = false
