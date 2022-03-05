@@ -30,7 +30,7 @@ $$
 s_{x, y}^2 = \frac{1}{N-1}\sum_{i=1}^{N}(x_i-\bar{x})(y_i-\bar{y}) ,
 $$
 
-wobei $\bar{x}$ und $\bar{y}$ die entsprechenden [Mittelwerte](2020-2021-ZK_Data_Librarian_Modul_3/descriptive_statistics/univariate/mean/) darstellen und $N$ die Größe der Stichprobe (die Anzahl an Elementen in der Datenreihe von $x$ oder $y$). 
+wobei $\bar{x}$ und $\bar{y}$ die entsprechenden [Mittelwerte](/2021-2022-ZK_Data_Librarian_Modul_3/descriptive_statistics/univariate/mean/) darstellen und $N$ die Größe der Stichprobe (die Anzahl an Elementen in der Datenreihe von $x$ oder $y$). 
 
 Ein positiver Wert der Kovarianz drückt aus, dass wenn die Werte der einen Variablen steigen, dies auch für die andere Variable gilt. Eine negative Kovarianz bedeutet hingegen, dass wenn die Werte der einen Variablen steigen, die Werte der anderen Variablen sinken. 
 

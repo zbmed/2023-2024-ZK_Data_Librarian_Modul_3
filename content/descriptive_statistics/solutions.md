@@ -80,9 +80,12 @@ Die Balkendiagramme beginnen nicht im Nullpunkt. Somit werden die relativen Unte
 - `df['Age Range'].mode()`
 - `df['Total Renewals'].quantile([0.25, 0.75]).diff()`
 
+
+<!--
 #### Projektaufgabe - Beispielfragen
 
 {{%attachments title="Lösungen" pattern="Musterloesung_Projektaufgabe.ipynb" /%}}
 
+-->
 
 
