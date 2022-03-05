@@ -23,7 +23,7 @@ LastModifierEmail = ""
 +++
 
 
-### 12.03.22 – 20.03.22
+### 12.03.2022 – 20.03.2022
 
 # Deskriptive Statistik und Visualisierungen
 
