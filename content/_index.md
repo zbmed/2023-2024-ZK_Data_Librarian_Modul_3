@@ -15,7 +15,6 @@ hidden = false
 
 # Daten analysieren und darstellen
 
-
 Herzlich Willkommen zum dritten Modul **Daten analysieren und darstellen** des ZBWI Zertifikationskurs "Data Librarian". In diesem Modul möchten wir Dir einen praktischen Einblick in die Datenanalyse mit der Programmiersprache Python geben.
 
 Nachdem Du im ersten Modul schon die grundlegenden Werkzeuge und Programmiertechniken kennengelernt und im zweiten vertieft hast, wirst Du Dich in den kommenden Wochen anhand von praktischen Beispielen und Aufgaben Grundlagen der **deskriptiven Statistik, der Datenvisualisierung und des maschinellen Lernens** aneignen. Dabei kannst Du Deine Programmier- und Datenanalysekenntnisse in Python verbessern und im bibliothekarischen Kontext anwenden. Nach dem Modul solltest Du ein grundsätzliches Verständnis wichtiger statischer Verfahren und Methoden des Maschinellen Lernen kennen, besitzen und anwenden können.
@@ -25,5 +24,3 @@ Nachdem Du im ersten Modul schon die grundlegenden Werkzeuge und Programmiertech
 - Diese Webseite ist für alle Endgeräte optimiert. Du kannst daher auch Dein Smartphone oder Tablet zum Lesen nutzen.
 - **Starte** nun mit der ersten Kurseinheit indem Du auf </i> <i class="fas fa-chevron-right"></i> klickst oder mit den Pfeiltasten <i class="fas fa-arrows-alt-h"></i> navigierst. Viel Spaß!
 {{% /customnotice %}}
-
-
