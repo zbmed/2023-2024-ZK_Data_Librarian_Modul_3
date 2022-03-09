@@ -35,7 +35,7 @@ dieser Einheit werden die Grundideen des maschinellen Lernens
 vermittelt. Dabei versuchen wir die mathematischen Grundlagen
 weitestgehend auszuklammern und ein grundsätzliches Verständnis von
 Machine Learning zu entwickeln. Es werden in dem [zugehörigen
-Video](https://zbiw.th-koeln.de/moodle/mod/resource/view.php?id=7522)
+Video](https://zbiw.th-koeln.de/moodle/mod/resource/view.php?id=8975)
 verschiedene Machine-Learning-Methoden präsentiert. Dabei wird nicht
 erwartet erwartet, dass Du die Details dieser Methode in Gänze
 verstehst. Einige dieser Methoden werden wir in der nächsten Wochen
@@ -47,7 +47,7 @@ genauer betrachten und praktisch mittels Python sowie des Packetes
 ## Reflexion -- Machine Learning in meinem Alltag
 
 Sieh Dir da das Video "[Eine Einführung in das Maschinelle
-Lernen](https://zbiw.th-koeln.de/moodle/mod/resource/view.php?id=5655)"
+Lernen](https://zbiw.th-koeln.de/moodle/mod/resource/view.php?id=8975)"
 an. Im Quiz wird das Verständnis einiger Punkte abgefragt. Mit diesem
 Hintergrundwissen überlege, an welcher Stelle Deines beruflichen aber
 auch privaten Alltages maschinelles Lernen auf Daten von Dir angewandt
