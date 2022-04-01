@@ -34,7 +34,7 @@ Verständnis für die Grundlagen und mögliche Anwendungen entwickelt. In
 dem Beispiel werden wir Texte in Kategorien zuordnen und somit ein
 kleines automatisches Verschlagwortungswerkzeug erstellen. Dazu bauen
 wir auf das in der letzte Woche Erlernte zu Klassifizierugsverfahren,
-aber auch auf einige Punkte aus Modul 2 namentlich Text-Frequency (TF)
+aber auch auf einige Punkte aus Modul 2 namentlich Term-Frequency (TF)
 und und [Term frequency inverse document
 frequency](https://de.wikipedia.org/wiki/Tf-idf-Ma%C3%9F) (TFIDF),
 auf. Für die Implementation greifen wir wieder auf `scikit-learn` zurück.
