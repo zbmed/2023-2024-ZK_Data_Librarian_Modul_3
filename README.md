@@ -56,7 +56,7 @@ Automatic deployment to the `gh-pages` branch via [GitHub Actions For Hugo](http
 
 ## Credits
 
-This website uses a modified version of the [Learn Theme for Hugo](https://themes.gohugo.io/theme/hugo-theme-learn/en)
+This website uses a modified version of the [Learn Theme for Hugo](https://themes.gohugo.io/theme/hugo-theme-learn/en).
 
 ## License
 
