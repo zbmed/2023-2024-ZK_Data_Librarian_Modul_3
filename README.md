@@ -51,7 +51,7 @@ hugo
 
 ## Deploy
 
-Automatic deployment to the `gh-pages` branch via [GitHub Actions For Hugo](https://github.com/peaceiris/actions-hugo/blob/master/README.md)
+Automatic deployment to the `gh-pages` branch via [GitHub Actions For Hugo](https://github.com/peaceiris/actions-hugo/blob/master/README.md).
 
 
 ## Credits
