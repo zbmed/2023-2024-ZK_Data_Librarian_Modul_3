@@ -29,5 +29,5 @@ Um die Zusammenhänge zwischen den Fachgebieten besser zu verstehen, wird im Fol
 
 <script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/1982_RC01/embed_loader.js"></script>
 <script type="text/javascript">
-  trends.embed.renderExploreWidget("TIMESERIES", {"comparisonItem":[{"keyword":"data science","geo":"DE","time":"2010-01-01 2019-11-22"},{"keyword":"machine learning","geo":"DE","time":"2010-01-01 2019-11-22"}],"category":0,"property":""}, {"exploreQuery":"date=2010-01-01%202019-11-22&geo=DE&q=data%20science,machine%20learning","guestPath":"https://trends.google.com:443/trends/embed/"});
+  trends.embed.renderExploreWidget("TIMESERIES", {"comparisonItem":[{"keyword":"data science","geo":"DE","time":"2010-01-01 2023-02-01"},{"keyword":"machine learning","geo":"DE","time":"2010-01-01 2023-02-01"}],"category":0,"property":""}, {"exploreQuery":"date=2010-01-01%202023-02-01&geo=DE&q=data%20science,machine%20learning","guestPath":"https://trends.google.com:443/trends/embed/"});
 </script>

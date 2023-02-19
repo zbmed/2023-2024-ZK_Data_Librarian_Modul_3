@@ -23,7 +23,7 @@ LastModifierEmail = ""
 +++
 
 
-### 21.03.2022 – 25.03.2022
+### 13.03.2023 – 17.03.2023
 
 # Machinelles Lernen - Praxis mit scikit-learn
 

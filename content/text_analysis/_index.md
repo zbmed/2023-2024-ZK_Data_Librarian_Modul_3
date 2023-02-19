@@ -22,7 +22,7 @@ LastModifierDisplayName = ""
 LastModifierEmail = ""
 +++
 
-### 26.03.2022 - 31.03.2022
+### 18.03.2023 - 23.03.2023
 
 # Machinelles Lernen - Automatische Textanalyse
 
