@@ -32,6 +32,6 @@ Wenn Du mit einer Aufgabe nicht weiterkommen oder zu viel Zeit aufwenden musst, 
 Die Projektaufgaben sollten in Form von [Jupyter Notebooks](https://jupyter.org/) bearbeitet und aufbereitet werden. Diese werden am virtuellen Präsenztag besprochen.  
 
 -->
-Der **erste Teil** des Moduls (*07.03.2022 - 20.03.2022, Einheit 1 bis 4*) wird von [Ania Lopez](mailto:ania.lopez@hhu.de) betreut und behandelt grundlegende klassische Konzepte der angewandten Statistik. Der **zweite Teil** des Moduls (*21.03.2022 - 07.04.2022, Einheit 5 bis 7*) wird von [Konrad Förstner](mailto:foerstner@zbmed.de) betreut und gibt einen Überblick über Themen des maschinellen Lernens.
+Der **erste Teil** des Moduls (*27.02.2023 - 12.03.2023, Einheit 1 bis 4*) wird von [Ania Lopez](mailto:ania.lopez@hhu.de) betreut und behandelt grundlegende klassische Konzepte der angewandten Statistik. Der **zweite Teil** des Moduls (*13.03.202 - 24.03.2023, Einheit 5 bis 7*) wird von [Konrad Förstner](mailto:foerstner@zbmed.de) betreut und gibt einen Überblick über Themen des maschinellen Lernens.
 
 Am **Präsenztag**, der am *27.03.2023* stattfindet, werden wir im Voraus gesammelte Fragen gemeinsam beantworten und diskutieren. Du wirst an dem Tag Zeit haben, an einem persönlichen Datenanalyseprojekt zu arbeiten. Die Kursleiter werden Dich dabei unterstützen und individuell betreuen. Am Ende des Präsenztages stellen alle KursteilnehmerInnen ihre Ergebnisse in einer **Kurzpräsentation** vor.
