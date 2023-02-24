@@ -35,7 +35,7 @@ dieser Einheit werden die Grundideen des maschinellen Lernens
 vermittelt. Dabei versuchen wir die mathematischen Grundlagen
 weitestgehend auszuklammern und ein grundsätzliches Verständnis von
 Machine Learning zu entwickeln. Es werden in dem [zugehörigen
-Video](https://zbiw.th-koeln.de/moodle/mod/resource/view.php?id=8975)
+Video](https://zbiw.th-koeln.de/moodle/mod/resource/view.php?id=12282)
 verschiedene Machine-Learning-Methoden präsentiert. Dabei wird nicht
 erwartet erwartet, dass Du die Details dieser Methode in Gänze
 verstehst. Einige dieser Methoden werden wir in der nächsten Wochen
