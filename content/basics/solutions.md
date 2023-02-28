@@ -26,9 +26,9 @@ LastModifierEmail = ""
 #### 2.1 Grundbegriffe 
 
 1. Wie viele Merkmale besitzt der Datensatz? 15.
-2. Wie groß ist die Stichprobengröße des Datensatzes? 423448.
+2. Wie groß ist die Stichprobengröße des Datensatzes? 437115.
 3. Wer oder was sind die Merkmalsträger? Bibliothekskunden der SF Public Library.
-4. Von wann bis wann wurden die Daten erhoben? Das Bibliothekssystem wurde 2003 installiert. Die Daten reichen bis 2016.
+4. Von wann bis wann wurden die Daten erhoben? Das Bibliothekssystem wurde 2003 installiert. Die Daten reichen bis 2023.
 5. Wie lässt sich die Grundgesamtheit beschreiben? Handelt es sich um eine Vollerhebung? Grundgesamtheit sind alle Bibliothekskunden der San Francisco Library. Wahrscheinlich handelt es sich um eine Vollerhebung. Es lässt sich diskutieren, ob die Grundgesamtheit größer gefasst werden kann (z.B. alle Kunden von Bibliotheken in den USA oder alle Kunden von öffentlichen Bibliotheken). Sind die Daten repräsentativ für diese Grundgesamtheiten?
 6. Welche Merkmale sind stetig? Welche diskret? Die Variablen `Total Checkouts` und `Total Renewals` sind stetig, alle anderen diskret.
 7. Welchem Skalenniveau entsprechen die einzelnen Merkmale (Nominal-, Ordinal- oder Metrische Skala)? Metrisch: `Total Checkouts`, `Total Renewals`, `Circulation Active Year`, `Year Patron registered`, Ordinal: `Age Range`, Nominal: Der Rest.
