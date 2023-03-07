@@ -50,7 +50,7 @@ Module_3
 {{% /customnotice %}}
 
 {{% customnotice tip%}}
-In [dieser Excel Tabelle](https://data.sfgov.org/api/views/qzz6-2jup/files/72c2070f-7b56-4d14-840a-d1a70f5d0f19?download=true&filename=LIB-0003_DataDictionary_library-usage.xlsx) findest Du eine detallierte Erklärung der einzelnen Variablen des Datensatzes.
+Auf der [Seite](https://data.sfgov.org/Culture-and-Recreation/Library-Usage/qzz6-2jup ) findest Du eine detallierte Erklärung der einzelnen Variablen des Datensatzes (=Spalten der Tabelle).
 {{% /customnotice %}}
 
 
