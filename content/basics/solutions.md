@@ -25,7 +25,7 @@ LastModifierEmail = ""
 
 #### 2.1 Grundbegriffe 
 
-1. Wie viele Merkmale besitzt der Datensatz? 15.
+1. Wie viele Merkmale besitzt der Datensatz? 14.
 2. Wie groß ist die Stichprobengröße des Datensatzes? 437115.
 3. Wer oder was sind die Merkmalsträger? Bibliothekskunden der SF Public Library.
 4. Von wann bis wann wurden die Daten erhoben? Das Bibliothekssystem wurde 2003 installiert. Die Daten reichen bis 2023.
