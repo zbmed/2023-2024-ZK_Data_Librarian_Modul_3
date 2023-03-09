@@ -44,12 +44,12 @@ pd.crosstab(
 
 
 
-Notice Preference Definition	| email 	| phone 	| print | all
-:--- | :--- | :--- | :--- | :---
-**Provided Email Address** | | | |
-False 	|95 |	58362 |	 28569| 87026
-True 	|323842 |	9810  	|2767 | 336419
-All  | 323937 |	68172 	| 31336 	|423445
+Notice Preference Definition	| Email 	| None | Phone 	| Print | All
+:--- | :--- | :--- | :--- | :--- | :---
+**Provided Email Address** | | | | |
+False 	|476 |	2668 |	 35235 | 7173 | 45552
+True 	|391138 |	32  	|324 | 69 | 391563
+All  | 391614 |	2700 	| 35559 	|7242 | 437115
 
 Eine Kreuztabelle mit absoluten Werten ist häufig schwer zu interpretieren, wenn die Randverteilungen ungleich verteilt sind. Deswegen sollten die Werte entweder Spaltenweise oder Zeilenweise **normalisiert** werden:
 
@@ -65,21 +65,21 @@ pd.crosstab(
 
 Ergibt eine Normalisierung der Spalten, sodass sich diese jeweils zu 100% aufaddieren:
 
-Notice Preference Definition	| email 	| phone 	| print |	all
-:--- | :--- | :--- | :--- | :---
-**Provided Email Address** | | | |			
-False 	|0.000293 	|0.856099 |	0.911699 |	0.205519
-True 	|0.999707 	|0.143901 	|0.088301 	|0.794481
+Notice Preference Definition	| Email 	| None | Phone 	| Print |	All
+:--- | :--- | :--- | :--- | :--- | :---
+**Provided Email Address** | | | | |			
+False 	|0.001215 	|0.988148 |	0.990888 |	0.990472 | 0.104211
+True 	|0.998785 	|0.011852 	|0.009112 	| 0.009528 | 0.895789
 
-> Von den Kunden, die per Mail informiert werden möchten, haben 99.97% eine Mail Adresse angegeben. Nur 14.39% der Kunden die telefonisch informiert werden möchten, haben eine Mail Adresse angegeben. 
+> Von den Kunden, die per Mail informiert werden möchten, haben 99.88% eine Mail Adresse angegeben. Knapp unter 1% der Kunden, die telefonisch informiert werden möchten, haben eine Mail Adresse angegeben. 
 
 Wird das Argument `normalize=0` verwendet, so werden die Zeilen der Tabelle normalisiert. Entsprecht ändern sich die Interpretation:
 
-Notice Preference Definition |	email |	phone |	print
-:--- | :--- | :--- | :--- 
-**Provided Email Address** | | | | 			
-False 	|0.001092 	|0.670627 	|0.328281
-True 	|0.962615 	|0.029160 	|0.008225
-All 	|0.765004 	|0.160994 	|0.074003
+Notice Preference Definition |	Email 	| None | Phone 	| Print |	All
+:--- | :--- | :--- | :---  | :--- | :---
+**Provided Email Address** | | | | | 			
+False 	|0.010450 	| 0.058570 	| 0.773512 	| 0.157468
+True 	|0.998915 	| 0.000082 	| 0.000827 	| 0.000176
+All 	|0.895906 	| 0.006177 	| 0.081349 	| 0.016568
 
-> Von den Kunden, die eine Mail angeben haben, möchten 96% per Mail informiert werden. Von den Kunden, die keine Mail angegeben haben, möchten 67% per Telefon informiert werden.
+> Von den Kunden, die eine Mail angeben haben, möchten mehr als 99% per Mail informiert werden. Von den Kunden, die keine Mail angegeben haben, möchten 77% per Telefon informiert werden.
