@@ -1,4 +1,4 @@
-baseURL = "https://zbmed.github.io/2022-2023-ZK_Data_Librarian_Modul_3/"
+baseURL = "https://zbmed.github.io/2023-2024-ZK_Data_Librarian_Modul_3/"
 
 languageCode = "de-DE"
 title = "Zertifikatskurs Data Librarian - Modul 3 - Daten analysieren und darstellen"
@@ -58,7 +58,7 @@ weight = 9
 [[menu.shortcuts]]
 name = "<i class='fas fa-users'></i> Moodle Kursumgebung"
 identifier = "moodle"
-url = "https://zbiw.th-koeln.de/moodle/course/view.php?id=592&section=3"
+url = "https://zbiw.th-koeln.de/moodle/course/view.php?id=663&section=3"
 weight = 20
 
 [[menu.shortcuts]]
