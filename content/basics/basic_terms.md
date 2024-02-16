@@ -29,7 +29,7 @@ LastModifierEmail = ""
 
 Für den statistischen Teil dieses Moduls ist ein gewisses Grundvokabular und Verständnis von allgemeinen Beispielen notwendige Voraussetzung.
 
-Daher ist in der [Moodle-Kursumgebung](https://zbiw.th-koeln.de/moodle/course/view.php?id=592&section=3) das Einführungskapitel des Buchs *Statistik: Der Weg zur Datenanalyse* zum alleinigen persönlichen Gebrauch hinterlegt.[^1]
+Daher ist in der [Moodle-Kursumgebung](https://zbiw.th-koeln.de/moodle/course/view.php?id=663&section=3) das Einführungskapitel des Buchs *Statistik: Der Weg zur Datenanalyse* zum alleinigen persönlichen Gebrauch hinterlegt.[^1]
 
 <!--
 ![Statistik, Der Weg zur Datenanalyse, Fahrmeier, Künstler, Pigeot und Tutz](https://images.springer.com/sgw/books/medium/9783662503713.jpg)
@@ -62,7 +62,7 @@ Beantworte und diskutiere die folgenden Fragen konkret für den in Einheit 1 her
 ---
 
 
-Über das oben genannte Kapitel hinaus sind auch die **englischen Lehrbücher** von [OpenIntro](https://www.openintro.org/stat/textbook.php?stat_book=isrs) zu empfehlen. Sie können kostenlos auf der Webseite heruntergeladen werden. Für diesen Kurs sind insbesondere die **ersten zwei Kapitel** des Buchs [Introductory Statistics with Randomization and Simulation](https://drive.google.com/file/d/0B-DHaDEbiOGkRHNndUlBaHVmaGM/edit) [^2] relevant. Auch diese Literaturhinweise sind in der [Moodle-Kursumgebung](https://zbiw.th-koeln.de/moodle/course/view.php?id=592&section=3) hinterlegt.
+Über das oben genannte Kapitel hinaus sind auch die **englischen Lehrbücher** von [OpenIntro](https://www.openintro.org/stat/textbook.php?stat_book=isrs) zu empfehlen. Sie können kostenlos auf der Webseite heruntergeladen werden. Für diesen Kurs sind insbesondere die **ersten zwei Kapitel** des Buchs [Introductory Statistics with Randomization and Simulation](https://drive.google.com/file/d/0B-DHaDEbiOGkRHNndUlBaHVmaGM/edit) [^2] relevant. Auch diese Literaturhinweise sind in der [Moodle-Kursumgebung](https://zbiw.th-koeln.de/moodle/course/view.php?id=663&section=3) hinterlegt.
 
 
 [^1]: Fahrmeir, Ludwig, Christian Heumann, Rita Künstler, Iris Pigeot, and Gerhard Tutz. Statistik: Der Weg zur Datenanalyse. Springer-Verlag, 2016, https://www.springer.com/de/book/9783662503713.

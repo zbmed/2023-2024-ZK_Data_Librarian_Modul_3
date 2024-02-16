@@ -35,7 +35,7 @@ LastModifierEmail = ""
 8. Enthält der Datensatz fehlende Werte? Ja, z.B. `Age Range`
 9. Handelt es sich um Querschnitts-, Längsschnitss- oder Paneldaten? Querschnittsdaten
 
-
+{{%attachments title="Lösungen" pattern="2.1.solutions_basicterms" /%}}
 
 
 #### 2.2 Skalenniveau und Datentypen

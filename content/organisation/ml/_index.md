@@ -23,11 +23,11 @@ LastModifierEmail = ""
 +++
 
 
-Seit einigen Jahren sind *Data Science* und *Machine Learning* zu alltäglichen Begriffen geworden. Studiengänge im Bereich Data Science werden [neu eingerichtet](https://www.th-koeln.de/studium/data-and-information-science-bachelor--inhalte_52782.php) oder schon bestehende Abschlüsse [umbenannt](http://west.uni-koblenz.de/studying/mwds). Anwendungen des Maschinellen Lernens sind Thema in [Massenmedien](https://www.sueddeutsche.de/thema/K%C3%BCnstliche_Intelligenz). Der Zertifikatskurs [*Data Librarian*](https://www.th-koeln.de/weiterbildung/zertifikatskurs-data-librarian_63393.php) spiegelt diese Popularität wider.
+Seit einigen Jahren sind *Data Science* und *Machine Learning* zu alltäglichen Begriffen geworden. Studiengänge im Bereich Data Science werden [neu eingerichtet](https://www.th-koeln.de/studium/data-and-information-science-bachelor--inhalte_52782.php) oder schon bestehende Abschlüsse umbenannt<!-- [umbenannt](http://west.uni-koblenz.de/studying/mwds) -->. Anwendungen des Maschinellen Lernens sind Thema in [Massenmedien](https://www.sueddeutsche.de/thema/K%C3%BCnstliche_Intelligenz). Der Zertifikatskurs [*Data Librarian*](https://www.th-koeln.de/weiterbildung/zertifikatskurs-data-librarian_63393.php) spiegelt diese Popularität wider.
 
 Um die Zusammenhänge zwischen den Fachgebieten besser zu verstehen, wird im Folgenden ein kurzer Überblick über die Begriffe gegeben. Für Interessierte gibt es Verweise zu weiteren Quellen.
 
 <script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/1982_RC01/embed_loader.js"></script>
 <script type="text/javascript">
-  trends.embed.renderExploreWidget("TIMESERIES", {"comparisonItem":[{"keyword":"data science","geo":"DE","time":"2010-01-01 2023-02-01"},{"keyword":"machine learning","geo":"DE","time":"2010-01-01 2023-02-01"}],"category":0,"property":""}, {"exploreQuery":"date=2010-01-01%202023-02-01&geo=DE&q=data%20science,machine%20learning","guestPath":"https://trends.google.com:443/trends/embed/"});
+  trends.embed.renderExploreWidget("TIMESERIES", {"comparisonItem":[{"keyword":"data science","geo":"DE","time":"2010-01-01 2024-02-01"},{"keyword":"machine learning","geo":"DE","time":"2010-01-01 2024-02-01"}],"category":0,"property":""}, {"exploreQuery":"date=2010-01-01%202023-02-01&geo=DE&q=data%20science,machine%20learning","guestPath":"https://trends.google.com:443/trends/embed/"});
 </script>

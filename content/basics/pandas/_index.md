@@ -60,7 +60,7 @@ Module_3
 │   └── Library_Usage.csv
 ├── notebooks
 │   ├── pandas_introduction.ipynb
-│   └── tutorial_jupyter.ipynb
+│   └── example_jupyter.ipynb
 ```
 {{% /customnotice %}}
 
