@@ -40,13 +40,13 @@ Unterscheidet sich das durchschnittliche **Ausleihverhalten** von jungen und äl
 
 Gehe zur Beantwortung der Fragestellung die folgenden Schritte durch:
 
-1. Lies den [Datensatz](/2022-2023-ZK_Data_Librarian_Modul_3/organisation/dataset/) ein.
+1. Lies den [Datensatz](/2023-2024-ZK_Data_Librarian_Modul_3/organisation/dataset/) ein.
 2. Um eine homogene Stichprobe zu erhalten, filtere nach Bibliothekskunden die sich im Jahr 2010 registriert haben und auch noch im Jahr 2016 (als der Datensatz erstellt wurde) aktiv waren.
 3. Erstelle jeweils eine `Series` der `Total Checkouts` für zwei Sub-Populationen: Betrachte jeweils `YOUNG ADULT`s und `SENIOR`s aus der Variable `Patron Type Definition`. 
     - Wie viele Beobachtungen sind jeweils in den beiden Populationen? 
     - Was sind deren Mittelwerte (Median, arithmetisches Mittel)? 
     - Was ist Deine Vermutung? Bestehen signifikante Unterschiede in den Mittelwerten dieser beiden Gruppen?
-4. Berechne das Konfidenzinterval für die Differenz der Mittelwerte/ Mediane mit dem [Bootstrapping Verfahren](/2022-2023-ZK_Data_Librarian_Modul_3/inference/two-sample-test/)! Setze das Signifikanznievau $\alpha=0.01$. 
+4. Berechne das Konfidenzinterval für die Differenz der Mittelwerte/ Mediane mit dem [Bootstrapping Verfahren](/2023-2024-ZK_Data_Librarian_Modul_3/inference/two-sample-test/)! Setze das Signifikanznievau $\alpha=0.01$. 
 5. Wie interpretierst Du das Ergebnis? Unterscheiden sich die Mittelwerte signifikant voneinander?
 6. Wie Ändert sich das Ergebniss, wenn Du das Signifikanzniveau $\alpha$ änderst?
 
