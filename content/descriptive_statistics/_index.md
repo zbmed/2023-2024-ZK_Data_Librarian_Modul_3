@@ -23,13 +23,13 @@ LastModifierEmail = ""
 +++
 
 
-### 12.03.2022 – 20.03.2022
+### 24.02.2024 – 04.03.2024
 
 # Deskriptive Statistik und Visualisierungen
 
 Diese Einheit gibt eine Einführung in die deskriptive Statistik mit `pandas` und zeigt, wie statistische Visualisierungen in Python erstellt werden können. 
 
-Vorausgesetzt wird statistisches Grundvokabular, wie in der letzten Einheit [behandelt](/2021-2022-ZK_Data_Librarian_Modul_3/basics/basic-terms). 
+Vorausgesetzt wird statistisches Grundvokabular, wie in der letzten Einheit [behandelt](/2022-2023-ZK_Data_Librarian_Modul_3/basics/basic_terms/). 
 
 <!-- Versuch zuerst die Aufgaben innerhalb der angegeben Zeit selbstständig zu lösen. Versuch danach mit Hilfe der Musterlösung die Lösung nachzuvollziehen. Schreibe  bei Problemen Deine Fragen auf, damit wir diese am Präsenztag zusammen besprechen können. 
 -->
@@ -48,10 +48,10 @@ Für den Online-Artikel zum Kundenstamm der Bibliothek braucht die Pressestelle 
 
 Für eine erste Demo bist Du verantwortlich:
 
-- Berechne 2-3 Statistiken und erstelle 2-3 Visualisierungen basierend auf den Informationen im [Datensatz](/2021-2022-ZK_Data_Librarian_Modul_3/organisation/dataset/).
+- Berechne 2-3 Statistiken und erstelle 2-3 Visualisierungen basierend auf den Informationen im [Datensatz](/2022-2023-ZK_Data_Librarian_Modul_3/organisation/dataset/).
 - Nutze `pandas` zur Berechnung der Statistiken und `seaborn` für die Visualisierungen.
 
-Lade bis spätestens **25.03.21** Deinen Report in Form eines *Jupyter Notebooks* in der [Dateiablage](https://zbiw.th-koeln.de/moodle/mod/assign/view.php?id=8974) in Moodle hoch.
+Lade bis spätestens **24.03.23** Deinen Report in Form eines *Jupyter Notebooks* in der [Dateiablage](https://zbiw.th-koeln.de/moodle/mod/assign/view.php?id=12281&forceview=1) in Moodle hoch.
 
 {{% /customnotice %}}
 

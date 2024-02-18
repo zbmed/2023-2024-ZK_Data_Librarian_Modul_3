@@ -85,6 +85,6 @@ all(filter1 == filter2)
 
 1. Filtere den Datensatz nach Kindern unter 10 Jahren. Wie viele Einträge erhältst Du?
 2. Gibt es Personen mit mehr als `20000` Ausleihen?
-3. Wie viele Personen stammen aus dem Norden San Franciscos ([Supervisor Districts](https://en.wikipedia.org/wiki/San_Francisco_Board_of_Supervisors)) 1, 2 und 3)? Nutze [die Funktion](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.isin.html) `Series.isin()`.
+3. Wie viele Personen stammen aus dem Stadtteil ([Richmond](https://en.wikipedia.org/wiki/Richmond_District,_San_Francisco))?
 4. Wie viele Prozent der Beobachtungen haben eine `Membership Duration` von Null Monaten?
 {{% /customnotice %}}

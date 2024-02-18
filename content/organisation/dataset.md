@@ -39,7 +39,7 @@ Im ersten Teil des Moduls werden wir einen offenen Kundendatensatz der öffentli
 {{% customnotice exercise%}}
 #### 1.2 Arbeiten mit dem Datensatz der [SFPL](https://sfpl.org/) (20 Min)
 1. Besuche das [offene Daten-Portal](https://data.sfgov.org/Culture-and-Recreation/Library-Usage/qzz6-2jup) der Stadt San Francisco und informiere Dich über den Datensatz.
-2. Lade den Datensatz [Library_Usage.csv](https://data.sfgov.org/api/views/qzz6-2jup/rows.csv?accessType=DOWNLOAD) aus dem Internet herunter und speichere ihn im Projektordner im Unter-Ordner `./data/` ab.
+2. Lade den Datensatz [Library_Usage.csv](https://data.sfgov.org/api/views/qzz6-2jup/rows.csv?accessType=DOWNLOAD) aus dem Internet herunter und speichere ihn im Projektordner im Unterordner `./data/` ab.
 3. Stell sicher, dass Dein Projektordner die folgende Verzeichnisstruktur aufweist:
 ```shell
 Module_3
@@ -50,7 +50,7 @@ Module_3
 {{% /customnotice %}}
 
 {{% customnotice tip%}}
-In [dieser Excel Tabelle](https://data.sfgov.org/api/views/qzz6-2jup/files/72c2070f-7b56-4d14-840a-d1a70f5d0f19?download=true&filename=LIB-0003_DataDictionary_library-usage.xlsx) findest Du eine detallierte Erklärung der einzelnen Variablen des Datensatzes.
+Auf der [Seite](https://data.sfgov.org/Culture-and-Recreation/Library-Usage/qzz6-2jup ) findest Du eine detallierte Erklärung der einzelnen Variablen des Datensatzes (=Spalten der Tabelle).
 {{% /customnotice %}}
 
 

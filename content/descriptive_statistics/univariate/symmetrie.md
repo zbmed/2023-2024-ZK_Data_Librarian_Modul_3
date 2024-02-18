@@ -22,7 +22,7 @@ LastModifierDisplayName = ""
 LastModifierEmail = ""
 +++
 
-{{< figure src="/2020-2021-ZK_Data_Librarian_Modul_3/images/distributions.png" title="Verschiedene univariate  Verteilungen" width="50%" >}}
+{{< figure src="/2022-2023-ZK_Data_Librarian_Modul_3/images/distributions.png" title="Verschiedene univariate  Verteilungen" width="50%" >}}
 {{%attachments title="Related files"
 pattern="distributions.ipynb" /%}}
 

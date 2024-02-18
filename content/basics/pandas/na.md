@@ -28,7 +28,7 @@ Wenn beispielsweise der Mittelwert einer statistischen Variable berechnet wird, 
 
 In `DataFrame`s werden fehlende Werte durch das Schlüsselwort `NaN` ("**Not a Number**") angezeigt. Beim Einlesen von Daten (siehe z.B. die [`read_csv` Funktion](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_csv.html)) können mit dem Argument `na_values` zusätzliche Kodierungen für fehlerhafte Werte mit angegeben werden.
 
-### Fallbeispiel
+<!--### Fallbeispiel
 
 Der Library Usage Datensatz enthält die Kodierung `"None"` für fehlende Werte. Diese werden von `pandas` beim Einlesen von numerischen Spalten nicht richtig erkannt:
 
@@ -54,7 +54,7 @@ df = pd.read_csv("../data/Library_Usage.csv", na_values="None")
 df['Circulation Active Year'] = pd.to_numeric(df['Circulation Active Year'], errors='coerce')
 df['Circulation Active Year']
 ```
-
+-->
 {{% customnotice exercise %}}
 
 #### 2.7  Datentypen (1 Minute)

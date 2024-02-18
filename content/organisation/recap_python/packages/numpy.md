@@ -51,6 +51,8 @@ Wenn Dir die Matrizenrechnung nicht geläufig ist, probiere aus das obere Beispi
 
 
 
-MIit numpy kann beispielsweise ein Bild als dreidimensionales numpy array dargestellt werden: Die ersten zwei Dimensionen beschreiben die Farbintensität der Pixel auf einer zweidimensionalen Fläche. Die dritte Dimension speichert die jeweiligen Pixelwerte für die Farbkanäle rot, grün und blau.
+Mit numpy kann beispielsweise ein Bild als dreidimensionales numpy array dargestellt werden: Die ersten zwei Dimensionen beschreiben die Farbintensität der Pixel auf einer zweidimensionalen Fläche. Die dritte Dimension speichert die jeweiligen Pixelwerte für die Farbkanäle rot, grün und blau.
 
+<!--
 {{< figure src="https://www.oreilly.com/library/view/elegant-scipy/9781491922927/assets/elsp_0105.png" attr="https://www.oreilly.com/library/view/elegant-scipy/9781491922927/ch01.html" >}}
+-->

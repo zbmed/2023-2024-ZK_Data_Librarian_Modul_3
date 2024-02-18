@@ -149,7 +149,7 @@ count_vect.fit(newsgroup_posts_train.data)
 Wörter und ihre Indices (positionen im Array):
 {{% customnotice code %}}
 ```python
-len(count_vect.get_feature_names())
+len(count_vect.get_feature_names_out())
 ```
 {{% /customnotice %}}
 
@@ -157,7 +157,7 @@ len(count_vect.get_feature_names())
 Wir können uns ein paar Beispiele ansehen ...
 {{% customnotice code %}}
 ```python
-count_vect.get_feature_names()[10000:10050]
+count_vect.get_feature_names_out()[10000:10050]
 ```
 {{% /customnotice %}}
 
