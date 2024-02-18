@@ -23,7 +23,7 @@ LastModifierEmail = ""
 +++
 
 
-### 27.02.2023 – 04.03.2023
+### 19.02.2024 – 24.02.2024
 
 # Grundbegriffe der Statistik und Einführung in Pandas
 
