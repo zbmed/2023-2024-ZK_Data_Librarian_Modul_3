@@ -73,5 +73,5 @@ Module_3
 ---
 
 {{% customnotice tip %}}
-Dieses [Cheat-Sheet](http://datacamp-community-prod.s3.amazonaws.com/dbed353d-2757-4617-8206-8767ab379ab3) gibt einen guten Überblick über die Datenverarbeitung mit Pandas. 
+Dieses [Cheat-Sheet](https://www.datacamp.com/cheat-sheet/pandas-cheat-sheet-for-data-science-in-python) gibt einen guten Überblick über die Datenverarbeitung mit Pandas. 
 {{% /customnotice %}}

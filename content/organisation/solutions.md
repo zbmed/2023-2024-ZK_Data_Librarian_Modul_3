@@ -30,5 +30,5 @@ LastModifierEmail = ""
 
 
 1. Strg+Enter
-2. 437115, `len(df)`
+2. 436290, `len(df)`
 3. siehe (unter `sns.set()`): https://seaborn.pydata.org/introduction.html
