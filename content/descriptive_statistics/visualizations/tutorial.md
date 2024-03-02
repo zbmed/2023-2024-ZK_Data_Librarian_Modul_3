@@ -88,7 +88,7 @@ Mit den zusätzlichen Argumenten `hue` (Farbe der Punkte/ Linien/ Balken ...), `
 {{% customnotice code%}}
 ```python
 sns.relplot(x='Total Checkouts', y='Total Renewals', 
-                hue='Provided Email Address', style='Outside of County', 
+                hue='Provided Email Address', style='Within San Francisco County', 
                 size='Year Patron Registered', data=df)
 ```
 {{% /customnotice%}}
@@ -104,7 +104,7 @@ Plots können mit dem `row` und/ oder `col` Argument auch anhand einer oder mehr
 ```python
 sns.relplot(x='Total Checkouts', y='Total Renewals', 
             size='Year Patron Registered',
-            row='Provided Email Address', col='Outside of County', data=df)
+            row='Provided Email Address', col='Within San Francisco County', data=df)
 ```
 {{% /customnotice%}}
 
@@ -121,7 +121,7 @@ Mit dem Argument `palette` können verschiedene [Farbpaletten](https://seaborn.p
 ```python
 sns.relplot(x='Total Checkouts', y='Total Renewals', 
             hue='Provided Email Address', 
-            col='Outside of County',
+            col='Within San Francisco County',
             palette=sns.color_palette('Accent', 2), 
             data=df)
 ```
