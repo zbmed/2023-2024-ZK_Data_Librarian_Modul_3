@@ -35,8 +35,8 @@ df = pd.read_csv(
     na_values="none"
 )
 pd.crosstab(
-    df['Provided Email Address'],
     df['Notice Preference Definition'],
+    df['Age Range'],
     margins=True
 )
 ```
@@ -44,20 +44,20 @@ pd.crosstab(
 
 
 
-Notice Preference Definition	| Email 	| None | Phone 	| Print | All
-:--- | :--- | :--- | :--- | :--- | :---
-**Provided Email Address** | | | | |
-False 	|476 |	2668 |	 35235 | 7173 | 45552
-True 	|391138 |	32  	|324 | 69 | 391563
-All  | 391614 |	2700 	| 35559 	|7242 | 437115
+Age Range	| 0 to 9 years 	| 10 to 19 years | 20 to 24 years | 25 to 34 years	| 35 to 44 years | 45 to 54 years | 55 to 59 years | 60 to 64 years | 65 to 74 years | 75 years and over | All
+:--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :---
+**Notice Preference Definition** | | | | | | | | | | |
+Email 	|28740 |	54936 |	 22701 | 88200 | 77618 | 45165 | 17336 | 15539 | 27170 | 15069 | 392474
+None 	|3952 |	11921  	|2680 | 4469 | 4101 | 3154 | 1740 | 2115 | 4544 |4228 | 42904
+All  | 32692 |	66857 	| 25381 	| 92669 | 81719 | 48319 | 19076 | 17654 | 31714 | 19297 | 435378
 
 Eine Kreuztabelle mit absoluten Werten ist häufig schwer zu interpretieren, wenn die Randverteilungen ungleich verteilt sind. Deswegen sollten die Werte entweder Spaltenweise oder Zeilenweise **normalisiert** werden:
 
 {{% customnotice code %}}
 ```python
 pd.crosstab(
-    df['Provided Email Address'],
     df['Notice Preference Definition'],
+    df['Age Range'],
     margins=True, normalize=1
 )
 ```
@@ -65,21 +65,21 @@ pd.crosstab(
 
 Ergibt eine Normalisierung der Spalten, sodass sich diese jeweils zu 100% aufaddieren:
 
-Notice Preference Definition	| Email 	| None | Phone 	| Print |	All
-:--- | :--- | :--- | :--- | :--- | :---
-**Provided Email Address** | | | | |			
-False 	|0.001215 	|0.988148 |	0.990888 |	0.990472 | 0.104211
-True 	|0.998785 	|0.011852 	|0.009112 	| 0.009528 | 0.895789
+Age Range	| 0 to 9 years 	| 10 to 19 years | 20 to 24 years | 25 to 34 years	| 35 to 44 years | 45 to 54 years | 55 to 59 years | 60 to 64 years | 65 to 74 years | 75 years and over | All
+:--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :---
+**Notice Preference Definition** | | | | | | | | | | |
+Email 	|0.879114 |	0.821694 |	 0.894409 | 0.951775 | 0.949816 | 0.934725 | 0.908786 | 0.880197 | 0.856719 | 0.780899 | 0.901456
+None 	|0.120886 |	0.178306  	| 0.105591 | 0.048225 | 0.050184 | 0.065275 | 0.091214 | 0.119803 | 0.143281 | 0.219101 | 0.098544
 
-> Von den Kunden, die per Mail informiert werden möchten, haben 99.88% eine Mail Adresse angegeben. Knapp unter 1% der Kunden, die telefonisch informiert werden möchten, haben eine Mail Adresse angegeben. 
+> Von den Nutzern zwischen 0 und 9 Jahren möchten 88% (0.879114 von 1) per Mail informiert werden.
 
 Wird das Argument `normalize=0` verwendet, so werden die Zeilen der Tabelle normalisiert. Entsprecht ändern sich die Interpretation:
 
-Notice Preference Definition |	Email 	| None | Phone 	| Print |	All
-:--- | :--- | :--- | :---  | :--- | :---
-**Provided Email Address** | | | | | 			
-False 	|0.010450 	| 0.058570 	| 0.773512 	| 0.157468
-True 	|0.998915 	| 0.000082 	| 0.000827 	| 0.000176
-All 	|0.895906 	| 0.006177 	| 0.081349 	| 0.016568
+Age Range	| 0 to 9 years 	| 10 to 19 years | 20 to 24 years | 25 to 34 years	| 35 to 44 years | 45 to 54 years | 55 to 59 years | 60 to 64 years | 65 to 74 years | 75 years and over 
+:--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- 
+**Notice Preference Definition** | | | | | | | | | | 
+Email 	| 0.073228 |	0.139974 |	 0.057841 | 0.224728 | 0.197766 | 0.115078 | 0.044171 | 0.039592 | 0.069228 | 0.038395 
+None 	| 0.092113 |	0.277853  	| 0.062465 | 0.104163 | 0.095585 | 0.073513 | 0.040556 | 0.049296 | 0.105911 | 0.098546 
+All | 0.075089 |	0.153561 |	0.058296 |	0.212847 |	0.187697 |	0.110982 |	0.043815 |	0.040549 |	0.072842 |	0.044322
 
-> Von den Kunden, die eine Mail angeben haben, möchten mehr als 99% per Mail informiert werden. Von den Kunden, die keine Mail angegeben haben, möchten 77% per Telefon informiert werden.
+> Von den Kunden, die per Mail informiert werden möchtem befinden sich ca. 12% (0.115078 von 1) in der Altersgruppe 45 bis 54 Jahre.
