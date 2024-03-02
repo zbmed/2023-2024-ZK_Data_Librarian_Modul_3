@@ -26,7 +26,7 @@ LastModifierEmail = ""
 #### 2.1 Grundbegriffe 
 
 1. Wie viele Merkmale besitzt der Datensatz? 14.
-2. Wie groß ist die Stichprobengröße des Datensatzes? 437115.
+2. Wie groß ist die Stichprobengröße des Datensatzes? 436290.
 3. Wer oder was sind die Merkmalsträger? Bibliothekskunden der SF Public Library.
 4. Von wann bis wann wurden die Daten erhoben? Das Bibliothekssystem wurde 2003 installiert. Die Daten reichen bis 2023.
 5. Wie lässt sich die Grundgesamtheit beschreiben? Handelt es sich um eine Vollerhebung? Grundgesamtheit sind alle Bibliothekskunden der San Francisco Library. Wahrscheinlich handelt es sich um eine Vollerhebung. Es lässt sich diskutieren, ob die Grundgesamtheit größer gefasst werden kann (z.B. alle Kunden von Bibliotheken in den USA oder alle Kunden von öffentlichen Bibliotheken). Sind die Daten repräsentativ für diese Grundgesamtheiten?
@@ -83,4 +83,4 @@ LastModifierEmail = ""
 - https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_excel.html
 - `len(df)` oder `df.shape[0]`
 - `df['Age Range'].isna().sum()`
-- `len(df[(df['Age Range'] == '60 to 64 years') & (df['Circulation Active Year'] == '2016')])`
+- `len(df[(df['Age Range'] == '60 to 64 years') & (df['Circulation Active Year'] == 2016)])`

@@ -72,12 +72,12 @@ Berechnungen auf schon bestehenden Variablen können auch direkt einer neuen Spa
 ```python
 import numpy as np
 
-df['is_adult'] = df['Patron Type Definition'] == 'ADULT'
+df['is_adult'] = df['Patron Type Definition'] == 'Adult'
 df['log_renewals'] = np.log(df['Total Renewals'] + 1)
 ```
 {{% /customnotice %}}
 
-Im ersten Beispiel wurde zuerst die Anweisung `df['Patron Type Definition'] == 'ADULT'` durchgeführt. Das implizite Ergebnis dieser Anweisung ist eine `Series` mit booleschen Werten `True` oder `False`. Die neu erstellte `Series` wird dann in einer neuen Spalte `is_adult` dem `DataFrame` angehängt.
+Im ersten Beispiel wurde zuerst die Anweisung `df['Patron Type Definition'] == 'Adult'` durchgeführt. Das implizite Ergebnis dieser Anweisung ist eine `Series` mit booleschen Werten `True` oder `False`. Die neu erstellte `Series` wird dann in einer neuen Spalte `is_adult` dem `DataFrame` angehängt.
 
 Im zweiten Beispiel wurde der Logarithmus auf den Werten der Spalte `Total Renewals` berechnet und einer neuen Spalte `log_renewals` zugewiesen.
 
@@ -113,7 +113,7 @@ pd.to_numeric(
     pd.to_datetime(
         df['Circulation Active Month'],
         errors='coerce',
-        format="%B"
+        format="%b"
     )
     ```
 
@@ -127,7 +127,7 @@ pd.to_numeric(
 
   3. Berechne nun die aktive Mitgliedschaftsdauer in Monaten wie oben definiert und weise das Ergebnis der Spalte `Membership Duration` zu. 
 
-  4. Nimm an, dass Einträge mit fehlenden Werten bedeutet, dass die Person `0` Monate aktiv Mitglied gewesen ist. Ersetze dazu alle `NaN` values in der neuen Variable mit der Zahl `0`. Nutze dieses Codesnippet (siehe auch den nachfolgenden Abschnitt [Exkurs: Fehlende Werte](/2022-2023-ZK_Data_Librarian_Modul_3/basics/pandas/na/) über die Behandlung fehlender Werte):
+  4. Nimm an, dass Einträge mit fehlenden Werten bedeutet, dass die Person `0` Monate aktiv Mitglied gewesen ist. Ersetze dazu alle `NaN` values in der neuen Variable mit der Zahl `0`. Nutze dieses Codesnippet (siehe auch den nachfolgenden Abschnitt [Exkurs: Fehlende Werte](/2023-2024-ZK_Data_Librarian_Modul_3/basics/pandas/na/) über die Behandlung fehlender Werte):
 
 ```python
 df['Membership Duration'].fillna(0)

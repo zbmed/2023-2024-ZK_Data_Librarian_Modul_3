@@ -49,7 +49,7 @@ Für den booleschen Zeilenfilter können komplexe logische Ausdrücke unter Zuhi
 
 {{% customnotice code %}}
 ```python
-row_filter = (df['Patron Type Definition'] == 'SENIOR') & (df['Notice Preference Definition'] == 'email')
+row_filter = (df['Patron Type Definition'] == 'Senior') & (df['Notice Preference Definition'] == 'Email')
 df.loc[row_filter]
 ```
 {{% /customnotice %}}
