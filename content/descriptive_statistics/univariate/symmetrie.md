@@ -60,7 +60,7 @@ Mit dem folgenden Beispiel kannst Du ein Histogramm über die Anzahl der Ausleih
 import pandas as pd
 import seaborn as sns
 %matplotlib inline
-sns.set()
+sns.set_theme()
 
 df = pd.read_csv("../data/Library_Usage.csv")
 sns.distplot(df['Total Checkouts'], kde=False)

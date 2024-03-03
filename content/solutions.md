@@ -34,7 +34,7 @@ Hier finden sich die Musterlösungen aller Einheiten im Überblick.
 1. Strg+Enter
 2. siehe hier: https://docs.anaconda.com/anaconda/packages/pkg-docs/
 3. 423448, `len(df)`
-4. siehe (unter `sns.set()`): https://seaborn.pydata.org/introduction.html
+4. siehe (unter `sns.set_theme()`): https://seaborn.pydata.org/introduction.html
 
 
 ### 2. Grundlagen der Datenanalyse in Python
