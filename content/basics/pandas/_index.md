@@ -73,5 +73,5 @@ Module_3
 ---
 
 {{% customnotice tip %}}
-Dieses [Cheat-Sheet](https://www.datacamp.com/cheat-sheet/pandas-cheat-sheet-for-data-science-in-python) gibt einen guten Überblick über die Datenverarbeitung mit Pandas. 
+Dieses [Cheat-Sheet](https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf) gibt einen guten Überblick über die Datenverarbeitung mit Pandas. 
 {{% /customnotice %}}
