@@ -23,7 +23,7 @@ LastModifierEmail = ""
 +++
 
 {{< figure src="/2023-2024-ZK_Data_Librarian_Modul_3/images/distributions.png" title="Verschiedene univariate  Verteilungen" width="50%" >}}
-{{%attachments title="Related files"
+{{%resources title="Related files"
 pattern="distributions.ipynb" /%}}
 
 Um eine metrische Verteilung charakterisieren zu können, ist neben der zentralen Lage- und Streuung auch deren **Symmetrie** und **Schiefe** von Bedeutung. Die Symmetrie sagt etwas über die *(Un-)Gleichverteilung* der Werte einer Variablen aus. Bei stark asymmetrischen Variablen (z.B. Haushaltseinkommen in Deutschland) ist das auftreten von kleinen Werten viel wahrscheinlicher, als das auftreten von sehr großen Werten (oder umgekehrt).

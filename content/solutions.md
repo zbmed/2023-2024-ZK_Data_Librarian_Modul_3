@@ -66,12 +66,12 @@ Hier finden sich die Musterlösungen aller Einheiten im Überblick.
 - `temp`: metrisch, stetig, `int`
 - `below_zero`: nominal, diskret, `boolean`
 
-{{%attachments title="Lösungen" pattern="2.2.solutions_dataframe" /%}}
+{{%resources title="Lösungen" pattern="2.2.solutions_dataframe" /%}}
 
 
 #### 2.3 Exkurs: Datenrundreise
 
-{{%attachments title="Lösungen" pattern="2.3.solutions_datenrundreise" /%}}
+{{%resources title="Lösungen" pattern="2.3.solutions_datenrundreise" /%}}
 
 #### 2.4 Exkurs: Arbeitsspeicher
 
@@ -82,12 +82,12 @@ Hier finden sich die Musterlösungen aller Einheiten im Überblick.
 
 #### 2.5 Fallstudie: Feature Engineering
 
-{{%attachments title="Lösungen" pattern="2.5.solutions_fe" /%}}
+{{%resources title="Lösungen" pattern="2.5.solutions_fe" /%}}
 
 
 #### 2.6 Filtern
 
-{{%attachments title="Lösungen" pattern="2.6.solutions_selection" /%}}
+{{%resources title="Lösungen" pattern="2.6.solutions_selection" /%}}
 
 #### 2.7 Datentypen
 
@@ -98,7 +98,7 @@ Hier finden sich die Musterlösungen aller Einheiten im Überblick.
 
 #### 2.8 Exkurs: Fehlende Werte
 
-{{%attachments title="Lösungen" pattern="2.8.solutions_na" /%}}
+{{%resources title="Lösungen" pattern="2.8.solutions_na" /%}}
 
 #### Quiz
 
@@ -112,7 +112,7 @@ Hier finden sich die Musterlösungen aller Einheiten im Überblick.
 
 #### 3.1 Häufigkeiten
 
-{{%attachments title="Lösungen" pattern="3.1.solutions_frequency" /%}}
+{{%resources title="Lösungen" pattern="3.1.solutions_frequency" /%}}
 
 
 
@@ -124,7 +124,7 @@ Der Mittelwert hingegen basiert auf den absoluten Werten. Da die Variable `Total
 
 #### 3.4 Varianz
 
-{{%attachments title="Lösungen" pattern="3.4.solutions_variance" /%}}
+{{%resources title="Lösungen" pattern="3.4.solutions_variance" /%}}
 
 
 #### 3.6 Symmetrie und Schiefe
@@ -143,16 +143,16 @@ Von oben links nach unten rechts:
 
 #### Exkurs Ausreißerentfernung (Aufgaben 3.3, 3.5 und 3.7)
 
-{{%attachments title="Lösungen" pattern="solutions_outlier" /%}}
+{{%resources title="Lösungen" pattern="solutions_outlier" /%}}
 
 
 #### Symmetrie: Fallstudie
 
-{{%attachments title="Lösungen" pattern="solutions_case_study" /%}}
+{{%resources title="Lösungen" pattern="solutions_case_study" /%}}
 
 #### Korrelation: Anscombe-Quartett
 
-{{%attachments title="Lösungen" pattern="solutions_anscombe" /%}}
+{{%resources title="Lösungen" pattern="solutions_anscombe" /%}}
 
 #### Fox News
 
@@ -170,10 +170,10 @@ Die Balkendiagramme beginnen nicht im Nullpunkt. Somit werden die relativen Unte
 
 ### 4. Exkurs: Inferenzstatistik
 
-{{%attachments title="Lösungen" pattern="solutions_inference" /%}}
+{{%resources title="Lösungen" pattern="solutions_inference" /%}}
 
 
-{{%attachments title="Alle Lösungen" pattern="solutions" /%}}
+{{%resources title="Alle Lösungen" pattern="solutions" /%}}
 
 
 -->
