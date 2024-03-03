@@ -41,4 +41,4 @@ hidden = true
 
 ### 4. Exkurs: Inferenzstatistik
 
-{{%resources title="Lösungen" pattern="solutions_inference" /%}}
+{{%attachments title="Lösungen" pattern="solutions_inference" /%}}

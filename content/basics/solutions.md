@@ -35,7 +35,7 @@ LastModifierEmail = ""
 8. Enthält der Datensatz fehlende Werte? Ja, z.B. `Age Range`
 9. Handelt es sich um Querschnitts-, Längsschnitss- oder Paneldaten? Querschnittsdaten
 
-{{%resources title="Lösungen" pattern="2.1.solutions_basicterms" /%}}
+{{%attachments title="Lösungen" pattern="2.1.solutions_basicterms" /%}}
 
 
 #### 2.2 Skalenniveau und Datentypen
@@ -44,12 +44,12 @@ LastModifierEmail = ""
 - `temp`: metrisch, stetig, `int`
 - `below_zero`: nominal, diskret, `boolean`
 
-{{%resources title="Lösungen" pattern="2.2.solutions_dataframe" /%}}
+{{%attachments title="Lösungen" pattern="2.2.solutions_dataframe" /%}}
 
 
 #### 2.3 Exkurs: Datenrundreise
 
-{{%resources title="Lösungen" pattern="2.3.solutions_datenrundreise" /%}}
+{{%attachments title="Lösungen" pattern="2.3.solutions_datenrundreise" /%}}
 
 #### 2.4 Exkurs: Arbeitsspeicher
 
@@ -60,12 +60,12 @@ LastModifierEmail = ""
 
 #### 2.5 Fallstudie: Feature Engineering
 
-{{%resources title="Lösungen" pattern="2.5.solutions_fe" /%}}
+{{%attachments title="Lösungen" pattern="2.5.solutions_fe" /%}}
 
 
 #### 2.6 Filtern
 
-{{%resources title="Lösungen" pattern="2.6.solutions_selection" /%}}
+{{%attachments title="Lösungen" pattern="2.6.solutions_selection" /%}}
 
 #### 2.7 Datentypen
 
@@ -76,7 +76,7 @@ LastModifierEmail = ""
 
 #### 2.8 Exkurs: Fehlende Werte
 
-{{%resources title="Lösungen" pattern="2.8.solutions_na" /%}}
+{{%attachments title="Lösungen" pattern="2.8.solutions_na" /%}}
 
 #### Quiz
 

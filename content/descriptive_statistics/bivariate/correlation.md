@@ -49,7 +49,7 @@ In dieser Formel erkennt man im Zähler die Kovarianz und im Nenner die einzelne
  Der Koeffizient kann Werte zwischen $-1$ (negativer Zusammenhang) und $1$ (positiver Zusammenhang) annehmen. Nachfolgend ein Beispiel von zufällig generierten Variablen mit verschiedenen Korrelationskoeffizienten:
 {{< figure src="../correlation.files/correlation.png" title="" width="60%" >}}
 
-{{%resources title="Zugehöriges Notebook zum Nachvollziehen und Ausprobieren:" pattern="correlation.ipynb" /%}}
+{{%attachments title="Zugehöriges Notebook zum Nachvollziehen und Ausprobieren:" pattern="correlation.ipynb" /%}}
 
 Mit [pandas](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.corr.html) kannst Du natürlich auch Korrelationen ausrechnen:
 {{% customnotice code%}}
@@ -85,7 +85,7 @@ Das Anscombe Quartett ist ein Datenstatz, der aus 4 bivariaten Verteilungen best
 {{% /customnotice %}}
 
 <!--
-{{%resources title="Related files" pattern="(.){2,}\.(csv|ipynb)" /%}}
+{{%attachments title="Related files" pattern="(.){2,}\.(csv|ipynb)" /%}}
 -->
 ---
 

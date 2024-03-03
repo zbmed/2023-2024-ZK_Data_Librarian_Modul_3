@@ -25,7 +25,7 @@ LastModifierEmail = ""
 
 #### 3.1 Häufigkeiten
 
-{{%resources title="Lösungen" pattern="3.1.solutions_frequency" /%}}
+{{%attachments title="Lösungen" pattern="3.1.solutions_frequency" /%}}
 
 
 
@@ -37,7 +37,7 @@ Der Mittelwert hingegen basiert auf den absoluten Werten. Da die Variable `Total
 
 #### 3.4 Varianz
 
-{{%resources title="Lösungen" pattern="3.4.solutions_variance" /%}}
+{{%attachments title="Lösungen" pattern="3.4.solutions_variance" /%}}
 
 
 #### 3.6 Symmetrie und Schiefe
@@ -56,17 +56,17 @@ Von oben links nach unten rechts:
 
 #### Exkurs Ausreißerentfernung (Aufgaben 3.3, 3.5 und 3.7)
 
-{{%resources title="Lösungen" pattern="solutions_outlier" /%}}
+{{%attachments title="Lösungen" pattern="solutions_outlier" /%}}
 
 
 <!--#### Symmetrie: Fallstudie
 
-{{%resources title="Lösungen" pattern="solutions_case_study" /%}}
+{{%attachments title="Lösungen" pattern="solutions_case_study" /%}}
 -->
 
 #### 3.8 Exkurs: Anscombe-Quartett
 
-{{%resources title="Lösungen" pattern="solutions_anscombe" /%}}
+{{%attachments title="Lösungen" pattern="solutions_anscombe" /%}}
 
 #### 3.9 Balkendiagramme bei Fox News
 
@@ -83,7 +83,7 @@ Die Balkendiagramme beginnen nicht im Nullpunkt. Somit werden die relativen Unte
 
 #### Projektaufgabe - Beispielfragen
 
-{{%resources title="Lösungen" pattern="Musterloesung_Projektaufgabe.ipynb" /%}}
+{{%attachments title="Lösungen" pattern="Musterloesung_Projektaufgabe.ipynb" /%}}
 
 
 
