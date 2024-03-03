@@ -31,7 +31,7 @@ Die zahlreichen Funktionen, die `seaborn` bietet basieren immer auf dem gleichen
 
 Zuerst werden die benötigten Bibliotheken importiert und der Datensatz eingelesen. Panadas und numpy dienen zur Verarbeitung der Daten. **Seaborn** baut auf **matplotlib**, der Standard-Bibliothek für wissenschaftliche Grafiken, auf und bietet einige Verbesserungen und Vereinfachungen. Der Kommentar `% matplotlib inline` ist ein [Magic Command](https://ipython.readthedocs.io/en/stable/interactive/magics.html#magic-matplotlib) für den Python Kernel in Jupyter Notebooks. Mit diesem Befehl werden Plots direkt im Notebook angezeigt. 
 
-Mit `sns.set()` wird das grundlegende Design der Plots dem Design von Seaborn angepasst. Die Funktion `DataFrame.sample()` wird verwendet, um eine Zufalsstichprobe der Größe $n=1000$ aus dem Datenstatz zu erstellen. Dies dient zur **besseren Lesbarkeit** des Plots in diesem Tutorial. 
+Mit `sns.set_theme()` wird das grundlegende Design der Plots dem Design von Seaborn angepasst. Die Funktion `DataFrame.sample()` wird verwendet, um eine Zufalsstichprobe der Größe $n=1000$ aus dem Datenstatz zu erstellen. Dies dient zur **besseren Lesbarkeit** des Plots in diesem Tutorial. 
 
 {{% customnotice code%}}
 ```python
@@ -40,7 +40,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
 %matplotlib inline
-sns.set()
+sns.set_theme()
 
 # use sample to generate a random subsample
 df = pd.read_csv("../data/Library_Usage.csv").sample(n=1000)

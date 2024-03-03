@@ -30,7 +30,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import numpy as np
 # matplotlib inline
-sns.set()
+sns.set_theme()
 
 df = pd.read_csv("../data/Library_Usage.csv")
 

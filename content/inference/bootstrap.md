@@ -71,7 +71,7 @@ Die Mittelwerte jeder Simulation werden in der Liste `x_means` abgespeichert. Di
 ```python
 #matplotlib inline
 import seaborn as sns
-sns.set()
+sns.set_theme()
 sns.distplot(x_means, kde=False, bins=35)
 ```
 
