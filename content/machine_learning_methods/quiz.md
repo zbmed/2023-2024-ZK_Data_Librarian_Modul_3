@@ -24,7 +24,7 @@ LastModifierEmail = ""
 
 {{< quiz pandas_quiz>}}
 {{< item question="Ein großer Vorteil von scikit-learn ist/sind ..." answer=2 choices="die schönen Farben der Plots,ein einheitliches Interface für verschiedene Lernverfahren,die enorme Effizienze für Deep-Learning-Anwendungen" >}}
-{{< item question="Je mehr Nachbarn man bei der k-Nearest-Neighbor-Methode genutzt werden, desto besser funktioniert sie, dauert aber länger." answer=2 choices="ja,nein,vielleicht" >}}
+{{< item question="Je mehr Nachbarn man bei der k-Nearest-Neighbor-Methode genutzt werden, desto besser funktioniert sie, dauert aber länger." answer=3 choices="ja,nein,vielleicht" >}}
 {{< item question="Zum Trainieren von Klassifikation- und Regressions-Modellen muss für jeden Datenpunkt ein Zielwert bekannst sein." answer=1 choices="ja,nein,vielleicht" >}}
 
 {{< /quiz >}}
