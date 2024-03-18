@@ -303,7 +303,7 @@ Traininsdokumente in Matrizen transformieren:
 {{% customnotice code %}}
 ```python
 X_to_classify_counts = count_vect.transform(docs_to_classify)
-X_to_classify_tfidf = tf_transformer.transform(X_to_classify_counts)
+X_to_classify_tf = tf_transformer.transform(X_to_classify_counts)
 ```
 {{% /customnotice %}}
 
@@ -312,7 +312,7 @@ Jetzt können wir mit dieser Matrix die Klassifikation durchführen ...
 
 {{% customnotice code %}}
 ```python
-predicted_classes = tf_random_forest_classifier.predict(X_to_classify_tfidf)
+predicted_classes = tf_random_forest_classifier.predict(X_to_classify_tf)
 ```
 {{% /customnotice %}}
 
