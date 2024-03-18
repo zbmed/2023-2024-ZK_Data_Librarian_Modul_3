@@ -36,7 +36,7 @@ Wir nutzen Dokumente von mehreren Newsgroups und trainieren damit
 einen Classifier, der dann eine Zudordnung von neuen Texten auf eine
 dieser Gruppen durchführen kann. Sprich die Newsgroups stellen die
 Klassen/Tags dar, mit denen wir neue Texte klassifizieren. Wie nutzen
-eine einfachen
+einen einfachen
 [Bag-of-Word](https://en.wikipedia.org/wiki/Bag-of-words_model)-Ansatz
 in dem wir (normalisierte) Häufigkeit von Wörtern als Features nutzen.
 
